@@ -61,7 +61,7 @@ export default function TermsOfServicePage() {
 
               <Section id="1-agreement" title="1. Agreement to Terms">
                 <p>
-                  By accessing or using the Checkmark Plagiarism add-on for Google Classroom™ ("the Service"), you agree to be bound by these Terms of Service ("Terms"). If you disagree with any part of the terms, you may not access the Service.
+                  By accessing or using the Checkmark Plagiarism add-on for Google Classroom™ (&quot;the Service&quot;), you agree to be bound by these Terms of Service (&quot;Terms&quot;). If you disagree with any part of the terms, you may not access the Service.
                 </p>
               </Section>
 
@@ -127,7 +127,7 @@ export default function TermsOfServicePage() {
 
               <Section id="9-disclaimer" title="9. Disclaimer of Warranties">
                 <ul className="marker:text-muted-foreground list-disc pl-6">
-                  <li><strong>9.1</strong> THE SERVICE IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED.</li>
+                  <li><strong>9.1</strong> THE SERVICE IS PROVIDED &quot;AS IS&quot; AND &quot;AS AVAILABLE&quot; WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED.</li>
                   <li><strong>9.2</strong> Checkmark Plagiarism does not warrant that the Service will be uninterrupted or error-free, that defects will be corrected, or that the Service is free of viruses or other harmful components.</li>
                 </ul>
               </Section>
@@ -135,7 +135,7 @@ export default function TermsOfServicePage() {
               <Section id="10-limitation" title="10. Limitation of Liability">
                 <ul className="marker:text-muted-foreground list-disc pl-6">
                   <li><strong>10.1</strong> IN NO EVENT SHALL CHECKMARK PLAGIARISM™ BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL OR PUNITIVE DAMAGES, INCLUDING WITHOUT LIMITATION, LOSS OF PROFITS, DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES.</li>
-                  <li><strong>10.2</strong> Checkmark Plagiarism's total liability for any claims arising from these Terms shall not exceed the amount you paid for the Service in the past 12 months.</li>
+                  <li><strong>10.2</strong> Checkmark Plagiarism&apos;s total liability for any claims arising from these Terms shall not exceed the amount you paid for the Service in the past 12 months.</li>
                 </ul>
               </Section>
 

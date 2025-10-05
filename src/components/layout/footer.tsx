@@ -26,7 +26,9 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="font-semibold text-foreground">Product</h3>
             <ul className="space-y-2 text-muted-foreground">
-              <li><a href="#" className="hover:text-foreground transition-colors">Features</a></li>
+              <li><a href="/features" className="hover:text-foreground transition-colors">Features</a></li>
+              <li><a href="#" className="hover:text-foreground transition-colors">Plagiarism Detection</a></li>
+              <li><a href="#" className="hover:text-foreground transition-colors">AI Detection</a></li>
               <li><a href="#" className="hover:text-foreground transition-colors">Auto Grading</a></li>
               <li><a href="#" className="hover:text-foreground transition-colors">Integrations</a></li>
               <li><a href="#" className="hover:text-foreground transition-colors">Pricing</a></li>

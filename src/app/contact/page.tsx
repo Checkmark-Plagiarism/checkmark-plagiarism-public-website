@@ -20,7 +20,7 @@ const Contact = () => {
             Contact Us
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Have questions about Checkmark? We're here to help! Reach out to learn more about our academic integrity solutions.
+            Have questions about Checkmark? We&apos;re here to help! Reach out to learn more about our academic integrity solutions.
           </p>
         </div>
 
@@ -30,7 +30,7 @@ const Contact = () => {
             <CardHeader>
               <CardTitle className="text-2xl">Send us a message</CardTitle>
               <CardDescription>
-                Fill out the form below and we'll get back to you as soon as possible.
+                Fill out the form below and we&apos;ll get back to you as soon as possible.
               </CardDescription>
             </CardHeader>
             <CardContent>

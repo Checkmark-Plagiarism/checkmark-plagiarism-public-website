@@ -59,7 +59,7 @@ export default function PrivacyPolicyPage() {
             {/* Main article */}
             <article className="lg:col-span-3 prose prose-neutral dark:prose-invert max-w-none leading-relaxed">
               <p className="text-muted-foreground">
-                We are committed to protecting the privacy and ensuring the security of both your data and your students' data. This policy explains how our Checkmark Plagiarism add-on for Google Classroom™ handles information.
+                We are committed to protecting the privacy and ensuring the security of both your data and your students&apos; data. This policy explains how our Checkmark Plagiarism add-on for Google Classroom™ handles information.
               </p>
 
               <Section id="data-collection" title="1. Data Collection and Use Across Educational Platforms">
@@ -94,7 +94,7 @@ export default function PrivacyPolicyPage() {
                   <li><code>https://www.googleapis.com/auth/classroom.push-notifications</code>: To receive notifications about classroom events (e.g., new submissions).</li>
                   <li><code>https://www.googleapis.com/auth/drive.file</code>: To access specific files in Google Drive that are part of assignments where our add-on is enabled.</li>
                   <li><code>https://www.googleapis.com/auth/documents.readonly</code>: To read the content of student documents for plagiarism detection and behavioral analysis.</li>
-                  <li><code>https://www.googleapis.com/auth/userinfo.email</code>: To access the teacher's email address for authentication.</li>
+                  <li><code>https://www.googleapis.com/auth/userinfo.email</code>: To access the teacher&apos;s email address for authentication.</li>
                   <li><code>https://www.googleapis.com/auth/userinfo.profile</code>: To access basic profile information (e.g., name) for authentication.</li>
                 </ul>
                 <p>Through these scopes, we access:</p>
@@ -153,8 +153,8 @@ export default function PrivacyPolicyPage() {
 
               <Section id="student-data" title="4. Student Data Protection and Ownership">
                 <ul className="marker:text-muted-foreground list-disc pl-6">
-                  <li>Schools maintain ownership of students' work. We act as a processor of this data on behalf of the educational institution.</li>
-                  <li>We never use student submissions to train our AI models for general purposes. Our AI models are designed to analyze writing authenticity without "learning" from specific student content, ensuring student work remains their own.</li>
+                  <li>Schools maintain ownership of students&apos; work. We act as a processor of this data on behalf of the educational institution.</li>
+                  <li>We never use student submissions to train our AI models for general purposes. Our AI models are designed to analyze writing authenticity without &quot;learning&quot; from specific student content, ensuring student work remains their own.</li>
                   <li>Unlike other services, we have no incentive to grow our database with student submissions for commercial gain.</li>
                   <li>Student submission data is only accessible to authorized teachers associated with the respective courses.</li>
                 </ul>
@@ -176,7 +176,7 @@ export default function PrivacyPolicyPage() {
               <Section id="access-control" title="7. Data Access and Control">
                 <ul className="marker:text-muted-foreground list-disc pl-6">
                   <li><strong>Teachers:</strong> Have access to review work submitted by students enrolled in your classes through the Checkmark Plagiarism dashboard.</li>
-                  <li><strong>Students:</strong> Cannot access other students' work; can only view their own submissions and request deletion of their data.</li>
+                  <li><strong>Students:</strong> Cannot access other students&apos; work; can only view their own submissions and request deletion of their data.</li>
                   <li><strong>Researchers:</strong> Do not view any student-submitted text content. Research and improvements to our detection algorithms are conducted using anonymized and aggregated data only, ensuring no individual student work is identifiable.</li>
                   <li><strong>Automated Processing:</strong> Document content is processed automatically by our AI detection algorithms without human viewing. Human access is only granted in rare, specific circumstances (e.g., for technical support at the explicit request of a school administrator) and is strictly logged and audited.</li>
                 </ul>
@@ -216,7 +216,7 @@ export default function PrivacyPolicyPage() {
 
               <Section id="compliance" title="11. Compliance">
                 <p>
-                  We ensure that our employees, agents, contractors, and successors comply with this privacy policy, Google's API Services User Data Policy, and relevant data privacy regulations such as FERPA, COPPA, and GDPR where applicable. We are committed to upholding the highest standards of student data privacy.
+                  We ensure that our employees, agents, contractors, and successors comply with this privacy policy, Google&apos;s API Services User Data Policy, and relevant data privacy regulations such as FERPA, COPPA, and GDPR where applicable. We are committed to upholding the highest standards of student data privacy.
                 </p>
               </Section>
 
