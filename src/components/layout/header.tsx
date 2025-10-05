@@ -21,11 +21,10 @@ const Header = () => {
           </Link>
 
           <nav className="hidden md:flex items-center gap-8">
-            <a href="#features" className="text-muted-foreground hover:text-foreground transition-colors">Features</a>
-            <a href="#grading" className="text-muted-foreground hover:text-foreground transition-colors">Auto Grading</a>
-            <a href="#reports" className="text-muted-foreground hover:text-foreground transition-colors">Reports</a>
+            <a href="/features" className="text-muted-foreground hover:text-foreground transition-colors">Features</a>
+            <a href="/auto-grading" className="text-muted-foreground hover:text-foreground transition-colors">Auto Grading</a>
             <Link href="/blog" className="text-muted-foreground hover:text-foreground transition-colors">Blog</Link>
-            <a href="#pricing" className="text-muted-foreground hover:text-foreground transition-colors">Pricing</a>
+            <a href="/pricing" className="text-muted-foreground hover:text-foreground transition-colors">Pricing</a>
             <Link href="/contact" className="text-muted-foreground hover:text-foreground transition-colors">Contact</Link>
           </nav>
 

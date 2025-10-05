@@ -80,6 +80,41 @@ function extractMetadataFromFile(filePath: string): Partial<BlogPostMeta> {
   }
 }
 
+/** Try to extract `export const metadata = { ... }` as a typed object. */
+function extractMetaFromFile(filePath: string): Partial<BlogPostMeta> {
+  try {
+    const fileContent = fs.readFileSync(filePath, "utf8");
+    const match = fileContent.match(/export\s+const\s+meta\s*=\s*({[\s\S]*?});/);
+    if (!match) return {};
+
+    const obj = parseObjectLiteral(match[1]);
+    if (obj && typeof obj === "object") {
+      // Many Next files type as `Metadata`; pick the pieces we care about
+      const m = obj as Record<string, unknown>;
+      const meta: Partial<BlogPostMeta> = {};
+
+      if (typeof m.title === "string") meta.title = m.title;
+      if (typeof m.description === "string") meta.description = m.description;
+      if (typeof m.date === "string") meta.date = m.date;
+      if (typeof m.category === "string") meta.category = m.category;
+      if (typeof m.readTime === "string") meta.readTime = m.readTime;
+      if (typeof m.image === "string") meta.image = m.image;
+
+      // Some users embed openGraph or images inside openGraph
+      const og = m.openGraph as Record<string, unknown> | undefined;
+      if (!meta.image && og && Array.isArray(og.images) && og.images.length > 0) {
+        const first = og.images[0] as string | { url?: string };
+        meta.image = typeof first === "string" ? first : (first?.url ?? undefined);
+      }
+
+      return meta;
+    }
+    return {};
+  } catch {
+    return {};
+  }
+}
+
 /** Normalize a folder name into a human title. */
 function titleFromFolder(folder: string): string {
   return folder.replace(/[-_]+/g, " ").replace(/\b\w/g, c => c.toUpperCase());
@@ -128,8 +163,9 @@ export function getAllBlogPosts(): BlogPost[] {
           date: `${year}-${month}`, // e.g., "2024-03"
         };
 
-        const fileMeta = pageFile ? extractMetadataFromFile(pageFile) : {};
-        const meta: BlogPostMeta = { ...baseMeta, ...fileMeta };
+        const fileMetadata = pageFile ? extractMetadataFromFile(pageFile) : {};
+        const fileMeta = pageFile ? extractMetaFromFile(pageFile) : {};
+        const meta: BlogPostMeta = { ...baseMeta, ...fileMeta, ...fileMetadata };
 
         posts.push({
           slug: `${year}/${month}/${postFolder}`,
