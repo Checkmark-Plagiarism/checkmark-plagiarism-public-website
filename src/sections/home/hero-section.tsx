@@ -1,8 +1,8 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
-const heroImage = null;
-const plagiarismReportImage = null;
+const heroImage = '';
+const plagiarismReportImage = '';
 
 const HeroSection = () => {
   return (

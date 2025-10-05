@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Upload, Star, Edit, FileCheck } from "lucide-react";
 import Image from "next/image";
 
-const gradingDashboardImage = null;
+const gradingDashboardImage = '';
 
 const GradingSection = () => {
   const features = [

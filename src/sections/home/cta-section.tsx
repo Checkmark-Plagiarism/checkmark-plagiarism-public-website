@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
-const heroImage = null;
+const heroImage = '';
 
 const CTASection = () => {
   return (
