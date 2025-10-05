@@ -9,18 +9,14 @@ import CTASection from "@/sections/home/cta-section";
 
 export default function Page() {
   return (
-    <div className="min-h-screen bg-background">
-      <Layout>
-        <main>
-          <HeroSection />
-          <HowItWorksSection />
-          <BenefitsSection />
-          <GradingSection />
-          <ReportSection />
-          <PricingSection />
-          <CTASection />
-        </main>
-      </Layout>
-    </div>
+    <main>
+      <HeroSection />
+      <HowItWorksSection />
+      <BenefitsSection />
+      <GradingSection />
+      <ReportSection />
+      <PricingSection />
+      <CTASection />
+    </main>
   );
 }
