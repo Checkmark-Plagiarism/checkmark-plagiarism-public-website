@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   description:
     'Everything teachers need in one place: AI detection, auto‑grading, plagiarism checks, Google Classroom™ and Canvas LMS integrations, and more.',
   openGraph: { images: [''] },
-} as any;
+};
 
 const features = [
   {

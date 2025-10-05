@@ -94,7 +94,7 @@ const Contact = () => {
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold mb-3">Need a Demo?</h3>
                 <p className="text-white/90 mb-4">
-                  See Checkmark in action with a personalized demo tailored to your institution's needs.
+                  See Checkmark in action with a personalized demo tailored to your institution&apos;s needs.
                 </p>
                 <Button variant="secondary" className="w-full">
                   Schedule a Demo

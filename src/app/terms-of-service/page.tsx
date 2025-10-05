@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     'Terms governing the use of the Checkmark Plagiarism add-on for Google Classroom™ and related integrations.',
   openGraph: { images: [''] },
-} as any;
+};
 
 export const meta = {
   title: 'Terms of Service',
