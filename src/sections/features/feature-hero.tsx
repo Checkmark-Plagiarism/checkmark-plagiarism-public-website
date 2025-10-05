@@ -2,9 +2,7 @@
 
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { cn as _cn } from "@/lib/utils"; // optional helper
-// Fallback if you don't have a cn helper:
-const cn = _cn ?? ((...a: any[]) => a.filter(Boolean).join(" "));
+import { cn as _cn } from "@/lib/utils";
 
 type FeatureHeroProps = {
   title: string;
