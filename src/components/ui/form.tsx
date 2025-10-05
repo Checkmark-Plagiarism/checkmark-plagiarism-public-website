@@ -18,7 +18,7 @@ type FormItemContextValue = {
 
 const FormItemContext = React.createContext<FormItemContextValue | null>(null);
 
-export const useFormField = async () => {
+export const useFormField = () => {
   const ctx = React.useContext(FormItemContext);
   if (!ctx) {
     throw new Error("useFormField must be used within <FormItem>");

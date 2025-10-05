@@ -1,26 +1,15 @@
 "use client";
 
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import { cn as _cn } from "@/lib/utils";
+import type { ReactNode } from "react";
+import { cn } from "@/lib/utils";
 
 type FeatureHeroProps = {
-  title: string;
-  subtitle: string;
   className?: string;
-  /**
-   * Background tint overlay.
-   * Accepts Tailwind classes (e.g. "bg-slate-900/10") OR a raw CSS color string.
-   * Examples:
-   *  - bgTint="bg-blue-500/10"
-   *  - bgTint="rgba(2,6,23,0.08)" (raw color)
-   */
   bgTint?: string;
+  children?: ReactNode;
 };
 
 export default function FeatureHero({
-  title,
-  subtitle,
   className,
   bgTint = "bg-blue-300",
   children,

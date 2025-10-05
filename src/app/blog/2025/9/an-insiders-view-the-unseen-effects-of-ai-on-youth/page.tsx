@@ -4,7 +4,6 @@ import Link from 'next/link';
 import { ArrowLeft, Clock, Calendar, User, Share2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import Layout from "@/components/layout/layout";
 
 export const metadata: Metadata = {
   title: "An Insider&apos;s View: The Unseen Effects of AI on Youth",
@@ -16,7 +15,7 @@ export const metadata: Metadata = {
       "",
     ],
   },
-} as any;
+};
 
 // Non-typed mirror for your existing UI expects:
 export const meta = {

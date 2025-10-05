@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Layout from "@/components/layout/layout";
 import { getAllBlogPosts } from "@/lib/blog";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
 export const metadata: Metadata = {
@@ -19,7 +18,7 @@ type PageProps = {
 
 export default async function Page({ searchParams }: PageProps) {
   // if you want to keep using `query`, just alias it:
-  const query = searchParams ?? {};
+  // const query = searchParams ?? {};
 
   const categories = ["All", "Teaching Tips", "Technology", "Education", "Academic Integrity"] as const;
 

@@ -1,4 +1,3 @@
-import Layout from "@/components/layout/layout";
 import HeroSection from "@/sections/home/hero-section";
 import HowItWorksSection from "@/sections/home/how-it-works-section";
 import BenefitsSection from "@/sections/home/benefits-section";

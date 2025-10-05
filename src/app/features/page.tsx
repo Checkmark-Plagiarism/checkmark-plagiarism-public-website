@@ -1,15 +1,13 @@
 import { Metadata } from 'next';
-import Image from 'next/image';
+// import Image from 'next/image';
 import Link from 'next/link';
 import {
-  ArrowLeft,
   Brain,
   Scan,
   GraduationCap,
   PenTool,
   Boxes,
   School,
-  Link as LinkIcon,
   DollarSign,
   ChevronRight,
 } from 'lucide-react';
