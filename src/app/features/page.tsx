@@ -127,7 +127,7 @@ export default function FeaturesPage() {
   return (
     <main>
       {/* Hero */}
-      <FeatureHero>
+      <FeatureHero bgTint="bg-red-200">
         <h1
           id="features-hero"
           className="text-center text-4xl font-bold tracking-tight text-foreground md:text-5xl"

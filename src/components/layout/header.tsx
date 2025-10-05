@@ -39,13 +39,10 @@ const Header = () => {
             <Link href="/features" className="text-muted-foreground hover:text-foreground transition-colors">
               Features
             </Link>
-            <Link href="/auto-grading" className="text-muted-foreground hover:text-foreground transition-colors">
-              Auto Grading
-            </Link>
             <Link href="/blog" className="text-muted-foreground hover:text-foreground transition-colors">
               Blog
             </Link>
-            <Link href="/pricing" className="text-muted-foreground hover:text-foreground transition-colors">
+            <Link href="/features/pricing" className="text-muted-foreground hover:text-foreground transition-colors">
               Pricing
             </Link>
             <Link href="/contact" className="text-muted-foreground hover:text-foreground transition-colors">

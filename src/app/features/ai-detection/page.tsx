@@ -17,7 +17,7 @@ export default function AIDetectionPage() {
   return (
     <main>
       {/* Hero */}
-      <FeatureHero bgTint="bg-blue-500/5">
+      <FeatureHero bgTint="bg-blue-200">
         <h1 className="text-center text-4xl md:text-5xl font-bold tracking-tight text-foreground">
           AI Detection built for real classrooms
         </h1>
