@@ -30,6 +30,8 @@ const Footer = () => {
               <li><a href="#" className="hover:text-foreground transition-colors">Auto Grading</a></li>
               <li><a href="#" className="hover:text-foreground transition-colors">Integrations</a></li>
               <li><a href="#" className="hover:text-foreground transition-colors">Pricing</a></li>
+              <li><a href="#" className="hover:text-foreground transition-colors">Canvas LMS</a></li>
+              <li><a href="#" className="hover:text-foreground transition-colors">Google Classroom</a></li>
             </ul>
           </div>
 
@@ -47,9 +49,9 @@ const Footer = () => {
             <h3 className="font-semibold text-foreground">Company</h3>
             <ul className="space-y-2 text-muted-foreground">
               <li><a href="#" className="hover:text-foreground transition-colors">About</a></li>
-              <li><a href="#" className="hover:text-foreground transition-colors">Blog</a></li>
-              <li><a href="#" className="hover:text-foreground transition-colors">Privacy</a></li>
-              <li><a href="#" className="hover:text-foreground transition-colors">Terms</a></li>
+              <li><a href="/blog" className="hover:text-foreground transition-colors">Blog</a></li>
+              <li><a href="/privacy-policy" className="hover:text-foreground transition-colors">Privacy</a></li>
+              <li><a href="/terms-of-service" className="hover:text-foreground transition-colors">Terms</a></li>
             </ul>
           </div>
         </div>
