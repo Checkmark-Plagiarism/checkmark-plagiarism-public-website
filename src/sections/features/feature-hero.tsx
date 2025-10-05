@@ -17,7 +17,7 @@ export default function FeatureHero({
   return (
     <section
       className={cn(
-        "relative overflow-hidden border-b border-border py-16 md:py-20",
+        "relative overflow-hidden border-b border-border py-16 md:py-20 rounded-2xl",
         className
       )}
       aria-labelledby="features-hero"
