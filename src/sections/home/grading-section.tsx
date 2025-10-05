@@ -41,7 +41,7 @@ const GradingSection = () => {
                 </span>
               </h2>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                AI-powered grading with your rubrics, plus plagiarism detection. Don't spend hours reviewing AI-generated essays.
+                AI-powered grading with your rubrics, plus plagiarism detection. Don&apos;t spend hours reviewing AI-generated essays.
               </p>
             </div>
 
