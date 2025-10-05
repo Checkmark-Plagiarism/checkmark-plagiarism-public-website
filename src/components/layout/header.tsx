@@ -1,5 +1,8 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import Image from "next/image";
+
+const logoImage = '/images/android-chrome-192x192.png';
 
 const Header = () => {
   return (
@@ -7,7 +10,13 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-gradient-primary rounded-lg"></div>
+            <Image
+              src={logoImage}
+              height="35"
+              width="35"
+              alt="Checkmark Plagiarism Logo"
+              className=""
+            />
             <span className="text-xl font-bold text-foreground">Checkmark Plagiarism</span>
           </Link>
 
