@@ -46,7 +46,7 @@ export default async function Page({ searchParams }: PageProps) {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Checkmark Plagiarism Blog
+              Blog
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
               Insights, tips, and best practices for academic integrity, plagiarism detection, and modern teaching methods.
