@@ -2,18 +2,33 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Image from "next/image";
 
-const logoImage = '/images/android-chrome-192x192.png';
+const logoImage = "/images/android-chrome-192x192.png";
 
 const Header = () => {
   return (
-    <div className="bg-background/95 backdrop-blur-sm border-b border-border sticky top-0 z-50">
+    <header
+      className="
+        sticky top-0 z-50
+        border-b border-border
+        /* glass core */
+        bg-background/55 backdrop-blur-lg backdrop-saturate-150
+        /* fallback if no backdrop support: slightly more opaque */
+        supports-[backdrop-filter]:bg-background/45
+      "
+    >
+      {/* subtle glass highlight */}
+      <div className="pointer-events-none absolute inset-0">
+        <div className="absolute inset-x-0 top-0 h-px bg-white/30 dark:bg-white/10" />
+        <div className="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-white/10 to-transparent dark:from-white/5" />
+      </div>
+
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
+        <div className="relative flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
             <Image
               src={logoImage}
-              height="35"
-              width="35"
+              height={35}
+              width={35}
               alt="Checkmark Plagiarism Logo"
               className=""
             />
@@ -21,20 +36,34 @@ const Header = () => {
           </Link>
 
           <nav className="hidden md:flex items-center gap-8">
-            <a href="/features" className="text-muted-foreground hover:text-foreground transition-colors">Features</a>
-            <a href="/auto-grading" className="text-muted-foreground hover:text-foreground transition-colors">Auto Grading</a>
-            <Link href="/blog" className="text-muted-foreground hover:text-foreground transition-colors">Blog</Link>
-            <a href="/pricing" className="text-muted-foreground hover:text-foreground transition-colors">Pricing</a>
-            <Link href="/contact" className="text-muted-foreground hover:text-foreground transition-colors">Contact</Link>
+            <Link href="/features" className="text-muted-foreground hover:text-foreground transition-colors">
+              Features
+            </Link>
+            <Link href="/auto-grading" className="text-muted-foreground hover:text-foreground transition-colors">
+              Auto Grading
+            </Link>
+            <Link href="/blog" className="text-muted-foreground hover:text-foreground transition-colors">
+              Blog
+            </Link>
+            <Link href="/pricing" className="text-muted-foreground hover:text-foreground transition-colors">
+              Pricing
+            </Link>
+            <Link href="/contact" className="text-muted-foreground hover:text-foreground transition-colors">
+              Contact
+            </Link>
           </nav>
 
-          <div className="flex items-center gap-4">
-            <Button variant="ghost">Sign In</Button>
-            <Button variant="hero">Get Started</Button>
+          <div className="flex items-center gap-2">
+            <Button variant="ghost" className="backdrop-blur-0">
+              Sign In
+            </Button>
+            <Button variant="hero" className="shadow-[0_8px_24px_-8px_rgba(0,0,0,0.25)]">
+              Get Started
+            </Button>
           </div>
         </div>
       </div>
-    </div>
+    </header>
   );
 };
 
