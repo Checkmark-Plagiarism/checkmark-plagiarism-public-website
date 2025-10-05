@@ -70,9 +70,11 @@ export default function page() {
             <div className="container mx-auto px-4">
               <div className="max-w-4xl mx-auto">
                 <div className="aspect-video bg-muted rounded-lg overflow-hidden">
-                  <img
+                  <Image
                     src={metadata.image}
                     alt={metadata.title}
+                    height={"250"}
+                    width={"250"}
                     className="w-full h-full object-cover"
                   />
                 </div>
