@@ -1,0 +1,116 @@
+import { Metadata } from 'next';
+import Image from "next/image";
+import Link from 'next/link';
+import { getAllBlogPosts } from "@/lib/blog";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import Layout from "@/components/layout/layout";
+
+export const metadata = {
+    title: 'Checkmark Plagiarism Blogs',
+    description: '',
+    'opengraph-image':'',
+};
+
+export default async function page({ query }) {
+
+  const categories = ["All", "Teaching Tips", "Technology", "Education", "Academic Integrity"];
+
+  const getCategoryVariant = (category: string) => {
+    switch (category) {
+      case "Teaching Tips":
+        return "teaching";
+      case "Technology":
+        return "technology";
+      case "Education":
+        return "education";
+      case "Academic Integrity":
+        return "academic";
+      default:
+        return "outline";
+    }
+  };
+
+  const posts = await getAllBlogPosts();
+
+  return (
+    <div className="min-h-screen bg-background">
+      <Layout>
+        <main>
+          {/* Hero Section */}
+          <section className="bg-gradient-subtle py-16">
+            <div className="container mx-auto px-4">
+              <div className="max-w-3xl mx-auto text-center">
+                <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+                  Checkmark Plagiarism Blog
+                </h1>
+                <p className="text-xl text-muted-foreground mb-8">
+                  Insights, tips, and best practices for academic integrity, plagiarism detection, and modern teaching methods.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          {/* Categories */}
+          <section className="py-8 border-b border-border">
+            <div className="container mx-auto px-4">
+              <div className="flex flex-wrap gap-4 justify-center">
+                {categories.map((category) => (
+                  <Badge
+                    key={category}
+                    variant={getCategoryVariant(category)}
+                    className="px-4 py-2 cursor-pointer transition-all hover:scale-105"
+                  >
+                    {category}
+                  </Badge>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          {/* Blog Posts Grid */}
+          <section className="py-16">
+            <div className="container mx-auto px-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {posts.map((post) => (
+                  <Link
+                    key={post.slug}
+                    href={`/blog/${post.slug}`}
+                    className="group"
+                  >
+                    <Card className="h-full overflow-hidden hover:shadow-medium transition-shadow">
+                      <div className="aspect-video bg-muted overflow-hidden">
+                        {/*<img
+                          src={post.image}
+                          alt={post.title}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        />*/}
+                      </div>
+                      <CardHeader>
+                        <div className="flex items-center gap-2 text-sm text-muted-foreground mb-2">
+                          <Badge variant={getCategoryVariant(post.category)} className="text-xs">
+                            {post.category}
+                          </Badge>
+                          <span>•</span>
+                          <span>{post.date}</span>
+                          <span>•</span>
+                          <span>{post.readTime}</span>
+                        </div>
+                        <CardTitle className="group-hover:text-primary transition-colors">
+                          {post.title}
+                        </CardTitle>
+                        <CardDescription>
+                          {post.description}
+                        </CardDescription>
+                      </CardHeader>
+                    </Card>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        </main>
+      </Layout>
+    </div>
+  );
+}

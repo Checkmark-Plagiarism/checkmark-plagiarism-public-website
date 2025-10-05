@@ -1,3 +1,7 @@
+import Image from "next/image";
+
+const logoImage = '/images/android-chrome-192x192.png';
+
 const Footer = () => {
   return (
     <footer className="bg-muted/50 py-12 border-t border-border">
@@ -5,7 +9,13 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <div className="w-8 h-8 bg-gradient-primary rounded-lg"></div>
+              <Image
+                src={logoImage}
+                height="35"
+                width="35"
+                alt="Checkmark Plagiarism Logo"
+                className=""
+              />
               <span className="text-xl font-bold text-foreground">Checkmark</span>
             </div>
             <p className="text-muted-foreground">
@@ -45,7 +55,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-border mt-8 pt-8 text-center text-muted-foreground">
-          <p>&copy; 2024 Checkmark. All rights reserved.</p>
+          <p>&copy; 2025 Checkmark. All rights reserved.</p>
         </div>
       </div>
     </footer>
