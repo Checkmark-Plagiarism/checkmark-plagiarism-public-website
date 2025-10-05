@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import type { ReactNode } from "react";
 import { cn } from "@/lib/utils";
 
@@ -14,10 +15,18 @@ export default function FeatureHero({
   bgTint = "bg-blue-300",
   children,
 }: FeatureHeroProps) {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    // allow paint, then animate
+    const id = requestAnimationFrame(() => setMounted(true));
+    return () => cancelAnimationFrame(id);
+  }, []);
+
   return (
     <section
       className={cn(
-        "relative overflow-hidden border-b border-border py-16 md:py-20 rounded-2xl",
+        "relative overflow-hidden border-b border-border py-16 md:py-20",
         className
       )}
       aria-labelledby="features-hero"
@@ -28,19 +37,37 @@ export default function FeatureHero({
       {/* GLASS CARD */}
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-5xl">
-          <div className="relative mx-auto rounded-2xl bg-background/40 backdrop-blur-md ring-1 ring-foreground/10 shadow-[0_8px_40px_-12px_rgba(0,0,0,0.25)]">
+          <div
+            className={cn(
+              "relative mx-auto overflow-hidden rounded-2xl bg-background/40 backdrop-blur-md ring-1 ring-foreground/10 shadow-[0_8px_40px_-12px_rgba(0,0,0,0.25)]",
+              // animation classes
+              "transition-all duration-700 ease-out will-change-transform",
+              "opacity-0 translate-y-6",
+              mounted && "opacity-100 translate-y-0",
+              // Slight scale for extra polish on larger screens
+              "md:scale-[0.985]",
+              mounted && "md:scale-100"
+            )}
+          >
             {/* subtle top gradient sheen */}
             <div className="pointer-events-none absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-white/20 to-transparent dark:from-white/5" />
 
-            <div className="relative z-10 p-6 md:p-10">
-              {children}
-            </div>
+            <div className="relative z-10 p-6 md:p-10">{children}</div>
 
             {/* soft bottom vignette */}
             <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-black/5 to-transparent dark:from-black/30" />
           </div>
         </div>
       </div>
+
+      {/* Reduce motion preference */}
+      <style jsx global>{`
+        @media (prefers-reduced-motion: reduce) {
+          .transition-all {
+            transition: none !important;
+          }
+        }
+      `}</style>
     </section>
   );
 }
