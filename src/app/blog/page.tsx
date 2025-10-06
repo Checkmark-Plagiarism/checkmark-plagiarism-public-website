@@ -42,17 +42,37 @@ export default async function Page({ searchParams }: PageProps) {
   return (
     <main>
       {/* Hero Section */}
-      <section className="bg-gradient-subtle py-16">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+      <section className="relative isolate overflow-hidden bg-gradient-to-b from-[#2F58A5] via-[#2A4E93] to-[#1F3E76] py-20">
+        {/* subtle grid / glow */}
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0"
+          style={{
+            background:
+              "radial-gradient(60rem 30rem at 50% -10%, rgba(255,255,255,0.10), transparent 40%), linear-gradient(transparent 0, rgba(255,255,255,0.04) 1px), linear-gradient(90deg, transparent 0, rgba(255,255,255,0.04) 1px)",
+            backgroundSize: "auto, 30px 30px, 30px 30px",
+          }}
+        />
+
+        <div className="container mx-auto px-6">
+          <div className="mx-auto max-w-3xl text-center">
+            <span className="inline-flex items-center rounded-full bg-white/10 px-3 py-1 text-sm font-medium text-white/80 ring-1 ring-white/20 backdrop-blur">
+              Checkmark Plagiarism Blog
+            </span>
+
+            <h1 className="mt-6 text-4xl md:text-5xl font-bold tracking-tight text-white">
               Blog
             </h1>
-            <p className="text-xl text-muted-foreground mb-8">
-              Insights, tips, and best practices for academic integrity, plagiarism detection, and modern teaching methods.
+
+            <p className="mt-4 text-lg md:text-xl text-[#E6ECF3]">
+              Insights, tips, and best practices for academic integrity, plagiarism
+              detection, and modern teaching methods.
             </p>
           </div>
         </div>
+
+        {/* light gray base to echo site palette */}
+        <div className="absolute inset-x-0 bottom-0 h-12 bg-[#E9EEF6]" />
       </section>
 
       {/* Categories */}
