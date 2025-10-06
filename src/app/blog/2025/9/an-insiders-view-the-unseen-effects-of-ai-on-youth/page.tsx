@@ -5,6 +5,8 @@ import { ArrowLeft, Clock, Calendar, User, Share2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
+const heroImage = "/images/blog/an-insiders-view-the-unseen-effects-of-ai-on-youth/hero.jpg";
+
 export const metadata: Metadata = {
   title: "An Insider&apos;s View: The Unseen Effects of AI on Youth",
   description:
@@ -12,7 +14,7 @@ export const metadata: Metadata = {
   keywords: [],
   openGraph: {
     images: [
-      "",
+      heroImage,
     ],
   },
 };
@@ -23,7 +25,7 @@ export const meta = {
   description:
     "We spoke with a team lead from a major California school district about how AI is changing young students—from reliance on ChatGPT to declining confidence and lost foundational skills.",
   "opengraph-image":
-    "",
+    heroImage,
   date: "09-08-2025",
   readTime: "~6 min read",
   category: "Education",
