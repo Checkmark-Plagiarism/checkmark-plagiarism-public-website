@@ -142,7 +142,7 @@ export default function FeaturesPage() {
           <Link href="#features" className="inline-flex">
             <Button size="sm">Explore features</Button>
           </Link>
-          <Link href="/pricing" className="inline-flex">
+          <Link href="/features/pricing" className="inline-flex">
             <Button size="sm" variant="outline">
               See pricing
             </Button>
@@ -220,7 +220,7 @@ export default function FeaturesPage() {
               Start with the features that matter most today—you can add the rest as your needs grow.
             </p>
             <div className="flex items-center justify-center gap-3">
-              <Link href="/pricing">
+              <Link href="/features/pricing">
                 <Button>Get started</Button>
               </Link>
               <Link href="/contact">

@@ -40,7 +40,7 @@ export default function IntegrationsPage() {
           <Link href="#highlights" className="inline-flex">
             <Button size="sm">See highlights</Button>
           </Link>
-          <Link href="/pricing" className="inline-flex">
+          <Link href="/features/pricing" className="inline-flex">
             <Button size="sm" variant="outline">
               Try it at your school
             </Button>
@@ -244,7 +244,7 @@ export default function IntegrationsPage() {
               Bring SSO, Google Docs, Microsoft Word, Drive, and OneDrive into a single integrity workflow.
             </p>
             <div className="mt-6 flex items-center justify-center gap-3">
-              <Link href="/pricing">
+              <Link href="/features/pricing">
                 <Button>
                   Get started <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>

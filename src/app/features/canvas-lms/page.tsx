@@ -39,7 +39,7 @@ export default function CanvasLMSPage() {
           <Link href="#how-it-works" className="inline-flex">
             <Button size="sm">See how it works</Button>
           </Link>
-          <Link href="/pricing" className="inline-flex">
+          <Link href="/features/pricing" className="inline-flex">
             <Button size="sm" variant="outline">
               Try it at your school
             </Button>
@@ -224,7 +224,7 @@ export default function CanvasLMSPage() {
               Bring AI detection, plagiarism checks, and auto-grading into the Canvas workflow your teachers already love.
             </p>
             <div className="mt-6 flex items-center justify-center gap-3">
-              <Link href="/pricing">
+              <Link href="/features/pricing">
                 <Button>
                   Get started <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>

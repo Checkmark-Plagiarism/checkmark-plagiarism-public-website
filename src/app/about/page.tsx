@@ -65,7 +65,7 @@ export default function TeamPage() {
             <Link href="/contact" className="inline-flex">
               <Button size="sm">Contact us</Button>
             </Link>
-            <Link href="/pricing" className="inline-flex">
+            <Link href="/features/pricing" className="inline-flex">
               <Button size="sm" variant="outline">
                 Try it at your school
               </Button>
@@ -104,7 +104,7 @@ export default function TeamPage() {
                   Read our Privacy Policy
                 </Button>
               </Link>
-              <Link href="/pricing">
+              <Link href="/features/pricing">
                 <Button>Get started</Button>
               </Link>
             </div>
