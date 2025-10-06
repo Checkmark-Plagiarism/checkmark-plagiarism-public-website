@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 
 // Non-typed mirror for your existing UI expects:
 export const meta = {
-  title: "An Insider&apos;s View: The Unseen Effects of AI on Youth",
+  title: "An Insider's View: The Unseen Effects of AI on Youth",
   description:
     "We spoke with a team lead from a major California school district about how AI is changing young students—from reliance on ChatGPT to declining confidence and lost foundational skills.",
   "opengraph-image":

@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Upload, Star, Edit, FileCheck } from "lucide-react";
 import Image from "next/image";
 
-const gradingDashboardImage = '';
+const gradingDashboardImage = '/images/home/example_dashboard.jpg';
 
 const GradingSection = () => {
   const features = [
@@ -75,8 +75,8 @@ const GradingSection = () => {
             <div className="bg-card rounded-2xl shadow-large overflow-hidden border">
               <Image
                 src={gradingDashboardImage}
-                height="80"
-                width="80"
+                height="500"
+                width="500"
                 alt="Grading dashboard interface"
                 className="w-full h-auto"
               />

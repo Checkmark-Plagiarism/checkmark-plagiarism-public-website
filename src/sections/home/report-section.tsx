@@ -1,7 +1,8 @@
 import { Play, FileText, Eye } from "lucide-react";
 import Image from "next/image";
 
-const plagiarismReportImage = "";
+const plagiarismReportImage = "/images/home/example_report.jpg";
+
 const ReportSection = () => {
   return (
     <section className="py-20 bg-muted/30">
@@ -13,8 +14,8 @@ const ReportSection = () => {
                 src={plagiarismReportImage} 
                 alt="Plagiarism report interface" 
                 className="w-full h-auto"
-                height={"50"}
-                width={"50"}
+                height={"500"}
+                width={"500"}
               />
             </div>
             
