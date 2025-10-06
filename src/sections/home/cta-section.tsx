@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 const heroImage = '/images/home/example_screen.jpg';
 
@@ -25,9 +26,11 @@ const CTASection = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="hero" size="lg" className="text-lg px-8 py-6 h-auto">
-                Contact Us
-              </Button>
+              <Link href="/contact" className="hover:cursor-pointer">
+                <Button variant="hero" size="lg" className="text-lg px-8 py-6 h-auto hover:cursor-pointer">
+                  Contact Us
+                </Button>
+              </Link>
               <Button variant="outline" size="lg" className="text-lg px-8 py-6 h-auto">
                 Schedule Demo
               </Button>

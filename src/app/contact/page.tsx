@@ -47,7 +47,12 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground">Email Support</h3>
-                    <p className="text-muted-foreground">support@checkmarkplagiarism.com</p>
+                    <a
+                      href="mailto:support@checkmarkplagiarism.com"
+                      className="text-muted-foreground underline"
+                    >
+                      support@checkmarkplagiarism.com
+                    </a>
                     <p className="text-sm text-muted-foreground mt-1">
                       We typically respond within 24 hours
                     </p>
