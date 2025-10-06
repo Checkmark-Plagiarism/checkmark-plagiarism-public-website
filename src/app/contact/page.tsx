@@ -13,7 +13,7 @@ const Contact = () => {
             Contact Us
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Have questions about Checkmark? We&apos;re here to help! Reach out to learn more about our academic integrity solutions.
+            Have questions about Checkmark Plagiarism? We&apos;re here to help! Reach out to learn more about our academic integrity solutions.
           </p>
         </div>
 
@@ -47,36 +47,9 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground">Email Support</h3>
-                    <p className="text-muted-foreground">support@checkmark.edu</p>
+                    <p className="text-muted-foreground">support@checkmarkplagiarism.com</p>
                     <p className="text-sm text-muted-foreground mt-1">
                       We typically respond within 24 hours
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 bg-secondary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Phone className="w-5 h-5 text-secondary" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-foreground">Phone Support</h3>
-                    <p className="text-muted-foreground">1-800-CHECKMARK</p>
-                    <p className="text-sm text-muted-foreground mt-1">
-                      Monday - Friday, 9 AM - 5 PM EST
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <MapPin className="w-5 h-5 text-accent" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-foreground">Office</h3>
-                    <p className="text-muted-foreground">
-                      123 Education Way<br />
-                      Innovation District<br />
-                      Boston, MA 02115
                     </p>
                   </div>
                 </div>
