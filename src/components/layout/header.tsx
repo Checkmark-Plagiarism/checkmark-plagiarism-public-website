@@ -54,9 +54,11 @@ const Header = () => {
             <Button variant="ghost" className="backdrop-blur-0">
               Sign In
             </Button>
-            <Button variant="hero" className="shadow-[0_8px_24px_-8px_rgba(0,0,0,0.25)]">
-              Get Started
-            </Button>
+            <Link href="/contact" className="hover:cursor-pointer">
+              <Button variant="hero" className="shadow-[0_8px_24px_-8px_rgba(0,0,0,0.25)] hover:cursor-pointer">
+                Get Started
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
