@@ -38,7 +38,7 @@ export default async function Page({ searchParams }: PageProps) {
   };
 
   const posts = await getAllBlogPosts();
-
+console.log(posts);
   return (
     <main>
       {/* Hero Section */}

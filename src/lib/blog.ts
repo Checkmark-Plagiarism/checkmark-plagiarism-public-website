@@ -60,9 +60,6 @@ function extractMetadataFromFile(filePath: string): Partial<BlogPostMeta> {
 
       if (typeof m.title === "string") meta.title = m.title;
       if (typeof m.description === "string") meta.description = m.description;
-      if (typeof m.date === "string") meta.date = m.date;
-      if (typeof m.category === "string") meta.category = m.category;
-      if (typeof m.readTime === "string") meta.readTime = m.readTime;
       if (typeof m.image === "string") meta.image = m.image;
 
       // Some users embed openGraph or images inside openGraph

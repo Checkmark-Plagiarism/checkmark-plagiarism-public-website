@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
-const heroImage = '';
+const heroImage = '/images/home/example_screen.jpg';
 
 const CTASection = () => {
   return (
@@ -49,8 +49,8 @@ const CTASection = () => {
             <div className="rounded-2xl overflow-hidden shadow-large">
               <Image
                 src={heroImage}
-                height="80"
-                width="80"
+                height="500"
+                width="500"
                 alt="Friendly teacher in classroom"
                 className="w-full h-auto"
               />

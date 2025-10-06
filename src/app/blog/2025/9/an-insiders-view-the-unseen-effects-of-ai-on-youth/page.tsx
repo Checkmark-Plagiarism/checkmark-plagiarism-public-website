@@ -5,27 +5,24 @@ import { ArrowLeft, Clock, Calendar, User, Share2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
-const heroImage = "/images/blog/an-insiders-view-the-unseen-effects-of-ai-on-youth/hero.jpg";
-
 export const metadata: Metadata = {
-  title: "An Insider&apos;s View: The Unseen Effects of AI on Youth",
+  title: "An Insider's View: The Unseen Effects of AI on Youth",
   description:
     "We spoke with a team lead from a major California school district about how AI is changing young students—from reliance on ChatGPT to declining confidence and lost foundational skills.",
   keywords: [],
   openGraph: {
     images: [
-      heroImage,
+      "/images/blog/an-insiders-view-the-unseen-effects-of-ai-on-youth/hero.jpg",
     ],
   },
 };
 
-// Non-typed mirror for your existing UI expects:
 export const meta = {
   title: "An Insider's View: The Unseen Effects of AI on Youth",
   description:
     "We spoke with a team lead from a major California school district about how AI is changing young students—from reliance on ChatGPT to declining confidence and lost foundational skills.",
   "opengraph-image":
-    heroImage,
+    "/images/blog/an-insiders-view-the-unseen-effects-of-ai-on-youth/hero.jpg",
   date: "09-08-2025",
   readTime: "~6 min read",
   category: "Education",
