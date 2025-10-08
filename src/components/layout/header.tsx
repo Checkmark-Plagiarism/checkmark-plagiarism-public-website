@@ -51,7 +51,7 @@ const Header = () => {
           </nav>
 
           <div className="flex items-center gap-2">
-            <a href="https://teach.checkmarkplagiarism.com" variant="ghost" className="backdrop-blur-0 mr-5">
+            <a href="https://teach.checkmarkplagiarism.com" className="backdrop-blur-0 mr-5">
               Sign In
             </a>
             <LinkButton href="/contact" variant="hero" className="shadow-[0_8px_24px_-8px_rgba(0,0,0,0.25)] hover:cursor-pointer">
