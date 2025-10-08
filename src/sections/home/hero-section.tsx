@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const heroImage = '/images/home/hero.png';
-const plagiarismReportImage = '/images/home/example_report.jpg';
+const plagiarismReportImage = '/images/home/output.gif';
 
 const HeroSection = () => {
   return (
