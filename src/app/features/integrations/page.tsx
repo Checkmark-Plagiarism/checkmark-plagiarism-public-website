@@ -224,9 +224,7 @@ export default function IntegrationsPage() {
           </div>
 
           <div className="mt-8 text-center">
-            <Link href="/privacy-policy">
-              <Button variant="outline">Read our Privacy Policy</Button>
-            </Link>
+            <LinkButton href="/privacy-policy" variant="outline">Read our Privacy Policy</LinkButton>
           </div>
         </div>
       </section>
