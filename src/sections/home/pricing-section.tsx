@@ -158,11 +158,6 @@ const PricingSection = () => {
           })}
         </div>
 
-        <div className="text-center mt-12">
-          <p className="text-muted-foreground">
-            All plans include a 14-day free trial. No credit card required.
-          </p>
-        </div>
       </div>
     </section>
   );

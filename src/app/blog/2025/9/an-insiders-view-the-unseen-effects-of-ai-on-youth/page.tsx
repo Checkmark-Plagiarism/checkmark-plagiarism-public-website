@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   keywords: [],
   openGraph: {
     images: [
-      "/images/blog/an-insiders-view-the-unseen-effects-of-ai-on-youth/hero.jpg",
+      "https://public.checkmarkplagiarism.com/images/blog/an-insiders-view-the-unseen-effects-of-ai-on-youth/hero.jpg",
     ],
   },
 };
