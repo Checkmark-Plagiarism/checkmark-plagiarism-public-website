@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Mail, MapPin, Phone } from "lucide-react";
+import ContactForm from "@/sections/contact/contact-form";
 
 const Contact = () => {
 
@@ -27,7 +28,7 @@ const Contact = () => {
               </CardDescription>
             </CardHeader>
             <CardContent>
-
+              <ContactForm/>
             </CardContent>
           </Card>
 
