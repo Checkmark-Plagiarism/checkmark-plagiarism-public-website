@@ -11,22 +11,39 @@ const ContactSchema = z.object({
   token: z.string().min(1),
 });
 
-async function verifyTurnstile(token: string, ip?: string) {
+async function verifyTurnstile(token: string) {
   const secret = process.env.TURNSTILE_SECRET_KEY;
-  if (!secret) return false;
+  if (!secret) {
+    console.error("TURNSTILE_SECRET_KEY is missing");
+    return { ok: false, reason: "missing-secret" };
+  }
 
   const body = new URLSearchParams();
   body.append("secret", secret);
   body.append("response", token);
-  if (ip) body.append("remoteip", ip);
 
   const r = await fetch("https://challenges.cloudflare.com/turnstile/v0/siteverify", {
     method: "POST",
+    headers: { "content-type": "application/x-www-form-urlencoded" },
     body,
   });
-  const data = (await r.json()) as { success: boolean };
-  return data.success === true;
+
+  const data = await r.json() as {
+    success: boolean;
+    // Turnstile returns helpful fields:
+    // "error-codes"?: string[];
+    // "hostname"?: string;
+    // "action"?: string;
+    // "cdata"?: string;
+  };
+
+  if (!data.success) {
+    console.error("Turnstile verify failed:", data); // <- check your server logs
+    return { ok: false, reason: "verify-failed" };
+  }
+  return { ok: true, reason: "ok" };
 }
+
 
 export async function POST(req: Request) {
   try {
