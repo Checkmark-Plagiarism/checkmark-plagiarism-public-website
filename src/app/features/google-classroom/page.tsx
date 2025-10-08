@@ -11,7 +11,7 @@ import {
   BarChart3,
   ArrowRight,
 } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { LinkButton } from "@/components/ui/link";
 import { Card, CardContent } from "@/components/ui/card";
 import FeatureHero from "@/sections/features/feature-hero";
 
@@ -36,14 +36,10 @@ export default function GoogleClassroomPage() {
         </p>
 
         <div className="mt-6 flex flex-wrap justify-center gap-3">
-          <Link href="#how-it-works" className="inline-flex">
-            <Button size="sm">See how it works</Button>
-          </Link>
-          <Link href="/features/pricing" className="inline-flex">
-            <Button size="sm" variant="outline">
-              Try it at your school
-            </Button>
-          </Link>
+          <LinkButton href="#how-it-works" size="sm">See how it works</LinkButton>
+          <LinkButton href="/features/pricing" size="sm" variant="outline">
+            Try it at your school
+          </LinkButton>
         </div>
       </FeatureHero>
 
@@ -216,14 +212,10 @@ export default function GoogleClassroomPage() {
               Bring AI detection, plagiarism checks, and auto-grading into the Google Classroom™ workflow.
             </p>
             <div className="mt-6 flex items-center justify-center gap-3">
-              <Link href="/features/pricing">
-                <Button>
-                  Get started <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </Link>
-              <Link href="/contact">
-                <Button variant="outline">Talk to sales</Button>
-              </Link>
+              <LinkButton href="/features/pricing">
+                Get started <ArrowRight className="ml-2 h-4 w-4" />
+              </LinkButton>
+              <LinkButton href="/contact" variant="outline">Talk to sales</LinkButton>
             </div>
           </div>
         </div>

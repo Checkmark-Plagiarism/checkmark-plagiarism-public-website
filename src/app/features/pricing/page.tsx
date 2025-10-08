@@ -1,7 +1,6 @@
 import { Metadata } from "next";
-import Link from "next/link";
 import { Check, ArrowRight, Building2, GraduationCap, School, HelpCircle, ShieldCheck, Zap, Users } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { LinkButton } from "@/components/ui/link";
 import { Card, CardContent } from "@/components/ui/card";
 import FeatureHero from "@/sections/features/feature-hero";
 
@@ -26,12 +25,8 @@ export default function PricingPage() {
         </p>
 
         <div className="mt-6 flex flex-wrap justify-center gap-3">
-          <Link href="#plans" className="inline-flex">
-            <Button size="sm">See plans</Button>
-          </Link>
-          <Link href="/contact" className="inline-flex">
-            <Button size="sm" variant="outline">Talk to sales</Button>
-          </Link>
+          <LinkButton href="#plans" size="sm">See plans</LinkButton>
+          <LinkButton href="/contact" size="sm" variant="outline">Talk to sales</LinkButton>
         </div>
       </FeatureHero>
 
@@ -133,7 +128,7 @@ export default function PricingPage() {
                       {[row[1], row[2], row[3]].map((v, j) => (
                         <td key={j} className="py-3 px-4">
                           {v === true ? (
-                            <span className="inline-flex items-center gap-2 text-emerald-700 dark:text-emerald-300">
+                            <span className="inline-flex items-center gap-2 text-green-700 dark:text-emerald-300">
                               <Check className="h-4 w-4" /> Included
                             </span>
                           ) : typeof v === "string" ? (
@@ -150,9 +145,7 @@ export default function PricingPage() {
             </div>
 
             <div className="mt-8 text-center">
-              <Link href="/contact">
-                <Button variant="outline">Ask about site-wide licensing</Button>
-              </Link>
+              <LinkButton href="/contact" variant="outline">Ask about site-wide licensing</LinkButton>
             </div>
           </div>
         </div>
@@ -195,9 +188,7 @@ export default function PricingPage() {
             </div>
 
             <div className="mt-8 text-center">
-              <Link href="/privacy-policy">
-                <Button variant="outline">Read our Privacy Policy</Button>
-              </Link>
+              <LinkButton href="/privacy-policy" variant="outline">Read our Privacy Policy</LinkButton>
             </div>
           </div>
         </div>
@@ -212,14 +203,10 @@ export default function PricingPage() {
               Start with a pilot and scale confidently—no surprises.
             </p>
             <div className="mt-6 flex items-center justify-center gap-3">
-              <Link href="/contact">
-                <Button>
-                  Request a quote <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </Link>
-              <Link href="/features">
-                <Button variant="outline">Explore features</Button>
-              </Link>
+              <LinkButton href="/contact">
+                Request a quote <ArrowRight className="ml-2 h-4 w-4" />
+              </LinkButton>
+              <LinkButton href="/features" variant="outline">Explore features</LinkButton>
             </div>
           </div>
         </div>
@@ -284,9 +271,7 @@ function Plan({
         </ul>
 
         <div className="mt-6">
-          <Link href={cta.href}>
-            <Button className="w-full">{cta.label}</Button>
-          </Link>
+          <LinkButton href={cta.href} className="w-full">{cta.label}</LinkButton>
         </div>
       </CardContent>
     </Card>

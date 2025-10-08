@@ -11,9 +11,10 @@ import {
   DollarSign,
   ChevronRight,
 } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { LinkButton } from '@/components/ui/link';
 import { Card, CardContent } from '@/components/ui/card';
 import FeatureHero from "@/sections/features/feature-hero";
+import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: 'Features — Checkmark Plagiarism',
@@ -115,10 +116,10 @@ const features = [
     icon: DollarSign,
     tag: 'Plans',
     colors: {
-      header: 'from-slate-600/30 via-slate-500/25 to-transparent',
-      ring: 'ring-slate-300/60 dark:ring-slate-800/60',
-      accentText: 'text-slate-700 dark:text-slate-300',
-      badge: 'bg-slate-600/15',
+      header: 'from-stone-600/30 via-stone-500/25 to-transparent',
+      ring: 'ring-stone-300/60 dark:ring-stone-800/60',
+      accentText: 'text-stone-700 dark:text-stone-300',
+      badge: 'bg-stone-600/15',
     },
   },
 ];
@@ -139,14 +140,10 @@ export default function FeaturesPage() {
         </p>
 
         <div className="mt-6 justify-center flex flex-wrap gap-3">
-          <Link href="#features" className="inline-flex">
-            <Button size="sm">Explore features</Button>
-          </Link>
-          <Link href="/features/pricing" className="inline-flex">
-            <Button size="sm" variant="outline">
-              See pricing
-            </Button>
-          </Link>
+          <LinkButton href="#features" size="sm">Explore features</LinkButton>
+          <LinkButton href="/features/pricing" size="sm" variant="outline">
+            See pricing
+          </LinkButton>
         </div>
       </FeatureHero>
 
@@ -156,31 +153,62 @@ export default function FeaturesPage() {
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {features.map((f) => (
-                <Link key={f.slug} href={f.slug} className="group">
-                  <Card className={`h-full overflow-hidden transition-all hover:shadow-medium hover:scale-105 transition-all ring-1 ${f.colors.ring}`}>
+                <Link
+                  key={f.slug}
+                  href={f.slug}
+                  className="group block h-full focus:outline-none rounded-xl"
+                >
+                  {/* the element that actually animates */}
+                  <div
+                    className={cn(
+                      "h-full rounded-xl ring-1 overflow-hidden bg-background", // bg so shadow is visible
+                      "transform-gpu will-change-transform transition-all duration-300 ease-out",
+                      "hover:shadow-xl hover:scale-[1.03] focus-within:shadow-xl", // standard Tailwind shadows
+                      f.colors.ring
+                    )}
+                  >
                     {/* Transparent header band with unique color */}
                     <CardHeaderGradient icon={f.icon} gradient={f.colors.header} />
 
                     <CardContent className="p-6 pt-4 h-full flex flex-col">
                       <div className="flex items-center justify-between mb-3">
-                        <div className={`inline-flex items-center gap-2 px-2 py-1 rounded-full ${f.colors.badge} ${f.colors.accentText} text-xs`}>
+                        <div
+                          className={cn(
+                            "inline-flex items-center gap-2 px-2 py-1 rounded-full text-xs transition-colors",
+                            f.colors.badge,
+                            f.colors.accentText
+                          )}
+                        >
                           <span className="h-2 w-2 rounded-full bg-current/60" />
                           <span>{f.tag}</span>
                         </div>
-                        <ChevronRight className="h-4 w-4 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity" />
+
+                        <ChevronRight
+                          className="h-4 w-4 text-muted-foreground opacity-0 -translate-x-0.5
+                                     transition-all duration-200
+                                     group-hover:opacity-100 group-hover:translate-x-0"
+                          aria-hidden="true"
+                        />
                       </div>
-                      <h3 className={`text-lg font-semibold mb-2 group-hover:text-primary transition-colors`}>
+
+                      <h3 className="text-lg font-semibold mb-2 transition-colors group-hover:text-primary">
                         {f.title}
                       </h3>
-                      <p className="text-sm text-muted-foreground">
-                        {f.blurb}
-                      </p>
-                      <div className={`mt-4 inline-flex items-center text-sm ${f.colors.accentText} group-hover:underline underline-offset-4`}>
+
+                      <p className="text-sm text-muted-foreground">{f.blurb}</p>
+
+                      <div
+                        className={cn(
+                          "mt-4 inline-flex items-center text-sm underline-offset-4 transition-[color,opacity,transform]",
+                          f.colors.accentText,
+                          "group-hover:underline"
+                        )}
+                      >
                         Learn more
-                        <ChevronRight className="ml-1 h-4 w-4" />
+                        <ChevronRight className="ml-1 h-4 w-4" aria-hidden="true" />
                       </div>
                     </CardContent>
-                  </Card>
+                  </div>
                 </Link>
               ))}
             </div>
@@ -220,12 +248,8 @@ export default function FeaturesPage() {
               Start with the features that matter most today—you can add the rest as your needs grow.
             </p>
             <div className="flex items-center justify-center gap-3">
-              <Link href="/features/pricing">
-                <Button>Get started</Button>
-              </Link>
-              <Link href="/contact">
-                <Button variant="outline">Talk to sales</Button>
-              </Link>
+              <LinkButton href="/features/pricing">Get started</LinkButton>
+              <LinkButton href="/contact" variant="outline">Talk to sales</LinkButton>
             </div>
           </div>
         </div>

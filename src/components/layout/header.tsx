@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { LinkButton } from "@/components/ui/link";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -36,29 +36,27 @@ const Header = () => {
           </Link>
 
           <nav className="hidden md:flex items-center gap-8">
-            <Link href="/features" className="text-muted-foreground hover:text-foreground transition-colors">
+            <Link href="/features" className="text-muted-background hover:text-foreground transition-colors">
               Features
             </Link>
-            <Link href="/blog" className="text-muted-foreground hover:text-foreground transition-colors">
+            <Link href="/blog" className="text-muted-background hover:text-foreground transition-colors">
               Blog
             </Link>
-            <Link href="/features/pricing" className="text-muted-foreground hover:text-foreground transition-colors">
+            <Link href="/features/pricing" className="text-muted-background hover:text-foreground transition-colors">
               Pricing
             </Link>
-            <Link href="/contact" className="text-muted-foreground hover:text-foreground transition-colors">
+            <Link href="/contact" className="text-muted-background hover:text-foreground transition-colors">
               Contact
             </Link>
           </nav>
 
           <div className="flex items-center gap-2">
-            <Button variant="ghost" className="backdrop-blur-0">
+            <a href="https://teach.checkmarkplagiarism.com" variant="ghost" className="backdrop-blur-0 mr-5">
               Sign In
-            </Button>
-            <Link href="/contact" className="hover:cursor-pointer">
-              <Button variant="hero" className="shadow-[0_8px_24px_-8px_rgba(0,0,0,0.25)] hover:cursor-pointer">
-                Get Started
-              </Button>
-            </Link>
+            </a>
+            <LinkButton href="/contact" variant="hero" className="shadow-[0_8px_24px_-8px_rgba(0,0,0,0.25)] hover:cursor-pointer">
+              Get Started
+            </LinkButton>
           </div>
         </div>
       </div>

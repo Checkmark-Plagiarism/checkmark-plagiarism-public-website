@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { LinkButton } from "@/components/ui/link";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -24,14 +24,12 @@ const HeroSection = () => {
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/contact" className="hover:cursor-pointer">
-                <Button variant="hero" size="lg" className="text-lg px-8 py-6 h-auto hover:cursor-pointer">
-                  Get Started Today
-                </Button>
-              </Link>
-              <Button variant="outline" size="lg" className="text-lg px-8 py-6 h-auto">
+              <LinkButton href="/contact" variant="hero" size="lg" className="text-lg px-8 py-6 h-auto hover:cursor-pointer">
+                Get Started Today
+              </LinkButton>
+              <LinkButton href="/demo" variant="outline" size="lg" className="text-lg px-8 py-6 h-auto">
                 Watch Demo
-              </Button>
+              </LinkButton>
             </div>
           </div>
 

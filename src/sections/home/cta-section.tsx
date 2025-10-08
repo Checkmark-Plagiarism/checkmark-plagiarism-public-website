@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { LinkButton } from "@/components/ui/link";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -26,14 +26,12 @@ const CTASection = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/contact" className="hover:cursor-pointer">
-                <Button variant="hero" size="lg" className="text-lg px-8 py-6 h-auto hover:cursor-pointer">
-                  Contact Us
-                </Button>
-              </Link>
-              <Button variant="outline" size="lg" className="text-lg px-8 py-6 h-auto">
+              <LinkButton href="/contact" variant="hero" size="lg" className="text-lg px-8 py-6 h-auto hover:cursor-pointer">
+                Contact Us
+              </LinkButton>
+              <LinkButton href="/contact" variant="outline" size="lg" className="text-lg px-8 py-6 h-auto">
                 Schedule Demo
-              </Button>
+              </LinkButton>
             </div>
 
             <div className="flex items-center gap-4 text-sm text-muted-foreground">

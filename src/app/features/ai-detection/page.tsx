@@ -2,7 +2,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { ShieldCheck, History, ScanText, Fingerprint, BarChart3, CheckCircle2, ArrowRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { LinkButton } from "@/components/ui/link";
 import { Card, CardContent } from "@/components/ui/card";
 import FeatureHero from "@/sections/features/feature-hero";
 
@@ -28,14 +28,10 @@ export default function AIDetectionPage() {
         </p>
 
         <div className="mt-6 flex flex-wrap justify-center gap-3">
-          <Link href="#process" className="inline-flex">
-            <Button size="sm">See the process</Button>
-          </Link>
-          <Link href="/features/pricing" className="inline-flex">
-            <Button size="sm" variant="outline">
-              Try it at your school
-            </Button>
-          </Link>
+          <LinkButton href="#process" size="sm">See the process</LinkButton>
+          <LinkButton href="/features/pricing" size="sm" variant="outline">
+            Try it at your school
+          </LinkButton>
         </div>
       </FeatureHero>
 
@@ -192,9 +188,7 @@ export default function AIDetectionPage() {
             </div>
 
             <div className="mt-10 flex justify-center">
-              <Link href="/privacy-policy">
-                <Button variant="outline">Read our Privacy Policy</Button>
-              </Link>
+              <LinkButton href="/privacy-policy" variant="outline">Read our Privacy Policy</LinkButton>
             </div>
           </div>
         </div>
@@ -209,14 +203,10 @@ export default function AIDetectionPage() {
               Bring AI detection, plagiarism checks, and auto-grading into the tools you already use.
             </p>
             <div className="mt-6 flex items-center justify-center gap-3">
-              <Link href="/features/pricing">
-                <Button>
-                  Get started <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </Link>
-              <Link href="/contact">
-                <Button variant="outline">Talk to sales</Button>
-              </Link>
+              <LinkButton href="/features/pricing">
+                Get started <ArrowRight className="ml-2 h-4 w-4" />
+              </LinkButton>
+              <LinkButton href="/contact" variant="outline">Talk to sales</LinkButton>
             </div>
           </div>
         </div>

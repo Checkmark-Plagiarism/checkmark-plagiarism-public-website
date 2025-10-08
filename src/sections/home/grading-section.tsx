@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+// import { LinkButton } from "@/components/ui/link";
 import { Upload, Star, Edit, FileCheck } from "lucide-react";
 import Image from "next/image";
 
@@ -66,9 +66,9 @@ const GradingSection = () => {
               })}
             </div>
 
-            <Button variant="hero" size="lg" className="mt-8">
+            {/*<Button variant="hero" size="lg" className="mt-8">
               Try Grading Demo
-            </Button>
+            </Button>*/}
           </div>
 
           <div className="relative">
