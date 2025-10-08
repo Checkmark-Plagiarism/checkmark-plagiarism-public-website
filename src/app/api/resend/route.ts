@@ -61,7 +61,7 @@ export async function POST(req: Request) {
     const verify = await verifyTurnstile(token, ip);
     if (!verify.ok) {
       return NextResponse.json(
-        { ok: false, error: "Captcha failed.", verify: verify.data },
+        { ok: false, error: "Captcha failed.", verify: "data" },
         { status: 400 }
       );
     }
@@ -77,7 +77,7 @@ export async function POST(req: Request) {
       to,
       subject,
       text,
-      replyTo: email, // <-- correct casing
+      replyTo: email,
     });
 
     if (error) {
