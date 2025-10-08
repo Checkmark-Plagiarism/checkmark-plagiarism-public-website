@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import { Resend } from "resend";
 import { z } from "zod";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = new Resend(process.env.RESEND_API_KEY ?? "");
 
 const ContactSchema = z.object({
   name: z.string().min(1).max(100),
@@ -11,7 +11,7 @@ const ContactSchema = z.object({
   token: z.string().min(1),
 });
 
-async function verifyTurnstile(token: string, ip?: string | null) {
+async function verifyTurnstile(token: string, ip?: string) {
   const secret = process.env.TURNSTILE_SECRET_KEY;
   if (!secret) return false;
 
@@ -30,29 +30,25 @@ async function verifyTurnstile(token: string, ip?: string | null) {
 
 export async function POST(req: Request) {
   try {
+    // Derive IP from common proxy headers (no `any` cast)
+    const fwd = req.headers.get("x-forwarded-for") ?? "";
     const ip =
-      req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ??
-      (req as any).ip ??
-      null;
+      fwd.split(",")[0]?.trim() ||
+      req.headers.get("x-real-ip") ||
+      undefined;
 
     const json = await req.json();
     const parsed = ContactSchema.safeParse(json);
     if (!parsed.success) {
-      return NextResponse.json(
-        { ok: false, error: "Invalid input." },
-        { status: 400 }
-      );
+      return NextResponse.json({ ok: false, error: "Invalid input." }, { status: 400 });
     }
 
     const { name, email, message, token } = parsed.data;
 
-    // Verify CAPTCHA first
+    // Verify CAPTCHA
     const captchaOk = await verifyTurnstile(token, ip);
     if (!captchaOk) {
-      return NextResponse.json(
-        { ok: false, error: "Captcha failed." },
-        { status: 400 }
-      );
+      return NextResponse.json({ ok: false, error: "Captcha failed." }, { status: 400 });
     }
 
     // Send email
@@ -66,18 +62,15 @@ export async function POST(req: Request) {
       to,
       subject,
       text,
-      reply_to: email,
+      reply_to: email, // Resend supports `reply_to`
     });
 
     if (error) {
-      return NextResponse.json(
-        { ok: false, error: "Email failed." },
-        { status: 500 }
-      );
+      return NextResponse.json({ ok: false, error: "Email failed." }, { status: 500 });
     }
 
     return NextResponse.json({ ok: true });
-  } catch (e) {
+  } catch {
     return NextResponse.json({ ok: false, error: "Server error." }, { status: 500 });
   }
 }
