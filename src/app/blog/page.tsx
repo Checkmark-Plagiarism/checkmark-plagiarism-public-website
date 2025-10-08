@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { getAllBlogPosts } from "@/lib/blog";
 import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -69,7 +70,13 @@ console.log(posts);
             {posts.map((post) => (
               <Link key={post.slug} href={`/blog/${post.slug}`} className="group">
                 <Card className="h-full overflow-hidden hover:shadow-medium transition-shadow">
-                  <div className="aspect-video bg-muted overflow-hidden" />
+                  <Image
+                    src={post.image}
+                    alt={post.title}
+                    className="aspect-video bg-muted overflow-hidden"
+                    height={"250"}
+                    width={"450"}
+                  />
                   <CardHeader>
                     <div className="flex items-center gap-2 text-sm text-muted-foreground mb-2">
                       <Badge variant={getCategoryVariant(post.category)} className="text-xs">

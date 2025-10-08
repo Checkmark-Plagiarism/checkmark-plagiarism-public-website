@@ -62,12 +62,11 @@ function extractMetadataFromFile(filePath: string): Partial<BlogPostMeta> {
       if (typeof m.description === "string") meta.description = m.description;
       if (typeof m.image === "string") meta.image = m.image;
 
-      // Some users embed openGraph or images inside openGraph
-      const og = m.openGraph as Record<string, unknown> | undefined;
-      if (!meta.image && og && Array.isArray(og.images) && og.images.length > 0) {
-        const first = og.images[0] as string | { url?: string };
-        meta.image = typeof first === "string" ? first : (first?.url ?? undefined);
-      }
+      const ogImage = pickOgImage(m.openGraph);
+      if (ogImage) meta.image = ogImage;
+
+      // Fallback: top-level `image`
+      if (!meta.image && typeof m.image === "string") meta.image = m.image;
 
       return meta;
     }
@@ -86,7 +85,6 @@ function extractMetaFromFile(filePath: string): Partial<BlogPostMeta> {
 
     const obj = parseObjectLiteral(match[1]);
     if (obj && typeof obj === "object") {
-      // Many Next files type as `Metadata`; pick the pieces we care about
       const m = obj as Record<string, unknown>;
       const meta: Partial<BlogPostMeta> = {};
 
@@ -95,14 +93,15 @@ function extractMetaFromFile(filePath: string): Partial<BlogPostMeta> {
       if (typeof m.date === "string") meta.date = m.date;
       if (typeof m.category === "string") meta.category = m.category;
       if (typeof m.readTime === "string") meta.readTime = m.readTime;
-      if (typeof m.image === "string") meta.image = m.image;
 
-      // Some users embed openGraph or images inside openGraph
-      const og = m.openGraph as Record<string, unknown> | undefined;
-      if (!meta.image && og && Array.isArray(og.images) && og.images.length > 0) {
-        const first = og.images[0] as string | { url?: string };
-        meta.image = typeof first === "string" ? first : (first?.url ?? undefined);
+      // Prefer OG image if present on a custom meta, then fallback
+      const ogImage = pickOgImage(m.openGraph);
+      if (ogImage) meta.image = ogImage;
+
+      if (!meta.image && typeof (m as any)["opengraph-image"] === "string") {
+        meta.image = (m as any)["opengraph-image"] as string;
       }
+      if (!meta.image && typeof m.image === "string") meta.image = m.image;
 
       return meta;
     }
@@ -162,7 +161,7 @@ export function getAllBlogPosts(): BlogPost[] {
 
         const fileMetadata = pageFile ? extractMetadataFromFile(pageFile) : {};
         const fileMeta = pageFile ? extractMetaFromFile(pageFile) : {};
-        const meta: BlogPostMeta = { ...baseMeta, ...fileMeta, ...fileMetadata };
+        const meta: BlogPostMeta = { ...baseMeta, ...fileMetadata, ...fileMeta };
 
         posts.push({
           slug: `${year}/${month}/${postFolder}`,
@@ -186,5 +185,24 @@ function safeReaddir(dir: string): string[] {
     return fs.readdirSync(dir).filter(name => !name.startsWith("."));
   } catch {
     return [];
+  }
+}
+
+function pickOgImage(og: unknown): string | undefined {
+  if (!og || typeof og !== "object") return;
+  const obj = og as Record<string, unknown>;
+  const imgs = obj.images;
+  if (!imgs) return;
+
+  // images may be a string or array of strings/objects
+  if (typeof imgs === "string") return imgs;
+
+  if (Array.isArray(imgs) && imgs.length > 0) {
+    const first = imgs[0] as unknown;
+    if (typeof first === "string") return first;
+    if (first && typeof first === "object" && "url" in first) {
+      const url = (first as { url?: string }).url;
+      if (typeof url === "string") return url;
+    }
   }
 }
