@@ -37,8 +37,8 @@ const HeroSection = () => {
             <div className="relative rounded-2xl overflow-hidden shadow-large">
               <Image
                 src={heroImage}
-                height="500"
-                width="500"
+                height="668"
+                width="442"
                 alt="Teacher using laptop in classroom"
                 className="w-full h-auto"
               />
