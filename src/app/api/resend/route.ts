@@ -11,7 +11,7 @@ const ContactSchema = z.object({
   token: z.string().min(1),
 });
 
-async function verifyTurnstile(token: string) {
+async function verifyTurnstile(token: string, ip?: string) {
   const secret = process.env.TURNSTILE_SECRET_KEY;
   if (!secret) {
     console.error("TURNSTILE_SECRET_KEY is missing");
