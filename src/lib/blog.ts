@@ -11,8 +11,7 @@ export type BlogPostMeta = {
   date?: string;        // expected ISO-like 'YYYY-MM' or 'YYYY-MM-DD'
   category?: string;
   readTime?: string;
-  image?: string;
-  // add any other fields you intend to pull from metadata
+  image: string;
 };
 
 export type BlogPost = {
@@ -22,7 +21,7 @@ export type BlogPost = {
   date: string;
   category?: string;
   readTime?: string;
-  image?: string;
+  image: string;
 };
 
 const POSSIBLE_FILES = ["page.js", "page.jsx", "page.ts", "page.tsx"] as const;
@@ -45,28 +44,57 @@ function parseObjectLiteral(source: string): unknown {
   return script.runInNewContext({}, { timeout: 100 });
 }
 
-/** Try to extract `export const metadata = { ... }` as a typed object. */
+/** Extract preferred OG image url if present. */
+function pickOgImage(og: unknown): string | undefined {
+  if (!og || typeof og !== "object") return;
+  const obj = og as Record<string, unknown>;
+  const imgs = obj.images;
+
+  if (!imgs) return;
+  if (typeof imgs === "string") return imgs;
+
+  if (Array.isArray(imgs) && imgs.length > 0) {
+    const first = imgs[0] as unknown;
+    if (typeof first === "string") return first;
+    if (first && typeof first === "object" && "url" in first) {
+      const url = (first as { url?: string }).url;
+      if (typeof url === "string") return url;
+    }
+  }
+}
+
+/** Safe string getter for arbitrary key on a generic object. */
+function getStringProp(obj: Record<string, unknown>, key: string): string | undefined {
+  const v = obj[key];
+  return typeof v === "string" ? v : undefined;
+}
+
+/** Extract `export const metadata = { ... }` as a typed object, allowing `: Metadata`. */
 function extractMetadataFromFile(filePath: string): Partial<BlogPostMeta> {
   try {
     const fileContent = fs.readFileSync(filePath, "utf8");
-    const match = fileContent.match(/export\s+const\s+metadata\s*=\s*({[\s\S]*?});/);
+
+    // Allow optional type annotation like `export const metadata: Metadata = { ... };`
+    const match = fileContent.match(
+      /export\s+const\s+metadata(?:\s*:\s*[\w<>\[\]\s|.&]+)?\s*=\s*({[\s\S]*?});/
+    );
     if (!match) return {};
 
     const obj = parseObjectLiteral(match[1]);
     if (obj && typeof obj === "object") {
-      // Many Next files type as `Metadata`; pick the pieces we care about
       const m = obj as Record<string, unknown>;
       const meta: Partial<BlogPostMeta> = {};
 
       if (typeof m.title === "string") meta.title = m.title;
       if (typeof m.description === "string") meta.description = m.description;
-      if (typeof m.image === "string") meta.image = m.image;
 
+      // Prefer OG image if present
       const ogImage = pickOgImage(m.openGraph);
       if (ogImage) meta.image = ogImage;
 
       // Fallback: top-level `image`
-      if (!meta.image && typeof m.image === "string") meta.image = m.image;
+      const topLevelImage = getStringProp(m, "image");
+      if (!meta.image && topLevelImage) meta.image = topLevelImage;
 
       return meta;
     }
@@ -76,7 +104,7 @@ function extractMetadataFromFile(filePath: string): Partial<BlogPostMeta> {
   }
 }
 
-/** Try to extract `export const metadata = { ... }` as a typed object. */
+/** Extract `export const meta = { ... }` (your custom block). */
 function extractMetaFromFile(filePath: string): Partial<BlogPostMeta> {
   try {
     const fileContent = fs.readFileSync(filePath, "utf8");
@@ -94,14 +122,19 @@ function extractMetaFromFile(filePath: string): Partial<BlogPostMeta> {
       if (typeof m.category === "string") meta.category = m.category;
       if (typeof m.readTime === "string") meta.readTime = m.readTime;
 
-      // Prefer OG image if present on a custom meta, then fallback
+      // Prefer OG image if present on custom meta (rare but supported)
       const ogImage = pickOgImage(m.openGraph);
       if (ogImage) meta.image = ogImage;
 
-      if (!meta.image && typeof (m as any)["opengraph-image"] === "string") {
-        meta.image = (m as any)["opengraph-image"] as string;
+      // Legacy/custom field: "opengraph-image"
+      if (!meta.image) {
+        const legacyOg = getStringProp(m, "opengraph-image");
+        if (legacyOg) meta.image = legacyOg;
       }
-      if (!meta.image && typeof m.image === "string") meta.image = m.image;
+
+      // Fallback: top-level `image`
+      const topLevelImage = getStringProp(m, "image");
+      if (!meta.image && topLevelImage) meta.image = topLevelImage;
 
       return meta;
     }
@@ -118,15 +151,22 @@ function titleFromFolder(folder: string): string {
 
 /** Compare dates descending; fall back to slug compare. */
 function compareDatesDesc(a: BlogPost, b: BlogPost): number {
-  // prefer full ISO parsing; fallback to string compare if needed
   const aTime = Date.parse(a.date ?? "");
   const bTime = Date.parse(b.date ?? "");
   if (!Number.isNaN(aTime) && !Number.isNaN(bTime)) {
     return bTime - aTime;
   }
-  // If date is "YYYY-MM", string compare works for ordering
   if (a.date && b.date) return b.date.localeCompare(a.date);
   return b.slug.localeCompare(a.slug);
+}
+
+/** Safe readdir that returns [] on failure and filters dotfiles. */
+function safeReaddir(dir: string): string[] {
+  try {
+    return fs.readdirSync(dir).filter(name => !name.startsWith("."));
+  } catch {
+    return [];
+  }
 }
 
 export function getAllBlogPosts(): BlogPost[] {
@@ -157,52 +197,28 @@ export function getAllBlogPosts(): BlogPost[] {
           title: titleFromFolder(postFolder),
           description: "",
           date: `${year}-${month}`, // e.g., "2024-03"
+          image: '',
         };
 
         const fileMetadata = pageFile ? extractMetadataFromFile(pageFile) : {};
         const fileMeta = pageFile ? extractMetaFromFile(pageFile) : {};
-        const meta: BlogPostMeta = { ...baseMeta, ...fileMetadata, ...fileMeta };
+
+        // Prefer values from `meta`, but let `metadata` override `image` (OG) specifically
+        // We’ll merge with `meta` first, then `metadata` so OG image wins by default.
+        const merged: BlogPostMeta = { ...baseMeta, ...fileMeta, ...fileMetadata };
 
         posts.push({
           slug: `${year}/${month}/${postFolder}`,
-          title: meta.title ?? baseMeta.title!,
-          description: meta.description ?? "",
-          date: meta.date ?? baseMeta.date!,
-          category: meta.category,
-          readTime: meta.readTime,
-          image: meta.image,
+          title: merged.title ?? baseMeta.title!,
+          description: merged.description ?? "",
+          date: merged.date ?? baseMeta.date!,
+          category: merged.category,
+          readTime: merged.readTime,
+          image: merged.image,
         });
       }
     }
   }
 
   return posts.sort(compareDatesDesc);
-}
-
-/** Safe readdir that returns [] on failure and filters dotfiles. */
-function safeReaddir(dir: string): string[] {
-  try {
-    return fs.readdirSync(dir).filter(name => !name.startsWith("."));
-  } catch {
-    return [];
-  }
-}
-
-function pickOgImage(og: unknown): string | undefined {
-  if (!og || typeof og !== "object") return;
-  const obj = og as Record<string, unknown>;
-  const imgs = obj.images;
-  if (!imgs) return;
-
-  // images may be a string or array of strings/objects
-  if (typeof imgs === "string") return imgs;
-
-  if (Array.isArray(imgs) && imgs.length > 0) {
-    const first = imgs[0] as unknown;
-    if (typeof first === "string") return first;
-    if (first && typeof first === "object" && "url" in first) {
-      const url = (first as { url?: string }).url;
-      if (typeof url === "string") return url;
-    }
-  }
 }
