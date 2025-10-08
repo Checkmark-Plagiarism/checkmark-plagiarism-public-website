@@ -11,16 +11,26 @@ const ContactSchema = z.object({
   token: z.string().min(1),
 });
 
+type TurnstileVerifyResponse = {
+  success: boolean;
+  // optional fields Cloudflare may return:
+  // "error-codes"?: string[];
+  // "challenge_ts"?: string;
+  // "hostname"?: string;
+  // "action"?: string;
+  // "cdata"?: string;
+};
+
 async function verifyTurnstile(token: string, ip?: string) {
   const secret = process.env.TURNSTILE_SECRET_KEY;
   if (!secret) {
-    console.error("TURNSTILE_SECRET_KEY is missing");
-    return { ok: false, reason: "missing-secret" };
+    return { ok: false as const, data: { "error-codes": ["missing-secret"] } };
   }
 
   const body = new URLSearchParams();
   body.append("secret", secret);
   body.append("response", token);
+  if (ip) body.append("remoteip", ip);
 
   const r = await fetch("https://challenges.cloudflare.com/turnstile/v0/siteverify", {
     method: "POST",
@@ -28,31 +38,16 @@ async function verifyTurnstile(token: string, ip?: string) {
     body,
   });
 
-  const data = await r.json() as {
-    success: boolean;
-    // Turnstile returns helpful fields:
-    // "error-codes"?: string[];
-    // "hostname"?: string;
-    // "action"?: string;
-    // "cdata"?: string;
-  };
+  const data = (await r.json()) as TurnstileVerifyResponse;
 
-  if (!data.success) {
-    console.error("Turnstile verify failed:", data); // <- check your server logs
-    return { ok: false, reason: "verify-failed" };
-  }
-  return { ok: true, reason: "ok" };
+  return { ok: data.success === true, data };
 }
-
 
 export async function POST(req: Request) {
   try {
-    // Derive IP from common proxy headers (no `any` cast)
+    // Derive IP from common proxy headers
     const fwd = req.headers.get("x-forwarded-for") ?? "";
-    const ip =
-      fwd.split(",")[0]?.trim() ||
-      req.headers.get("x-real-ip") ||
-      undefined;
+    const ip = fwd.split(",")[0]?.trim() || req.headers.get("x-real-ip") || undefined;
 
     const json = await req.json();
     const parsed = ContactSchema.safeParse(json);
@@ -62,10 +57,13 @@ export async function POST(req: Request) {
 
     const { name, email, message, token } = parsed.data;
 
-    // Verify CAPTCHA
-    const captchaOk = await verifyTurnstile(token, ip);
-    if (!captchaOk) {
-      return NextResponse.json({ ok: false, error: "Captcha failed." }, { status: 400 });
+    // Verify CAPTCHA (and pass raw verify payload back if it fails)
+    const verify = await verifyTurnstile(token, ip);
+    if (!verify.ok) {
+      return NextResponse.json(
+        { ok: false, error: "Captcha failed.", verify: verify.data },
+        { status: 400 }
+      );
     }
 
     // Send email
@@ -79,7 +77,7 @@ export async function POST(req: Request) {
       to,
       subject,
       text,
-      replyTo: email,
+      replyTo: email, // <-- correct casing
     });
 
     if (error) {
