@@ -62,7 +62,7 @@ export async function POST(req: Request) {
       to,
       subject,
       text,
-      reply_to: email, // Resend supports `reply_to`
+      replyTo: email,
     });
 
     if (error) {
