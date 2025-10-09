@@ -7,6 +7,11 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Checkmark Plagiarism",
   description: "",
+  openGraph: {
+    images: [
+      "https://public.checkmarkplagiarism.com/images/android-chrome-384x384.png",
+    ],
+  },
 };
 
 export default function RootLayout({

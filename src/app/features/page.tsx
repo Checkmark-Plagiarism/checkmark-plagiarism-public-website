@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   title: 'Features — Checkmark Plagiarism',
   description:
     'Everything teachers need in one place: AI detection, auto‑grading, plagiarism checks, Google Classroom™ and Canvas LMS integrations, and more.',
-  openGraph: { images: [''] },
+  openGraph: { images: ['https://public.checkmarkplagiarism.com/images/features/ai-detection.jpg'] },
 };
 
 const features = [

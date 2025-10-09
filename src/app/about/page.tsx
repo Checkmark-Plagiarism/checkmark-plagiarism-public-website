@@ -17,7 +17,7 @@ type Member = {
   name: string;
   role: string;
   email: string;
-  img?: string; // optional, can be wired to CMS later
+  img?: string;
 };
 
 const TEAM: Member[] = [
@@ -29,17 +29,22 @@ const TEAM: Member[] = [
   {
     name: "Emma Ritto",
     role: "Chief Operations",
-    email: "erittoo@checkmarkplagiarism.com".replace("oo","o"), // simple guard if pasted wrong
+    email: "erittoo@checkmarkplagiarism.com".replace("oo","o"),
   },
   {
     name: "Tony Li",
     role: "Chief Operations",
-    email: "tony.li@checkmarkplagiarism.com".replace("oo","o"), // simple guard if pasted wrong
+    email: "tony.li@checkmarkplagiarism.com",
   },
   {
     name: "Jaron King",
     role: "Senior Software Developer",
     email: "jaron.king@checkmarkplagiarism.com",
+  },
+  {
+    name: "Kevin Lee",
+    role: "Machine Learning Developer",
+    email: "",
   },
 ];
 
