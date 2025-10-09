@@ -32,7 +32,8 @@ const features = [
       'Behavior-aware analysis that flags likely AI-generated text using typing patterns and revision history—built for classrooms, not clickbait.',
     icon: Brain,
     tag: 'Integrity',
-    image: '/images/features/ai-detection.jpg',
+    image: '/images/home/test (12).png',
+    // image: '/images/features/ai-detection.jpg',
     colors: {
       header: 'from-blue-600 via-blue-500 to-blue-100',
       ring: 'ring-blue-300/60 dark:ring-blue-900/50',
@@ -47,7 +48,8 @@ const features = [
       'Rubric-aligned scoring with transparent criteria so teachers can review, override, and give feedback—faster than ever.',
     icon: PenTool,
     tag: 'Assessment',
-    image: '/images/features/auto-grading.jpg',
+    image: '/images/home/test (13).jpg',
+    // image: '/images/features/auto-grading.jpg',
     colors: {
       header: 'from-emerald-600 via-emerald-500 to-emerald-200',
       ring: 'ring-emerald-300/60 dark:ring-emerald-900/50',
@@ -62,7 +64,8 @@ const features = [
       'Find copy-paste, paraphrasing, and transcription patterns with document history signals and web similarity checks.',
     icon: Scan,
     tag: 'Authenticity',
-    image: '/images/features/plagiarism-detection.jpg',
+    image: '/images/home/test (15).png',
+    // image: '/images/features/plagiarism-detection.jpg',
     colors: {
       header: 'from-fuchsia-600 via-fuchsia-500 to-fuchsia-200',
       ring: 'ring-fuchsia-300/60 dark:ring-fuchsia-900/50',
@@ -77,7 +80,8 @@ const features = [
       'Sync classes, assignments, and submissions automatically. Review results right where you already work.',
     icon: School,
     tag: 'Integrations',
-    image: '/images/features/google-classroom.jpg',
+    image: '/images/home/test (16).png',
+    // image: '/images/features/google-classroom.jpg',
     colors: {
       header: 'from-amber-600 via-amber-500 to-amber-200',
       ring: 'ring-amber-300/60 dark:ring-amber-900/50',
@@ -92,7 +96,8 @@ const features = [
       'One-click setup with Canvas. Pull rosters, assignments, and submissions to run checks at scale.',
     icon: GraduationCap,
     tag: 'Integrations',
-    image: '/images/features/canvas.jpg',
+    image: '/images/home/test (17).png',
+    // image: '/images/features/canvas.jpg',
     colors: {
       header: 'from-rose-600 via-rose-500 to-rose-200',
       ring: 'ring-rose-300/60 dark:ring-rose-900/50',
@@ -107,7 +112,8 @@ const features = [
       'A growing ecosystem that plays nicely with your stack—SSO, exports, and admin controls included.',
     icon: Boxes,
     tag: 'Ecosystem',
-    image: '/images/features/integrations.jpg',
+    image: '/images/home/test (18).png',
+    // image: '/images/features/integrations.jpg',
     colors: {
       header: 'from-cyan-600 via-cyan-500 to-cyan-200',
       ring: 'ring-cyan-300/60 dark:ring-cyan-900/50',
@@ -122,7 +128,8 @@ const features = [
       'Simple plans for classrooms and districts. No surprise fees. Discounts for schools and departments.',
     icon: DollarSign,
     tag: 'Plans',
-    image: '/images/features/pricing.jpg',
+    image: '/images/home/test (19).png',
+    // image: '/images/features/pricing.jpg',
     colors: {
       header: 'from-stone-600 via-stone-500 to-stone-200',
       ring: 'ring-stone-300/60 dark:ring-stone-800/60',
@@ -136,7 +143,7 @@ export default function FeaturesPage() {
   return (
     <main>
       {/* Hero */}
-      <FeatureHero bgTint="bg-red-200">
+      <FeatureHero bgTint="bg-red-200" image="/images/home/test (11).jpg">
         <h1
           id="features-hero"
           className="text-center text-4xl font-bold tracking-tight text-foreground md:text-5xl"

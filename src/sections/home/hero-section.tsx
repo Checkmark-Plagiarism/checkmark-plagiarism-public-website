@@ -2,7 +2,7 @@ import { LinkButton } from "@/components/ui/link";
 import Image from "next/image";
 import Link from "next/link";
 
-const heroImage = '/images/home/hero.png';
+const heroImage = '/images/home/test (5).png';
 const plagiarismReportImage = '/images/home/output.gif';
 
 const HeroSection = () => {

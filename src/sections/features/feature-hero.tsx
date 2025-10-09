@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import type { ReactNode } from "react";
+import Image from "next/image";
 import { cn } from "@/lib/utils";
 
 type FeatureHeroProps = {
@@ -12,6 +13,7 @@ type FeatureHeroProps = {
 
 export default function FeatureHero({
   className,
+  image = null,
   bgTint = "bg-blue-300",
   children,
 }: FeatureHeroProps) {
@@ -32,7 +34,7 @@ export default function FeatureHero({
       aria-labelledby="features-hero"
     >
       {/* BACKGROUND LAYER: animated orbs with configurable tint */}
-      <BackgroundOrbs bgTint={bgTint} />
+      <BackgroundOrbs bgTint={bgTint} image={image}/>
 
       {/* GLASS CARD */}
       <div className="container mx-auto px-4">
@@ -51,6 +53,7 @@ export default function FeatureHero({
           >
             {/* subtle top gradient sheen */}
             <div className="pointer-events-none absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-white/20 to-transparent dark:from-white/5" />
+
 
             <div className="relative z-10 p-6 md:p-10">{children}</div>
 
@@ -78,7 +81,7 @@ export default function FeatureHero({
  * - Bigger, livelier motion with rotation + scale
  * - Honors prefers-reduced-motion
  */
-function BackgroundOrbs({ bgTint }: { bgTint: string }) {
+function BackgroundOrbs({ bgTint, image }: { bgTint: string, image: string }) {
   const isTailwindClass = bgTint.includes("bg-") || bgTint.includes("/");
   return (
     <>
@@ -102,6 +105,19 @@ function BackgroundOrbs({ bgTint }: { bgTint: string }) {
 
       {/* orbs wrapper */}
       <div className="pointer-events-none absolute inset-0">
+
+        {/* hero image */}
+        { image && (
+          <Image
+            src={image}
+            alt="hero image"
+            width={1200}
+            height={700}
+            className="w-full h-auto object-contain"
+            priority
+          />
+        )}
+
         {/* Blue orb */}
         <Orb
           className="left-[-12%] top-[-14%] bg-[radial-gradient(circle_at_30%_30%,rgba(59,130,246,0.55),rgba(59,130,246,0.18)_40%,transparent_60%)]"
