@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 // import Image from 'next/image';
 import Link from 'next/link';
+import Image from 'next/image';
 import {
   Brain,
   Scan,
@@ -31,8 +32,9 @@ const features = [
       'Behavior-aware analysis that flags likely AI-generated text using typing patterns and revision history—built for classrooms, not clickbait.',
     icon: Brain,
     tag: 'Integrity',
+    image: '/images/features/ai-detection.jpg',
     colors: {
-      header: 'from-blue-600/30 via-blue-500/25 to-transparent',
+      header: 'from-blue-600 via-blue-500 to-blue-100',
       ring: 'ring-blue-300/60 dark:ring-blue-900/50',
       accentText: 'text-blue-700 dark:text-blue-300',
       badge: 'bg-blue-600/15',
@@ -45,8 +47,9 @@ const features = [
       'Rubric-aligned scoring with transparent criteria so teachers can review, override, and give feedback—faster than ever.',
     icon: PenTool,
     tag: 'Assessment',
+    image: '/images/features/auto-grading.jpg',
     colors: {
-      header: 'from-emerald-600/30 via-emerald-500/25 to-transparent',
+      header: 'from-emerald-600 via-emerald-500 to-emerald-200',
       ring: 'ring-emerald-300/60 dark:ring-emerald-900/50',
       accentText: 'text-emerald-700 dark:text-emerald-300',
       badge: 'bg-emerald-600/15',
@@ -59,8 +62,9 @@ const features = [
       'Find copy-paste, paraphrasing, and transcription patterns with document history signals and web similarity checks.',
     icon: Scan,
     tag: 'Authenticity',
+    image: '/images/features/plagiarism-detection.jpg',
     colors: {
-      header: 'from-fuchsia-600/30 via-fuchsia-500/25 to-transparent',
+      header: 'from-fuchsia-600 via-fuchsia-500 to-fuchsia-200',
       ring: 'ring-fuchsia-300/60 dark:ring-fuchsia-900/50',
       accentText: 'text-fuchsia-700 dark:text-fuchsia-300',
       badge: 'bg-fuchsia-600/15',
@@ -73,8 +77,9 @@ const features = [
       'Sync classes, assignments, and submissions automatically. Review results right where you already work.',
     icon: School,
     tag: 'Integrations',
+    image: '/images/features/google-classroom.jpg',
     colors: {
-      header: 'from-amber-600/30 via-amber-500/25 to-transparent',
+      header: 'from-amber-600 via-amber-500 to-amber-200',
       ring: 'ring-amber-300/60 dark:ring-amber-900/50',
       accentText: 'text-amber-700 dark:text-amber-300',
       badge: 'bg-amber-600/15',
@@ -87,8 +92,9 @@ const features = [
       'One-click setup with Canvas. Pull rosters, assignments, and submissions to run checks at scale.',
     icon: GraduationCap,
     tag: 'Integrations',
+    image: '/images/features/canvas.jpg',
     colors: {
-      header: 'from-rose-600/30 via-rose-500/25 to-transparent',
+      header: 'from-rose-600 via-rose-500 to-rose-200',
       ring: 'ring-rose-300/60 dark:ring-rose-900/50',
       accentText: 'text-rose-700 dark:text-rose-300',
       badge: 'bg-rose-600/15',
@@ -101,8 +107,9 @@ const features = [
       'A growing ecosystem that plays nicely with your stack—SSO, exports, and admin controls included.',
     icon: Boxes,
     tag: 'Ecosystem',
+    image: '/images/features/integrations.jpg',
     colors: {
-      header: 'from-cyan-600/30 via-cyan-500/25 to-transparent',
+      header: 'from-cyan-600 via-cyan-500 to-cyan-200',
       ring: 'ring-cyan-300/60 dark:ring-cyan-900/50',
       accentText: 'text-cyan-700 dark:text-cyan-300',
       badge: 'bg-cyan-600/15',
@@ -115,8 +122,9 @@ const features = [
       'Simple plans for classrooms and districts. No surprise fees. Discounts for schools and departments.',
     icon: DollarSign,
     tag: 'Plans',
+    image: '/images/features/pricing.jpg',
     colors: {
-      header: 'from-stone-600/30 via-stone-500/25 to-transparent',
+      header: 'from-stone-600 via-stone-500 to-stone-200',
       ring: 'ring-stone-300/60 dark:ring-stone-800/60',
       accentText: 'text-stone-700 dark:text-stone-300',
       badge: 'bg-stone-600/15',
@@ -148,7 +156,7 @@ export default function FeaturesPage() {
       </FeatureHero>
 
       {/* Feature grid - now 3 per row */}
-      <section id="features" className="py-12">
+      <section id="features" className="py-12 bg-gradient-subtle">
         <div className="container mx-auto px-4">
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -168,7 +176,7 @@ export default function FeaturesPage() {
                     )}
                   >
                     {/* Transparent header band with unique color */}
-                    <CardHeaderGradient icon={f.icon} gradient={f.colors.header} />
+                    <CardHeaderGradient icon={f.icon} gradient={f.colors.header} image={f.image} title={f.title} />
 
                     <CardContent className="p-6 pt-4 h-full flex flex-col">
                       <div className="flex items-center justify-between mb-3">
@@ -274,30 +282,39 @@ function CardHeaderGradient({
   gradient,          // e.g. "from-blue-600/30 via-blue-500/25 to-transparent"
   title,
   subtitle,
+  image,
 }: {
   icon: React.ComponentType<{ className?: string }>;
   gradient: string;
   title?: string;
   subtitle?: string;
+  image?: string;
 }) {
   return (
-    <div className={`relative -mx-6 -mt-6 mb-4 h-28 rounded-t-xl bg-gradient-to-br ${gradient}`}>
+    <div
+      className={`relative -mx-6 mb-4 rounded-t-xl bg-gradient-to-br ${gradient}
+                  grid grid-rows-[80px,1fr] h-48`} // top 80px for image, rest for text
+    >
       {/* soft ring for definition */}
-      <div className="absolute inset-0 rounded-t-xl ring-1 ring-black/5 dark:ring-white/5" />
+      <div className="relative row-start-1 row-end-2 overflow-hidden rounded-t-xl px-4">
+        <div className="absolute inset-0 rounded-t-xl ring-1 ring-black/5 dark:ring-white/5" />
 
-      {/* decorative glow */}
-      <div className="pointer-events-none absolute -bottom-6 -right-6 h-24 w-24 rounded-full bg-black/10 dark:bg-white/10 blur-2xl" />
+        {/* decorative glow */}
+        <div className="pointer-events-none absolute -bottom-6 -right-6 h-24 w-24 rounded-full bg-black/10 dark:bg-white/10 blur-2xl" />
 
-      {/* icon */}
-      <div className="absolute right-10 top-10 opacity-40">
-        <Icon className="h-6 w-6" />
+        {/* feature image (TOP ROW ONLY) */}
+        <Image
+          src={image ?? ''}
+          alt={title ?? "feature"}
+          width={400}
+          height={400}
+          className="h-full w-full object-cover object-top"
+          priority
+        />
       </div>
 
-      {/* text area */}
-      <div className="relative z-10 h-full px-6 py-4 flex flex-col justify-end">
-        {title && <h4 className="text-sm font-semibold text-foreground/90">{title}</h4>}
-        {subtitle && <p className="mt-0.5 text-xs text-foreground/70">{subtitle}</p>}
-      </div>
+      {/* text area (BOTTOM ROW) */}
+      <div className="row-start-2 row-end-3 relative z-10 px-6 py-1 flex flex-col justify-end"></div>
     </div>
   );
 }

@@ -2,7 +2,7 @@ import { LinkButton } from "@/components/ui/link";
 import Link from "next/link";
 import Image from "next/image";
 
-const logoImage = "/images/android-chrome-192x192.png";
+const logoImage = "/images/android-chrome-384x384.png";
 
 const Header = () => {
   return (
