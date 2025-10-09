@@ -55,7 +55,7 @@ const CTASection = () => {
                 alt="Friendly teacher in classroom"
                 className="w-full h-auto"
               />
-              <div className="absolute inset-0 bg-gradient-to-tr from-secondary/20 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-tr from-secondary/20 to-transparent rounded-2xl overflow-hidden"></div>
             </div>
           </div>
         </div>
