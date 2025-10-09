@@ -8,12 +8,13 @@ import { cn } from "@/lib/utils";
 type FeatureHeroProps = {
   className?: string;
   bgTint?: string;
+  image?: string;
   children?: ReactNode;
 };
 
 export default function FeatureHero({
   className,
-  image = null,
+  image = '',
   bgTint = "bg-blue-300",
   children,
 }: FeatureHeroProps) {
