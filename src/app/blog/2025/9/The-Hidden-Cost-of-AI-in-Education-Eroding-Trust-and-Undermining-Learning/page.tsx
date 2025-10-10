@@ -176,15 +176,15 @@ export default function Page() {
                 <p className="mt-10 italic">Written by The Checkmark Plagiarism Team.</p>
 
                 {/* References */}
-                <h4 className="mt-12">References<\/h4>
+                <h4 className="mt-12">References</h4>
                 <ol>
                   <li>
                     [1] Pitts, Griffin, et al. &quot;Student perspectives on the benefits and risks of AI in Education.&quot; <em>2025 ASEE Annual Conference &amp; Exposition Proceedings</em>, 3 June 2025. <a href="https://doi.org\/10.18260\/1-2--57693" target="_blank" rel="noopener noreferrer">https://doi.org\/10.18260\/1-2--57693</a>.
-                  <\/li>
+                  </li>
                   <li>
                     [2] Wecks, Janik Ole, et al. &quot;Generative AI usage and academic performance.&quot; <em>SSRN Electronic Journal</em>, 18 Nov. 2024. <a href="https://doi.org\/10.2139\/ssrn.4812513" target="_blank" rel="noopener noreferrer">https://doi.org\/10.2139\/ssrn.4812513</a>.
-                  <\/li>
-                <\/ol>
+                  </li>
+                </ol>
               </article>
 
               <aside className="lg:col-span-1">
