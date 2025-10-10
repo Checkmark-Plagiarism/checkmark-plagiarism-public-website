@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     images: [
       // Update to your final asset path if different
-      "/images/blog/how-can-a-student-trust-their-teacher/hero.jpg",
+      "/images/blog/The-Hidden-Cost-of-AI-in-Education-Eroding-Trust-and-Undermining-Learning/hero.jpg",
     ],
   },
 };
@@ -31,7 +31,7 @@ export const meta = {
   description:
     "Across classrooms, students face false AI accusations and strained relationships. Here’s how to rebuild trust—with better context, transparent practices, and essay playback.",
   "opengraph-image":
-    "/images/blog/how-can-a-student-trust-their-teacher/hero.jpg",
+    "/images/blog/The-Hidden-Cost-of-AI-in-Education-Eroding-Trust-and-Undermining-Learning/hero.jpg",
   date: "10-09-2025",
   readTime: "~7 min read",
   category: "Academic Integrity",
