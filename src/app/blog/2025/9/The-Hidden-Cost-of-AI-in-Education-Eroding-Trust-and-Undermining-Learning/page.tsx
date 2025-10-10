@@ -151,7 +151,7 @@ export default function Page() {
                   For the students who pride themselves on their work and actively spend hours outside the classroom studying, an accusation of using AI for an assignment can feel like a slap in the face.
                 </p>
                 <p className="text-muted-foreground">
-                  Not only is AI breaking trust on the student’s side, but also on the teacher’s. According to <em>The 74</em>, nearly two‑thirds of teachers said that generative AI has made them "more distrustful" of students and 90% said they suspect kids are using the tools to complete assignments. These preconceived notions that students are using AI to complete their assignments can sway a teacher’s perspective before they even set their eyes on a student’s work, drastically altering the relationship even before a false accusation is made.
+                  Not only is AI breaking trust on the student’s side, but also on the teacher’s. According to <em>The 74</em>, nearly two‑thirds of teachers said that generative AI has made them &quot;more distrustful&quot; of students and 90% said they suspect kids are using the tools to complete assignments. These preconceived notions that students are using AI to complete their assignments can sway a teacher’s perspective before they even set their eyes on a student’s work, drastically altering the relationship even before a false accusation is made.
                 </p>
 
                 {/* Undermining The Learning Environment */}
@@ -160,7 +160,7 @@ export default function Page() {
                   Since the beginning of AI, there has been the question of how AI usage might be diminishing the educational impact of the learning environment. As concerns grow that the overuse of AI is causing students to lack certain important skills that are normally taught in the classroom, teachers are struggling to maintain the educational development that was the norm for hundreds of years before the AI era.
                 </p>
                 <p className="text-muted-foreground">
-                  Overall student success rates in exams have been significantly affected. According to the academic paper "Generative AI Usage and Exam Performance," published on SSRN, "The results suggest that students using GenAI score 6.71 points lower in the final exam… about 15% lower than the mean non‑user… GenAI use can tip the scales toward failing the exam—at least statistically."<span className="align-super text-xs">[2]</span>
+                  Overall student success rates in exams have been significantly affected. According to the academic paper &quot;Generative AI Usage and Exam Performance,&quot; published on SSRN, &quot;The results suggest that students using GenAI score 6.71 points lower in the final exam… about 15% lower than the mean non‑user… GenAI use can tip the scales toward failing the exam—at least statistically.&quot;<span className="align-super text-xs">[2]</span>
                 </p>
 
                 {/* A Way Forward: Essay Playback */}
