@@ -37,7 +37,7 @@ export default function AutoGradingPage() {
 
         <div className="mt-6 flex flex-wrap justify-center gap-3">
           <LinkButton href="#process" size="sm">See how it works</LinkButton>
-          <LinkButton href="/features/pricing" size="sm" variant="outline">
+          <LinkButton href="/pricing" size="sm" variant="outline">
             Try it at your school
           </LinkButton>
         </div>
@@ -204,7 +204,7 @@ export default function AutoGradingPage() {
               Bring auto-grading, AI detection, and plagiarism checks into the tools you already use.
             </p>
             <div className="mt-6 flex items-center justify-center gap-3">
-              <LinkButton href="/features/pricing">
+              <LinkButton href="/pricing">
                 Get started <ArrowRight className="ml-2 h-4 w-4" />
               </LinkButton>
               <LinkButton href="/contact" variant="outline">Talk to sales</LinkButton>

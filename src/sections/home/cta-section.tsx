@@ -1,6 +1,5 @@
 import { LinkButton } from "@/components/ui/link";
 import Image from "next/image";
-import Link from "next/link";
 
 const heroImage = '/images/home/example_screen.jpg';
 

@@ -1,6 +1,5 @@
 import { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
 import {
   KeyRound,
   Link2,
@@ -38,7 +37,7 @@ export default function IntegrationsPage() {
 
         <div className="mt-6 flex flex-wrap justify-center gap-3">
           <LinkButton href="#highlights" size="sm">See highlights</LinkButton>
-          <LinkButton href="/features/pricing" size="sm" variant="outline">
+          <LinkButton href="/pricing" size="sm" variant="outline">
             Try it at your school
           </LinkButton>
         </div>
@@ -238,7 +237,7 @@ export default function IntegrationsPage() {
               Bring SSO, Google Docs, Microsoft Word, Drive, and OneDrive into a single integrity workflow.
             </p>
             <div className="mt-6 flex items-center justify-center gap-3">
-              <LinkButton href="/features/pricing">
+              <LinkButton href="/pricing">
                 Get started <ArrowRight className="ml-2 h-4 w-4" />
               </LinkButton>
               <LinkButton href="/contact" variant="outline">Talk to sales</LinkButton>

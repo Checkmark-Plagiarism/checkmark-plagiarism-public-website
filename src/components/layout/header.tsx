@@ -42,7 +42,7 @@ const Header = () => {
             <Link href="/blog" className="text-muted-background hover:text-foreground transition-colors">
               Blog
             </Link>
-            <Link href="/features/pricing" className="text-muted-background hover:text-foreground transition-colors">
+            <Link href="/pricing" className="text-muted-background hover:text-foreground transition-colors">
               Pricing
             </Link>
             <Link href="/contact" className="text-muted-background hover:text-foreground transition-colors">

@@ -31,7 +31,7 @@ const Footer = () => {
               <li><a href="/features/ai-detection" className="hover:text-foreground transition-colors">AI Detection</a></li>
               <li><a href="/features/auto-grading" className="hover:text-foreground transition-colors">Auto Grading</a></li>
               <li><a href="/features/integrations" className="hover:text-foreground transition-colors">Integrations</a></li>
-              <li><a href="/features/pricing" className="hover:text-foreground transition-colors">Pricing</a></li>
+              <li><a href="/pricing" className="hover:text-foreground transition-colors">Pricing</a></li>
               <li><a href="/features/canvas-lms" className="hover:text-foreground transition-colors">Canvas LMS</a></li>
               <li><a href="/features/google-classroom" className="hover:text-foreground transition-colors">Google Classroom</a></li>
             </ul>

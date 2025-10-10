@@ -1,6 +1,5 @@
 import { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
 import {
   Scan,
   FileSearch,
@@ -9,7 +8,6 @@ import {
   Highlighter,
   Globe,
   ShieldCheck,
-  BarChart3,
   ClipboardList,
   ArrowRight,
 } from "lucide-react";
@@ -39,7 +37,7 @@ export default function PlagiarismDetectionPage() {
 
         <div className="mt-6 flex flex-wrap justify-center gap-3">
           <LinkButton href="#how-it-works" size="sm">See how it works</LinkButton>
-          <LinkButton href="/features/pricing" size="sm" variant="outline">
+          <LinkButton href="/pricing" size="sm" variant="outline">
             Try it at your school
           </LinkButton>
         </div>
@@ -238,7 +236,7 @@ export default function PlagiarismDetectionPage() {
               Bring plagiarism checks, AI detection, and auto-grading into the tools you already use.
             </p>
             <div className="mt-6 flex items-center justify-center gap-3">
-              <LinkButton href="/features/pricing">
+              <LinkButton href="/pricing">
                 Get started <ArrowRight className="ml-2 h-4 w-4" />
               </LinkButton>
               <LinkButton href="/contact" variant="outline">Talk to sales</LinkButton>

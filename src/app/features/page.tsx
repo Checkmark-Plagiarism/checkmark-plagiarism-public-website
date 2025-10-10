@@ -9,11 +9,10 @@ import {
   PenTool,
   Boxes,
   School,
-  DollarSign,
   ChevronRight,
 } from 'lucide-react';
 import { LinkButton } from '@/components/ui/link';
-import { Card, CardContent } from '@/components/ui/card';
+import { CardContent } from '@/components/ui/card';
 import FeatureHero from "@/sections/features/feature-hero";
 import { cn } from "@/lib/utils";
 
@@ -121,22 +120,6 @@ const features = [
       badge: 'bg-cyan-600/15',
     },
   },
-  {
-    slug: '/pricing',
-    title: 'Pricing',
-    blurb:
-      'Simple plans for classrooms and districts. No surprise fees. Discounts for schools and departments.',
-    icon: DollarSign,
-    tag: 'Plans',
-    image: '/images/home/test (19).png',
-    // image: '/images/features/pricing.jpg',
-    colors: {
-      header: 'from-stone-600 via-stone-500 to-stone-200',
-      ring: 'ring-stone-300/60 dark:ring-stone-800/60',
-      accentText: 'text-stone-700 dark:text-stone-300',
-      badge: 'bg-stone-600/15',
-    },
-  },
 ];
 
 export default function FeaturesPage() {
@@ -156,7 +139,7 @@ export default function FeaturesPage() {
 
         <div className="mt-6 justify-center flex flex-wrap gap-3">
           <LinkButton href="#features" size="sm">Explore features</LinkButton>
-          <LinkButton href="/features/pricing" size="sm" variant="outline">
+          <LinkButton href="/pricing" size="sm" variant="outline">
             See pricing
           </LinkButton>
         </div>
@@ -263,7 +246,7 @@ export default function FeaturesPage() {
               Start with the features that matter most today—you can add the rest as your needs grow.
             </p>
             <div className="flex items-center justify-center gap-3">
-              <LinkButton href="/features/pricing">Get started</LinkButton>
+              <LinkButton href="/pricing">Get started</LinkButton>
               <LinkButton href="/contact" variant="outline">Talk to sales</LinkButton>
             </div>
           </div>

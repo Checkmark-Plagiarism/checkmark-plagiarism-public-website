@@ -1,9 +1,20 @@
 // app/features/ai-detection/page.tsx
 import { Metadata } from "next";
 import Link from "next/link";
-import { ShieldCheck, History, ScanText, Fingerprint, BarChart3, CheckCircle2, ArrowRight } from "lucide-react";
+import {
+  ShieldCheck,
+  History,
+  ScanText,
+  Fingerprint,
+  BarChart3,
+  CheckCircle2,
+  ArrowRight,
+  ArrowDown,
+} from "lucide-react";
 import { LinkButton } from "@/components/ui/link";
 import { Card, CardContent } from "@/components/ui/card";
+import Process from "@/sections/features/ai-detection/process";
+import type { Step } from "@/sections/features/ai-detection/process"
 import FeatureHero from "@/sections/features/feature-hero";
 
 export const metadata: Metadata = {
@@ -12,6 +23,41 @@ export const metadata: Metadata = {
     "How Checkmark Plagiarism detects likely AI-generated text using document revision history and machine learning—giving students confidence and teachers protection.",
   openGraph: { images: [""] },
 };
+
+export const steps: Step[] = [
+  {
+    k: '01',
+    title: 'Secure document intake',
+    text: 'We ingest the assignment only when the teacher enables Checkmark. Access is scoped and logged.',
+    icon: 'shieldCheck',
+    badge: 'Setup',
+    color: { header: 'from-blue-600/30 via-blue-500/20 to-transparent', ring: 'ring-blue-300/60 dark:ring-blue-900/50', chip: 'bg-blue-600/15 text-blue-800 dark:text-blue-200' }
+  },
+  {
+    k: '02',
+    title: 'Revision history signals',
+    text: 'We examine edits, drafting order, and iteration cadence from the document’s revision history.',
+    icon: 'history',
+    badge: 'Evidence',
+    color: { header: 'from-amber-600/30 via-amber-500/20 to-transparent', ring: 'ring-amber-300/60 dark:ring-amber-900/50', chip: 'bg-amber-600/15 text-amber-800 dark:text-amber-200' }
+  },
+  {
+    k: '03',
+    title: 'Behavior-aware modeling',
+    text: 'Machine learning considers human-like drafting patterns versus sudden, copy-pasted blocks.',
+    icon: 'scanText',
+    badge: 'Analysis',
+    color: { header: 'from-emerald-600/30 via-emerald-500/20 to-transparent', ring: 'ring-emerald-300/60 dark:ring-emerald-900/50', chip: 'bg-emerald-600/15 text-emerald-800 dark:text-emerald-200' }
+  },
+  {
+    k: '04',
+    title: 'Confidence & explanations',
+    text: 'Clear highlights, rationales, and confidence ranges help teachers review and coach with context.',
+    icon: 'checkCircle2',
+    badge: 'Review',
+    color: { header: 'from-fuchsia-600/30 via-fuchsia-500/20 to-transparent', ring: 'ring-fuchsia-300/60 dark:ring-fuchsia-900/50', chip: 'bg-fuchsia-600/15 text-fuchsia-800 dark:text-fuchsia-200' }
+  }
+]
 
 export default function AIDetectionPage() {
   return (
@@ -29,7 +75,7 @@ export default function AIDetectionPage() {
 
         <div className="mt-6 flex flex-wrap justify-center gap-3">
           <LinkButton href="#process" size="sm">See the process</LinkButton>
-          <LinkButton href="/features/pricing" size="sm" variant="outline">
+          <LinkButton href="/pricing" size="sm" variant="outline">
             Try it at your school
           </LinkButton>
         </div>
@@ -62,67 +108,7 @@ export default function AIDetectionPage() {
       </section>
 
       {/* Process (multi-color steps) */}
-      <section id="process" className="py-16 bg-muted/50 border-y border-border">
-        <div className="container mx-auto px-4">
-          <div className="mx-auto max-w-6xl">
-            <h2 className="text-3xl font-bold text-foreground text-center">How our AI detection works</h2>
-            <p className="mt-3 text-center text-muted-foreground">
-              Multi-signal analysis designed for learning—rooted in revision history and classroom reality.
-            </p>
-
-            <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
-              <ProcessStep
-                k="01"
-                title="Secure document intake"
-                text="We ingest the assignment only when the teacher enables Checkmark. Access is scoped and logged."
-                icon={ShieldCheck}
-                badge="Setup"
-                color={{
-                  header: "from-blue-600/30 via-blue-500/20 to-transparent",
-                  ring: "ring-blue-300/60 dark:ring-blue-900/50",
-                  chip: "bg-blue-600/15 text-blue-800 dark:text-blue-200",
-                }}
-              />
-              <ProcessStep
-                k="02"
-                title="Revision history signals"
-                text="We examine edits, drafting order, and iteration cadence from the document’s revision history."
-                icon={History}
-                badge="Evidence"
-                color={{
-                  header: "from-amber-600/30 via-amber-500/20 to-transparent",
-                  ring: "ring-amber-300/60 dark:ring-amber-900/50",
-                  chip: "bg-amber-600/15 text-amber-800 dark:text-amber-200",
-                }}
-              />
-              <ProcessStep
-                k="03"
-                title="Behavior-aware modeling"
-                text="Machine learning considers human-like drafting patterns versus sudden, copy-pasted blocks."
-                icon={ScanText}
-                badge="Analysis"
-                color={{
-                  header: "from-emerald-600/30 via-emerald-500/20 to-transparent",
-                  ring: "ring-emerald-300/60 dark:ring-emerald-900/50",
-                  chip: "bg-emerald-600/15 text-emerald-800 dark:text-emerald-200",
-                }}
-              />
-              <ProcessStep
-                k="04"
-                title="Confidence & explanations"
-                text="Clear highlights, rationales, and confidence ranges help teachers review and coach with context."
-                icon={CheckCircle2}
-                badge="Review"
-                color={{
-                  header: "from-fuchsia-600/30 via-fuchsia-500/20 to-transparent",
-                  ring: "ring-fuchsia-300/60 dark:ring-fuchsia-900/50",
-                  chip: "bg-fuchsia-600/15 text-fuchsia-800 dark:text-fuchsia-200",
-                }}
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      <Process steps={steps}/>
 
       {/* Student-first philosophy */}
       <section className="py-16">
@@ -203,7 +189,7 @@ export default function AIDetectionPage() {
               Bring AI detection, plagiarism checks, and auto-grading into the tools you already use.
             </p>
             <div className="mt-6 flex items-center justify-center gap-3">
-              <LinkButton href="/features/pricing">
+              <LinkButton href="/pricing">
                 Get started <ArrowRight className="ml-2 h-4 w-4" />
               </LinkButton>
               <LinkButton href="/contact" variant="outline">Talk to sales</LinkButton>
