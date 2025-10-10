@@ -139,7 +139,7 @@ export default function Page() {
                 {/* Epigraph */}
                 <blockquote className="border-l-4 border-border pl-4 py-3 rounded-md bg-muted/40 text-muted-foreground">
                   <p>
-                    “Where will things be in two year and a half years? And how do you prepare students for that world that's rapidly evolving?” — <span className="font-medium">Eddie Watson</span> (Teaching in Higher Ed, Ep. 517)
+                    “Where will things be in two year and a half years? And how do you prepare students for that world that&apos;s rapidly evolving?” — <span className="font-medium">Eddie Watson</span> (Teaching in Higher Ed, Ep. 517)
                   </p>
                 </blockquote>
 
@@ -161,7 +161,7 @@ export default function Page() {
                 </p>
                 <blockquote className="border-l-4 border-border pl-4 py-3 rounded-md bg-muted/40 text-muted-foreground">
                   <p>
-                    “In short, not in our experience. Our research into detectors didn't show them to be reliable enough given that educators could be making judgments about students with potentially lasting consequences.”
+                    “In short, not in our experience. Our research into detectors didn&apos;t show them to be reliable enough given that educators could be making judgments about students with potentially lasting consequences.”
                   </p>
                 </blockquote>
 
