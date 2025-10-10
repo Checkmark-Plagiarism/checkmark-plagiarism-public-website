@@ -49,14 +49,6 @@ export default function ContactForm() {
         strategy="afterInteractive"
       />
 
-      {/* Auto-rendered widget. Give it a stable id so we can getResponse/reset */}
-      <div
-        id="cf-turnstile"
-        className="cf-turnstile"
-        data-sitekey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY!}
-        data-theme="auto"
-      />
-
       <div>
         <label className="block text-sm font-medium">Name</label>
         <input
@@ -91,13 +83,24 @@ export default function ContactForm() {
         )}
       </div>
 
-      <button
-        type="submit"
-        disabled={isSubmitting}
-        className="rounded bg-black px-4 py-2 text-white disabled:opacity-50"
-      >
-        {isSubmitting ? "Sending..." : "Send"}
-      </button>
+      <div className="flex flex-row justify-between">
+        <div>
+          <button
+            type="submit"
+            disabled={isSubmitting}
+            className="rounded bg-black px-4 py-2 text-white disabled:opacity-50"
+          >
+            {isSubmitting ? "Sending..." : "Send"}
+          </button>
+        </div>
+        {/* Auto-rendered widget. Give it a stable id so we can getResponse/reset */}
+        <div
+          id="cf-turnstile"
+          className="cf-turnstile"
+          data-sitekey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY!}
+          data-theme="auto"
+        />
+      </div>
 
       {status === "ok" && (
         <p className="text-green-700">Thanks! Your message has been sent.</p>
