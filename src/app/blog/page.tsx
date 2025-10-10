@@ -73,7 +73,7 @@ console.log(posts);
                   <Image
                     src={post.image}
                     alt={post.title}
-                    className="aspect-video bg-muted overflow-hidden"
+                    className="bg-muted overflow-hidden"
                     height={"250"}
                     width={"450"}
                   />
