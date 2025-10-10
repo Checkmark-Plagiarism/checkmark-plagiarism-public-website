@@ -14,6 +14,8 @@ import {
 import { LinkButton } from "@/components/ui/link";
 import { Card, CardContent } from "@/components/ui/card";
 import FeatureHero from "@/sections/features/feature-hero";
+import Process from "@/sections/features/autograding/process";
+import type { Step } from "@/sections/features/autograding/process";
 
 export const metadata: Metadata = {
   title: "Auto-Grading — Checkmark Plagiarism",
@@ -21,6 +23,81 @@ export const metadata: Metadata = {
     "Rubric-aligned scoring with transparent criteria so teachers can review, override, and give feedback—faster than ever.",
   openGraph: { images: [""] },
 };
+
+export const steps: Step[] = [
+  {
+    k: '01',
+    title: 'Import or build your rubric',
+    text: 'Start with a template or paste your rubric. Map performance levels and set category weights.',
+    icon: 'listChecks',
+    badge: 'Setup',
+    color: {
+      header: 'from-emerald-600/30 via-emerald-500/20 to-transparent',
+      ring: 'ring-emerald-300/60 dark:ring-emerald-900/50',
+      chip: 'bg-emerald-600/15 text-emerald-800 dark:text-emerald-200',
+    },
+  },
+  {
+    k: '02',
+    title: 'Align criteria to evidence',
+    text: 'We link rubric rows to signals like organization, development, style, citation, and mechanics.',
+    icon: 'ruler',
+    badge: 'Alignment',
+    color: {
+      header: 'from-blue-600/30 via-blue-500/20 to-transparent',
+      ring: 'ring-blue-300/60 dark:ring-blue-900/50',
+      chip: 'bg-blue-600/15 text-blue-800 dark:text-blue-200',
+    },
+  },
+  {
+    k: '03',
+    title: 'Generate draft scores',
+    text: 'Machine learning proposes level-by-level scores with highlighted passages and rationales.',
+    icon: 'penTool',
+    badge: 'Scoring',
+    color: {
+      header: 'from-fuchsia-600/30 via-fuchsia-500/20 to-transparent',
+      ring: 'ring-fuchsia-300/60 dark:ring-fuchsia-900/50',
+      chip: 'bg-fuchsia-600/15 text-fuchsia-800 dark:text-fuchsia-200',
+    },
+  },
+  {
+    k: '04',
+    title: 'Review & override quickly',
+    text: 'Adjust any category; comments and totals update instantly. Lock grades individually or in bulk.',
+    icon: 'fileCheck2',
+    badge: 'Review',
+    color: {
+      header: 'from-amber-600/30 via-amber-500/20 to-transparent',
+      ring: 'ring-amber-300/60 dark:ring-amber-900/50',
+      chip: 'bg-amber-600/15 text-amber-800 dark:text-amber-200',
+    },
+  },
+  {
+    k: '05',
+    title: 'Return feedback with context',
+    text: 'Auto-comments prime the response; add your notes and resources. Students see why they scored what they did.',
+    icon: 'messageSquareMore',
+    badge: 'Feedback',
+    color: {
+      header: 'from-rose-600/30 via-rose-500/20 to-transparent',
+      ring: 'ring-rose-300/60 dark:ring-rose-900/50',
+      chip: 'bg-rose-600/15 text-rose-800 dark:text-rose-200',
+    },
+  },
+  {
+    k: '06',
+    title: 'Track growth over time',
+    text: 'Class and student dashboards reveal trends and standards mastery, guiding re-teaching and support.',
+    icon: 'barChart3',
+    badge: 'Insights',
+    color: {
+      header: 'from-cyan-600/30 via-cyan-500/20 to-transparent',
+      ring: 'ring-cyan-300/60 dark:ring-cyan-900/50',
+      chip: 'bg-cyan-600/15 text-cyan-800 dark:text-cyan-200',
+    },
+  },
+]
 
 export default function AutoGradingPage() {
   return (
@@ -70,93 +147,7 @@ export default function AutoGradingPage() {
       </section>
 
       {/* Process (multi-color steps) */}
-      <section id="process" className="py-16 bg-muted/50 border-y border-border">
-        <div className="container mx-auto px-4">
-          <div className="mx-auto max-w-6xl">
-            <h2 className="text-3xl font-bold text-foreground text-center">
-              From rubric to returned work—fast and fair
-            </h2>
-            <p className="mt-3 text-center text-muted-foreground">
-              Purpose-built for writing: standards-aligned criteria, transparent rationales, and quick teacher review.
-            </p>
-
-            <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
-              <ProcessStep
-                k="01"
-                title="Import or build your rubric"
-                text="Start with a template or paste your rubric. Map performance levels and set category weights."
-                icon={ListChecks}
-                badge="Setup"
-                color={{
-                  header: "from-emerald-600/30 via-emerald-500/20 to-transparent",
-                  ring: "ring-emerald-300/60 dark:ring-emerald-900/50",
-                  chip: "bg-emerald-600/15 text-emerald-800 dark:text-emerald-200",
-                }}
-              />
-              <ProcessStep
-                k="02"
-                title="Align criteria to evidence"
-                text="We link rubric rows to signals like organization, development, style, citation, and mechanics."
-                icon={Ruler}
-                badge="Alignment"
-                color={{
-                  header: "from-blue-600/30 via-blue-500/20 to-transparent",
-                  ring: "ring-blue-300/60 dark:ring-blue-900/50",
-                  chip: "bg-blue-600/15 text-blue-800 dark:text-blue-200",
-                }}
-              />
-              <ProcessStep
-                k="03"
-                title="Generate draft scores"
-                text="Machine learning proposes level-by-level scores with highlighted passages and rationales."
-                icon={PenTool}
-                badge="Scoring"
-                color={{
-                  header: "from-fuchsia-600/30 via-fuchsia-500/20 to-transparent",
-                  ring: "ring-fuchsia-300/60 dark:ring-fuchsia-900/50",
-                  chip: "bg-fuchsia-600/15 text-fuchsia-800 dark:text-fuchsia-200",
-                }}
-              />
-              <ProcessStep
-                k="04"
-                title="Review & override quickly"
-                text="Adjust any category; comments and totals update instantly. Lock grades individually or in bulk."
-                icon={FileCheck2}
-                badge="Review"
-                color={{
-                  header: "from-amber-600/30 via-amber-500/20 to-transparent",
-                  ring: "ring-amber-300/60 dark:ring-amber-900/50",
-                  chip: "bg-amber-600/15 text-amber-800 dark:text-amber-200",
-                }}
-              />
-              <ProcessStep
-                k="05"
-                title="Return feedback with context"
-                text="Auto-comments prime the response; add your notes and resources. Students see why they scored what they did."
-                icon={MessageSquareMore}
-                badge="Feedback"
-                color={{
-                  header: "from-rose-600/30 via-rose-500/20 to-transparent",
-                  ring: "ring-rose-300/60 dark:ring-rose-900/50",
-                  chip: "bg-rose-600/15 text-rose-800 dark:text-rose-200",
-                }}
-              />
-              <ProcessStep
-                k="06"
-                title="Track growth over time"
-                text="Class and student dashboards reveal trends and standards mastery, guiding re-teaching and support."
-                icon={BarChart3}
-                badge="Insights"
-                color={{
-                  header: "from-cyan-600/30 via-cyan-500/20 to-transparent",
-                  ring: "ring-cyan-300/60 dark:ring-cyan-900/50",
-                  chip: "bg-cyan-600/15 text-cyan-800 dark:text-cyan-200",
-                }}
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      <Process steps={steps}/>
 
       {/* What makes it different */}
       <section className="py-16">
