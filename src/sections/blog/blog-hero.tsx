@@ -13,8 +13,7 @@ export default function BlogHero({ className = "" }: { className?: string }) {
   return (
     <section
       className={cn(
-        "relative isolate overflow-hidden py-20 md:py-24",
-        "bg-gradient-to-b from-[#2F58A5] via-[#2A4E93] to-[#1F3E76]",
+        "relative isolate overflow-hidden py-20 md:py-24 bg-brand-900",
         className
       )}
       aria-labelledby="blog-hero"
@@ -23,11 +22,6 @@ export default function BlogHero({ className = "" }: { className?: string }) {
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0"
-        style={{
-          background:
-            "radial-gradient(60rem 30rem at 50% -10%, rgba(255,255,255,0.10), transparent 40%), linear-gradient(transparent 0, rgba(255,255,255,0.04) 1px), linear-gradient(90deg, transparent 0, rgba(255,255,255,0.04) 1px)",
-          backgroundSize: "auto, 30px 30px, 30px 30px",
-        }}
       />
 
       {/* animated orbs behind glass */}
@@ -37,16 +31,12 @@ export default function BlogHero({ className = "" }: { className?: string }) {
       <div className="container mx-auto px-6">
         <div
           className={cn(
-            "relative mx-auto max-w-3xl overflow-hidden rounded-2xl",
-            "bg-white/10 backdrop-blur-md ring-1 ring-white/20",
-            "shadow-[0_16px_60px_-20px_rgba(0,0,0,0.35)]",
+            "relative mx-auto max-w-3xl",
             "transition-all duration-700 ease-out will-change-transform",
             "opacity-0 translate-y-6 md:scale-[0.985]",
             mounted && "opacity-100 translate-y-0 md:scale-100"
           )}
         >
-          {/* subtle top sheen */}
-          <div className="pointer-events-none absolute inset-x-0 top-0 h-20 bg-gradient-to-b from-white/20 to-transparent" />
           {/* content (unchanged) */}
           <div className="relative z-10 p-8 md:p-12 text-center">
             <span className="inline-flex items-center rounded-full bg-white/10 px-3 py-1 text-sm font-medium text-white/80 ring-1 ring-white/20 backdrop-blur">
@@ -62,8 +52,6 @@ export default function BlogHero({ className = "" }: { className?: string }) {
               detection, and modern teaching methods.
             </p>
           </div>
-          {/* bottom vignette */}
-          <div className="pointer-events-none absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-black/10 to-transparent" />
         </div>
       </div>
 

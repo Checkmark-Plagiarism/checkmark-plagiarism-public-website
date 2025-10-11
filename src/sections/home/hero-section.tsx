@@ -4,62 +4,62 @@ import Image from "next/image";
 const heroImage = '/images/home/test (5).png';
 const plagiarismReportImage = '/images/home/output.gif';
 
-const HeroSection = () => {
+import { Button } from "@/components/ui/button";
+import { ArrowRight, Play } from "lucide-react";
+
+export const Hero = () => {
   return (
-    <section className="relative overflow-hidden bg-gradient-subtle py-20 lg:py-32">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-8 animate-fade-up">
-            <div className="space-y-4">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
-                Plagiarism Detection{" "}
-                <span className="bg-gradient-primary bg-clip-text text-transparent">
-                  Designed by Teachers,
-                </span>{" "}
-                For Teachers
-              </h1>
-              <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl">
-                Checkmark Plagiarism & Auto Grading automates plagiarism detection by analyzing typing behavior and revision history — just like teachers already do manually.
-              </p>
-            </div>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <LinkButton href="/contact" variant="hero" size="lg" className="text-lg px-8 py-6 h-auto hover:cursor-pointer">
-                Get Started Today
-              </LinkButton>
-              <LinkButton href="/demo" variant="outline" size="lg" className="text-lg px-8 py-6 h-auto">
-                Watch Demo
-              </LinkButton>
-            </div>
-          </div>
+    <section className="relative bg-brand-900 pt-36 pb-40 overflow-hidden">
+      {/* Decorative elements */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute top-20 right-20 w-96 h-96 bg-accent rounded-full blur-3xl" />
+        <div className="absolute bottom-20 left-20 w-80 h-80 bg-brand-300 rounded-full blur-3xl" />
+      </div>
 
-          <div className="relative animate-scale-in">
-            <div className="relative rounded-2xl overflow-hidden shadow-large">
-              <Image
-                src={heroImage}
-                height="668"
-                width="442"
-                alt="Teacher using laptop in classroom"
-                className="w-full h-auto"
-              />
-              <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent"></div>
-            </div>
+      <div className="container mx-auto px-6 relative z-10">
+        <div className="max-w-4xl mx-auto text-center">
+          <h1 className="text-display text-white mb-6 animate-fade-in">
+            AI & Plagiarism Detection with Autograding
+          </h1>
+          <p
+            className="text-body-lg text-white/90 mb-10 max-w-2xl mx-auto animate-fade-in"
+            style={{ animationDelay: "0.1s" }}
+          >
+            Catch AI-written text, verify originality, and auto-grade—seamlessly inside Canvas and Google Classroom.
+          </p>
 
-            {/* Floating UI Preview */}
-            <div className="absolute -bottom-6 -right-6 bg-card rounded-xl shadow-large border p-4 max-w-xs animate-fade-up animation-delay-300">
-              <Image
-                src={plagiarismReportImage}
-                alt="Plagiarism report preview"
-                className="w-full h-auto rounded-lg"
-                height="80"
-                width="80"
-              />
-              <p className="text-sm text-muted-foreground mt-2">Live plagiarism analysis</p>
-            </div>
+          <div
+            className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in"
+            style={{ animationDelay: "0.2s" }}
+          >
+            <LinkButton href="/" variant="hero" size="xl" className="group">
+              Try the Demo
+              <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
+            </LinkButton>
+            <LinkButton href="/" variant="outline-white" size="xl" className="group">
+              <Play className="mr-2" />
+              Watch 60-sec Overview
+            </LinkButton>
           </div>
         </div>
+      </div>
+
+      {/* Wave decoration at bottom */}
+      <div className="absolute bottom-0 left-0 right-0">
+        <svg
+          viewBox="0 0 1440 120"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-full h-auto"
+        >
+          <path
+            d="M0 120L60 110C120 100 240 80 360 70C480 60 600 60 720 65C840 70 960 80 1080 85C1200 90 1320 90 1380 90L1440 90V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z"
+            fill="hsl(var(--background))"
+          />
+        </svg>
       </div>
     </section>
   );
 };
 
-export default HeroSection;
+export default Hero;

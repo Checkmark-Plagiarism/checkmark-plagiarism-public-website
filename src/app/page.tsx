@@ -1,21 +1,19 @@
 import HeroSection from "@/sections/home/hero-section";
+import ProblemStatementSection from "@/sections/home/problem-statement-section";
 import HowItWorksSection from "@/sections/home/how-it-works-section";
-import BenefitsSection from "@/sections/home/benefits-section";
-import GradingSection from "@/sections/home/grading-section";
-import ReportSection from "@/sections/home/report-section";
-import PricingSection from "@/sections/home/pricing-section";
-import CTASection from "@/sections/home/cta-section";
+import AccuracySection from "@/sections/home/accuracy-section";
+import IntegrationsSection from "@/sections/home/integrations-section";
+import FinalCTA from "@/sections/home/final-cta-section";
 
 export default function Page() {
   return (
     <main>
       <HeroSection />
+      <ProblemStatementSection />
       <HowItWorksSection />
-      <BenefitsSection />
-      <GradingSection />
-      <ReportSection />
-      <PricingSection />
-      <CTASection />
+      <AccuracySection />
+      <IntegrationsSection />
+      <FinalCTA />
     </main>
   );
 }

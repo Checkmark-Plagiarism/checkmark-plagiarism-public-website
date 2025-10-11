@@ -126,7 +126,7 @@ export default function FeaturesPage() {
   return (
     <main>
       {/* Hero */}
-      <FeatureHero bgTint="bg-red-200" image="/images/home/test (11).jpg">
+      <FeatureHero bgTint="bg-brand-900">
         <h1
           id="features-hero"
           className="text-center text-4xl font-bold tracking-tight text-foreground md:text-5xl"

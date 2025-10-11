@@ -15,7 +15,7 @@ type FeatureHeroProps = {
 export default function FeatureHero({
   className,
   image = '',
-  bgTint = "bg-blue-300",
+  bgTint = "bg-brand-300",
   children,
 }: FeatureHeroProps) {
   const [mounted, setMounted] = useState(false);

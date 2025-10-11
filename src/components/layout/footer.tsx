@@ -1,65 +1,88 @@
+import { Facebook, Twitter, Linkedin, Youtube } from "lucide-react";
 import Image from "next/image";
 
-const logoImage = '/images/android-chrome-192x192.png';
+const logoImage = "/images/android-chrome-384x384.png";
 
 const Footer = () => {
+  const footerSections = [
+    {
+      title: "Product",
+      links: ["Features", "Integrations", "Pricing", "Security", "Updates"],
+    },
+    {
+      title: "Resources",
+      links: ["Documentation", "API Reference", "Case Studies", "Blog", "Webinars"],
+    },
+    {
+      title: "Company",
+      links: ["About Us", "Careers", "Press Kit", "Partners", "Contact"],
+    },
+    {
+      title: "Legal",
+      links: ["Privacy Policy", "Terms of Service", "Cookie Policy", "FERPA Compliance"],
+    },
+  ];
+
   return (
-    <footer className="bg-muted/50 py-12 border-t border-border">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div className="space-y-4">
-            <div className="flex items-center gap-2">
-              <Image
-                src={logoImage}
-                height="35"
-                width="35"
-                alt="Checkmark Plagiarism Logo"
-                className=""
-              />
-              <span className="text-xl font-bold text-foreground">Checkmark</span>
+    <footer className="bg-brand-900 text-white pt-20 pb-10">
+      <div className="container mx-auto px-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-6 gap-12 mb-16">
+          {/* Brand section */}
+          <div className="lg:col-span-2">
+            <div className="flex items-center gap-2 mb-4">
+              <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
+                <Image
+                  src={logoImage}
+                  alt="Checkmark Plagiarism Logo"
+                  width="50"
+                  height="50"
+                />
+              </div>
+              <span className="font-bold text-2xl text-white">Checkmark Plagiarism</span>
             </div>
-            <p className="text-muted-foreground">
-              Plagiarism detection and auto-grading designed by teachers, for teachers.
+            <p className="text-white/70 mb-6 max-w-xs">
+              Empowering educators with transparent AI detection tools built for the modern classroom.
             </p>
+            <div className="flex gap-4">
+              <a href="#" className="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 transition-smooth flex items-center justify-center">
+                <Twitter className="w-5 h-5" />
+              </a>
+              <a href="#" className="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 transition-smooth flex items-center justify-center">
+                <Linkedin className="w-5 h-5" />
+              </a>
+              <a href="#" className="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 transition-smooth flex items-center justify-center">
+                <Facebook className="w-5 h-5" />
+              </a>
+              <a href="#" className="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 transition-smooth flex items-center justify-center">
+                <Youtube className="w-5 h-5" />
+              </a>
+            </div>
           </div>
 
-          <div className="space-y-4">
-            <h3 className="font-semibold text-foreground">Product</h3>
-            <ul className="space-y-2 text-muted-foreground">
-              <li><a href="/features" className="hover:text-foreground transition-colors">Features</a></li>
-              <li><a href="/features/plagiarism-detection" className="hover:text-foreground transition-colors">Plagiarism Detection</a></li>
-              <li><a href="/features/ai-detection" className="hover:text-foreground transition-colors">AI Detection</a></li>
-              <li><a href="/features/auto-grading" className="hover:text-foreground transition-colors">Auto Grading</a></li>
-              <li><a href="/features/integrations" className="hover:text-foreground transition-colors">Integrations</a></li>
-              <li><a href="/pricing" className="hover:text-foreground transition-colors">Pricing</a></li>
-              <li><a href="/features/canvas-lms" className="hover:text-foreground transition-colors">Canvas LMS</a></li>
-              <li><a href="/features/google-classroom" className="hover:text-foreground transition-colors">Google Classroom</a></li>
-            </ul>
-          </div>
-
-          <div className="space-y-4">
-            <h3 className="font-semibold text-foreground">Support</h3>
-            <ul className="space-y-2 text-muted-foreground">
-              {/*<li><a href="#" className="hover:text-foreground transition-colors">Documentation</a></li>*/}
-              {/*<li><a href="#" className="hover:text-foreground transition-colors">Help Center</a></li>*/}
-              <li><a href="/contact" className="hover:text-foreground transition-colors">Contact Us</a></li>
-              {/*<li><a href="#" className="hover:text-foreground transition-colors">Status</a></li>*/}
-            </ul>
-          </div>
-
-          <div className="space-y-4">
-            <h3 className="font-semibold text-foreground">Company</h3>
-            <ul className="space-y-2 text-muted-foreground">
-              <li><a href="/about" className="hover:text-foreground transition-colors">About</a></li>
-              <li><a href="/blog" className="hover:text-foreground transition-colors">Blog</a></li>
-              <li><a href="/privacy-policy" className="hover:text-foreground transition-colors">Privacy</a></li>
-              <li><a href="/terms-of-service" className="hover:text-foreground transition-colors">Terms</a></li>
-            </ul>
-          </div>
+          {/* Links sections */}
+          {footerSections.map((section, index) => (
+            <div key={index}>
+              <h4 className="font-bold text-white mb-4">{section.title}</h4>
+              <ul className="space-y-3">
+                {section.links.map((link, linkIndex) => (
+                  <li key={linkIndex}>
+                    <a href="#" className="text-white/70 hover:text-white transition-smooth">
+                      {link}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
 
-        <div className="border-t border-border mt-8 pt-8 text-center text-muted-foreground">
-          <p>&copy; 2025 Checkmark. All rights reserved.</p>
+        <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-white/60 text-sm">
+            © 2025 Checkmark Plagiarism. All rights reserved.
+          </p>
+          <p className="text-white/60 text-sm">
+            Built with transparency and trust for education
+          </p>
         </div>
       </div>
     </footer>
