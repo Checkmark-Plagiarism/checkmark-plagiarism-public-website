@@ -42,7 +42,7 @@ export const Integrations = () => {
 
         <div className="mt-12 text-center">
           <p className="text-muted-foreground mb-6">
-            Don't see your platform? We offer custom integrations for districts and institutions.
+            Don&apos;t see your platform? We offer custom integrations for districts and institutions.
           </p>
           <button className="text-brand-500 font-semibold hover:text-brand-700 transition-smooth">
             Request Integration →

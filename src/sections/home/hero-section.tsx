@@ -45,7 +45,7 @@ export const Hero = () => {
             className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in"
             style={{ animationDelay: "0.2s" }}
           >
-            <LinkButton href="/" variant="hero" size="xl" className="group">
+            <LinkButton href="/contact" variant="hero" size="xl" className="group">
               Contact Us
               <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
             </LinkButton>
