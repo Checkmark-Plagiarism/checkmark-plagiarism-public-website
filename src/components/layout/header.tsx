@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { LinkButton } from "@/components/ui/link";
+const APP_URL = process.env.NEXT_PUBLIC_APP_URL || 'https://app.checkmarkplagiarism.com';
 
 const logoImage = "/images/android-chrome-384x384.png";
 
@@ -85,20 +86,30 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center gap-3">
-          <LinkButton
-            href="/"
-            variant={scrolled ? "ghost" : "outline-white"}
-            size="sm"
+          <a
+            href={`${APP_URL}/login`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-sm font-semibold transition-smooth h-9 px-4 ${
+              scrolled
+              ? "hover:bg-accent hover:text-accent-foreground"
+              : "border-2 border-white/40 bg-white/10 text-white hover:bg-white/20 backdrop-blur-sm font-bold"
+            }`}
           >
             Sign In
-          </LinkButton>
-          <LinkButton
-            href="/"
-            variant={scrolled ? "default" : "hero"}
-            size="sm"
+          </a>
+          <a
+            href={`${APP_URL}/login`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-sm font-semibold transition-smooth h-9 px-4 ${
+              scrolled
+              ? "hover:bg-accent hover:text-accent-foreground"
+              : "border-2 border-white/40 bg-white/10 text-white hover:bg-white/20 backdrop-blur-sm font-bold"
+            }`}
           >
             Try Demo
-          </LinkButton>
+          </a>
         </div>
       </div>
     </header>
