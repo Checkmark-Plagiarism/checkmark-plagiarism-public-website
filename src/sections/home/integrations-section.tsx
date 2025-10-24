@@ -9,7 +9,7 @@ export const Integrations = () => {
   ];
 
   return (
-    <section className="py-30 gradient-subtle">
+    <section id="integrations" className="py-30 gradient-subtle">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-heading-2 text-foreground mb-4">
