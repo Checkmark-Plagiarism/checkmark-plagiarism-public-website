@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import Script from "next/script";
 
-type FormData = { name: string; email: string; message: string };
+type FormData = { name: string; email: string; phone: string; message: string };
 
 export default function ContactForm() {
   const {
@@ -68,6 +68,17 @@ export default function ContactForm() {
           {...register("email", { required: true })}
         />
         {errors.email && <p className="text-sm text-red-600">Valid email required.</p>}
+      </div>
+
+      <div>
+        <label className="block text-sm font-medium">Phone (Optional)</label>
+        <input
+          type="tel"
+          className="mt-1 w-full rounded border p-2"
+          placeholder="+1 (555) 123-4567"
+          {...register("phone", { maxLength: 20 })}
+        />
+          {errors.phone && <p className="text-sm text-red-600">Please enter a valid phone number.</p>}
       </div>
 
       <div>
