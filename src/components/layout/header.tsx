@@ -43,6 +43,7 @@ export default function Header() {
         </Link>
 
         <nav className="hidden md:flex items-center gap-8">
+          {/* TODO: Features page temporarily disabled - uncomment if needed
           <Link
             href="/features"
             className={`font-medium transition-smooth ${
@@ -51,6 +52,7 @@ export default function Header() {
           >
             Features
           </Link>
+          */}
           <Link
             href="/#how-it-works"
             className={`font-medium transition-smooth ${

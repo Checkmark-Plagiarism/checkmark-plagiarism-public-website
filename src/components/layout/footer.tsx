@@ -10,52 +10,56 @@ const Footer = () => {
     facebook: "#", // TODO: Get link once profile is up
     twitter: "#", // TODO: Get link once profile is up
   }
-  
+
   
   const footerSections = [
     {
       title: "Product",
-      links: ["Features", "Integrations", "Pricing", "Security", "Updates"],
+      // TODO: "Features", "Security", "Updates" temporarily removed. Add back to array if needed
+      links: ["Integrations", "Pricing"],
     },
     {
       title: "Resources",
-      links: ["Documentation", "API Reference", "Case Studies", "Blog", "Webinars"],
+      // TODO: "Documentation", "API Reference", "Case Studies", "Webinars", temporarily removed. Add back to array if needed
+      links: ["Blog"],
     },
     {
       title: "Company",
-      links: ["About Us", "Careers", "Press Kit", "Partners", "Contact"],
+      // TODO: "Careers", "Press Kit", "Partners", temporarily removed. Add back to array if needed
+      links: ["About Us", "Contact"],
     },
     {
       title: "Legal",
-      links: ["Privacy Policy", "Terms of Service", "Cookie Policy", "FERPA Compliance"],
+      // TODO: "Cookie Policy", "FERPA Compliance", temporarily removed. Add back to array if needed
+      links: ["Privacy Policy", "Terms of Service"],
     },
   ];
 
   const getLinkHref = (linkText: string): string => {
     const linkMap: { [key: string]: string } = {
       // Product
-      "Features": "/features",
+      // "Features": "/features", // TODO: Features page temporarily disabled
       "Integrations": "/#integrations",
       "Pricing": "/pricing",
-      "Security": "#", // TODO: Create / find page
-      "Updates": "#", // TODO: Create / find page
+      // "Security": "#", // TODO: Create / find page
+      // "Updates": "#", // TODO: Create / find page
       // Resources
-      "Documentation": "#", // TODO: Create / find page
-      "API Reference": "#", // TODO: Create / find page
-      "Case Studies": "#", // TODO: Create / find page
+      // "Documentation": "#", // TODO: Create / find page
+      // "API Reference": "#", // TODO: Create / find page
+      // "Case Studies": "#", // TODO: Create / find page
       "Blog": "/blog",
-      "Webinars": "#", // TODO: Create / find page
+      // "Webinars": "#", // TODO: Create / find page
       // Company
       "About Us": "/about",
-      "Careers": "#", // TODO: Create / find page
-      "Press Kit": "#", // TODO: Create / find page 
-      "Partners": "#", // TODO: Create / find page 
+      // "Careers": "#", // TODO: Create / find page
+      // "Press Kit": "#", // TODO: Create / find page 
+      // "Partners": "#", // TODO: Create / find page 
       "Contact": "/contact",
       // Legal
       "Privacy Policy": "/privacy-policy",
       "Terms of Service": "/terms-of-service",
-      "Cookie Policy": " #", // TODO: Create / find page
-      "FERPA Compliance": "#", // TODO: Create / find page
+      // "Cookie Policy": " #", // TODO: Create / find page
+      // "FERPA Compliance": "#", // TODO: Create / find page
     };
     return linkMap[linkText] || "#";
   };

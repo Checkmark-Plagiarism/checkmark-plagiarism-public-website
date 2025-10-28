@@ -1,11 +1,20 @@
+import Link from "next/link";
+import Image from "next/image";
+
 export const Integrations = () => {
   const integrations = [
-    "Google Classroom",
-    "Canvas",
-    "Moodle",
-    "Blackboard",
-    "Schoology",
-    "Microsoft Teams",
+    {
+      name: "Google Classroom",
+      icon: "/images/48x48_yellow_stroke_icon@1x.png",
+      alt: "Google Classroom Logo"
+    },
+    {
+      name: "Canvas",
+      icon: "/images/Canvas_Bug_Color_RGB.png",
+      alt: "Canvas LMS Logo"
+    }
+    // TODO: Additional platforms temporarily removed - add back if needed
+    // "Moodle", "Blackboard", "Schoology", "Microsoft Teams",
   ];
 
   return (
@@ -20,20 +29,25 @@ export const Integrations = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+        {/* Centered flex layout for 2 items */}
+        <div className="flex justify-center gap-8 flex-wrap">
           {integrations.map((integration, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl p-6 shadow-soft hover:shadow-medium transition-smooth flex items-center justify-center group cursor-pointer border-2 border-transparent hover:border-brand-500/30"
+              className="bg-white rounded-xl p-8 shadow-soft hover:shadow-medium transition-smooth flex items-center justify-center group cursor-pointer border-2 border-transparent hover:border-brand-500/30 min-w-[180px]"
             >
               <div className="text-center">
                 <div className="w-12 h-12 mx-auto mb-3 rounded-lg bg-brand-500/10 group-hover:bg-brand-500 transition-smooth flex items-center justify-center">
-                  <span className="text-2xl font-bold text-brand-500 group-hover:text-white transition-smooth">
-                    {integration.charAt(0)}
-                  </span>
+                  <Image
+                    src={integration.icon}
+                    alt={integration.alt}
+                    width={48}
+                    height={48}
+                    className="w-full h-full object-cover rounded-lg"
+                  />
                 </div>
                 <p className="text-sm font-semibold text-foreground">
-                  {integration}
+                  {integration.name}
                 </p>
               </div>
             </div>
@@ -42,11 +56,14 @@ export const Integrations = () => {
 
         <div className="mt-12 text-center">
           <p className="text-muted-foreground mb-6">
-            Don&apos;t see your platform? We offer custom integrations for districts and institutions.
+            Don&apos;t see your platform? Contact us for custom integration options!
           </p>
-          <button className="text-brand-500 font-semibold hover:text-brand-700 transition-smooth">
+          <Link 
+            href="/contact" 
+            className="text-brand-500 font-semibold hover:text-brand-700 transition-smooth"
+          >
             Request Integration →
-          </button>
+          </Link>
         </div>
       </div>
     </section>
