@@ -4,7 +4,7 @@ import { z } from "zod";
 import { google } from "googleapis";
 
 // Google sheets function
-async function writeToGoogleSheets(formData: any, timestamp: string,  ip?: string, userAgent?: string) {
+async function writeToGoogleSheets(formData: { name: string; email: string; phone?: string; message: string }, timestamp: string,  ip?: string, userAgent?: string) {
   if (!process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL || !process.env.GOOGLE_PRIVATE_KEY || !process.env.GOOGLE_SHEET_ID) {
     console.log('Google Sheets not configured, skipping...');
     return;
