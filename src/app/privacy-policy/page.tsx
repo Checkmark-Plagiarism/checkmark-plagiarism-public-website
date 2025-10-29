@@ -31,9 +31,6 @@ export default function PrivacyPolicyPage() {
               <ArrowLeft className="w-4 h-4 mr-2" />
               Back to Home
             </Link>
-            <Button size="sm" variant="outline" className="hidden sm:inline-flex">
-              <Share2 className="w-4 h-4 mr-2" /> Share
-            </Button>
           </div>
 
           <div className="max-w-4xl mx-auto mt-6">
@@ -154,7 +151,7 @@ export default function PrivacyPolicyPage() {
               <Section id="student-data" title="4. Student Data Protection and Ownership">
                 <ul className="marker:text-muted-foreground list-disc pl-6">
                   <li>Schools maintain ownership of students&apos; work. We act as a processor of this data on behalf of the educational institution.</li>
-                  <li>We never use student submissions to train our AI models for general purposes. Our AI models are designed to analyze writing authenticity without &quot;learning&quot; from specific student content, ensuring student work remains their own.</li>
+                  <li>We never use student submissions to train generative AI models or for general AI development purposes. Our AI models are designed to analyze writing authenticity while ensuring student work remains their own.</li>
                   <li>Unlike other services, we have no incentive to grow our database with student submissions for commercial gain.</li>
                   <li>Student submission data is only accessible to authorized teachers associated with the respective courses.</li>
                 </ul>
@@ -278,13 +275,6 @@ export default function PrivacyPolicyPage() {
                         <a className="hover:text-primary" href="#contact">Contact</a>
                       </nav>
                     </div>
-                  </div>
-
-                  <div className="mt-6 pt-6 border-t border-border">
-                    <Button variant="outline" size="sm" className="w-full">
-                      <Share2 className="w-4 h-4 mr-2" />
-                      Share Policy
-                    </Button>
                   </div>
                 </CardContent>
               </Card>
