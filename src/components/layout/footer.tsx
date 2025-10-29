@@ -1,27 +1,68 @@
-import { Facebook, Twitter, Linkedin, Youtube } from "lucide-react";
+import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 import Image from "next/image";
 
 const logoImage = "/images/android-chrome-384x384.png";
 
 const Footer = () => {
+  const socialLinks = {
+    linkedin: "https://www.linkedin.com/company/checkmark-plagiarism/",
+    instagram: "https://www.instagram.com/checkmark_plagiarism/?igsh=MW9vZGY0dTRrNWw3Zg%3D%3D",
+    facebook: "#", // TODO: Get link once profile is up
+    twitter: "#", // TODO: Get link once profile is up
+  }
+
+  
   const footerSections = [
     {
       title: "Product",
-      links: ["Features", "Integrations", "Pricing", "Security", "Updates"],
+      // TODO: "Features", "Security", "Updates" temporarily removed. Add back to array if needed
+      links: ["Integrations", "Pricing"],
     },
     {
       title: "Resources",
-      links: ["Documentation", "API Reference", "Case Studies", "Blog", "Webinars"],
+      // TODO: "Documentation", "API Reference", "Case Studies", "Webinars", temporarily removed. Add back to array if needed
+      links: ["Blog"],
     },
     {
       title: "Company",
-      links: ["About Us", "Careers", "Press Kit", "Partners", "Contact"],
+      // TODO: "Careers", "Press Kit", "Partners", temporarily removed. Add back to array if needed
+      links: ["About Us", "Contact"],
     },
     {
       title: "Legal",
-      links: ["Privacy Policy", "Terms of Service", "Cookie Policy", "FERPA Compliance"],
+      // TODO: "Cookie Policy", "FERPA Compliance", temporarily removed. Add back to array if needed
+      links: ["Privacy Policy", "Terms of Service"],
     },
   ];
+
+  const getLinkHref = (linkText: string): string => {
+    const linkMap: { [key: string]: string } = {
+      // Product
+      // "Features": "/features", // TODO: Features page temporarily disabled
+      "Integrations": "/#integrations",
+      "Pricing": "/pricing",
+      // "Security": "#", // TODO: Create / find page
+      // "Updates": "#", // TODO: Create / find page
+      // Resources
+      // "Documentation": "#", // TODO: Create / find page
+      // "API Reference": "#", // TODO: Create / find page
+      // "Case Studies": "#", // TODO: Create / find page
+      "Blog": "/blog",
+      // "Webinars": "#", // TODO: Create / find page
+      // Company
+      "About Us": "/about",
+      // "Careers": "#", // TODO: Create / find page
+      // "Press Kit": "#", // TODO: Create / find page 
+      // "Partners": "#", // TODO: Create / find page 
+      "Contact": "/contact",
+      // Legal
+      "Privacy Policy": "/privacy-policy",
+      "Terms of Service": "/terms-of-service",
+      // "Cookie Policy": " #", // TODO: Create / find page
+      // "FERPA Compliance": "#", // TODO: Create / find page
+    };
+    return linkMap[linkText] || "#";
+  };
 
   return (
     <footer className="bg-brand-900 text-white pt-20 pb-10">
@@ -44,17 +85,17 @@ const Footer = () => {
               Empowering educators with transparent AI detection tools built for the modern classroom.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 transition-smooth flex items-center justify-center">
+              <a href={socialLinks.twitter} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 transition-smooth flex items-center justify-center">
                 <Twitter className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 transition-smooth flex items-center justify-center">
+              <a href={socialLinks.linkedin} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 transition-smooth flex items-center justify-center">
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 transition-smooth flex items-center justify-center">
+              <a href={socialLinks.facebook} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 transition-smooth flex items-center justify-center">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 transition-smooth flex items-center justify-center">
-                <Youtube className="w-5 h-5" />
+              <a href={socialLinks.instagram} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 transition-smooth flex items-center justify-center">
+                <Instagram className="w-5 h-5" />
               </a>
             </div>
           </div>
@@ -66,7 +107,7 @@ const Footer = () => {
               <ul className="space-y-3">
                 {section.links.map((link, linkIndex) => (
                   <li key={linkIndex}>
-                    <a href="#" className="text-white/70 hover:text-white transition-smooth">
+                    <a href={getLinkHref(link)} className="text-white/70 hover:text-white transition-smooth">
                       {link}
                     </a>
                   </li>

@@ -1,5 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Mail } from "lucide-react";
+import Link from "next/link";
+import { LinkButton } from "@/components/ui/link";
+
+const APP_URL = process.env.NEXT_PUBLIC_APP_URL || 'https://teach.checkmarkplagiarism.com';
 
 export const FinalCTA = () => {
   return (
@@ -21,14 +25,19 @@ export const FinalCTA = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
-            <Button variant="hero" size="xl" className="group">
+            <Link
+              href={`${APP_URL}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-lg font-bold h-16 px-12 bg-white text-brand-900 hover:bg-white/90 shadow-medium hover:shadow-strong transition-smooth group"
+            >
               Request a Demo
               <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            <Button variant="outline-white" size="xl">
+            </Link>
+            <LinkButton href="/contact" variant="outline-white" size="xl">
               <Mail className="mr-2" />
               Contact Sales
-            </Button>
+            </LinkButton>
           </div>
 
           <div className="flex flex-wrap items-center justify-center gap-8 text-white/80 text-sm">

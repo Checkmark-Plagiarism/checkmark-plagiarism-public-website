@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { LinkButton } from "@/components/ui/link";
+const APP_URL = process.env.NEXT_PUBLIC_APP_URL || 'https://teach.checkmarkplagiarism.com/';
 
 const logoImage = "/images/android-chrome-384x384.png";
 
@@ -42,6 +43,7 @@ export default function Header() {
         </Link>
 
         <nav className="hidden md:flex items-center gap-8">
+          {/* TODO: Features page temporarily disabled - uncomment if needed
           <Link
             href="/features"
             className={`font-medium transition-smooth ${
@@ -50,8 +52,9 @@ export default function Header() {
           >
             Features
           </Link>
+          */}
           <Link
-            href="#how-it-works"
+            href="/#how-it-works"
             className={`font-medium transition-smooth ${
               scrolled ? "text-foreground hover:text-primary" : "text-white/90 hover:text-white"
             }`}
@@ -83,22 +86,31 @@ export default function Header() {
             Contact
           </Link>
         </nav>
-
         <div className="flex items-center gap-3">
-          <LinkButton
-            href="/"
-            variant={scrolled ? "ghost" : "outline-white"}
-            size="sm"
+          <Link
+            href={`${APP_URL}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-sm font-semibold transition-smooth h-9 px-4 ${
+              scrolled
+              ? "hover:bg-accent hover:text-accent-foreground"
+              : "border-2 border-white/40 bg-white/10 text-white hover:bg-white/20 backdrop-blur-sm font-bold"
+            }`}
           >
             Sign In
-          </LinkButton>
-          <LinkButton
-            href="/"
-            variant={scrolled ? "default" : "hero"}
-            size="sm"
+          </Link>
+          <Link
+            href={`${APP_URL}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-sm font-semibold transition-smooth h-9 px-4 ${
+              scrolled
+              ? "bg-primary text-primary-foreground hover:bg-primary/90 shadow-soft hover:shadow-medium"
+              : "bg-white text-brand-900 hover:bg-white/90 shadow-medium hover:shadow-strong font-bold"
+            }`}
           >
             Try Demo
-          </LinkButton>
+          </Link>
         </div>
       </div>
     </header>
