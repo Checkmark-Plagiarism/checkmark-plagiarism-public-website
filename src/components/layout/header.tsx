@@ -3,7 +3,6 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { LinkButton } from "@/components/ui/link";
 const APP_URL = process.env.NEXT_PUBLIC_APP_URL || 'https://teach.checkmarkplagiarism.com/';
 
 const logoImage = "/images/android-chrome-384x384.png";
@@ -53,14 +52,6 @@ export default function Header() {
             Features
           </Link>
           */}
-          <Link
-            href="/#how-it-works"
-            className={`font-medium transition-smooth ${
-              scrolled ? "text-foreground hover:text-primary" : "text-white/90 hover:text-white"
-            }`}
-          >
-            How It Works
-          </Link>
           <Link
             href="/pricing"
             className={`font-medium transition-smooth ${

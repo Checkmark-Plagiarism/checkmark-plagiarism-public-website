@@ -2,11 +2,11 @@ import Image from "next/image";
 
 export const ProblemStatement = () => {
   return (
-    <section className="pt-20 pb-30 bg-background">
+    <section className="pt-20 pb-12 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-heading-1 text-brand-700 mb-6">
-            How Teachers Check
+            How It Works
           </h2>
           <p className="text-body-lg text-muted-foreground">
             Teachers can tell copying by watching typing patterns and copy-pastes the Essay Playback™.
