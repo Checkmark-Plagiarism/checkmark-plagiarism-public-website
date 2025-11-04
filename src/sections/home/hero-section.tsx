@@ -2,26 +2,49 @@
 
 import { LinkButton } from "@/components/ui/link";
 import Image from "next/image";
-
-const heroImage = "/images/home/test (5).png";
-const plagiarismReportImage = "/images/home/output.gif";
-
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Play, X } from "lucide-react";
+import { ArrowRight, Play } from "lucide-react";
 import {
   Dialog,
   DialogContent,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-  DialogClose,
 } from "@/components/ui/dialog";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
 
 const YT_URL = ""; // TODO: add your YouTube URL here
 
 export const Hero = () => {
+  const sectionRef = useRef<HTMLElement>(null);
+
+  // Track scroll progress of the hero section
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ["start start", "end start"],
+  });
+
+  // Transform scroll progress to parallax movement
+  // As you scroll, the image moves up faster (negative y value)
+  const y = useTransform(scrollYProgress, [0, 1], ["0%", "-200%"]);
+
   return (
-    <section className="relative bg-brand-900 pt-36 pb-40 overflow-hidden">
+    <section ref={sectionRef} className="relative bg-brand-900 pt-36 pb-40 overflow-hidden">
+      {/* Background essay clipart - dimmed with parallax */}
+      <motion.div
+        className="absolute inset-0 opacity-20"
+        style={{ y, top: "80%", scale: 4.2 }}
+      >
+        <Image
+          src="/images/essay-clipart.png"
+          alt=""
+          fill
+          className="object-contain"
+          priority
+        />
+      </motion.div>
+
       {/* Decorative elements */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 right-20 w-96 h-96 bg-accent rounded-full blur-3xl" />
@@ -67,7 +90,7 @@ export const Hero = () => {
                     className="w-full h-full"
                     src={YT_URL || "about:blank"}
                     title="Product Overview"
-                    frameBorder="0"
+                    style={{ border: 0 }}
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowFullScreen
                   />
