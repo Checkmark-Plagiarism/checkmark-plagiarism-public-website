@@ -3,7 +3,6 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { LinkButton } from "@/components/ui/link";
 const APP_URL = process.env.NEXT_PUBLIC_APP_URL || 'https://teach.checkmarkplagiarism.com/';
 
 const logoImage = "/images/android-chrome-384x384.png";
@@ -37,7 +36,7 @@ export default function Header() {
               height="50"
             />
           </div>
-          <span className={`font-bold text-xl ${scrolled ? "text-brand-900" : "text-white"}`}>
+          <span className={`font-bold text-xl ${scrolled ? "text-brand-700" : "text-white"}`}>
             Checkmark Plagiarism
           </span>
         </Link>
@@ -53,14 +52,6 @@ export default function Header() {
             Features
           </Link>
           */}
-          <Link
-            href="/#how-it-works"
-            className={`font-medium transition-smooth ${
-              scrolled ? "text-foreground hover:text-primary" : "text-white/90 hover:text-white"
-            }`}
-          >
-            How It Works
-          </Link>
           <Link
             href="/pricing"
             className={`font-medium transition-smooth ${
@@ -93,19 +84,17 @@ export default function Header() {
             rel="noopener noreferrer"
             className={`inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-sm font-semibold transition-smooth h-9 px-4 ${
               scrolled
-              ? "hover:bg-accent hover:text-accent-foreground"
+              ? "hover:bg-brand-700 hover:text-white"
               : "border-2 border-white/40 bg-white/10 text-white hover:bg-white/20 backdrop-blur-sm font-bold"
             }`}
           >
             Sign In
           </Link>
           <Link
-            href={`${APP_URL}`}
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/demo"
             className={`inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-sm font-semibold transition-smooth h-9 px-4 ${
               scrolled
-              ? "bg-primary text-primary-foreground hover:bg-primary/90 shadow-soft hover:shadow-medium"
+              ? "bg-brand-300 text-brand-700 hover:bg-brand-400 shadow-soft hover:shadow-medium"
               : "bg-white text-brand-900 hover:bg-white/90 shadow-medium hover:shadow-strong font-bold"
             }`}
           >
