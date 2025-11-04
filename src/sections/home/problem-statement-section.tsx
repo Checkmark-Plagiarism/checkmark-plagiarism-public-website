@@ -9,7 +9,7 @@ export const ProblemStatement = () => {
             How It Works
           </h2>
           <p className="text-body-lg text-muted-foreground">
-            Teachers can tell copying by watching typing patterns and copy-pastes the Essay Playback™.
+            Teachers can tell when students are copying, just by replaying their typing patterns and copy-pastes via Essay Playback™.
           </p>
         </div>
 

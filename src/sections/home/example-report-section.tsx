@@ -13,7 +13,7 @@ export const ExampleReport = () => {
         </div>
 
         <div className="max-w-7xl mx-auto">
-          <div className="flex items-center justify-between mb-4">
+          <div className="flex items-center justify-between ml-6 mb-4">
             <p className="text-body-lg text-white/90">
               Click around the interactive report below
             </p>
@@ -21,7 +21,7 @@ export const ExampleReport = () => {
               href={APP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-sm font-bold transition-smooth h-10 px-6 bg-white text-brand-900 hover:bg-white/90 shadow-medium hover:shadow-strong"
+              className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-sm font-bold transition-smooth h-10 px-6 bg-white text-brand-900 hover:bg-white/90 shadow-medium hover:shadow-strong mr-3"
             >
               Submit Your Own
             </Link>
