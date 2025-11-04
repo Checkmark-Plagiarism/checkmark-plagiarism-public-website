@@ -3,8 +3,6 @@ import { ArrowRight, Mail } from "lucide-react";
 import Link from "next/link";
 import { LinkButton } from "@/components/ui/link";
 
-const APP_URL = process.env.NEXT_PUBLIC_APP_URL || 'https://teach.checkmarkplagiarism.com';
-
 export const FinalCTA = () => {
   return (
     <section className="py-30 bg-brand-700 relative overflow-hidden">
@@ -26,9 +24,7 @@ export const FinalCTA = () => {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
             <Link
-              href={`${APP_URL}`}
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/demo"
               className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-lg font-bold h-16 px-12 bg-white text-brand-900 hover:bg-white/90 shadow-medium hover:shadow-strong transition-smooth group"
             >
               Try a Demo

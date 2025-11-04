@@ -91,9 +91,7 @@ export default function Header() {
             Sign In
           </Link>
           <Link
-            href={`${APP_URL}`}
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/demo"
             className={`inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-sm font-semibold transition-smooth h-9 px-4 ${
               scrolled
               ? "bg-brand-300 text-brand-700 hover:bg-brand-400 shadow-soft hover:shadow-medium"

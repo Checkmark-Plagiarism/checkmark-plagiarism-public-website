@@ -1,7 +1,5 @@
 import Link from "next/link";
 
-const APP_URL = process.env.NEXT_PUBLIC_APP_URL || 'https://teach.checkmarkplagiarism.com/';
-
 export const ExampleReport = () => {
   return (
     <section className="pt-16 pb-30 bg-brand-700">
@@ -21,9 +19,7 @@ export const ExampleReport = () => {
               Click around the interactive report below
             </p>
             <Link
-              href={APP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/demo"
               className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-sm font-bold transition-smooth h-10 px-6 bg-white text-brand-900 hover:bg-white/90 shadow-medium hover:shadow-strong mr-3"
             >
               Submit Your Own
