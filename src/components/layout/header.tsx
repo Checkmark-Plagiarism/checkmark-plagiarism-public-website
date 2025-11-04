@@ -36,7 +36,7 @@ export default function Header() {
               height="50"
             />
           </div>
-          <span className={`font-bold text-xl ${scrolled ? "text-brand-900" : "text-white"}`}>
+          <span className={`font-bold text-xl ${scrolled ? "text-brand-700" : "text-white"}`}>
             Checkmark Plagiarism
           </span>
         </Link>
