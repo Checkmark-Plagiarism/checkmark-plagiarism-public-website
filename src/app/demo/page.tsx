@@ -9,18 +9,23 @@ const Demo = () => {
   const [iframeHeight, setIframeHeight] = useState(600);
 
   useEffect(() => {
-    // Listen for messages from the iframe to dynamically adjust height
+    // Listen for explicit height change requests from the iframe
     const handleMessage = (event: MessageEvent) => {
       // Verify the origin for security
       if (event.origin !== "https://dev.checkmarkplagiarism.com") return;
 
-      if (event.data.type === "resize" && typeof event.data.height === "number") {
-        setIframeHeight(event.data.height);
+      // Simple message: { type: "setHeight", height: 600 | 1200 }
+      if (event.data.type === "setHeight" && typeof event.data.height === "number") {
+        const clampedHeight = Math.min(Math.max(event.data.height, 600), 1200);
+        setIframeHeight(clampedHeight);
       }
     };
 
     window.addEventListener("message", handleMessage);
-    return () => window.removeEventListener("message", handleMessage);
+
+    return () => {
+      window.removeEventListener("message", handleMessage);
+    };
   }, []);
 
   return (
@@ -50,10 +55,6 @@ const Demo = () => {
 
                   <p>
                     After selecting the document, you will have to wait 3 minutes before you get your report.
-                  </p>
-
-                  <p className="text-sm text-gray-600">
-                    Demo submissions are limited to 3 per minute per IP address. Results expire after 24 hours.
                   </p>
 
                   <div className="pt-4 border-t">
@@ -122,18 +123,23 @@ const Demo = () => {
       </div>
 
       {/* Demo iframe Section */}
-      <main className="container mx-auto px-4 py-16">
-        <div className="max-w-6xl mx-auto">
+      <main className="container mx-auto px-4 pt-16 pb-8">
+        <div className="max-w-6xl mx-auto overflow-hidden">
           <iframe
             ref={iframeRef}
             src="https://dev.checkmarkplagiarism.com/demo"
             title="Checkmark Demo"
-            className="w-full border-0"
+            className="border-0"
             style={{
               height: `${iframeHeight}px`,
               minHeight: "600px",
+              maxHeight: "1200px",
+              width: "125%",
+              marginLeft: "-12.5%",
+              transform: "scale(0.8)",
+              transformOrigin: "top center",
               transition: "height 0.3s ease-in-out",
-              background: "white"
+              background: "transparent"
             }}
             allowFullScreen
           />
