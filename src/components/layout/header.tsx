@@ -84,7 +84,7 @@ export default function Header() {
             rel="noopener noreferrer"
             className={`inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-sm font-semibold transition-smooth h-9 px-4 ${
               scrolled
-              ? "hover:bg-accent hover:text-accent-foreground"
+              ? "hover:bg-brand-700 hover:text-white"
               : "border-2 border-white/40 bg-white/10 text-white hover:bg-white/20 backdrop-blur-sm font-bold"
             }`}
           >
@@ -96,7 +96,7 @@ export default function Header() {
             rel="noopener noreferrer"
             className={`inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-sm font-semibold transition-smooth h-9 px-4 ${
               scrolled
-              ? "bg-primary text-primary-foreground hover:bg-primary/90 shadow-soft hover:shadow-medium"
+              ? "bg-brand-300 text-brand-700 hover:bg-brand-400 shadow-soft hover:shadow-medium"
               : "bg-white text-brand-900 hover:bg-white/90 shadow-medium hover:shadow-strong font-bold"
             }`}
           >
