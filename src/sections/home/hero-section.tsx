@@ -53,10 +53,10 @@ export const Hero = () => {
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-display text-white mb-12 animate-fade-in">
+          <h1 className="text-display text-white mb-12 animate-fade-in leading-tight overflow-visible">
             AI & Plagiarism Detection
             <br />
-            <span className="font-[family-name:var(--font-caveat)] bg-gradient-to-r from-red-400 via-yellow-400 via-green-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
+            <span className="inline-block font-[family-name:var(--font-caveat)] bg-gradient-to-r from-red-400 via-yellow-400 via-green-400 via-blue-400 to-purple-400 bg-clip-text text-transparent py-2 px-2">
               with Autograding
             </span>
           </h1>
