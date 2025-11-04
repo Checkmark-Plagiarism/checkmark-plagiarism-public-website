@@ -4,6 +4,12 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Lock, Check } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
+// Configure iframe URL based on environment
+const DEMO_IFRAME_URL = process.env.NEXT_PUBLIC_DEMO_URL || 'https://dev.checkmarkplagiarism.com/demo';
+
+// Extract origin from the full URL
+const DEMO_IFRAME_ORIGIN = new URL(DEMO_IFRAME_URL).origin;
+
 const Demo = () => {
   const iframeRef = useRef<HTMLIFrameElement>(null);
   const [iframeHeight, setIframeHeight] = useState(600);
@@ -12,7 +18,14 @@ const Demo = () => {
     // Listen for explicit height change requests from the iframe
     const handleMessage = (event: MessageEvent) => {
       // Verify the origin for security
-      if (event.origin !== "https://dev.checkmarkplagiarism.com") return;
+      const allowedIframeOrigins = [
+        "https://dev.checkmarkplagiarism.com",  // Dev iframe
+        "https://teach.checkmarkplagiarism.com", // Production iframe
+        "http://localhost:5173", // Local dev (Vite)
+        "http://localhost:3000", // Local dev (other)
+      ];
+
+      if (!allowedIframeOrigins.includes(event.origin)) return;
 
       // Simple message: { type: "setHeight", height: 600 | 1200 }
       if (event.data.type === "setHeight" && typeof event.data.height === "number") {
@@ -22,6 +35,31 @@ const Demo = () => {
     };
 
     window.addEventListener("message", handleMessage);
+
+    // Send parent origin to iframe when it loads
+    const iframe = iframeRef.current;
+    if (iframe) {
+      const sendOriginToIframe = () => {
+        iframe.contentWindow?.postMessage({
+          type: 'parentOrigin',
+          origin: window.location.origin
+        }, DEMO_IFRAME_ORIGIN);
+      };
+
+      iframe.addEventListener('load', sendOriginToIframe);
+
+      // Also send immediately if already loaded
+      if (iframe.contentWindow) {
+        setTimeout(sendOriginToIframe, 100);
+        setTimeout(sendOriginToIframe, 500);
+        setTimeout(sendOriginToIframe, 1000);
+      }
+
+      return () => {
+        window.removeEventListener("message", handleMessage);
+        iframe.removeEventListener('load', sendOriginToIframe);
+      };
+    }
 
     return () => {
       window.removeEventListener("message", handleMessage);
@@ -123,20 +161,20 @@ const Demo = () => {
       </div>
 
       {/* Demo iframe Section */}
-      <main className="container mx-auto px-4 pt-16 pb-8">
+      <main className="container mx-auto px-2 pt-16 pb-4">
         <div className="max-w-6xl mx-auto overflow-hidden">
           <iframe
             ref={iframeRef}
-            src="https://dev.checkmarkplagiarism.com/demo"
+            src={DEMO_IFRAME_URL}
             title="Checkmark Demo"
             className="border-0"
             style={{
               height: `${iframeHeight}px`,
               minHeight: "600px",
               maxHeight: "1200px",
-              width: "125%",
-              marginLeft: "-12.5%",
-              transform: "scale(0.8)",
+              width: "105%",
+              marginLeft: "-2.5%",
+              transform: "scale(0.95)",
               transformOrigin: "top center",
               transition: "height 0.3s ease-in-out",
               background: "transparent"
