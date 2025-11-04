@@ -54,15 +54,29 @@ export const Hero = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-display text-white mb-6 animate-fade-in">
-            AI & Plagiarism Detection with Autograding
+            AI & Plagiarism Detection
+            <br />
+            <span className="font-[family-name:var(--font-caveat)] bg-gradient-to-r from-red-400 via-yellow-400 via-green-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
+              with Autograding
+            </span>
           </h1>
-          <p
-            className="text-body-lg text-white/90 mb-10 max-w-2xl mx-auto animate-fade-in"
+          <div
+            className="flex items-center justify-center gap-3 mb-10 animate-fade-in"
             style={{ animationDelay: "0.1s" }}
           >
-            Catch AI-written text, verify originality, and auto-grade—seamlessly
-            inside Canvas and Google Classroom.
-          </p>
+            <Image
+              src="/images/android-chrome-192x192.png"
+              alt="Checkmark"
+              width={56}
+              height={56}
+              className="flex-shrink-0 drop-shadow-[0_0_3px_rgba(255,255,255,0.6)]"
+            />
+            <p className="text-heading-3 text-white/90 leading-relaxed">
+              Designed By Teachers,
+              <br />
+              For Teachers
+            </p>
+          </div>
 
           <div
             className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in"
