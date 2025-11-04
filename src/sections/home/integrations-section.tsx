@@ -18,14 +18,14 @@ export const Integrations = () => {
   ];
 
   return (
-    <section id="integrations" className="py-30 gradient-subtle">
+    <section id="integrations" className="pb-30 gradient-subtle">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-heading-2 text-foreground mb-4">
-            Works with Your Existing Tools
+          <h2 className="text-heading-2 text-brand-700 mb-4">
+            Integrate With Your LMS
           </h2>
           <p className="text-body-lg text-muted-foreground max-w-2xl mx-auto">
-            Seamlessly integrate with your LMS and grading workflows
+            Add cutting-edge plagiarism detection and autograding directly into your existing workflow
           </p>
         </div>
 
@@ -34,16 +34,16 @@ export const Integrations = () => {
           {integrations.map((integration, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl p-8 shadow-soft hover:shadow-medium transition-smooth flex items-center justify-center group cursor-pointer border-2 border-transparent hover:border-brand-500/30 min-w-[180px]"
+              className="bg-white rounded-xl px-8 pt-8 pb-5 shadow-soft flex items-center justify-center min-w-[180px]"
             >
               <div className="text-center">
-                <div className="w-12 h-12 mx-auto mb-3 rounded-lg bg-brand-500/10 group-hover:bg-brand-500 transition-smooth flex items-center justify-center">
+                <div className="mx-auto mb-3 flex items-center justify-center">
                   <Image
                     src={integration.icon}
                     alt={integration.alt}
                     width={48}
                     height={48}
-                    className="w-full h-full object-cover rounded-lg"
+                    className="object-contain"
                   />
                 </div>
                 <p className="text-sm font-semibold text-foreground">
@@ -55,15 +55,16 @@ export const Integrations = () => {
         </div>
 
         <div className="mt-12 text-center">
-          <p className="text-muted-foreground mb-6">
-            Don&apos;t see your platform? Contact us for custom integration options!
+          <p className="text-muted-foreground">
+            Don&apos;t see your platform?{" "}
+            <Link
+              href="/contact"
+              className="text-brand-500 font-semibold hover:text-brand-700 transition-smooth"
+            >
+              Contact us
+            </Link>
+            {" "}for custom integration options!
           </p>
-          <Link 
-            href="/contact" 
-            className="text-brand-500 font-semibold hover:text-brand-700 transition-smooth"
-          >
-            Request Integration →
-          </Link>
         </div>
       </div>
     </section>
