@@ -46,20 +46,20 @@ const Demo = () => {
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <p>
-                    Submit a Google Doc and Checkmark will detect AI plagiarism and give you feedback from our builtin auto-grader based on the rubric.
+                    Submit a Google Doc and Checkmark will detect AI-generated content and provide feedback from our autograder.
                   </p>
 
                   <p>
-                    When selecting a document from Google Drive, a Google popup will appear where you will have to give us permission.
+                    When selecting a document from Google Drive, a Google popup will appear asking for permission to access your document.
                   </p>
 
                   <p>
-                    After selecting the document, you will have to wait 3 minutes before you get your report.
+                    After submitting your document, you&apos;ll need to wait about a minute to receive your report.
                   </p>
 
                   <div className="pt-4 border-t">
                     <p className="font-semibold">
-                      To create your own rubric and submit Microsoft Word documents, please create an account. It&apos;s Free!!
+                      To create your own rubric and submit Microsoft Word documents, please create an account. It&apos;s free!
                     </p>
                   </div>
                 </CardContent>
