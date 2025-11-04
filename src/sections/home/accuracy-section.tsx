@@ -17,8 +17,8 @@ const features = [
   {
     icon: Keyboard,
     title: "Keystroke Analysis",
-    brief: "Verify authentic writing/typing patterns",
-    description: "Tracks typing speed and patterns to verify authentic writing. Like watching a student write in real-time, this helps identify when work matches their natural writing pace.",
+    brief: "Verify authentic writing patterns",
+    description: "Our patent-pending keystroke analysis tracks typing speed and patterns to verify authentic writing. Like watching a student write in real-time, this helps identify when work matches their natural writing pace.",
   },
   {
     icon: ClipboardCopy,
@@ -90,19 +90,16 @@ const FlipCard = ({ feature, index }: { feature: typeof features[0], index: numb
       >
         {/* Front of card */}
         <div
-          className="absolute inset-0 w-full h-full rounded-2xl bg-white shadow-soft hover:shadow-medium transition-shadow border-2 border-transparent hover:border-brand-500/30 px-8 pt-8 pb-4 flex flex-col items-center text-center"
+          className="absolute inset-0 w-full h-full rounded-2xl bg-white shadow-soft hover:shadow-medium transition-shadow border-2 border-transparent hover:border-brand-500/30 px-8 pt-12 flex flex-col items-center  text-center"
           style={{ backfaceVisibility: "hidden" }}
         >
-          <div className="flex-1 flex flex-col items-center justify-center">
-            <div className="w-16 h-16 rounded-xl bg-brand-500/10 flex items-center justify-center mb-4">
-              <feature.icon className="w-8 h-8 text-brand-500" />
-            </div>
-            <h3 className="text-xl font-bold text-foreground mb-2">
-              {feature.title}
-            </h3>
-            <p className="text-sm text-muted-foreground">{feature.brief}</p>
+          <div className="w-16 h-16 rounded-xl bg-brand-500/10 flex items-center justify-center mb-4">
+            <feature.icon className="w-8 h-8 text-brand-500" />
           </div>
-          <p className="text-xs text-muted-foreground/70 mt-4">Click to learn more</p>
+          <h3 className="text-xl font-bold text-foreground mb-2">
+            {feature.title}
+          </h3>
+          <p className="text-sm text-muted-foreground">{feature.brief}</p>
         </div>
 
         {/* Back of card */}

@@ -7,9 +7,12 @@ export const ExampleReport = () => {
     <section className="pt-16 pb-30 bg-brand-700">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-heading-3 text-white mb-4">
+          <h2 className="text-heading-3 text-white mb-2">
             Our report detects these typing patterns and more...
           </h2>
+          <p className="text-white/70">
+            Powered by patent-pending keystroke analysis
+          </p>
         </div>
 
         <div className="max-w-7xl mx-auto">
