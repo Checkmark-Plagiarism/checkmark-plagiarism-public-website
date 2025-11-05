@@ -3,6 +3,7 @@ import { Metadata } from "next";
 import { ShieldCheck, Eye, Scale, GraduationCap } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { LinkButton } from "@/components/ui/link";
+import AboutHero from "@/sections/about/about-hero";
 
 export const metadata: Metadata = {
   title: "Our Team — Checkmark Plagiarism",
@@ -52,24 +53,7 @@ const TEAM: Member[] = [
 export default function TeamPage() {
   return (
     <main>
-      {/* Hero */}
-      <section className="text-center mb-16 bg-brand-700 pt-32 pb-16">
-        <div className="container mx-auto px-4">
-          <h1 className="text-4xl md:text-5xl font-bold text-white">
-            People behind Checkmark Plagiarism
-          </h1>
-          <p className="mt-4 text-xl text-white/90 max-w-3xl mx-auto">
-            Educators, builders, and researchers focused on academic integrity
-            and helping student writing.
-          </p>
-
-          <div className="mt-8">
-            <LinkButton href="/contact" size="lg" variant="outline-white">
-              Contact us
-            </LinkButton>
-          </div>
-        </div>
-      </section>
+      <AboutHero />
 
       {/* Team grid */}
       <section className="py-16 bg-background">
