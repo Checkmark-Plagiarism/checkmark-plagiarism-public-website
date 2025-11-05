@@ -20,6 +20,7 @@ All colors MUST be HSL.
     /* Brand Colors - Instructure-inspired blues */
     --brand-900: 218 70% 16%;
     --brand-700: 218 60% 30%;
+    --brand-600: 218 80% 45%;
     --brand-500: 218 100% 59%;
     --brand-400: 218 100% 65%;
     --brand-300: 218 100% 75%;

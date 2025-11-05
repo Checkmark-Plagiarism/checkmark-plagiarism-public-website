@@ -21,6 +21,7 @@ export default {
         brand: {
           900: "hsl(var(--brand-900))",
           700: "hsl(var(--brand-700))",
+          600: "hsl(var(--brand-600))",
           500: "hsl(var(--brand-500))",
           400: "hsl(var(--brand-400))",
           300: "hsl(var(--brand-300))",

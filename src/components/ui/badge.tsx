@@ -22,7 +22,7 @@ const badgeVariants = cva(
         education:
           "border-transparent bg-accent text-accent-foreground hover:bg-accent/80",
         academic:
-          "border-transparent bg-orange text-orange-foreground hover:bg-orange/80",
+          "border-transparent bg-brand-700 text-white hover:bg-brand-700/80",
       },
     },
     defaultVariants: {

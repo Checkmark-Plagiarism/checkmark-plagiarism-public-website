@@ -71,7 +71,7 @@ export const Hero = () => {
               height={56}
               className="flex-shrink-0 drop-shadow-[0_0_3px_rgba(255,255,255,0.6)]"
             />
-            <p className="text-heading-3 text-white/90 leading-relaxed">
+            <p className="text-heading-3 text-white/90 leading-relaxed text-left">
               Designed By Teachers,
               <br />
               For Teachers
@@ -82,6 +82,9 @@ export const Hero = () => {
             className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in"
             style={{ animationDelay: "0.2s" }}
           >
+            <LinkButton href="/demo" variant="outline-white" size="xl" className="bg-brand-600">
+              Try Demo
+            </LinkButton>
             <LinkButton href="/contact" variant="hero" size="xl" className="group">
               Contact Us
               <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
