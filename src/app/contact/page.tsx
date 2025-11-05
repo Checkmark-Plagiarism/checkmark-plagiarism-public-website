@@ -2,21 +2,13 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Mail, MapPin, Phone } from "lucide-react";
 import ContactForm from "@/sections/contact/contact-form";
+import ContactHero from "@/sections/contact/contact-hero";
 
 const Contact = () => {
 
   return (
     <>
-
-    {/* Header Section */}
-    <div className="text-center mb-16 bg-brand-900 pt-32 pb-16">
-      <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-        Contact Us
-      </h1>
-      <p className="text-xl text-white max-w-3xl mx-auto">
-        Have questions about Checkmark Plagiarism? We&apos;re here to help! Reach out to learn more about our academic integrity solutions.
-      </p>
-    </div>
+    <ContactHero />
 
     <main className="container mx-auto px-4">
       <div className="max-w-6xl mx-auto">
