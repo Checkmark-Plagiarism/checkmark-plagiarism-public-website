@@ -69,10 +69,10 @@ export default function GoogleClassroomPage() {
               </p>
 
               <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <Fact icon={PlugZap} title="One-time connect" text="OAuth setup—no manual files." />
-                <Fact icon={Users2} title="Roster sync" text="Classes & enrollments stay fresh." />
-                <Fact icon={ClipboardList} title="Assignment aware" text="Enable checks where needed." />
-                <Fact icon={ShieldCheck} title="Scoped access" text="Only enabled classes & work." />
+                <Fact icon={PlugZap} title="Connect with Google OAuth" text="OAuth setup—no manual files." />
+                <Fact icon={Users2} title="Google Classroom roster sync" text="Classes & enrollments stay fresh." />
+                <Fact icon={ClipboardList} title="Assignment-level control" text="Enable checks where needed." />
+                <Fact icon={ShieldCheck} title="Secure Google access" text="Only enabled classes & work." />
               </div>
             </div>
           </div>
@@ -91,7 +91,7 @@ export default function GoogleClassroomPage() {
             <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
               <ProcessStep
                 k="01"
-                title="Authorize securely"
+                title="Authorize with Google OAuth"
                 text="A teacher or admin authorizes Checkmark via Google OAuth. We request only the minimum scopes needed."
                 icon={PlugZap}
                 badge="Setup"
@@ -127,7 +127,7 @@ export default function GoogleClassroomPage() {
               />
               <ProcessStep
                 k="04"
-                title="Review in context"
+                title="Review reports in Classroom"
                 text="Open clear reports—highlights, rationales, and confidence ranges—to discuss integrity with students."
                 icon={ShieldCheck}
                 badge="Review"
@@ -139,7 +139,7 @@ export default function GoogleClassroomPage() {
               />
               <ProcessStep
                 k="05"
-                title="Grade faster"
+                title="Auto-grade in Classroom"
                 text="Use rubric-aligned auto-grading and comments; override anything instantly and post grades."
                 icon={ClipboardList}
                 badge="Grading"

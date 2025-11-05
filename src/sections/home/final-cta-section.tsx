@@ -25,7 +25,7 @@ export const FinalCTA = () => {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
             <LinkButton href="/contact" variant="outline-white" size="xl">
               <Mail className="mr-2" />
-              Contact Sales
+              Speak with our team
             </LinkButton>
             <Link
               href="/demo"

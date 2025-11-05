@@ -23,7 +23,7 @@ export default function PricingPage() {
           FERPA-friendly data practices, and admin controls included.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
-          <LinkButton href="/contact" size="lg" variant="hero">Talk to sales <ArrowRight className="ml-2 h-4 w-4" /></LinkButton>
+          <LinkButton href="/contact" size="lg" variant="hero">Schedule a consultation <ArrowRight className="ml-2 h-4 w-4" /></LinkButton>
         </div>
       </section>
 
@@ -38,7 +38,7 @@ export default function PricingPage() {
               price="$14/mo"
               priceSubtitle="billed annually + 1 month free trial"
               blurb="Perfect for individual teachers. $18/mo if billed monthly."
-              cta={{ label: "Get Started", href: "/contact" }}
+              cta={{ label: "Start your trial", href: "/contact" }}
               features={[
                 "AI & plagiarism detection (~50 reports/month)",
                 "Keystroke & copy/paste analysis",
@@ -54,7 +54,7 @@ export default function PricingPage() {
               price="$17/mo"
               priceSubtitle="billed annually + 1 month free trial"
               blurb="Advanced features for power users with more capacity. $21/mo if billed monthly."
-              cta={{ label: "Get Started", href: "/contact" }}
+              cta={{ label: "Start your trial", href: "/contact" }}
               features={[
                 "Everything in Basic",
                 { text: "Autograding", highlight: true },
@@ -190,7 +190,7 @@ export default function PricingPage() {
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <LinkButton href="/contact" variant="outline-white" size="xl">
-                Request a quote <ArrowRight className="ml-2 h-4 w-4" />
+                Request pricing quote <ArrowRight className="ml-2 h-4 w-4" />
               </LinkButton>
               <LinkButton href="/#features" variant="outline-white" size="xl">
                 Explore features

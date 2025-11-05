@@ -1,8 +1,14 @@
+import { Metadata } from "next";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Mail, MapPin, Phone } from "lucide-react";
 import ContactForm from "@/sections/contact/contact-form";
 import ContactHero from "@/sections/contact/contact-hero";
+
+export const metadata: Metadata = {
+  title: "Contact Us — Checkmark Plagiarism",
+  description: "Get in touch with Checkmark Plagiarism. Schedule a demo, request pricing, or ask questions about our AI detection and autograding solutions for teachers and schools.",
+};
 
 const Contact = () => {
 
