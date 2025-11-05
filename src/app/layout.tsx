@@ -13,7 +13,7 @@ const caveat = Caveat({
 
 export const metadata: Metadata = {
   title: "Checkmark Plagiarism",
-  description: "",
+  description: "AI-powered plagiarism detection and autograding designed by teachers, for teachers. Detect AI-generated content, analyze keystrokes, and grade faster with transparent, revision-aware tools.",
   openGraph: {
     images: [
       "https://public.checkmarkplagiarism.com/images/android-chrome-384x384.png",

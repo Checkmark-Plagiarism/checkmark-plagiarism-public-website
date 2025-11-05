@@ -69,16 +69,16 @@ export default function CanvasLMSPage() {
               </p>
 
               <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <Fact icon={PlugZap} title="One-time connect" text="OAuth-based setup—no CSVs." />
-                <Fact icon={Users2} title="Roster sync" text="Enrollments update automatically." />
+                <Fact icon={PlugZap} title="Connect with Canvas OAuth" text="OAuth-based setup—no CSVs." />
+                <Fact icon={Users2} title="Canvas roster sync" text="Enrollments update automatically." />
                 <Fact
                   icon={ClipboardList}
-                  title="Assignment aware"
+                  title="Assignment-level control"
                   text="Choose what to check and when."
                 />
                 <Fact
                   icon={ShieldCheck}
-                  title="Scoped access"
+                  title="Secure Canvas access"
                   text="Only enabled courses & assignments."
                 />
               </div>
@@ -99,7 +99,7 @@ export default function CanvasLMSPage() {
             <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
               <ProcessStep
                 k="01"
-                title="Authorize securely"
+                title="Authorize with Canvas OAuth"
                 text="A Canvas admin or course teacher authorizes Checkmark via OAuth. Permissions are the minimum required."
                 icon={PlugZap}
                 badge="Setup"
@@ -135,7 +135,7 @@ export default function CanvasLMSPage() {
               />
               <ProcessStep
                 k="04"
-                title="Review in context"
+                title="Review reports in Canvas"
                 text="Open transparent reports from Canvas—see highlights, rationales, and confidence ranges."
                 icon={ShieldCheck}
                 badge="Review"
@@ -147,7 +147,7 @@ export default function CanvasLMSPage() {
               />
               <ProcessStep
                 k="05"
-                title="Grade faster"
+                title="Auto-grade in Canvas"
                 text="Use rubric-aligned auto-grading and comments; override anything instantly."
                 icon={ClipboardList}
                 badge="Grading"
