@@ -23,7 +23,6 @@ export default function PricingPage() {
           FERPA-friendly data practices, and admin controls included.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
-          <LinkButton href="#plans" size="lg" variant="outline-white" className="bg-brand-600">See plans</LinkButton>
           <LinkButton href="/contact" size="lg" variant="hero">Talk to sales <ArrowRight className="ml-2 h-4 w-4" /></LinkButton>
         </div>
       </section>
@@ -33,58 +32,57 @@ export default function PricingPage() {
         <div className="container mx-auto px-6">
           <div className="mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-6">
             <Plan
-              badge="Pilot"
               icon={GraduationCap}
               color="from-emerald-600/20 via-emerald-500/10"
-              title="Educator Pilot"
-              price="Request access"
-              blurb="Great for proofs-of-concept in a few classes."
-              cta={{ label: "Join the waitlist", href: "/contact" }}
+              title="Basic"
+              price="$14/mo"
+              priceSubtitle="billed annually"
+              blurb="Perfect for individual teachers. $18/mo if billed monthly."
+              cta={{ label: "Get Started", href: "/contact" }}
               features={[
-                "AI & plagiarism checks (limited seats)",
-                "Revision-aware evidence & clear reports",
-                "Google Docs / Word file support",
-                "Email support",
+                "AI & plagiarism detection (~50 reports/month)",
+                "Keystroke & copy/paste analysis",
+                "Essay Playback™",
+                "Google Docs support",
+                "Google Classroom integration",
               ]}
             />
             <Plan
-              badge="Most Popular"
-              popular
               icon={School}
               color="from-blue-600/20 via-blue-500/10"
-              title="Department"
-              price="Contact sales"
-              blurb="Scale to a team, grade level, or department."
-              cta={{ label: "Contact sales", href: "/contact" }}
+              title="Pro"
+              price="$17/mo"
+              priceSubtitle="billed annually"
+              blurb="Advanced features for power users with more capacity. $21/mo if billed monthly."
+              cta={{ label: "Get Started", href: "/contact" }}
               features={[
-                "All Pilot features, plus more seats",
-                "Google Classroom™ / Canvas LMS integration",
-                "SSO (Google / Microsoft) & role-based access",
-                "Bulk scans & assignment automations",
-                "Priority support",
+                "Everything in Basic",
+                { text: "Autograding", highlight: true },
+                { text: "Writing Feedback", highlight: true },
+                "~120 reports/month",
               ]}
             />
             <Plan
-              badge="Custom"
               icon={Building2}
               color="from-fuchsia-600/20 via-fuchsia-500/10"
-              title="District"
+              title="School & District"
               price="Custom quote"
-              blurb="District-wide deployment with governance."
-              cta={{ label: "Request quote", href: "/contact" }}
+              blurb="Full deployment with integrations and admin controls."
+              cta={{ label: "Contact Sales", href: "/contact" }}
               features={[
-                "Enterprise SSO & admin policies",
-                "Data retention controls & audit logs",
-                "Advanced reporting & exports",
-                "Onboarding & educator training",
-                "Dedicated success manager",
+                "Everything in Pro",
+                "Google Classroom & Canvas LMS integration",
+                "Microsoft Word support",
+                "Google & Microsoft SSO",
+                "Admin controls & reporting",
+                "Onboarding & training",
               ]}
             />
           </div>
 
           {/* Fine print / disclosure */}
           <p className="mt-6 text-center text-xs text-muted-foreground">
-            Pricing is currently quote-based and tailored to your org’s size, usage, and integrations.
+            Basic and Pro plans have fixed pricing. School & District pricing is customized based on size, integrations, and support needs.
           </p>
         </div>
       </section>
@@ -103,23 +101,28 @@ export default function PricingPage() {
                 <thead className="text-left">
                   <tr className="border-b border-border">
                     <th className="py-4 pl-6 pr-4">Capability</th>
-                    <th className="py-4 px-4">Educator Pilot</th>
-                    <th className="py-4 px-4">Department</th>
-                    <th className="py-4 pr-6 pl-4">District</th>
+                    <th className="py-4 px-4">Basic</th>
+                    <th className="py-4 px-4">Pro</th>
+                    <th className="py-4 pr-6 pl-4">School & District</th>
                   </tr>
                 </thead>
                 <tbody className="align-top">
                   {[
-                    ["AI detection (revision-aware)", true, true, true],
+                    ["Monthly report limit", "~50", "~120", "Custom"],
+                    ["Keystroke Analysis (patent pending)", true, true, true],
+                    ["Essay Playback™", true, true, true],
+                    ["AI detection (static analysis)", true, true, true],
                     ["Plagiarism similarity & paraphrase cues", true, true, true],
                     ["Explainable reports & confidence ranges", true, true, true],
-                    ["Google Docs / Microsoft Word support", true, true, true],
-                    ["Google Classroom™ / Canvas LMS", "Limited", true, true],
-                    ["SSO (Google / Microsoft)", "—", true, true],
-                    ["Bulk scans & automations", "—", true, true],
-                    ["Admin controls & audit logs", "—", "—", true],
-                    ["Onboarding & educator training", "—", "Optional", true],
-                    ["Dedicated success manager", "—", "—", true],
+                    ["Google Docs support", true, true, true],
+                    ["Microsoft Word support", "—", "—", true],
+                    ["Google Classroom integration", true, true, true],
+                    ["Canvas LMS integration", "—", "—", true],
+                    ["Autograding", "—", true, true],
+                    ["Writing Feedback", "—", true, true],
+                    ["Google / Microsoft SSO", "—", "—", true],
+                    ["Admin controls & reporting", "—", "—", true],
+                    ["Onboarding & training", "—", "—", true],
                   ].map((row, i) => (
                     <tr key={i} className="border-b border-border/60">
                       <td className="py-3 pl-6 pr-4 text-foreground">{row[0] as string}</td>
@@ -142,35 +145,12 @@ export default function PricingPage() {
               </table>
             </div>
 
-            <div className="mt-8 text-center">
-              <LinkButton href="/contact" variant="outline">Ask about site-wide licensing</LinkButton>
-            </div>
+
           </div>
         </div>
       </section>
 
-      {/* EDU perks */}
-      <section className="py-16 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-6">
-            <Perk
-              icon={ShieldCheck}
-              title="Privacy by design"
-              text="FERPA-friendly, least-privilege access, and clear audit trails."
-            />
-            <Perk
-              icon={Zap}
-              title="Works where you teach"
-              text="Google Classroom™ and Canvas LMS integrations keep teachers in-flow."
-            />
-            <Perk
-              icon={Users}
-              title="Built for learning"
-              text="Revision-aware evidence and plain-language reports support student growth."
-            />
-          </div>
-        </div>
-      </section>
+
 
       {/* FAQ */}
       <section className="py-16 bg-background">
@@ -226,59 +206,61 @@ export default function PricingPage() {
 /* ---------- components ---------- */
 
 function Plan({
-  badge,
   icon: Icon,
   color,
   title,
   price,
+  priceSubtitle,
   blurb,
-  popular = false,
   cta,
   features,
 }: {
-  badge: string;
   icon: React.ComponentType<{ className?: string }>;
   color: string; // tailwind gradient
   title: string;
   price: string;
+  priceSubtitle?: string;
   blurb: string;
-  popular?: boolean;
   cta: { label: string; href: string };
-  features: string[];
+  features: Array<string | { text: string; highlight: boolean }>;
 }) {
   return (
-    <Card className={`relative overflow-hidden ring-1 ring-border ${popular ? "shadow-medium" : "shadow-soft"}`}>
+    <Card className="relative overflow-hidden ring-1 ring-border shadow-soft flex flex-col">
       {/* gradient accent */}
       <div className={`h-2 bg-gradient-to-r ${color} to-transparent`} />
-      {/* popular label */}
-      {popular && (
-        <div className="absolute right-3 top-3 text-[10px] uppercase tracking-wider text-primary bg-primary/10 rounded-full px-2 py-1">
-          Most Popular
-        </div>
-      )}
-      <CardContent className="p-6">
-        <div className="flex items-center gap-2">
+      <CardContent className="p-6 flex flex-col flex-grow">
+        <div className="flex items-center gap-3">
           <div className="h-9 w-9 rounded-lg bg-muted flex items-center justify-center">
             <Icon className="h-5 w-5" />
           </div>
-          <div className="text-xs px-2 py-1 rounded-full bg-background/60 backdrop-blur-sm ring-1 ring-border">
-            {badge}
-          </div>
+          <h3 className="text-xl font-semibold">{title}</h3>
         </div>
-        <h3 className="mt-3 text-xl font-semibold">{title}</h3>
-        <div className="mt-1 text-2xl font-bold">{price}</div>
+        <div className="mt-3 text-2xl font-bold">{price}</div>
+        {priceSubtitle && (
+          <div className="text-sm text-muted-foreground">{priceSubtitle}</div>
+        )}
         <p className="mt-2 text-sm text-muted-foreground">{blurb}</p>
 
         <ul className="mt-4 space-y-2 text-sm">
-          {features.map((f, i) => (
-            <li key={i} className="flex items-start gap-2">
-              <Check className="mt-0.5 h-4 w-4 text-emerald-600" />
-              <span className="text-muted-foreground">{f}</span>
-            </li>
-          ))}
+          {features.map((f, i) => {
+            const isHighlighted = typeof f === 'object' && f.highlight;
+            const text = typeof f === 'string' ? f : f.text;
+
+            return (
+              <li key={i} className="flex items-start gap-2">
+                <Check className="mt-0.5 h-4 w-4 text-emerald-600 flex-shrink-0" />
+                <span className={isHighlighted
+                  ? "bg-gradient-to-r from-red-400 via-yellow-400 via-green-400 via-blue-400 to-purple-400 bg-clip-text text-transparent font-bold"
+                  : "text-muted-foreground"
+                }>
+                  {text}
+                </span>
+              </li>
+            );
+          })}
         </ul>
 
-        <div className="mt-6">
+        <div className="mt-auto pt-6">
           <LinkButton href={cta.href} className="w-full">{cta.label}</LinkButton>
         </div>
       </CardContent>
