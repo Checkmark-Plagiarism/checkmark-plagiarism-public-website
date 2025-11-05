@@ -1,6 +1,6 @@
 // app/company/team/page.tsx
 import { Metadata } from "next";
-import { ShieldCheck } from "lucide-react";
+import { ShieldCheck, Eye, Scale, GraduationCap } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { LinkButton } from "@/components/ui/link";
 
@@ -82,7 +82,44 @@ export default function TeamPage() {
         </div>
       </section>
 
-      {/* Values / footer CTA */}
+      {/* Our Values */}
+      <section className="py-16 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="mx-auto max-w-4xl text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+              Our Values
+            </h2>
+            <p className="mt-4 text-lg text-muted-foreground">
+              The principles that guide how we build tools for academic integrity
+            </p>
+          </div>
+
+          <div className="mx-auto max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-6">
+            <ValueCard
+              icon={Eye}
+              title="Transparency"
+              description="Clear evidence and explanations, no black-box decisions. Every detection is backed by revision history and concrete examples."
+            />
+            <ValueCard
+              icon={Scale}
+              title="Fairness"
+              description="Revision-aware detection that supports student growth. We focus on understanding writing processes, not just flagging outcomes."
+            />
+            <ValueCard
+              icon={ShieldCheck}
+              title="Privacy"
+              description="FERPA-friendly data practices and student data protection. Your students' work is secure and never used for training models."
+            />
+            <ValueCard
+              icon={GraduationCap}
+              title="Education-First"
+              description="Built by educators, for educators and students. We understand classroom realities and design tools that actually help teaching."
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Footer CTA */}
       <section className="py-20 bg-brand-700 relative overflow-hidden">
         {/* Background decoration */}
         <div className="absolute inset-0 opacity-10">
@@ -151,5 +188,31 @@ function TeamCard({ member }: { member: Member }) {
         </CardContent>
       </Card>
     </div>
+  );
+}
+
+function ValueCard({
+  icon: Icon,
+  title,
+  description,
+}: {
+  icon: React.ComponentType<{ className?: string }>;
+  title: string;
+  description: string;
+}) {
+  return (
+    <Card className="ring-1 ring-border shadow-soft">
+      <CardContent className="p-6">
+        <div className="flex items-start gap-4">
+          <div className="h-12 w-12 rounded-lg bg-brand-500/10 flex items-center justify-center flex-shrink-0">
+            <Icon className="h-6 w-6 text-brand-600" />
+          </div>
+          <div>
+            <h3 className="text-xl font-semibold text-foreground mb-2">{title}</h3>
+            <p className="text-sm text-muted-foreground leading-relaxed">{description}</p>
+          </div>
+        </div>
+      </CardContent>
+    </Card>
   );
 }
