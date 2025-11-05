@@ -18,6 +18,15 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const handleScrollToTop = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    // If we're on the home page, scroll to top
+    if (window.location.pathname === '/') {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    // Otherwise let the link navigate normally
+  };
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -27,7 +36,7 @@ export default function Header() {
       }`}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2">
+        <Link href="/" onClick={handleScrollToTop} className="flex items-center gap-2">
           <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
             <Image
               src={logoImage}
@@ -52,6 +61,15 @@ export default function Header() {
             Features
           </Link>
           */}
+          <Link
+            href="/"
+            onClick={handleScrollToTop}
+            className={`font-medium transition-smooth ${
+              scrolled ? "text-foreground hover:text-primary" : "text-white/90 hover:text-white"
+            }`}
+          >
+            Home
+          </Link>
           <Link
             href="/pricing"
             className={`font-medium transition-smooth ${

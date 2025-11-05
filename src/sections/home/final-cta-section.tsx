@@ -23,6 +23,10 @@ export const FinalCTA = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
+            <LinkButton href="/contact" variant="outline-white" size="xl">
+              <Mail className="mr-2" />
+              Contact Sales
+            </LinkButton>
             <Link
               href="/demo"
               className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-lg font-bold h-16 px-12 bg-white text-brand-900 hover:bg-white/90 shadow-medium hover:shadow-strong transition-smooth group"
@@ -30,16 +34,12 @@ export const FinalCTA = () => {
               Try a Demo
               <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
             </Link>
-            <LinkButton href="/contact" variant="outline-white" size="xl">
-              <Mail className="mr-2" />
-              Contact Sales
-            </LinkButton>
           </div>
 
           <div className="flex flex-wrap items-center justify-center gap-8 text-white/80 text-sm">
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 rounded-full bg-accent"></div>
-              <span>Free 90-day trial</span>
+              <span>Free 30-day trial</span>
             </div>
           </div>
         </div>

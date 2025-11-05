@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const ExampleReport = () => {
   return (
-    <section className="pt-16 pb-30 bg-brand-700">
+    <section className="pt-16 pb-8 bg-brand-700">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-heading-3 text-white mb-2">
@@ -14,16 +14,10 @@ export const ExampleReport = () => {
         </div>
 
         <div className="max-w-7xl mx-auto">
-          <div className="flex items-center justify-between ml-6 mb-4">
+          <div className="ml-6 mb-4">
             <p className="text-body-lg text-white/90">
               Click around the interactive report below
             </p>
-            <Link
-              href="/demo"
-              className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-sm font-bold transition-smooth h-10 px-6 bg-white text-brand-900 hover:bg-white/90 shadow-medium hover:shadow-strong mr-3"
-            >
-              Submit Your Own
-            </Link>
           </div>
           <div className="rounded-2xl overflow-hidden shadow-strong border-4 border-white/10 h-[600px] bg-white">
             <iframe
@@ -41,6 +35,14 @@ export const ExampleReport = () => {
               }}
               allow="clipboard-write"
             />
+          </div>
+          <div className="flex justify-center mt-12 mb-4">
+            <Link
+              href="/demo"
+              className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-lg font-bold transition-smooth h-14 px-10 bg-brand-300 text-white hover:bg-brand-400 shadow-medium hover:shadow-strong"
+            >
+              Submit Your Own
+            </Link>
           </div>
         </div>
       </div>
