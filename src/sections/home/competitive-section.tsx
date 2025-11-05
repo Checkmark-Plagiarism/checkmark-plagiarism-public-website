@@ -1,4 +1,5 @@
 import { Check, X, Minus } from "lucide-react";
+import Image from "next/image";
 
 export const CompetitiveSection = () => {
   const accuracyStats = [
@@ -53,12 +54,12 @@ export const CompetitiveSection = () => {
             <div className="bg-white rounded-2xl p-8 shadow-strong">
               <div className="flex items-end justify-center gap-12" style={{ height: '400px' }}>
                 {accuracyStats.map((stat, index) => {
-                  // Custom unit scaling: 89 = 3 units, 91 = 4 units, 95 = 6 units
+                  // Custom unit scaling: 89 = 4.5 units, 91 = 5 units, 95 = 6 units
                   const getUnits = (accuracy: number) => {
-                    if (accuracy === 89) return 3;
-                    if (accuracy === 91) return 4;
+                    if (accuracy === 89) return 4.5;
+                    if (accuracy === 91) return 5;
                     if (accuracy === 95) return 6;
-                    return 3;
+                    return 4.5;
                   };
                   const units = getUnits(stat.accuracy);
                   const pixelsPerUnit = 50; // Height per unit
@@ -78,7 +79,7 @@ export const CompetitiveSection = () => {
                         <div
                           className={`rounded-t-lg transition-all ${
                             stat.highlight
-                              ? "w-full bg-gradient-to-t from-brand-500 to-brand-400 shadow-lg scale-110"
+                              ? "w-full bg-gradient-to-t from-brand-500 to-brand-400 shadow-lg scale-x-110 origin-bottom"
                               : "w-11/12 bg-gray-300"
                           }`}
                           style={{
@@ -87,11 +88,22 @@ export const CompetitiveSection = () => {
                         />
                       </div>
                       {/* Label */}
-                      <p className={`text-sm font-semibold text-center mt-3 ${
+                      <div className={`flex items-center justify-center gap-2 mt-3 ${
                         stat.highlight ? "text-brand-700" : "text-gray-600"
                       }`}>
-                        {stat.name}
-                      </p>
+                        {stat.highlight && (
+                          <Image
+                            src="/images/android-chrome-192x192.png"
+                            alt="Checkmark"
+                            width={20}
+                            height={20}
+                            className="flex-shrink-0"
+                          />
+                        )}
+                        <p className="text-sm font-semibold text-center">
+                          {stat.name}
+                        </p>
+                      </div>
                     </div>
                   );
                 })}
@@ -133,7 +145,16 @@ export const CompetitiveSection = () => {
                       Grammarly
                     </th>
                     <th className="px-6 py-4 text-center text-sm font-semibold text-brand-700 bg-brand-50">
-                      Checkmark Plagiarism
+                      <div className="flex items-center justify-center gap-2">
+                        <Image
+                          src="/images/android-chrome-192x192.png"
+                          alt="Checkmark"
+                          width={20}
+                          height={20}
+                          className="flex-shrink-0"
+                        />
+                        <span>Checkmark Plagiarism</span>
+                      </div>
                     </th>
                   </tr>
                 </thead>
