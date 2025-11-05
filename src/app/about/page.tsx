@@ -1,10 +1,8 @@
 // app/company/team/page.tsx
 import { Metadata } from "next";
-import Link from "next/link";
-import { Mail, ShieldCheck, Users2 } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { ShieldCheck } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-import FeatureHero from "@/sections/features/feature-hero";
+import { LinkButton } from "@/components/ui/link";
 
 export const metadata: Metadata = {
   title: "Our Team — Checkmark Plagiarism",
@@ -16,7 +14,6 @@ export const metadata: Metadata = {
 type Member = {
   name: string;
   role: string;
-  email: string;
   img?: string;
 };
 
@@ -24,27 +21,31 @@ const TEAM: Member[] = [
   {
     name: "Nicholas Mark",
     role: "Chief Executive",
-    email: "nicholas@checkmarkplagiarism.com",
+    img: "/images/headshots/nicholas-headshot.png",
+  },
+  {
+    name: "Vince Plaza",
+    role: "VP Business",
   },
   {
     name: "Emma Ritto",
-    role: "Chief Operations",
-    email: "erittoo@checkmarkplagiarism.com".replace("oo","o"),
+    role: "VP of Marketing",
+    img: "/images/headshots/emma-headshot.png",
   },
   {
     name: "Tony Li",
-    role: "Chief Operations",
-    email: "tony.li@checkmarkplagiarism.com",
+    role: "VP of Sales",
+    img: "/images/headshots/tony-headshot.png",
   },
   {
     name: "Jaron King",
     role: "Senior Software Developer",
-    email: "jaron.king@checkmarkplagiarism.com",
+    img: "/images/headshots/jaron-headshot.png",
   },
   {
     name: "Kevin Lee",
     role: "Machine Learning Developer",
-    email: "",
+    img: "/images/headshots/kevin-headshot.png",
   },
 ];
 
@@ -52,66 +53,61 @@ export default function TeamPage() {
   return (
     <main>
       {/* Hero */}
-      <FeatureHero bgTint="bg-blue-200">
-        <div className="mx-auto max-w-3xl text-center">
-          <span className="inline-flex items-center gap-2 rounded-full bg-white/60 px-3 py-1 text-xs font-medium text-blue-900 ring-1 ring-blue-300/60">
-            <Users2 className="h-3.5 w-3.5" />
-            Meet the Team
-          </span>
-          <h1 className="mt-4 text-4xl md:text-5xl font-bold tracking-tight text-foreground">
+      <section className="text-center mb-16 bg-brand-900 pt-32 pb-16">
+        <div className="container mx-auto px-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-white">
             People behind Checkmark Plagiarism
           </h1>
-          <p className="mt-4 text-lg md:text-xl text-muted-foreground">
+          <p className="mt-4 text-xl text-white/90 max-w-3xl mx-auto">
             Educators, builders, and researchers focused on academic integrity
-            and classroom-ready tooling.
+            and helping student writing.
           </p>
 
-          <div className="mt-6 flex flex-wrap justify-center gap-3">
-            <Link href="/contact" className="inline-flex">
-              <Button size="sm">Contact us</Button>
-            </Link>
-            <Link href="/pricing" className="inline-flex">
-              <Button size="sm" variant="outline">
-                Try it at your school
-              </Button>
-            </Link>
+          <div className="mt-8">
+            <LinkButton href="/contact" size="lg" variant="outline-white">
+              Contact us
+            </LinkButton>
           </div>
         </div>
-      </FeatureHero>
+      </section>
 
       {/* Team grid */}
-      <section className="py-12">
+      <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
-          <div className="mx-auto grid max-w-5xl grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
+          <div className="mx-auto grid max-w-3xl grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-12">
             {TEAM.map((m) => (
-              <TeamCard key={m.email} member={m} />
+              <TeamCard key={m.name} member={m} />
             ))}
           </div>
         </div>
       </section>
 
-      {/* Values / footer CTA for cohesion with feature pages */}
-      <section className="py-16 bg-muted/50 border-y border-border">
-        <div className="container mx-auto px-4">
+      {/* Values / footer CTA */}
+      <section className="py-20 bg-brand-700 relative overflow-hidden">
+        {/* Background decoration */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-0 left-1/4 w-96 h-96 bg-accent rounded-full blur-3xl" />
+          <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-brand-300 rounded-full blur-3xl" />
+        </div>
+
+        <div className="container mx-auto px-6 relative z-10">
           <div className="mx-auto max-w-4xl text-center">
-            <h2 className="text-2xl md:text-3xl font-bold text-foreground">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Built for fairness and transparency
             </h2>
-            <p className="mt-3 text-muted-foreground">
+            <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
               We design detection grounded in revision history, with clear
               explanations and privacy-respecting data practices.
             </p>
 
-            <div className="mt-6 flex items-center justify-center gap-3">
-              <Link href="/privacy-policy">
-                <Button variant="outline">
-                  <ShieldCheck className="mr-2 h-4 w-4" />
-                  Read our Privacy Policy
-                </Button>
-              </Link>
-              <Link href="/pricing">
-                <Button>Get started</Button>
-              </Link>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <LinkButton href="/privacy-policy" variant="outline-white" size="xl">
+                <ShieldCheck className="mr-2 h-4 w-4" />
+                Read our Privacy Policy
+              </LinkButton>
+              <LinkButton href="/pricing" variant="outline-white" size="xl">
+                Get started
+              </LinkButton>
             </div>
           </div>
         </div>
@@ -130,40 +126,30 @@ function TeamCard({ member }: { member: Member }) {
     .join("");
 
   return (
-    <Card className="overflow-hidden ring-1 ring-border">
-      <div className="h-24 bg-gradient-to-r from-blue-600/20 via-blue-500/10 to-transparent" />
-      <CardContent className="p-6">
-        <div className="flex items-center gap-4">
-          {member.img ? (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img
-              src={member.img}
-              alt={member.name}
-              className="h-14 w-14 rounded-xl object-cover ring-1 ring-border"
-            />
-          ) : (
-            <div className="h-14 w-14 rounded-xl bg-blue-600/10 ring-1 ring-blue-300/40 flex items-center justify-center text-blue-900 font-semibold">
-              {initials}
-            </div>
-          )}
-          <div>
-            <h3 className="text-lg font-semibold text-foreground">
-              {member.name}
-            </h3>
-            <p className="text-sm text-muted-foreground">{member.role}</p>
-          </div>
+    <div className="flex flex-col items-center">
+      {/* Profile circle */}
+      {member.img ? (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img
+          src={member.img}
+          alt={member.name}
+          className="h-44 w-44 rounded-full object-cover ring-4 ring-white shadow-medium"
+        />
+      ) : (
+        <div className="h-44 w-44 rounded-full bg-gradient-to-br from-brand-500 to-brand-600 flex items-center justify-center text-white text-4xl font-bold shadow-medium">
+          {initials}
         </div>
+      )}
 
-        <div className="mt-4">
-          <a
-            href={`mailto:${member.email}`}
-            className="inline-flex items-center gap-1.5 text-sm text-foreground/80 hover:text-foreground"
-          >
-            <Mail className="h-4 w-4" />
-            {member.email}
-          </a>
-        </div>
-      </CardContent>
-    </Card>
+      {/* Info card that overlaps the circle */}
+      <Card className="w-full -mt-6 ring-1 ring-border shadow-soft relative z-10">
+        <CardContent className="py-4 px-3 text-center flex flex-col justify-center h-20">
+          <h3 className="text-lg font-semibold text-foreground">
+            {member.name}
+          </h3>
+          <p className="mt-1 text-sm text-muted-foreground">{member.role}</p>
+        </CardContent>
+      </Card>
+    </div>
   );
 }
