@@ -36,7 +36,7 @@ export default function PricingPage() {
               color="from-emerald-600/20 via-emerald-500/10"
               title="Basic"
               price="$14/mo"
-              priceSubtitle="billed annually"
+              priceSubtitle="billed annually + 1 month free trial"
               blurb="Perfect for individual teachers. $18/mo if billed monthly."
               cta={{ label: "Get Started", href: "/contact" }}
               features={[
@@ -52,7 +52,7 @@ export default function PricingPage() {
               color="from-blue-600/20 via-blue-500/10"
               title="Pro"
               price="$17/mo"
-              priceSubtitle="billed annually"
+              priceSubtitle="billed annually + 1 month free trial"
               blurb="Advanced features for power users with more capacity. $21/mo if billed monthly."
               cta={{ label: "Get Started", href: "/contact" }}
               features={[
