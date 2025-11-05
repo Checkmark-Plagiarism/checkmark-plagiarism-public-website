@@ -192,7 +192,7 @@ export default function PricingPage() {
               <LinkButton href="/contact" variant="outline-white" size="xl">
                 Request a quote <ArrowRight className="ml-2 h-4 w-4" />
               </LinkButton>
-              <LinkButton href="/features" variant="outline-white" size="xl">
+              <LinkButton href="/#features" variant="outline-white" size="xl">
                 Explore features
               </LinkButton>
             </div>

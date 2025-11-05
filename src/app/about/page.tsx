@@ -53,7 +53,7 @@ export default function TeamPage() {
   return (
     <main>
       {/* Hero */}
-      <section className="text-center mb-16 bg-brand-900 pt-32 pb-16">
+      <section className="text-center mb-16 bg-brand-700 pt-32 pb-16">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold text-white">
             People behind Checkmark Plagiarism
