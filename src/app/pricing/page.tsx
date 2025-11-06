@@ -16,11 +16,11 @@ export default function PricingPage() {
       {/* Hero Section */}
       <section className="text-center mb-16 bg-brand-900 pt-32 pb-16">
         <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-          Simple pricing for schools & districts
+          Simple pricing
         </h1>
         <p className="text-xl text-white/90 max-w-3xl mx-auto mb-8 px-4">
-          Start with a pilot, then scale with Google Classroom™ and Canvas LMS. Transparent features,
-          FERPA-friendly data practices, and admin controls included.
+          Choose the plan that fits your needs—from individual teachers to entire districts.
+          All plans include AI detection, plagiarism checking, and Essay Playback™.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <LinkButton href="/contact" size="lg" variant="hero">Schedule a consultation <ArrowRight className="ml-2 h-4 w-4" /></LinkButton>
@@ -35,9 +35,9 @@ export default function PricingPage() {
               icon={GraduationCap}
               color="from-emerald-600/20 via-emerald-500/10"
               title="Basic"
-              price="$14/mo"
+              price="$9/mo"
               priceSubtitle="billed annually + 1 month free trial"
-              blurb="Perfect for individual teachers. $18/mo if billed monthly."
+              blurb="Perfect for individual teachers. $11/mo if billed monthly."
               cta={{ label: "Start your trial", href: "/contact" }}
               features={[
                 "AI & plagiarism detection (~50 reports/month)",
@@ -51,9 +51,9 @@ export default function PricingPage() {
               icon={School}
               color="from-blue-600/20 via-blue-500/10"
               title="Pro"
-              price="$17/mo"
+              price="$13/mo"
               priceSubtitle="billed annually + 1 month free trial"
-              blurb="Advanced features for power users with more capacity. $21/mo if billed monthly."
+              blurb="Advanced features for power users with more capacity. $15/mo if billed monthly."
               cta={{ label: "Start your trial", href: "/contact" }}
               features={[
                 "Everything in Basic",
