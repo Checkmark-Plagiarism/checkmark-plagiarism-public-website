@@ -33,7 +33,7 @@ export const meta = {
     "/images/blog/The-Hidden-Cost-of-AI-in-Education-Eroding-Trust-and-Undermining-Learning/hero.jpg",
   date: "10-09-2025",
   readTime: "~7 min read",
-  category: "Academic Integrity",
+  category: "Education",
   author: "The Checkmark Plagiarism Team",
 };
 

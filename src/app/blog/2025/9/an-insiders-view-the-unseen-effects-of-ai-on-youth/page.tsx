@@ -5,6 +5,23 @@ import { ArrowLeft, Clock, Calendar, User, Share2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
+const getCategoryVariant = (category: string) => {
+  switch (category) {
+    case "Teaching":
+      return "bg-blue-100 text-blue-800";
+    case "Parents":
+      return "bg-purple-100 text-purple-800";
+    case "Technology":
+      return "bg-green-100 text-green-800";
+    case "Education":
+      return "bg-orange-100 text-orange-800";
+    case "AI Research":
+      return "bg-red-100 text-red-800";
+    default:
+      return "bg-gray-100 text-gray-800";
+  }
+};
+
 export const metadata: Metadata = {
   title: "An Insider's View: The Unseen Effects of AI on Youth",
   description:
@@ -25,7 +42,8 @@ export const meta = {
     "/images/blog/an-insiders-view-the-unseen-effects-of-ai-on-youth/hero.jpg",
   date: "09-08-2025",
   readTime: "~6 min read",
-  category: "Education",
+  category: "Parents",
+  categories: ["Parents", "Education"],
   author: "The Checkmark Plagiarism Team",
 };
 
@@ -45,9 +63,18 @@ export default function Page() {
 
           <div className="max-w-4xl mx-auto">
             <div className="flex flex-wrap items-center gap-2 text-sm text-muted-foreground mb-4">
-              <span className="px-2 py-1 bg-accent text-accent-foreground rounded-full text-xs">
-                {meta.category}
-              </span>
+              {/* Show all categories if available, otherwise show single category */}
+              {meta.categories && meta.categories.length > 0 ? (
+                meta.categories.map((cat, index) => (
+                  <span key={index} className={`px-2 py-1 rounded-full text-xs ${getCategoryVariant(cat)}`}>
+                    {cat}
+                  </span>
+                ))
+              ) : (
+                <span className={`px-2 py-1 rounded-full text-xs ${getCategoryVariant(meta.category)}`}>
+                  {meta.category}
+                </span>
+              )}
               <span aria-hidden>•</span>
               <time className="tabular-nums" dateTime={new Date(meta.date).toISOString()}>
                 {meta.date}

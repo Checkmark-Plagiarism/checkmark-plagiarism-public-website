@@ -31,7 +31,7 @@ export const meta = {
   "opengraph-image": "/images/blog/grading-in-the-ai-era-how-much-time-do-teachers-actually-spend/hero.jpg",
   date: "08-20-2025",
   readTime: "~7 min read",
-  category: "Assessment",
+  category: "Teaching",
   author: "The Checkmark Plagiarism Team",
 };
 

@@ -10,6 +10,7 @@ export type BlogPostMeta = {
   description?: string;
   date?: string;        // expected ISO-like 'YYYY-MM' or 'YYYY-MM-DD'
   category?: string;
+  categories?: string[]; // Add support for multiple categories
   readTime?: string;
   image: string;
 };
@@ -20,6 +21,7 @@ export type BlogPost = {
   description: string;
   date: string;
   category?: string;
+  categories?: string[]; // Add support for multiple categories
   readTime?: string;
   image: string;
 };
@@ -120,6 +122,14 @@ function extractMetaFromFile(filePath: string): Partial<BlogPostMeta> {
       if (typeof m.description === "string") meta.description = m.description;
       if (typeof m.date === "string") meta.date = m.date;
       if (typeof m.category === "string") meta.category = m.category;
+      if (Array.isArray(m.categories)) meta.categories = m.categories;
+
+      // Debug logging - remove after testing
+      console.log("Raw metadata object:", m);
+      console.log("Extracted category:", meta.category);
+      console.log("Extracted categories:", meta.categories);
+      console.log("---");
+
       if (typeof m.readTime === "string") meta.readTime = m.readTime;
 
       // Prefer OG image if present on custom meta (rare but supported)
@@ -213,6 +223,7 @@ export function getAllBlogPosts(): BlogPost[] {
           description: merged.description ?? "",
           date: merged.date ?? baseMeta.date!,
           category: merged.category,
+          categories: merged.categories,
           readTime: merged.readTime,
           image: merged.image,
         });

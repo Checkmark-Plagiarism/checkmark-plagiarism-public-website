@@ -5,6 +5,23 @@ import { ArrowLeft, Clock, Calendar, User, Share2, Link2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 
+const getCategoryVariant = (category: string) => {
+  switch (category) {
+    case "Teaching":
+      return "bg-blue-100 text-blue-800";
+    case "Parents":
+      return "bg-purple-100 text-purple-800";
+    case "Technology":
+      return "bg-green-100 text-green-800";
+    case "Education":
+      return "bg-orange-100 text-orange-800";
+    case "AI Research":
+      return "bg-red-100 text-red-800";
+    default:
+      return "bg-gray-100 text-gray-800";
+  }
+};
+
 export const metadata: Metadata = {
   title:
     'False Positives and Academic Integrity: The Risk of Current AI Detection Tools',
@@ -34,7 +51,7 @@ export const meta = {
     '/images/blog/false-positives-and-academic-integrity-the-risk-of-current-ai-detection/hero.jpg',
   date: '08-15-2025',
   readTime: '~7 min read',
-  category: 'Academic Integrity',
+  category: 'Technology',
   author: 'The Checkmark Plagiarism Team',
 };
 
