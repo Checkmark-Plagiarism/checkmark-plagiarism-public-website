@@ -5,6 +5,7 @@ import { getAllBlogPosts } from "@/lib/blog";
 import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import BlogHero from "@/sections/blog/blog-hero";
+import { getCategoryVariant, getHoverVariant } from "@/lib/blog-category-utils";
 
 export const metadata: Metadata = {
   title: "Checkmark Plagiarism Blogs",
@@ -41,32 +42,7 @@ export default async function Page({ searchParams }: PageProps) {
       }
       return post.category === selectedCategory;
     });
-
-  const getCategoryVariant = (category: string | undefined) => {
-    switch (category) {
-      case "Teaching":
-        return "bg-teal-100 text-teal-800 border-teal-200 hover:bg-teal-200 hover:text-teal-900";
-      case "Parents":
-        return "bg-purple-100 text-purple-800 border-purple-200 hover:bg-purple-200 hover:text-purple-900";
-      case "Technology":
-        return "bg-green-100 text-green-800 border-green-200 hover:bg-green-200 hover:text-green-900";
-      case "Education":
-        return "bg-orange-100 text-orange-800 border-orange-200 hover:bg-orange-200 hover:text-orange-900";
-      case "AI Research":
-        return "bg-red-100 text-red-800 border-red-200 hover:bg-red-200 hover:text-red-900";
-      case "All":
-        return "bg-blue-100 text-blue-800 border-blue-200 hover:bg-blue-200 hover:text-blue-900";
-      default:
-        return "bg-gray-100 text-gray-800 border-gray-200 hover:bg-gray-200 hover:text-gray-900";
-    }
-  };
-    
   console.log(posts);
-
-  const getHoverVariant = (category: string | undefined) => {
-    const baseColors = getCategoryVariant(category);
-    return baseColors.replace(/bg-(\w+)-100/g, 'hover:bg-$1-50').replace(/text-(\w+)-800/g, 'hover:text-$1-700');
-  };
 
   return (
     <main>
@@ -86,7 +62,7 @@ export default async function Page({ searchParams }: PageProps) {
                   href={category === "All" ? "/blog#categories" : `/blog?category=${encodeURIComponent(category)}#categories`}
                 >
                   <Badge 
-                    className={`px-4 py-2 cursor-pointer transition-all hover:scale-105 ${
+                    className={`px-4 py-2 cursor-pointer transition-all hover:scale-105 border ${
                       isSelected
                         ? getCategoryVariant(category)
                         : `bg-gray-50 text-gray-600 border-gray-200 ${getHoverVariant(category)}`
@@ -106,7 +82,7 @@ export default async function Page({ searchParams }: PageProps) {
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredPosts.map((post) => (
-              <Link key={post.slug} href={`/blog/${post.slug}`} className="group">
+              <Link key={post.slug} href={`/blog/${post.slug}?ref=${selectedCategory}`} className="group">
                 <Card className="h-full overflow-hidden rounded-xl shadow-medium border-2 border-border hover:shadow-lg transition-shadow">
                   <Image
                     src={post.image}

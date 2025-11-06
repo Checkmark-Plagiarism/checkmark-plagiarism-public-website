@@ -4,23 +4,7 @@ import Link from 'next/link';
 import { ArrowLeft, Clock, Calendar, User, Share2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-
-const getCategoryVariant = (category: string) => {
-  switch (category) {
-    case "Teaching":
-      return "bg-blue-100 text-blue-800";
-    case "Parents":
-      return "bg-purple-100 text-purple-800";
-    case "Technology":
-      return "bg-green-100 text-green-800";
-    case "Education":
-      return "bg-orange-100 text-orange-800";
-    case "AI Research":
-      return "bg-red-100 text-red-800";
-    default:
-      return "bg-gray-100 text-gray-800";
-  }
-};
+import { getCategoryVariant } from "@/lib/blog-category-utils";
 
 export const metadata: Metadata = {
   title: "An Insider's View: The Unseen Effects of AI on Youth",
@@ -47,7 +31,13 @@ export const meta = {
   author: "The Checkmark Plagiarism Team",
 };
 
-export default function Page() {
+type PageProps = {
+  searchParams?: Record<string, string | string[] | undefined>;
+};
+
+export default function Page({ searchParams }: PageProps) {
+  const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
+
   return (
     <main className="bg-background text-foreground">
       {/* Article Header */}
@@ -277,7 +267,11 @@ export default function Page() {
 
                     <div className="mt-6 pt-6 border-t border-border">
                       <h4 className="font-medium mb-3">Share this article</h4>
-                      <Button variant="outline" size="sm" className="w-full">
+                      <Button 
+                        variant="outline" 
+                        size="sm" 
+                        className="w-full"
+                      >
                         <Share2 className="w-4 h-4 mr-2" />
                         Share Article
                       </Button>
@@ -289,8 +283,8 @@ export default function Page() {
           </div>
         </div>
       </section>
-
-      {/* Related Articles */}
+      
+      {/* COMMENTED OUT - Related Articles section for future implementation
       <section className="py-16 bg-muted/50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
@@ -336,6 +330,21 @@ export default function Page() {
                 </Card>
               </Link>
             </div>
+          </div>
+        </div>
+      </section>
+      END COMMENTED SECTION */}
+      {/* Back to Blog Section */}
+      <section className="py-16 bg-muted/50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <Link
+              href={`/blog${refValue ? `?category=${encodeURIComponent(refValue)}#categories` : '#categories'}`}
+              className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors"
+            >
+              <ArrowLeft className="w-4 h-4" />
+              Back to Blog
+            </Link>
           </div>
         </div>
       </section>
