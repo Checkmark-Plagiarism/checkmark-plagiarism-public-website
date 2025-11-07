@@ -245,3 +245,12 @@ All colors MUST be HSL.
   color: #888;
 }
 
+/* Smooth scroll behavior for category filtering */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Better scroll positioning for anchored sections */
+#categories {
+  scroll-margin-top: 6rem;
+}

@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { ArrowLeft, Clock, Calendar, User, Share2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { getCategoryVariant } from "@/lib/blog-category-utils";
 
 export const metadata: Metadata = {
   title: "How Can a Student Trust Their Teacher When the Teacher Doesn’t Trust Them?",
@@ -33,11 +34,17 @@ export const meta = {
     "/images/blog/The-Hidden-Cost-of-AI-in-Education-Eroding-Trust-and-Undermining-Learning/hero.jpg",
   date: "10-09-2025",
   readTime: "~7 min read",
-  category: "Academic Integrity",
+  category: "Education",
   author: "The Checkmark Plagiarism Team",
 };
 
-export default function Page() {
+type PageProps = {
+  searchParams?: Record<string, string | string[] | undefined>;
+};
+
+export default function Page({ searchParams }: PageProps) {
+  const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
+
   return (
     <main className="bg-background text-foreground">
       {/* Article Header */}
@@ -53,7 +60,7 @@ export default function Page() {
 
           <div className="max-w-4xl mx-auto">
             <div className="flex flex-wrap items-center gap-2 text-sm text-muted-foreground mb-4">
-              <span className="px-2 py-1 bg-accent text-accent-foreground rounded-full text-xs">
+              <span className={`px-2 py-1 rounded-full text-xs ${getCategoryVariant(meta.category)}`}>
                 {meta.category}
               </span>
               <span aria-hidden>•</span>
@@ -226,7 +233,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* Related Articles */}
+      {/* COMMENTED OUT - Related Articles section for future implementation
       <section className="py-16 bg-muted/50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
@@ -272,6 +279,21 @@ export default function Page() {
                 </Card>
               </Link>
             </div>
+          </div>
+        </div>
+      </section>
+      END COMMENTED SECTION */}
+      {/* Back to Blog Section */}
+      <section className="py-16 bg-muted/50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <Link
+              href={`/blog${refValue ? `?category=${encodeURIComponent(refValue)}#categories` : '#categories'}`}
+              className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors"
+            >
+              <ArrowLeft className="w-4 h-4" />
+              Back to Blog
+            </Link>
           </div>
         </div>
       </section>
