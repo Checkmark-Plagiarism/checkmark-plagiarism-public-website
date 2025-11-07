@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import { Check, ArrowRight, Building2, GraduationCap, School, HelpCircle, ShieldCheck, Zap, Users } from "lucide-react";
 import { LinkButton } from "@/components/ui/link";
 import { Card, CardContent } from "@/components/ui/card";
+import PricingHero from "@/sections/pricing/pricing-hero";
 
 export const metadata: Metadata = {
   title: "Pricing — Checkmark Plagiarism",
@@ -14,18 +15,7 @@ export default function PricingPage() {
   return (
     <main>
       {/* Hero Section */}
-      <section className="text-center mb-16 bg-brand-900 pt-32 pb-16">
-        <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-          Simple pricing
-        </h1>
-        <p className="text-xl text-white/90 max-w-3xl mx-auto mb-8 px-4">
-          Choose the plan that fits your needs—from individual teachers to entire districts.
-          All plans include AI detection, plagiarism checking, and Essay Playback™.
-        </p>
-        <div className="flex flex-wrap justify-center gap-4">
-          <LinkButton href="/contact" size="lg" variant="hero">Schedule a consultation <ArrowRight className="ml-2 h-4 w-4" /></LinkButton>
-        </div>
-      </section>
+      <PricingHero />
 
       {/* Plans */}
       <section id="plans" className="py-16 bg-background">
