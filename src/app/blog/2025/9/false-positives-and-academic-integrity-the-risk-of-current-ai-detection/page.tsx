@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowLeft, Clock, Calendar, User, Share2, Link2 } from 'lucide-react';
+import { ArrowLeft, Clock, Calendar, User, Share2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { getCategoryVariant } from "@/lib/blog-category-utils";
@@ -45,7 +45,7 @@ type PageProps = {
 
 export default function Page({ searchParams }: PageProps) {
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
-  
+
   return (
     <main className="bg-background text-foreground">
       {/* Article Header */}
