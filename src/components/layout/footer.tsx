@@ -15,8 +15,8 @@ const Footer = () => {
   const footerSections = [
     {
       title: "Product",
-      // TODO: "Features", "Security", "Updates" temporarily removed. Add back to array if needed
-      links: ["Integrations", "Pricing"],
+      // TODO: "Features", "Updates" temporarily removed. Add back to array if needed
+      links: ["Integrations", "Pricing", "Security"],
     },
     {
       title: "Resources",
@@ -41,7 +41,7 @@ const Footer = () => {
       // "Features": "/features", // TODO: Features page temporarily disabled
       "Integrations": "/#integrations",
       "Pricing": "/pricing",
-      // "Security": "#", // TODO: Create / find page
+      "Security": "/security", 
       // "Updates": "#", // TODO: Create / find page
       // Resources
       // "Documentation": "#", // TODO: Create / find page
