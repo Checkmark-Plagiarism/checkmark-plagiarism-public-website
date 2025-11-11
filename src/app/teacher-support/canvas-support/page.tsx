@@ -3,7 +3,6 @@ import Image from "next/image";
 import {
   Settings,
   Plus,
-  FileText,
   Users,
   LayoutDashboard,
   AlertCircle,
@@ -70,7 +69,7 @@ export default function CanvasTeacherSupportPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-blue-800">
-                  If you haven't set up the Canvas integration yet, visit our{" "}
+                  If you haven&apos;t set up the Canvas integration yet, visit our{" "}
                   <a href="/teacher-support/canvas-integration" className="font-semibold underline">
                     Canvas Integration Guide
                   </a>{" "}
@@ -114,9 +113,9 @@ export default function CanvasTeacherSupportPage() {
                     />
                     <ul className="space-y-2 text-sm text-muted-foreground">
                       <li>• Log in to Canvas and enter your course</li>
-                      <li>• Navigate to "Settings"</li>
-                      <li>• Click on the "Apps" tab</li>
-                      <li>• Click "View App Configurations"</li>
+                      <li>• Navigate to &quot;Settings&quot;</li>
+                      <li>• Click on the &quot;Apps&quot; tab</li>
+                      <li>• Click &quot;View App Configurations&quot;</li>
                     </ul>
                   </div>
                 </CardContent>
@@ -143,8 +142,8 @@ export default function CanvasTeacherSupportPage() {
                       className="rounded-lg shadow-medium w-full h-auto mb-4"
                     />
                     <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li>• Click "+ App"</li>
-                      <li>• Change "Configuration Type" to "By Client ID"</li>
+                      <li>• Click &quot;+ App&quot;</li>
+                      <li>• Change &quot;Configuration Type&quot; to &quot;By Client ID&quot;</li>
                       <li>• Enter the Client ID provided by your Canvas Administrator</li>
                       <li>• Save the configuration</li>
                     </ul>
@@ -176,7 +175,7 @@ export default function CanvasTeacherSupportPage() {
                     <div>
                       <CardTitle className="text-2xl text-green-900">Automatic Integration</CardTitle>
                       <CardDescription className="text-green-700 mt-2">
-                        Checkmark Plagiarism is automatically added to new assignments with "File Upload" submission type.
+                        Checkmark Plagiarism is automatically added to new assignments with &quot;File Upload&quot; submission type.
                       </CardDescription>
                     </div>
                   </div>
@@ -271,7 +270,7 @@ export default function CanvasTeacherSupportPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground">
-                    Automatically enabled for all new Canvas assignments with "File Upload" submission type.
+                    Automatically enabled for all new Canvas assignments with &quot;File Upload&quot; submission type.
                   </p>
                 </CardContent>
               </Card>

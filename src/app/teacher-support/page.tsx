@@ -30,7 +30,7 @@ export default function TeacherSupportPage() {
           </h1>
           <p className="text-xl text-white max-w-3xl mx-auto px-4">
             Everything you need to get started with Checkmark Plagiarism. 
-            From setup guides to advanced features, we're here to help you succeed.
+            From setup guides to advanced features, we&apos;re here to help you succeed.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <Button
@@ -213,7 +213,7 @@ export default function TeacherSupportPage() {
                 <div className="text-center">
                   <CardTitle className="text-2xl text-white">Need More Help?</CardTitle>
                   <CardDescription className="text-white/90 mt-2">
-                    Can't find what you're looking for? Our support team is here to help you succeed.
+                    Can&apos;t find what you&apos;re looking for? Our support team is here to help you succeed.
                   </CardDescription>
                 </div>
               </CardHeader>

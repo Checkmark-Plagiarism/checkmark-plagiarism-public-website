@@ -8,7 +8,6 @@ import {
   CheckCircle2,
   AlertCircle,
   ExternalLink,
-  Copy,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -105,9 +104,9 @@ export default function CanvasIntegrationSupportPage() {
                     />
                     <ul className="space-y-2 text-sm text-muted-foreground">
                       <li>• Log in to Canvas as an Administrator</li>
-                      <li>• Navigate to "Developer Keys"</li>
-                      <li>• Click "+ Developer Key"</li>
-                      <li>• Choose "+ LTI Key" from the dropdown menu</li>
+                      <li>• Navigate to &quot;Developer Keys&quot;</li>
+                      <li>• Click &quot;+ Developer Key&quot;</li>
+                      <li>• Choose &quot;+ LTI Key&quot; from the dropdown menu</li>
                     </ul>
                   </div>
                 </CardContent>
@@ -134,8 +133,8 @@ export default function CanvasIntegrationSupportPage() {
                       className="rounded-lg shadow-medium w-full h-auto mb-4"
                     />
                     <div className="space-y-2 text-sm text-muted-foreground">
-                      <p>• Change "Method" to "Paste JSON"</p>
-                      <p>• In "Redirect URIs" enter:</p>
+                      <p>• Change &quot;Method&quot; to &quot;Paste JSON&quot;</p>
+                      <p>• In &quot;Redirect URIs&quot; enter:</p>
                       <div className="bg-gray-100 p-3 rounded font-mono text-xs break-all">
                         https://canvas-launch-457452153850.us-west2.run.app,https://app.checkmarkplagiarism.com/oauth-callback
                       </div>
@@ -183,8 +182,8 @@ export default function CanvasIntegrationSupportPage() {
                       className="rounded-lg shadow-medium w-full h-auto mb-4"
                     />
                     <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li>• Click "+ Developer Key"</li>
-                      <li>• Choose "+ API Key" from dropdown</li>
+                      <li>• Click &quot;+ Developer Key&quot;</li>
+                      <li>• Choose &quot;+ API Key&quot; from dropdown</li>
                     </ul>
                   </div>
                 </CardContent>
