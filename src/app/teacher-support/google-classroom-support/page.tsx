@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import {
   Plus,
   Puzzle,
@@ -65,7 +66,7 @@ export default function GoogleClassroomSupportPage() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
               <Card className="shadow-soft">
                 <CardHeader>
                   <div className="w-12 h-12 bg-brand-500 rounded-lg flex items-center justify-center mb-4">
@@ -76,6 +77,15 @@ export default function GoogleClassroomSupportPage() {
                     In Google Classroom™, either create a new assignment or open an existing one you wish to add plagiarism detection to.
                   </CardDescription>
                 </CardHeader>
+                <CardContent>
+                  <Image 
+                    src="/images/teacher-support/google-classroom/step1.png"
+                    alt="Creating or editing an assignment in Google Classroom"
+                    width={300}
+                    height={200}
+                    className="rounded-lg shadow-medium w-full h-auto"
+                  />
+                </CardContent>
               </Card>
 
               <Card className="shadow-soft">
@@ -88,6 +98,15 @@ export default function GoogleClassroomSupportPage() {
                     Look for the &quot;Add-ons&quot; section or button when creating/editing the assignment.
                   </CardDescription>
                 </CardHeader>
+                <CardContent>
+                  <Image 
+                    src="/images/teacher-support/google-classroom/step2.png"
+                    alt="Finding the Add-ons section in Google Classroom"
+                    width={300}
+                    height={200}
+                    className="rounded-lg shadow-medium w-full h-auto"
+                  />
+                </CardContent>
               </Card>
 
               <Card className="shadow-soft">
@@ -100,6 +119,15 @@ export default function GoogleClassroomSupportPage() {
                     Choose &quot;Checkmark Plagiarism - Teachers&quot; from your list of available add-ons.
                   </CardDescription>
                 </CardHeader>
+                <CardContent>
+                  <Image 
+                    src="/images/teacher-support/google-classroom/step3.png"
+                    alt="Selecting Checkmark Plagiarism from the add-ons list"
+                    width={300}
+                    height={200}
+                    className="rounded-lg shadow-medium w-full h-auto"
+                  />
+                </CardContent>
               </Card>
             </div>
           </section>
@@ -115,7 +143,7 @@ export default function GoogleClassroomSupportPage() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <Card className="shadow-soft">
                 <CardHeader>
                   <div className="w-12 h-12 bg-brand-500 rounded-lg flex items-center justify-center mb-4">
@@ -126,6 +154,15 @@ export default function GoogleClassroomSupportPage() {
                     When you, the teacher, click on the Checkmark Plagiarism add-on link from your Google Classroom assignment (even an add-on link visible on a student&apos;s submitted work), you will be taken to the Assignment Dashboard, all within Google Classroom™.
                   </CardDescription>
                 </CardHeader>
+                <CardContent>
+                  <Image 
+                    src="/images/teacher-support/google-classroom/accessing-dashboard.png"
+                    alt="Checkmark Plagiarism Assignment Dashboard in Google Classroom"
+                    width={400}
+                    height={300}
+                    className="rounded-lg shadow-medium w-full h-auto"
+                  />
+                </CardContent>
               </Card>
 
               <Card className="shadow-soft">
@@ -138,8 +175,124 @@ export default function GoogleClassroomSupportPage() {
                     This detailed analysis highlights potential issues in a student&apos;s submission and provides tools for investigation.
                   </CardDescription>
                 </CardHeader>
+                <CardContent>
+                  <Image 
+                    src="/images/teacher-support/google-classroom/viewing-report.png"
+                    alt="Detailed plagiarism report showing analysis and investigation tools"
+                    width={400}
+                    height={300}
+                    className="rounded-lg shadow-medium w-full h-auto"
+                  />
+                </CardContent>
               </Card>
             </div>
+          </section>
+
+          {/* Requirements */}
+          <section className="mb-16">
+            <div className="text-center mb-10">
+              <h2 className="text-3xl font-bold text-foreground">
+                Requirements
+              </h2>
+              <p className="mt-3 text-muted-foreground">
+                Important information about file types and submission requirements.
+              </p>
+            </div>
+
+            <Card className="shadow-soft bg-blue-50 border-blue-200">
+              <CardHeader>
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <FileText className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <CardTitle className="text-2xl text-blue-900">Google Docs Required</CardTitle>
+                    <CardDescription className="text-blue-700 mt-2">
+                      Currently, Checkmark Plagiarism requires submissions to be Google Docs to generate a report.
+                    </CardDescription>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-blue-800">
+                  The &quot;Copied %&quot; and &quot;View Report&quot; link may show &quot;N/A&quot; or an error for non-Google Doc™ submissions. 
+                  Please advise students to submit their work as Google Docs™ for this assignment.
+                </p>
+              </CardContent>
+            </Card>
+          </section>
+
+          {/* Troubleshooting */}
+          <section className="mb-16">
+            <div className="text-center mb-10">
+              <h2 className="text-3xl font-bold text-foreground">
+                Troubleshooting
+              </h2>
+              <p className="mt-3 text-muted-foreground">
+                Common issues and solutions when using the Google Classroom add-on.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              <Card className="shadow-soft">
+                <CardHeader>
+                  <CardTitle className="text-lg">Report Shows &quot;N/A&quot; or Error</CardTitle>
+                  <CardDescription>
+                    This usually means either:
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2 text-sm text-muted-foreground">
+                    <li>• The student hasn&apos;t submitted their assignment yet</li>
+                    <li>• The student submitted a file type other than Google Docs™</li>
+                    <li>• The plagiarism report is still processing (this can take a few minutes after submission, especially for longer documents or during peak times)</li>
+                  </ul>
+                  <p className="mt-4 text-sm text-muted-foreground">
+                    Please refresh the dashboard after a short wait.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="shadow-soft">
+                <CardHeader>
+                  <CardTitle className="text-lg">Dashboard Not Loading</CardTitle>
+                  <CardDescription>
+                    Try the following steps:
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2 text-sm text-muted-foreground">
+                    <li>• Refresh the page</li>
+                    <li>• Ensure you have a stable internet connection</li>
+                    <li>• Log out of your Google account and log back in</li>
+                    <li>• Clear your browser&apos;s cache and cookies</li>
+                  </ul>
+                  <p className="mt-4 text-sm text-muted-foreground">
+                    If the issue persists, please contact us at support@checkmarkplagiarism.com.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+          </section>
+
+          {/* FAQ */}
+          <section className="mb-16">
+            <div className="text-center mb-10">
+              <h2 className="text-3xl font-bold text-foreground">
+                Frequently Asked Questions
+              </h2>
+            </div>
+
+            <Card className="shadow-soft">
+              <CardHeader>
+                <CardTitle>Can students flag submissions?</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">
+                  No, the &quot;Flag Submission&quot; feature is only visible and usable by teachers on the Assignment Dashboard.
+                </p>
+              </CardContent>
+            </Card>
           </section>
 
           {/* Important Note */}
