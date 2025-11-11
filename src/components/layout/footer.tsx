@@ -31,7 +31,7 @@ const Footer = () => {
     {
       title: "Legal",
       // TODO: "Cookie Policy", "FERPA Compliance", temporarily removed. Add back to array if needed
-      links: ["Privacy Policy", "Terms of Service"],
+      links: ["Privacy Policy", "Terms of Service", "Accessibility"],
     },
   ];
 
@@ -58,6 +58,7 @@ const Footer = () => {
       // Legal
       "Privacy Policy": "/privacy-policy",
       "Terms of Service": "/terms-of-service",
+      "Accessibility": "/accessibility",
       // "Cookie Policy": " #", // TODO: Create / find page
       // "FERPA Compliance": "#", // TODO: Create / find page
     };
