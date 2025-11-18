@@ -1,6 +1,6 @@
 import { google } from "googleapis";
-import { addMinutes, format, parse, setHours, setMinutes } from "date-fns";
-import { formatInTimeZone, toZonedTime } from "date-fns-tz";
+import { addMinutes, parse, setHours, setMinutes } from "date-fns";
+import { formatInTimeZone } from "date-fns-tz";
 
 const PST_TIMEZONE = "America/Los_Angeles";
 const BUSINESS_HOURS_START = 8; // 8 AM
@@ -55,7 +55,7 @@ export async function getAvailableSlots(date: string): Promise<string[]> {
     const selectedDate = parse(date, "yyyy-MM-dd", new Date());
 
     // Create date at start of business hours (8 AM PST)
-    let dayStart = setMinutes(setHours(selectedDate, BUSINESS_HOURS_START), 0);
+    const dayStart = setMinutes(setHours(selectedDate, BUSINESS_HOURS_START), 0);
     // Create date at end of business hours (6 PM PST)
     const dayEnd = setMinutes(setHours(selectedDate, BUSINESS_HOURS_END), 0);
 

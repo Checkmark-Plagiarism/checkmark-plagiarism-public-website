@@ -65,7 +65,6 @@ export default function ContactForm() {
             <p className="text-sm text-green-800">
               We&apos;ve sent a confirmation to <strong>{submittedData.email}</strong>.
             </p>
-            <br></br>
             <p className="text-sm text-green-700 mt-2">
               Please check your spam folder and whitelist <strong>{emailFrom}</strong> to ensure you receive our response.
             </p>

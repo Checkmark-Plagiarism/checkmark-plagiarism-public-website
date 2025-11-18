@@ -6,7 +6,7 @@ import Script from "next/script";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "./ui/dialog";
 import { DayPicker } from "react-day-picker";
 import "react-day-picker/dist/style.css";
-import { addDays, format, isBefore, isWeekend, startOfDay } from "date-fns";
+import { addDays, format } from "date-fns";
 
 interface ScheduleDemoDialogProps {
   isOpen: boolean;
@@ -76,10 +76,10 @@ export default function ScheduleDemoDialog({ isOpen, onClose }: ScheduleDemoDial
       // Give Dialog time to mount, then check if Turnstile needs manual rendering
       const timer = setTimeout(() => {
         const widget = document.getElementById('cf-turnstile-demo');
-        if (widget && (window as any).turnstile && !widget.querySelector('iframe')) {
+        if (widget && window.turnstile && !widget.querySelector('iframe')) {
           // Widget exists but hasn't been rendered yet, render it manually
           try {
-            (window as any).turnstile.render('#cf-turnstile-demo', {
+            window.turnstile.render('#cf-turnstile-demo', {
               sitekey: process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY!,
               theme: 'auto',
             });
@@ -123,7 +123,7 @@ export default function ScheduleDemoDialog({ isOpen, onClose }: ScheduleDemoDial
     }
 
     // Read token from the auto-rendered widget
-    const token = (window as any).turnstile?.getResponse?.("#cf-turnstile-demo") ?? null;
+    const token = window.turnstile?.getResponse?.("#cf-turnstile-demo") ?? null;
     if (!token) {
       setErrorMessage("Please complete the captcha.");
       return;
@@ -158,7 +158,7 @@ export default function ScheduleDemoDialog({ isOpen, onClose }: ScheduleDemoDial
       reset();
       setSelectedDate(undefined);
       setSelectedTime("");
-      (window as any).turnstile?.reset?.("#cf-turnstile-demo");
+      window.turnstile?.reset?.("#cf-turnstile-demo");
     } else {
       setStatus("error");
       setErrorMessage(data.error || "Something went wrong. Please try again.");

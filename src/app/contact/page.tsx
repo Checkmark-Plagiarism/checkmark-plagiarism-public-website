@@ -1,7 +1,6 @@
 import { Metadata } from "next";
-import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Mail, MapPin, Phone, Calendar } from "lucide-react";
+import { Mail } from "lucide-react";
 import ContactForm from "@/sections/contact/contact-form";
 import ContactHero from "@/sections/contact/contact-hero";
 import ScheduleDemoButton from "@/components/schedule-demo-button";

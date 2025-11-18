@@ -4,7 +4,6 @@ import { z } from "zod";
 import { google } from "googleapis";
 import { getAvailableSlots, createDemoEvent, isSlotAvailable } from "@/lib/google-calendar";
 import { format, parse } from "date-fns";
-import { formatInTimeZone } from "date-fns-tz";
 
 const resend = new Resend(process.env.RESEND_API_KEY ?? "");
 
