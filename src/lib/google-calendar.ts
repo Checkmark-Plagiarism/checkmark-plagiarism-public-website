@@ -1,6 +1,6 @@
 import { google } from "googleapis";
 import { addMinutes, parse, setHours, setMinutes } from "date-fns";
-import { formatInTimeZone } from "date-fns-tz";
+import { formatInTimeZone, toZonedTime } from "date-fns-tz";
 
 const PST_TIMEZONE = "America/Los_Angeles";
 const BUSINESS_HOURS_START = 8; // 8 AM
@@ -51,13 +51,14 @@ export async function getAvailableSlots(date: string): Promise<string[]> {
 
     const calendar = getCalendarClient();
 
-    // Parse the date string (YYYY-MM-DD) and create start/end of day in PST
+    // Parse the date string (YYYY-MM-DD) and convert to PST timezone
     const selectedDate = parse(date, "yyyy-MM-dd", new Date());
+    const selectedDatePST = toZonedTime(selectedDate, PST_TIMEZONE);
 
     // Create date at start of business hours (8 AM PST)
-    const dayStart = setMinutes(setHours(selectedDate, BUSINESS_HOURS_START), 0);
+    const dayStart = setMinutes(setHours(selectedDatePST, BUSINESS_HOURS_START), 0);
     // Create date at end of business hours (6 PM PST)
-    const dayEnd = setMinutes(setHours(selectedDate, BUSINESS_HOURS_END), 0);
+    const dayEnd = setMinutes(setHours(selectedDatePST, BUSINESS_HOURS_END), 0);
 
     // Convert to ISO strings for calendar API (timezone aware)
     const timeMin = formatInTimeZone(dayStart, PST_TIMEZONE, "yyyy-MM-dd'T'HH:mm:ssXXX");
@@ -88,7 +89,7 @@ export async function getAvailableSlots(date: string): Promise<string[]> {
     // Filter out slots that conflict with busy times or buffer periods
     const availableSlots = allSlots.filter((slot) => {
       const [hours, minutes] = slot.split(":").map(Number);
-      const slotStart = setMinutes(setHours(selectedDate, hours), minutes);
+      const slotStart = setMinutes(setHours(selectedDatePST, hours), minutes);
       const slotEnd = addMinutes(slotStart, SLOT_DURATION_MINUTES);
 
       // Convert to ISO for comparison
@@ -139,10 +140,11 @@ export async function createDemoEvent(
 
     const calendar = getCalendarClient();
 
-    // Parse date and time
+    // Parse date and time in PST timezone
     const selectedDate = parse(date, "yyyy-MM-dd", new Date());
+    const selectedDatePST = toZonedTime(selectedDate, PST_TIMEZONE);
     const [hours, minutes] = time.split(":").map(Number);
-    const startTime = setMinutes(setHours(selectedDate, hours), minutes);
+    const startTime = setMinutes(setHours(selectedDatePST, hours), minutes);
     const endTime = addMinutes(startTime, SLOT_DURATION_MINUTES);
 
     // Format as ISO strings with PST timezone
