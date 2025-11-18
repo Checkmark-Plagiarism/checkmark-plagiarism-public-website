@@ -4,7 +4,14 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import Script from "next/script";
 
-type FormData = { name: string; email: string; phone: string; message: string };
+type FormData = {
+  name: string;
+  email: string;
+  school?: string;
+  role: string;
+  inquiryType: string;
+  message: string;
+};
 
 export default function ContactForm() {
   const {
@@ -14,6 +21,8 @@ export default function ContactForm() {
     reset,
   } = useForm<FormData>();
   const [status, setStatus] = useState<"idle" | "ok" | "error">("idle");
+  const [submittedData, setSubmittedData] = useState<FormData | null>(null);
+  const [emailFrom, setEmailFrom] = useState<string>("");
 
   const onSubmit = async (values: FormData) => {
     setStatus("idle");
@@ -34,6 +43,8 @@ export default function ContactForm() {
 
     if (data.ok) {
       setStatus("ok");
+      setSubmittedData(values);
+      setEmailFrom(data.emailFrom || "");
       reset();
       window.turnstile?.reset?.("#cf-turnstile");
     } else {
@@ -41,6 +52,30 @@ export default function ContactForm() {
     }
   };
 
+  // If successful, show ONLY the success message (replace entire form)
+  if (status === "ok" && submittedData) {
+    return (
+      <div className="space-y-4 max-w-lg">
+        <div className="rounded-lg border border-green-200 bg-green-50 p-6">
+          <h3 className="text-lg font-semibold text-green-900 mb-4">Message Sent Successfully!</h3>
+          <p className="text-sm text-green-800 mb-4">
+            Thank you for contacting us. We&apos;ve received your message and will get back to you soon.
+          </p>
+          <div className="border-t border-green-200 pt-4 mt-4">
+            <p className="text-sm text-green-800">
+              We&apos;ve sent a confirmation to <strong>{submittedData.email}</strong>.
+            </p>
+            <br></br>
+            <p className="text-sm text-green-700 mt-2">
+              Please check your spam folder and whitelist <strong>{emailFrom}</strong> to ensure you receive our response.
+            </p>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // Otherwise, show the form
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 max-w-lg">
       {/* Turnstile auto-render script */}
@@ -71,14 +106,46 @@ export default function ContactForm() {
       </div>
 
       <div>
-        <label className="block text-sm font-medium">Phone (Optional)</label>
+        <label className="block text-sm font-medium">School (Optional)</label>
         <input
-          type="tel"
+          type="text"
           className="mt-1 w-full rounded border p-2"
-          placeholder="+1 (555) 123-4567"
-          {...register("phone", { maxLength: 20 })}
+          placeholder="Your school or institution"
+          {...register("school", { maxLength: 200 })}
         />
-          {errors.phone && <p className="text-sm text-red-600">Please enter a valid phone number.</p>}
+        {errors.school && <p className="text-sm text-red-600">Please enter a valid school name.</p>}
+      </div>
+
+      <div>
+        <label className="block text-sm font-medium">Role</label>
+        <select
+          className="mt-1 w-full rounded border p-2"
+          {...register("role", { required: true })}
+        >
+          <option value="">Select your role...</option>
+          <option value="Teacher">Teacher</option>
+          <option value="Administrator">Administrator</option>
+          <option value="IT Staff">IT Staff</option>
+          <option value="District Official">District Official</option>
+          <option value="Other">Other</option>
+        </select>
+        {errors.role && <p className="text-sm text-red-600">Please select your role.</p>}
+      </div>
+
+      <div>
+        <label className="block text-sm font-medium">Inquiry Type</label>
+        <select
+          className="mt-1 w-full rounded border p-2"
+          {...register("inquiryType", { required: true })}
+        >
+          <option value="">What can we help with?</option>
+          <option value="Pricing Information">Pricing Information</option>
+          <option value="Technical Support">Technical Support</option>
+          <option value="Partnership Opportunity">Partnership Opportunity</option>
+          <option value="General Question">General Question</option>
+          <option value="Other">Other</option>
+        </select>
+        {errors.inquiryType && <p className="text-sm text-red-600">Please select an inquiry type.</p>}
       </div>
 
       <div>
@@ -113,9 +180,7 @@ export default function ContactForm() {
         />
       </div>
 
-      {status === "ok" && (
-        <p className="text-green-700">Thanks! Your message has been sent.</p>
-      )}
+      {/* Error message */}
       {status === "error" && (
         <p className="text-red-700">Sorry—something went wrong. Please try again.</p>
       )}

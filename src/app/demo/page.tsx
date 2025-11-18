@@ -3,6 +3,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Lock, Check } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
+import ScheduleDemoButton from "@/components/schedule-demo-button";
 
 // Configure iframe URL based on environment
 const DEMO_IFRAME_URL = process.env.NEXT_PUBLIC_DEMO_URL || 'https://dev.checkmarkplagiarism.com/demo';
@@ -181,6 +182,11 @@ const Demo = () => {
             }}
             allowFullScreen
           />
+        </div>
+
+        {/* Schedule a Call Button */}
+        <div className="max-w-6xl mx-auto mt-12 mb-8 flex justify-center">
+          <ScheduleDemoButton variant="secondary" size="lg" />
         </div>
       </main>
     </>

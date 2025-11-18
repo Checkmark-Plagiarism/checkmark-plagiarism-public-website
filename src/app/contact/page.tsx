@@ -1,9 +1,10 @@
 import { Metadata } from "next";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin, Phone, Calendar } from "lucide-react";
 import ContactForm from "@/sections/contact/contact-form";
 import ContactHero from "@/sections/contact/contact-hero";
+import ScheduleDemoButton from "@/components/schedule-demo-button";
 
 export const metadata: Metadata = {
   title: "Contact Us — Checkmark Plagiarism",
@@ -35,6 +36,19 @@ const Contact = () => {
 
           {/* Contact Information */}
           <div className="space-y-8">
+            {/* Schedule Demo Section */}
+            <Card className="shadow-soft bg-gradient-to-r from-blue-50 to-indigo-50 border-blue-200">
+              <CardHeader>
+                <CardTitle className="text-2xl text-gray-900">Want to see Checkmark in action?</CardTitle>
+                <CardDescription className="text-gray-700">
+                  Schedule a free 30-minute personalized demo with our team.
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <ScheduleDemoButton variant="secondary" size="lg" className="w-full" />
+              </CardContent>
+            </Card>
+
             <Card className="shadow-soft bg-brand-900">
               <CardHeader>
                 <CardTitle className="text-2xl text-white">Get in touch</CardTitle>

@@ -31,7 +31,7 @@ export const FinalCTA = () => {
               href="/demo"
               className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-lg font-bold h-16 px-12 bg-white text-brand-900 hover:bg-white/90 shadow-medium hover:shadow-strong transition-smooth group"
             >
-              Try a Demo
+              Try Yourself
               <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>

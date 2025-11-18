@@ -4,7 +4,7 @@ import { z } from "zod";
 import { google } from "googleapis";
 
 // Google sheets function
-async function writeToGoogleSheets(formData: { name: string; email: string; phone?: string; message: string }, timestamp: string,  ip?: string, userAgent?: string) {
+async function writeToGoogleSheets(formData: { name: string; email: string; school?: string; role: string; inquiryType: string; message: string }, timestamp: string) {
   if (!process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL || !process.env.GOOGLE_PRIVATE_KEY || !process.env.GOOGLE_SHEET_ID) {
     console.log('Google Sheets not configured, skipping...');
     return;
@@ -20,18 +20,17 @@ async function writeToGoogleSheets(formData: { name: string; email: string; phon
 
     await sheets.spreadsheets.values.append({
       spreadsheetId: process.env.GOOGLE_SHEET_ID,
-      range: 'Sheet1!A:H', // Adjust as needed
+      range: 'Sheet1!A:G', // 7 columns: Timestamp, Name, Email, School, Role, Inquiry Type, Message
       valueInputOption: 'RAW',
       requestBody: {
         values: [[
           timestamp,
           formData.name,
           formData.email,
-          formData.phone || '',
-          formData.message,
-          ip || '',
-          userAgent || '',
-          'Contact Form'
+          formData.school || '',
+          formData.role,
+          formData.inquiryType,
+          formData.message
         ]],
       },
     });
@@ -48,7 +47,9 @@ const resend = new Resend(process.env.RESEND_API_KEY ?? "");
 const ContactSchema = z.object({
   name: z.string().min(1).max(100),
   email: z.string().email().max(200),
-  phone: z.string().max(20).optional(),
+  school: z.string().max(200).optional(),
+  role: z.string().min(1).max(100),
+  inquiryType: z.string().min(1).max(100),
   message: z.string().min(10).max(5000),
   token: z.string().min(1),
 });
@@ -97,7 +98,7 @@ export async function POST(req: Request) {
       return NextResponse.json({ ok: false, error: "Invalid input." }, { status: 400 });
     }
 
-    const { name, email, phone, message, token } = parsed.data;
+    const { name, email, school, role, inquiryType, message, token } = parsed.data;
 
     // Verify CAPTCHA (and pass raw verify payload back if it fails)
     const verify = await verifyTurnstile(token, ip);
@@ -108,13 +109,21 @@ export async function POST(req: Request) {
       );
     }
 
-    // Send email
+    // Send team notification email
     const to = process.env.EMAIL_TO!;
     const from = process.env.EMAIL_FROM!;
-    const subject = `New contact form message from ${name}`;
-    const text = `From: ${name} <${email}>\n\n${message}`;
+    const subject = `New Contact: ${inquiryType} - ${name}`;
+    const text = `New contact form submission:
 
-    const { error } = await resend.emails.send({
+From: ${name} <${email}>
+School: ${school || 'Not provided'}
+Role: ${role}
+Inquiry Type: ${inquiryType}
+
+Message:
+${message}`;
+
+    const { error: teamError } = await resend.emails.send({
       from,
       to,
       subject,
@@ -122,23 +131,57 @@ export async function POST(req: Request) {
       replyTo: email,
     });
 
-    if (error) {
+    if (teamError) {
+      console.error('Team email error:', teamError);
       return NextResponse.json({ ok: false, error: "Email failed." }, { status: 500 });
     }
 
-    // Email sent successfully, now write to Google Sheets
-    const timestamp = new Date().toISOString();
-    const userAgent = req.headers.get("user-agent") ?? undefined;
+    // Send user confirmation email
+    const userSubject = "We received your message - Checkmark";
+    const userText = `Hi ${name},
 
-    // Write to google sheets (non-blocking, don't fail if sheets fail)
+Thank you for contacting Checkmark! We've received your message and will get back to you soon.
+
+Here's a copy of what you submitted:
+
+Name: ${name}
+Email: ${email}
+School: ${school || 'Not provided'}
+Role: ${role}
+Inquiry Type: ${inquiryType}
+
+Message:
+${message}
+
+We typically respond within 1-2 business days. If you have any urgent questions, feel free to reply to this email.
+
+Best regards,
+The Checkmark Team`;
+
+    const { error: userError } = await resend.emails.send({
+      from,
+      to: email,
+      subject: userSubject,
+      text: userText,
+    });
+
+    if (userError) {
+      console.error('User confirmation email error:', userError);
+      // Don't fail the request if user email fails, team was notified
+    }
+
+    // Write to Google Sheets
+    const timestamp = new Date().toISOString();
     await writeToGoogleSheets(
-      { name, email, phone: phone || '', message },
-      timestamp, 
-      ip, 
-      userAgent
+      { name, email, school, role, inquiryType, message },
+      timestamp
     );
 
-    return NextResponse.json({ ok: true });
+    // Extract email address from "Name <email>" format if present
+    const emailMatch = from.match(/<(.+)>/) || [null, from];
+    const emailAddress = emailMatch[1] || from;
+
+    return NextResponse.json({ ok: true, emailFrom: emailAddress });
   } catch {
     return NextResponse.json({ ok: false, error: "Server error." }, { status: 500 });
   }

@@ -83,7 +83,7 @@ export const Hero = () => {
             style={{ animationDelay: "0.2s" }}
           >
             <LinkButton href="/demo" variant="outline-white" size="xl" className="bg-brand-600">
-              Try Demo
+              Try Yourself
             </LinkButton>
             <LinkButton href="/contact" variant="hero" size="xl" className="group">
               Contact Us

@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import ScheduleDemoButton from "@/components/schedule-demo-button";
 
 export const ExampleReport = () => {
   return (
@@ -13,13 +16,13 @@ export const ExampleReport = () => {
           </p>
         </div>
 
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <div className="ml-6 mb-4">
             <p className="text-body-lg text-white/90">
               Click around the interactive report below
             </p>
           </div>
-          <div className="rounded-2xl overflow-hidden shadow-strong border-4 border-white/10 h-[600px] bg-white">
+          <div className="rounded-2xl overflow-hidden shadow-strong border-4 border-white/10 h-[600px] bg-white max-w-4xl mx-auto">
             <iframe
               src="https://dev.checkmarkplagiarism.com/example-report"
               title="Example Report"
@@ -36,13 +39,14 @@ export const ExampleReport = () => {
               allow="clipboard-write"
             />
           </div>
-          <div className="flex justify-center mt-12 mb-4">
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-12 mb-4">
             <Link
               href="/demo"
               className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-lg font-bold transition-smooth h-14 px-10 bg-brand-300 text-white hover:bg-brand-400 shadow-medium hover:shadow-strong"
             >
               Submit Your Own
             </Link>
+            <ScheduleDemoButton variant="secondary" size="lg" />
           </div>
         </div>
       </div>
