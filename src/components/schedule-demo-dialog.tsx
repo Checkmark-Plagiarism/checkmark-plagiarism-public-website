@@ -7,6 +7,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } f
 import { DayPicker } from "react-day-picker";
 import "react-day-picker/dist/style.css";
 import { addDays, format } from "date-fns";
+import { fromZonedTime, formatInTimeZone } from "date-fns-tz";
 
 interface ScheduleDemoDialogProps {
   isOpen: boolean;
@@ -46,6 +47,27 @@ export default function ScheduleDemoDialog({ isOpen, onClose }: ScheduleDemoDial
   const [availableSlots, setAvailableSlots] = useState<string[]>([]);
   const [selectedTime, setSelectedTime] = useState<string>("");
   const [loadingSlots, setLoadingSlots] = useState(false);
+
+  // User's timezone detection
+  const [userTimezone, setUserTimezone] = useState<string>("America/Los_Angeles");
+  const [timezoneAbbr, setTimezoneAbbr] = useState<string>("PST");
+
+  // Detect user's timezone on mount
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      try {
+        const detected = Intl.DateTimeFormat().resolvedOptions().timeZone;
+        setUserTimezone(detected);
+
+        // Get timezone abbreviation
+        const date = new Date();
+        const abbr = date.toLocaleTimeString('en-US', { timeZone: detected, timeZoneName: 'short' }).split(' ')[2] || 'PST';
+        setTimezoneAbbr(abbr);
+      } catch (error) {
+        console.error('Error detecting timezone:', error);
+      }
+    }
+  }, []);
 
   // Reset state when modal closes
   useEffect(() => {
@@ -177,12 +199,26 @@ export default function ScheduleDemoDialog({ isOpen, onClose }: ScheduleDemoDial
     { dayOfWeek: [0, 6] }, // Disable Sunday (0) and Saturday (6)
   ];
 
-  // Format time for display (e.g., "14:30" -> "2:30 PM PST")
-  const formatTimeDisplay = (time: string) => {
-    const [hours, minutes] = time.split(":").map(Number);
-    const isPM = hours >= 12;
-    const displayHours = hours > 12 ? hours - 12 : hours === 0 ? 12 : hours;
-    return `${displayHours}:${minutes.toString().padStart(2, "0")} ${isPM ? "PM" : "AM"} PST`;
+  // Convert PST time to user's local timezone and format for display
+  const formatTimeDisplay = (pstTime: string) => {
+    if (!selectedDate) return pstTime;
+
+    try {
+      // Create a datetime in PST
+      const dateStr = format(selectedDate, "yyyy-MM-dd");
+      const pstDateTime = fromZonedTime(`${dateStr} ${pstTime}:00`, "America/Los_Angeles");
+
+      // Format in user's timezone
+      const localTime = formatInTimeZone(pstDateTime, userTimezone, "h:mm a");
+      return `${localTime} ${timezoneAbbr}`;
+    } catch (error) {
+      console.error('Error formatting time:', error);
+      // Fallback to PST display
+      const [hours, minutes] = pstTime.split(":").map(Number);
+      const isPM = hours >= 12;
+      const displayHours = hours > 12 ? hours - 12 : hours === 0 ? 12 : hours;
+      return `${displayHours}:${minutes.toString().padStart(2, "0")} ${isPM ? "PM" : "AM"} PST`;
+    }
   };
 
   return (
@@ -290,7 +326,7 @@ export default function ScheduleDemoDialog({ isOpen, onClose }: ScheduleDemoDial
                       </div>
                     ) : (
                       <div>
-                        <p className="text-sm font-medium text-gray-700 mb-3">Available Times (PST)</p>
+                        <p className="text-sm font-medium text-gray-700 mb-3">Available Times ({timezoneAbbr})</p>
                         <div className="grid grid-cols-2 gap-2 max-h-72 overflow-y-auto pr-2">
                           {availableSlots.map((slot) => (
                             <button
