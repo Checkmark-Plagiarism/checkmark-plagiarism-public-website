@@ -3,6 +3,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import {
+  ArrowRight,
   Brain,
   Scan,
   GraduationCap,
@@ -11,8 +12,8 @@ import {
   School,
   ChevronRight,
 } from 'lucide-react';
-import { LinkButton } from '@/components/ui/link';
-import { CardContent } from '@/components/ui/card';
+import { Badge } from "@/components/ui/badge";
+import { LinkButton } from '@/components/ui/link';import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import FeatureHero from "@/sections/features/feature-hero";
 import { cn } from "@/lib/utils";
 
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: { images: ['https://public.checkmarkplagiarism.com/images/features/ai-detection.jpg'] },
 };
 
-const features = [
+const mainFeatures = [
   {
     slug: '/features/ai-detection',
     title: 'AI Detection',
@@ -126,129 +127,123 @@ export default function FeaturesPage() {
   return (
     <main>
       {/* Hero */}
-      <FeatureHero bgTint="bg-brand-900">
-        <h1
-          id="features-hero"
-          className="text-center text-4xl font-bold tracking-tight text-foreground md:text-5xl"
-        >
-          Everything you need to<br/> protect academic integrity
-        </h1>
-        <p className="mt-4 max-w-full text-pretty text-lg text-gray-600 md:text-xl text-center">
-          Checkmark Plagiarism brings AI detection, plagiarism checks, and auto-grading into the tools you already use—so teachers save time and students build real skills.
-        </p>
+      {/* Hero Section */}
+      <section className="py-32 px-4 bg-primary relative overflow-hidden">
+        {/* Decorative elements */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-primary-foreground/10 via-transparent to-transparent"></div>
 
-        <div className="mt-6 justify-center flex flex-wrap gap-3">
-          <LinkButton href="#features" size="sm">Explore features</LinkButton>
-          <LinkButton href="/pricing" size="sm" variant="outline">
-            See pricing
-          </LinkButton>
-        </div>
-      </FeatureHero>
-
-      {/* Feature grid - now 3 per row */}
-      <section id="features" className="py-12 bg-gradient-subtle">
-        <div className="container mx-auto px-4">
-          <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {features.map((f) => (
-                <Link
-                  key={f.slug}
-                  href={f.slug}
-                  className="group block h-full focus:outline-none rounded-xl"
-                >
-                  {/* the element that actually animates */}
-                  <div
-                    className={cn(
-                      "h-full rounded-xl ring-1 overflow-hidden bg-background", // bg so shadow is visible
-                      "transform-gpu will-change-transform transition-all duration-300 ease-out",
-                      "hover:shadow-xl hover:scale-[1.03] focus-within:shadow-xl", // standard Tailwind shadows
-                      f.colors.ring
-                    )}
-                  >
-                    {/* Transparent header band with unique color */}
-                    <CardHeaderGradient icon={f.icon} gradient={f.colors.header} image={f.image} title={f.title} />
-
-                    <CardContent className="p-6 pt-4 h-full flex flex-col">
-                      <div className="flex items-center justify-between mb-3">
-                        <div
-                          className={cn(
-                            "inline-flex items-center gap-2 px-2 py-1 rounded-full text-xs transition-colors",
-                            f.colors.badge,
-                            f.colors.accentText
-                          )}
-                        >
-                          <span className="h-2 w-2 rounded-full bg-current/60" />
-                          <span>{f.tag}</span>
-                        </div>
-
-                        <ChevronRight
-                          className="h-4 w-4 text-muted-foreground opacity-0 -translate-x-0.5
-                                     transition-all duration-200
-                                     group-hover:opacity-100 group-hover:translate-x-0"
-                          aria-hidden="true"
-                        />
-                      </div>
-
-                      <h3 className="text-lg font-semibold mb-2 transition-colors group-hover:text-primary">
-                        {f.title}
-                      </h3>
-
-                      <p className="text-sm text-muted-foreground">{f.blurb}</p>
-
-                      <div
-                        className={cn(
-                          "mt-4 inline-flex items-center text-sm underline-offset-4 transition-[color,opacity,transform]",
-                          f.colors.accentText,
-                          "group-hover:underline"
-                        )}
-                      >
-                        Learn more
-                        <ChevronRight className="ml-1 h-4 w-4" aria-hidden="true" />
-                      </div>
-                    </CardContent>
-                  </div>
-                </Link>
-              ))}
-            </div>
-          </div>
+        <div className="container mx-auto max-w-6xl text-center relative z-10">
+          <Badge className="mb-6 bg-primary-foreground/20 text-primary-foreground border-primary-foreground/30 hover:bg-primary-foreground/30">
+            Powerful Features
+          </Badge>
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 text-primary-foreground">
+            Comprehensive Academic Integrity Tools
+          </h1>
+          <p className="text-xl md:text-2xl text-primary-foreground/90 max-w-4xl mx-auto leading-relaxed">
+            Everything you need to maintain academic integrity, streamline grading, and enhance your teaching workflow.
+          </p>
         </div>
       </section>
 
-      {/* How it works */}
-      <section className="py-16 bg-muted/50 border-y border-border">
-        <div className="container mx-auto px-4">
-          <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
-            <Step
-              k="01"
-              title="Connect your LMS"
-              text="Link Google Classroom™ or Canvas in minutes. We sync rosters, assignments, and submissions automatically."
-            />
-            <Step
-              k="02"
-              title="Run checks automatically"
-              text="Kick off AI and plagiarism checks on submissions as they arrive, or scan existing work in bulk."
-            />
-            <Step
-              k="03"
-              title="Review, grade, and share"
-              text="See transparent reports, apply rubric‑based grades, and return feedback without changing your workflow."
-            />
-          </div>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="py-16">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-3">Ready to try Checkmark?</h2>
-            <p className="text-muted-foreground mb-6">
-              Start with the features that matter most today—you can add the rest as your needs grow.
+      {/* Main Features Grid */}
+      <section className="py-20 px-4">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Core Features
+            </h2>
+            <p className="text-lg text-muted-foreground">
+              Click any feature to learn more about how it works
             </p>
-            <div className="flex items-center justify-center gap-3">
-              <LinkButton href="/pricing">Get started</LinkButton>
-              <LinkButton href="/contact" variant="outline">Talk to sales</LinkButton>
-            </div>
+          </div>
+          <div className="grid md:grid-cols-2 gap-6">
+            {mainFeatures.map((feature, index) => (
+              <Link key={index} href={feature.slug}>
+                <Card className="h-full hover:shadow-2xl transition-all duration-300 hover:border-primary hover:-translate-y-1 group cursor-pointer overflow-hidden bg-gradient-to-br from-card to-card/50 backdrop-blur">
+                  {/* Hero Image Placeholder */}
+                  <div className="relative h-56 bg-gradient-to-br from-primary/30 via-primary/10 to-primary/5 flex items-center justify-center overflow-hidden group-hover:from-primary/40 group-hover:via-primary/15 transition-all duration-300">
+                    <Image
+                      src={feature.image}
+                      height="500"
+                      width="600"
+                      alt={feature.title}
+                      className="contain"
+                    />
+                  </div>
+
+                  <CardHeader className="pb-3">
+                    <CardTitle className="text-2xl flex items-center justify-between group-hover:text-primary transition-colors">
+                      {feature.title}
+                      <ArrowRight className="h-5 w-5 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300" />
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="pb-8">
+                    <CardDescription className="text-base leading-relaxed">{feature.blurb}</CardDescription>
+                  </CardContent>
+                </Card>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Coming Soon / Placeholder Section */}
+      <section className="py-20 px-4 bg-secondary/30">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Additional Features
+            </h2>
+            <p className="text-lg text-muted-foreground">
+              More tools coming soon to enhance your teaching experience
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Placeholder cards for future features */}
+            <Card className="border-dashed">
+              <CardHeader>
+                <CardTitle className="text-lg text-muted-foreground">Student Analytics Dashboard</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription>Coming Soon</CardDescription>
+              </CardContent>
+            </Card>
+            <Card className="border-dashed">
+              <CardHeader>
+                <CardTitle className="text-lg text-muted-foreground">Citation Generator</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription>Coming Soon</CardDescription>
+              </CardContent>
+            </Card>
+            <Card className="border-dashed">
+              <CardHeader>
+                <CardTitle className="text-lg text-muted-foreground">Peer Review Tools</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription>Coming Soon</CardDescription>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-20 px-4">
+        <div className="container mx-auto max-w-4xl text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            Ready to Get Started?
+          </h2>
+          <p className="text-lg text-muted-foreground mb-8">
+            Join thousands of educators and content creators using our platform
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <button className="px-8 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-colors">
+              Start Free Trial
+            </button>
+            <button className="px-8 py-3 border border-input rounded-lg font-semibold hover:bg-accent transition-colors">
+              View Pricing
+            </button>
           </div>
         </div>
       </section>

@@ -28,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={caveat.variable}>
-      <GoogleAnalytics gaId="G-BC30LJNV0K" />
+      <GoogleAnalytics gaId="G-MKJNRM77E4" />
           <body
             className={`antialiased`}
           >
