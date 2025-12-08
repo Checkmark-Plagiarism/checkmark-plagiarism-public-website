@@ -26,18 +26,18 @@ export default function IntegrationsPage() {
   return (
     <main>
       {/* Hero */}
-      <FeatureHero bgTint="bg-cyan-200">
-        <h1 className="text-center text-4xl md:text-5xl font-bold tracking-tight text-foreground">
+      <FeatureHero bgTint="bg-brand-900">
+        <h1 className="text-center text-4xl md:text-5xl font-bold tracking-tight text-white">
           Integrations that fit your stack
         </h1>
-        <p className="mt-4 text-center max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground">
+        <p className="mt-4 text-center max-w-3xl mx-auto text-lg md:text-xl text-white/90">
           Sign in with Google or Microsoft. Work in Google Docs or Microsoft Word. Upload directly
           from Google Drive or OneDrive—no extra steps.
         </p>
 
         <div className="mt-6 flex flex-wrap justify-center gap-3">
           <LinkButton href="#highlights" size="sm">See highlights</LinkButton>
-          <LinkButton href="/pricing" size="sm" variant="outline">
+          <LinkButton href="/pricing" size="sm" variant="outline-white">
             Try it at your school
           </LinkButton>
         </div>
@@ -50,20 +50,20 @@ export default function IntegrationsPage() {
             <Highlight
               icon={KeyRound}
               title="Single Sign-On"
-              text="Authenticate with your district’s Google Workspace or Microsoft Entra ID (Azure AD)."
-              accent="from-cyan-600/20 via-cyan-500/10"
+              text="Authenticate with your district's Google Workspace or Microsoft Entra ID (Azure AD)."
+              accent="from-brand-600/20 via-brand-500/10"
             />
             <Highlight
               icon={FileText}
               title="Docs & Word"
               text="Analyze drafts written in Google Docs or Microsoft Word—no copy/paste required."
-              accent="from-emerald-600/20 via-emerald-500/10"
+              accent="from-brand-600/20 via-brand-500/10"
             />
             <Highlight
               icon={CloudUpload}
               title="Drive & OneDrive"
               text="Upload or sync directly from Google Drive and OneDrive with scoped, logged access."
-              accent="from-fuchsia-600/20 via-fuchsia-500/10"
+              accent="from-brand-600/20 via-brand-500/10"
             />
           </div>
         </div>
@@ -80,9 +80,6 @@ export default function IntegrationsPage() {
             <Logo src="/images/google_drive_logo.png" alt="Google Drive " />
             <Logo src="/images/microsoft_one_drive_logo.png" alt="Microsoft OneDrive " />
           </div>
-          <p className="mt-3 text-center text-xs text-muted-foreground">
-            Replace the logo paths above with your real assets when ready.
-          </p>
         </div>
       </section>
 
@@ -90,9 +87,9 @@ export default function IntegrationsPage() {
       <section className="py-16 bg-muted/50 border-y border-border">
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-            <Card className="ring-1 ring-cyan-300/60 dark:ring-cyan-900/50">
+            <Card className="ring-1 ring-brand-300/60 dark:ring-brand-900/50">
               <CardContent className="p-6">
-                <Badge color="bg-cyan-600/15 text-cyan-800 dark:text-cyan-200">SSO</Badge>
+                <Badge color="bg-brand-600/15 text-brand-800 dark:text-brand-200">SSO</Badge>
                 <h3 className="mt-2 text-xl font-semibold text-foreground">Google & Microsoft SSO</h3>
                 <p className="mt-2 text-muted-foreground">
                   Skip new passwords. Teachers and students sign in with district credentials via
@@ -107,9 +104,9 @@ export default function IntegrationsPage() {
               </CardContent>
             </Card>
 
-            <Card className="ring-1 ring-emerald-300/60 dark:ring-emerald-900/50">
+            <Card className="ring-1 ring-brand-300/60 dark:ring-brand-900/50">
               <CardContent className="p-6">
-                <Badge color="bg-emerald-600/15 text-emerald-800 dark:text-emerald-200">Editors</Badge>
+                <Badge color="bg-brand-600/15 text-brand-800 dark:text-brand-200">Editors</Badge>
                 <h3 className="mt-2 text-xl font-semibold text-foreground">Google Docs & Microsoft Word</h3>
                 <p className="mt-2 text-muted-foreground">
                   Analyze drafts from the tools your writers already use. We read revision history where
@@ -123,9 +120,9 @@ export default function IntegrationsPage() {
               </CardContent>
             </Card>
 
-            <Card className="ring-1 ring-fuchsia-300/60 dark:ring-fuchsia-900/50">
+            <Card className="ring-1 ring-brand-300/60 dark:ring-brand-900/50">
               <CardContent className="p-6">
-                <Badge color="bg-fuchsia-600/15 text-fuchsia-800 dark:text-fuchsia-200">Storage</Badge>
+                <Badge color="bg-brand-600/15 text-brand-800 dark:text-brand-200">Storage</Badge>
                 <h3 className="mt-2 text-xl font-semibold text-foreground">Google Drive & OneDrive</h3>
                 <p className="mt-2 text-muted-foreground">
                   Pull submissions directly from your cloud storage—scoped to the assignment and class you enable.
@@ -171,21 +168,21 @@ export default function IntegrationsPage() {
                 title="Pick your provider"
                 text="Choose Google Workspace or Microsoft Entra ID. You can enable both."
                 icon={Settings2}
-                color="from-cyan-600/30 via-cyan-500/20 to-transparent"
+                color="from-brand-600/30 via-brand-500/20 to-transparent"
               />
               <ConnectStep
                 k="02"
                 title="Authorize & scope"
                 text="Grant the minimum permissions for classes, assignments, and storage folders."
                 icon={Link2}
-                color="from-emerald-600/30 via-emerald-500/20 to-transparent"
+                color="from-brand-600/30 via-brand-500/20 to-transparent"
               />
               <ConnectStep
                 k="03"
                 title="Start syncing"
                 text="Sync rosters, pull docs, and accept Drive/OneDrive uploads—all within your LMS flow."
                 icon={Cloud}
-                color="from-fuchsia-600/30 via-fuchsia-500/20 to-transparent"
+                color="from-brand-600/30 via-brand-500/20 to-transparent"
               />
             </div>
           </div>
