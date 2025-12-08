@@ -46,7 +46,7 @@ export default function CTODataInfographic() {
         clipPath: 'ellipse(100% 100% at 50% 0%)'
       }} />
 
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-12 md:px-20 lg:px-32 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-brand-900 mb-4">
