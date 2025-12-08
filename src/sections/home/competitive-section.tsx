@@ -1,26 +1,9 @@
 "use client";
 
-import { Check, X, Minus, Users, FileText, Eye, Copy } from "lucide-react";
+import { Check, X, Minus } from "lucide-react";
 import Image from "next/image";
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 export const CompetitiveSection = () => {
-  // Plagiarism Rate Over Time - for the chart
-  const plagiarismData = [
-    { month: 'Jan', rate: 15.2 },
-    { month: 'Feb', rate: 15.8 },
-    { month: 'Mar', rate: 15.3 },
-    { month: 'Apr', rate: 14.9 },
-    { month: 'May', rate: 12.5 },
-    { month: 'Jun', rate: 10.2 },
-    { month: 'Jul', rate: 8.4 },
-    { month: 'Aug', rate: 6.8 },
-    { month: 'Sep', rate: 5.1 },
-    { month: 'Oct', rate: 4.2 },
-    { month: 'Nov', rate: 3.5 },
-    { month: 'Dec', rate: 3.1 },
-  ];
-
   const accuracyStats = [
     { name: "GPTZero", accuracy: 91, highlight: false },
     { name: "Turnitin", accuracy: 89, highlight: false },
@@ -52,118 +35,9 @@ export const CompetitiveSection = () => {
         </defs>
       </svg>
 
-      {/* Blue Section - Title and Bar Graph */}
+      {/* Blue Section - Accuracy Comparison */}
       <section className="py-30 bg-brand-700">
         <div className="container mx-auto px-6">
-          {/* Header */}
-          <div className="text-center mb-16">
-            <h2 className="text-heading-2 text-white mb-4">
-              Independent Plagiarism Assessment
-            </h2>
-            <p className="text-body-lg text-white/90 max-w-2xl mx-auto">
-              Compare Checkmark Plagiarism with other leading AI detection tools
-            </p>
-          </div>
-
-          {/* Designed by Teachers Section - Left/Right Split */}
-          <div className="max-w-6xl mx-auto mb-20">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              {/* Left Column - Designed by Teachers Content */}
-              <div className="text-white">
-                <div className="flex items-center gap-3 mb-6">
-                  <Users className="w-10 h-10 text-white" />
-                  <h3 className="text-3xl font-bold">Built by Educators, Powered by Evidence</h3>
-                </div>
-
-                <p className="text-body-lg text-white/90 mb-6">
-                  Unlike other tools built by tech companies, Checkmark was designed by teachers who understand the nuances of academic integrity.
-                </p>
-
-                <div className="space-y-4">
-                  <div className="flex items-start gap-3">
-                    <div className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <FileText className="w-5 h-5 text-white" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-lg mb-1">Deep Revision History Analysis</h4>
-                      <p className="text-white/80 text-sm">
-                        Track every keystroke, every pause, every edit. See exactly how students wrote their essays, not just the final product.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-3">
-                    <div className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Copy className="w-5 h-5 text-white" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-lg mb-1">Copy/Paste Detection</h4>
-                      <p className="text-white/80 text-sm">
-                        Identify when content was pasted, not typed. Patent-pending technology that competitors can&apos;t replicate.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-3">
-                    <div className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Eye className="w-5 h-5 text-white" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-lg mb-1">Multi-Faceted Approach</h4>
-                      <p className="text-white/80 text-sm">
-                        We don&apos;t rely on a single AI model like competitors. Multiple signals, human-centered design, and continuous validation.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Right Column - Chart */}
-              <div className="bg-white rounded-2xl shadow-strong p-6">
-                <h4 className="text-lg font-bold text-brand-900 mb-4">
-                  Real Impact: Plagiarism Rate Decline
-                </h4>
-                <ResponsiveContainer width="100%" height={300}>
-                  <LineChart data={plagiarismData}>
-                    <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
-                    <XAxis
-                      dataKey="month"
-                      stroke="#6b7280"
-                      style={{ fontSize: '12px' }}
-                    />
-                    <YAxis
-                      stroke="#6b7280"
-                      style={{ fontSize: '12px' }}
-                      domain={[0, 20]}
-                    />
-                    <Tooltip
-                      contentStyle={{
-                        backgroundColor: 'white',
-                        border: '1px solid #e5e7eb',
-                        borderRadius: '8px',
-                        padding: '8px 12px'
-                      }}
-                      formatter={(value: number) => [`${value}%`, 'Plagiarism Rate']}
-                    />
-                    <Legend />
-                    <Line
-                      type="monotone"
-                      dataKey="rate"
-                      stroke="#ef4444"
-                      strokeWidth={3}
-                      name="Plagiarism Rate (%)"
-                      dot={{ fill: '#ef4444', r: 3 }}
-                      activeDot={{ r: 5 }}
-                    />
-                  </LineChart>
-                </ResponsiveContainer>
-                <p className="text-sm text-gray-600 mt-4 text-center">
-                  <strong className="text-brand-700">80% reduction</strong> in 8 months with our evidence-based approach
-                </p>
-              </div>
-            </div>
-          </div>
-
           {/* Accuracy Comparison - Bar Graph */}
           <div className="max-w-5xl mx-auto mb-0">
             <h3 className="text-2xl font-bold text-center text-white mb-8">
