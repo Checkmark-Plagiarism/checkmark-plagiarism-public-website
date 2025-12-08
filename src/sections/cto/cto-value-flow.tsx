@@ -94,7 +94,7 @@ export default function CTOValueFlow() {
                     Reduce Teacher Administrative Burden
                   </h3>
                   <p className="text-gray-700 mb-4 leading-relaxed">
-                    Teachers save 6+ minutes per assignment. That's 480+ hours saved across 94 teachers per semester.
+                    Teachers save 6+ minutes per assignment. That&apos;s 480+ hours saved across 94 teachers per semester.
                   </p>
 
                   {/* Stats display */}
@@ -176,7 +176,7 @@ export default function CTOValueFlow() {
               </div>
               <div className="text-left">
                 <div className="text-2xl font-bold text-white mb-1">
-                  Ready to see your district's data?
+                  Ready to see your district&apos;s data?
                 </div>
                 <div className="text-white/90">
                   Schedule a 15-minute demo to see how Checkmark works for your schools.

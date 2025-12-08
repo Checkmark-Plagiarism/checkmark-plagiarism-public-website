@@ -48,7 +48,7 @@ export default function CTODashboardPreview() {
             Your District Intelligence Layer
           </h2>
           <p className="text-body-lg text-muted-foreground max-w-2xl mx-auto">
-            Don't just check for plagiarism. Get comprehensive insights into how AI is being used across your schools.
+            Don&apos;t just check for plagiarism. Get comprehensive insights into how AI is being used across your schools.
           </p>
         </div>
 

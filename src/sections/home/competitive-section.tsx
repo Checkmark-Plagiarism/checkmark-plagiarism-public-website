@@ -99,7 +99,7 @@ export const CompetitiveSection = () => {
                     <div>
                       <h4 className="font-semibold text-lg mb-1">Copy/Paste Detection</h4>
                       <p className="text-white/80 text-sm">
-                        Identify when content was pasted, not typed. Patent-pending technology that competitors can't replicate.
+                        Identify when content was pasted, not typed. Patent-pending technology that competitors can&apos;t replicate.
                       </p>
                     </div>
                   </div>
@@ -111,7 +111,7 @@ export const CompetitiveSection = () => {
                     <div>
                       <h4 className="font-semibold text-lg mb-1">Multi-Faceted Approach</h4>
                       <p className="text-white/80 text-sm">
-                        We don't rely on a single AI model like competitors. Multiple signals, human-centered design, and continuous validation.
+                        We don&apos;t rely on a single AI model like competitors. Multiple signals, human-centered design, and continuous validation.
                       </p>
                     </div>
                   </div>

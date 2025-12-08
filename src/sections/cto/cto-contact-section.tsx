@@ -64,7 +64,7 @@ export default function CTOContactSection() {
             Get Started Today
           </h2>
           <p className="text-body-lg text-muted-foreground max-w-2xl mx-auto">
-            Schedule a personalized demo or reach out to discuss your institution's specific needs.
+            Schedule a personalized demo or reach out to discuss your institution&apos;s specific needs.
           </p>
         </div>
 
@@ -174,7 +174,7 @@ export default function CTOContactSection() {
                       <textarea
                         className="mt-1 w-full rounded border p-2"
                         rows={4}
-                        placeholder="Tell us about your institution's needs..."
+                        placeholder="Tell us about your institution&apos;s needs..."
                         {...register("message", { required: true, minLength: 10 })}
                       />
                       {errors.message && (
@@ -217,14 +217,14 @@ export default function CTOContactSection() {
                 <CardHeader>
                   <CardTitle className="text-2xl text-gray-900">Prefer a live demo?</CardTitle>
                   <CardDescription className="text-gray-700">
-                    See Checkmark in action with a personalized 30-minute demo tailored to your institution's workflow.
+                    See Checkmark in action with a personalized 30-minute demo tailored to your institution&apos;s workflow.
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <ScheduleDemoButton variant="secondary" size="lg" className="w-full" />
                   <div className="mt-4 pt-4 border-t border-blue-200">
                     <p className="text-sm text-gray-600">
-                      <strong>What you'll see:</strong>
+                      <strong>What you&apos;ll see:</strong>
                     </p>
                     <ul className="mt-2 space-y-1 text-sm text-gray-600">
                       <li>• Live Essay Playback™ demonstration</li>

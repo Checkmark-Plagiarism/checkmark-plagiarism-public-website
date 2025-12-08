@@ -8,12 +8,14 @@ interface ScheduleDemoButtonProps {
   variant?: "primary" | "secondary" | "outline";
   size?: "sm" | "md" | "lg";
   className?: string;
+  children?: React.ReactNode;
 }
 
 export default function ScheduleDemoButton({
   variant = "primary",
   size = "md",
   className = "",
+  children,
 }: ScheduleDemoButtonProps) {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -45,7 +47,7 @@ export default function ScheduleDemoButton({
         className={`rounded font-medium transition-colors flex items-center justify-center gap-2 ${variantStyles[variant]} ${sizeStyles[size]} ${className}`}
       >
         <Calendar className={iconSizes[size]} />
-        Schedule Demo
+        {children || "Schedule Demo"}
       </button>
 
       <ScheduleDemoDialog isOpen={isOpen} onClose={() => setIsOpen(false)} />

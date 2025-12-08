@@ -8,7 +8,7 @@ export default function CTOCTASection() {
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-brand-900 mb-6">
-            Ready to See Your District's Data?
+            Ready to See Your District&apos;s Data?
           </h2>
           <p className="text-xl text-gray-700 mb-10">
             Schedule a 15-minute demo or get in touch with our team to discuss your specific needs.
