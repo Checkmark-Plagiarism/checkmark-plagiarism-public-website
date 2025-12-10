@@ -25,9 +25,9 @@ export default function PricingPage() {
               icon={GraduationCap}
               color="from-emerald-600/20 via-emerald-500/10"
               title="Basic"
-              price="$9/mo"
+              price="$8.99/mo"
               priceSubtitle="billed annually + 1 month free trial"
-              blurb="Perfect for individual teachers. $11/mo if billed monthly."
+              blurb="Perfect for individual teachers. $14.99/mo if billed monthly."
               cta={{ label: "Start your trial", href: "/contact" }}
               features={[
                 "AI & plagiarism detection (~50 reports/month)",
@@ -41,9 +41,9 @@ export default function PricingPage() {
               icon={School}
               color="from-blue-600/20 via-blue-500/10"
               title="Pro"
-              price="$13/mo"
+              price="$12.99/mo"
               priceSubtitle="billed annually + 1 month free trial"
-              blurb="Advanced features for power users with more capacity. $15/mo if billed monthly."
+              blurb="Advanced features for power users with more capacity. $18.99/mo if billed monthly."
               cta={{ label: "Start your trial", href: "/contact" }}
               features={[
                 "Everything in Basic",

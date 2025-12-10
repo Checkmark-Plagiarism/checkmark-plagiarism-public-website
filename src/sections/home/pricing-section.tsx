@@ -7,9 +7,9 @@ const PricingSection = () => {
     {
       name: "Basic",
       description: "For your fundamental AI detection needs.",
-      price: "$5",
+      price: "$14.99",
       period: "month",
-      annual: "Billed $60 annually.",
+      annual: "Billed $107.88 annually ($8.99/month).",
       icon: Search,
       features: [
         "Advanced AI Detection Scan",
@@ -23,13 +23,13 @@ const PricingSection = () => {
     {
       name: "Premium",
       description: "All fundamentals, plus a helping hand.",
-      price: "$8",
+      price: "$18.99",
       period: "month",
-      annual: "Billed $96 annually.",
+      annual: "Billed $155.88 annually ($12.99/month).",
       icon: Megaphone,
       features: [
         "Advanced AI Detection Scan",
-        "Plagiarism Checker", 
+        "Plagiarism Checker",
         "Keystroke Analysis",
         "Essay Playback",
         "Source Identifier",
