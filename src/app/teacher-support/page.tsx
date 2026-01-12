@@ -8,6 +8,7 @@ import {
   MessageSquare,
   Settings,
   FileText,
+  Globe,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -204,6 +205,54 @@ export default function TeacherSupportPage() {
                 </CardContent>
               </Card>
             </div>
+          </section>
+
+          {/* Browser Compatibility */}
+          <section className="mb-16">
+            <div className="text-center mb-10">
+              <h2 className="text-3xl font-bold text-foreground">
+                Browser Compatibility
+              </h2>
+              <p className="mt-3 text-muted-foreground">
+                Checkmark Plagiarism works with all modern web browsers.
+              </p>
+            </div>
+
+            <Card className="shadow-soft max-w-4xl mx-auto bg-green-50 border-green-200">
+              <CardHeader>
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Globe className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <CardTitle className="text-2xl text-green-900">Supported Browsers</CardTitle>
+                    <CardDescription className="text-green-700 mt-2">
+                      Use Checkmark Plagiarism with your preferred web browser.
+                    </CardDescription>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4 text-green-800">
+                  <p>
+                    <strong>Modern Browser Support:</strong> Checkmark Plagiarism is designed to work seamlessly with all modern web browsers, including Safari, Chrome, Firefox, and Microsoft Edge.
+                  </p>
+                  <p>
+                    <strong>Safari Users:</strong> Checkmark Plagiarism fully supports Safari on both macOS and iOS devices. Whether you&apos;re using a Mac, iPad, or iPhone, you can access all features of our platform.
+                  </p>
+                  <p>
+                    <strong>For the Best Experience:</strong> We recommend keeping your browser updated to the latest version to ensure optimal performance and access to the newest features.
+                  </p>
+                  <p className="text-sm pt-2 border-t border-green-300">
+                    <strong>Experiencing issues?</strong> Please{" "}
+                    <a href="/contact" className="underline hover:text-green-900 font-medium">
+                      contact our support team
+                    </a>{" "}
+                    with your browser version and device information so we can help you quickly.
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
           </section>
 
           {/* Contact Support */}
