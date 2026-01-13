@@ -12,6 +12,7 @@ type FormData = {
   email: string;
   school?: string;
   role: string;
+  inquiryType: string;
   message: string;
 };
 
@@ -199,7 +200,14 @@ export default function CTOHeroInfographic() {
                     </select>
                     {errors.role && <p className="text-sm text-red-600 mt-1">Please select your role.</p>}
                   </div>
-
+                  
+                  {/* Hidden field for API compatibility */}
+                  <input
+                    type="hidden"
+                    value="CTO Inquiry"
+                    {...register("inquiryType")}
+                  />
+                  
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-1">Message</label>
                     <textarea
