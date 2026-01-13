@@ -71,6 +71,14 @@ export default function Header() {
             Home
           </Link>
           <Link
+            href="/about"
+            className={`font-medium transition-smooth ${
+              scrolled ? "text-foreground hover:text-primary" : "text-white/90 hover:text-white"
+            }`}
+          >
+            About
+          </Link>
+          <Link
             href="/pricing"
             className={`font-medium transition-smooth ${
               scrolled ? "text-foreground hover:text-primary" : "text-white/90 hover:text-white"

@@ -21,22 +21,13 @@ type Member = {
 const TEAM: Member[] = [
   {
     name: "Nicholas Mark",
-    role: "Chief Executive",
+    role: "Founder & CEO",
     img: "/images/headshots/nicholas-headshot.png",
   },
   {
-    name: "Vince Plaza",
-    role: "VP Business",
-  },
-  {
     name: "Emma Ritto",
-    role: "VP of Marketing",
+    role: "Head of Operations",
     img: "/images/headshots/emma-headshot.png",
-  },
-  {
-    name: "Tony Li",
-    role: "VP of Sales",
-    img: "/images/headshots/tony-headshot.png",
   },
   {
     name: "Jaron King",
@@ -44,9 +35,18 @@ const TEAM: Member[] = [
     img: "/images/headshots/jaron-headshot.png",
   },
   {
+    name: "Tony Li",
+    role: "Software Engineer",
+    img: "/images/headshots/tony-headshot.png",
+  },
+  {
     name: "Kevin Lee",
-    role: "Machine Learning Developer",
+    role: "Software Engineer - AI/ML",
     img: "/images/headshots/kevin-headshot.png",
+  },  
+  {
+    name: "Vince Plaza",
+    role: "VP Business",
   },
 ];
 
