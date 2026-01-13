@@ -86,14 +86,28 @@ export default function Header() {
           >
             Blog
           </Link>
-          <Link
-            href="/contact"
-            className={`font-medium transition-smooth ${
+          {/* Contact Dropdown */}
+          <div className="relative group">
+            <button className={`font-medium transition-smooth flex items-center gap-1 ${
               scrolled ? "text-foreground hover:text-primary" : "text-white/90 hover:text-white"
-            }`}
-          >
-            Contact
-          </Link>
+            }`}>
+              Contact
+              <svg className="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+
+            <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+              <div className="py-2">
+                <Link href="/contact" className="block px-4 py-2 text-sm text-gray-700 hover:bg-brand-50 hover:text-brand-700 transition-smooth">
+                  Contact Us
+                </Link>
+                <Link href="/cto" className="block px-4 py-2 text-sm text-gray-700 hover:bg-brand-50 hover:text-brand-700 transition-smooth">
+                  Contact for CTOs
+                </Link>
+              </div>
+            </div>
+          </div>
           {/* Support Dropdown*/}
           <div className="relative group">
             <button className={`font-medium transition-smooth flex items-center gap-1 ${
