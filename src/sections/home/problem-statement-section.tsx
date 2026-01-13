@@ -25,6 +25,7 @@ export const ProblemStatement = () => {
                 width={600}
                 height={450}
                 className="w-full h-auto"
+                unoptimized
               />
             </div>
           </div>
@@ -40,6 +41,7 @@ export const ProblemStatement = () => {
                 width={600}
                 height={450}
                 className="w-full h-auto"
+                unoptimized
               />
             </div>
           </div>
