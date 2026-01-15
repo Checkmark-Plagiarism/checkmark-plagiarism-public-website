@@ -5,7 +5,7 @@ import { google } from "googleapis";
 
 // Google sheets function
 async function writeToGoogleSheets(formData: { name: string; email: string; school?: string; role: string; inquiryType: string; message: string }, timestamp: string) {
-  if (!process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL || !process.env.GOOGLE_PRIVATE_KEY || !process.env.GOOGLE_SHEET_ID) {
+  if (!process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL || !process.env.GOOGLE_PRIVATE_KEY || !process.env.GOOGLE_CONTACT_SHEET_ID) {
     console.log('Google Sheets not configured, skipping...');
     return;
   }
@@ -19,7 +19,7 @@ async function writeToGoogleSheets(formData: { name: string; email: string; scho
     const sheets = google.sheets({ version: 'v4', auth });
 
     await sheets.spreadsheets.values.append({
-      spreadsheetId: process.env.GOOGLE_SHEET_ID,
+      spreadsheetId: process.env.GOOGLE_CONTACT_SHEET_ID,
       range: 'Sheet1!A:G', // 7 columns: Timestamp, Name, Email, School, Role, Inquiry Type, Message
       valueInputOption: 'RAW',
       requestBody: {
