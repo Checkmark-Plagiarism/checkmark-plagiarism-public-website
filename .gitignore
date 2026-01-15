@@ -39,3 +39,5 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+durable-verve-378102-9c8bedf1ffbb.json
+*.json

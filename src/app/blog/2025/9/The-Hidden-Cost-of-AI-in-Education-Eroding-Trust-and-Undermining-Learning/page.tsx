@@ -7,7 +7,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { getCategoryVariant } from "@/lib/blog-category-utils";
 
 export const metadata: Metadata = {
-  title: "How Can a Student Trust Their Teacher When the Teacher Doesn’t Trust Them?",
+  title: "The Hidden Costs of AI on Education",
   description:
     "False AI accusations are eroding student–teacher trust. We unpack how AI is used by teachers and students, why detectors create false positives, and how essay playback can restore integrity.",
   keywords: [
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 };
 
 export const meta = {
-  title: "How Can a Student Trust Their Teacher When the Teacher Doesn’t Trust Them?",
+  title: "The Hidden Costs of AI on Education",
   description:
     "Across classrooms, students face false AI accusations and strained relationships. Here’s how to rebuild trust—with better context, transparent practices, and essay playback.",
   "opengraph-image":
