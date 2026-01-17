@@ -53,30 +53,22 @@ export const Hero = () => {
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-display text-white mb-12 animate-fade-in leading-tight overflow-visible">
-            AI & Plagiarism Detection
+          <h1 className="text-display text-white mb-6 animate-fade-in leading-tight overflow-visible">
+            AI Detectors Don&apos;t Work.
             <br />
-            <span className="inline-block font-[family-name:var(--font-caveat)] bg-gradient-to-r from-red-400 via-yellow-400 via-green-400 via-blue-400 to-purple-400 bg-clip-text text-transparent py-2 px-2">
-              with Autograding
-            </span>
+            <span className="text-accent">We know.</span>
           </h1>
-          <div
-            className="flex items-center justify-center gap-3 mb-10 animate-fade-in"
+          <p
+            className="text-heading-3 text-white/80 mb-10 animate-fade-in"
             style={{ animationDelay: "0.1s" }}
           >
-            <Image
-              src="/images/android-chrome-192x192.png"
-              alt="Checkmark"
-              width={56}
-              height={56}
-              className="flex-shrink-0 drop-shadow-[0_0_3px_rgba(255,255,255,0.6)]"
-            />
-            <p className="text-heading-3 text-white/90 leading-relaxed text-left">
-              Designed By Teachers,
-              <br />
-              For Teachers
-            </p>
-          </div>
+            Reimagined Plagiarism Forensics
+            <br />
+            with{" "}
+            <span className="font-[family-name:var(--font-caveat)] text-5xl bg-gradient-to-r from-red-400 via-yellow-400 via-green-400 via-blue-400 to-purple-400 bg-clip-text text-transparent inline-block pb-1 pr-1">
+              Autograding
+            </span>
+          </p>
 
           <div
             className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in"
