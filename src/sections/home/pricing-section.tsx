@@ -63,7 +63,7 @@ const PricingSection = () => {
       description: "Custom solutions for institutions.",
       price: "Contact Us",
       period: "",
-      annual: "Custom pricing for your needs.",
+      annual: "Starting at $2.49/student.",
       icon: Building,
       features: [
         "All Unlimited features",

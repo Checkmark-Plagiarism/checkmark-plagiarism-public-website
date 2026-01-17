@@ -57,6 +57,7 @@ export default function PricingPage() {
               color="from-fuchsia-600/20 via-fuchsia-500/10"
               title="School & District"
               price="Custom quote"
+              priceSubtitle="starting at $2.49/student"
               blurb="Full deployment with integrations and admin controls."
               cta={{ label: "Contact Sales", href: "/contact" }}
               features={[
