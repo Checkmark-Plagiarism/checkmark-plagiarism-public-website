@@ -65,7 +65,7 @@ export const Hero = () => {
             Reimagined Plagiarism Forensics
             <br />
             with{" "}
-            <span className="font-[family-name:var(--font-caveat)] text-5xl bg-gradient-to-r from-red-400 via-yellow-400 via-green-400 via-blue-400 to-purple-400 bg-clip-text text-transparent pr-1">
+            <span className="font-[family-name:var(--font-caveat)] text-5xl bg-gradient-to-r from-red-400 via-yellow-400 via-green-400 via-blue-400 to-purple-400 bg-clip-text text-transparent inline-block pb-1 pr-1">
               Autograding
             </span>
           </p>
