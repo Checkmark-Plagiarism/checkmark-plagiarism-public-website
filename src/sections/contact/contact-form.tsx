@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import Script from "next/script";
 
@@ -23,12 +23,46 @@ export default function ContactForm() {
   const [status, setStatus] = useState<"idle" | "ok" | "error">("idle");
   const [submittedData, setSubmittedData] = useState<FormData | null>(null);
   const [emailFrom, setEmailFrom] = useState<string>("");
+  const turnstileRef = useRef<HTMLDivElement>(null);
+  const widgetId = useRef<string | null>(null);
+
+  useEffect(() => {
+    // If the window.turnstile object is already present (e.g. from a previous navigation),
+    // we must render the widget manually because the script won't reload.
+    if ((window as any).turnstile && turnstileRef.current && !widgetId.current) {
+      try {
+        widgetId.current = (window as any).turnstile.render(turnstileRef.current, {
+          sitekey: process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY!,
+          theme: "auto",
+        });
+      } catch (e) {
+        console.warn("Turnstile render error", e);
+      }
+    }
+
+    // Cleanup: remove the widget when the component unmounts
+    return () => {
+      if (widgetId.current && (window as any).turnstile) {
+        try {
+          (window as any).turnstile.remove(widgetId.current);
+        } catch (e) {
+          console.warn("Turnstile remove error", e);
+        }
+        widgetId.current = null;
+      }
+    };
+  }, []);
 
   const onSubmit = async (values: FormData) => {
     setStatus("idle");
 
-    // Read token from the auto-rendered widget
-    const token = window.turnstile?.getResponse?.("#cf-turnstile") ?? null;
+    // Read token from the widget using the stored ID if available
+    // If for some reason widgetId is null but the user solved it (implicit flow fallback), try selector
+    const turnstile = (window as any).turnstile;
+    const token = widgetId.current
+      ? turnstile?.getResponse?.(widgetId.current)
+      : turnstile?.getResponse?.("#cf-turnstile");
+
     if (!token) {
       alert("Please complete the captcha.");
       return;
@@ -46,7 +80,10 @@ export default function ContactForm() {
       setSubmittedData(values);
       setEmailFrom(data.emailFrom || "");
       reset();
-      window.turnstile?.reset?.("#cf-turnstile");
+      // Reset the widget
+      if (widgetId.current && turnstile) {
+        turnstile.reset(widgetId.current);
+      }
     } else {
       setStatus("error");
     }
@@ -77,10 +114,19 @@ export default function ContactForm() {
   // Otherwise, show the form
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 max-w-lg">
-      {/* Turnstile auto-render script */}
+      {/* Turnstile script with explicit render mode */}
       <Script
-        src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+        src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit"
         strategy="afterInteractive"
+        onLoad={() => {
+          // Logic to render if script just loaded
+          if ((window as any).turnstile && turnstileRef.current && !widgetId.current) {
+            widgetId.current = (window as any).turnstile.render(turnstileRef.current, {
+              sitekey: process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY!,
+              theme: "auto",
+            });
+          }
+        }}
       />
 
       <div>
@@ -170,12 +216,11 @@ export default function ContactForm() {
             {isSubmitting ? "Sending..." : "Send"}
           </button>
         </div>
-        {/* Auto-rendered widget. Give it a stable id so we can getResponse/reset */}
+        {/* Render target - implicitly rendered via the hook now */}
         <div
+          ref={turnstileRef}
           id="cf-turnstile"
-          className="cf-turnstile"
-          data-sitekey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY!}
-          data-theme="auto"
+        // Classname 'cf-turnstile' removed to prevent double-render / implicit rendering
         />
       </div>
 
