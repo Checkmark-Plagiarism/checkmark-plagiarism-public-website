@@ -111,7 +111,7 @@ export const Hero = () => {
       </div>
 
       {/* Wave decoration at bottom */}
-      <div className="absolute bottom-0 left-0 right-0">
+      <div className="absolute -bottom-1 left-0 right-0">
         <svg
           viewBox="0 0 1440 120"
           fill="none"
