@@ -1,4 +1,5 @@
 import { GoogleAnalytics } from '@next/third-parties/google';
+import Script from "next/script";
 import type { Metadata } from "next";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
@@ -28,14 +29,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={caveat.variable}>
+      <Script id="microsoft-clarity" strategy="afterInteractive">
+        {`
+          (function(c,l,a,r,i,t,y){
+              c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+              t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+              y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+          })(window, document, "clarity", "script", "vezozokq4l");
+        `}
+      </Script>
       <GoogleAnalytics gaId="G-MKJNRM77E4" />
-          <body
-            className={`antialiased`}
-          >
-            <Header />
-              {children}
-            <Footer />
-          </body>
+      <body
+        className={`antialiased`}
+      >
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
