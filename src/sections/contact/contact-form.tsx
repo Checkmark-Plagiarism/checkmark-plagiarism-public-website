@@ -4,6 +4,22 @@ import { useState, useRef, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import Script from "next/script";
 
+interface CloudflareTurnstile {
+  render: (
+    element: string | HTMLElement,
+    options: {
+      sitekey: string;
+      theme?: "light" | "dark" | "auto";
+      callback?: (token: string) => void;
+      "error-callback"?: () => void;
+      "expired-callback"?: () => void;
+    }
+  ) => string;
+  reset: (widgetId?: string) => void;
+  getResponse: (widgetId?: string) => string | undefined;
+  remove: (widgetId: string) => void;
+}
+
 type FormData = {
   name: string;
   email: string;
@@ -29,9 +45,10 @@ export default function ContactForm() {
   useEffect(() => {
     // If the window.turnstile object is already present (e.g. from a previous navigation),
     // we must render the widget manually because the script won't reload.
-    if ((window as any).turnstile && turnstileRef.current && !widgetId.current) {
+    const win = window as unknown as { turnstile?: CloudflareTurnstile };
+    if (win.turnstile && turnstileRef.current && !widgetId.current) {
       try {
-        widgetId.current = (window as any).turnstile.render(turnstileRef.current, {
+        widgetId.current = win.turnstile.render(turnstileRef.current, {
           sitekey: process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY!,
           theme: "auto",
         });
@@ -42,9 +59,10 @@ export default function ContactForm() {
 
     // Cleanup: remove the widget when the component unmounts
     return () => {
-      if (widgetId.current && (window as any).turnstile) {
+      const win = window as unknown as { turnstile?: CloudflareTurnstile };
+      if (widgetId.current && win.turnstile) {
         try {
-          (window as any).turnstile.remove(widgetId.current);
+          win.turnstile.remove(widgetId.current);
         } catch (e) {
           console.warn("Turnstile remove error", e);
         }
@@ -58,10 +76,11 @@ export default function ContactForm() {
 
     // Read token from the widget using the stored ID if available
     // If for some reason widgetId is null but the user solved it (implicit flow fallback), try selector
-    const turnstile = (window as any).turnstile;
+    const win = window as unknown as { turnstile?: CloudflareTurnstile };
+    const turnstile = win.turnstile;
     const token = widgetId.current
-      ? turnstile?.getResponse?.(widgetId.current)
-      : turnstile?.getResponse?.("#cf-turnstile");
+      ? turnstile?.getResponse(widgetId.current)
+      : turnstile?.getResponse("#cf-turnstile");
 
     if (!token) {
       alert("Please complete the captcha.");
@@ -120,8 +139,9 @@ export default function ContactForm() {
         strategy="afterInteractive"
         onLoad={() => {
           // Logic to render if script just loaded
-          if ((window as any).turnstile && turnstileRef.current && !widgetId.current) {
-            widgetId.current = (window as any).turnstile.render(turnstileRef.current, {
+          const win = window as unknown as { turnstile?: CloudflareTurnstile };
+          if (win.turnstile && turnstileRef.current && !widgetId.current) {
+            widgetId.current = win.turnstile.render(turnstileRef.current, {
               sitekey: process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY!,
               theme: "auto",
             });
