@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { sendGAEvent } from '@next/third-parties/google';
 const APP_URL = process.env.NEXT_PUBLIC_APP_URL || 'https://teach.checkmarkplagiarism.com/';
 
 const logoImage = "/images/android-chrome-384x384.png";
@@ -29,11 +30,10 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? "bg-white/90 backdrop-blur-md shadow-soft py-3"
-          : "bg-transparent py-5"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
+        ? "bg-white/90 backdrop-blur-md shadow-soft py-3"
+        : "bg-transparent py-5"
+        }`}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
         <Link href="/" onClick={handleScrollToTop} className="flex items-center gap-2">
@@ -64,41 +64,36 @@ export default function Header() {
           <Link
             href="/"
             onClick={handleScrollToTop}
-            className={`font-medium transition-smooth ${
-              scrolled ? "text-foreground hover:text-primary" : "text-white/90 hover:text-white"
-            }`}
+            className={`font-medium transition-smooth ${scrolled ? "text-foreground hover:text-primary" : "text-white/90 hover:text-white"
+              }`}
           >
             Home
           </Link>
           <Link
             href="/about"
-            className={`font-medium transition-smooth ${
-              scrolled ? "text-foreground hover:text-primary" : "text-white/90 hover:text-white"
-            }`}
+            className={`font-medium transition-smooth ${scrolled ? "text-foreground hover:text-primary" : "text-white/90 hover:text-white"
+              }`}
           >
             About
           </Link>
           <Link
             href="/pricing"
-            className={`font-medium transition-smooth ${
-              scrolled ? "text-foreground hover:text-primary" : "text-white/90 hover:text-white"
-            }`}
+            className={`font-medium transition-smooth ${scrolled ? "text-foreground hover:text-primary" : "text-white/90 hover:text-white"
+              }`}
           >
             Pricing
           </Link>
           <Link
             href="/blog"
-            className={`font-medium transition-smooth ${
-              scrolled ? "text-foreground hover:text-primary" : "text-white/90 hover:text-white"
-            }`}
+            className={`font-medium transition-smooth ${scrolled ? "text-foreground hover:text-primary" : "text-white/90 hover:text-white"
+              }`}
           >
             Blog
           </Link>
           {/* Contact Dropdown */}
           <div className="relative group">
-            <button className={`font-medium transition-smooth flex items-center gap-1 ${
-              scrolled ? "text-foreground hover:text-primary" : "text-white/90 hover:text-white"
-            }`}>
+            <button className={`font-medium transition-smooth flex items-center gap-1 ${scrolled ? "text-foreground hover:text-primary" : "text-white/90 hover:text-white"
+              }`}>
               Contact
               <svg className="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -118,9 +113,8 @@ export default function Header() {
           </div>
           {/* Support Dropdown*/}
           <div className="relative group">
-            <button className={`font-medium transition-smooth flex items-center gap-1 ${
-              scrolled ? "text-foreground hover:text-primary" : "text-white/90 hover:text-white"
-            }`}>
+            <button className={`font-medium transition-smooth flex items-center gap-1 ${scrolled ? "text-foreground hover:text-primary" : "text-white/90 hover:text-white"
+              }`}>
               Support
               <svg className="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -144,21 +138,20 @@ export default function Header() {
             href={`${APP_URL}`}
             target="_blank"
             rel="noopener noreferrer"
-            className={`inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-sm font-semibold transition-smooth h-9 px-4 ${
-              scrolled
+            onClick={() => sendGAEvent({ event: 'signin_button_clicked' })}
+            className={`inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-sm font-semibold transition-smooth h-9 px-4 ${scrolled
               ? "hover:bg-brand-700 hover:text-white"
               : "border-2 border-white/40 bg-white/10 text-white hover:bg-white/20 backdrop-blur-sm font-bold"
-            }`}
+              }`}
           >
             Sign In
           </Link>
           <Link
             href="/demo"
-            className={`inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-sm font-semibold transition-smooth h-9 px-4 ${
-              scrolled
+            className={`inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-sm font-semibold transition-smooth h-9 px-4 ${scrolled
               ? "bg-brand-300 text-brand-700 hover:bg-brand-400 shadow-soft hover:shadow-medium"
               : "bg-white text-brand-900 hover:bg-white/90 shadow-medium hover:shadow-strong font-bold"
-            }`}
+              }`}
           >
             Try Demo
           </Link>
