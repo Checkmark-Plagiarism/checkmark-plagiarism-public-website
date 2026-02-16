@@ -4,7 +4,7 @@ export const CanvasTestimonial = () => {
             <div className="container mx-auto px-6 max-w-4xl text-center">
                 <p className="text-sm font-bold tracking-widest text-primary uppercase mb-6">Trusted by Educators</p>
                 <blockquote className="text-2xl md:text-3xl font-bold text-foreground leading-snug mb-8">
-                    "Checkmark's Canvas integration changed our workflow entirely. What used to take us hours of manual checking now happens automatically — and with better accuracy than we ever had."
+                    &quot;Checkmark&apos;s Canvas integration changed our workflow entirely. What used to take us hours of manual checking now happens automatically — and with better accuracy than we ever had.&quot;
                 </blockquote>
                 <div className="flex items-center justify-center gap-4">
                     <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">

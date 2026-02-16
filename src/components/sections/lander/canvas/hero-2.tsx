@@ -96,8 +96,8 @@ export const Canvas2Hero = () => {
                                 <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
                                     <CheckCircle className="h-10 w-10 text-primary" />
                                 </div>
-                                <h3 className="text-2xl font-extrabold text-foreground mb-3">You're all set!</h3>
-                                <p className="text-muted-foreground">We'll reach out with next steps to get Checkmark into your Canvas instance.</p>
+                                <h3 className="text-2xl font-extrabold text-foreground mb-3">You&apos;re all set!</h3>
+                                <p className="text-muted-foreground">We&apos;ll reach out with next steps to get Checkmark into your Canvas instance.</p>
                             </div>
                         ) : (
                             <>

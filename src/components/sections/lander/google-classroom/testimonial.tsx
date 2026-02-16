@@ -6,7 +6,7 @@ export const GoogleClassroomTestimonial = () => {
                     Trusted by Educators
                 </p>
                 <blockquote className="text-2xl md:text-3xl font-bold text-foreground leading-snug mb-8">
-                    "We switched from manual plagiarism checks to Checkmark in Google Classroom and it's been transformational. Our teachers save hours every week and students get faster feedback."
+                    &quot;We switched from manual plagiarism checks to Checkmark in Google Classroom and it&apos;s been transformational. Our teachers save hours every week and students get faster feedback.&quot;
                 </blockquote>
                 <div className="flex items-center justify-center gap-4">
                     <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
