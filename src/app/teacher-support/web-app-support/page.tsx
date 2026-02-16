@@ -6,9 +6,12 @@ import {
   BarChart3,
   Globe,
   UserPlus,
-  Upload,
   ExternalLink,
   CheckCircle2,
+  Plus,
+  FilePlus,
+  Settings,
+  Laptop,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -30,7 +33,7 @@ export default function WebAppSupportPage() {
             Web App Support
           </h1>
           <p className="text-xl text-white max-w-3xl mx-auto px-4">
-            Use Checkmark Plagiarism as a standalone web application without LMS integration. 
+            Use Checkmark Plagiarism as a standalone web application without LMS integration.
             Create classes, share enrollment codes, and track student submissions directly.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
@@ -44,7 +47,7 @@ export default function WebAppSupportPage() {
               </a>
             </Button>
             <Button asChild size="lg" variant="outline" className="bg-transparent text-white border-white hover:bg-white/10">
-              <a 
+              <a
                 href="https://teach.checkmarkplagiarism.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -84,161 +87,182 @@ export default function WebAppSupportPage() {
             </Card>
           </section>
 
-          {/* Step 1: Create a Class */}
+          {/* Step 1: Create Course */}
           <section className="mb-16" id="step-1">
             <div className="text-center mb-10">
               <h2 className="text-3xl font-bold text-foreground">
-                Step 1: Create a Class
+                Step 1: Create Course
               </h2>
-              <p className="mt-3 text-muted-foreground">
-                Organize your assignments into classes and share enrollment codes with students.
+              <p className="mt-3 text-muted-foreground max-w-2xl mx-auto">
+                Get started by clicking the &quot;New Course&quot; button. This creates a dedicated dashboard for your class where you can organize assignments and manage students.
               </p>
             </div>
 
             <Card className="shadow-soft max-w-4xl mx-auto">
               <CardHeader>
                 <div className="w-12 h-12 bg-brand-500 rounded-lg flex items-center justify-center mb-4">
-                  <Users className="w-6 h-6 text-white" />
+                  <Plus className="w-6 h-6 text-white" />
                 </div>
-                <CardTitle>Create and Manage Classes</CardTitle>
-                <CardDescription>
-                  Set up your class structure and generate enrollment codes for easy student access.
-                </CardDescription>
+                <CardTitle>Start a New Course</CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="space-y-6">
-                  <Image 
-                    src="/images/teacher-support/web-app/1.png"
-                    alt="Creating a class and sharing enrollment codes in Checkmark Plagiarism web app"
-                    width={600}
-                    height={400}
-                    className="rounded-lg shadow-medium w-full h-auto"
-                  />
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div>
-                      <h4 className="font-semibold text-brand-700 mb-2">Class Organization:</h4>
-                      <ul className="space-y-1 text-sm text-muted-foreground">
-                        <li>• Create separate classes for different courses</li>
-                        <li>• Organize assignments by subject or semester</li>
-                        <li>• Generate unique enrollment codes per class</li>
-                      </ul>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-brand-700 mb-2">Student Access:</h4>
-                      <ul className="space-y-1 text-sm text-muted-foreground">
-                        <li>• Share enrollment codes with students</li>
-                        <li>• Students join using their Google accounts</li>
-                        <li>• Automatic class roster management</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
+                <Image
+                  src="/images/teacher-support/web-app/wa-create-course.png"
+                  alt="Clicking New Course button in Checkmark Plagiarism web app"
+                  width={800}
+                  height={500}
+                  className="rounded-lg shadow-medium w-full h-auto"
+                />
               </CardContent>
             </Card>
           </section>
 
-          {/* Step 2: Student Submissions */}
+          {/* Step 2: Student Enrollment */}
           <section className="mb-16" id="step-2">
             <div className="text-center mb-10">
               <h2 className="text-3xl font-bold text-foreground">
-                Step 2: Students Submit Assignments
+                Step 2: Student Enrollment
               </h2>
-              <p className="mt-3 text-muted-foreground">
-                Students access the portal with their Google accounts to submit assignments and view their work.
+              <p className="mt-3 text-muted-foreground max-w-2xl mx-auto">
+                Streamline the onboarding process by enrolling students individually via email, or upload a full roster file to add your entire class at once.
               </p>
             </div>
 
             <Card className="shadow-soft max-w-4xl mx-auto">
               <CardHeader>
-                <div className="w-12 h-12 bg-brand-500 rounded-lg flex items-center justify-center mb-4">
-                  <Upload className="w-6 h-6 text-white" />
+                <div className="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center mb-4">
+                  <UserPlus className="w-6 h-6 text-white" />
                 </div>
-                <CardTitle>Student Portal Experience</CardTitle>
-                <CardDescription>
-                  Simple, intuitive interface for students to manage their submissions.
-                </CardDescription>
+                <CardTitle>Enroll Your Students</CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="space-y-6">
-                  <Image 
-                    src="/images/teacher-support/web-app/2.png"
-                    alt="Student view of submission portal in Checkmark Plagiarism web app"
-                    width={600}
-                    height={400}
-                    className="rounded-lg shadow-medium w-full h-auto"
-                  />
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div>
-                      <h4 className="font-semibold text-brand-700 mb-2">Easy Access:</h4>
-                      <ul className="space-y-1 text-sm text-muted-foreground">
-                        <li>• Login with Google account</li>
-                        <li>• View all assigned classes</li>
-                        <li>• See assignment deadlines and requirements</li>
-                      </ul>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-brand-700 mb-2">Submission Management:</h4>
-                      <ul className="space-y-1 text-sm text-muted-foreground">
-                        <li>• Upload documents directly</li>
-                        <li>• View submission status</li>
-                        <li>• Access basic feedback</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
+                <Image
+                  src="/images/teacher-support/web-app/wa-enrollment.png"
+                  alt="Enrolling students via email or roster upload"
+                  width={800}
+                  height={500}
+                  className="rounded-lg shadow-medium w-full h-auto"
+                />
               </CardContent>
             </Card>
           </section>
 
-          {/* Step 3: Track Submissions */}
+          {/* Step 3: Create Assignment */}
           <section className="mb-16" id="step-3">
             <div className="text-center mb-10">
               <h2 className="text-3xl font-bold text-foreground">
-                Step 3: Track Submissions With Web App
+                Step 3: Create Assignment
               </h2>
-              <p className="mt-3 text-muted-foreground">
-                Monitor student submissions and access detailed plagiarism reports from your teacher dashboard.
+              <p className="mt-3 text-muted-foreground max-w-2xl mx-auto">
+                Ready to assign work? Locate the &quot;New Assignment&quot; button in the left-hand navigation menu to start distributing tasks to your enrolled students.
               </p>
             </div>
 
             <Card className="shadow-soft max-w-4xl mx-auto">
               <CardHeader>
-                <div className="w-12 h-12 bg-brand-500 rounded-lg flex items-center justify-center mb-4">
-                  <BarChart3 className="w-6 h-6 text-white" />
+                <div className="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center mb-4">
+                  <FilePlus className="w-6 h-6 text-white" />
                 </div>
-                <CardTitle>Teacher Dashboard & Reports</CardTitle>
-                <CardDescription>
-                  Comprehensive view of all submissions with detailed plagiarism analysis.
-                </CardDescription>
+                <CardTitle>Add New Assignments</CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="space-y-6">
-                  <Image 
-                    src="/images/teacher-support/web-app/3.png"
-                    alt="Teacher dashboard showing student submissions and plagiarism reports"
-                    width={600}
-                    height={400}
-                    className="rounded-lg shadow-medium w-full h-auto"
-                  />
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div>
-                      <h4 className="font-semibold text-brand-700 mb-2">Dashboard Features:</h4>
-                      <ul className="space-y-1 text-sm text-muted-foreground">
-                        <li>• Real-time submission tracking</li>
-                        <li>• Class-wide overview</li>
-                        <li>• Assignment completion status</li>
-                      </ul>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-brand-700 mb-2">Plagiarism Analysis:</h4>
-                      <ul className="space-y-1 text-sm text-muted-foreground">
-                        <li>• Detailed plagiarism reports</li>
-                        <li>• Keystroke analysis</li>
-                        <li>• Flagging and investigation tools</li>
-                      </ul>
-                    </div>
-                  </div>
+                <Image
+                  src="/images/teacher-support/web-app/wa-create-assignment.png"
+                  alt="Creating a new assignment from the left navigation menu"
+                  width={800}
+                  height={500}
+                  className="rounded-lg shadow-medium w-full h-auto"
+                />
+              </CardContent>
+            </Card>
+          </section>
+
+          {/* Step 4: Create Assignment Modal */}
+          <section className="mb-16" id="step-4">
+            <div className="text-center mb-10">
+              <h2 className="text-3xl font-bold text-foreground">
+                Step 4: Customize Details
+              </h2>
+              <p className="mt-3 text-muted-foreground max-w-2xl mx-auto">
+                Customize assignment details, set deadlines, and attach existing rubrics (PDF, Word, or TXT) to provide clear grading criteria for your students.
+              </p>
+            </div>
+
+            <Card className="shadow-soft max-w-4xl mx-auto">
+              <CardHeader>
+                <div className="w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center mb-4">
+                  <Settings className="w-6 h-6 text-white" />
                 </div>
+                <CardTitle>Assignment Details & Rubrics</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/images/teacher-support/web-app/wa-upload-rubric.png"
+                  alt="Entering assignment details and uploading rubric files"
+                  width={800}
+                  height={500}
+                  className="rounded-lg shadow-medium w-full h-auto"
+                />
+              </CardContent>
+            </Card>
+          </section>
+
+          {/* Step 5: Student View */}
+          <section className="mb-16" id="step-5">
+            <div className="text-center mb-10">
+              <h2 className="text-3xl font-bold text-foreground">
+                Step 5: Student View
+              </h2>
+              <p className="mt-3 text-muted-foreground max-w-2xl mx-auto">
+                Students can seamlessly access the portal using their Google accounts to upload work, review instructions, and check their submission status without any complex setup.
+              </p>
+            </div>
+
+            <Card className="shadow-soft max-w-4xl mx-auto">
+              <CardHeader>
+                <div className="w-12 h-12 bg-indigo-500 rounded-lg flex items-center justify-center mb-4">
+                  <Laptop className="w-6 h-6 text-white" />
+                </div>
+                <CardTitle>Student Submission Portal</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/images/teacher-support/web-app/wa-student-submit.png"
+                  alt="Student view of the submission portal"
+                  width={800}
+                  height={500}
+                  className="rounded-lg shadow-medium w-full h-auto"
+                />
+              </CardContent>
+            </Card>
+          </section>
+
+          {/* Step 6: Track Assignments */}
+          <section className="mb-16" id="step-6">
+            <div className="text-center mb-10">
+              <h2 className="text-3xl font-bold text-foreground">
+                Step 6: Track Assignments
+              </h2>
+              <p className="mt-3 text-muted-foreground max-w-2xl mx-auto">
+                Monitor class progress in real-time. Use the teacher dashboard to access student submissions and view detailed plagiarism analysis reports instantly.
+              </p>
+            </div>
+
+            <Card className="shadow-soft max-w-4xl mx-auto">
+              <CardHeader>
+                <div className="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center mb-4">
+                  <BarChart3 className="w-6 h-6 text-white" />
+                </div>
+                <CardTitle>Track Progress & Reports</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/images/teacher-support/web-app/3.png"
+                  alt="Tracking student submissions and plagiarism reports on the dashboard"
+                  width={800}
+                  height={500}
+                  className="rounded-lg shadow-medium w-full h-auto"
+                />
               </CardContent>
             </Card>
           </section>
@@ -359,7 +383,7 @@ export default function WebAppSupportPage() {
                     size="lg"
                     className="bg-white text-brand-900 hover:bg-white/90"
                   >
-                    <a 
+                    <a
                       href="https://teach.checkmarkplagiarism.com"
                       target="_blank"
                       rel="noopener noreferrer"
