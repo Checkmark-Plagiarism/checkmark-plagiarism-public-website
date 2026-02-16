@@ -8,7 +8,7 @@ export const AutograderSection = () => {
     <section className="pt-24 pb-8 bg-brand-700">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center mb-12">
-          <h2 className="text-heading-1 text-white mb-4 leading-tight">
+          <h2 className="text-2xl sm:text-heading-2 md:text-heading-1 text-white mb-4 leading-tight">
             The future isn&apos;t banning AI.
             <br />
             <span className="text-accent">It&apos;s using it to teach.</span>

@@ -30,7 +30,7 @@ export const Hero = () => {
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "-200%"]);
 
   return (
-    <section ref={sectionRef} className="relative bg-brand-900 pt-36 pb-40 overflow-hidden">
+    <section ref={sectionRef} className="relative bg-brand-900 pt-24 pb-20 md:pt-36 md:pb-40 overflow-hidden">
       {/* Background essay clipart - dimmed with parallax */}
       <motion.div
         className="absolute inset-0 opacity-20"
@@ -47,25 +47,25 @@ export const Hero = () => {
 
       {/* Decorative elements */}
       <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 right-20 w-96 h-96 bg-accent rounded-full blur-3xl" />
-        <div className="absolute bottom-20 left-20 w-80 h-80 bg-brand-300 rounded-full blur-3xl" />
+        <div className="absolute top-10 right-0 w-64 h-64 md:top-20 md:right-20 md:w-96 md:h-96 bg-accent rounded-full blur-3xl" />
+        <div className="absolute bottom-10 left-0 w-48 h-48 md:bottom-20 md:left-20 md:w-80 md:h-80 bg-brand-300 rounded-full blur-3xl" />
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-display text-white mb-6 animate-fade-in leading-tight overflow-visible">
+          <h1 className="text-3xl sm:text-heading-1 md:text-display text-white mb-4 md:mb-6 animate-fade-in leading-tight overflow-visible">
             AI Detectors Don&apos;t Work.
             <br />
             <span className="text-accent">We know.</span>
           </h1>
           <p
-            className="text-heading-3 text-white/80 mb-10 animate-fade-in"
+            className="text-lg sm:text-xl md:text-heading-3 text-white/80 mb-6 md:mb-10 animate-fade-in"
             style={{ animationDelay: "0.1s" }}
           >
             Reimagined Plagiarism Forensics
             <br />
             with{" "}
-            <span className="font-[family-name:var(--font-caveat)] text-5xl bg-gradient-to-r from-red-400 via-yellow-400 via-green-400 via-blue-400 to-purple-400 bg-clip-text text-transparent inline-block pb-1 pr-1">
+            <span className="font-[family-name:var(--font-caveat)] text-3xl sm:text-4xl md:text-5xl bg-gradient-to-r from-red-400 via-yellow-400 via-green-400 via-blue-400 to-purple-400 bg-clip-text text-transparent inline-block pb-1 pr-1">
               Autograding
             </span>
           </p>
