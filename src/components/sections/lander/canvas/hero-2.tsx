@@ -101,7 +101,9 @@ export const Canvas2Hero = () => {
                             </div>
                         ) : (
                             <>
-                                <h3 className="text-xl font-bold text-foreground mb-6">Get in touch</h3>
+                                <h3 className="text-2xl md:text-3xl font-extrabold tracking-tight text-foreground mb-6 text-center">
+                                    Get in <span className="text-primary">touch</span>
+                                </h3>
                                 <form onSubmit={handleSubmit} className="space-y-4">
                                     <div>
                                         <Label htmlFor="c2-name">Full Name</Label>
