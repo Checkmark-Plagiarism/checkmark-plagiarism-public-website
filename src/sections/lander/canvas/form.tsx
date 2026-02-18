@@ -128,9 +128,9 @@ export const Form = () => {
                     <div className="w-20 h-20 rounded-full bg-accent/20 flex items-center justify-center mx-auto mb-6">
                         <CheckCircle className="h-10 w-10 text-primary" />
                     </div>
-                    <h2 className="text-heading-2 text-foreground mb-4">You're all set!</h2>
+                    <h2 className="text-heading-2 text-foreground mb-4">You&apos;re all set!</h2>
                     <p className="text-body-lg text-muted-foreground">
-                        We've received your information and will reach out with next steps to get Checkmark integrated into your Canvas instance.
+                        We&apos;ve received your information and will reach out with next steps to get Checkmark integrated into your Canvas instance.
                     </p>
                 </div>
             </div>
