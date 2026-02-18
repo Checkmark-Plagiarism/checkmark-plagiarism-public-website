@@ -1,9 +1,9 @@
-import { GoogleClassroomHero } from "@/components/sections/lander/google-classroom/hero";
-import { GoogleClassroomFeatures } from "@/components/sections/lander/google-classroom/features";
-import { GoogleClassroomHowItWorks } from "@/components/sections/lander/google-classroom/how-it-works";
+import { GoogleClassroomHero } from "@/sections/lander/google-classroom/hero";
+import { GoogleClassroomFeatures } from "@/sections/lander/google-classroom/features";
+import { GoogleClassroomHowItWorks } from "@/sections/lander/google-classroom/how-it-works";
 // import { GoogleClassroomSignupForm } from "@/components/sections/lander/google-classroom/signup-form";
-import { GoogleClassroomTestimonial } from "@/components/sections/lander/google-classroom/testimonial";
-import { GoogleClassroomCTA } from "@/components/sections/lander/google-classroom/cta";
+import { GoogleClassroomTestimonial } from "@/sections/lander/google-classroom/testimonial";
+import { GoogleClassroomCTA } from "@/sections/lander/google-classroom/cta";
 
 const GoogleClassroom = () => {
     return (
