@@ -85,8 +85,8 @@ export const CanvasHero = () => {
                         {/* Floating stat card */}
                         <div className="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-strong p-4 border border-border">
                             <p className="text-sm font-medium text-muted-foreground">Submissions checked</p>
-                            <p className="text-2xl font-extrabold text-foreground">2.4M+</p>
-                            <p className="text-xs text-accent font-semibold">this semester</p>
+                            <p className="text-2xl font-extrabold text-foreground">5,000+</p>
+                            <p className="text-xs text-accent font-semibold">this year</p>
                         </div>
                     </div>
                 </div>
