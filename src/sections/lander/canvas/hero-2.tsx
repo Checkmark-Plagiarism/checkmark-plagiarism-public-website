@@ -1,5 +1,7 @@
 "use client";
 
+import { Button } from "@/components/ui/button";
+import { Computer } from "lucide-react";
 import { Form } from "./form";
 
 export const Canvas2Hero = () => {
@@ -38,6 +40,15 @@ export const Canvas2Hero = () => {
                         <p className="text-lg md:text-xl text-white/80 mb-10 leading-relaxed">
                             Checkmark brings AI detection, plagiarism checking, and autograding directly into your Canvas workflow — no tab-switching, no extra logins, just results.
                         </p>
+
+                        <div className="flex flex-col sm:flex-row gap-4">
+                            <Button variant="outline-white" size="xl" asChild>
+                                <a href="#demo">
+                                    <Computer className="mr-2 h-5 w-5" />
+                                    Try Demo
+                                </a>
+                            </Button>
+                        </div>
 
                         <div className="flex items-center gap-6 text-white/60 text-sm">
                             {["Free for educators", "5-minute setup", "LTI 1.3 certified"].map((item) => (

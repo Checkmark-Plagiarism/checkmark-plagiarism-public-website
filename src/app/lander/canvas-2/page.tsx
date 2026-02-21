@@ -4,6 +4,7 @@ import { CanvasFeatures } from "@/sections/lander/canvas/features";
 import { CanvasHowItWorks } from "@/sections/lander/canvas/how-it-works";
 import { CanvasTestimonial } from "@/sections/lander/canvas/testimonials";
 import { CanvasCTA } from "@/sections/lander/canvas/cta";
+import { CanvasDemo } from "@/sections/lander/canvas/demo";
 
 const CanvasIntegration = () => {
     return (
@@ -12,6 +13,7 @@ const CanvasIntegration = () => {
                 <Canvas2Hero />
                 <CanvasFeatures />
                 <CanvasHowItWorks />
+                <CanvasDemo />
                 <CanvasTestimonial />
                 <CanvasCTA />
             </main>
