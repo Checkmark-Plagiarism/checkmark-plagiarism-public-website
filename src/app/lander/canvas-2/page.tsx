@@ -2,7 +2,7 @@ import { Canvas2Hero } from "@/sections/lander/canvas/hero-2";
 // import { CanvasSignupForm } from "@/components/canvas/CanvasSignupForm";
 import { CanvasFeatures } from "@/sections/lander/canvas/features";
 import { CanvasHowItWorks } from "@/sections/lander/canvas/how-it-works";
-import { CanvasTestimonial } from "@/sections/lander/canvas/testimonials";
+// import { CanvasTestimonial } from "@/sections/lander/canvas/testimonials";
 import { CanvasCTA } from "@/sections/lander/canvas/cta";
 import { CanvasDemo } from "@/sections/lander/canvas/demo";
 
@@ -14,7 +14,7 @@ const CanvasIntegration = () => {
                 <CanvasFeatures />
                 <CanvasHowItWorks />
                 <CanvasDemo />
-                <CanvasTestimonial />
+                {/* <CanvasTestimonial /> */}
                 <CanvasCTA />
             </main>
         </div>
