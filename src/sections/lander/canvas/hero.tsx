@@ -84,7 +84,7 @@ export const CanvasHero = () => {
                         </div>
                         {/* Floating stat card */}
                         <div className="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-strong p-4 border border-border">
-                            <p className="text-sm font-medium text-muted-foreground">Submissions checked</p>
+                            <p className="text-sm font-medium text-muted-foreground">Educators Using Checkmark</p>
                             <p className="text-2xl font-extrabold text-foreground">5,000+</p>
                             <p className="text-xs text-primary font-semibold">this year</p>
                         </div>
