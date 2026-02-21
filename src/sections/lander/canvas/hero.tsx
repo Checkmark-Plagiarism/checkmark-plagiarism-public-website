@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Computer } from "lucide-react";
 const canvasHeroImg = "/images/lander/canvas/report-demo.jpg";
+const canvasLogo = "/images/Canvas_Bug_Color_RGB.png";
 
 export const CanvasHero = () => {
     return (
@@ -80,6 +81,16 @@ export const CanvasHero = () => {
                                 width={1000}
                                 height={1000}
                                 className="w-full h-auto"
+                            />
+                        </div>
+                        {/* Floating canvas card */}
+                        <div className="absolute -top-6 -right-6 bg-white rounded-xl shadow-strong p-4 border border-border">
+                            <Image
+                                src={canvasLogo}
+                                alt="Canvas Logo"
+                                width={50}
+                                height={50}
+                                className="w-full h-16"
                             />
                         </div>
                         {/* Floating stat card */}
