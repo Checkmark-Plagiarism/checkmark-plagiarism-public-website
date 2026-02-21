@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Play } from "lucide-react";
-const heroImg = "/images/assets/google-classroom-hero.jpg";
+import { ArrowRight, Computer } from "lucide-react";
+const heroImg = "/images/lander/canvas/report-demo.jpg";
 
 export const GoogleClassroomHero = () => {
     return (
@@ -34,9 +34,9 @@ export const GoogleClassroomHero = () => {
                         </a>
                     </Button>
                     <Button variant="outline" size="xl" asChild>
-                        <a href="/demo">
-                            <Play className="mr-2 h-5 w-5" />
-                            Watch Demo
+                        <a href="#demo">
+                            <Computer className="mr-2 h-5 w-5" />
+                            Try Demo
                         </a>
                     </Button>
                 </div>

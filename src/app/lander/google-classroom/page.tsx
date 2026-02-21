@@ -1,9 +1,9 @@
 import { GoogleClassroomHero } from "@/sections/lander/google-classroom/hero";
 import { GoogleClassroomFeatures } from "@/sections/lander/google-classroom/features";
 import { GoogleClassroomHowItWorks } from "@/sections/lander/google-classroom/how-it-works";
-// import { GoogleClassroomSignupForm } from "@/components/sections/lander/google-classroom/signup-form";
-import { GoogleClassroomTestimonial } from "@/sections/lander/google-classroom/testimonial";
+import { GoogleClassroomSignupForm } from "@/sections/lander/google-classroom/signup-form";
 import { GoogleClassroomCTA } from "@/sections/lander/google-classroom/cta";
+import { CanvasDemo } from "@/sections/lander/canvas/demo";
 
 const GoogleClassroom = () => {
     return (
@@ -12,8 +12,8 @@ const GoogleClassroom = () => {
                 <GoogleClassroomHero />
                 <GoogleClassroomFeatures />
                 <GoogleClassroomHowItWorks />
-                {/* <GoogleClassroomSignupForm /> */}
-                <GoogleClassroomTestimonial />
+                <CanvasDemo />
+                <GoogleClassroomSignupForm />
                 <GoogleClassroomCTA />
             </main>
         </div>

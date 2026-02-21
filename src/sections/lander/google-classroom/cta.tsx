@@ -19,7 +19,7 @@ export const GoogleClassroomCTA = () => {
                         </a>
                     </Button>
                     <Button variant="outline-white" size="xl" asChild>
-                        <a href="/demo">Schedule a Demo</a>
+                        <a href="#demo">Try Demo</a>
                     </Button>
                 </div>
             </div>
