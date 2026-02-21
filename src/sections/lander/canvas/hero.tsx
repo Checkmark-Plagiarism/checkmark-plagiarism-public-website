@@ -1,12 +1,12 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Computer } from "lucide-react";
-const canvasHeroImg = "/images/lander/canvas/report-demo.jpg";
+const canvasHeroImg = "/images/lander/canvas/canvas-hero-3.jpg";
 const canvasLogo = "/images/Canvas_Bug_Color_RGB.png";
 
 export const CanvasHero = () => {
     return (
-        <section className="relative pt-32 pb-20 overflow-hidden" style={{ background: "hsl(218, 70%, 16%)" }}>
+        <section className="relative pt-32 pb-20 overflow-hidden" style={{ background: "hsla(218, 59%, 24%, 1.00)" }}>
             {/* Decorative dots pattern - Instructure inspired */}
             <div className="absolute top-20 left-10 w-32 h-32 opacity-10">
                 <div className="grid grid-cols-4 gap-3">
@@ -34,7 +34,22 @@ export const CanvasHero = () => {
 
                         <h1 className="text-4xl md:text-5xl lg:text-display font-extrabold text-white mb-6 leading-tight">
                             Academic integrity,{" "}
-                            <span className="text-accent">built right into Canvas.</span>
+                            <span className="relative text-accent"><br /></span>
+                            <div className="flex flex-row items-center gap-2 text-accent">
+                                <div className="xl:w-[500px]">
+                                    <span className="relative text-accent">built right into Canvas</span>
+                                </div>
+                                <div className="h-full xl:mt-8">
+                                    <Image
+                                        src={canvasLogo}
+                                        alt="Canvas Logo"
+                                        width={120}
+                                        height={120}
+                                        className="w-full h-full bg-white rounded-full p-1"
+                                    />
+                                </div>
+                            </div>
+
                         </h1>
 
                         <p className="text-lg md:text-xl text-white/80 mb-10 leading-relaxed">
@@ -83,21 +98,17 @@ export const CanvasHero = () => {
                                 className="w-full h-auto"
                             />
                         </div>
-                        {/* Floating canvas card */}
+                        {/* Floating stat card */}
                         <div className="absolute -top-6 -right-6 bg-white rounded-xl shadow-strong p-4 border border-border">
-                            <Image
-                                src={canvasLogo}
-                                alt="Canvas Logo"
-                                width={50}
-                                height={50}
-                                className="w-full h-16"
-                            />
+                            <p className="text-sm font-medium text-muted-foreground">AI Detection</p>
+                            <p className="text-2xl font-extrabold text-foreground">Essay Forensics</p>
+                            <p className="text-xs text-primary font-semibold">In Canvas</p>
                         </div>
                         {/* Floating stat card */}
                         <div className="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-strong p-4 border border-border">
                             <p className="text-sm font-medium text-muted-foreground">Educators Using Checkmark</p>
-                            <p className="text-2xl font-extrabold text-foreground">5,000+</p>
-                            <p className="text-xs text-primary font-semibold">this year</p>
+                            <p className="text-2xl font-extrabold text-foreground">6,000+</p>
+                            <p className="text-xs text-primary font-semibold">This Year</p>
                         </div>
                     </div>
                 </div>

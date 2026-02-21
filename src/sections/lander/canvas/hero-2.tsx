@@ -3,10 +3,12 @@
 import { Button } from "@/components/ui/button";
 import { Computer } from "lucide-react";
 import { Form } from "./form";
+import Image from "next/image";
+const canvasLogo = "/images/Canvas_Bug_Color_RGB.png";
 
 export const Canvas2Hero = () => {
     return (
-        <section id="contact" className="relative pt-32 pb-20 overflow-hidden" style={{ background: "hsl(218, 70%, 16%)" }}>
+        <section id="contact" className="relative pt-32 pb-20 overflow-hidden" style={{ background: "hsla(218, 59%, 24%, 1.00)" }}>
             {/* Decorative dots */}
             <div className="absolute top-20 left-10 w-32 h-32 opacity-10">
                 <div className="grid grid-cols-4 gap-3">
@@ -34,7 +36,17 @@ export const Canvas2Hero = () => {
 
                         <h1 className="text-4xl md:text-5xl lg:text-display font-extrabold text-white mb-6 leading-tight">
                             Academic integrity,{" "}
-                            <span className="text-accent">built right into Canvas.</span>
+                            <span className="text-accent">built right into</span>
+                            <div className="flex flex-row items-center gap-2 text-accent">
+                                Canvas
+                                <Image
+                                    src={canvasLogo}
+                                    alt="Canvas Logo"
+                                    width={100}
+                                    height={50}
+                                    className="w-16 h-16 ml-2 bg-white rounded-full p-2"
+                                />
+                            </div>
                         </h1>
 
                         <p className="text-lg md:text-xl text-white/80 mb-10 leading-relaxed">
