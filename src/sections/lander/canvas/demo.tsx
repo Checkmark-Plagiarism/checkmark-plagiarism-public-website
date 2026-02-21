@@ -161,33 +161,35 @@ export const CanvasDemo = () => {
             </div>
 
             {/* Demo iframe Section */}
-            <main className="container mx-auto px-2 pt-16 pb-4">
-                <div className="max-w-6xl mx-auto overflow-hidden">
-                    <iframe
-                        ref={iframeRef}
-                        src={DEMO_IFRAME_URL}
-                        title="Checkmark Demo"
-                        className="border-0"
-                        style={{
-                            height: `${iframeHeight}px`,
-                            minHeight: "600px",
-                            maxHeight: "1200px",
-                            width: "105%",
-                            marginLeft: "-2.5%",
-                            transform: "scale(0.95)",
-                            transformOrigin: "top center",
-                            transition: "height 0.3s ease-in-out",
-                            background: "transparent"
-                        }}
-                        allowFullScreen
-                    />
-                </div>
+            <div className="bg-brand-300">
+                <main id="demo" className="container mx-auto px-2 pt-16 pb-4">
+                    <div className="max-w-3xl mx-auto overflow-hidden rounded-lg">
+                        <iframe
+                            ref={iframeRef}
+                            src={DEMO_IFRAME_URL}
+                            title="Checkmark Demo"
+                            className="border-0 y-scrollbar-hide"
+                            style={{
+                                height: `${iframeHeight}px`,
+                                minHeight: "600px",
+                                maxHeight: "1200px",
+                                width: "105%",
+                                marginLeft: "-2.5%",
+                                transform: "scale(0.95)",
+                                transformOrigin: "top center",
+                                transition: "height 0.3s ease-in-out",
+                                background: "transparent"
+                            }}
+                            allowFullScreen
+                        />
+                    </div>
 
-                {/* Schedule a Call Button */}
-                <div className="max-w-6xl mx-auto mt-12 mb-8 flex justify-center">
-                    <ScheduleDemoButton variant="secondary" size="lg" />
-                </div>
-            </main>
+                    {/* Schedule a Call Button */}
+                    <div className="max-w-6xl mx-auto mt-12 mb-8 flex justify-center">
+                        <ScheduleDemoButton variant="secondary" size="lg" />
+                    </div>
+                </main>
+            </div>
         </>
     );
 };

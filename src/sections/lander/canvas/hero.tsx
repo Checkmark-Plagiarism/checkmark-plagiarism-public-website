@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Play } from "lucide-react";
-const canvasHeroImg = "/images/assets/canvas-hero.jpg";
+import { ArrowRight, Computer } from "lucide-react";
+const canvasHeroImg = "/images/lander/canvas/report-demo.jpg";
 
 export const CanvasHero = () => {
     return (
@@ -48,9 +48,9 @@ export const CanvasHero = () => {
                                 </a>
                             </Button>
                             <Button variant="outline-white" size="xl" asChild>
-                                <a href="/demo">
-                                    <Play className="mr-2 h-5 w-5" />
-                                    Watch Demo
+                                <a href="#demo">
+                                    <Computer className="mr-2 h-5 w-5" />
+                                    Try Demo
                                 </a>
                             </Button>
                         </div>
@@ -86,7 +86,7 @@ export const CanvasHero = () => {
                         <div className="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-strong p-4 border border-border">
                             <p className="text-sm font-medium text-muted-foreground">Submissions checked</p>
                             <p className="text-2xl font-extrabold text-foreground">5,000+</p>
-                            <p className="text-xs text-accent font-semibold">this year</p>
+                            <p className="text-xs text-primary font-semibold">this year</p>
                         </div>
                     </div>
                 </div>
