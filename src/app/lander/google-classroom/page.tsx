@@ -1,8 +1,10 @@
 import { GoogleClassroomHero } from "@/sections/lander/google-classroom/hero";
+import { GoogleClassroomPhilosophy } from "@/sections/lander/google-classroom/philosophy";
 import { GoogleClassroomFeatures } from "@/sections/lander/google-classroom/features";
 import { GoogleClassroomHowItWorks } from "@/sections/lander/google-classroom/how-it-works";
 import { GoogleClassroomSignupForm } from "@/sections/lander/google-classroom/signup-form";
 import { GoogleClassroomCTA } from "@/sections/lander/google-classroom/cta";
+import { GoogleClassroomFAQ } from "@/sections/lander/google-classroom/faq";
 import { CanvasDemo } from "@/sections/lander/canvas/demo";
 
 const GoogleClassroom = () => {
@@ -10,10 +12,12 @@ const GoogleClassroom = () => {
         <div className="min-h-screen">
             <main>
                 <GoogleClassroomHero />
+                <GoogleClassroomPhilosophy />
                 <GoogleClassroomFeatures />
                 <GoogleClassroomHowItWorks />
                 <CanvasDemo />
                 <GoogleClassroomSignupForm />
+                <GoogleClassroomFAQ />
                 <GoogleClassroomCTA />
             </main>
         </div>
