@@ -1,7 +1,8 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Computer } from "lucide-react";
-const heroImg = "/images/lander/canvas/report-demo.jpg";
+const heroImg = "/images/lander/canvas/canvas-hero-3.jpg";
+const gcLogo = "/images/google-classroom-icon.png";
 
 export const GoogleClassroomHero = () => {
     return (
@@ -17,7 +18,16 @@ export const GoogleClassroomHero = () => {
                 {/* Headline */}
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-foreground mb-6 leading-tight max-w-4xl mx-auto">
                     Academic integrity, built into{" "}
-                    <span className="text-primary">Google Classroom.</span>
+                    <span className="inline-flex items-center gap-2 text-primary">
+                        Google Classroom
+                        <Image
+                            src={gcLogo}
+                            alt="Google Classroom Logo"
+                            width={60}
+                            height={60}
+                            className="inline-block rounded-lg"
+                        />
+                    </span>
                 </h1>
 
                 {/* Subheadline */}
