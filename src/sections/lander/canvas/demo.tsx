@@ -69,10 +69,10 @@ export const CanvasDemo = () => {
     return (
         <>
             {/* Header Section with Two Columns */}
-            <div className="bg-brand-900 pt-32 pb-16">
+            <div className="bg-brand-300 pt-32 pb-16">
                 <div className="container mx-auto px-4">
                     <div className="max-w-6xl mx-auto">
-                        <h1 className="text-4xl md:text-5xl font-bold text-white mb-12 text-center">
+                        <h1 className="text-4xl md:text-5xl font-bold text-brand-900 mb-12 text-center">
                             Try Checkmark Demo
                         </h1>
 

@@ -25,14 +25,14 @@ export const GoogleClassroomHero = () => {
                             alt="Google Classroom Logo"
                             width={60}
                             height={60}
-                            className="inline-block rounded-lg"
+                            className="inline-block"
                         />
                     </span>
                 </h1>
 
                 {/* Subheadline */}
                 <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed">
-                    Checkmark brings plagiarism detection, AI writing detection, and autograding directly into Google Classroom — seamless for educators and invisible to students.
+                    Checkmark brings plagiarism detection, AI writing detection, and autograding directly into Google Classroom.
                 </p>
 
                 {/* CTAs */}

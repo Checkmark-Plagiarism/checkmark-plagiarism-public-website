@@ -48,8 +48,8 @@ export const GoogleClassroomFeatures = () => {
                     </p>
                 </div>
 
-                {/* Feature cards — clean, centered Google-style */}
-                <div className="flex flex-col gap-6 max-w-3xl mx-auto">
+                {/* Feature cards — 2x2 grid */}
+                <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
                     {features.map((feature, i) => (
                         <div
                             key={i}
