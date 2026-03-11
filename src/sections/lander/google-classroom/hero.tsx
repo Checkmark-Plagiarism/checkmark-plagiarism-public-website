@@ -35,7 +35,7 @@ export const GoogleClassroomHero = () => {
                 </p>
 
                 {/* CTAs + Hero sticker images */}
-                <div className="relative mb-56 md:mb-64">
+                <div className="relative mb-64 md:mb-72">
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <Button size="xl" asChild>
                             <a href="#signup">
@@ -49,18 +49,18 @@ export const GoogleClassroomHero = () => {
                     <Image
                         src="/images/classroom.png"
                         alt="Students in a classroom"
-                        width={380}
-                        height={380}
-                        className="absolute -left-8 md:left-0 top-1/2 -translate-y-1/4 -rotate-3 pointer-events-none hidden sm:block"
+                        width={440}
+                        height={440}
+                        className="absolute -left-16 md:-left-12 top-1/2 -translate-y-1/4 -rotate-3 pointer-events-none hidden sm:block"
                     />
 
                     {/* Right sticker */}
                     <Image
                         src="/images/group-homework.png"
                         alt="Students working together on homework"
-                        width={380}
-                        height={380}
-                        className="absolute -right-8 md:right-0 top-1/2 -translate-y-1/4 rotate-3 pointer-events-none hidden sm:block"
+                        width={440}
+                        height={440}
+                        className="absolute -right-16 md:-right-12 top-1/2 -translate-y-1/4 rotate-3 pointer-events-none hidden sm:block"
                     />
                 </div>
 
