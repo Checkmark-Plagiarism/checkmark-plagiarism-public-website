@@ -28,7 +28,7 @@ export const GoogleClassroomPhilosophy = () => {
                 alt="Teacher having a conversation with a student"
                 width={320}
                 height={320}
-                className="absolute -right-8 top-1/2 -translate-y-1/2 rotate-3 -z-0 drop-shadow-xl pointer-events-none hidden lg:block"
+                className="absolute -right-8 top-1/2 -translate-y-1/2 rotate-3 -z-0 pointer-events-none hidden lg:block"
             />
             <div className="container mx-auto px-6 max-w-5xl relative z-10">
                 <div className="text-center mb-16">

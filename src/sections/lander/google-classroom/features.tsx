@@ -41,7 +41,7 @@ export const GoogleClassroomFeatures = () => {
                 alt="Balance scale with essay"
                 width={300}
                 height={300}
-                className="absolute -left-8 top-1/2 -translate-y-1/2 -rotate-6 -z-0 drop-shadow-xl pointer-events-none hidden lg:block"
+                className="absolute -left-8 top-1/2 -translate-y-1/2 -rotate-6 -z-0 pointer-events-none hidden lg:block"
             />
             <div className="container mx-auto px-6 max-w-6xl relative z-10">
                 {/* Section header */}
