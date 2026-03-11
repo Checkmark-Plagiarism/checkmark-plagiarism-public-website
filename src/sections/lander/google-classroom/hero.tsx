@@ -34,36 +34,34 @@ export const GoogleClassroomHero = () => {
                     Checkmark helps educators uphold fairness in the classroom with plagiarism detection, AI writing analysis, and unbiased autograding — all built into Google Classroom.
                 </p>
 
-                {/* CTAs */}
-                <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-                    <Button size="xl" asChild>
-                        <a href="#signup">
-                            Get Started Free
-                            <ArrowRight className="ml-2 h-5 w-5" />
-                        </a>
-                    </Button>
-                </div>
+                {/* CTAs + Hero sticker images */}
+                <div className="relative mb-48 md:mb-56">
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                        <Button size="xl" asChild>
+                            <a href="#signup">
+                                Get Started Free
+                                <ArrowRight className="ml-2 h-5 w-5" />
+                            </a>
+                        </Button>
+                    </div>
 
-                {/* Hero images */}
-                <div className="flex gap-6 max-w-4xl mx-auto justify-center">
-                    <div className="flex-1 rounded-2xl overflow-hidden shadow-strong border border-border">
-                        <Image
-                            src="/images/classroom.png"
-                            alt="Students in a classroom"
-                            className="w-full h-auto"
-                            width={500}
-                            height={500}
-                        />
-                    </div>
-                    <div className="flex-1 rounded-2xl overflow-hidden shadow-strong border border-border">
-                        <Image
-                            src="/images/group-homework.png"
-                            alt="Students working together on homework"
-                            className="w-full h-auto"
-                            width={500}
-                            height={500}
-                        />
-                    </div>
+                    {/* Left sticker */}
+                    <Image
+                        src="/images/classroom.png"
+                        alt="Students in a classroom"
+                        width={280}
+                        height={280}
+                        className="absolute -left-4 md:left-8 top-1/2 -translate-y-1/4 -rotate-3 drop-shadow-xl pointer-events-none hidden sm:block"
+                    />
+
+                    {/* Right sticker */}
+                    <Image
+                        src="/images/group-homework.png"
+                        alt="Students working together on homework"
+                        width={280}
+                        height={280}
+                        className="absolute -right-4 md:right-8 top-1/2 -translate-y-1/4 rotate-3 drop-shadow-xl pointer-events-none hidden sm:block"
+                    />
                 </div>
 
                 {/* Trust badges */}
