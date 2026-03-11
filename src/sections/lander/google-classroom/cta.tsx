@@ -6,7 +6,7 @@ export const GoogleClassroomCTA = () => {
         <section className="py-28 bg-hero">
             <div className="container mx-auto px-6 max-w-4xl text-center">
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white mb-6">
-                    Ready to protect academic integrity?
+                    Ready to bring fairness to every assignment?
                 </h2>
                 <p className="text-xl text-white/80 mb-10 max-w-2xl mx-auto">
                     Join thousands of educators using Checkmark in Google Classroom. Start your free pilot today — no credit card, no commitment.
@@ -17,9 +17,6 @@ export const GoogleClassroomCTA = () => {
                             Get Started Free
                             <ArrowRight className="ml-2 h-5 w-5" />
                         </a>
-                    </Button>
-                    <Button variant="outline-white" size="xl" asChild>
-                        <a href="#demo">Try Demo</a>
                     </Button>
                 </div>
             </div>

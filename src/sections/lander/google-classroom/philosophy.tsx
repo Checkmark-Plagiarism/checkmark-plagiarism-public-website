@@ -1,10 +1,11 @@
+import Image from "next/image";
 import { MessageCircle, Search, Scale } from "lucide-react";
 
 const pillars = [
     {
         icon: Search,
         title: "Forensics, not flags",
-        description: "Checkmark traces a student's revision history and keystroke data to surface where content was pasted in rather than typed. You get a detailed picture, not a red stamp.",
+        description: "Checkmark traces a student's revision history and keystroke data to surface where content was copied in rather than typed. You get a detailed picture, not a red stamp.",
     },
     {
         icon: MessageCircle,
@@ -20,15 +21,23 @@ const pillars = [
 
 export const GoogleClassroomPhilosophy = () => {
     return (
-        <section className="py-24 bg-background">
-            <div className="container mx-auto px-6 max-w-5xl">
+        <section className="py-24 bg-background relative overflow-hidden">
+            {/* Sticker illustration */}
+            <Image
+                src="/images/teacher-convo.png"
+                alt="Teacher having a conversation with a student"
+                width={320}
+                height={320}
+                className="absolute -right-8 top-1/2 -translate-y-1/2 rotate-3 opacity-20 -z-0 pointer-events-none hidden lg:block"
+            />
+            <div className="container mx-auto px-6 max-w-5xl relative z-10">
                 <div className="text-center mb-16">
-                    <p className="text-sm font-bold tracking-widest text-primary uppercase mb-3">Our Philosophy</p>
+                    <p className="text-base md:text-lg font-bold tracking-widest text-primary uppercase mb-3">Our Philosophy</p>
                     <h2 className="text-heading-2 text-foreground mb-4">
-                        Less policing. More conversations.
+                        More Conversations, Not Accusations
                     </h2>
                     <p className="text-body-lg text-muted-foreground max-w-2xl mx-auto">
-                        Checkmark analyzes a student&apos;s revision history and actual keystrokes to show teachers exactly where AI-generated content was likely pasted in. It gives you evidence to start a conversation, not an algorithm to hand down a verdict.
+                        Checkmark analyzes a student&apos;s revision history and actual keystrokes to show teachers exactly where AI-generated content was likely copied in. It gives you evidence to start a conversation, not an algorithm to hand down a verdict.
                     </p>
                 </div>
 

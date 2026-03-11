@@ -5,7 +5,6 @@ import { GoogleClassroomHowItWorks } from "@/sections/lander/google-classroom/ho
 import { GoogleClassroomSignupForm } from "@/sections/lander/google-classroom/signup-form";
 import { GoogleClassroomCTA } from "@/sections/lander/google-classroom/cta";
 import { GoogleClassroomFAQ } from "@/sections/lander/google-classroom/faq";
-import { CanvasDemo } from "@/sections/lander/canvas/demo";
 
 const GoogleClassroom = () => {
     return (
@@ -15,7 +14,6 @@ const GoogleClassroom = () => {
                 <GoogleClassroomPhilosophy />
                 <GoogleClassroomFeatures />
                 <GoogleClassroomHowItWorks />
-                <CanvasDemo />
                 <GoogleClassroomSignupForm />
                 <GoogleClassroomFAQ />
                 <GoogleClassroomCTA />

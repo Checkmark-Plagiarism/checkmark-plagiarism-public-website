@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ShieldCheck, Brain, GraduationCap, Plug } from "lucide-react";
 
 const features = [
@@ -19,7 +20,7 @@ const features = [
         icon: GraduationCap,
         title: "Autograding",
         description:
-            "Set rubrics and let Checkmark provide instant, consistent feedback on student writing. Save hours per assignment while maintaining grading quality.",
+            "Set rubrics and let Checkmark provide instant, unbiased feedback on student writing. Save hours per assignment while maintaining grading quality.",
         stat: "80% time saved",
     },
     {
@@ -33,11 +34,19 @@ const features = [
 
 export const GoogleClassroomFeatures = () => {
     return (
-        <section className="py-28 bg-secondary">
-            <div className="container mx-auto px-6 max-w-6xl">
+        <section className="py-28 bg-secondary relative overflow-hidden">
+            {/* Sticker illustration */}
+            <Image
+                src="/images/essay-scale.png"
+                alt="Balance scale with essay"
+                width={300}
+                height={300}
+                className="absolute -left-8 top-1/2 -translate-y-1/2 -rotate-6 opacity-20 -z-0 pointer-events-none hidden lg:block"
+            />
+            <div className="container mx-auto px-6 max-w-6xl relative z-10">
                 {/* Section header */}
                 <div className="text-center mb-20">
-                    <p className="text-sm font-bold tracking-widest text-primary uppercase mb-3">
+                    <p className="text-base md:text-lg font-bold tracking-widest text-primary uppercase mb-3">
                         What Checkmark Offers
                     </p>
                     <h2 className="text-3xl md:text-4xl font-extrabold text-foreground mb-4">

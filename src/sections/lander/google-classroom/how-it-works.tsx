@@ -30,7 +30,7 @@ export const GoogleClassroomHowItWorks = () => {
         <section className="py-28 bg-background">
             <div className="container mx-auto px-6 max-w-5xl">
                 <div className="text-center mb-20">
-                    <p className="text-sm font-bold tracking-widest text-primary uppercase mb-3">How It Works</p>
+                    <p className="text-base md:text-lg font-bold tracking-widest text-primary uppercase mb-3">How It Works</p>
                     <h2 className="text-3xl md:text-4xl font-extrabold text-foreground mb-4">Up and running in minutes</h2>
                 </div>
 

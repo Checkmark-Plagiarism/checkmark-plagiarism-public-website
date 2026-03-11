@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Computer } from "lucide-react";
-const heroImg = "/images/lander/canvas/canvas-hero-3.jpg";
+import { ArrowRight } from "lucide-react";
 const gcLogo = "/images/google-classroom-icon.png";
 
 export const GoogleClassroomHero = () => {
@@ -11,7 +10,7 @@ export const GoogleClassroomHero = () => {
             <div className="pt-32 pb-20 container mx-auto px-6 max-w-5xl text-center">
                 {/* Badge */}
                 <div className="inline-flex items-center gap-2 bg-primary/10 rounded-full px-5 py-2 mb-8">
-                    <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
+                    <Image src="/images/android-chrome-192x192.png" alt="Checkmark" width={20} height={20} />
                     <span className="text-sm font-semibold text-primary">Google Classroom Integration</span>
                 </div>
 
@@ -32,7 +31,7 @@ export const GoogleClassroomHero = () => {
 
                 {/* Subheadline */}
                 <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed">
-                    Checkmark brings plagiarism detection, AI writing detection, and autograding directly into Google Classroom.
+                    Checkmark helps educators uphold fairness in the classroom with plagiarism detection, AI writing analysis, and unbiased autograding — all built into Google Classroom.
                 </p>
 
                 {/* CTAs */}
@@ -43,23 +42,28 @@ export const GoogleClassroomHero = () => {
                             <ArrowRight className="ml-2 h-5 w-5" />
                         </a>
                     </Button>
-                    <Button variant="outline" size="xl" asChild>
-                        <a href="#demo">
-                            <Computer className="mr-2 h-5 w-5" />
-                            Try Demo
-                        </a>
-                    </Button>
                 </div>
 
-                {/* Hero image */}
-                <div className="relative rounded-2xl overflow-hidden shadow-strong border border-border max-w-4xl mx-auto">
-                    <Image
-                        src={heroImg}
-                        alt="Checkmark integrated within Google Classroom showing plagiarism and AI detection results"
-                        className="w-full h-auto"
-                        width={1000}
-                        height={1000}
-                    />
+                {/* Hero images */}
+                <div className="flex gap-6 max-w-4xl mx-auto justify-center">
+                    <div className="flex-1 rounded-2xl overflow-hidden shadow-strong border border-border">
+                        <Image
+                            src="/images/classroom.png"
+                            alt="Students in a classroom"
+                            className="w-full h-auto"
+                            width={500}
+                            height={500}
+                        />
+                    </div>
+                    <div className="flex-1 rounded-2xl overflow-hidden shadow-strong border border-border">
+                        <Image
+                            src="/images/group-homework.png"
+                            alt="Students working together on homework"
+                            className="w-full h-auto"
+                            width={500}
+                            height={500}
+                        />
+                    </div>
                 </div>
 
                 {/* Trust badges */}

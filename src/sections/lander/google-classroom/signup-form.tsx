@@ -9,7 +9,7 @@ export const GoogleClassroomSignupForm = () => {
                 <div className="grid lg:grid-cols-2 gap-16 items-center max-w-6xl mx-auto">
                     {/* Left: Value props */}
                     <div>
-                        <p className="text-sm font-bold tracking-widest text-primary uppercase mb-3">Get Started</p>
+                        <p className="text-base md:text-lg font-bold tracking-widest text-primary uppercase mb-3">Get Started</p>
                         <h2 className="text-heading-2 text-foreground mb-6">
                             Bring Checkmark to your Google Classroom instance
                         </h2>
