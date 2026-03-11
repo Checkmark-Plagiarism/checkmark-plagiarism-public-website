@@ -49,18 +49,18 @@ export const GoogleClassroomHero = () => {
                     <Image
                         src="/images/classroom.png"
                         alt="Students in a classroom"
-                        width={440}
-                        height={440}
-                        className="absolute -left-16 md:-left-12 top-1/2 -translate-y-1/4 -rotate-3 pointer-events-none hidden sm:block"
+                        width={480}
+                        height={480}
+                        className="absolute -left-28 md:-left-24 top-1/2 -translate-y-1/4 -rotate-3 pointer-events-none hidden sm:block"
                     />
 
                     {/* Right sticker */}
                     <Image
                         src="/images/group-homework.png"
                         alt="Students working together on homework"
-                        width={440}
-                        height={440}
-                        className="absolute -right-16 md:-right-12 top-1/2 -translate-y-1/4 rotate-3 pointer-events-none hidden sm:block"
+                        width={480}
+                        height={480}
+                        className="absolute -right-28 md:-right-24 top-1/2 -translate-y-1/4 rotate-3 pointer-events-none hidden sm:block"
                     />
                 </div>
 
