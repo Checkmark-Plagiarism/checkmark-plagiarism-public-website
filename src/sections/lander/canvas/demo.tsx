@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
-import Script from "next/script";
 import { DayPicker } from "react-day-picker";
 import "react-day-picker/dist/style.css";
 import { addDays, format } from "date-fns";
@@ -191,13 +190,7 @@ export const CanvasDemo = () => {
     };
 
     return (
-        <>
-            <Script
-                src="https://challenges.cloudflare.com/turnstile/v0/api.js"
-                strategy="afterInteractive"
-            />
-
-            <div id="demo" className="bg-brand-300 pt-32 pb-16">
+        <div id="demo" className="bg-brand-300 pt-32 pb-16">
                 <div className="container mx-auto px-4">
                     <div className="max-w-2xl mx-auto">
                         <h1 className="text-4xl md:text-5xl font-bold text-brand-900 mb-4 text-center">
@@ -327,7 +320,7 @@ export const CanvasDemo = () => {
                                         <button
                                             type="submit"
                                             disabled={isSubmitting || !selectedDate || !selectedTime}
-                                            className="w-full sm:w-auto rounded bg-black px-6 py-2 text-white disabled:opacity-50 disabled:cursor-not-allowed"
+                                            className="w-full sm:w-auto rounded bg-blue-600 hover:bg-blue-700 px-6 py-2 text-white disabled:opacity-50 disabled:cursor-not-allowed"
                                         >
                                             {isSubmitting ? "Scheduling..." : "Schedule Demo"}
                                         </button>
@@ -350,7 +343,6 @@ export const CanvasDemo = () => {
                         )}
                     </div>
                 </div>
-            </div>
-        </>
+        </div>
     );
 };
