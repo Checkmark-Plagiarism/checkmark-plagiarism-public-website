@@ -34,22 +34,16 @@ export const CanvasHero = () => {
 
                         <h1 className="text-4xl md:text-5xl lg:text-display font-extrabold text-white mb-6 leading-tight">
                             Academic integrity,{" "}
-                            <span className="relative text-accent"><br /></span>
-                            <div className="flex flex-row items-center gap-2 text-accent">
-                                <div className="xl:w-[500px]">
-                                    <span className="relative text-accent">built right into Canvas</span>
-                                </div>
-                                <div className="h-full xl:mt-8">
-                                    <Image
-                                        src={canvasLogo}
-                                        alt="Canvas Logo"
-                                        width={56}
-                                        height={56}
-                                        className="w-14 h-14 bg-white rounded-full p-1"
-                                    />
-                                </div>
-                            </div>
-
+                            <br />
+                            <span className="text-accent">built right into Canvas{" "}
+                                <Image
+                                    src={canvasLogo}
+                                    alt="Canvas Logo"
+                                    width={56}
+                                    height={56}
+                                    className="inline-block align-middle w-[0.9em] h-[0.9em] bg-white rounded-full p-0.5"
+                                />
+                            </span>
                         </h1>
 
                         <p className="text-lg md:text-xl text-white/80 mb-10 leading-relaxed">
