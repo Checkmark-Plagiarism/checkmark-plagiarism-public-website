@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { ShieldCheck, Brain, GraduationCap, Plug } from "lucide-react";
 
 const features = [
@@ -34,16 +33,8 @@ const features = [
 
 export const CanvasFeatures = () => {
     return (
-        <section className="py-28 bg-secondary relative overflow-hidden">
-            {/* Sticker illustration */}
-            <Image
-                src="/images/essay-scale.png"
-                alt="Balance scale with essay"
-                width={300}
-                height={300}
-                className="absolute -left-8 top-1/2 -translate-y-full -rotate-6 -z-0 pointer-events-none hidden lg:block"
-            />
-            <div className="container mx-auto px-6 max-w-6xl relative z-10">
+        <section className="py-28 bg-secondary">
+            <div className="container mx-auto px-6 max-w-6xl">
                 {/* Section header */}
                 <div className="text-center mb-20">
                     <p className="text-base md:text-lg font-bold tracking-widest text-primary uppercase mb-3">

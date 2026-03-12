@@ -23,7 +23,7 @@ export const CanvasHero = () => {
                 </div>
             </div>
 
-            <div className="container mx-auto px-6">
+            <div className="container mx-auto px-6 md:px-12 lg:px-16">
                 <div className="grid lg:grid-cols-2 gap-16 items-center">
                     {/* Left: Copy */}
                     <div className="max-w-xl">
@@ -43,9 +43,9 @@ export const CanvasHero = () => {
                                     <Image
                                         src={canvasLogo}
                                         alt="Canvas Logo"
-                                        width={120}
-                                        height={120}
-                                        className="w-full h-full bg-white rounded-full p-1"
+                                        width={56}
+                                        height={56}
+                                        className="w-14 h-14 bg-white rounded-full p-1"
                                     />
                                 </div>
                             </div>
