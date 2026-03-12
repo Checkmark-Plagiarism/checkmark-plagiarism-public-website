@@ -1,5 +1,7 @@
 "use client";
 
+declare global { interface Window { uetq?: unknown[] } }
+
 import { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import Script from "next/script";
@@ -168,6 +170,12 @@ export default function ScheduleDemoDialog({ isOpen, onClose }: ScheduleDemoDial
 
     if (data.ok) {
       setStatus("ok");
+      window.uetq = window.uetq || [];
+      window.uetq.push('event', 'book_appointment', {
+        'event_category': 'appointment',
+        'event_label': 'Appointment Booking',
+        'event_value': '1'
+      });
       setConfirmationData({
         name: values.name,
         email: values.email,

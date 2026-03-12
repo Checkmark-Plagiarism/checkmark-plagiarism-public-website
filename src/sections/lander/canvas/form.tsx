@@ -1,5 +1,7 @@
 "use client";
 
+declare global { interface Window { uetq?: unknown[] } }
+
 import { useState, useRef, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import Script from "next/script";
@@ -109,6 +111,12 @@ export const Form = () => {
                 setStatus("ok");
                 setSubmittedData(values);
                 reset();
+                window.uetq = window.uetq || [];
+                window.uetq.push('event', 'submit_lead_form', {
+                    'event_category': 'lead',
+                    'event_label': 'Lead Form Submission',
+                    'event_value': '1'
+                });
                 if (widgetId.current && turnstile) {
                     turnstile.reset(widgetId.current);
                 }

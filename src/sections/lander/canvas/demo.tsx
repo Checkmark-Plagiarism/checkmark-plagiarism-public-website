@@ -1,194 +1,355 @@
 "use client";
 
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Lock, Check } from "lucide-react";
-import { useEffect, useRef, useState } from "react";
-import ScheduleDemoButton from "@/components/schedule-demo-button";
+import { useState, useEffect } from "react";
+import { useForm } from "react-hook-form";
+import Script from "next/script";
+import { DayPicker } from "react-day-picker";
+import "react-day-picker/dist/style.css";
+import { addDays, format } from "date-fns";
+import { fromZonedTime, formatInTimeZone } from "date-fns-tz";
 
-const DEMO_IFRAME_URL = process.env.NEXT_PUBLIC_DEMO_URL || 'https://dev.checkmarkplagiarism.com/demo';
+declare global { interface Window { uetq?: unknown[] } }
 
-// Extract origin from the full URL
-const DEMO_IFRAME_ORIGIN = new URL(DEMO_IFRAME_URL).origin;
+type FormData = {
+    name: string;
+    email: string;
+    school: string;
+};
+
+type ConfirmationData = {
+    name: string;
+    email: string;
+    school: string;
+    date: string;
+    time: string;
+    meetLink: string;
+    emailFrom: string;
+};
 
 export const CanvasDemo = () => {
-    const iframeRef = useRef<HTMLIFrameElement>(null);
-    const [iframeHeight, setIframeHeight] = useState(600);
+    const {
+        register,
+        handleSubmit,
+        formState: { errors, isSubmitting },
+        reset,
+    } = useForm<FormData>();
 
+    const [status, setStatus] = useState<"idle" | "ok" | "error">("idle");
+    const [errorMessage, setErrorMessage] = useState<string>("");
+    const [confirmationData, setConfirmationData] = useState<ConfirmationData | null>(null);
+
+    const [selectedDate, setSelectedDate] = useState<Date | undefined>(undefined);
+    const [availableSlots, setAvailableSlots] = useState<string[]>([]);
+    const [selectedTime, setSelectedTime] = useState<string>("");
+    const [loadingSlots, setLoadingSlots] = useState(false);
+
+    const [userTimezone, setUserTimezone] = useState<string>("America/Los_Angeles");
+    const [timezoneAbbr, setTimezoneAbbr] = useState<string>("PST");
+
+    // Detect user's timezone on mount
     useEffect(() => {
-        // Listen for explicit height change requests from the iframe
-        const handleMessage = (event: MessageEvent) => {
-            // Verify the origin for security
-            const allowedIframeOrigins = [
-                "https://dev.checkmarkplagiarism.com",  // Dev iframe
-                "https://teach.checkmarkplagiarism.com", // Production iframe
-                "http://localhost:5173", // Local dev (Vite)
-                "http://localhost:3000", // Local dev (other)
-            ];
-
-            if (!allowedIframeOrigins.includes(event.origin)) return;
-
-            // Simple message: { type: "setHeight", height: 600 | 1200 }
-            if (event.data.type === "setHeight" && typeof event.data.height === "number") {
-                const clampedHeight = Math.min(Math.max(event.data.height, 600), 1200);
-                setIframeHeight(clampedHeight);
+        if (typeof window !== "undefined") {
+            try {
+                const detected = Intl.DateTimeFormat().resolvedOptions().timeZone;
+                setUserTimezone(detected);
+                const date = new Date();
+                const abbr = date.toLocaleTimeString("en-US", { timeZone: detected, timeZoneName: "short" }).split(" ")[2] || "PST";
+                setTimezoneAbbr(abbr);
+            } catch (error) {
+                console.error("Error detecting timezone:", error);
             }
-        };
+        }
+    }, []);
 
-        window.addEventListener("message", handleMessage);
+    // Render Turnstile widget on mount
+    useEffect(() => {
+        if (typeof window !== "undefined" && status !== "ok") {
+            const timer = setTimeout(() => {
+                const widget = document.getElementById("cf-turnstile-demo-inline");
+                if (widget && window.turnstile && !widget.querySelector("iframe")) {
+                    try {
+                        window.turnstile.render("#cf-turnstile-demo-inline", {
+                            sitekey: process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY!,
+                            theme: "auto",
+                        });
+                    } catch (error) {
+                        console.log("Turnstile already rendered or error:", error);
+                    }
+                }
+            }, 200);
+            return () => clearTimeout(timer);
+        }
+    }, [status]);
 
-        // Send parent origin to iframe when it loads
-        const iframe = iframeRef.current;
-        if (iframe) {
-            const sendOriginToIframe = () => {
-                iframe.contentWindow?.postMessage({
-                    type: 'parentOrigin',
-                    origin: window.location.origin
-                }, DEMO_IFRAME_ORIGIN);
-            };
+    // Fetch available slots when date is selected
+    useEffect(() => {
+        if (selectedDate) {
+            fetchAvailableSlots(selectedDate);
+        } else {
+            setAvailableSlots([]);
+            setSelectedTime("");
+        }
+    }, [selectedDate]);
 
-            iframe.addEventListener('load', sendOriginToIframe);
-
-            // Also send immediately if already loaded
-            if (iframe.contentWindow) {
-                setTimeout(sendOriginToIframe, 100);
-                setTimeout(sendOriginToIframe, 500);
-                setTimeout(sendOriginToIframe, 1000);
+    const fetchAvailableSlots = async (date: Date) => {
+        setLoadingSlots(true);
+        setSelectedTime("");
+        try {
+            const dateStr = format(date, "yyyy-MM-dd");
+            const res = await fetch(`/api/schedule-demo?date=${dateStr}`);
+            const data = await res.json();
+            if (data.ok) {
+                setAvailableSlots(data.slots || []);
+            } else {
+                setAvailableSlots([]);
             }
+        } catch (error) {
+            console.error("Error fetching slots:", error);
+            setAvailableSlots([]);
+        } finally {
+            setLoadingSlots(false);
+        }
+    };
 
-            return () => {
-                window.removeEventListener("message", handleMessage);
-                iframe.removeEventListener('load', sendOriginToIframe);
-            };
+    const onSubmit = async (values: FormData) => {
+        setStatus("idle");
+        setErrorMessage("");
+
+        if (!selectedDate || !selectedTime) {
+            setErrorMessage("Please select a date and time.");
+            return;
         }
 
-        return () => {
-            window.removeEventListener("message", handleMessage);
-        };
-    }, []);
+        const token = window.turnstile?.getResponse?.("#cf-turnstile-demo-inline") ?? null;
+        if (!token) {
+            setErrorMessage("Please complete the captcha.");
+            return;
+        }
+
+        const dateStr = format(selectedDate, "yyyy-MM-dd");
+
+        const res = await fetch("/api/schedule-demo", {
+            method: "POST",
+            headers: { "content-type": "application/json" },
+            body: JSON.stringify({
+                ...values,
+                date: dateStr,
+                time: selectedTime,
+                token,
+            }),
+        });
+
+        const data = await res.json();
+
+        if (data.ok) {
+            setStatus("ok");
+            window.uetq = window.uetq || [];
+            window.uetq.push("event", "book_appointment", {
+                event_category: "appointment",
+                event_label: "Appointment Booking",
+                event_value: "1",
+            });
+            setConfirmationData({
+                name: values.name,
+                email: values.email,
+                school: values.school,
+                date: data.date,
+                time: data.time,
+                meetLink: data.meetLink,
+                emailFrom: data.emailFrom,
+            });
+            reset();
+            setSelectedDate(undefined);
+            setSelectedTime("");
+            window.turnstile?.reset?.("#cf-turnstile-demo-inline");
+        } else {
+            setStatus("error");
+            setErrorMessage(data.error || "Something went wrong. Please try again.");
+        }
+    };
+
+    const disabledDays = [
+        { before: addDays(new Date(), 1) },
+        { after: addDays(new Date(), 60) },
+        { dayOfWeek: [0, 6] },
+    ];
+
+    const formatTimeDisplay = (pstTime: string) => {
+        if (!selectedDate) return pstTime;
+        try {
+            const dateStr = format(selectedDate, "yyyy-MM-dd");
+            const pstDateTime = fromZonedTime(`${dateStr} ${pstTime}:00`, "America/Los_Angeles");
+            const localTime = formatInTimeZone(pstDateTime, userTimezone, "h:mm a");
+            return `${localTime} ${timezoneAbbr}`;
+        } catch (error) {
+            console.error("Error formatting time:", error);
+            const [hours, minutes] = pstTime.split(":").map(Number);
+            const isPM = hours >= 12;
+            const displayHours = hours > 12 ? hours - 12 : hours === 0 ? 12 : hours;
+            return `${displayHours}:${minutes.toString().padStart(2, "0")} ${isPM ? "PM" : "AM"} PST`;
+        }
+    };
 
     return (
         <>
-            {/* Header Section with Two Columns */}
-            <div className="bg-brand-300 pt-32 pb-16">
+            <Script
+                src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+                strategy="afterInteractive"
+            />
+
+            <div id="demo" className="bg-brand-300 pt-32 pb-16">
                 <div className="container mx-auto px-4">
-                    <div className="max-w-6xl mx-auto">
-                        <h1 className="text-4xl md:text-5xl font-bold text-brand-900 mb-12 text-center">
-                            Try Checkmark Demo
+                    <div className="max-w-2xl mx-auto">
+                        <h1 className="text-4xl md:text-5xl font-bold text-brand-900 mb-4 text-center">
+                            Schedule a Demo
                         </h1>
+                        <p className="text-center text-brand-700 mb-8">
+                            Book a 30-minute demo to see how Checkmark can help your school detect plagiarism.
+                        </p>
 
-                        <div className="grid lg:grid-cols-2 gap-8">
-                            {/* Column 1: How it works */}
-                            <Card className="shadow-soft">
-                                <CardHeader>
-                                    <CardTitle className="text-2xl">How it works</CardTitle>
-                                </CardHeader>
-                                <CardContent className="space-y-4">
-                                    <p>
-                                        Submit a Google Doc and Checkmark will detect AI-generated content and provide feedback from our autograder.
+                        {status === "ok" && confirmationData ? (
+                            <div className="rounded-lg border border-green-200 bg-green-50 p-6">
+                                <p className="text-sm text-green-800 mb-4">
+                                    Your demo has been scheduled for <strong>{confirmationData.date}</strong> at <strong>{confirmationData.time}</strong>.
+                                </p>
+                                <div className="border-t border-green-200 pt-4 mt-4">
+                                    <p className="text-sm text-green-800 mb-2">
+                                        We&apos;ve sent all the details to <strong>{confirmationData.email}</strong>, including your Google Meet link.
                                     </p>
-
-                                    <p>
-                                        When selecting a document from Google Drive, a Google popup will appear asking for permission to access your document.
+                                    <br />
+                                    <p className="text-sm text-green-700">
+                                        Please check your spam folder and whitelist <strong>{confirmationData.emailFrom}</strong> to ensure you receive all communications.
                                     </p>
-
-                                    <p>
-                                        After submitting your document, you&apos;ll need to wait about a minute to receive your report.
-                                    </p>
-
-                                    <div className="pt-4 border-t">
-                                        <p className="font-semibold">
-                                            To create your own rubric and submit Microsoft Word documents, please create an account. It&apos;s free!
-                                        </p>
-                                    </div>
-                                </CardContent>
-                            </Card>
-
-                            {/* Column 2: Privacy Guarantee */}
-                            <Card className="shadow-soft bg-brand-900">
-                                <CardHeader>
-                                    <div className="flex items-center gap-2">
-                                        <Lock className="w-6 h-6 text-white" />
-                                        <CardTitle className="text-2xl text-white">Privacy Guarantee</CardTitle>
-                                    </div>
-                                </CardHeader>
-                                <CardContent className="space-y-3">
-                                    <div className="flex items-start gap-3">
-                                        <Check className="w-5 h-5 text-white flex-shrink-0 mt-0.5" />
-                                        <p className="text-white">
-                                            You retain full ownership and control of your documents
-                                        </p>
+                                </div>
+                            </div>
+                        ) : (
+                            <div className="bg-white rounded-2xl border border-gray-200 shadow-md p-8">
+                                <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+                                    {/* Name */}
+                                    <div>
+                                        <label className="block text-sm font-medium mb-1">Name</label>
+                                        <input
+                                            className="w-full rounded border p-2"
+                                            placeholder="Jane Doe"
+                                            {...register("name", { required: true, maxLength: 100 })}
+                                        />
+                                        {errors.name && <p className="text-sm text-red-600 mt-1">Name is required.</p>}
                                     </div>
 
-                                    <div className="flex items-start gap-3">
-                                        <Check className="w-5 h-5 text-white flex-shrink-0 mt-0.5" />
-                                        <p className="text-white">
-                                            Your essays are automatically deleted after 7 days
-                                        </p>
+                                    {/* Email */}
+                                    <div>
+                                        <label className="block text-sm font-medium mb-1">Email</label>
+                                        <input
+                                            type="email"
+                                            className="w-full rounded border p-2"
+                                            placeholder="jane@school.edu"
+                                            {...register("email", { required: true })}
+                                        />
+                                        {errors.email && <p className="text-sm text-red-600 mt-1">Valid email required.</p>}
                                     </div>
 
-                                    <div className="flex items-start gap-3">
-                                        <Check className="w-5 h-5 text-white flex-shrink-0 mt-0.5" />
-                                        <p className="text-white">
-                                            Your essays will not be used to train generative AI models or sold to any 3rd party vendors
-                                        </p>
+                                    {/* School */}
+                                    <div>
+                                        <label className="block text-sm font-medium mb-1">School</label>
+                                        <input
+                                            type="text"
+                                            className="w-full rounded border p-2"
+                                            placeholder="Your school or institution"
+                                            {...register("school", { required: true, maxLength: 200 })}
+                                        />
+                                        {errors.school && <p className="text-sm text-red-600 mt-1">School is required.</p>}
                                     </div>
 
-                                    <div className="flex items-start gap-3">
-                                        <Check className="w-5 h-5 text-white flex-shrink-0 mt-0.5" />
-                                        <p className="text-white">
-                                            Content is encrypted at rest and never read by us
-                                        </p>
+                                    {/* Date and Time Selection */}
+                                    <div>
+                                        <label className="block text-sm font-medium mb-2">Select Date & Time</label>
+                                        <div className="grid md:grid-cols-2 gap-4">
+                                            {/* Date Picker */}
+                                            <div className="border rounded p-4 bg-white">
+                                                <DayPicker
+                                                    mode="single"
+                                                    selected={selectedDate}
+                                                    onSelect={setSelectedDate}
+                                                    disabled={disabledDays}
+                                                    className="mx-auto"
+                                                />
+                                            </div>
+
+                                            {/* Time Slot Selector */}
+                                            <div className="border rounded p-4 bg-white">
+                                                {!selectedDate ? (
+                                                    <div className="flex items-center justify-center h-full">
+                                                        <p className="text-sm text-gray-500 text-center">
+                                                            Select a date to see available times
+                                                        </p>
+                                                    </div>
+                                                ) : loadingSlots ? (
+                                                    <div className="flex items-center justify-center h-full">
+                                                        <p className="text-sm text-gray-500">Loading available times...</p>
+                                                    </div>
+                                                ) : availableSlots.length === 0 ? (
+                                                    <div className="flex items-center justify-center h-full">
+                                                        <p className="text-sm text-red-600 text-center">No available times for this date. Please select another date.</p>
+                                                    </div>
+                                                ) : (
+                                                    <div>
+                                                        <p className="text-sm font-medium text-gray-700 mb-3">Available Times ({timezoneAbbr})</p>
+                                                        <div className="grid grid-cols-2 gap-2 max-h-72 overflow-y-auto pr-2">
+                                                            {availableSlots.map((slot) => (
+                                                                <button
+                                                                    key={slot}
+                                                                    type="button"
+                                                                    onClick={() => setSelectedTime(slot)}
+                                                                    className={`p-2 rounded text-sm transition-colors ${
+                                                                        selectedTime === slot
+                                                                            ? "bg-blue-600 text-white"
+                                                                            : "bg-gray-100 hover:bg-gray-200 text-gray-800"
+                                                                    }`}
+                                                                >
+                                                                    {formatTimeDisplay(slot)}
+                                                                </button>
+                                                            ))}
+                                                        </div>
+                                                    </div>
+                                                )}
+                                            </div>
+                                        </div>
+                                        {selectedDate && (
+                                            <p className="text-sm text-gray-600 mt-2">
+                                                Selected: {format(selectedDate, "EEEE, MMMM d, yyyy")}
+                                                {selectedTime && ` at ${formatTimeDisplay(selectedTime)}`}
+                                            </p>
+                                        )}
                                     </div>
 
-                                    <div className="flex items-start gap-3">
-                                        <Check className="w-5 h-5 text-white flex-shrink-0 mt-0.5" />
-                                        <p className="text-white">
-                                            Data is processed securely and anonymously
-                                        </p>
+                                    {/* Turnstile + Submit */}
+                                    <div className="flex flex-col sm:flex-row justify-between items-center gap-4 pt-4">
+                                        <button
+                                            type="submit"
+                                            disabled={isSubmitting || !selectedDate || !selectedTime}
+                                            className="w-full sm:w-auto rounded bg-black px-6 py-2 text-white disabled:opacity-50 disabled:cursor-not-allowed"
+                                        >
+                                            {isSubmitting ? "Scheduling..." : "Schedule Demo"}
+                                        </button>
+
+                                        <div
+                                            id="cf-turnstile-demo-inline"
+                                            className="cf-turnstile"
+                                            data-sitekey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY!}
+                                            data-theme="auto"
+                                            data-render="explicit"
+                                        />
                                     </div>
 
-                                    <div className="flex items-start gap-3">
-                                        <Check className="w-5 h-5 text-white flex-shrink-0 mt-0.5" />
-                                        <p className="text-white">
-                                            Your email or name is never stored.
-                                        </p>
-                                    </div>
-                                </CardContent>
-                            </Card>
-                        </div>
+                                    {/* Error Message */}
+                                    {status === "error" && errorMessage && (
+                                        <p className="text-red-700 text-sm">{errorMessage}</p>
+                                    )}
+                                </form>
+                            </div>
+                        )}
                     </div>
                 </div>
-            </div>
-
-            {/* Demo iframe Section */}
-            <div className="bg-brand-300">
-                <main id="demo" className="container mx-auto px-2 pt-16 pb-4">
-                    <div className="max-w-3xl mx-auto overflow-hidden rounded-lg">
-                        <iframe
-                            ref={iframeRef}
-                            src={DEMO_IFRAME_URL}
-                            title="Checkmark Demo"
-                            className="border-0 y-scrollbar-hide"
-                            style={{
-                                height: `${iframeHeight}px`,
-                                minHeight: "600px",
-                                maxHeight: "1200px",
-                                width: "105%",
-                                marginLeft: "-2.5%",
-                                transform: "scale(0.95)",
-                                transformOrigin: "top center",
-                                transition: "height 0.3s ease-in-out",
-                                background: "transparent"
-                            }}
-                            allowFullScreen
-                        />
-                    </div>
-
-                    {/* Schedule a Call Button */}
-                    <div className="max-w-6xl mx-auto mt-12 mb-8 flex justify-center">
-                        <ScheduleDemoButton variant="secondary" size="lg" />
-                    </div>
-                </main>
             </div>
         </>
     );
