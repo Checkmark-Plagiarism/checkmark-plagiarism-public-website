@@ -41,7 +41,7 @@ export const CanvasFAQ = () => {
         <section className="py-24 bg-background">
             <div className="container mx-auto px-6 max-w-3xl">
                 <div className="text-center mb-12">
-                    <p className="text-sm font-bold tracking-widest text-primary uppercase mb-3">FAQ</p>
+                    <p className="text-base md:text-lg font-bold tracking-widest text-primary uppercase mb-3">FAQ</p>
                     <h2 className="text-heading-2 text-foreground">Frequently asked questions</h2>
                 </div>
 

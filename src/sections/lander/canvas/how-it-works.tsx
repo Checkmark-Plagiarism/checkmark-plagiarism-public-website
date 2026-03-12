@@ -26,7 +26,7 @@ export const CanvasHowItWorks = () => {
         <section className="py-24" style={{ background: "hsl(220, 15%, 96%)" }}>
             <div className="container mx-auto px-6">
                 <div className="text-center mb-16">
-                    <p className="text-sm font-bold tracking-widest text-primary uppercase mb-3">How It Works</p>
+                    <p className="text-base md:text-lg font-bold tracking-widest text-primary uppercase mb-3">How It Works</p>
                     <h2 className="text-heading-2 text-foreground mb-4">
                         Up and running in minutes, not months
                     </h2>
