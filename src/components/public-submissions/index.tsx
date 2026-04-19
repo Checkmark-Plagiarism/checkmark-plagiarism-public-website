@@ -93,8 +93,8 @@ export const PublicSubmissionDemo = () => {
 
             const uuid = submission.uuid;
             pollStatus(uuid);
-        } catch (err: any) {
-            setError(err.message || "An error occurred during submission.");
+        } catch (err: unknown) {
+            setError(err instanceof Error ? err.message : "An error occurred during submission.");
             setIsScanning(false);
         }
     };
@@ -119,9 +119,9 @@ export const PublicSubmissionDemo = () => {
                     setError("Polling timed out. Please try again.");
                     setIsScanning(false);
                 }
-            } catch (err: any) {
+            } catch (err: unknown) {
                 clearInterval(interval);
-                setError(err.message || "An error occurred while checking status.");
+                setError(err instanceof Error ? err.message : "An error occurred while checking status.");
                 setIsScanning(false);
             }
         }, 1000);
@@ -258,7 +258,7 @@ export const PublicSubmissionDemo = () => {
                                 <span className="text-[10px] font-mono text-slate-500 uppercase tracking-widest">history-log.xml</span>
                             </div>
                             <div className="flex-grow overflow-auto p-6 font-mono text-[13px] leading-relaxed text-emerald-400/90 custom-scrollbar">
-                                <div className="text-slate-500">&lt;l xmlns="http://checkmarkplagiarism.com/history-log"&gt;</div>
+                                <div className="text-slate-500">&lt;l xmlns=&quot;http://checkmarkplagiarism.com/history-log&quot;&gt;</div>
                                 {historyEntries.map((entry, idx) => (
                                     <div key={idx} className="pl-4 hover:bg-white/5 py-0.5 transition-colors group">
                                         <span className="text-slate-700 mr-4 select-none group-hover:text-slate-500">{(idx + 1).toString().padStart(3, '0')}</span>

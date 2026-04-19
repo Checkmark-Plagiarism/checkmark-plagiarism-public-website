@@ -2,14 +2,12 @@
 
 import { LinkButton } from "@/components/ui/link";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import { ArrowRight, Play } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import {
   Dialog,
   DialogContent,
   DialogHeader,
   DialogTitle,
-  DialogTrigger,
 } from "@/components/ui/dialog";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
@@ -84,12 +82,7 @@ export const Hero = () => {
 
             {/* Modal Trigger */}
             <Dialog>
-              {/* <DialogTrigger asChild>
-                <Button variant="outline-white" size="xl" className="bg-brand-600">
-                  <Play className="mr-2" />
-                  Watch 60-sec Overview
-                </Button>
-              </DialogTrigger> */}
+
               <DialogContent className="max-w-4xl p-0 overflow-hidden">
                 <DialogHeader className="px-6 pt-6">
                   <DialogTitle className="text-xl">Product Overview</DialogTitle>

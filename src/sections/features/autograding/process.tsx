@@ -58,7 +58,7 @@ export default function RubricProcessColumn({
   const cardRefs = useRef<Array<React.RefObject<HTMLDivElement>>>([])
   useEffect(() => {
     cardRefs.current = steps.map((_, i) => cardRefs.current[i] ?? React.createRef<HTMLDivElement>())
-  }, [steps.length])
+  }, [steps])
 
   const safeActive = Math.min(active, Math.max(0, steps.length - 1))
 

@@ -52,7 +52,7 @@ export default function StickyProcessColumn({
   const cardRefs = useRef<Array<React.RefObject<HTMLDivElement>>>([])
   useEffect(() => {
     cardRefs.current = steps.map((_, i) => cardRefs.current[i] ?? React.createRef<HTMLDivElement>())
-  }, [steps.length])
+  }, [steps])
 
   // Ensure we don’t render left panel when steps is empty
   const safeActive = Math.min(active, Math.max(0, steps.length - 1))

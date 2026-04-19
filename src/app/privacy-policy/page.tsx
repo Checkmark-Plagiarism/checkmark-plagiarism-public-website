@@ -1,8 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { ArrowLeft, FileText, Shield, Mail, Calendar, Share2, Link as LinkIcon } from 'lucide-react';
+import { ArrowLeft, FileText, Shield, Mail, Calendar, Link as LinkIcon } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
 
 export const metadata: Metadata = {
   title: 'Privacy Policy — Checkmark Plagiarism',

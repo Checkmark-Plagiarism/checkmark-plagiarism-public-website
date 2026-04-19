@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Computer } from "lucide-react";
 import { PublicSubmissionDemo } from "@/components/public-submissions";
 
-const canvasHeroImg = "/images/lander/canvas/canvas-hero-3.jpg";
+
 const canvasLogo = "/images/Canvas_Bug_Color_RGB.png";
 
 export const CanvasHero = () => {

@@ -64,7 +64,7 @@ const features = [
   },
 ];
 
-const FlipCard = ({ feature, index }: { feature: typeof features[0], index: number }) => {
+const FlipCard = ({ feature }: { feature: typeof features[0] }) => {
   const [isFlipped, setIsFlipped] = useState(false);
 
   return (
@@ -140,7 +140,7 @@ export const AccuracySection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
           {features.map((feature, index) => (
-            <FlipCard key={index} feature={feature} index={index} />
+            <FlipCard key={index} feature={feature} />
           ))}
         </div>
 

@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { Check, ArrowRight, Building2, GraduationCap, School, HelpCircle, ShieldCheck, Zap, Users } from "lucide-react";
+import { Check, ArrowRight, Building2, GraduationCap, School, HelpCircle } from "lucide-react";
 import { LinkButton } from "@/components/ui/link";
 import { Card, CardContent } from "@/components/ui/card";
 import PricingHero from "@/sections/pricing/pricing-hero";
@@ -259,29 +259,7 @@ function Plan({
   );
 }
 
-function Perk({
-  icon: Icon,
-  title,
-  text,
-}: {
-  icon: React.ComponentType<{ className?: string }>;
-  title: string;
-  text: string;
-}) {
-  return (
-    <Card className="ring-1 ring-border">
-      <CardContent className="p-6">
-        <div className="flex items-center gap-3">
-          <div className="h-9 w-9 rounded-lg bg-muted flex items-center justify-center">
-            <Icon className="h-5 w-5 text-foreground/80" />
-          </div>
-          <h3 className="text-lg font-semibold">{title}</h3>
-        </div>
-        <p className="mt-3 text-sm text-muted-foreground">{text}</p>
-      </CardContent>
-    </Card>
-  );
-}
+
 
 function Faq({ q, a }: { q: string; a: string }) {
   return (

@@ -14,7 +14,7 @@ export interface SubmissionResponse {
 
 export interface ReportDetails {
     // Large flexible JSON object
-    [key: string]: any;
+    [key: string]: unknown;
 }
 
 export interface SubmissionReport {
