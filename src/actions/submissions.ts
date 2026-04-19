@@ -27,7 +27,8 @@ export async function submitEssay(payload: SubmissionPayload): Promise<Submissio
         throw new Error("INTERNAL_API_TOKEN is not configured.");
     }
 
-    const response = await fetch(`${BASE_URL}/submissions`, {
+    const url = `${BASE_URL.replace(/\/$/, "")}/submissions`;
+    const response = await fetch(url, {
         method: "POST",
         headers: {
             "Authorization": `Bearer ${TOKEN}`,
@@ -45,7 +46,8 @@ export async function getSubmissionStatus(uuid: string): Promise<SubmissionStatu
         throw new Error("INTERNAL_API_TOKEN is not configured.");
     }
 
-    const response = await fetch(`${BASE_URL}/submissions/${uuid}`, {
+    const url = `${BASE_URL.replace(/\/$/, "")}/submissions/${uuid}`;
+    const response = await fetch(url, {
         method: "GET",
         headers: {
             "Authorization": `Bearer ${TOKEN}`,
