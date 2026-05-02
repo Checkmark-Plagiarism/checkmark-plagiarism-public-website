@@ -2,7 +2,7 @@
 
 import { SubmissionPayload, SubmissionResponse, SubmissionStatusResponse } from "@/types/submissions";
 
-const BASE_URL = process.env.INTERNAL_API_BASE_URL || "http://127.0.0.1:8000/api/v1/internal";
+const BASE_URL = process.env.INTERNAL_API_BASE_URL || "http://dev.checkmarkplagiarism.com/api/v1/internal";
 const TOKEN = process.env.INTERNAL_API_TOKEN;
 
 async function handleResponse(response: Response) {

@@ -6,6 +6,7 @@ import { ArrowRight, ShieldCheck, Zap, History, X, Copy, Check, Loader2 } from "
 import { submitEssay, getSubmissionStatus } from "@/actions/submissions";
 import { SubmissionStatusResponse } from "@/types/submissions";
 import { diff_match_patch } from 'diff-match-patch';
+import { ReportViewer } from './report-viewer';
 
 export const PublicSubmissionDemo = () => {
     const [demoText, setDemoText] = useState("");
@@ -14,8 +15,29 @@ export const PublicSubmissionDemo = () => {
     const [showHistory, setShowHistory] = useState(false);
     const [hasCopied, setHasCopied] = useState(false);
     const [isScanning, setIsScanning] = useState(false);
+    const [scanProgress, setScanProgress] = useState(0);
     const [scanResult, setScanResult] = useState<SubmissionStatusResponse | null>(null);
     const [error, setError] = useState<string | null>(null);
+
+    // Scanning Progress Simulation
+    useEffect(() => {
+        let interval: NodeJS.Timeout;
+        if (isScanning) {
+            setScanProgress(0);
+            interval = setInterval(() => {
+                setScanProgress(prev => {
+                    if (prev >= 92) return prev;
+                    // Gradually slow down as we approach 92%
+                    const remaining = 92 - prev;
+                    const increment = Math.max(0.1, Math.random() * (remaining / 20));
+                    return Math.min(prev + increment, 92);
+                });
+            }, 150);
+        } else {
+            setScanProgress(0);
+        }
+        return () => clearInterval(interval);
+    }, [isScanning]);
 
     const wordCount = useMemo(() => {
         if (!demoText.trim()) return 0;
@@ -109,8 +131,18 @@ export const PublicSubmissionDemo = () => {
                 
                 if (statusData.status === 'completed' || statusData.status === 'failed') {
                     clearInterval(interval);
-                    setScanResult(statusData);
-                    setIsScanning(false);
+                    
+                    if (statusData.status === 'completed') {
+                        setScanProgress(100);
+                        // Brief delay to let the user see 100% completion
+                        setTimeout(() => {
+                            setScanResult(statusData);
+                            setIsScanning(false);
+                        }, 800);
+                    } else {
+                        setScanResult(statusData);
+                        setIsScanning(false);
+                    }
                 }
 
                 attempts++;
@@ -292,57 +324,85 @@ export const PublicSubmissionDemo = () => {
                         </div>
                     </div>
                 )}
-
-                {scanResult && scanResult.status === 'completed' && scanResult.report && (
-                    <div className="absolute inset-0 bg-white/98 backdrop-blur-md z-50 p-6 md:p-10 flex flex-col rounded-[2.5rem] animate-in fade-in zoom-in duration-300">
-                        <div className="flex justify-between items-center mb-8">
-                            <div>
-                                <h3 className="text-2xl font-bold text-slate-900 flex items-center gap-3">
-                                    <Zap className="w-6 h-6 text-accent fill-accent" />
-                                    Analysis Report
-                                </h3>
-                                <p className="text-sm text-slate-500 mt-1 font-medium">Submission ID: {scanResult.uuid}</p>
+                
+                {isScanning && (
+                    <div className="absolute inset-0 bg-white/95 backdrop-blur-md z-40 flex flex-col items-center justify-center p-6 md:p-12 rounded-[2.5rem] animate-in fade-in duration-500">
+                        <div className="w-full max-w-md">
+                            <div className="flex justify-between items-end mb-6">
+                                <div>
+                                    <div className="flex items-center gap-3 mb-1">
+                                        <div className="p-2 bg-accent/10 rounded-xl">
+                                            <Loader2 className="w-5 h-5 text-accent animate-spin" />
+                                        </div>
+                                        <h3 className="text-2xl font-extrabold text-slate-900 tracking-tight">
+                                            Analyzing Document
+                                        </h3>
+                                    </div>
+                                    <p className="text-sm text-slate-500 font-medium ml-10">
+                                        {scanProgress < 30 ? "Fingerprinting writing style..." : 
+                                         scanProgress < 60 ? "Comparing against AI models..." :
+                                         scanProgress < 90 ? "Scanning for structural anomalies..." :
+                                         "Finalizing results..."}
+                                    </p>
+                                </div>
+                                <div className="text-right">
+                                    <span className="text-4xl font-black text-slate-900 tabular-nums">
+                                        {Math.round(scanProgress)}<span className="text-xl text-slate-400 ml-0.5">%</span>
+                                    </span>
+                                </div>
                             </div>
-                            <button
-                                onClick={() => setScanResult(null)}
-                                className="p-2.5 hover:bg-slate-100 rounded-full transition-all active:scale-90"
-                            >
-                                <X className="w-6 h-6 text-slate-400" />
-                            </button>
-                        </div>
-
-                        <div className="grid grid-cols-2 gap-6 mb-8">
-                            <div className="p-6 rounded-3xl bg-slate-50 border border-slate-100">
-                                <div className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">AI Detection</div>
-                                <div className="text-4xl font-extrabold text-slate-900">{scanResult.report.ai_detection_percentage}%</div>
+                            
+                            <div className="h-4 w-full bg-slate-100 rounded-full overflow-hidden border border-slate-200/50 shadow-[inset_0_2px_4px_rgba(0,0,0,0.05)] relative p-1">
+                                <div 
+                                    className="h-full bg-gradient-to-r from-accent via-blue-500 to-accent bg-[length:200%_auto] rounded-full transition-all duration-700 ease-out shadow-[0_0_15px_rgba(var(--accent-rgb),0.4)]"
+                                    style={{ 
+                                        width: `${scanProgress}%`,
+                                        backgroundImage: 'linear-gradient(90deg, #3b82f6 0%, #2dd4bf 50%, #3b82f6 100%)',
+                                        backgroundSize: '200% 100%'
+                                    }}
+                                />
+                                <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10 pointer-events-none" />
                             </div>
-                            <div className="p-6 rounded-3xl bg-slate-50 border border-slate-100">
-                                <div className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Authentic Score</div>
-                                <div className="text-4xl font-extrabold text-slate-900">{scanResult.report.authentic_percentage}%</div>
+                            
+                            <div className="mt-10 grid grid-cols-2 gap-4">
+                                {[
+                                    { label: "Fingerprinting", min: 10 },
+                                    { label: "AI Detection", min: 40 },
+                                    { label: "Plagiarism Scan", min: 70 },
+                                    { label: "Finalizing", min: 90 }
+                                ].map((step, i) => (
+                                    <div key={i} className={`flex items-center gap-3 p-4 rounded-2xl border transition-all duration-500 ${
+                                        scanProgress >= step.min 
+                                        ? 'bg-emerald-50 border-emerald-100 shadow-sm' 
+                                        : 'bg-slate-50/50 border-slate-100 opacity-60'
+                                    }`}>
+                                        <div className={`w-2.5 h-2.5 rounded-full ${
+                                            scanProgress >= step.min 
+                                            ? 'bg-emerald-500 shadow-[0_0_8px_rgba(16,185,129,0.5)] animate-pulse' 
+                                            : 'bg-slate-300'
+                                        }`} />
+                                        <span className={`text-[10px] font-black uppercase tracking-widest ${
+                                            scanProgress >= step.min ? 'text-emerald-700' : 'text-slate-400'
+                                        }`}>
+                                            {step.label}
+                                        </span>
+                                    </div>
+                                ))}
                             </div>
-                        </div>
-
-                        <div className="flex-grow overflow-hidden flex flex-col bg-white rounded-2xl border border-slate-100 shadow-sm p-6">
-                            <div className="flex items-center justify-between mb-4 pb-4 border-b border-slate-50">
-                                <h4 className="font-bold text-slate-800">Analysis Details</h4>
-                                <span className="text-xs font-medium text-slate-400">Words: {scanResult.report.word_count}</span>
-                            </div>
-                            <div className="flex-grow overflow-auto custom-scrollbar">
-                                <pre className="text-xs font-mono text-slate-600 leading-relaxed whitespace-pre-wrap">
-                                    {JSON.stringify(scanResult.report.details, null, 2)}
-                                </pre>
-                            </div>
-                        </div>
-
-                        <div className="mt-8 flex justify-end">
-                            <Button
-                                onClick={() => setScanResult(null)}
-                                className="rounded-xl bg-slate-900 hover:bg-black text-white h-12 px-8 font-bold"
-                            >
-                                Return to Editor
-                            </Button>
+                            
+                            <p className="mt-10 text-center text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em] animate-pulse">
+                                Do not close this window
+                            </p>
                         </div>
                     </div>
+                )}
+
+                {scanResult && scanResult.status === 'completed' && scanResult.report && (
+                    <ReportViewer 
+                        scanResult={scanResult} 
+                        onClose={() => setScanResult(null)} 
+                        originalText={demoText}
+                    />
                 )}
 
                 {scanResult && scanResult.status === 'failed' && (

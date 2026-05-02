@@ -22,7 +22,7 @@ export interface SubmissionReport {
     authentic_percentage: number;
     word_count: number;
     completed_at: string;
-    details: ReportDetails;
+    details?: ReportDetails;
 }
 
 export interface SubmissionStatusResponse {
