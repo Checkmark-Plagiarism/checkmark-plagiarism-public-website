@@ -61,6 +61,13 @@ export interface DetailedReport {
     pa?: number; // aiPercentage
     ap?: number; // authenticPercentage
 }
+export interface SubmissionReport {
+    ai_detection_percentage: number;
+    authentic_percentage: number;
+    word_count: number;
+    completed_at: string;
+    details?: Record<string, unknown>;
+}
 
 export interface SubmissionStatusResponse {
     uuid: string;
