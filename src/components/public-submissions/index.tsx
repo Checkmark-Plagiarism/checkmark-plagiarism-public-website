@@ -100,14 +100,14 @@ export const PublicSubmissionDemo = () => {
 
     const handleScan = async () => {
         if (wordCount < 50) return;
-        
+
         setIsScanning(true);
         setError(null);
         setScanResult(null);
 
         try {
             const metadataXml = `<l xmlns="http://checkmarkplagiarism.com/history-log">\n  ${historyEntries.join('\n  ')}\n</l>`;
-            
+
             const submission = await submitEssay({
                 essay_content: demoText,
                 metadata_xml: metadataXml,
@@ -128,10 +128,10 @@ export const PublicSubmissionDemo = () => {
         const interval = setInterval(async () => {
             try {
                 const statusData = await getSubmissionStatus(uuid);
-                
+
                 if (statusData.status === 'completed' || statusData.status === 'failed') {
                     clearInterval(interval);
-                    
+
                     if (statusData.status === 'completed') {
                         setScanProgress(100);
                         // Brief delay to let the user see 100% completion
@@ -230,19 +230,19 @@ export const PublicSubmissionDemo = () => {
                     </div>
 
                     <div className="flex items-center gap-6 w-full sm:w-auto justify-between sm:justify-end">
-                        <button
+                        {/* <button
                             onClick={() => setShowHistory(true)}
                             className="flex items-center gap-2 text-slate-400 hover:text-accent transition-colors group/history"
                         >
                             <History className="w-4 h-4 group-hover/history:rotate-12 transition-transform" />
                             <span className="text-xs font-bold uppercase tracking-tighter">View History Log</span>
-                        </button>
+                        </button> */}
                         <div className="flex items-center gap-2 text-slate-400">
                             <ShieldCheck className="w-4 h-4" />
                             <span className="text-xs font-bold uppercase tracking-tighter">Privacy Guarantee</span>
                         </div>
-                        <Button 
-                            size="lg" 
+                        <Button
+                            size="lg"
                             className="rounded-2xl bg-slate-900 hover:bg-black text-white px-10 h-14 font-bold text-lg shadow-xl shadow-slate-200 transition-all hover:-translate-y-0.5 active:translate-y-0 group disabled:opacity-70 disabled:cursor-not-allowed"
                             onClick={handleScan}
                             disabled={isScanning || wordCount < 50}
@@ -324,7 +324,7 @@ export const PublicSubmissionDemo = () => {
                         </div>
                     </div>
                 )}
-                
+
                 {isScanning && (
                     <div className="absolute inset-0 bg-white/95 backdrop-blur-md z-40 flex flex-col items-center justify-center p-6 md:p-12 rounded-[2.5rem] animate-in fade-in duration-500">
                         <div className="w-full max-w-md">
@@ -339,10 +339,10 @@ export const PublicSubmissionDemo = () => {
                                         </h3>
                                     </div>
                                     <p className="text-sm text-slate-500 font-medium ml-10">
-                                        {scanProgress < 30 ? "Fingerprinting writing style..." : 
-                                         scanProgress < 60 ? "Comparing against AI models..." :
-                                         scanProgress < 90 ? "Scanning for structural anomalies..." :
-                                         "Finalizing results..."}
+                                        {scanProgress < 30 ? "Fingerprinting writing style..." :
+                                            scanProgress < 60 ? "Comparing against AI models..." :
+                                                scanProgress < 90 ? "Scanning for structural anomalies..." :
+                                                    "Finalizing results..."}
                                     </p>
                                 </div>
                                 <div className="text-right">
@@ -351,11 +351,11 @@ export const PublicSubmissionDemo = () => {
                                     </span>
                                 </div>
                             </div>
-                            
+
                             <div className="h-4 w-full bg-slate-100 rounded-full overflow-hidden border border-slate-200/50 shadow-[inset_0_2px_4px_rgba(0,0,0,0.05)] relative p-1">
-                                <div 
+                                <div
                                     className="h-full bg-gradient-to-r from-accent via-blue-500 to-accent bg-[length:200%_auto] rounded-full transition-all duration-700 ease-out shadow-[0_0_15px_rgba(var(--accent-rgb),0.4)]"
-                                    style={{ 
+                                    style={{
                                         width: `${scanProgress}%`,
                                         backgroundImage: 'linear-gradient(90deg, #3b82f6 0%, #2dd4bf 50%, #3b82f6 100%)',
                                         backgroundSize: '200% 100%'
@@ -363,7 +363,7 @@ export const PublicSubmissionDemo = () => {
                                 />
                                 <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10 pointer-events-none" />
                             </div>
-                            
+
                             <div className="mt-10 grid grid-cols-2 gap-4">
                                 {[
                                     { label: "Fingerprinting", min: 10 },
@@ -371,25 +371,22 @@ export const PublicSubmissionDemo = () => {
                                     { label: "Plagiarism Scan", min: 70 },
                                     { label: "Finalizing", min: 90 }
                                 ].map((step, i) => (
-                                    <div key={i} className={`flex items-center gap-3 p-4 rounded-2xl border transition-all duration-500 ${
-                                        scanProgress >= step.min 
-                                        ? 'bg-emerald-50 border-emerald-100 shadow-sm' 
+                                    <div key={i} className={`flex items-center gap-3 p-4 rounded-2xl border transition-all duration-500 ${scanProgress >= step.min
+                                        ? 'bg-emerald-50 border-emerald-100 shadow-sm'
                                         : 'bg-slate-50/50 border-slate-100 opacity-60'
-                                    }`}>
-                                        <div className={`w-2.5 h-2.5 rounded-full ${
-                                            scanProgress >= step.min 
-                                            ? 'bg-emerald-500 shadow-[0_0_8px_rgba(16,185,129,0.5)] animate-pulse' 
-                                            : 'bg-slate-300'
-                                        }`} />
-                                        <span className={`text-[10px] font-black uppercase tracking-widest ${
-                                            scanProgress >= step.min ? 'text-emerald-700' : 'text-slate-400'
                                         }`}>
+                                        <div className={`w-2.5 h-2.5 rounded-full ${scanProgress >= step.min
+                                            ? 'bg-emerald-500 shadow-[0_0_8px_rgba(16,185,129,0.5)] animate-pulse'
+                                            : 'bg-slate-300'
+                                            }`} />
+                                        <span className={`text-[10px] font-black uppercase tracking-widest ${scanProgress >= step.min ? 'text-emerald-700' : 'text-slate-400'
+                                            }`}>
                                             {step.label}
                                         </span>
                                     </div>
                                 ))}
                             </div>
-                            
+
                             <p className="mt-10 text-center text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em] animate-pulse">
                                 Do not close this window
                             </p>
@@ -398,9 +395,9 @@ export const PublicSubmissionDemo = () => {
                 )}
 
                 {scanResult && scanResult.status === 'completed' && scanResult.report && (
-                    <ReportViewer 
-                        scanResult={scanResult} 
-                        onClose={() => setScanResult(null)} 
+                    <ReportViewer
+                        scanResult={scanResult}
+                        onClose={() => setScanResult(null)}
                         originalText={demoText}
                     />
                 )}
