@@ -1,48 +1,9 @@
 import Image from "next/image";
+import Link from "next/link";
 import type { CSSProperties } from "react";
+import { getAllBlogPosts, type BlogPost } from "@/lib/blog";
 
-const BASE = "https://checkmarkplagiarism.com/blog/";
-
-type Post = {
-  title: string;
-  desc: string;
-  date: string;
-  read: string;
-  cats: string[];
-  img: string;
-  url: string;
-};
-
-const POSTS: Post[] = [
-  {
-    title: "The Canvas Breach Should Change How Schools Buy Their Next AI Tool",
-    desc: "ShinyHunters hit 9,000 schools and exposed years of student messages. The breach should reshape how every district vets its next AI vendor contract.",
-    date: "May 8, 2026",
-    read: "9 min read",
-    cats: ["Education", "Technology"],
-    img: "/redesign/blog/canvas-breach.jpg",
-    url: BASE + "2026/5/the-canvas-breach-should-change-how-schools-buy-their-next-ai-tool",
-  },
-  {
-    title: "Oral Exams Are the Wrong Way Out of the AI Cheating Crisis",
-    desc: "Schools pivoting to oral exams to beat AI cheating are swapping forensic guesswork for performance bias, and exporting the cost to the students already struggling.",
-    date: "May 7, 2026",
-    read: "9 min read",
-    cats: ["Education", "Teaching"],
-    img: "/redesign/blog/oral-exams.jpg",
-    url: BASE + "2026/5/oral-exams-are-the-wrong-way-out-of-the-ai-cheating-crisis",
-  },
-  {
-    title: "Is AI Helping or Hurting My Child’s Learning?",
-    desc: "An exploration of the dual nature of AI in education, balancing the promise of personalized tutoring with the risks of cognitive offloading and the illusion of understanding.",
-    date: "Mar 23, 2026",
-    read: "8 min read",
-    cats: ["Education", "Parents"],
-    img: "/redesign/blog/ai-helping.jpg",
-    url: BASE + "2026/3/is-ai-helping-or-hurting",
-  },
-];
-
+// Category pill tints, drawn from the site palette.
 const CAT: Record<string, { bg: string; fg: string }> = {
   Education: { bg: "var(--accent-soft)", fg: "var(--accent-deep)" },
   Technology: { bg: "var(--teal-soft)", fg: "var(--teal)" },
@@ -51,46 +12,60 @@ const CAT: Record<string, { bg: string; fg: string }> = {
   "AI Research": { bg: "var(--surface-2)", fg: "var(--ink-soft)" },
 };
 
-function Card({ post }: { post: Post }) {
+// Posts store dates as "MM-DD-YYYY" (e.g. "05-08-2026"); render as "May 8, 2026".
+function formatDate(d: string): string {
+  const date = new Date(d);
+  if (Number.isNaN(date.getTime())) return d;
+  return date.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+}
+
+function Card({ post }: { post: BlogPost }) {
+  const cats = post.categories?.length ? post.categories : post.category ? [post.category] : [];
   return (
-    <a
-      href={post.url}
-      target="_blank"
-      rel="noopener noreferrer"
+    <Link
+      href={`/blog/${post.slug}`}
       className="blog-card flex flex-col no-underline text-inherit bg-bg-elev border border-line rounded-[18px] overflow-hidden shadow-sm"
     >
       <div className="relative aspect-[16/10] bg-surface-2 overflow-hidden">
-        <Image
-          src={post.img}
-          alt={post.title}
-          fill
-          sizes="(max-width: 920px) 100vw, 33vw"
-          className="blog-card-img object-cover"
-        />
+        {post.image ? (
+          <Image
+            src={post.image}
+            alt={post.title}
+            fill
+            sizes="(max-width: 920px) 100vw, 33vw"
+            className="blog-card-img object-cover"
+          />
+        ) : null}
       </div>
       <div className="px-[22px] pt-5 pb-[22px] flex flex-col flex-1">
-        <div className="flex items-center gap-2 flex-wrap mb-[13px]">
-          {post.cats.map((c) => {
-            const t = CAT[c] || CAT["AI Research"];
-            return (
-              <span
-                key={c}
-                className="text-[11px] font-bold font-mono tracking-[0.03em] uppercase px-[9px] py-1 rounded-full"
-                style={{ background: t.bg, color: t.fg } as CSSProperties}
-              >
-                {c}
-              </span>
-            );
-          })}
-        </div>
+        {cats.length > 0 && (
+          <div className="flex items-center gap-2 flex-wrap mb-[13px]">
+            {cats.map((c) => {
+              const t = CAT[c] || CAT["AI Research"];
+              return (
+                <span
+                  key={c}
+                  className="text-[11px] font-bold font-mono tracking-[0.03em] uppercase px-[9px] py-1 rounded-full"
+                  style={{ background: t.bg, color: t.fg } as CSSProperties}
+                >
+                  {c}
+                </span>
+              );
+            })}
+          </div>
+        )}
         <h3 className="blog-card-title text-[20px] leading-[1.28] font-semibold text-ink mt-0 mb-2.5 tracking-[-0.01em] text-pretty transition-colors line-clamp-3">
           {post.title}
         </h3>
-        <p className="text-sm leading-[1.55] text-ink-soft m-0 line-clamp-3">{post.desc}</p>
+        <p className="text-sm leading-[1.55] text-ink-soft m-0 line-clamp-3">{post.description}</p>
         <div className="mt-auto pt-4 flex items-center gap-2.5">
-          <span className="text-[12.5px] font-mono text-ink-mute">{post.date}</span>
-          <span className="w-[3px] h-[3px] rounded-full bg-ink-mute opacity-60" />
-          <span className="text-[12.5px] font-mono text-ink-mute">{post.read}</span>
+          <span className="text-[12.5px] font-mono text-ink-mute">{formatDate(post.date)}</span>
+          {post.readTime && (
+            <>
+              <span className="w-[3px] h-[3px] rounded-full bg-ink-mute opacity-60" />
+              <span className="text-[12.5px] font-mono text-ink-mute">{post.readTime}</span>
+            </>
+          )}
           <span
             className="blog-card-arrow ml-auto text-[13px] font-semibold inline-flex items-center gap-1 transition-transform"
             style={{ color: "var(--accent)" }}
@@ -99,11 +74,13 @@ function Card({ post }: { post: Post }) {
           </span>
         </div>
       </div>
-    </a>
+    </Link>
   );
 }
 
 export function Blog() {
+  const posts = getAllBlogPosts().slice(0, 3);
+
   return (
     <section id="blog" className="py-[100px]">
       <div className="shell">
@@ -120,18 +97,13 @@ export function Blog() {
               Research, classroom reality, and where AI is taking student writing next.
             </p>
           </div>
-          <a
-            href="https://checkmarkplagiarism.com/blog"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn btn-ghost whitespace-nowrap"
-          >
+          <Link href="/blog" className="btn btn-ghost whitespace-nowrap">
             View all posts <span aria-hidden="true">→</span>
-          </a>
+          </Link>
         </div>
         <div className="blog-grid">
-          {POSTS.map((post) => (
-            <Card key={post.url} post={post} />
+          {posts.map((post) => (
+            <Card key={post.slug} post={post} />
           ))}
         </div>
       </div>
