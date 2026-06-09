@@ -80,9 +80,9 @@ export function Hero() {
             </div>
 
             <h1 className="display mb-7 text-white text-[clamp(44px,5.6vw,76px)] leading-[1.05] text-balance">
-              AI Detectors Don&apos;t Work.
+              See the writer,
               <br />
-              <em>We know.</em>
+              build the <em>thinker.</em>
             </h1>
 
             <p className="text-[19px] leading-[1.55] text-white/[0.78] max-w-[520px] mb-9 text-pretty">
