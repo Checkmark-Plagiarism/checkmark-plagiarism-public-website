@@ -75,6 +75,44 @@ All colors MUST be HSL.
     --sidebar-border: 220 13% 91%;
 
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* ─────────────── Homepage redesign tokens (checkmark-homepage prototype) ───────────────
+       Unlike the bare-triplet tokens above (consumed as hsl(var(--x))), these are full hsl()
+       values used directly as var(--x) in inline styles and mapped 1:1 in tailwind.config.ts.
+       Names are additive / non-colliding; the one real collision (--accent, repurposed by the
+       prototype to a blue) is overridden under .ck-redesign at the end of this file. */
+    --bg: hsl(220 20% 98%);
+    --bg-elev: #ffffff;
+    --bg-tint: hsl(220 15% 96%);
+    --ink: hsl(218 30% 10%);
+    --ink-soft: hsl(218 22% 25%);
+    --ink-mute: hsl(218 15% 46%);
+    --line: hsl(220 15% 90%);
+    --line-strong: hsl(220 15% 82%);
+    --accent-cyan: hsl(195 100% 70%);
+    --accent-soft: hsl(199 92% 95%);
+    --accent-deep: hsl(205 88% 30%);
+    --teal: hsl(218 100% 59%);
+    --teal-deep: hsl(218 70% 16%);
+    --teal-soft: hsl(218 100% 95%);
+    --coral: hsl(218 100% 59%);
+    --coral-soft: hsl(218 100% 94%);
+    --yellow: hsl(195 100% 70%);
+    --yellow-soft: hsl(195 100% 92%);
+    --surface: hsl(220 24% 98%);
+    --surface-2: hsl(220 20% 96%);
+    --radius-sm: 10px;
+    --radius-lg: 20px;
+    --radius-xl: 28px;
+    --shadow-sm: 0 1px 2px rgba(20, 30, 28, 0.04), 0 1px 1px rgba(20, 30, 28, 0.03);
+    --shadow-card: 0 1px 2px rgba(20, 30, 28, 0.05), 0 8px 24px -8px rgba(20, 30, 28, 0.08);
+    --shadow-lg: 0 4px 8px rgba(20, 30, 28, 0.06), 0 24px 48px -12px rgba(20, 30, 28, 0.14);
+    --font-sans: var(--font-jakarta), ui-sans-serif, system-ui, -apple-system, sans-serif;
+    --font-display: var(--font-newsreader), "Plus Jakarta Sans", ui-serif, Georgia, serif;
+    --font-mono: var(--font-jetbrains), ui-monospace, SFMono-Regular, monospace;
+    --font-hand: var(--font-caveat), "Bradley Hand", cursive;
+    --pen-red: hsl(2 78% 56%);
+    --star-gold: hsl(42 92% 56%);
   }
 
   .dark {
@@ -253,4 +291,221 @@ html {
 /* Better scroll positioning for anchored sections */
 #categories {
   scroll-margin-top: 6rem;
+}
+
+/* ════════════════════════ Homepage redesign (scoped) ════════════════════════
+   Ported from the checkmark-homepage prototype (styles.css). Every rule is scoped
+   under .ck-redesign so it cannot affect existing pages. Keyframes are prefixed
+   (ck-) to avoid clashing with the app's existing animations. */
+.ck-redesign {
+  /* The prototype repurposes --accent to a blue; the global --accent stays cyan. */
+  --accent: hsl(199 92% 49%);
+  font-family: var(--font-sans);
+  background: var(--bg);
+  color: var(--ink);
+  font-size: 17px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Component classes live in @layer components so Tailwind utilities (text-white,
+   bg-brand-500, …) win over them — matching the prototype's Play-CDN cascade. */
+@layer components {
+.ck-redesign .font-mono { font-family: var(--font-mono); }
+
+.ck-redesign .shell { width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 32px; }
+.ck-redesign .shell-narrow { width: 100%; max-width: 920px; margin: 0 auto; padding: 0 32px; }
+
+.ck-redesign .display { font-family: var(--font-sans); font-weight: 800; letter-spacing: -0.02em; line-height: 1.05; }
+.ck-redesign .display em { font-style: normal; color: var(--accent-cyan); font-weight: 800; }
+
+.ck-redesign .btn { display: inline-flex; align-items: center; gap: 8px; padding: 14px 22px; border-radius: 999px; font-family: var(--font-sans); font-size: 15px; font-weight: 600; border: 0; cursor: pointer; text-decoration: none; transition: transform .15s ease, background .2s ease, box-shadow .2s ease; white-space: nowrap; }
+.ck-redesign .btn:active { transform: translateY(1px); }
+.ck-redesign .btn-coral { background: var(--coral); color: #fff; box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 6px 16px -4px rgba(45, 122, 255, 0.4); }
+.ck-redesign .btn-coral:hover { background: #c95e3f; }
+.ck-redesign .btn-ghost { background: transparent; color: var(--ink); border: 1px solid var(--line-strong); }
+.ck-redesign .btn-ghost:hover { background: var(--bg-tint); }
+
+.ck-redesign .chip { display: inline-flex; align-items: center; gap: 8px; padding: 6px 12px; border-radius: 999px; background: var(--bg-elev); border: 1px solid var(--line); font-size: 13px; font-weight: 500; color: var(--ink-soft); }
+
+.ck-redesign .eyebrow { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-mute); font-weight: 500; }
+.ck-redesign .eyebrow .dot { display: inline-block; width: 6px; height: 6px; border-radius: 999px; background: var(--coral); margin-right: 8px; vertical-align: middle; transform: translateY(-1px); }
+
+/* Hero twinkling starfield */
+.ck-redesign .starfield { position: absolute; inset: 0; pointer-events: none; z-index: 0; overflow: hidden; }
+.ck-redesign .star { position: absolute; border-radius: 50%; background: #fff; opacity: 0; animation: ck-twinkle var(--tw-dur, 4s) ease-in-out var(--tw-delay, 0s) infinite; will-change: opacity, transform; }
+@keyframes ck-twinkle { 0%, 100% { opacity: 0; transform: scale(0.6); } 50% { opacity: var(--tw-max, 0.9); transform: scale(1); } }
+@media (prefers-reduced-motion: reduce) {
+  .ck-redesign .star { animation: none; opacity: calc(var(--tw-max, 0.9) * 0.7); }
+}
+
+/* LivePlayback live status dot */
+.ck-redesign .live-dot { position: relative; display: inline-block; width: 9px; height: 9px; }
+.ck-redesign .live-dot::before, .ck-redesign .live-dot::after { content: ''; position: absolute; inset: 0; border-radius: 999px; background: var(--accent); }
+.ck-redesign .live-dot::before { animation: ck-live-ping 1.4s cubic-bezier(0, 0, 0.2, 1) infinite; }
+@keyframes ck-live-ping { 0% { transform: scale(1); opacity: 0.7; } 75%, 100% { transform: scale(2.4); opacity: 0; } }
+}
+
+/* Problem section — drifting CSS clouds (ported from styles.css). */
+@layer components {
+  .ck-redesign .cloud { position: absolute; width: 60px; height: 50px; border-radius: 16px; background: #fff; box-shadow: 46px 4px 0 12px #fff, 104px 0 0 18px #fff, 166px 6px 0 10px #fff, 216px 10px 0 -2px #fff, 256px 14px 0 -14px #fff, 86px -24px 0 0 #fff, 150px -26px 0 -8px #fff; transform-origin: left center; will-change: left; animation: ck-cloud-drift linear infinite; }
+  .ck-redesign .cloud.c3 { width: 56px; height: 42px; box-shadow: 54px 4px 0 6px #fff, 116px 2px 0 10px #fff, 180px 6px 0 6px #fff, 242px 8px 0 -2px #fff, 292px 12px 0 -14px #fff, 94px -14px 0 -6px #fff; }
+  .ck-redesign .cloud.c6 { width: 58px; height: 36px; box-shadow: 64px 4px 0 8px #fff, 134px 6px 0 12px #fff, 204px 4px 0 8px #fff, 274px 8px 0 2px #fff, 330px 10px 0 -12px #fff, 104px -10px 0 -8px #fff, 200px -8px 0 -12px #fff; }
+}
+@keyframes ck-cloud-drift { from { left: -900px; } to { left: calc(100% + 80px); } }
+@media (prefers-reduced-motion: reduce) { .ck-redesign .cloud { animation: none !important; } }
+
+/* Values cascade — staggered blue boxes (ported from styles.css). */
+@layer components {
+  .ck-redesign .vc-stack { display: flex; flex-direction: column; }
+}
+@media (max-width: 760px) {
+  .ck-redesign .vc-box { width: 100% !important; align-self: stretch !important; margin-top: 16px !important; flex-direction: column !important; }
+  .ck-redesign .vc-box:first-child { margin-top: 0 !important; }
+  .ck-redesign .vc-photo { width: 100% !important; height: 160px; }
+}
+
+/* Default vertical rhythm for sections (prototype's density="regular").
+   Sections that set their own py-* utilities override this (utilities layer wins). */
+@layer components {
+  .ck-redesign section { padding-top: 110px; padding-bottom: 110px; }
+}
+
+/* ── Blog grid + cards ── */
+@layer components {
+  .ck-redesign .blog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+  .ck-redesign .blog-card { transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease; }
+  .ck-redesign .blog-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); border-color: rgba(46, 123, 255, 0.35); }
+  .ck-redesign .blog-card-img { transition: transform .35s ease; }
+  .ck-redesign .blog-card:hover .blog-card-img { transform: scale(1.04); }
+  .ck-redesign .blog-card:hover .blog-card-title { color: var(--accent); }
+  .ck-redesign .blog-card:hover .blog-card-arrow { transform: translateX(3px); }
+}
+@media (max-width: 920px) { .ck-redesign .blog-grid { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto; } }
+
+/* ── Features grid (ed-*) ── */
+@layer components {
+  .ck-redesign .ed-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: start; }
+  .ck-redesign .ed-col { display: flex; flex-direction: column; }
+  .ck-redesign .ed-card { transition: transform .2s ease, box-shadow .2s ease; }
+  .ck-redesign .ed-card:hover { transform: translateY(-3px); box-shadow: 0 18px 40px -20px rgba(20, 30, 50, 0.35); }
+  .ck-redesign .ed-fab { transition: transform .18s ease, filter .18s ease; }
+  .ck-redesign .ed-fab:hover { transform: scale(1.08); filter: brightness(1.05); }
+  .ck-redesign .ed-desc { animation: ck-edDescIn .28s ease both; }
+}
+@media (max-width: 860px) { .ck-redesign .ed-grid { grid-template-columns: 1fr; max-width: 520px; margin: 0 auto; } }
+@keyframes ck-edDescIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
+
+/* ── How it works (hiw-*) ── */
+@layer components {
+  .ck-redesign .hiw-tabs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 24px; }
+  .ck-redesign .hiw-tab { display: flex; align-items: center; gap: 14px; padding: 18px 20px; border-radius: 16px; cursor: pointer; text-align: left; background: var(--bg-elev); border: 1px solid var(--line); transition: border-color .18s ease, box-shadow .18s ease, transform .18s ease; }
+  .ck-redesign .hiw-tab:hover { transform: translateY(-2px); }
+  .ck-redesign .hiw-tab.is-active { border-color: var(--teal); box-shadow: 0 0 0 3px var(--teal-soft); }
+  .ck-redesign .hiw-panel { background: var(--bg-elev); border: 1px solid var(--line); border-radius: 24px; padding: 28px; box-shadow: var(--shadow-sm); }
+  .ck-redesign .hiw-detail { animation: ck-edDescIn .28s ease both; margin-bottom: 22px; }
+  .ck-redesign .hiw-picture { width: 100%; }
+  .ck-redesign .hiw-art { position: relative; width: 100%; height: 460px; border-radius: 18px; overflow: hidden; background: var(--bg-tint); border: 1px solid var(--line); }
+  .ck-redesign .hiw-deck-card { transition: transform .85s cubic-bezier(.22, 1, .36, 1), opacity .85s ease, filter .85s ease; will-change: transform, opacity; }
+  .ck-redesign .hiw-shuffle { animation: ck-hiwShuffle .5s cubic-bezier(.5, 0, .25, 1) both; }
+}
+@keyframes ck-hiwShuffle {
+  0% { transform: translate(0px, 0px) scale(1) rotate(0deg); opacity: 1; }
+  36% { transform: translate(78px, -20px) scale(1.04) rotate(4deg); opacity: 1; }
+  60% { transform: translate(66px, -18px) scale(1.03) rotate(3deg); opacity: 0.96; }
+  100% { transform: translate(-60px, -48px) scale(0.83) rotate(0deg); opacity: 0.52; }
+}
+@media (prefers-reduced-motion: reduce) { .ck-redesign .hiw-shuffle { animation: none; } .ck-redesign .hiw-deck-card { transition: none; } }
+@media (max-width: 760px) { .ck-redesign .hiw-art { height: 380px; } .ck-redesign .hiw-tabs { grid-template-columns: 1fr; gap: 10px; } .ck-redesign .hiw-tab { padding: 14px 16px; } }
+
+/* ── "View sample report" folder button ── */
+@layer components {
+  .ck-redesign .folder-btn { position: relative; display: block; width: 236px; height: 104px; padding: 0; border: 0; background: none; cursor: pointer; }
+  .ck-redesign .fb-paper { position: absolute; left: 50%; bottom: 4px; width: 176px; height: 116px; margin-left: -88px; background: #36a7e8; border-radius: 4px 4px 2px 2px; box-shadow: 0 6px 14px -6px rgba(20, 80, 140, 0.55); z-index: 1; display: flex; flex-direction: column; justify-content: flex-start; gap: 9px; padding: 13px 16px 0; box-sizing: border-box; transition: transform .42s cubic-bezier(.22, 1, .36, 1); }
+  .ck-redesign .fb-line { height: 6px; border-radius: 3px; background: rgba(255, 255, 255, 0.85); width: 100%; }
+  .ck-redesign .fb-line.short { width: 62%; }
+  .ck-redesign .fb-folder { position: absolute; left: 0; bottom: 0; width: 100%; height: 66px; background: #e5860c; border-radius: 4px 4px 8px 8px; z-index: 2; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 22px -10px rgba(150, 88, 0, 0.6); }
+  .ck-redesign .fb-tab { position: absolute; top: -9px; left: 16px; width: 78px; height: 12px; background: #e5860c; border-radius: 6px 6px 0 0; }
+  .ck-redesign .fb-label { font-family: var(--font-sans); font-weight: 700; font-size: 15px; color: #fff; letter-spacing: -0.01em; }
+  .ck-redesign .folder-btn--overlay { position: absolute; right: 18px; bottom: 18px; z-index: 5; transform: scale(0.8); transform-origin: bottom right; filter: drop-shadow(0 12px 26px rgba(20, 40, 80, 0.32)); }
+  .ck-redesign .folder-btn:hover .fb-paper { transform: translateY(-30px) rotate(5deg); }
+  .ck-redesign .folder-btn:active .fb-paper { transform: translateY(-26px) rotate(5deg); }
+  .ck-redesign .folder-btn:focus-visible { outline: 3px solid var(--teal); outline-offset: 4px; border-radius: 10px; }
+}
+
+/* ── Sample-report modal ── */
+@layer components {
+  .ck-redesign .report-modal-overlay { position: fixed; inset: 0; z-index: 1000; display: flex; align-items: center; justify-content: center; padding: 32px; background: rgba(8, 16, 38, 0.62); -webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px); animation: ck-rmFade .22s ease both; }
+  .ck-redesign .report-modal { position: relative; display: flex; flex-direction: column; width: min(940px, 96vw); height: min(86vh, 940px); background: #fff; border-radius: 14px; overflow: hidden; box-shadow: 0 40px 90px -20px rgba(0, 0, 0, 0.5); animation: ck-rmPop .26s cubic-bezier(.22, 1, .36, 1) both; }
+  .ck-redesign .report-modal-bar { display: flex; align-items: center; justify-content: space-between; padding: 12px 14px 12px 18px; border-bottom: 1px solid #e5e7eb; background: #f9fafb; flex-shrink: 0; }
+  .ck-redesign .report-modal-title { display: flex; align-items: center; gap: 10px; font-family: var(--font-mono); font-size: 13px; letter-spacing: 0.02em; color: #4b5563; }
+  .ck-redesign .report-modal-dot { width: 9px; height: 9px; border-radius: 50%; background: #22c55e; }
+  .ck-redesign .report-modal-close { width: 34px; height: 34px; border-radius: 9px; border: 1px solid #e5e7eb; background: #fff; color: #6b7280; font-size: 15px; line-height: 1; cursor: pointer; transition: background .15s ease, color .15s ease; }
+  .ck-redesign .report-modal-close:hover { background: #f3f4f6; color: #111827; }
+  .ck-redesign .report-modal-frame { flex: 1; width: 100%; border: 0; background: #fff; }
+}
+@keyframes ck-rmFade { from { opacity: 0; } to { opacity: 1; } }
+@keyframes ck-rmPop { from { opacity: 0; transform: translateY(14px) scale(.985); } to { opacity: 1; transform: none; } }
+
+/* ── Playback module controls (report-modules) ── */
+@layer components {
+  .ck-redesign .pb-caret { display: inline-block; width: 2px; height: 1.05em; background: #202124; vertical-align: text-bottom; margin: 0 1px; }
+  .ck-redesign .pb-caret.blink { animation: ck-blink 1s steps(1) infinite; }
+  .ck-redesign .pb-iconbtn { transition: background .15s ease; }
+  .ck-redesign .pb-iconbtn:hover { background: rgba(0, 0, 0, 0.06) !important; }
+  .ck-redesign .pb-select { -webkit-appearance: none; appearance: none; border: 0; border-bottom: 1px solid rgba(0, 0, 0, 0.42); background: transparent; color: rgba(0, 0, 0, 0.85); border-radius: 0; padding: 4px 20px 4px 6px; font-size: 14px; cursor: pointer; margin: 0 4px; }
+  .ck-redesign .pb-select:focus { outline: none; border-bottom: 2px solid #2e7bff; }
+  .ck-redesign .pb-range { -webkit-appearance: none; appearance: none; height: 4px; border-radius: 999px; background: rgba(46, 123, 255, 0.28); outline: none; position: relative; z-index: 1; cursor: pointer; }
+  .ck-redesign .pb-range::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 14px; height: 14px; border-radius: 999px; background: #2e7bff; border: 0; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); cursor: pointer; }
+  .ck-redesign .pb-range::-moz-range-thumb { width: 14px; height: 14px; border-radius: 999px; background: #2e7bff; border: 0; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); cursor: pointer; }
+}
+@keyframes ck-blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+
+/* ════════════════════ Atmosphere: document-tall space → sky → ocean ════════════════════
+   One background layer behind every section, measured/built by <Atmosphere/>. Sections are
+   forced transparent so the layer shows through; the footer reads as the ocean floor. */
+.ck-redesign { position: relative; }
+.ck-redesign > section,
+.ck-redesign > footer { position: relative; z-index: 1; }
+.ck-redesign > section { background-color: transparent !important; }
+
+.ck-redesign .atmosphere { position: absolute; left: 0; top: 0; width: 100%; z-index: 0; pointer-events: none; overflow: hidden; }
+.ck-redesign .atmo-grad { position: absolute; inset: 0; }
+
+.ck-redesign .atmo-stars { position: absolute; left: 0; top: 0; width: 100%; -webkit-mask-image: linear-gradient(180deg, #000 68%, transparent); mask-image: linear-gradient(180deg, #000 68%, transparent); }
+.ck-redesign .atmo-star-layer { position: absolute; inset: 0; background-repeat: repeat; }
+.ck-redesign .atmo-star-layer.s1 { animation: ck-twinkleA 4.5s ease-in-out infinite; }
+.ck-redesign .atmo-star-layer.s2 { animation: ck-twinkleB 6.5s ease-in-out infinite; }
+@keyframes ck-twinkleA { 0%, 100% { opacity: .6; } 50% { opacity: 1; } }
+@keyframes ck-twinkleB { 0%, 100% { opacity: 1; } 50% { opacity: .5; } }
+
+.ck-redesign .atmo-clouds { position: absolute; inset: 0; }
+.ck-redesign .cloud.c2 { width: 50px; height: 44px; box-shadow: 38px 4px 0 6px #fff, 78px 8px 0 -2px #fff, 108px 10px 0 -14px #fff, 60px -16px 0 -4px #fff; }
+.ck-redesign .cloud.c4 { width: 60px; height: 56px; box-shadow: 52px 4px 0 14px #fff, 110px 0 0 20px #fff, 168px 8px 0 8px #fff, 214px 12px 0 -6px #fff, 80px -32px 0 -2px #fff, 142px -28px 0 -12px #fff, 248px 16px 0 -16px #fff; }
+.ck-redesign .cloud.c5 { width: 64px; height: 54px; box-shadow: 64px 4px 0 16px #fff, 146px 0 0 24px #fff, 230px 8px 0 16px #fff, 306px 14px 0 0 #fff, 352px 18px 0 -16px #fff, 120px -34px 0 -2px #fff, 216px -28px 0 -14px #fff, 40px 30px 0 -6px #fff; }
+.ck-redesign .cloud.c7 { width: 56px; height: 52px; box-shadow: 38px -34px 0 8px #fff, 16px 2px 0 14px #fff, 84px 10px 0 12px #fff, 34px 34px 0 4px #fff, 98px 38px 0 -6px #fff, 70px -68px 0 -16px #fff, 132px 20px 0 -16px #fff; }
+.ck-redesign .cloud.c8 { width: 46px; height: 40px; box-shadow: 32px 6px 0 6px #fff, 70px -4px 0 -8px #fff, 16px 14px 0 -2px #fff, 94px 10px 0 -16px #fff; }
+.ck-redesign .cloud.c9 { width: 56px; height: 50px; box-shadow: 56px 16px 0 10px #fff, 124px 24px 0 14px #fff, 188px 10px 0 4px #fff, 234px 14px 0 -12px #fff, 94px -26px 0 -4px #fff, 40px 28px 0 -8px #fff; }
+.ck-redesign .cloud.c10 { width: 64px; height: 54px; box-shadow: 80px 20px 0 16px #fff, 170px 28px 0 24px #fff, 258px 16px 0 16px #fff, 340px 24px 0 4px #fff, 394px 28px 0 -14px #fff, 138px -34px 0 -2px #fff, 238px -22px 0 -16px #fff, 46px 32px 0 -6px #fff; }
+
+.ck-redesign .atmo-ocean { position: absolute; left: 0; width: 100%; overflow: hidden; }
+.ck-redesign .atmo-ocean .wave { position: absolute; top: 0; left: -50%; width: 200%; height: 46px; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='46' viewBox='0 0 240 46'%3E%3Cpath d='M0 26 C 40 8 80 8 120 26 C 160 44 200 44 240 26 L240 46 L0 46 Z' fill='rgba(255,255,255,0.18)'/%3E%3C/svg%3E") repeat-x; background-size: 240px 46px; animation: ck-waveMove 16s linear infinite; }
+.ck-redesign .atmo-ocean .wave.w2 { top: 14px; height: 40px; opacity: .5; animation-duration: 24s; animation-direction: reverse; }
+@keyframes ck-waveMove { from { transform: translateX(0); } to { transform: translateX(240px); } }
+.ck-redesign .atmo-ocean .glitter { position: absolute; left: 0; top: 90px; width: 100%; height: 260px; background: radial-gradient(120% 80% at 50% 0%, rgba(255, 255, 255, 0.12), transparent 60%); }
+
+/* Footer reads as the ocean floor: light type. */
+.ck-redesign > footer { border-top-color: rgba(255, 255, 255, 0.16) !important; }
+.ck-redesign > footer,
+.ck-redesign > footer p,
+.ck-redesign > footer a,
+.ck-redesign > footer li,
+.ck-redesign > footer div,
+.ck-redesign > footer span { color: rgba(255, 255, 255, 0.82) !important; }
+.ck-redesign > footer a:hover { color: #fff !important; }
+
+@media (prefers-reduced-motion: reduce) {
+  .ck-redesign .atmo-star-layer, .ck-redesign .atmo-ocean .wave { animation: none !important; }
 }

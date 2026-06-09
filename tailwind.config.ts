@@ -45,6 +45,10 @@ export default {
         accent: {
           DEFAULT: "hsl(var(--accent))",
           foreground: "hsl(var(--accent-foreground))",
+          // Redesign accent ramp (full hsl() values from globals.css :root)
+          cyan: "var(--accent-cyan)",
+          soft: "var(--accent-soft)",
+          deep: "var(--accent-deep)",
         },
         popover: {
           DEFAULT: "hsl(var(--popover))",
@@ -54,9 +58,19 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        // ── Homepage redesign palette (full hsl() values; see globals.css :root) ──
+        ink: { DEFAULT: "var(--ink)", soft: "var(--ink-soft)", mute: "var(--ink-mute)" },
+        line: { DEFAULT: "var(--line)", strong: "var(--line-strong)" },
+        teal: { DEFAULT: "var(--teal)", deep: "var(--teal-deep)", soft: "var(--teal-soft)" },
+        coral: { DEFAULT: "var(--coral)", soft: "var(--coral-soft)" },
+        yellow: { DEFAULT: "var(--yellow)", soft: "var(--yellow-soft)" },
+        bg: { DEFAULT: "var(--bg)", elev: "var(--bg-elev)", tint: "var(--bg-tint)" },
+        surface: { DEFAULT: "var(--surface)", "2": "var(--surface-2)" },
       },
       fontFamily: {
         sans: ['Plus Jakarta Sans', 'sans-serif'],
+        display: ['var(--font-display)'],
+        hand: ['var(--font-hand)'],
       },
       fontSize: {
         'display': ['4.5rem', { lineHeight: '1.1', letterSpacing: '-0.02em', fontWeight: '800' }],
