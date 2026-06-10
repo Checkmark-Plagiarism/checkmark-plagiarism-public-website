@@ -1,3 +1,5 @@
+// Submissions Component
+
 export interface SubmissionPayload {
     essay_content: string;
     metadata_xml?: string;
