@@ -82,7 +82,7 @@ export function Hero() {
             <h1 className="display mb-7 text-white text-[clamp(44px,5.6vw,76px)] leading-[1.05] text-balance">
               See the writer,
               <br />
-              build the <em>thinker.</em>
+              build the <em>Tony.</em>
             </h1>
 
             <p className="text-[19px] leading-[1.55] text-white/[0.78] max-w-[520px] mb-9 text-pretty">
