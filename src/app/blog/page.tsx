@@ -50,7 +50,7 @@ export default async function Page({ searchParams }: PageProps) {
       <BlogHero/>
 
       {/* Categories */}
-      <section id="categories" className="py-12 bg-background border-b border-border scroll-mt-24">
+      <section id="categories" className="py-12 bg-brand-50/50 border-b border-brand-100 scroll-mt-24">
         <div className="container mx-auto px-6">
           <div className="flex flex-wrap gap-4 justify-center">
             {categories.map((category) => {
@@ -78,12 +78,12 @@ export default async function Page({ searchParams }: PageProps) {
       </section>
 
       {/* Blog Posts Grid */}
-      <section id="posts" className="py-20 bg-background">
+      <section id="posts" className="py-20 bg-gradient-to-b from-background to-brand-50/30">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredPosts.map((post) => (
               <Link key={post.slug} href={`/blog/${post.slug}?ref=${selectedCategory}`} className="group">
-                <Card className="h-full overflow-hidden rounded-xl shadow-medium border-2 border-border hover:shadow-lg transition-shadow">
+                <Card className="h-full overflow-hidden rounded-2xl shadow-soft border border-brand-100 hover:shadow-medium hover:border-brand-300/60 transition-all duration-200">
                   <Image
                     src={post.image}
                     alt={post.title}

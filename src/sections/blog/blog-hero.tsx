@@ -17,7 +17,7 @@ export default function BlogHero() {
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "-50%"]);
 
   return (
-    <section ref={sectionRef} className="text-center mb-16 bg-brand-900 pt-40 pb-28 relative overflow-hidden">
+    <section ref={sectionRef} className="text-center bg-brand-900 pt-40 pb-28 relative overflow-hidden">
       {/* Background hero image with parallax */}
       <motion.div
         className="absolute opacity-25"
