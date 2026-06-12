@@ -44,7 +44,7 @@ const COLUMNS = [
 
 export function SiteFooter() {
   return (
-    <footer className="bg-brand-900 text-white pt-20 pb-10">
+    <footer className="pt-20 pb-10 text-white">
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-2 lg:grid-cols-6 gap-12 mb-16">
           {/* Brand */}
