@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { sendGAEvent } from '@next/third-parties/google';
 import { Menu, X, ChevronDown } from "lucide-react";
 const APP_URL = process.env.NEXT_PUBLIC_APP_URL || 'https://teach.checkmarkplagiarism.com/';
@@ -10,18 +11,24 @@ const APP_URL = process.env.NEXT_PUBLIC_APP_URL || 'https://teach.checkmarkplagi
 const logoImage = "/images/android-chrome-384x384.png";
 
 export default function Header() {
-  const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
+  // Pages with a dark hero (homepage) start transparent; all other pages start
+  // with the white/backdrop nav so links are visible against light backgrounds.
+  const hasDarkHero = pathname === "/";
+  const [scrolled, setScrolled] = useState(!hasDarkHero);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [supportExpanded, setSupportExpanded] = useState(false);
   const [contactExpanded, setContactExpanded] = useState(false);
 
   useEffect(() => {
+    // Re-evaluate on mount (handles direct navigation and browser back/forward).
+    setScrolled(pathname !== "/" || window.scrollY > 50);
     const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
+      setScrolled(pathname !== "/" || window.scrollY > 50);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [pathname]);
 
   useEffect(() => {
     if (mobileMenuOpen) {

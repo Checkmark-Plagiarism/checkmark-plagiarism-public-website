@@ -18,12 +18,12 @@ export default function PricingPage() {
       <PricingHero />
 
       {/* Plans */}
-      <section id="plans" className="py-16 bg-background">
+      <section id="plans" className="py-16 bg-gradient-to-b from-brand-50/40 to-background">
         <div className="container mx-auto px-6">
           <div className="mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-6">
             <Plan
               icon={GraduationCap}
-              color="from-emerald-600/20 via-emerald-500/10"
+              color="from-brand-400/20 via-brand-300/10"
               title="Basic"
               price="$8.99/mo"
               priceSubtitle="billed annually + 1 month free trial"
@@ -39,7 +39,7 @@ export default function PricingPage() {
             />
             <Plan
               icon={School}
-              color="from-blue-600/20 via-blue-500/10"
+              color="from-brand-600/20 via-brand-500/10"
               title="Pro"
               price="$12.99/mo"
               priceSubtitle="billed annually + 1 month free trial"
@@ -54,7 +54,7 @@ export default function PricingPage() {
             />
             <Plan
               icon={Building2}
-              color="from-fuchsia-600/20 via-fuchsia-500/10"
+              color="from-brand-900/20 via-brand-700/10"
               title="School & District"
               price="Custom quote"
               priceSubtitle="starting at $2.49/student"
@@ -79,10 +79,10 @@ export default function PricingPage() {
       </section>
 
       {/* Comparison */}
-      <section className="py-16 bg-background">
+      <section className="py-16 bg-brand-50/40">
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-6xl">
-            <h2 className="text-3xl font-bold text-center text-foreground">What&apos;s included</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground">What&apos;s included</h2>
             <p className="mt-3 text-center text-muted-foreground">
               All plans focus on transparent evidence and student growth—no black-box flags.
             </p>
@@ -120,7 +120,7 @@ export default function PricingPage() {
                       {[row[1], row[2], row[3]].map((v, j) => (
                         <td key={j} className={`py-3 ${j === 2 ? 'pr-6' : ''} px-4`}>
                           {v === true ? (
-                            <span className="inline-flex items-center gap-2 text-green-700 dark:text-emerald-300">
+                            <span className="inline-flex items-center gap-2 text-brand-700">
                               <Check className="h-4 w-4" /> Included
                             </span>
                           ) : typeof v === "string" ? (
@@ -144,10 +144,10 @@ export default function PricingPage() {
 
 
       {/* FAQ */}
-      <section className="py-16 bg-background">
+      <section className="py-16 bg-background border-t border-brand-100/60">
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-4xl">
-            <h2 className="text-3xl font-bold text-center text-foreground">Pricing FAQ</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground">Pricing FAQ</h2>
             <div className="mt-8 grid grid-cols-1 gap-4">
               <Faq q="Do you have a free trial or pilot?" a="Yes. We offer educator pilots to validate fit in real classes before scaling to a department or district." />
               <Faq q="How are quotes determined?" a="Based on number of educators/students, enabled integrations (Google Classroom™/Canvas), and support/training needs." />
@@ -216,7 +216,7 @@ function Plan({
   features: Array<string | { text: string; highlight: boolean }>;
 }) {
   return (
-    <Card className="relative overflow-hidden ring-1 ring-border shadow-soft flex flex-col">
+    <Card className="relative overflow-hidden ring-1 ring-brand-200/60 shadow-medium hover:shadow-strong hover:ring-brand-400/50 transition-all duration-200 flex flex-col">
       {/* gradient accent */}
       <div className={`h-2 bg-gradient-to-r ${color} to-transparent`} />
       <CardContent className="p-6 flex flex-col flex-grow">
@@ -239,7 +239,7 @@ function Plan({
 
             return (
               <li key={i} className="flex items-start gap-2">
-                <Check className="mt-0.5 h-4 w-4 text-emerald-600 flex-shrink-0" />
+                <Check className="mt-0.5 h-4 w-4 text-brand-600 flex-shrink-0" />
                 <span className={isHighlighted
                   ? "bg-gradient-to-r from-red-400 via-yellow-400 via-green-400 via-blue-400 to-purple-400 bg-clip-text text-transparent font-bold"
                   : "text-muted-foreground"
@@ -263,7 +263,7 @@ function Plan({
 
 function Faq({ q, a }: { q: string; a: string }) {
   return (
-    <div className="rounded-xl border border-border bg-card p-5 shadow-soft">
+    <div className="rounded-xl border border-brand-200/50 bg-white p-5 shadow-soft hover:border-brand-400/50 hover:shadow-medium transition-all duration-200">
       <div className="flex items-start gap-3">
         <HelpCircle className="mt-0.5 h-5 w-5 text-muted-foreground" />
         <div>

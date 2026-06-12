@@ -16,10 +16,11 @@ const Contact = () => {
     <>
     <ContactHero />
 
-    <main className="container mx-auto px-4">
+    <main className="bg-gradient-to-b from-brand-50/40 to-background">
+      <div className="container mx-auto px-4">
       <div className="max-w-6xl mx-auto">
 
-        <div className="grid lg:grid-cols-2 gap-12 pb-16">
+        <div className="grid lg:grid-cols-2 gap-12 pt-12 pb-16">
           {/* Contact Form */}
           <Card className="shadow-soft">
             <CardHeader>
@@ -36,10 +37,10 @@ const Contact = () => {
           {/* Contact Information */}
           <div className="space-y-8">
             {/* Schedule Demo Section */}
-            <Card className="shadow-soft bg-gradient-to-r from-blue-50 to-indigo-50 border-blue-200">
+            <Card className="shadow-soft bg-gradient-to-r from-brand-50 to-brand-100/60 border-brand-200">
               <CardHeader>
-                <CardTitle className="text-2xl text-gray-900">Want to see Checkmark in action?</CardTitle>
-                <CardDescription className="text-gray-700">
+                <CardTitle className="text-2xl text-brand-900">Want to see Checkmark in action?</CardTitle>
+                <CardDescription className="text-brand-700">
                   Schedule a free 30-minute personalized demo with our team.
                 </CardDescription>
               </CardHeader>
@@ -77,6 +78,7 @@ const Contact = () => {
             </Card>
           </div>
         </div>
+      </div>
       </div>
     </main>
 

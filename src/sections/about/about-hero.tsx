@@ -18,7 +18,7 @@ export default function AboutHero() {
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
 
   return (
-    <section ref={sectionRef} className="text-center mb-16 bg-gradient-to-br from-brand-700 to-brand-700/99 pt-32 pb-16 relative overflow-hidden">
+    <section ref={sectionRef} className="text-center bg-gradient-to-br from-brand-900 to-brand-700 pt-32 pb-16 relative overflow-hidden">
       {/* Translucent hero image with parallax */}
       <motion.div className="absolute inset-0 opacity-20" style={{ y }}>
         <Image
