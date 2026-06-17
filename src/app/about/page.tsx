@@ -56,7 +56,7 @@ export default function TeamPage() {
       <AboutHero />
 
       {/* Team grid */}
-      <section className="py-16 bg-background">
+      <section className="py-16 bg-gradient-to-b from-brand-50/30 to-background">
         <div className="container mx-auto px-4">
           <div className="mx-auto grid max-w-3xl grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-12">
             {TEAM.map((m) => (
@@ -67,10 +67,10 @@ export default function TeamPage() {
       </section>
 
       {/* Our Values */}
-      <section className="py-16 bg-muted/30">
+      <section className="py-16 bg-brand-50/40 border-t border-brand-100/60">
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-4xl text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">
               Our Values
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
@@ -185,7 +185,7 @@ function ValueCard({
   description: string;
 }) {
   return (
-    <Card className="ring-1 ring-border shadow-soft">
+    <Card className="ring-1 ring-brand-200/50 shadow-soft hover:ring-brand-400/50 hover:shadow-medium transition-all duration-200">
       <CardContent className="p-6">
         <div className="flex items-start gap-4">
           <div className="h-12 w-12 rounded-lg bg-brand-500/10 flex items-center justify-center flex-shrink-0">

@@ -23,7 +23,7 @@ export default function PrivacyPolicyPage() {
   return (
     <main>
       {/* Header */}
-      <section className="py-8 border-b border-border bg-background/50 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <section className="pt-24 pb-8 border-b border-border bg-background/50 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between max-w-4xl mx-auto">
             <Link href="/" className="inline-flex items-center text-muted-foreground hover:text-foreground transition-colors">
