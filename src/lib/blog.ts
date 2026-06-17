@@ -3,7 +3,24 @@ import fs from "fs";
 import path from "path";
 import vm from "vm";
 
-const BLOG_DIR = path.join(process.cwd(), "src/app/blog");
+/**
+ * Content sections. Each maps to a top-level route + app dir:
+ *   research -> /research -> src/app/research
+ *   blogs    -> /blogs    -> src/app/blogs
+ *   learning -> /learning -> src/app/learning
+ * `section` is derived purely from which directory a post lives in, so the
+ * TeamHub generator only needs to write a page.tsx into the right dir.
+ */
+export type Section = "research" | "blogs" | "learning";
+
+const APP_DIR = path.join(process.cwd(), "src/app");
+const SECTION_DIRS: Record<Section, string> = {
+  research: path.join(APP_DIR, "research"),
+  blogs: path.join(APP_DIR, "blogs"),
+  learning: path.join(APP_DIR, "learning"),
+};
+
+export const ALL_SECTIONS: Section[] = ["research", "blogs", "learning"];
 
 export type BlogPostMeta = {
   title?: string;
@@ -16,7 +33,8 @@ export type BlogPostMeta = {
 };
 
 export type BlogPost = {
-  slug: string;         // "2024/03/my-post"
+  section: Section;
+  slug: string;         // "2024/03/my-post" (section-relative)
   title: string;
   description: string;
   date: string;
@@ -123,13 +141,6 @@ function extractMetaFromFile(filePath: string): Partial<BlogPostMeta> {
       if (typeof m.date === "string") meta.date = m.date;
       if (typeof m.category === "string") meta.category = m.category;
       if (Array.isArray(m.categories)) meta.categories = m.categories;
-
-      // Debug logging - remove after testing
-      console.log("Raw metadata object:", m);
-      console.log("Extracted category:", meta.category);
-      console.log("Extracted categories:", meta.categories);
-      console.log("---");
-
       if (typeof m.readTime === "string") meta.readTime = m.readTime;
 
       // Prefer OG image if present on custom meta (rare but supported)
@@ -179,12 +190,13 @@ function safeReaddir(dir: string): string[] {
   }
 }
 
-export function getAllBlogPosts(): BlogPost[] {
+/** Scan a single section directory ({year}/{month}/{slug}) into BlogPost[]. */
+function scanDir(baseDir: string, section: Section): BlogPost[] {
   const posts: BlogPost[] = [];
 
-  const years = safeReaddir(BLOG_DIR);
+  const years = safeReaddir(baseDir);
   for (const year of years) {
-    const yearPath = path.join(BLOG_DIR, year);
+    const yearPath = path.join(baseDir, year);
     if (!isDir(yearPath)) continue;
 
     const months = safeReaddir(yearPath);
@@ -218,6 +230,7 @@ export function getAllBlogPosts(): BlogPost[] {
         const merged: BlogPostMeta = { ...baseMeta, ...fileMeta, ...fileMetadata };
 
         posts.push({
+          section,
           slug: `${year}/${month}/${postFolder}`,
           title: merged.title ?? baseMeta.title!,
           description: merged.description ?? "",
@@ -231,5 +244,20 @@ export function getAllBlogPosts(): BlogPost[] {
     }
   }
 
-  return posts.sort(compareDatesDesc);
+  return posts;
+}
+
+/** All posts in one section, newest first. */
+export function getPostsForSection(section: Section): BlogPost[] {
+  return scanDir(SECTION_DIRS[section], section).sort(compareDatesDesc);
+}
+
+/** Every post across all sections, newest first. */
+export function getAllPosts(): BlogPost[] {
+  return ALL_SECTIONS.flatMap(getPostsForSection).sort(compareDatesDesc);
+}
+
+/** Back-compat shim: the original API returned research (formerly "blog") posts. */
+export function getAllBlogPosts(): BlogPost[] {
+  return getPostsForSection("research");
 }
