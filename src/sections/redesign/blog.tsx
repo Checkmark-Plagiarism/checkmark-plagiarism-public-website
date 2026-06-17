@@ -23,7 +23,7 @@ function Card({ post }: { post: BlogPost }) {
   const cats = post.categories?.length ? post.categories : post.category ? [post.category] : [];
   return (
     <Link
-      href={`/blog/${post.slug}`}
+      href={`/research/${post.slug}`}
       className="blog-card flex flex-col no-underline text-inherit bg-bg-elev border border-line rounded-[18px] overflow-hidden shadow-sm"
     >
       <div className="relative aspect-[16/10] bg-surface-2 overflow-hidden">
@@ -97,7 +97,7 @@ export function Blog() {
               Research, classroom reality, and where AI is taking student writing next.
             </p>
           </div>
-          <Link href="/blog" className="btn btn-ghost whitespace-nowrap">
+          <Link href="/research" className="btn btn-ghost whitespace-nowrap">
             View all posts <span aria-hidden="true">→</span>
           </Link>
         </div>

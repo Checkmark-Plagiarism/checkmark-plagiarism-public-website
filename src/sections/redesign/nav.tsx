@@ -51,7 +51,9 @@ export function Nav() {
         <nav className="hidden md:flex items-center gap-8">
           <Link href="/" className={linkClass}>Home</Link>
           <Link href="/about" className={linkClass}>About</Link>
-          <Link href="/blog" className={linkClass}>Blog</Link>
+          <Link href="/research" className={linkClass}>Research</Link>
+          <Link href="/blogs" className={linkClass}>Blogs</Link>
+          <Link href="/learning" className={linkClass}>Learning</Link>
 
           {/* Contact dropdown */}
           <div className="relative group">
@@ -168,9 +170,17 @@ export function Nav() {
             className="px-4 py-3 rounded-lg text-foreground font-medium hover:bg-brand-50 hover:text-brand-700 transition-smooth">
             About
           </Link>
-          <Link href="/blog" onClick={() => setMobileMenuOpen(false)}
+          <Link href="/research" onClick={() => setMobileMenuOpen(false)}
             className="px-4 py-3 rounded-lg text-foreground font-medium hover:bg-brand-50 hover:text-brand-700 transition-smooth">
-            Blog
+            Research
+          </Link>
+          <Link href="/blogs" onClick={() => setMobileMenuOpen(false)}
+            className="px-4 py-3 rounded-lg text-foreground font-medium hover:bg-brand-50 hover:text-brand-700 transition-smooth">
+            Blogs
+          </Link>
+          <Link href="/learning" onClick={() => setMobileMenuOpen(false)}
+            className="px-4 py-3 rounded-lg text-foreground font-medium hover:bg-brand-50 hover:text-brand-700 transition-smooth">
+            Learning
           </Link>
 
           {/* Contact accordion */}

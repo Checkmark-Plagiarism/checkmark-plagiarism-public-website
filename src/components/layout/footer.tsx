@@ -21,7 +21,7 @@ const Footer = () => {
     {
       title: "Resources",
       // TODO: "Documentation", "API Reference", "Case Studies", "Webinars", temporarily removed. Add back to array if needed
-      links: ["Blog"],
+      links: ["Research", "Blogs", "Learning"],
     },
     {
       title: "Company",
@@ -47,7 +47,9 @@ const Footer = () => {
       // "Documentation": "#", // TODO: Create / find page
       // "API Reference": "#", // TODO: Create / find page
       // "Case Studies": "#", // TODO: Create / find page
-      "Blog": "/blog",
+      "Research": "/research",
+      "Blogs": "/blogs",
+      "Learning": "/learning",
       // "Webinars": "#", // TODO: Create / find page
       // Company
       "About Us": "/about",

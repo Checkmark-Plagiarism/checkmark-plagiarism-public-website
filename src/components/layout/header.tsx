@@ -106,11 +106,25 @@ export default function Header() {
             Pricing
           </Link>
           <Link
-            href="/blog"
+            href="/research"
             className={`font-medium transition-smooth ${scrolled ? "text-foreground hover:text-primary" : "text-white/90 hover:text-white"
               }`}
           >
-            Blog
+            Research
+          </Link>
+          <Link
+            href="/blogs"
+            className={`font-medium transition-smooth ${scrolled ? "text-foreground hover:text-primary" : "text-white/90 hover:text-white"
+              }`}
+          >
+            Blogs
+          </Link>
+          <Link
+            href="/learning"
+            className={`font-medium transition-smooth ${scrolled ? "text-foreground hover:text-primary" : "text-white/90 hover:text-white"
+              }`}
+          >
+            Learning
           </Link>
           {/* Contact Dropdown */}
           <div className="relative group">
@@ -241,11 +255,25 @@ export default function Header() {
             Pricing
           </Link>
           <Link
-            href="/blog"
+            href="/research"
             onClick={() => setMobileMenuOpen(false)}
             className="px-4 py-3 rounded-lg text-foreground font-medium hover:bg-brand-50 hover:text-brand-700 transition-smooth"
           >
-            Blog
+            Research
+          </Link>
+          <Link
+            href="/blogs"
+            onClick={() => setMobileMenuOpen(false)}
+            className="px-4 py-3 rounded-lg text-foreground font-medium hover:bg-brand-50 hover:text-brand-700 transition-smooth"
+          >
+            Blogs
+          </Link>
+          <Link
+            href="/learning"
+            onClick={() => setMobileMenuOpen(false)}
+            className="px-4 py-3 rounded-lg text-foreground font-medium hover:bg-brand-50 hover:text-brand-700 transition-smooth"
+          >
+            Learning
           </Link>
 
           {/* Contact accordion */}

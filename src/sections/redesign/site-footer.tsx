@@ -22,7 +22,9 @@ const COLUMNS = [
   {
     title: "Resources",
     links: [
-      { label: "Blog", href: "/blog" },
+      { label: "Research", href: "/research" },
+      { label: "Blogs", href: "/blogs" },
+      { label: "Learning", href: "/learning" },
     ],
   },
   {

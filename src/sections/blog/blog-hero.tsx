@@ -4,7 +4,15 @@ import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
-export default function BlogHero() {
+type BlogHeroProps = {
+  title?: string;
+  subtitle?: string;
+};
+
+export default function BlogHero({
+  title = "AI & Education Insights",
+  subtitle = "Exploring trust, detection, and the evolving role of artificial intelligence in education.",
+}: BlogHeroProps = {}) {
   const sectionRef = useRef<HTMLElement>(null);
 
   // Track scroll progress of the hero section
@@ -40,10 +48,10 @@ export default function BlogHero() {
 
       <div className="relative z-10">
         <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-          AI & Education Insights
+          {title}
         </h1>
         <p className="text-xl text-white max-w-3xl mx-auto px-4">
-          Exploring trust, detection, and the evolving role of artificial intelligence in education.
+          {subtitle}
         </p>
       </div>
     </section>
