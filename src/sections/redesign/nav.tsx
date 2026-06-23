@@ -12,6 +12,7 @@ const logoImage = "/images/android-chrome-384x384.png";
 export function Nav() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [blogsExpanded, setBlogsExpanded] = useState(false);
   const [supportExpanded, setSupportExpanded] = useState(false);
   const [contactExpanded, setContactExpanded] = useState(false);
 
@@ -51,9 +52,29 @@ export function Nav() {
         <nav className="hidden md:flex items-center gap-8">
           <Link href="/" className={linkClass}>Home</Link>
           <Link href="/about" className={linkClass}>About</Link>
-          <Link href="/research" className={linkClass}>Research</Link>
-          <Link href="/blogs" className={linkClass}>Blogs</Link>
-          <Link href="/learning" className={linkClass}>Learning</Link>
+
+          {/* Blogs dropdown */}
+          <div className="relative group">
+            <button className={`${linkClass} flex items-center gap-1`}>
+              Blogs
+              <svg className="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+              <div className="py-2">
+                <Link href="/blogs" className="block px-4 py-2 text-sm text-gray-700 hover:bg-brand-50 hover:text-brand-700 transition-smooth">
+                  Blogs
+                </Link>
+                <Link href="/research" className="block px-4 py-2 text-sm text-gray-700 hover:bg-brand-50 hover:text-brand-700 transition-smooth">
+                  Research
+                </Link>
+                <Link href="/learning" className="block px-4 py-2 text-sm text-gray-700 hover:bg-brand-50 hover:text-brand-700 transition-smooth">
+                  Learning
+                </Link>
+              </div>
+            </div>
+          </div>
 
           {/* Contact dropdown */}
           <div className="relative group">
@@ -170,18 +191,32 @@ export function Nav() {
             className="px-4 py-3 rounded-lg text-foreground font-medium hover:bg-brand-50 hover:text-brand-700 transition-smooth">
             About
           </Link>
-          <Link href="/research" onClick={() => setMobileMenuOpen(false)}
-            className="px-4 py-3 rounded-lg text-foreground font-medium hover:bg-brand-50 hover:text-brand-700 transition-smooth">
-            Research
-          </Link>
-          <Link href="/blogs" onClick={() => setMobileMenuOpen(false)}
-            className="px-4 py-3 rounded-lg text-foreground font-medium hover:bg-brand-50 hover:text-brand-700 transition-smooth">
-            Blogs
-          </Link>
-          <Link href="/learning" onClick={() => setMobileMenuOpen(false)}
-            className="px-4 py-3 rounded-lg text-foreground font-medium hover:bg-brand-50 hover:text-brand-700 transition-smooth">
-            Learning
-          </Link>
+          {/* Blogs accordion */}
+          <div>
+            <button
+              className="w-full flex items-center justify-between px-4 py-3 rounded-lg text-foreground font-medium hover:bg-brand-50 hover:text-brand-700 transition-smooth"
+              onClick={() => setBlogsExpanded(!blogsExpanded)}
+            >
+              Blogs
+              <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${blogsExpanded ? "rotate-180" : ""}`} />
+            </button>
+            {blogsExpanded && (
+              <div className="ml-4 flex flex-col gap-1">
+                <Link href="/blogs" onClick={() => setMobileMenuOpen(false)}
+                  className="px-4 py-2 rounded-lg text-sm text-gray-600 hover:bg-brand-50 hover:text-brand-700 transition-smooth">
+                  Blogs
+                </Link>
+                <Link href="/research" onClick={() => setMobileMenuOpen(false)}
+                  className="px-4 py-2 rounded-lg text-sm text-gray-600 hover:bg-brand-50 hover:text-brand-700 transition-smooth">
+                  Research
+                </Link>
+                <Link href="/learning" onClick={() => setMobileMenuOpen(false)}
+                  className="px-4 py-2 rounded-lg text-sm text-gray-600 hover:bg-brand-50 hover:text-brand-700 transition-smooth">
+                  Learning
+                </Link>
+              </div>
+            )}
+          </div>
 
           {/* Contact accordion */}
           <div>
