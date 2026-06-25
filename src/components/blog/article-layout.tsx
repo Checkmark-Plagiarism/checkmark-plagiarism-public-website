@@ -5,7 +5,7 @@
 // two stay structurally identical and "related articles" is automatic.
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowLeft, Clock, Calendar, User, Share2 } from "lucide-react";
+import { ArrowLeft, Clock, User, Share2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { getCategoryVariant } from "@/lib/blog-category-utils";
@@ -50,8 +50,40 @@ export default function ArticleLayout({
         ? [meta.category]
         : [];
 
+  // BlogPosting JSON-LD so search engines and AI answer engines (Perplexity,
+  // Google AI Overviews, ChatGPT search) can parse and cite the article.
+  // Intentionally no datePublished/dateModified.
+  const SITE = "https://checkmarkplagiarism.com";
+  const canonicalUrl = `${SITE}${basePath}/${currentSlug}`;
+  const heroImage = meta["opengraph-image"].startsWith("http")
+    ? meta["opengraph-image"]
+    : `${SITE}${meta["opengraph-image"]}`;
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: meta.title,
+    description: meta.description,
+    image: [heroImage],
+    author: { "@type": "Organization", name: meta.author },
+    publisher: {
+      "@type": "Organization",
+      name: "Checkmark Plagiarism",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://public.checkmarkplagiarism.com/images/android-chrome-384x384.png",
+      },
+    },
+    mainEntityOfPage: { "@type": "WebPage", "@id": canonicalUrl },
+    articleSection: label,
+    ...(categories.length ? { keywords: categories.join(", ") } : {}),
+  };
+
   return (
     <main className="bg-background text-foreground">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* Article Header */}
       <section className="pt-24 pb-10 border-b border-border">
         <div className="container mx-auto px-4">
@@ -70,10 +102,6 @@ export default function ArticleLayout({
                   {cat}
                 </span>
               ))}
-              <span aria-hidden>•</span>
-              <time className="tabular-nums" dateTime={new Date(meta.date).toISOString()}>
-                {meta.date}
-              </time>
               <span aria-hidden>•</span>
               <span>{meta.readTime}</span>
             </div>
@@ -131,10 +159,6 @@ export default function ArticleLayout({
                   <CardContent className="p-6">
                     <h3 className="font-semibold mb-4">Article Info</h3>
                     <div className="space-y-4">
-                      <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                        <Calendar className="w-4 h-4" />
-                        <span>{meta.date}</span>
-                      </div>
                       <div className="flex items-center gap-2 text-sm text-muted-foreground">
                         <Clock className="w-4 h-4" />
                         <span>{meta.readTime}</span>
