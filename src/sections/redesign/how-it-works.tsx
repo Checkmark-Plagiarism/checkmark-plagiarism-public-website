@@ -14,6 +14,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
 import React, { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 import { SectionHead } from "./section-head";
 
 const h = React.createElement;
@@ -390,21 +391,32 @@ export function HowItWorks() {
       tabs,
       h("div", { className: "hiw-panel" }, detail, picture)
     ),
+    // Portaled to <body>: every .ck-redesign > section is a z-index:1 stacking
+    // context, so an overlay rendered inside this section would paint UNDER
+    // later sections regardless of its own z-index. The .ck-redesign wrapper
+    // keeps the modal's scoped styles applying.
     reportOpen
-      ? h(
-          "div",
-          { className: "report-modal-overlay", onClick: (e: any) => { if (e.target === e.currentTarget) closeReport(); } },
+      ? createPortal(
           h(
             "div",
-            { className: "report-modal", role: "dialog", "aria-modal": "true", "aria-label": "Sample report" },
+            { className: "ck-redesign" },
             h(
               "div",
-              { className: "report-modal-bar" },
-              h("div", { className: "report-modal-title" }, h("span", { className: "report-modal-dot" }), "Sample report"),
-              h("button", { type: "button", className: "report-modal-close", onClick: closeReport, "aria-label": "Close" }, "✕")
-            ),
-            h("iframe", { className: "report-modal-frame", src: LIVE_REPORT_URL, title: "Sample report", allowFullScreen: true })
-          )
+              { className: "report-modal-overlay", onClick: (e: any) => { if (e.target === e.currentTarget) closeReport(); } },
+              h(
+                "div",
+                { className: "report-modal", role: "dialog", "aria-modal": "true", "aria-label": "Sample report" },
+                h(
+                  "div",
+                  { className: "report-modal-bar" },
+                  h("div", { className: "report-modal-title" }, h("span", { className: "report-modal-dot" }), "Sample report"),
+                  h("button", { type: "button", className: "report-modal-close", onClick: closeReport, "aria-label": "Close" }, "✕")
+                ),
+                h("iframe", { className: "report-modal-frame", src: LIVE_REPORT_URL, title: "Sample report", allowFullScreen: true })
+              )
+            )
+          ),
+          document.body
         )
       : null
   );
