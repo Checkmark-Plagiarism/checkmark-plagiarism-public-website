@@ -10,6 +10,8 @@ import {
   ShieldCheck,
   Settings2,
   ArrowRight,
+  Download,
+  MonitorDown,
 } from "lucide-react";
 import { LinkButton } from "@/components/ui/link";
 import { Card, CardContent } from "@/components/ui/card";
@@ -117,6 +119,11 @@ export default function IntegrationsPage() {
                   <li>Microsoft Word (.docx) support</li>
                   <li>No copy/paste shenanigans</li>
                 </ul>
+                <p className="mt-4 text-sm">
+                  <a href="#word-add-in" className="text-primary font-semibold hover:underline">
+                    Download the Word desktop add-in →
+                  </a>
+                </p>
               </CardContent>
             </Card>
 
@@ -148,6 +155,67 @@ export default function IntegrationsPage() {
                   <li>Org-wide or course-level policies</li>
                   <li>Exports and audit trails</li>
                 </ul>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Word desktop add-in download */}
+      <section id="word-add-in" className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+              <Badge color="bg-brand-600/15 text-brand-800 dark:text-brand-200">Desktop</Badge>
+              <h2 className="mt-2 text-3xl font-bold text-foreground">
+                Word add-in for Windows desktop
+              </h2>
+              <p className="mt-3 text-muted-foreground">
+                Bring Checkmark Plagiarism directly into the Microsoft Word desktop app. Install
+                once and the add-in loads automatically every time Word opens—capturing
+                behavior-aware writing signals right where students write.
+              </p>
+              <ul className="mt-4 text-sm text-muted-foreground space-y-2 list-disc list-inside">
+                <li>Works with 32-bit and 64-bit Microsoft Word on Windows</li>
+                <li>Installs for every user on the machine—ideal for shared lab computers</li>
+                <li>No sign-in required at install time</li>
+              </ul>
+              <div className="mt-6 flex flex-wrap items-center gap-3">
+                <LinkButton
+                  href="/downloads/checkmark-plagiarism-word-addin.msi"
+                  prefetch={false}
+                  download
+                >
+                  <Download className="mr-2 h-4 w-4" /> Download for Windows (.msi)
+                </LinkButton>
+                <LinkButton href="/teacher-support" variant="outline">
+                  Need help installing?
+                </LinkButton>
+              </div>
+              <p className="mt-3 text-xs text-muted-foreground">
+                Requires Microsoft Word for Windows (desktop) and administrator rights to install.
+              </p>
+            </div>
+
+            <Card className="ring-1 ring-brand-300/60 dark:ring-brand-900/50">
+              <CardContent className="p-6">
+                <div className="inline-flex items-center gap-2 text-sm">
+                  <MonitorDown className="h-4 w-4" />
+                  <span className="font-semibold">Install in under a minute</span>
+                </div>
+                <ol className="mt-4 text-sm text-muted-foreground space-y-3 list-decimal list-inside">
+                  <li>Download the installer using the button on this page.</li>
+                  <li>
+                    Run <span className="font-mono text-foreground">checkmark-plagiarism-word-addin.msi</span>{" "}
+                    and approve the administrator prompt.
+                  </li>
+                  <li>Open Microsoft Word—the Checkmark Plagiarism add-in loads automatically.</li>
+                </ol>
+                <p className="mt-4 text-xs text-muted-foreground">
+                  Deploying district-wide? IT admins can push the MSI silently with{" "}
+                  <span className="font-mono text-foreground">msiexec /i checkmark-plagiarism-word-addin.msi /qn</span>{" "}
+                  via Intune, SCCM, or Group Policy.
+                </p>
               </CardContent>
             </Card>
           </div>
