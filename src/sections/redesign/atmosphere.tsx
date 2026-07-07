@@ -1,11 +1,12 @@
+/* src/sections/redesign/atmosphere.tsx — UPDATED
+   Same as before except placeClouds(): clouds are now random squircle-puff
+   clusters built by createCloudElement() (cloud-puffs.ts) instead of the old
+   box-shadow `.cloud` variants, which collapsed into fuzzy rectangles under
+   blur/scale. Every refresh generates a different cloud pattern. */
 "use client";
 
-/* Document-tall background that transitions deep space (behind the hero) →
-   open sky (behind the content) → ocean (behind the footer). Gradient seams are
-   mapped to the measured section offsets so the horizons land on the right
-   boundaries even as content height changes. Ported from atmosphere.js. */
-
 import { useEffect, useRef } from "react";
+import { createCloudElement } from "./cloud-puffs";
 
 function starField(n: number, w: number, h: number, rMin: number, rMax: number, color: string) {
   const p: string[] = [];
@@ -47,29 +48,23 @@ export function Atmosphere() {
       const zoneTop = pT + (sT - pT) * 0.5;
       let zoneBot = fT - 360;
       if (zoneBot < zoneTop + 500) zoneBot = zoneTop + 500;
-      const VARIANTS = ["", "c2", "c3", "c4", "c5", "c6", "c7", "c8", "c9", "c10"];
       const N = 24;
       for (let i = 0; i < N; i++) {
-        const c = document.createElement("div");
-        const variant = VARIANTS[Math.floor(Math.random() * VARIANTS.length)];
-        c.className = "cloud" + (variant ? " " + variant : "");
         const t = zoneTop + (i / (N - 1)) * (zoneBot - zoneTop) + (Math.random() * 180 - 90);
         const overDark = t < sT - 20;
         let depth = Math.random();
         if (overDark) depth *= 0.45;
-        const scale = 0.38 + depth * 1.25;
-        const leftward = Math.random() < 0.5;
-        const flip = leftward ? -1 : 1;
-        c.style.top = Math.round(t) + "px";
-        let op = 0.22 + depth * 0.52;
+        let op = 0.3 + depth * 0.55;
         if (overDark) op *= 0.6;
-        c.style.opacity = op.toFixed(2);
-        c.style.transform = `scale(${(scale * flip).toFixed(2)},${scale.toFixed(2)})`;
-        c.style.filter = `blur(${(2 + (1 - depth) * 8).toFixed(1)}px)`;
-        if (leftward) c.style.animationDirection = "reverse";
-        const dur = (110 - depth * 28 + Math.random() * 44).toFixed(0);
-        c.style.animationDuration = dur + "s";
-        c.style.animationDelay = (-Math.random() * Number(dur)).toFixed(1) + "s";
+        const c = createCloudElement({
+          topPx: Math.round(t),
+          scale: 0.38 + depth * 1.25,
+          flip: Math.random() < 0.5,
+          blur: 1.5 + (1 - depth) * 6,
+          opacity: op,
+          durS: 110 - depth * 28 + Math.random() * 44,
+          reverse: Math.random() < 0.5,
+        });
         cloudsWrap.appendChild(c);
       }
     }

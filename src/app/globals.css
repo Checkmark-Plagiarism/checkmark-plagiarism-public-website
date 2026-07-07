@@ -337,8 +337,16 @@ html {
 .ck-redesign .starfield { position: absolute; inset: 0; pointer-events: none; z-index: 0; overflow: hidden; }
 .ck-redesign .star { position: absolute; border-radius: 50%; background: #fff; opacity: 0; animation: ck-twinkle var(--tw-dur, 4s) ease-in-out var(--tw-delay, 0s) infinite; will-change: opacity, transform; }
 @keyframes ck-twinkle { 0%, 100% { opacity: 0; transform: scale(0.6); } 50% { opacity: var(--tw-max, 0.9); transform: scale(1); } }
+
+/* 4-pointed sparkle star flash (hero starfield) */
+@keyframes ck-sparkle {
+  0% { opacity: 0; transform: scale(0.15) rotate(-10deg); }
+  30% { opacity: 1; transform: scale(1) rotate(10deg); }
+  100% { opacity: 0; transform: scale(0.3) rotate(25deg); }
+}
 @media (prefers-reduced-motion: reduce) {
   .ck-redesign .star { animation: none; opacity: calc(var(--tw-max, 0.9) * 0.7); }
+  .ck-redesign .starfield span { animation-iteration-count: 1 !important; }
 }
 
 /* LivePlayback live status dot */
@@ -348,14 +356,12 @@ html {
 @keyframes ck-live-ping { 0% { transform: scale(1); opacity: 0.7; } 75%, 100% { transform: scale(2.4); opacity: 0; } }
 }
 
-/* Problem section — drifting CSS clouds (ported from styles.css). */
-@layer components {
-  .ck-redesign .cloud { position: absolute; width: 60px; height: 50px; border-radius: 16px; background: #fff; box-shadow: 46px 4px 0 12px #fff, 104px 0 0 18px #fff, 166px 6px 0 10px #fff, 216px 10px 0 -2px #fff, 256px 14px 0 -14px #fff, 86px -24px 0 0 #fff, 150px -26px 0 -8px #fff; transform-origin: left center; will-change: left; animation: ck-cloud-drift linear infinite; }
-  .ck-redesign .cloud.c3 { width: 56px; height: 42px; box-shadow: 54px 4px 0 6px #fff, 116px 2px 0 10px #fff, 180px 6px 0 6px #fff, 242px 8px 0 -2px #fff, 292px 12px 0 -14px #fff, 94px -14px 0 -6px #fff; }
-  .ck-redesign .cloud.c6 { width: 58px; height: 36px; box-shadow: 64px 4px 0 8px #fff, 134px 6px 0 12px #fff, 204px 4px 0 8px #fff, 274px 8px 0 2px #fff, 330px 10px 0 -12px #fff, 104px -10px 0 -8px #fff, 200px -8px 0 -12px #fff; }
-}
+/* Drifting clouds (random squircle-puff clusters built in JS — see cloud-puffs.ts). */
 @keyframes ck-cloud-drift { from { left: -900px; } to { left: calc(100% + 80px); } }
-@media (prefers-reduced-motion: reduce) { .ck-redesign .cloud { animation: none !important; } }
+@media (prefers-reduced-motion: reduce) {
+  .ck-redesign .atmo-clouds div,
+  .ck-redesign .prob-clouds > div { animation: none !important; }
+}
 
 /* Values cascade — staggered blue boxes (ported from styles.css). */
 @layer components {
@@ -482,13 +488,6 @@ html {
 @keyframes ck-twinkleB { 0%, 100% { opacity: 1; } 50% { opacity: .5; } }
 
 .ck-redesign .atmo-clouds { position: absolute; inset: 0; }
-.ck-redesign .cloud.c2 { width: 50px; height: 44px; box-shadow: 38px 4px 0 6px #fff, 78px 8px 0 -2px #fff, 108px 10px 0 -14px #fff, 60px -16px 0 -4px #fff; }
-.ck-redesign .cloud.c4 { width: 60px; height: 56px; box-shadow: 52px 4px 0 14px #fff, 110px 0 0 20px #fff, 168px 8px 0 8px #fff, 214px 12px 0 -6px #fff, 80px -32px 0 -2px #fff, 142px -28px 0 -12px #fff, 248px 16px 0 -16px #fff; }
-.ck-redesign .cloud.c5 { width: 64px; height: 54px; box-shadow: 64px 4px 0 16px #fff, 146px 0 0 24px #fff, 230px 8px 0 16px #fff, 306px 14px 0 0 #fff, 352px 18px 0 -16px #fff, 120px -34px 0 -2px #fff, 216px -28px 0 -14px #fff, 40px 30px 0 -6px #fff; }
-.ck-redesign .cloud.c7 { width: 56px; height: 52px; box-shadow: 38px -34px 0 8px #fff, 16px 2px 0 14px #fff, 84px 10px 0 12px #fff, 34px 34px 0 4px #fff, 98px 38px 0 -6px #fff, 70px -68px 0 -16px #fff, 132px 20px 0 -16px #fff; }
-.ck-redesign .cloud.c8 { width: 46px; height: 40px; box-shadow: 32px 6px 0 6px #fff, 70px -4px 0 -8px #fff, 16px 14px 0 -2px #fff, 94px 10px 0 -16px #fff; }
-.ck-redesign .cloud.c9 { width: 56px; height: 50px; box-shadow: 56px 16px 0 10px #fff, 124px 24px 0 14px #fff, 188px 10px 0 4px #fff, 234px 14px 0 -12px #fff, 94px -26px 0 -4px #fff, 40px 28px 0 -8px #fff; }
-.ck-redesign .cloud.c10 { width: 64px; height: 54px; box-shadow: 80px 20px 0 16px #fff, 170px 28px 0 24px #fff, 258px 16px 0 16px #fff, 340px 24px 0 4px #fff, 394px 28px 0 -14px #fff, 138px -34px 0 -2px #fff, 238px -22px 0 -16px #fff, 46px 32px 0 -6px #fff; }
 
 .ck-redesign .atmo-ocean { position: absolute; left: 0; width: 100%; overflow: hidden; }
 .ck-redesign .atmo-ocean .wave { position: absolute; top: 0; left: -50%; width: 200%; height: 46px; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='46' viewBox='0 0 240 46'%3E%3Cpath d='M0 26 C 40 8 80 8 120 26 C 160 44 200 44 240 26 L240 46 L0 46 Z' fill='rgba(255,255,255,0.18)'/%3E%3C/svg%3E") repeat-x; background-size: 240px 46px; animation: ck-waveMove 16s linear infinite; }

@@ -1,37 +1,11 @@
-import type { CSSProperties, ComponentType } from "react";
+/* src/sections/redesign/problem.tsx — UPDATED
+   - buildProbClouds() removed; clouds come from <ProblemClouds /> (random
+     squircle-puff clusters, client-only).
+   - CARDS palette lightened to pastels: light backgrounds, deeper accent
+     text/icons, dark body copy. New `text` field per card. */
+import type { ComponentType } from "react";
 import { IconShield, IconClipboard, IconKeyboard, type IconProps } from "./icons";
-
-// Deterministic drifting clouds for the Problem section background (seeded RNG,
-// so server and client agree). Ported from all.js buildProbClouds().
-function buildProbClouds() {
-  let s = 7;
-  const r = () => {
-    s = (s * 1103515245 + 12345) & 0x7fffffff;
-    return s / 0x7fffffff;
-  };
-  const variants = ["", "c3", "c6"];
-  const spots = [
-    { top: "15%", op: 0.34, scl: 1.15, blur: 5 },
-    { top: "52%", op: 0.6, scl: 1.3, blur: 3 },
-    { top: "80%", op: 0.4, scl: 0.85, blur: 5 },
-  ];
-  return spots.map((sp, i) => {
-    const du = (84 + r() * 44).toFixed(0);
-    const sign = r() < 0.5 ? -1 : 1;
-    const style: CSSProperties = {
-      top: sp.top,
-      opacity: sp.op,
-      transform: `scale(${(sign * sp.scl).toFixed(2)},${sp.scl.toFixed(2)})`,
-      filter: `blur(${sp.blur}px)`,
-      animationDuration: du + "s",
-      animationDelay: (-r() * Number(du)).toFixed(1) + "s",
-      animationDirection: r() < 0.5 ? "reverse" : "normal",
-    };
-    return (
-      <div key={"pc" + i} className={"cloud" + (variants[i] ? " " + variants[i] : "")} style={style} />
-    );
-  });
-}
+import { ProblemClouds } from "./problem-clouds";
 
 type ProblemCard = {
   head: string;
@@ -41,6 +15,7 @@ type ProblemCard = {
   tile: string;
   bg: string;
   line: string;
+  text: string;
 };
 
 const CARDS: ProblemCard[] = [
@@ -49,30 +24,33 @@ const CARDS: ProblemCard[] = [
     icon: IconShield,
     label:
       "Teachers report that current AI detectors have wrongly flagged honest students, with no evidence to defend the call.",
-    accent: "hsl(6 52% 71%)",
-    tile: "hsla(6, 52%, 71%, 0.15)",
-    bg: "hsl(353 26% 28%)",
-    line: "hsla(6, 52%, 71%, 0.22)",
+    accent: "hsl(6 55% 42%)",
+    tile: "hsla(6, 55%, 50%, 0.13)",
+    bg: "hsl(6 72% 91%)",
+    line: "hsla(6, 52%, 45%, 0.22)",
+    text: "hsla(6, 30%, 24%, 0.85)",
   },
   {
     head: "Gaming the score",
     icon: IconClipboard,
     label:
       "Students rewrite whole essays just to dodge a detection score, spending effort to beat the tool instead of learning.",
-    accent: "hsl(40 56% 64%)",
-    tile: "hsla(40, 56%, 64%, 0.15)",
-    bg: "hsl(34 32% 26%)",
-    line: "hsla(40, 56%, 64%, 0.22)",
+    accent: "hsl(36 62% 36%)",
+    tile: "hsla(38, 60%, 45%, 0.14)",
+    bg: "hsl(40 78% 89%)",
+    line: "hsla(38, 56%, 42%, 0.22)",
+    text: "hsla(34, 30%, 22%, 0.85)",
   },
   {
     head: "Evidence, not guesses",
     icon: IconKeyboard,
     label:
       "Other detectors hand you a random percentage and leave you exposed to false accusations. We give you the actual writing evidence, so you can be fully confident if a case ever has to be made.",
-    accent: "hsl(270 46% 80%)",
-    tile: "hsla(270, 46%, 80%, 0.15)",
-    bg: "hsl(269 24% 31%)",
-    line: "hsla(270, 46%, 80%, 0.22)",
+    accent: "hsl(269 42% 44%)",
+    tile: "hsla(270, 45%, 50%, 0.12)",
+    bg: "hsl(270 55% 93%)",
+    line: "hsla(270, 40%, 50%, 0.22)",
+    text: "hsla(269, 25%, 26%, 0.85)",
   },
 ];
 
@@ -85,8 +63,11 @@ export function Problem() {
           "linear-gradient(180deg, var(--teal-deep) 0%, var(--teal) 420px, var(--teal) 40%, transparent 100%)",
       }}
     >
-      <div aria-hidden="true" className="absolute inset-0 overflow-hidden pointer-events-none z-0">
-        {buildProbClouds()}
+      <div
+        aria-hidden="true"
+        className="prob-clouds absolute inset-0 overflow-hidden pointer-events-none z-0"
+      >
+        <ProblemClouds />
       </div>
 
       <div className="shell-narrow text-center relative z-[1]">
@@ -129,7 +110,10 @@ export function Problem() {
                 >
                   {card.head}
                 </div>
-                <div className="relative text-[17px] leading-[1.55] text-[rgba(251,247,239,0.82)]">
+                <div
+                  className="relative text-[17px] leading-[1.55]"
+                  style={{ color: card.text }}
+                >
                   {card.label}
                 </div>
               </div>
