@@ -1,6 +1,14 @@
+/* src/sections/redesign/hero.tsx — UPDATED
+   Starfield changes:
+   - ~220 stars (was 70), slightly larger, truly random per refresh: generated in useEffect
+     (server renders none, so no SSR/CSR mismatch, no seed needed).
+   - Random twinkle duration/delay/peak per star; ~20% get a faint blue tint.
+   - Occasional 4-pointed sparkle star that flashes for ~0.7s at a random spot
+     every 1–4s, then vanishes (needs the ck-sparkle keyframe from
+     globals.css.additions.css). */
 "use client";
 
-import { useMemo, type CSSProperties } from "react";
+import { useEffect, useState, type CSSProperties } from "react";
 import { IconArrow, IconCheck } from "./icons";
 import LivePlayback from "./live-playback";
 
@@ -11,30 +19,87 @@ type Star = {
   dur: string;
   delay: string;
   max: string;
+  tint: boolean;
 };
 
-// Deterministic seeded starfield (matches the prototype so SSR/CSR agree).
-function useStars(): Star[] {
-  return useMemo(() => {
-    let seed = 1337;
-    const rand = () => {
-      seed = (seed * 1103515245 + 12345) & 0x7fffffff;
-      return seed / 0x7fffffff;
-    };
+type Sparkle = { id: number; left: string; top: string; size: number };
+
+function useStars(count = 220): Star[] {
+  const [stars, setStars] = useState<Star[]>([]);
+  useEffect(() => {
     const arr: Star[] = [];
-    for (let i = 0; i < 70; i++) {
-      const size = 1 + Math.round(rand() * 2);
+    for (let i = 0; i < count; i++) {
+      const big = Math.random() < 0.2;
       arr.push({
-        left: (rand() * 100).toFixed(2) + "%",
-        top: (rand() * 78).toFixed(2) + "%",
-        size,
-        dur: (2.6 + rand() * 4).toFixed(2) + "s",
-        delay: (rand() * 5).toFixed(2) + "s",
-        max: (0.45 + rand() * 0.55).toFixed(2),
+        left: (Math.random() * 100).toFixed(2) + "%",
+        top: (Math.random() * 82).toFixed(2) + "%",
+        size: big ? 3 + Math.round(Math.random()) : 2 + Math.round(Math.random()),
+        dur: (2.2 + Math.random() * 4.5).toFixed(2) + "s",
+        delay: (Math.random() * 6).toFixed(2) + "s",
+        max: (0.35 + Math.random() * 0.6).toFixed(2),
+        tint: Math.random() < 0.2,
       });
     }
-    return arr;
+    setStars(arr);
+  }, [count]);
+  return stars;
+}
+
+function Sparkles() {
+  const [sparkles, setSparkles] = useState<Sparkle[]>([]);
+  useEffect(() => {
+    let alive = true;
+    let id = 0;
+    let t: ReturnType<typeof setTimeout>;
+    const queue = () => {
+      t = setTimeout(() => {
+        if (!alive) return;
+        const sp: Sparkle = {
+          id: ++id,
+          left: (3 + Math.random() * 94).toFixed(2) + "%",
+          top: (3 + Math.random() * 68).toFixed(2) + "%",
+          size: 12 + Math.random() * 16,
+        };
+        setSparkles((s) => [...s, sp]);
+        setTimeout(() => {
+          if (alive) setSparkles((s) => s.filter((x) => x.id !== sp.id));
+        }, 750);
+        queue();
+      }, 900 + Math.random() * 2800);
+    };
+    queue();
+    return () => {
+      alive = false;
+      clearTimeout(t);
+    };
   }, []);
+
+  return (
+    <>
+      {sparkles.map((sp) => (
+        <span
+          key={sp.id}
+          style={{
+            position: "absolute",
+            left: sp.left,
+            top: sp.top,
+            width: sp.size,
+            height: sp.size,
+            animation: "ck-sparkle .7s ease-out both",
+            filter: "drop-shadow(0 0 6px rgba(255,255,255,.8))",
+            pointerEvents: "none",
+          }}
+        >
+          <svg viewBox="0 0 24 24" width="100%" height="100%">
+            <path
+              d="M12 0C13.2 7.6 16.4 10.8 24 12C16.4 13.2 13.2 16.4 12 24C10.8 16.4 7.6 13.2 0 12C7.6 10.8 10.8 7.6 12 0Z"
+              fill="#fff"
+            />
+          </svg>
+        </span>
+      ))}
+    </>
+  );
 }
 
 export function Hero() {
@@ -59,6 +124,7 @@ export function Hero() {
                 top: st.top,
                 width: st.size,
                 height: st.size,
+                background: st.tint ? "rgba(206,228,255,0.95)" : "#fff",
                 "--tw-dur": st.dur,
                 "--tw-delay": st.delay,
                 "--tw-max": st.max,
@@ -66,6 +132,7 @@ export function Hero() {
             }
           />
         ))}
+        <Sparkles />
       </div>
 
       <div className="absolute top-20 right-10 w-[360px] h-[360px] rounded-full bg-accent-cyan blur-[80px] opacity-[0.18] pointer-events-none" />
