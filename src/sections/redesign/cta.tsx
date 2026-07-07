@@ -30,7 +30,7 @@ export function Cta() {
               <a href="/demo" className="btn btn-coral">
                 Start a free trial <IconArrow size={16} />
               </a>
-              <a href="/contact" className="btn btn-ghost text-bg border-[rgba(251,247,239,0.3)]">
+              <a href="/contact" className="btn btn-ghost btn-ghost-dark text-bg border-[rgba(251,247,239,0.3)]">
                 Schedule a demo
               </a>
             </div>
