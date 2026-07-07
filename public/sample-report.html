@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sample Report — Checkmark</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --teal: hsl(218 100% 59%);
+    --teal-deep: hsl(218 70% 16%);
+    --teal-soft: hsl(218 100% 95%);
+    --ink: hsl(218 30% 10%);
+    --ink-soft: hsl(218 22% 25%);
+    --ink-mute: hsl(218 15% 46%);
+    --line: hsl(220 15% 90%);
+    --line-strong: hsl(220 15% 82%);
+    --ai-bg: #FEE2E2; --ai-fg: #B42318;
+    --pl-bg: #F3E8FF; --pl-fg: #6941C6;
+    --cp-bg: #FEF9C3; --cp-fg: #854A0E;
+    --tr-bg: #DBEAFE; --tr-fg: #1849A9;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: hsl(220 15% 96%); color: var(--ink); font-family: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif; }
+  a { color: var(--teal); }
+  a:hover { color: hsl(218 100% 45%); }
+  .shell { max-width: 900px; margin: 0 auto; padding: 24px 20px 48px; }
+  .mono { font-family: 'JetBrains Mono', ui-monospace, monospace; }
+
+  .topbar { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 18px; }
+  .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; letter-spacing: -0.02em; font-size: 17px; }
+  .sample-badge { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--teal); background: var(--teal-soft); border: 1px solid hsl(218 100% 87%); padding: 5px 10px; border-radius: 999px; }
+
+  .scores { display: grid; grid-template-columns: 1.2fr 1fr 1fr 1fr 1fr; gap: 10px; margin-bottom: 14px; }
+  .score { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; }
+  .score .lbl { display: flex; align-items: center; gap: 7px; font-size: 12px; font-weight: 600; color: var(--ink-mute); margin-bottom: 8px; }
+  .score .dot { width: 8px; height: 8px; border-radius: 999px; }
+  .score .val { font-size: 26px; font-weight: 800; letter-spacing: -0.02em; line-height: 1; }
+  .score .sub { font-size: 11.5px; color: var(--ink-mute); margin-top: 6px; }
+  .score.overall { background: var(--teal-deep); border-color: var(--teal-deep); color: #fff; }
+  .score.overall .lbl { color: rgba(255,255,255,0.75); }
+  .score.overall .sub { color: rgba(255,255,255,0.65); }
+
+  .cols { display: grid; grid-template-columns: 1fr 300px; gap: 14px; align-items: start; }
+  @media (max-width: 780px) { .cols { grid-template-columns: 1fr; } .scores { grid-template-columns: repeat(2, 1fr); } }
+
+  .essay { background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 28px 30px; }
+  .essay h1 { font-size: 19px; font-weight: 800; letter-spacing: -0.01em; margin: 0 0 4px; }
+  .essay .meta { font-size: 12px; color: var(--ink-mute); margin-bottom: 20px; }
+  .essay p { font-size: 14.5px; line-height: 1.85; color: var(--ink-soft); margin: 0 0 16px; }
+  .hl { border-radius: 4px; padding: 1px 3px; }
+  .hl.ai { background: var(--ai-bg); box-shadow: inset 0 -2px 0 var(--ai-fg); }
+  .hl.pl { background: var(--pl-bg); box-shadow: inset 0 -2px 0 var(--pl-fg); }
+  .hl.cp { background: var(--cp-bg); box-shadow: inset 0 -2px 0 var(--cp-fg); }
+
+  .side { display: flex; flex-direction: column; gap: 12px; }
+  .card { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 16px; }
+  .card h2 { font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-mute); margin: 0 0 12px; }
+
+  .playback { background: var(--teal-deep); border-color: var(--teal-deep); color: #fff; }
+  .playback h2 { color: rgba(255,255,255,0.7); }
+  .pb-row { display: flex; align-items: center; gap: 12px; }
+  .pb-btn { width: 38px; height: 38px; border-radius: 999px; background: rgba(255,255,255,0.14); border: 1px solid rgba(255,255,255,0.28); display: grid; place-items: center; flex-shrink: 0; }
+  .pb-track { flex: 1; height: 6px; border-radius: 999px; background: rgba(255,255,255,0.22); overflow: hidden; }
+  .pb-fill { width: 38%; height: 100%; border-radius: 999px; background: hsl(195 100% 70%); }
+  .pb-note { font-size: 12px; color: rgba(255,255,255,0.72); margin-top: 10px; line-height: 1.5; }
+
+  .flag { display: flex; gap: 10px; border-radius: 10px; padding: 10px 12px; margin-bottom: 8px; font-size: 12.5px; line-height: 1.5; }
+  .flag:last-child { margin-bottom: 0; }
+  .flag .fdot { width: 8px; height: 8px; border-radius: 999px; margin-top: 5px; flex-shrink: 0; }
+  .flag b { display: block; font-size: 12px; margin-bottom: 1px; }
+  .flag.ai { background: var(--ai-bg); color: hsl(6 40% 26%); } .flag.ai b, .flag.ai .fdot { color: var(--ai-fg); background-color: var(--ai-fg); }
+  .flag.ai b { background: none; }
+  .flag.pl { background: var(--pl-bg); color: hsl(269 30% 28%); } .flag.pl .fdot { background: var(--pl-fg); } .flag.pl b { color: var(--pl-fg); }
+  .flag.cp { background: var(--cp-bg); color: hsl(34 35% 24%); } .flag.cp .fdot { background: var(--cp-fg); } .flag.cp b { color: var(--cp-fg); }
+
+  .rubric-row { margin-bottom: 12px; }
+  .rubric-row:last-child { margin-bottom: 0; }
+  .rr-head { display: flex; justify-content: space-between; font-size: 13px; font-weight: 600; margin-bottom: 6px; }
+  .rr-head span:last-child { color: var(--ink-mute); font-weight: 500; }
+  .rr-bar { height: 6px; border-radius: 999px; background: hsl(220 15% 92%); overflow: hidden; }
+  .rr-fill { height: 100%; border-radius: 999px; background: var(--teal); }
+
+  .footnote { text-align: center; font-size: 11.5px; color: var(--ink-mute); margin-top: 22px; }
+</style>
+</head>
+<body>
+<div class="shell">
+
+  <div class="topbar">
+    <div class="brand">
+      <svg width="26" height="26" viewBox="0 0 32 32"><rect width="32" height="32" rx="7" fill="hsl(218 70% 16%)"/><rect x="2.5" y="2.5" width="12.5" height="12.5" rx="1.5" fill="#fff"/><circle cx="8.75" cy="8.75" r="2" fill="hsl(218 70% 16%)"/><circle cx="23.25" cy="8.75" r="2" fill="none" stroke="#fff" stroke-width="1.4"/><rect x="17" y="17" width="12.5" height="12.5" rx="1.5" fill="#fff"/><path d="M19.5 23.5 L22.5 26.2 L27 20.7" stroke="hsl(218 70% 16%)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+      Checkmark Report
+    </div>
+    <span class="sample-badge">Sample</span>
+  </div>
+
+  <div class="scores">
+    <div class="score overall">
+      <div class="lbl">Authentic writing</div>
+      <div class="val">78%</div>
+      <div class="sub">3 passages need review</div>
+    </div>
+    <div class="score">
+      <div class="lbl"><span class="dot" style="background:var(--ai-fg)"></span>AI content</div>
+      <div class="val" style="color:var(--ai-fg)">11%</div>
+      <div class="sub">1 flagged passage</div>
+    </div>
+    <div class="score">
+      <div class="lbl"><span class="dot" style="background:var(--cp-fg)"></span>Copy / Paste</div>
+      <div class="val" style="color:var(--cp-fg)">7%</div>
+      <div class="sub">1 external paste</div>
+    </div>
+    <div class="score">
+      <div class="lbl"><span class="dot" style="background:var(--pl-fg)"></span>Plagiarism</div>
+      <div class="val" style="color:var(--pl-fg)">4%</div>
+      <div class="sub">1 source match</div>
+    </div>
+    <div class="score">
+      <div class="lbl"><span class="dot" style="background:var(--tr-fg)"></span>Transcription</div>
+      <div class="val" style="color:var(--tr-fg)">0%</div>
+      <div class="sub">No flags</div>
+    </div>
+  </div>
+
+  <div class="cols">
+    <div class="essay">
+      <h1>The Printing Press and the Spread of Ideas</h1>
+      <div class="meta mono">Final draft · 486 words · 47 min of writing across 2 sessions</div>
+      <p>Before the printing press, a book was a luxury measured in months of labor. A single copy of a manuscript could take a scribe the better part of a year, which meant that ideas traveled at the pace of the people who could afford them. When Johannes Gutenberg assembled his press in Mainz around 1440, he was not inventing ink or paper or even movable type — he was inventing a way for all three to work together cheaply.</p>
+      <p>The consequences arrived faster than anyone expected. <span class="hl pl" title="Plagiarism — matches an online encyclopedia entry">By 1500, printing presses in operation throughout Western Europe had already produced more than twenty million volumes, a figure that exceeded the total output of European scribes over the previous thousand years.</span> Cities with presses became magnets for scholars, translators, and troublemakers of every kind.</p>
+      <p><span class="hl ai" title="AI content — flagged by AI detection, confirmed by playback (pasted in one block, no typing)">The printing press fundamentally transformed the dissemination of knowledge by democratizing access to information, catalyzing unprecedented intellectual exchange, and laying the essential groundwork for the transformative movements that would follow.</span> My own view is simpler: cheap copies made it harder for any single authority to control what people read.</p>
+      <p>Luther's theses are the famous example, but the quieter story is technical manuals, maps, and grammar books. <span class="hl cp" title="Copy / Paste — pasted from an external document during session 2">Print standardized spelling and typography across regions that had never shared a written norm, and standardized texts made errors visible and correctable in later editions.</span> A mistake in a manuscript died with its copy; a mistake in print could be hunted down across a whole edition.</p>
+      <p>What the press really changed was the economics of attention. Once a text could be reproduced faster than it could be censored, the question shifted from who may write to who will be read — a question we are still answering.</p>
+    </div>
+
+    <div class="side">
+      <div class="card playback">
+        <h2>Writing playback</h2>
+        <div class="pb-row">
+          <span class="pb-btn"><svg width="14" height="14" viewBox="0 0 14 14"><path d="M4 2.5 L11 7 L4 11.5 Z" fill="#fff"/></svg></span>
+          <span class="pb-track"><span class="pb-fill"></span></span>
+          <span class="mono" style="font-size:11px;color:rgba(255,255,255,0.72)">18:04</span>
+        </div>
+        <div class="pb-note">Replay every keystroke, pause, and revision. The flagged AI passage appears as a single 74-word paste at 31:22.</div>
+      </div>
+
+      <div class="card">
+        <h2>Flagged passages</h2>
+        <div class="flag ai"><span class="fdot"></span><span><b>AI content · ¶3</b>74 words inserted in one block with no typing activity.</span></div>
+        <div class="flag cp"><span class="fdot"></span><span><b>Copy / Paste · ¶4</b>Pasted from an external document during session 2.</span></div>
+        <div class="flag pl"><span class="fdot"></span><span><b>Plagiarism · ¶2</b>92% match with an online encyclopedia entry.</span></div>
+      </div>
+
+      <div class="card">
+        <h2>Rubric grading</h2>
+        <div class="rubric-row">
+          <div class="rr-head"><span>Thesis &amp; argument</span><span>8 / 10</span></div>
+          <div class="rr-bar"><div class="rr-fill" style="width:80%"></div></div>
+        </div>
+        <div class="rubric-row">
+          <div class="rr-head"><span>Use of evidence</span><span>7 / 10</span></div>
+          <div class="rr-bar"><div class="rr-fill" style="width:70%"></div></div>
+        </div>
+        <div class="rubric-row">
+          <div class="rr-head"><span>Organization &amp; clarity</span><span>9 / 10</span></div>
+          <div class="rr-bar"><div class="rr-fill" style="width:90%"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footnote">This is a static sample. Real reports are interactive — hover any highlight for its evidence, and scrub the playback timeline.</div>
+</div>
+</body>
+</html>
