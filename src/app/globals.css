@@ -327,6 +327,9 @@ html {
 .ck-redesign .btn-coral:hover { background: #c95e3f; }
 .ck-redesign .btn-ghost { background: transparent; color: var(--ink); border: 1px solid var(--line-strong); }
 .ck-redesign .btn-ghost:hover { background: var(--bg-tint); }
+/* Ghost button on dark backgrounds (hero, CTA): the default hover turns the
+   background near-white under light text — use a translucent white instead. */
+.ck-redesign .btn-ghost-dark:hover { background: rgba(255, 255, 255, 0.14); }
 
 .ck-redesign .chip { display: inline-flex; align-items: center; gap: 8px; padding: 6px 12px; border-radius: 999px; background: var(--bg-elev); border: 1px solid var(--line); font-size: 13px; font-weight: 500; color: var(--ink-soft); }
 
@@ -467,7 +470,7 @@ html {
 /* ── Sample-report modal ── */
 @layer components {
   .ck-redesign .report-modal-overlay { position: fixed; inset: 0; z-index: 1000; display: flex; align-items: center; justify-content: center; padding: 32px; background: rgba(8, 16, 38, 0.62); -webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px); animation: ck-rmFade .22s ease both; }
-  .ck-redesign .report-modal { position: relative; display: flex; flex-direction: column; width: min(940px, 96vw); height: min(86vh, 940px); background: #fff; border-radius: 14px; overflow: hidden; box-shadow: 0 40px 90px -20px rgba(0, 0, 0, 0.5); animation: ck-rmPop .26s cubic-bezier(.22, 1, .36, 1) both; }
+  .ck-redesign .report-modal { position: relative; display: flex; flex-direction: column; width: min(1240px, 96vw); height: min(88vh, 980px); background: #fff; border-radius: 14px; overflow: hidden; box-shadow: 0 40px 90px -20px rgba(0, 0, 0, 0.5); animation: ck-rmPop .26s cubic-bezier(.22, 1, .36, 1) both; }
   .ck-redesign .report-modal-bar { display: flex; align-items: center; justify-content: space-between; padding: 12px 14px 12px 18px; border-bottom: 1px solid #e5e7eb; background: #f9fafb; flex-shrink: 0; }
   .ck-redesign .report-modal-title { display: flex; align-items: center; gap: 10px; font-family: var(--font-mono); font-size: 13px; letter-spacing: 0.02em; color: #4b5563; }
   .ck-redesign .report-modal-dot { width: 9px; height: 9px; border-radius: 50%; background: #22c55e; }

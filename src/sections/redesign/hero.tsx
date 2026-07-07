@@ -167,7 +167,7 @@ export function Hero() {
               >
                 Try Yourself <IconArrow size={16} />
               </a>
-              <a href="/contact" className="btn btn-ghost text-white border-white/30">
+              <a href="/contact" className="btn btn-ghost btn-ghost-dark text-white border-white/30">
                 Contact Us <IconArrow size={14} />
               </a>
             </div>
