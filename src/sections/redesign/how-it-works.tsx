@@ -1,15 +1,25 @@
 "use client";
 
 /* Tabbed 3-step "how it works" with animated SVG pipeline visuals and a
-   sample-report modal. Ported from how-it-works.js; the prototype's step-3
-   image-slot is replaced with a report placeholder + the folder button. */
+   sample-report modal.
+
+   Changes in this revision:
+   - Tabs are visually connected to the panel (see globals.css .hiw-tab rules).
+   - The "STEP N OF 3" label is removed from the detail block.
+   - Step 3 is a looping skeleton "report replay": a report page with colored
+     flag lines and margin comment cards; a playback box pops in, the essay
+     "types" back line by line, then the box fades and the loop restarts.
+     No real text — all skeleton bars.
+   - The sample-report modal now loads the app's public example report. */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { SectionHead } from "./section-head";
 
 const h = React.createElement;
-const LIVE_REPORT_URL = "https://teach.checkmarkplagiarism.com/demo";
+// Baked-in static sample report (public/sample-report.html) — no runtime
+// dependency on the Laravel app.
+const LIVE_REPORT_URL = "/sample-report.html";
 
 // Brand-accurate file icons on a 0 0 48 48 grid.
 function iconWord() {
@@ -55,94 +65,64 @@ const SCANS = [
   { label: "Rubric grading", bg: "hsl(158 44% 91%)", fg: "hsl(160 52% 30%)" },
 ];
 
-// Step 1: an auto-flipping carousel deck feeding the Checkmark pipeline.
+// Step 1: an infinite upload loop, pure CSS. Three cards cycle
+// back -> mid -> front -> fly up into the cloud (hiw-cycle keyframes,
+// staggered by -2.3s) so there are always more cards in the stack; a
+// checkmark pops on the cloud as each card lands (hiw-check-loop).
 function Step1Visual() {
-  const CAROUSEL = [
-    { name: "Google Doc", sub: "Shared link", icon: iconDocs },
-    { name: "Microsoft Word", sub: ".doc / .docx", icon: iconWord },
-    { name: "LMS Text Box", sub: "Native capture", icon: iconLms },
-  ];
-  const [idx, setIdx] = useState(0);
-  const [shuffling, setShuffling] = useState<number | null>(null);
-  const prevRef = useRef(0);
-  useEffect(() => {
-    const id = setInterval(() => setIdx((i) => (i + 1) % CAROUSEL.length), 2800);
-    return () => clearInterval(id);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-  useEffect(() => {
-    const leaving = prevRef.current;
-    prevRef.current = idx;
-    if (leaving === idx) return;
-    setShuffling(leaving);
-    const t = setTimeout(() => setShuffling(null), 520);
-    return () => clearTimeout(t);
-  }, [idx]);
-  const line = "M336 230 L 894 230";
-  const dot = (begin: string, key: string) =>
-    h("circle", { key, r: 6.5, fill: "var(--teal)", opacity: 0.9 }, h("animateMotion", { dur: "1.9s", begin, repeatCount: "indefinite", path: line, calcMode: "linear" }));
-  const L = CAROUSEL.length;
-  let deck = CAROUSEL.map((c, i) => ({ c, i, depth: (i - idx + L) % L })).sort((a, b) => b.depth - a.depth);
-  if (shuffling != null) {
-    deck = deck.filter((x) => x.i !== shuffling).concat(deck.filter((x) => x.i === shuffling));
-  }
-  const card = (item: any) => {
-    const d = item.depth;
-    const tx = -d * 30,
-      ty = -d * 24,
-      sc = 1 - d * 0.085;
-    const isShuffling = item.i === shuffling;
-    const fill = d === 0 ? "#ffffff" : d === 1 ? "#EEF3FA" : "#DFE7F2";
-    const shadow =
-      d === 0 ? "drop-shadow(0 18px 30px rgba(20,30,60,0.18))" : d === 1 ? "drop-shadow(0 11px 20px rgba(20,30,60,0.12))" : "drop-shadow(0 6px 12px rgba(20,30,60,0.08))";
-    return h(
-      "g",
-      {
-        key: "card" + item.i,
-        className: "hiw-deck-card" + (isShuffling ? " hiw-shuffle" : ""),
-        style: { transformBox: "fill-box", transformOrigin: "center center", transform: "translate(" + tx + "px, " + ty + "px) scale(" + sc + ")", filter: isShuffling ? "drop-shadow(0 22px 34px rgba(20,30,60,0.22))" : shadow },
-      },
-      h("rect", { x: 108, y: 70, width: 224, height: 320, rx: 26, fill, stroke: "rgba(20,40,80,0.10)", strokeWidth: 1.5 }),
-      h("rect", { x: 108.75, y: 70.75, width: 222.5, height: 158, rx: 25, fill: "url(#hiwSheen)" }),
-      h("svg", { x: 136, y: 146, width: 168, height: 168, viewBox: "0 0 48 48" }, item.c.icon())
+  const cardStyle = (delay: string): any => ({
+    position: "absolute",
+    left: "50%",
+    top: 0,
+    width: 176,
+    height: 236,
+    marginLeft: -88,
+    borderRadius: 22,
+    background: "#ffffff",
+    border: "1.5px solid rgba(20,40,80,0.10)",
+    boxShadow: "0 14px 26px rgba(20,30,60,0.14)",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: 18,
+    animation: "hiw-cycle 6.9s ease-in-out " + delay + " infinite",
+  });
+  const skeleton = () =>
+    h(
+      "div",
+      { style: { display: "flex", flexDirection: "column", alignItems: "center", gap: 8 } },
+      h("span", { style: { display: "block", width: 92, height: 8, borderRadius: 4, background: "var(--line-strong)", opacity: 0.6 } }),
+      h("span", { style: { display: "block", width: 60, height: 8, borderRadius: 4, background: "var(--line-strong)", opacity: 0.45 } })
     );
-  };
+  const card = (delay: string, icon: () => any[], key: string) =>
+    h("div", { key, style: cardStyle(delay) }, h("svg", { width: 84, height: 84, viewBox: "0 0 48 48" }, icon()), skeleton());
+  const puff = (l: number, t: number, w: number, hh: number, key: string) =>
+    h("span", { key, style: { position: "absolute", left: l, top: t, width: w, height: hh, borderRadius: Math.min(w, hh) * 0.46, background: "#ffffff", display: "block" } });
   return h(
     "div",
     { className: "hiw-art" },
-    h("div", { "aria-hidden": "true", style: { position: "absolute", inset: 0, background: "radial-gradient(70% 80% at 58% 50%, rgba(46,123,255,0.10), transparent 70%)" } }),
+    h("div", { "aria-hidden": "true", style: { position: "absolute", inset: 0, background: "radial-gradient(70% 80% at 50% 34%, rgba(46,123,255,0.12), transparent 70%)" } }),
+    card("-4.6s", iconDocs, "a"),
+    card("-2.3s", iconWord, "b"),
+    card("0s", iconLms, "c"),
     h(
-      "svg",
-      { viewBox: "0 0 1100 460", preserveAspectRatio: "xMidYMid meet", style: { position: "absolute", inset: 0, width: "100%", height: "100%" } },
-      h(
-        "defs",
-        null,
-        h("linearGradient", { id: "hiwSheen", x1: "0", y1: "0", x2: "0", y2: "1" }, h("stop", { offset: "0%", stopColor: "#ffffff", stopOpacity: 0.55 }), h("stop", { offset: "100%", stopColor: "#ffffff", stopOpacity: 0 }))
-      ),
-      h("path", { d: "M336 230 L 620 230", fill: "none", stroke: "var(--line-strong)", strokeWidth: 11, strokeLinecap: "round", opacity: 0.55 }),
-      h("path", { d: "M620 230 L 894 230", fill: "none", stroke: "var(--teal)", strokeWidth: 13, strokeLinecap: "round" }),
-      dot("0s", "da"),
-      dot("0.47s", "db"),
-      dot("0.95s", "dc"),
-      dot("1.42s", "dd"),
-      h("circle", { cx: 336, cy: 230, r: 9, fill: "var(--line-strong)" }),
-      h("circle", { cx: 620, cy: 230, r: 11, fill: "var(--teal)" }),
-      deck.map(card),
-      h(
-        "svg",
-        { x: 884, y: 156, width: 148, height: 148, viewBox: "0 0 32 32" },
-        h("rect", { width: 32, height: 32, rx: 7, fill: "var(--teal-deep)" }),
-        h("rect", { x: 2.5, y: 2.5, width: 12.5, height: 12.5, rx: 1.5, fill: "#fff" }),
-        h("circle", { cx: 8.75, cy: 8.75, r: 2, fill: "var(--teal-deep)" }),
-        h("circle", { cx: 23.25, cy: 8.75, r: 2, fill: "none", stroke: "#fff", strokeWidth: 1.4 }),
-        h("rect", { x: 17, y: 17, width: 12.5, height: 12.5, rx: 1.5, fill: "#fff" }),
-        h("path", { d: "M19.5 23.5 L22.5 26.2 L27 20.7", stroke: "var(--teal-deep)", strokeWidth: 2.4, strokeLinecap: "round", strokeLinejoin: "round", fill: "none" })
-      )
+      "div",
+      { style: { position: "absolute", left: "50%", top: 30, width: 340, height: 104, marginLeft: -170, zIndex: 20, filter: "drop-shadow(0 16px 30px rgba(46,123,255,0.28)) drop-shadow(0 2px 6px rgba(20,40,80,0.10))" } },
+      puff(0, 42, 110, 56, "p1"),
+      puff(66, 8, 134, 88, "p2"),
+      puff(158, 24, 122, 70, "p3"),
+      puff(238, 44, 100, 52, "p4")
+    ),
+    h(
+      "div",
+      { style: { position: "absolute", left: "50%", top: 62, width: 46, height: 46, marginLeft: -23, zIndex: 25, borderRadius: 999, background: "var(--teal)", display: "grid", placeItems: "center", boxShadow: "0 10px 22px -8px rgba(46,123,255,0.55)", opacity: 0, animation: "hiw-check-loop 2.3s ease 2.2s infinite" } },
+      h("svg", { width: 24, height: 24, viewBox: "0 0 24 24" }, h("path", { d: "M5 12.5 L10 17.5 L19 7.5", stroke: "#fff", strokeWidth: 3, strokeLinecap: "round", strokeLinejoin: "round", fill: "none" }))
     )
   );
 }
 
-// Step 2: document on the left, scan beam, four detections fanning out.
+// Step 2: document on the left, scan beam, five detections fanning out.
 function Step2Visual() {
   const DOC = { x: 70, y: 92, w: 360, h: 276 };
   const LINES = [
@@ -209,6 +189,96 @@ function Step2Visual() {
   );
 }
 
+// Step 3: skeleton report replay. All skeleton bars — no real text.
+// Loop: playback box pops in → lines "type" out (flag segments in scan
+// colors, margin comments land as their flag appears) → box fades → restart.
+const R_LINES: { segs: { w: number; c?: string }[] }[] = [
+  { segs: [{ w: 88 }] },
+  { segs: [{ w: 30 }, { w: 48, c: "#FEE2E2" }] },
+  { segs: [{ w: 96 }] },
+  { segs: [{ w: 56 }, { w: 28, c: "#F3E8FF" }] },
+  { segs: [{ w: 90 }] },
+  { segs: [{ w: 20, c: "#DBEAFE" }, { w: 64 }] },
+  { segs: [{ w: 84 }] },
+  { segs: [{ w: 40 }, { w: 32, c: "#FEF9C3" }] },
+  { segs: [{ w: 62 }] },
+];
+const R_COMMENTS = [
+  { line: 1, bg: "#FEE2E2", fg: "#B42318", top: 117 },
+  { line: 3, bg: "#F3E8FF", fg: "#6941C6", top: 181 },
+  { line: 5, bg: "#DBEAFE", fg: "#1849A9", top: 245 },
+  { line: 7, bg: "#FEF9C3", fg: "#854A0E", top: 309 },
+];
+
+function Step3Visual() {
+  const [p, setP] = useState(0);
+  useEffect(() => {
+    if (typeof window !== "undefined" && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      setP(0.85); // static, fully-typed frame
+      return;
+    }
+    const T = 9000;
+    const start = performance.now();
+    const id = setInterval(() => setP(((performance.now() - start) % T) / T), 80);
+    return () => clearInterval(id);
+  }, []);
+  const cl = (v: number) => Math.max(0, Math.min(1, v));
+  const pIn = cl(p / 0.06); // playback box entrance
+  const tp = cl((p - 0.08) / 0.72); // typing progress
+  const out = cl((p - 0.9) / 0.06); // everything fades before restart
+  const n = R_LINES.length;
+  const boxOp = pIn * (1 - out);
+
+  const lines = R_LINES.map((ln, i) => {
+    const lp = cl(tp * n - i);
+    const total = ln.segs.reduce((a, s) => a + s.w, 0);
+    let acc = 0;
+    const segs = ln.segs.map((s, j) => {
+      const cs = acc / total;
+      acc += s.w;
+      const sp = cl((lp - cs) / (acc / total - cs));
+      return h("span", { key: j, style: { display: "block", width: s.w * sp + "%", height: 10, borderRadius: 5, background: s.c || "var(--line-strong)", opacity: s.c ? 0.95 : 0.6, flexShrink: 0 } });
+    });
+    const caret = lp > 0 && lp < 1 ? h("span", { key: "crt", style: { display: "block", width: 3, height: 14, borderRadius: 1.5, background: "var(--teal)", flexShrink: 0 } }) : null;
+    return h("div", { key: "rl" + i, style: { display: "flex", alignItems: "center", gap: 6, height: 10, marginBottom: 22 } }, segs, caret);
+  });
+
+  return h(
+    "div",
+    { className: "hiw-art" },
+    h("div", { "aria-hidden": "true", style: { position: "absolute", inset: 0, background: "radial-gradient(70% 80% at 45% 50%, rgba(46,123,255,0.10), transparent 70%)" } }),
+    h(
+      "div",
+      { style: { position: "absolute", left: 44, top: 40, bottom: 40, width: "52%", background: "var(--bg-elev)", border: "1px solid var(--line-strong)", borderRadius: 18, padding: 26, boxSizing: "border-box", boxShadow: "0 18px 40px -24px rgba(20,40,80,0.25)" } },
+      h("div", { style: { width: "42%", height: 14, borderRadius: 7, background: "var(--line-strong)", opacity: 0.75, marginBottom: 24 } }),
+      h("div", { style: { opacity: 1 - out } }, lines)
+    ),
+    R_COMMENTS.map((c, k) => {
+      const on = tp * n >= c.line + 0.95;
+      const op = on ? 1 - out : 0;
+      return h(
+        "div",
+        { key: "cm" + k },
+        h("div", { style: { position: "absolute", left: "calc(52% + 46px)", top: c.top + 23, width: 28, height: 2, background: c.fg, opacity: op * 0.4, transition: "opacity .35s ease" } }),
+        h(
+          "div",
+          { style: { position: "absolute", left: "calc(52% + 74px)", top: c.top, right: 44, maxWidth: 260, borderRadius: 12, background: c.bg, padding: "12px 14px", boxSizing: "border-box", opacity: op, transform: on ? "translateY(0)" : "translateY(8px)", transition: "opacity .35s ease, transform .35s ease", boxShadow: "0 10px 22px -14px rgba(20,40,80,0.28)" } },
+          h("div", { style: { display: "flex", alignItems: "center", gap: 7, marginBottom: 9 } }, h("span", { style: { width: 8, height: 8, borderRadius: 999, background: c.fg } }), h("span", { style: { width: "38%", height: 6, borderRadius: 3, background: c.fg, opacity: 0.55 } })),
+          h("div", { style: { width: "100%", height: 6, borderRadius: 3, background: c.fg, opacity: 0.28, marginBottom: 6 } }),
+          h("div", { style: { width: "64%", height: 6, borderRadius: 3, background: c.fg, opacity: 0.28 } })
+        )
+      );
+    }),
+    h(
+      "div",
+      { style: { position: "absolute", left: "27%", bottom: 24, width: 320, borderRadius: 16, background: "var(--teal-deep)", padding: "16px 18px", boxSizing: "border-box", display: "flex", alignItems: "center", gap: 14, boxShadow: "0 26px 48px -18px rgba(10,30,70,0.5)", opacity: boxOp, transform: "translateY(" + (1 - pIn) * 16 + "px) scale(" + (0.9 + 0.1 * pIn) + ")", transformOrigin: "center bottom" } },
+      h("span", { style: { width: 34, height: 34, borderRadius: 999, background: "rgba(255,255,255,0.14)", border: "1px solid rgba(255,255,255,0.25)", display: "grid", placeItems: "center", flexShrink: 0 } }, h("span", { style: { width: 0, height: 0, borderLeft: "9px solid #fff", borderTop: "6px solid transparent", borderBottom: "6px solid transparent", marginLeft: 3 } })),
+      h("div", { style: { flex: 1, height: 6, borderRadius: 999, background: "rgba(255,255,255,0.22)", overflow: "hidden" } }, h("div", { style: { width: tp * 100 + "%", height: "100%", borderRadius: 999, background: "hsl(195 100% 70%)" } })),
+      h("span", { style: { width: 34, height: 6, borderRadius: 3, background: "rgba(255,255,255,0.35)", flexShrink: 0 } })
+    )
+  );
+}
+
 const STEPS: any[] = [
   {
     n: 1,
@@ -244,6 +314,7 @@ const STEPS: any[] = [
   {
     n: 3,
     title: "View the report",
+    visual: Step3Visual,
     slotId: "hiw-report",
     blurb: "Everything lands in one place, ready to act on.",
     detail: () => h("div", { className: "text-[15px] leading-[1.6] text-ink-soft max-w-[560px]" }, "Flagged passages, the writing playback, and per-category scores, side by side, so you can respond while it still makes a difference."),
@@ -284,7 +355,6 @@ export function HowItWorks() {
   const detail = h(
     "div",
     { key: "d" + active, className: "hiw-detail" },
-    h("div", { className: "flex items-baseline gap-3 mb-3" }, h("span", { className: "text-[11px] font-bold font-mono tracking-[0.08em] uppercase text-teal" }, "Step " + step.n + " of 3")),
     h("p", { className: "text-[16px] leading-[1.6] text-ink-soft mt-0 mb-4 text-pretty" }, step.blurb),
     step.detail()
   );
@@ -294,18 +364,6 @@ export function HowItWorks() {
     { className: "hiw-picture" },
     STEPS.map((s, i) => {
       const isReport = s.slotId === "hiw-report";
-      const content = s.visual
-        ? h(s.visual)
-        : h(
-            "div",
-            { className: "hiw-art grid place-items-center", style: { background: "var(--bg-elev)" } },
-            h(
-              "div",
-              { style: { textAlign: "center", maxWidth: 360, padding: 24 } },
-              h("div", { className: "display", style: { fontSize: 22, color: "var(--ink)", marginBottom: 8 } }, "Your full report"),
-              h("p", { style: { fontSize: 14, color: "var(--ink-soft)", lineHeight: 1.5, margin: 0 } }, "Flagged passages, the writing playback, and per-category scores, in one place, ready to act on.")
-            )
-          );
       const overlay = isReport
         ? h(
             "button",
@@ -314,7 +372,7 @@ export function HowItWorks() {
             h("span", { className: "fb-folder" }, h("span", { className: "fb-tab" }), h("span", { className: "fb-label" }, "View Sample Report"))
           )
         : null;
-      return h("div", { key: s.slotId || "step" + i, className: i === active ? "block relative" : "hidden" }, content, overlay);
+      return h("div", { key: s.slotId || "step" + i, className: i === active ? "block relative" : "hidden" }, h(s.visual), overlay);
     })
   );
 
@@ -342,7 +400,7 @@ export function HowItWorks() {
             h(
               "div",
               { className: "report-modal-bar" },
-              h("div", { className: "report-modal-title" }, h("span", { className: "report-modal-dot" }), "Sample report · Analytics export"),
+              h("div", { className: "report-modal-title" }, h("span", { className: "report-modal-dot" }), "Sample report"),
               h("button", { type: "button", className: "report-modal-close", onClick: closeReport, "aria-label": "Close" }, "✕")
             ),
             h("iframe", { className: "report-modal-frame", src: LIVE_REPORT_URL, title: "Sample report", allowFullScreen: true })
