@@ -1465,12 +1465,18 @@ Modern pedagogical approaches have evolved significantly with the integration of
     });
   })();
 
-  function openModal() {
+  function openModal(initialTime) {
     P.gen++; clearTimeout(P.timer); stopTicker();
     P.content = ""; P.cursor = 0; P.step = -1; P.elapsed = 0; P.inter = 0;
     P.playing = false; P.complete = false; P.dragging = false;
     playIcon.setAttribute("d", PLAY_D);
-    applyTo(-1);
+    if (typeof initialTime === "number" && initialTime > 0) {
+      P.step = findStep(initialTime);
+      applyTo(P.step);
+      P.inter = P.elapsed;
+    } else {
+      applyTo(-1);
+    }
     modalRoot.style.display = "";
   }
   function closeModal() {
@@ -1670,6 +1676,144 @@ Modern pedagogical approaches have evolved significantly with the integration of
       if (w) w.classList.remove("Mui-focused");
     }
   });
+
+  /* ── Event-card <-> highlight selection sync + per-event playback seek ──
+     Mirrors the app: spans get *-selected classes (styles already in the app
+     CSS); grading/feedback highlights also bump their inline rgba alpha
+     0.2 -> 0.4; cards swap bg-background for bg-white+shadow. */
+  var SEL = null;
+  var SEL_CFG = {
+    paste: { attr: "data-paste-id", cls: "pasted-highlight-selected", card: "pasted-" },
+    copied: { attr: "data-copied-id", cls: "copied-highlight-selected", card: "copied-" },
+    plagiarism: { attr: "data-plagiarism-id", cls: "plagiarism-underline-selected", card: "plagiarism-" },
+    ai: { attr: "data-ai-id", cls: "ai-underline-selected", card: "ai-" },
+    grading: { attr: "data-grading-id", cls: "grading-underline-selected", card: "grading-" },
+    ckfb: { attr: "data-ck-fb-hl", cls: "grading-underline-selected", card: null }
+  };
+  function allRoots() { return [states.a, states.b, states.b2]; }
+  function setAlpha(el, a) {
+    var st = el.getAttribute("style") || "";
+    el.setAttribute("style", st.replace(/rgba\((\d+),\s*(\d+),\s*(\d+),\s*[\d.]+\)/, "rgba($1, $2, $3, " + a + ")"));
+  }
+  function cardFor(root, type, id) {
+    var sb = sidebarOf(root);
+    if (!sb) return null;
+    if (type === "ckfb") return sb.querySelector('[data-ck-fb="' + id + '"]');
+    return sb.querySelector('[id="' + SEL_CFG[type].card + id + '"]');
+  }
+  function applySel(on) {
+    if (!SEL) return;
+    var cfg = SEL_CFG[SEL.type];
+    allRoots().forEach(function (root) {
+      root.querySelectorAll("[" + cfg.attr + '="' + SEL.id + '"]').forEach(function (sp) {
+        sp.classList[on ? "add" : "remove"](cfg.cls);
+        if (SEL.type === "grading" || SEL.type === "ckfb") setAlpha(sp, on ? 0.4 : 0.2);
+      });
+      var card = cardFor(root, SEL.type, SEL.id);
+      if (card) {
+        card.classList[on ? "remove" : "add"]("bg-background");
+        card.classList[on ? "add" : "remove"]("bg-white");
+        card.classList[on ? "add" : "remove"]("shadow");
+      }
+    });
+  }
+  function clearSel() { applySel(false); SEL = null; }
+  function selectFlag(root, type, id, source) {
+    if (SEL && SEL.type === type && String(SEL.id) === String(id)) { clearSel(); return; }
+    clearSel();
+    SEL = { type: type, id: id };
+    applySel(true);
+    if (source === "span") {
+      var card = cardFor(root, type, id);
+      if (card) card.scrollIntoView({ block: "nearest", behavior: "smooth" });
+    } else {
+      var sp = root.querySelector("[" + SEL_CFG[type].attr + '="' + id + '"]');
+      if (sp) sp.scrollIntoView({ block: "center", behavior: "smooth" });
+    }
+  }
+
+  allRoots().forEach(function (root) {
+    var essay = essayOf(root);
+    if (essay) essay.addEventListener("click", function (e) {
+      var s = window.getSelection();
+      if (s && !s.isCollapsed) return; // that was a text selection, not a click
+      var span = e.target.closest("span[data-paste-id],span[data-copied-id],span[data-grading-id],span[data-plagiarism-id],span[data-ai-id],span[data-ck-fb-hl]");
+      if (!span || !essay.contains(span)) { clearSel(); return; }
+      if (span.hasAttribute("data-ck-fb-hl")) return selectFlag(root, "ckfb", span.getAttribute("data-ck-fb-hl"), "span");
+      var order = ["paste", "copied", "grading", "plagiarism", "ai"];
+      for (var i = 0; i < order.length; i++) {
+        var v = span.getAttribute(SEL_CFG[order[i]].attr);
+        if (v !== null) return selectFlag(root, order[i], v, "span");
+      }
+    });
+
+    var sb = sidebarOf(root);
+    if (sb) sb.addEventListener("click", function (e) {
+      if (e.target.closest("button")) return; // play/pencil/trash/etc. have their own handlers
+      var card = e.target.closest('[id^="pasted-"],[id^="copied-"],[id^="ai-"],[id^="plagiarism-"],[id^="grading-"],[data-ck-fb]');
+      if (!card || !sb.contains(card)) return;
+      if (card.hasAttribute("data-ck-fb")) {
+        var item = fbItems[card.getAttribute("data-ck-fb")];
+        if (!item || item.text == null) return; // ignore while editing
+        return selectFlag(root, "ckfb", card.getAttribute("data-ck-fb"), "card");
+      }
+      var id = card.id;
+      var type = id.indexOf("pasted-") === 0 ? "paste"
+        : id.indexOf("copied-") === 0 ? "copied"
+        : id.indexOf("ai-") === 0 ? "ai"
+        : id.indexOf("plagiarism-") === 0 ? "plagiarism" : "grading";
+      var flagId = type === "grading" ? id.slice(8) : id.slice(id.lastIndexOf("-") + 1);
+      selectFlag(root, type, flagId, "card");
+    });
+  });
+
+  /* Per-event playback: play icons on External Paste / Transcribed cards
+     seek the modal to the event (paste rewinds 5 edits; copied backs up 1),
+     exactly like essay-viewer.tsx. */
+  function seekTimeFor(type, startIndex) {
+    var first = -1;
+    for (var i = 0; i < steps.length; i++) {
+      var ev = steps[i];
+      if (ev.t === "t" && ev.o === "i" && ev.i !== undefined && ev.i >= startIndex) { first = i; break; }
+    }
+    var target;
+    if (type === "paste") {
+      target = first > 0 ? first : 0;
+      if (first > 0) {
+        var seen = 0;
+        for (var j = first - 1; j >= 0; j--) {
+          if (steps[j].t === "t") { seen++; target = j; if (seen >= 5) break; }
+        }
+      }
+    } else {
+      if (first === -1) return 0;
+      target = first > 0 ? first - 1 : 0;
+    }
+    var t = 0;
+    for (var k = 0; k < target; k++) t += steps[k].d || 0;
+    return t;
+  }
+  (function () {
+    var sb = sidebarOf(states.a);
+    if (!sb) return;
+    sb.querySelectorAll('[id^="pasted-"], [id^="copied-"], [id^="ai-"], [id^="plagiarism-"]').forEach(function (card) {
+      var isPaste = card.id.indexOf("pasted-") === 0;
+      var attr = isPaste ? "paste" : card.id.slice(0, card.id.lastIndexOf("-"));
+      var flagId = card.id.slice(card.id.lastIndexOf("-") + 1);
+      card.querySelectorAll("button").forEach(function (btn) {
+        var p = btn.querySelector("svg path");
+        var d = ((p && p.getAttribute("d")) || "").toLowerCase();
+        if (d.indexOf("m10 16.5") !== 0) return;
+        btn.addEventListener("click", function (e) {
+          e.stopPropagation();
+          var span = essayOf(states.a).querySelector("[data-" + attr + '-id="' + flagId + '"]');
+          var startIndex = span ? parseInt(span.getAttribute("data-start-index") || "0", 10) : 0;
+          // paste rewinds 5 edits for run-up; everything else backs up 1 event
+          openModal(seekTimeFor(isPaste ? "paste" : "copied", startIndex));
+        });
+      });
+    });
+  })();
 })();
 </script>
 </body>
