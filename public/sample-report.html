@@ -9,8 +9,9 @@
   https://teach.checkmarkplagiarism.com/example-report on 2026-07-07.
   Regenerate with the assembler if the app's report UI changes:
   the page embeds three captured view states (detection / rubric expanded /
-  rubric collapsed), the app CSS bundle, MUI emotion styles, and a vanilla-JS
-  port of PlaybackModal driving the real per-keystroke playback data.
+  rubric collapsed), the app CSS bundle, MUI emotion styles, and vanilla-JS
+  ports of PlaybackModal (real per-keystroke playback data) and the
+  highlight-to-add-feedback flow (grading modes).
 -->
 <link rel="preconnect" href="https://fonts.bunny.net">
 <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet">
@@ -334,6 +335,778 @@ label[data-shrink="false"] + .MuiInputBase-formControl .css-mzi2oq:focus::-webki
 }
 .css-5uxdyx.Mui-active { box-shadow: rgba(25, 118, 210, 0.16) 0px 0px 0px 14px; }
 .css-fyswvn { margin: 0px; font-family: Roboto, Helvetica, Arial, sans-serif; font-weight: 400; font-size: 1rem; line-height: 1.5; letter-spacing: 0.00938em; }
+.picker-dialog-frame { width: 100%; height: 100%; border: 0px; overflow: hidden; }
+.picker-dialog-bg { position: absolute; top: 0px; left: 0px; background-color: rgb(255, 255, 255); z-index: 1000; }
+.picker-dialog { position: absolute; top: 0px; left: 0px; background-color: rgb(255, 255, 255); border: 1px solid rgb(172, 172, 172); width: auto; padding: 0px; z-index: 1001; overflow: auto; box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 16px; }
+.picker-dialog-content { height: 100%; font-size: 0px; padding: 0px; }
+.picker-dialog-buttons, .picker-dialog-title { display: none; }
+#nprogress { pointer-events: none; }
+#nprogress .bar { background: rgb(75, 85, 99); position: fixed; z-index: 1031; top: 0px; left: 0px; width: 100%; height: 2px; }
+#nprogress .peg { display: block; position: absolute; right: 0px; width: 100px; height: 100%; box-shadow: rgb(75, 85, 99) 0px 0px 10px, rgb(75, 85, 99) 0px 0px 5px; opacity: 1; transform: rotate(3deg) translate(0px, -4px); }
+#nprogress .spinner { display: block; position: fixed; z-index: 1031; top: 15px; right: 15px; }
+#nprogress .spinner-icon { width: 18px; height: 18px; box-sizing: border-box; border-width: 2px; border-style: solid; border-color: rgb(75, 85, 99) transparent transparent rgb(75, 85, 99); border-image: initial; border-radius: 50%; animation: 400ms linear 0s infinite normal none running nprogress-spinner; }
+.nprogress-custom-parent { overflow: hidden; position: relative; }
+.nprogress-custom-parent #nprogress .spinner, .nprogress-custom-parent #nprogress .bar { position: absolute; }
+@keyframes nprogress-spinner { 
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+@-webkit-keyframes mui-auto-fill { 
+  0% { display: block; }
+}
+@keyframes mui-auto-fill { 
+  0% { display: block; }
+}
+@-webkit-keyframes mui-auto-fill-cancel { 
+  0% { display: block; }
+}
+@keyframes mui-auto-fill-cancel { 
+  0% { display: block; }
+}
+@-webkit-keyframes mui-auto-fill { 
+  0% { display: block; }
+}
+@keyframes mui-auto-fill { 
+  0% { display: block; }
+}
+@-webkit-keyframes mui-auto-fill-cancel { 
+  0% { display: block; }
+}
+@keyframes mui-auto-fill-cancel { 
+  0% { display: block; }
+}
+.css-16lckxp { color: rgba(0, 0, 0, 0.6); }
+.css-16lckxp.Mui-disabled { color: rgba(0, 0, 0, 0.26); }
+.css-16lckxp:hover { background-color: rgba(25, 118, 210, 0.04); }
+.css-16lckxp.Mui-checked { color: rgb(25, 118, 210); }
+@media (hover: none) {
+  .css-16lckxp:hover { background-color: transparent; }
+}
+.css-1at2ito { padding: 9px; border-radius: 50%; color: rgba(0, 0, 0, 0.6); }
+.css-1at2ito.Mui-disabled { color: rgba(0, 0, 0, 0.26); }
+.css-1at2ito:hover { background-color: rgba(25, 118, 210, 0.04); }
+.css-1at2ito.Mui-checked { color: rgb(25, 118, 210); }
+@media (hover: none) {
+  .css-1at2ito:hover { background-color: transparent; }
+}
+.css-6m95b7 { display: inline-flex; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; position: relative; box-sizing: border-box; -webkit-tap-highlight-color: transparent; background-color: transparent; outline: 0px; border: 0px; margin: 0px; cursor: pointer; user-select: none; vertical-align: middle; appearance: none; text-decoration: none; padding: 9px; border-radius: 50%; color: rgba(0, 0, 0, 0.6); }
+.css-6m95b7.Mui-disabled { pointer-events: none; cursor: default; }
+@media print {
+  .css-6m95b7 { print-color-adjust: exact; }
+}
+.css-6m95b7.Mui-disabled { color: rgba(0, 0, 0, 0.26); }
+.css-6m95b7:hover { background-color: rgba(25, 118, 210, 0.04); }
+.css-6m95b7.Mui-checked { color: rgb(25, 118, 210); }
+@media (hover: none) {
+  .css-6m95b7:hover { background-color: transparent; }
+}
+.css-j8yymo { cursor: inherit; position: absolute; opacity: 0; width: 100%; height: 100%; top: 0px; left: 0px; margin: 0px; padding: 0px; z-index: 1; }
+.css-1qiat4j { position: relative; display: flex; }
+.css-mbico1 { transform: scale(1); }
+.css-vxxo0y { user-select: none; width: 1em; height: 1em; display: inline-block; flex-shrink: 0; transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1); fill: currentcolor; font-size: 1.25rem; transform: scale(1); }
+.css-1ij634e { left: 0px; position: absolute; transform: scale(1); transition: transform 150ms cubic-bezier(0, 0, 0.2, 1); }
+.css-1dw4xoe { user-select: none; width: 1em; height: 1em; display: inline-block; flex-shrink: 0; fill: currentcolor; font-size: 1.25rem; left: 0px; position: absolute; transform: scale(1); transition: transform 150ms cubic-bezier(0, 0, 0.2, 1); }
+.css-148agmb { z-index: 1500; pointer-events: none; }
+.css-148agmb[data-popper-placement*="bottom"] .MuiTooltip-arrow { top: 0px; margin-top: -0.71em; }
+.css-148agmb[data-popper-placement*="bottom"] .MuiTooltip-arrow::before { transform-origin: 0px 100%; }
+.css-148agmb[data-popper-placement*="top"] .MuiTooltip-arrow { bottom: 0px; margin-bottom: -0.71em; }
+.css-148agmb[data-popper-placement*="top"] .MuiTooltip-arrow::before { transform-origin: 100% 0px; }
+.css-148agmb[data-popper-placement*="right"] .MuiTooltip-arrow { height: 1em; width: 0.71em; }
+.css-148agmb[data-popper-placement*="right"] .MuiTooltip-arrow::before { transform-origin: 100% 100%; }
+.css-148agmb[data-popper-placement*="left"] .MuiTooltip-arrow { height: 1em; width: 0.71em; }
+.css-148agmb[data-popper-placement*="left"] .MuiTooltip-arrow::before { transform-origin: 0px 0px; }
+.css-148agmb[data-popper-placement*="right"] .MuiTooltip-arrow { left: 0px; margin-left: -0.71em; }
+.css-148agmb[data-popper-placement*="left"] .MuiTooltip-arrow { right: 0px; margin-right: -0.71em; }
+.css-1w0uwdk { z-index: 1500; pointer-events: none; }
+.css-1w0uwdk[data-popper-placement*="bottom"] .MuiTooltip-arrow { top: 0px; margin-top: -0.71em; }
+.css-1w0uwdk[data-popper-placement*="bottom"] .MuiTooltip-arrow::before { transform-origin: 0px 100%; }
+.css-1w0uwdk[data-popper-placement*="top"] .MuiTooltip-arrow { bottom: 0px; margin-bottom: -0.71em; }
+.css-1w0uwdk[data-popper-placement*="top"] .MuiTooltip-arrow::before { transform-origin: 100% 0px; }
+.css-1w0uwdk[data-popper-placement*="right"] .MuiTooltip-arrow { height: 1em; width: 0.71em; }
+.css-1w0uwdk[data-popper-placement*="right"] .MuiTooltip-arrow::before { transform-origin: 100% 100%; }
+.css-1w0uwdk[data-popper-placement*="left"] .MuiTooltip-arrow { height: 1em; width: 0.71em; }
+.css-1w0uwdk[data-popper-placement*="left"] .MuiTooltip-arrow::before { transform-origin: 0px 0px; }
+.css-1w0uwdk[data-popper-placement*="right"] .MuiTooltip-arrow { left: 0px; margin-left: -0.71em; }
+.css-1w0uwdk[data-popper-placement*="left"] .MuiTooltip-arrow { right: 0px; margin-right: -0.71em; }
+.css-tzqvgb { text-align: center; flex: 0 0 auto; border-radius: 50%; color: rgba(0, 0, 0, 0.54); transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1); --IconButton-hoverBg: rgba(0, 0, 0, 0.04); font-size: 1.125rem; padding: 0px; margin: 0px; }
+.css-tzqvgb:hover { background-color: var(--IconButton-hoverBg); }
+@media (hover: none) {
+  .css-tzqvgb:hover { background-color: transparent; }
+}
+.css-tzqvgb.Mui-disabled { background-color: transparent; color: rgba(0, 0, 0, 0.26); }
+.css-tzqvgb.MuiIconButton-loading { color: transparent; }
+.css-tzqvgb:hover { background-color: transparent; }
+.css-tzqvgb:hover .MuiSvgIcon-root { color: rgb(51, 51, 51); }
+.css-15z71dm { display: inline-flex; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; position: relative; box-sizing: border-box; -webkit-tap-highlight-color: transparent; background-color: transparent; outline: 0px; border: 0px; cursor: pointer; user-select: none; vertical-align: middle; appearance: none; text-decoration: none; text-align: center; flex: 0 0 auto; border-radius: 50%; color: rgba(0, 0, 0, 0.54); transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1); --IconButton-hoverBg: rgba(0, 0, 0, 0.04); font-size: 1.125rem; padding: 0px; margin: 0px; }
+.css-15z71dm.Mui-disabled { pointer-events: none; cursor: default; }
+@media print {
+  .css-15z71dm { print-color-adjust: exact; }
+}
+.css-15z71dm:hover { background-color: var(--IconButton-hoverBg); }
+@media (hover: none) {
+  .css-15z71dm:hover { background-color: transparent; }
+}
+.css-15z71dm.Mui-disabled { background-color: transparent; color: rgba(0, 0, 0, 0.26); }
+.css-15z71dm.MuiIconButton-loading { color: transparent; }
+.css-15z71dm:hover { background-color: transparent; }
+.css-15z71dm:hover .MuiSvgIcon-root { color: rgb(51, 51, 51); }
+.css-j7f8l2 { user-select: none; width: 1em; height: 1em; display: inline-block; flex-shrink: 0; transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1); fill: currentcolor; font-size: 28px; }
+.css-1874g9x { left: 0px; position: absolute; transform: scale(0); transition: transform 150ms cubic-bezier(0.4, 0, 1, 1); }
+.css-hg9w45 { user-select: none; width: 1em; height: 1em; display: inline-block; flex-shrink: 0; fill: currentcolor; font-size: 1.25rem; left: 0px; position: absolute; transform: scale(0); transition: transform 150ms cubic-bezier(0.4, 0, 1, 1); }
+.css-e2ka5p { text-align: center; flex: 0 0 auto; border-radius: 50%; transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1); --IconButton-hoverBg: rgba(0, 0, 0, 0.04); font-size: 1.125rem; padding: 2px; color: gray; }
+.css-e2ka5p:hover { background-color: var(--IconButton-hoverBg); }
+@media (hover: none) {
+  .css-e2ka5p:hover { background-color: transparent; }
+}
+.css-e2ka5p.Mui-disabled { background-color: transparent; color: rgba(0, 0, 0, 0.26); }
+.css-e2ka5p.MuiIconButton-loading { color: transparent; }
+.css-u2et8f { display: inline-flex; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; position: relative; box-sizing: border-box; -webkit-tap-highlight-color: transparent; background-color: transparent; outline: 0px; border: 0px; margin: 0px; cursor: pointer; user-select: none; vertical-align: middle; appearance: none; text-decoration: none; text-align: center; flex: 0 0 auto; border-radius: 50%; transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1); --IconButton-hoverBg: rgba(0, 0, 0, 0.04); font-size: 1.125rem; padding: 2px; color: gray; }
+.css-u2et8f.Mui-disabled { pointer-events: none; cursor: default; }
+@media print {
+  .css-u2et8f { print-color-adjust: exact; }
+}
+.css-u2et8f:hover { background-color: var(--IconButton-hoverBg); }
+@media (hover: none) {
+  .css-u2et8f:hover { background-color: transparent; }
+}
+.css-u2et8f.Mui-disabled { background-color: transparent; color: rgba(0, 0, 0, 0.26); }
+.css-u2et8f.MuiIconButton-loading { color: transparent; }
+.css-vh810p { user-select: none; width: 1em; height: 1em; display: inline-block; flex-shrink: 0; transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1); fill: currentcolor; font-size: 1.25rem; }
+.css-abqyn { height: 0px; overflow: hidden; transition: height 300ms cubic-bezier(0.4, 0, 0.2, 1); visibility: hidden; }
+.css-15830to { display: flex; width: 100%; }
+.css-9vd5ud { width: 100%; }
+.css-10xq1y { text-align: center; flex: 0 0 auto; border-radius: 50%; transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1); --IconButton-hoverBg: rgba(0, 0, 0, 0.04); font-size: 1.125rem; padding: 1px; color: gray; }
+.css-10xq1y:hover { background-color: var(--IconButton-hoverBg); }
+@media (hover: none) {
+  .css-10xq1y:hover { background-color: transparent; }
+}
+.css-10xq1y.Mui-disabled { background-color: transparent; color: rgba(0, 0, 0, 0.26); }
+.css-10xq1y.MuiIconButton-loading { color: transparent; }
+.css-1jy0o5e { display: inline-flex; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; position: relative; box-sizing: border-box; -webkit-tap-highlight-color: transparent; background-color: transparent; outline: 0px; border: 0px; margin: 0px; cursor: pointer; user-select: none; vertical-align: middle; appearance: none; text-decoration: none; text-align: center; flex: 0 0 auto; border-radius: 50%; transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1); --IconButton-hoverBg: rgba(0, 0, 0, 0.04); font-size: 1.125rem; padding: 1px; color: gray; }
+.css-1jy0o5e.Mui-disabled { pointer-events: none; cursor: default; }
+@media print {
+  .css-1jy0o5e { print-color-adjust: exact; }
+}
+.css-1jy0o5e:hover { background-color: var(--IconButton-hoverBg); }
+@media (hover: none) {
+  .css-1jy0o5e:hover { background-color: transparent; }
+}
+.css-1jy0o5e.Mui-disabled { background-color: transparent; color: rgba(0, 0, 0, 0.26); }
+.css-1jy0o5e.MuiIconButton-loading { color: transparent; }
+.css-e8m34t { user-select: none; width: 1em; height: 1em; display: inline-block; flex-shrink: 0; transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1); fill: currentcolor; font-size: 14px; }
+.css-1ymvpr4 { color: rgba(0, 0, 0, 0.87); transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1); border-radius: 4px; background-image: var(--Paper-overlay); min-height: 770px; box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px; border: 1px solid rgb(224, 224, 224); background-color: rgb(255, 255, 255); position: relative; z-index: 1; }
+.css-i0ksge { text-align: center; flex: 0 0 auto; border-radius: 50%; color: rgba(0, 0, 0, 0.54); transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1); --IconButton-hoverBg: rgba(0, 0, 0, 0.04); font-size: 1.125rem; padding: 1.6px; margin-right: 4px; }
+.css-i0ksge:hover { background-color: var(--IconButton-hoverBg); }
+@media (hover: none) {
+  .css-i0ksge:hover { background-color: transparent; }
+}
+.css-i0ksge.Mui-disabled { background-color: transparent; color: rgba(0, 0, 0, 0.26); }
+.css-i0ksge.MuiIconButton-loading { color: transparent; }
+.css-1mk047q { display: inline-flex; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; position: relative; box-sizing: border-box; -webkit-tap-highlight-color: transparent; background-color: transparent; outline: 0px; border: 0px; margin: 0px 4px 0px 0px; cursor: pointer; user-select: none; vertical-align: middle; appearance: none; text-decoration: none; text-align: center; flex: 0 0 auto; border-radius: 50%; color: rgba(0, 0, 0, 0.54); transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1); --IconButton-hoverBg: rgba(0, 0, 0, 0.04); font-size: 1.125rem; padding: 1.6px; }
+.css-1mk047q.Mui-disabled { pointer-events: none; cursor: default; }
+@media print {
+  .css-1mk047q { print-color-adjust: exact; }
+}
+.css-1mk047q:hover { background-color: var(--IconButton-hoverBg); }
+@media (hover: none) {
+  .css-1mk047q:hover { background-color: transparent; }
+}
+.css-1mk047q.Mui-disabled { background-color: transparent; color: rgba(0, 0, 0, 0.26); }
+.css-1mk047q.MuiIconButton-loading { color: transparent; }
+.css-56cp3w { font-family: Roboto, Helvetica, Arial, sans-serif; font-weight: 500; font-size: 0.875rem; line-height: 1.75; letter-spacing: 0.02857em; text-transform: uppercase; min-width: 64px; border: 0px; border-radius: 4px; padding: 6px 8px; color: var(--variant-textColor); background-color: var(--variant-textBg); --variant-textColor: #1976d2; --variant-outlinedColor: #1976d2; --variant-outlinedBorder: rgba(25, 118, 210, 0.5); --variant-containedColor: #fff; --variant-containedBg: #1976d2; transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); }
+.css-56cp3w:hover { text-decoration: none; }
+.css-56cp3w.Mui-disabled { color: rgba(0, 0, 0, 0.26); }
+@media (hover: hover) {
+  .css-56cp3w:hover { --variant-containedBg: #1565c0; --variant-textBg: rgba(25, 118, 210, 0.04); --variant-outlinedBorder: #1976d2; --variant-outlinedBg: rgba(25, 118, 210, 0.04); }
+}
+.css-56cp3w.MuiButton-loading { color: transparent; }
+.css-1c69r7k { display: inline-flex; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; position: relative; box-sizing: border-box; -webkit-tap-highlight-color: transparent; outline: 0px; margin: 0px; cursor: pointer; user-select: none; vertical-align: middle; appearance: none; text-decoration: none; font-family: Roboto, Helvetica, Arial, sans-serif; font-weight: 500; font-size: 0.875rem; line-height: 1.75; letter-spacing: 0.02857em; text-transform: uppercase; min-width: 64px; border: 0px; border-radius: 4px; padding: 6px 8px; color: var(--variant-textColor); background-color: var(--variant-textBg); --variant-textColor: #1976d2; --variant-outlinedColor: #1976d2; --variant-outlinedBorder: rgba(25, 118, 210, 0.5); --variant-containedColor: #fff; --variant-containedBg: #1976d2; transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); }
+.css-1c69r7k.Mui-disabled { pointer-events: none; cursor: default; }
+@media print {
+  .css-1c69r7k { print-color-adjust: exact; }
+}
+.css-1c69r7k:hover { text-decoration: none; }
+.css-1c69r7k.Mui-disabled { color: rgba(0, 0, 0, 0.26); }
+@media (hover: hover) {
+  .css-1c69r7k:hover { --variant-containedBg: #1565c0; --variant-textBg: rgba(25, 118, 210, 0.04); --variant-outlinedBorder: #1976d2; --variant-outlinedBg: rgba(25, 118, 210, 0.04); }
+}
+.css-1c69r7k.MuiButton-loading { color: transparent; }
+.css-6bt4d2 { display: inherit; margin-right: -4px; margin-left: 8px; }
+.css-6bt4d2 > :nth-of-type(1) { font-size: 20px; }
+.css-q7mezt { user-select: none; width: 1em; height: 1em; display: inline-block; flex-shrink: 0; transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1); fill: currentcolor; font-size: 1.5rem; }
+.css-4mb1j7 { overflow: hidden; pointer-events: none; position: absolute; z-index: 0; inset: 0px; border-radius: inherit; }
+.css-19ri5qq { opacity: 0; position: absolute; }
+.css-19ri5qq.MuiTouchRipple-rippleVisible { opacity: 0.3; transform: scale(1); animation-name: animation-1taevns; animation-duration: 550ms; animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
+.css-19ri5qq.MuiTouchRipple-ripplePulsate { animation-duration: 200ms; }
+.css-19ri5qq .MuiTouchRipple-child { opacity: 1; display: block; width: 100%; height: 100%; border-radius: 50%; background-color: currentcolor; }
+.css-19ri5qq .MuiTouchRipple-childLeaving { opacity: 0; animation-name: animation-5ich1p; animation-duration: 550ms; animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
+.css-19ri5qq .MuiTouchRipple-childPulsate { position: absolute; left: 0px; top: 0px; animation-name: animation-f6tr5a; animation-duration: 2500ms; animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1); animation-iteration-count: infinite; animation-delay: 200ms; }
+@-webkit-keyframes animation-f6tr5a { 
+  0% { transform: scale(1); }
+  50% { transform: scale(0.92); }
+  100% { transform: scale(1); }
+}
+@keyframes animation-f6tr5a { 
+  0% { transform: scale(1); }
+  50% { transform: scale(0.92); }
+  100% { transform: scale(1); }
+}
+@-webkit-keyframes animation-5ich1p { 
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@keyframes animation-5ich1p { 
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@-webkit-keyframes animation-1taevns { 
+  0% { transform: scale(0); opacity: 0.1; }
+  100% { transform: scale(1); opacity: 0.3; }
+}
+@keyframes animation-1taevns { 
+  0% { transform: scale(0); opacity: 0.1; }
+  100% { transform: scale(1); opacity: 0.3; }
+}
+.css-30ign1 { height: 0px; overflow: hidden; transition: height 300ms cubic-bezier(0.4, 0, 0.2, 1); }
+.css-1fjn1j6 { text-align: center; flex: 0 0 auto; border-radius: 50%; transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1); --IconButton-hoverBg: rgba(0, 0, 0, 0.04); font-size: 1.125rem; padding: 1.6px; color: gray; }
+.css-1fjn1j6:hover { background-color: var(--IconButton-hoverBg); }
+@media (hover: none) {
+  .css-1fjn1j6:hover { background-color: transparent; }
+}
+.css-1fjn1j6.Mui-disabled { background-color: transparent; color: rgba(0, 0, 0, 0.26); }
+.css-1fjn1j6.MuiIconButton-loading { color: transparent; }
+.css-85h54f { display: inline-flex; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; position: relative; box-sizing: border-box; -webkit-tap-highlight-color: transparent; background-color: transparent; outline: 0px; border: 0px; margin: 0px; cursor: pointer; user-select: none; vertical-align: middle; appearance: none; text-decoration: none; text-align: center; flex: 0 0 auto; border-radius: 50%; transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1); --IconButton-hoverBg: rgba(0, 0, 0, 0.04); font-size: 1.125rem; padding: 1.6px; color: gray; }
+.css-85h54f.Mui-disabled { pointer-events: none; cursor: default; }
+@media print {
+  .css-85h54f { print-color-adjust: exact; }
+}
+.css-85h54f:hover { background-color: var(--IconButton-hoverBg); }
+@media (hover: none) {
+  .css-85h54f:hover { background-color: transparent; }
+}
+.css-85h54f.Mui-disabled { background-color: transparent; color: rgba(0, 0, 0, 0.26); }
+.css-85h54f.MuiIconButton-loading { color: transparent; }
+.css-1cbf1l2 { transition: height 300ms cubic-bezier(0.4, 0, 0.2, 1); height: auto; overflow: visible; }
+.css-r4l3jz { font-family: Roboto, Helvetica, Arial, sans-serif; font-weight: 500; line-height: 1.75; letter-spacing: 0.02857em; min-width: 64px; border: 0px; border-radius: 4px; color: var(--variant-containedColor); --variant-textColor: #1976d2; --variant-outlinedColor: #1976d2; --variant-outlinedBorder: rgba(25, 118, 210, 0.5); --variant-containedColor: #fff; --variant-containedBg: #1976d2; padding: 4px 10px; font-size: 0.8125rem; transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); background-color: rgb(33, 150, 243); text-transform: none; box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px; }
+.css-r4l3jz:hover { text-decoration: none; }
+.css-r4l3jz.Mui-disabled { color: rgba(0, 0, 0, 0.26); }
+.css-r4l3jz:hover { box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px -1px, rgba(0, 0, 0, 0.14) 0px 4px 5px 0px, rgba(0, 0, 0, 0.12) 0px 1px 10px 0px; }
+@media (hover: none) {
+  .css-r4l3jz:hover { box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px; }
+}
+.css-r4l3jz:active { box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 5px -3px, rgba(0, 0, 0, 0.14) 0px 8px 10px 1px, rgba(0, 0, 0, 0.12) 0px 3px 14px 2px; }
+.css-r4l3jz.Mui-focusVisible { box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 5px -1px, rgba(0, 0, 0, 0.14) 0px 6px 10px 0px, rgba(0, 0, 0, 0.12) 0px 1px 18px 0px; }
+.css-r4l3jz.Mui-disabled { color: rgba(0, 0, 0, 0.26); box-shadow: none; background-color: rgba(0, 0, 0, 0.12); }
+@media (hover: hover) {
+  .css-r4l3jz:hover { --variant-containedBg: #1565c0; --variant-textBg: rgba(25, 118, 210, 0.04); --variant-outlinedBorder: #1976d2; --variant-outlinedBg: rgba(25, 118, 210, 0.04); }
+}
+.css-r4l3jz.MuiButton-loading { color: transparent; }
+.css-r4l3jz:hover { background-color: rgb(25, 118, 210); }
+.css-u31ws5 { display: inline-flex; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; position: relative; box-sizing: border-box; -webkit-tap-highlight-color: transparent; outline: 0px; margin: 0px; cursor: pointer; user-select: none; vertical-align: middle; appearance: none; text-decoration: none; font-family: Roboto, Helvetica, Arial, sans-serif; font-weight: 500; line-height: 1.75; letter-spacing: 0.02857em; min-width: 64px; border: 0px; border-radius: 4px; color: var(--variant-containedColor); --variant-textColor: #1976d2; --variant-outlinedColor: #1976d2; --variant-outlinedBorder: rgba(25, 118, 210, 0.5); --variant-containedColor: #fff; --variant-containedBg: #1976d2; padding: 4px 10px; font-size: 0.8125rem; transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); background-color: rgb(33, 150, 243); text-transform: none; box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px; }
+.css-u31ws5.Mui-disabled { pointer-events: none; cursor: default; }
+@media print {
+  .css-u31ws5 { print-color-adjust: exact; }
+}
+.css-u31ws5:hover { text-decoration: none; }
+.css-u31ws5.Mui-disabled { color: rgba(0, 0, 0, 0.26); }
+.css-u31ws5:hover { box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px -1px, rgba(0, 0, 0, 0.14) 0px 4px 5px 0px, rgba(0, 0, 0, 0.12) 0px 1px 10px 0px; }
+@media (hover: none) {
+  .css-u31ws5:hover { box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px; }
+}
+.css-u31ws5:active { box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 5px -3px, rgba(0, 0, 0, 0.14) 0px 8px 10px 1px, rgba(0, 0, 0, 0.12) 0px 3px 14px 2px; }
+.css-u31ws5.Mui-focusVisible { box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 5px -1px, rgba(0, 0, 0, 0.14) 0px 6px 10px 0px, rgba(0, 0, 0, 0.12) 0px 1px 18px 0px; }
+.css-u31ws5.Mui-disabled { color: rgba(0, 0, 0, 0.26); box-shadow: none; background-color: rgba(0, 0, 0, 0.12); }
+@media (hover: hover) {
+  .css-u31ws5:hover { --variant-containedBg: #1565c0; --variant-textBg: rgba(25, 118, 210, 0.04); --variant-outlinedBorder: #1976d2; --variant-outlinedBg: rgba(25, 118, 210, 0.04); }
+}
+.css-u31ws5.MuiButton-loading { color: transparent; }
+.css-u31ws5:hover { background-color: rgb(25, 118, 210); }
+.css-1qfx30c { display: inherit; margin-right: 8px; margin-left: -2px; }
+.css-1qfx30c > :nth-of-type(1) { font-size: 18px; }
+.css-1go36aw { display: inline-flex; flex-direction: column; position: relative; min-width: 0px; padding: 0px; margin: 0px; border: 0px; vertical-align: top; width: 140px; }
+.css-mg1rqj { font-size: 14px; font-weight: 600; }
+.css-mg1rqj .MuiSelect-select { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; padding: 2px 6px; }
+.css-1c6uga6 { font-family: Roboto, Helvetica, Arial, sans-serif; line-height: 1.4375em; letter-spacing: 0.00938em; color: rgba(0, 0, 0, 0.87); box-sizing: border-box; cursor: text; display: inline-flex; -webkit-box-align: center; align-items: center; position: relative; border-radius: 4px; font-size: 14px; font-weight: 600; }
+.css-1c6uga6.Mui-disabled { color: rgba(0, 0, 0, 0.38); cursor: default; }
+.css-1c6uga6:hover .MuiOutlinedInput-notchedOutline { border-color: rgba(0, 0, 0, 0.87); }
+@media (hover: none) {
+  .css-1c6uga6:hover .MuiOutlinedInput-notchedOutline { border-color: rgba(0, 0, 0, 0.23); }
+}
+.css-1c6uga6.Mui-focused .MuiOutlinedInput-notchedOutline { border-width: 2px; }
+.css-1c6uga6.Mui-focused .MuiOutlinedInput-notchedOutline { border-color: rgb(25, 118, 210); }
+.css-1c6uga6.Mui-error .MuiOutlinedInput-notchedOutline { border-color: rgb(211, 47, 47); }
+.css-1c6uga6.Mui-disabled .MuiOutlinedInput-notchedOutline { border-color: rgba(0, 0, 0, 0.26); }
+.css-1c6uga6 .MuiSelect-select { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; padding: 2px 6px; }
+.css-15v65ck { font: inherit; letter-spacing: inherit; color: currentcolor; border: 0px; box-sizing: content-box; background: none; height: 1.4375em; margin: 0px; -webkit-tap-highlight-color: transparent; display: block; min-width: 0px; width: 100%; animation-name: mui-auto-fill-cancel; animation-duration: 10ms; padding: 8.5px 14px; }
+.css-15v65ck::-webkit-input-placeholder { color: currentcolor; opacity: 0.42; transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1); }
+.css-15v65ck:focus { outline: 0px; }
+.css-15v65ck:invalid { box-shadow: none; }
+.css-15v65ck::-webkit-search-decoration { appearance: none; }
+label[data-shrink="false"] + .MuiInputBase-formControl .css-15v65ck::-webkit-input-placeholder { opacity: 0 !important; }
+label[data-shrink="false"] + .MuiInputBase-formControl .css-15v65ck:focus::-webkit-input-placeholder { opacity: 0.42; }
+.css-15v65ck.Mui-disabled { opacity: 1; -webkit-text-fill-color: rgba(0, 0, 0, 0.38); }
+.css-15v65ck:-webkit-autofill { animation-duration: 5000s; animation-name: mui-auto-fill; }
+.css-15v65ck:-webkit-autofill { border-radius: inherit; }
+.css-uxvpzc { appearance: none; user-select: none; cursor: pointer; border-radius: 4px; font: inherit; letter-spacing: inherit; color: currentcolor; border: 0px; box-sizing: content-box; background: none; height: 1.4375em; margin: 0px; -webkit-tap-highlight-color: transparent; display: block; min-width: 0px; width: 100%; animation-name: mui-auto-fill-cancel; animation-duration: 10ms; padding: 8.5px 14px; }
+.css-uxvpzc:focus { border-radius: 0px; }
+.css-uxvpzc.Mui-disabled { cursor: default; }
+.css-uxvpzc[multiple] { height: auto; }
+.css-uxvpzc:not([multiple]) option, .css-uxvpzc:not([multiple]) optgroup { background-color: rgb(255, 255, 255); }
+.css-uxvpzc:focus { border-radius: 4px; }
+.css-uxvpzc.css-uxvpzc.css-uxvpzc { padding-right: 32px; }
+.css-uxvpzc.MuiSelect-select { height: auto; min-height: 1.4375em; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
+.css-uxvpzc::-webkit-input-placeholder { color: currentcolor; opacity: 0.42; transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1); }
+.css-uxvpzc:focus { outline: 0px; }
+.css-uxvpzc:invalid { box-shadow: none; }
+.css-uxvpzc::-webkit-search-decoration { appearance: none; }
+label[data-shrink="false"] + .MuiInputBase-formControl .css-uxvpzc::-webkit-input-placeholder { opacity: 0 !important; }
+label[data-shrink="false"] + .MuiInputBase-formControl .css-uxvpzc:focus::-webkit-input-placeholder { opacity: 0.42; }
+.css-uxvpzc.Mui-disabled { opacity: 1; -webkit-text-fill-color: rgba(0, 0, 0, 0.38); }
+.css-uxvpzc:-webkit-autofill { animation-duration: 5000s; animation-name: mui-auto-fill; }
+.css-uxvpzc:-webkit-autofill { border-radius: inherit; }
+.css-147e5lo { bottom: 0px; left: 0px; position: absolute; opacity: 0; pointer-events: none; width: 100%; box-sizing: border-box; }
+.css-1g8ch8 { position: absolute; top: calc(50% - 0.5em); pointer-events: none; color: rgba(0, 0, 0, 0.54); right: 7px; }
+.css-1g8ch8.Mui-disabled { color: rgba(0, 0, 0, 0.26); }
+.css-1l3b12y { user-select: none; width: 1em; height: 1em; display: inline-block; flex-shrink: 0; transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1); fill: currentcolor; font-size: 1.5rem; position: absolute; top: calc(50% - 0.5em); pointer-events: none; color: rgba(0, 0, 0, 0.54); right: 7px; }
+.css-1l3b12y.Mui-disabled { color: rgba(0, 0, 0, 0.26); }
+.css-h2v8xi { border-color: rgba(0, 0, 0, 0.23); }
+.css-5v2ak0 { text-align: left; position: absolute; inset: -5px 0px 0px; margin: 0px; padding: 0px 8px; pointer-events: none; border-radius: inherit; border-style: solid; border-width: 1px; overflow: hidden; min-width: 0%; border-color: rgba(0, 0, 0, 0.23); }
+.css-w4cd9x { float: unset; width: auto; overflow: hidden; padding: 0px; line-height: 11px; transition: width 150ms cubic-bezier(0, 0, 0.2, 1); }
+.css-dasi4o { text-align: center; flex: 0 0 auto; border-radius: 50%; transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1); --IconButton-hoverBg: rgba(0, 0, 0, 0.04); font-size: 1.125rem; padding: 1.6px; color: red; }
+.css-dasi4o:hover { background-color: var(--IconButton-hoverBg); }
+@media (hover: none) {
+  .css-dasi4o:hover { background-color: transparent; }
+}
+.css-dasi4o.Mui-disabled { background-color: transparent; color: rgba(0, 0, 0, 0.26); }
+.css-dasi4o.MuiIconButton-loading { color: transparent; }
+.css-ilrvfx { display: inline-flex; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; position: relative; box-sizing: border-box; -webkit-tap-highlight-color: transparent; background-color: transparent; outline: 0px; border: 0px; margin: 0px; cursor: pointer; user-select: none; vertical-align: middle; appearance: none; text-decoration: none; text-align: center; flex: 0 0 auto; border-radius: 50%; transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1); --IconButton-hoverBg: rgba(0, 0, 0, 0.04); font-size: 1.125rem; padding: 1.6px; color: red; }
+.css-ilrvfx.Mui-disabled { pointer-events: none; cursor: default; }
+@media print {
+  .css-ilrvfx { print-color-adjust: exact; }
+}
+.css-ilrvfx:hover { background-color: var(--IconButton-hoverBg); }
+@media (hover: none) {
+  .css-ilrvfx:hover { background-color: transparent; }
+}
+.css-ilrvfx.Mui-disabled { background-color: transparent; color: rgba(0, 0, 0, 0.26); }
+.css-ilrvfx.MuiIconButton-loading { color: transparent; }
+.css-138pw9r { text-align: center; flex: 0 0 auto; border-radius: 50%; transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1); --IconButton-hoverBg: rgba(0, 0, 0, 0.04); font-size: 1.125rem; padding: 1.6px; color: green; }
+.css-138pw9r:hover { background-color: var(--IconButton-hoverBg); }
+@media (hover: none) {
+  .css-138pw9r:hover { background-color: transparent; }
+}
+.css-138pw9r.Mui-disabled { background-color: transparent; color: rgba(0, 0, 0, 0.26); }
+.css-138pw9r.MuiIconButton-loading { color: transparent; }
+.css-27hw4k { display: inline-flex; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; position: relative; box-sizing: border-box; -webkit-tap-highlight-color: transparent; background-color: transparent; outline: 0px; border: 0px; margin: 0px; cursor: pointer; user-select: none; vertical-align: middle; appearance: none; text-decoration: none; text-align: center; flex: 0 0 auto; border-radius: 50%; transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1); --IconButton-hoverBg: rgba(0, 0, 0, 0.04); font-size: 1.125rem; padding: 1.6px; color: green; }
+.css-27hw4k.Mui-disabled { pointer-events: none; cursor: default; }
+@media print {
+  .css-27hw4k { print-color-adjust: exact; }
+}
+.css-27hw4k:hover { background-color: var(--IconButton-hoverBg); }
+@media (hover: none) {
+  .css-27hw4k:hover { background-color: transparent; }
+}
+.css-27hw4k.Mui-disabled { background-color: transparent; color: rgba(0, 0, 0, 0.26); }
+.css-27hw4k.MuiIconButton-loading { color: transparent; }
+.css-13k30ec .MuiInputBase-input { font-size: 14px; padding: 8px; }
+.css-13k30ec .MuiOutlinedInput-root { padding: 0px; }
+.css-vcydbf { display: inline-flex; flex-direction: column; position: relative; min-width: 0px; padding: 0px; margin: 0px; border: 0px; vertical-align: top; width: 100%; }
+.css-vcydbf .MuiInputBase-input { font-size: 14px; padding: 8px; }
+.css-vcydbf .MuiOutlinedInput-root { padding: 0px; }
+.css-nu2kc4 { font-family: Roboto, Helvetica, Arial, sans-serif; font-weight: 400; font-size: 1rem; line-height: 1.4375em; letter-spacing: 0.00938em; color: rgba(0, 0, 0, 0.87); box-sizing: border-box; cursor: text; display: inline-flex; -webkit-box-align: center; align-items: center; width: 100%; position: relative; border-radius: 4px; padding: 8.5px 14px; }
+.css-nu2kc4.Mui-disabled { color: rgba(0, 0, 0, 0.38); cursor: default; }
+.css-nu2kc4:hover .MuiOutlinedInput-notchedOutline { border-color: rgba(0, 0, 0, 0.87); }
+@media (hover: none) {
+  .css-nu2kc4:hover .MuiOutlinedInput-notchedOutline { border-color: rgba(0, 0, 0, 0.23); }
+}
+.css-nu2kc4.Mui-focused .MuiOutlinedInput-notchedOutline { border-width: 2px; }
+.css-nu2kc4.Mui-focused .MuiOutlinedInput-notchedOutline { border-color: rgb(25, 118, 210); }
+.css-nu2kc4.Mui-error .MuiOutlinedInput-notchedOutline { border-color: rgb(211, 47, 47); }
+.css-nu2kc4.Mui-disabled .MuiOutlinedInput-notchedOutline { border-color: rgba(0, 0, 0, 0.26); }
+.css-2k2byj { font: inherit; letter-spacing: inherit; color: currentcolor; border: 0px; box-sizing: content-box; background: none; margin: 0px; -webkit-tap-highlight-color: transparent; display: block; min-width: 0px; width: 100%; animation-name: mui-auto-fill-cancel; animation-duration: 10ms; height: auto; resize: none; padding: 0px; }
+.css-2k2byj::-webkit-input-placeholder { color: currentcolor; opacity: 0.42; transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1); }
+.css-2k2byj:focus { outline: 0px; }
+.css-2k2byj:invalid { box-shadow: none; }
+.css-2k2byj::-webkit-search-decoration { appearance: none; }
+label[data-shrink="false"] + .MuiInputBase-formControl .css-2k2byj::-webkit-input-placeholder { opacity: 0 !important; }
+label[data-shrink="false"] + .MuiInputBase-formControl .css-2k2byj:focus::-webkit-input-placeholder { opacity: 0.42; }
+.css-2k2byj.Mui-disabled { opacity: 1; -webkit-text-fill-color: rgba(0, 0, 0, 0.38); }
+.css-2k2byj:-webkit-autofill { animation-duration: 5000s; animation-name: mui-auto-fill; }
+.css-2k2byj:-webkit-autofill { border-radius: inherit; }
+.picker-dialog-frame { width: 100%; height: 100%; border: 0px; overflow: hidden; }
+.picker-dialog-bg { position: absolute; top: 0px; left: 0px; background-color: rgb(255, 255, 255); z-index: 1000; }
+.picker-dialog { position: absolute; top: 0px; left: 0px; background-color: rgb(255, 255, 255); border: 1px solid rgb(172, 172, 172); width: auto; padding: 0px; z-index: 1001; overflow: auto; box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 16px; }
+.picker-dialog-content { height: 100%; font-size: 0px; padding: 0px; }
+.picker-dialog-buttons, .picker-dialog-title { display: none; }
+#nprogress { pointer-events: none; }
+#nprogress .bar { background: rgb(75, 85, 99); position: fixed; z-index: 1031; top: 0px; left: 0px; width: 100%; height: 2px; }
+#nprogress .peg { display: block; position: absolute; right: 0px; width: 100px; height: 100%; box-shadow: rgb(75, 85, 99) 0px 0px 10px, rgb(75, 85, 99) 0px 0px 5px; opacity: 1; transform: rotate(3deg) translate(0px, -4px); }
+#nprogress .spinner { display: block; position: fixed; z-index: 1031; top: 15px; right: 15px; }
+#nprogress .spinner-icon { width: 18px; height: 18px; box-sizing: border-box; border-width: 2px; border-style: solid; border-color: rgb(75, 85, 99) transparent transparent rgb(75, 85, 99); border-image: initial; border-radius: 50%; animation: 400ms linear 0s infinite normal none running nprogress-spinner; }
+.nprogress-custom-parent { overflow: hidden; position: relative; }
+.nprogress-custom-parent #nprogress .spinner, .nprogress-custom-parent #nprogress .bar { position: absolute; }
+@keyframes nprogress-spinner { 
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.css-16lckxp { color: rgba(0, 0, 0, 0.6); }
+.css-16lckxp.Mui-disabled { color: rgba(0, 0, 0, 0.26); }
+.css-16lckxp:hover { background-color: rgba(25, 118, 210, 0.04); }
+.css-16lckxp.Mui-checked { color: rgb(25, 118, 210); }
+@media (hover: none) {
+  .css-16lckxp:hover { background-color: transparent; }
+}
+.css-1at2ito { padding: 9px; border-radius: 50%; color: rgba(0, 0, 0, 0.6); }
+.css-1at2ito.Mui-disabled { color: rgba(0, 0, 0, 0.26); }
+.css-1at2ito:hover { background-color: rgba(25, 118, 210, 0.04); }
+.css-1at2ito.Mui-checked { color: rgb(25, 118, 210); }
+@media (hover: none) {
+  .css-1at2ito:hover { background-color: transparent; }
+}
+.css-6m95b7 { display: inline-flex; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; position: relative; box-sizing: border-box; -webkit-tap-highlight-color: transparent; background-color: transparent; outline: 0px; border: 0px; margin: 0px; cursor: pointer; user-select: none; vertical-align: middle; appearance: none; text-decoration: none; padding: 9px; border-radius: 50%; color: rgba(0, 0, 0, 0.6); }
+.css-6m95b7.Mui-disabled { pointer-events: none; cursor: default; }
+@media print {
+  .css-6m95b7 { print-color-adjust: exact; }
+}
+.css-6m95b7.Mui-disabled { color: rgba(0, 0, 0, 0.26); }
+.css-6m95b7:hover { background-color: rgba(25, 118, 210, 0.04); }
+.css-6m95b7.Mui-checked { color: rgb(25, 118, 210); }
+@media (hover: none) {
+  .css-6m95b7:hover { background-color: transparent; }
+}
+.css-j8yymo { cursor: inherit; position: absolute; opacity: 0; width: 100%; height: 100%; top: 0px; left: 0px; margin: 0px; padding: 0px; z-index: 1; }
+.css-1qiat4j { position: relative; display: flex; }
+.css-mbico1 { transform: scale(1); }
+.css-vxxo0y { user-select: none; width: 1em; height: 1em; display: inline-block; flex-shrink: 0; transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1); fill: currentcolor; font-size: 1.25rem; transform: scale(1); }
+.css-1ij634e { left: 0px; position: absolute; transform: scale(1); transition: transform 150ms cubic-bezier(0, 0, 0.2, 1); }
+.css-1dw4xoe { user-select: none; width: 1em; height: 1em; display: inline-block; flex-shrink: 0; fill: currentcolor; font-size: 1.25rem; left: 0px; position: absolute; transform: scale(1); transition: transform 150ms cubic-bezier(0, 0, 0.2, 1); }
+.css-148agmb { z-index: 1500; pointer-events: none; }
+.css-148agmb[data-popper-placement*="bottom"] .MuiTooltip-arrow { top: 0px; margin-top: -0.71em; }
+.css-148agmb[data-popper-placement*="bottom"] .MuiTooltip-arrow::before { transform-origin: 0px 100%; }
+.css-148agmb[data-popper-placement*="top"] .MuiTooltip-arrow { bottom: 0px; margin-bottom: -0.71em; }
+.css-148agmb[data-popper-placement*="top"] .MuiTooltip-arrow::before { transform-origin: 100% 0px; }
+.css-148agmb[data-popper-placement*="right"] .MuiTooltip-arrow { height: 1em; width: 0.71em; }
+.css-148agmb[data-popper-placement*="right"] .MuiTooltip-arrow::before { transform-origin: 100% 100%; }
+.css-148agmb[data-popper-placement*="left"] .MuiTooltip-arrow { height: 1em; width: 0.71em; }
+.css-148agmb[data-popper-placement*="left"] .MuiTooltip-arrow::before { transform-origin: 0px 0px; }
+.css-148agmb[data-popper-placement*="right"] .MuiTooltip-arrow { left: 0px; margin-left: -0.71em; }
+.css-148agmb[data-popper-placement*="left"] .MuiTooltip-arrow { right: 0px; margin-right: -0.71em; }
+.css-1w0uwdk { z-index: 1500; pointer-events: none; }
+.css-1w0uwdk[data-popper-placement*="bottom"] .MuiTooltip-arrow { top: 0px; margin-top: -0.71em; }
+.css-1w0uwdk[data-popper-placement*="bottom"] .MuiTooltip-arrow::before { transform-origin: 0px 100%; }
+.css-1w0uwdk[data-popper-placement*="top"] .MuiTooltip-arrow { bottom: 0px; margin-bottom: -0.71em; }
+.css-1w0uwdk[data-popper-placement*="top"] .MuiTooltip-arrow::before { transform-origin: 100% 0px; }
+.css-1w0uwdk[data-popper-placement*="right"] .MuiTooltip-arrow { height: 1em; width: 0.71em; }
+.css-1w0uwdk[data-popper-placement*="right"] .MuiTooltip-arrow::before { transform-origin: 100% 100%; }
+.css-1w0uwdk[data-popper-placement*="left"] .MuiTooltip-arrow { height: 1em; width: 0.71em; }
+.css-1w0uwdk[data-popper-placement*="left"] .MuiTooltip-arrow::before { transform-origin: 0px 0px; }
+.css-1w0uwdk[data-popper-placement*="right"] .MuiTooltip-arrow { left: 0px; margin-left: -0.71em; }
+.css-1w0uwdk[data-popper-placement*="left"] .MuiTooltip-arrow { right: 0px; margin-right: -0.71em; }
+.css-tzqvgb { text-align: center; flex: 0 0 auto; border-radius: 50%; color: rgba(0, 0, 0, 0.54); transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1); --IconButton-hoverBg: rgba(0, 0, 0, 0.04); font-size: 1.125rem; padding: 0px; margin: 0px; }
+.css-tzqvgb:hover { background-color: var(--IconButton-hoverBg); }
+@media (hover: none) {
+  .css-tzqvgb:hover { background-color: transparent; }
+}
+.css-tzqvgb.Mui-disabled { background-color: transparent; color: rgba(0, 0, 0, 0.26); }
+.css-tzqvgb.MuiIconButton-loading { color: transparent; }
+.css-tzqvgb:hover { background-color: transparent; }
+.css-tzqvgb:hover .MuiSvgIcon-root { color: rgb(51, 51, 51); }
+.css-15z71dm { display: inline-flex; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; position: relative; box-sizing: border-box; -webkit-tap-highlight-color: transparent; background-color: transparent; outline: 0px; border: 0px; cursor: pointer; user-select: none; vertical-align: middle; appearance: none; text-decoration: none; text-align: center; flex: 0 0 auto; border-radius: 50%; color: rgba(0, 0, 0, 0.54); transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1); --IconButton-hoverBg: rgba(0, 0, 0, 0.04); font-size: 1.125rem; padding: 0px; margin: 0px; }
+.css-15z71dm.Mui-disabled { pointer-events: none; cursor: default; }
+@media print {
+  .css-15z71dm { print-color-adjust: exact; }
+}
+.css-15z71dm:hover { background-color: var(--IconButton-hoverBg); }
+@media (hover: none) {
+  .css-15z71dm:hover { background-color: transparent; }
+}
+.css-15z71dm.Mui-disabled { background-color: transparent; color: rgba(0, 0, 0, 0.26); }
+.css-15z71dm.MuiIconButton-loading { color: transparent; }
+.css-15z71dm:hover { background-color: transparent; }
+.css-15z71dm:hover .MuiSvgIcon-root { color: rgb(51, 51, 51); }
+.css-j7f8l2 { user-select: none; width: 1em; height: 1em; display: inline-block; flex-shrink: 0; transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1); fill: currentcolor; font-size: 28px; }
+.css-1874g9x { left: 0px; position: absolute; transform: scale(0); transition: transform 150ms cubic-bezier(0.4, 0, 1, 1); }
+.css-hg9w45 { user-select: none; width: 1em; height: 1em; display: inline-block; flex-shrink: 0; fill: currentcolor; font-size: 1.25rem; left: 0px; position: absolute; transform: scale(0); transition: transform 150ms cubic-bezier(0.4, 0, 1, 1); }
+.css-e2ka5p { text-align: center; flex: 0 0 auto; border-radius: 50%; transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1); --IconButton-hoverBg: rgba(0, 0, 0, 0.04); font-size: 1.125rem; padding: 2px; color: gray; }
+.css-e2ka5p:hover { background-color: var(--IconButton-hoverBg); }
+@media (hover: none) {
+  .css-e2ka5p:hover { background-color: transparent; }
+}
+.css-e2ka5p.Mui-disabled { background-color: transparent; color: rgba(0, 0, 0, 0.26); }
+.css-e2ka5p.MuiIconButton-loading { color: transparent; }
+.css-u2et8f { display: inline-flex; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; position: relative; box-sizing: border-box; -webkit-tap-highlight-color: transparent; background-color: transparent; outline: 0px; border: 0px; margin: 0px; cursor: pointer; user-select: none; vertical-align: middle; appearance: none; text-decoration: none; text-align: center; flex: 0 0 auto; border-radius: 50%; transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1); --IconButton-hoverBg: rgba(0, 0, 0, 0.04); font-size: 1.125rem; padding: 2px; color: gray; }
+.css-u2et8f.Mui-disabled { pointer-events: none; cursor: default; }
+@media print {
+  .css-u2et8f { print-color-adjust: exact; }
+}
+.css-u2et8f:hover { background-color: var(--IconButton-hoverBg); }
+@media (hover: none) {
+  .css-u2et8f:hover { background-color: transparent; }
+}
+.css-u2et8f.Mui-disabled { background-color: transparent; color: rgba(0, 0, 0, 0.26); }
+.css-u2et8f.MuiIconButton-loading { color: transparent; }
+.css-vh810p { user-select: none; width: 1em; height: 1em; display: inline-block; flex-shrink: 0; transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1); fill: currentcolor; font-size: 1.25rem; }
+.css-abqyn { height: 0px; overflow: hidden; transition: height 300ms cubic-bezier(0.4, 0, 0.2, 1); visibility: hidden; }
+.css-15830to { display: flex; width: 100%; }
+.css-9vd5ud { width: 100%; }
+.css-10xq1y { text-align: center; flex: 0 0 auto; border-radius: 50%; transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1); --IconButton-hoverBg: rgba(0, 0, 0, 0.04); font-size: 1.125rem; padding: 1px; color: gray; }
+.css-10xq1y:hover { background-color: var(--IconButton-hoverBg); }
+@media (hover: none) {
+  .css-10xq1y:hover { background-color: transparent; }
+}
+.css-10xq1y.Mui-disabled { background-color: transparent; color: rgba(0, 0, 0, 0.26); }
+.css-10xq1y.MuiIconButton-loading { color: transparent; }
+.css-1jy0o5e { display: inline-flex; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; position: relative; box-sizing: border-box; -webkit-tap-highlight-color: transparent; background-color: transparent; outline: 0px; border: 0px; margin: 0px; cursor: pointer; user-select: none; vertical-align: middle; appearance: none; text-decoration: none; text-align: center; flex: 0 0 auto; border-radius: 50%; transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1); --IconButton-hoverBg: rgba(0, 0, 0, 0.04); font-size: 1.125rem; padding: 1px; color: gray; }
+.css-1jy0o5e.Mui-disabled { pointer-events: none; cursor: default; }
+@media print {
+  .css-1jy0o5e { print-color-adjust: exact; }
+}
+.css-1jy0o5e:hover { background-color: var(--IconButton-hoverBg); }
+@media (hover: none) {
+  .css-1jy0o5e:hover { background-color: transparent; }
+}
+.css-1jy0o5e.Mui-disabled { background-color: transparent; color: rgba(0, 0, 0, 0.26); }
+.css-1jy0o5e.MuiIconButton-loading { color: transparent; }
+.css-e8m34t { user-select: none; width: 1em; height: 1em; display: inline-block; flex-shrink: 0; transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1); fill: currentcolor; font-size: 14px; }
+.css-1ymvpr4 { color: rgba(0, 0, 0, 0.87); transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1); border-radius: 4px; background-image: var(--Paper-overlay); min-height: 770px; box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px; border: 1px solid rgb(224, 224, 224); background-color: rgb(255, 255, 255); position: relative; z-index: 1; }
+.css-i0ksge { text-align: center; flex: 0 0 auto; border-radius: 50%; color: rgba(0, 0, 0, 0.54); transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1); --IconButton-hoverBg: rgba(0, 0, 0, 0.04); font-size: 1.125rem; padding: 1.6px; margin-right: 4px; }
+.css-i0ksge:hover { background-color: var(--IconButton-hoverBg); }
+@media (hover: none) {
+  .css-i0ksge:hover { background-color: transparent; }
+}
+.css-i0ksge.Mui-disabled { background-color: transparent; color: rgba(0, 0, 0, 0.26); }
+.css-i0ksge.MuiIconButton-loading { color: transparent; }
+.css-1mk047q { display: inline-flex; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; position: relative; box-sizing: border-box; -webkit-tap-highlight-color: transparent; background-color: transparent; outline: 0px; border: 0px; margin: 0px 4px 0px 0px; cursor: pointer; user-select: none; vertical-align: middle; appearance: none; text-decoration: none; text-align: center; flex: 0 0 auto; border-radius: 50%; color: rgba(0, 0, 0, 0.54); transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1); --IconButton-hoverBg: rgba(0, 0, 0, 0.04); font-size: 1.125rem; padding: 1.6px; }
+.css-1mk047q.Mui-disabled { pointer-events: none; cursor: default; }
+@media print {
+  .css-1mk047q { print-color-adjust: exact; }
+}
+.css-1mk047q:hover { background-color: var(--IconButton-hoverBg); }
+@media (hover: none) {
+  .css-1mk047q:hover { background-color: transparent; }
+}
+.css-1mk047q.Mui-disabled { background-color: transparent; color: rgba(0, 0, 0, 0.26); }
+.css-1mk047q.MuiIconButton-loading { color: transparent; }
+.css-56cp3w { font-family: Roboto, Helvetica, Arial, sans-serif; font-weight: 500; font-size: 0.875rem; line-height: 1.75; letter-spacing: 0.02857em; text-transform: uppercase; min-width: 64px; border: 0px; border-radius: 4px; padding: 6px 8px; color: var(--variant-textColor); background-color: var(--variant-textBg); --variant-textColor: #1976d2; --variant-outlinedColor: #1976d2; --variant-outlinedBorder: rgba(25, 118, 210, 0.5); --variant-containedColor: #fff; --variant-containedBg: #1976d2; transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); }
+.css-56cp3w:hover { text-decoration: none; }
+.css-56cp3w.Mui-disabled { color: rgba(0, 0, 0, 0.26); }
+@media (hover: hover) {
+  .css-56cp3w:hover { --variant-containedBg: #1565c0; --variant-textBg: rgba(25, 118, 210, 0.04); --variant-outlinedBorder: #1976d2; --variant-outlinedBg: rgba(25, 118, 210, 0.04); }
+}
+.css-56cp3w.MuiButton-loading { color: transparent; }
+.css-1c69r7k { display: inline-flex; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; position: relative; box-sizing: border-box; -webkit-tap-highlight-color: transparent; outline: 0px; margin: 0px; cursor: pointer; user-select: none; vertical-align: middle; appearance: none; text-decoration: none; font-family: Roboto, Helvetica, Arial, sans-serif; font-weight: 500; font-size: 0.875rem; line-height: 1.75; letter-spacing: 0.02857em; text-transform: uppercase; min-width: 64px; border: 0px; border-radius: 4px; padding: 6px 8px; color: var(--variant-textColor); background-color: var(--variant-textBg); --variant-textColor: #1976d2; --variant-outlinedColor: #1976d2; --variant-outlinedBorder: rgba(25, 118, 210, 0.5); --variant-containedColor: #fff; --variant-containedBg: #1976d2; transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); }
+.css-1c69r7k.Mui-disabled { pointer-events: none; cursor: default; }
+@media print {
+  .css-1c69r7k { print-color-adjust: exact; }
+}
+.css-1c69r7k:hover { text-decoration: none; }
+.css-1c69r7k.Mui-disabled { color: rgba(0, 0, 0, 0.26); }
+@media (hover: hover) {
+  .css-1c69r7k:hover { --variant-containedBg: #1565c0; --variant-textBg: rgba(25, 118, 210, 0.04); --variant-outlinedBorder: #1976d2; --variant-outlinedBg: rgba(25, 118, 210, 0.04); }
+}
+.css-1c69r7k.MuiButton-loading { color: transparent; }
+.css-6bt4d2 { display: inherit; margin-right: -4px; margin-left: 8px; }
+.css-6bt4d2 > :nth-of-type(1) { font-size: 20px; }
+.css-q7mezt { user-select: none; width: 1em; height: 1em; display: inline-block; flex-shrink: 0; transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1); fill: currentcolor; font-size: 1.5rem; }
+.css-4mb1j7 { overflow: hidden; pointer-events: none; position: absolute; z-index: 0; inset: 0px; border-radius: inherit; }
+.css-19ri5qq { opacity: 0; position: absolute; }
+.css-19ri5qq.MuiTouchRipple-rippleVisible { opacity: 0.3; transform: scale(1); animation-name: animation-1taevns; animation-duration: 550ms; animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
+.css-19ri5qq.MuiTouchRipple-ripplePulsate { animation-duration: 200ms; }
+.css-19ri5qq .MuiTouchRipple-child { opacity: 1; display: block; width: 100%; height: 100%; border-radius: 50%; background-color: currentcolor; }
+.css-19ri5qq .MuiTouchRipple-childLeaving { opacity: 0; animation-name: animation-5ich1p; animation-duration: 550ms; animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
+.css-19ri5qq .MuiTouchRipple-childPulsate { position: absolute; left: 0px; top: 0px; animation-name: animation-f6tr5a; animation-duration: 2500ms; animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1); animation-iteration-count: infinite; animation-delay: 200ms; }
+@-webkit-keyframes animation-f6tr5a { 
+  0% { transform: scale(1); }
+  50% { transform: scale(0.92); }
+  100% { transform: scale(1); }
+}
+@keyframes animation-f6tr5a { 
+  0% { transform: scale(1); }
+  50% { transform: scale(0.92); }
+  100% { transform: scale(1); }
+}
+@-webkit-keyframes animation-5ich1p { 
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@keyframes animation-5ich1p { 
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@-webkit-keyframes animation-1taevns { 
+  0% { transform: scale(0); opacity: 0.1; }
+  100% { transform: scale(1); opacity: 0.3; }
+}
+@keyframes animation-1taevns { 
+  0% { transform: scale(0); opacity: 0.1; }
+  100% { transform: scale(1); opacity: 0.3; }
+}
+.css-30ign1 { height: 0px; overflow: hidden; transition: height 300ms cubic-bezier(0.4, 0, 0.2, 1); }
+.css-1fjn1j6 { text-align: center; flex: 0 0 auto; border-radius: 50%; transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1); --IconButton-hoverBg: rgba(0, 0, 0, 0.04); font-size: 1.125rem; padding: 1.6px; color: gray; }
+.css-1fjn1j6:hover { background-color: var(--IconButton-hoverBg); }
+@media (hover: none) {
+  .css-1fjn1j6:hover { background-color: transparent; }
+}
+.css-1fjn1j6.Mui-disabled { background-color: transparent; color: rgba(0, 0, 0, 0.26); }
+.css-1fjn1j6.MuiIconButton-loading { color: transparent; }
+.css-85h54f { display: inline-flex; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; position: relative; box-sizing: border-box; -webkit-tap-highlight-color: transparent; background-color: transparent; outline: 0px; border: 0px; margin: 0px; cursor: pointer; user-select: none; vertical-align: middle; appearance: none; text-decoration: none; text-align: center; flex: 0 0 auto; border-radius: 50%; transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1); --IconButton-hoverBg: rgba(0, 0, 0, 0.04); font-size: 1.125rem; padding: 1.6px; color: gray; }
+.css-85h54f.Mui-disabled { pointer-events: none; cursor: default; }
+@media print {
+  .css-85h54f { print-color-adjust: exact; }
+}
+.css-85h54f:hover { background-color: var(--IconButton-hoverBg); }
+@media (hover: none) {
+  .css-85h54f:hover { background-color: transparent; }
+}
+.css-85h54f.Mui-disabled { background-color: transparent; color: rgba(0, 0, 0, 0.26); }
+.css-85h54f.MuiIconButton-loading { color: transparent; }
+.css-1cbf1l2 { transition: height 300ms cubic-bezier(0.4, 0, 0.2, 1); height: auto; overflow: visible; }
+.css-r4l3jz { font-family: Roboto, Helvetica, Arial, sans-serif; font-weight: 500; line-height: 1.75; letter-spacing: 0.02857em; min-width: 64px; border: 0px; border-radius: 4px; color: var(--variant-containedColor); --variant-textColor: #1976d2; --variant-outlinedColor: #1976d2; --variant-outlinedBorder: rgba(25, 118, 210, 0.5); --variant-containedColor: #fff; --variant-containedBg: #1976d2; padding: 4px 10px; font-size: 0.8125rem; transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); background-color: rgb(33, 150, 243); text-transform: none; box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px; }
+.css-r4l3jz:hover { text-decoration: none; }
+.css-r4l3jz.Mui-disabled { color: rgba(0, 0, 0, 0.26); }
+.css-r4l3jz:hover { box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px -1px, rgba(0, 0, 0, 0.14) 0px 4px 5px 0px, rgba(0, 0, 0, 0.12) 0px 1px 10px 0px; }
+@media (hover: none) {
+  .css-r4l3jz:hover { box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px; }
+}
+.css-r4l3jz:active { box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 5px -3px, rgba(0, 0, 0, 0.14) 0px 8px 10px 1px, rgba(0, 0, 0, 0.12) 0px 3px 14px 2px; }
+.css-r4l3jz.Mui-focusVisible { box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 5px -1px, rgba(0, 0, 0, 0.14) 0px 6px 10px 0px, rgba(0, 0, 0, 0.12) 0px 1px 18px 0px; }
+.css-r4l3jz.Mui-disabled { color: rgba(0, 0, 0, 0.26); box-shadow: none; background-color: rgba(0, 0, 0, 0.12); }
+@media (hover: hover) {
+  .css-r4l3jz:hover { --variant-containedBg: #1565c0; --variant-textBg: rgba(25, 118, 210, 0.04); --variant-outlinedBorder: #1976d2; --variant-outlinedBg: rgba(25, 118, 210, 0.04); }
+}
+.css-r4l3jz.MuiButton-loading { color: transparent; }
+.css-r4l3jz:hover { background-color: rgb(25, 118, 210); }
+.css-u31ws5 { display: inline-flex; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; position: relative; box-sizing: border-box; -webkit-tap-highlight-color: transparent; outline: 0px; margin: 0px; cursor: pointer; user-select: none; vertical-align: middle; appearance: none; text-decoration: none; font-family: Roboto, Helvetica, Arial, sans-serif; font-weight: 500; line-height: 1.75; letter-spacing: 0.02857em; min-width: 64px; border: 0px; border-radius: 4px; color: var(--variant-containedColor); --variant-textColor: #1976d2; --variant-outlinedColor: #1976d2; --variant-outlinedBorder: rgba(25, 118, 210, 0.5); --variant-containedColor: #fff; --variant-containedBg: #1976d2; padding: 4px 10px; font-size: 0.8125rem; transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); background-color: rgb(33, 150, 243); text-transform: none; box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px; }
+.css-u31ws5.Mui-disabled { pointer-events: none; cursor: default; }
+@media print {
+  .css-u31ws5 { print-color-adjust: exact; }
+}
+.css-u31ws5:hover { text-decoration: none; }
+.css-u31ws5.Mui-disabled { color: rgba(0, 0, 0, 0.26); }
+.css-u31ws5:hover { box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px -1px, rgba(0, 0, 0, 0.14) 0px 4px 5px 0px, rgba(0, 0, 0, 0.12) 0px 1px 10px 0px; }
+@media (hover: none) {
+  .css-u31ws5:hover { box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px; }
+}
+.css-u31ws5:active { box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 5px -3px, rgba(0, 0, 0, 0.14) 0px 8px 10px 1px, rgba(0, 0, 0, 0.12) 0px 3px 14px 2px; }
+.css-u31ws5.Mui-focusVisible { box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 5px -1px, rgba(0, 0, 0, 0.14) 0px 6px 10px 0px, rgba(0, 0, 0, 0.12) 0px 1px 18px 0px; }
+.css-u31ws5.Mui-disabled { color: rgba(0, 0, 0, 0.26); box-shadow: none; background-color: rgba(0, 0, 0, 0.12); }
+@media (hover: hover) {
+  .css-u31ws5:hover { --variant-containedBg: #1565c0; --variant-textBg: rgba(25, 118, 210, 0.04); --variant-outlinedBorder: #1976d2; --variant-outlinedBg: rgba(25, 118, 210, 0.04); }
+}
+.css-u31ws5.MuiButton-loading { color: transparent; }
+.css-u31ws5:hover { background-color: rgb(25, 118, 210); }
+.css-1qfx30c { display: inherit; margin-right: 8px; margin-left: -2px; }
+.css-1qfx30c > :nth-of-type(1) { font-size: 18px; }
+.css-1go36aw { display: inline-flex; flex-direction: column; position: relative; min-width: 0px; padding: 0px; margin: 0px; border: 0px; vertical-align: top; width: 140px; }
+.css-mg1rqj { font-size: 14px; font-weight: 600; }
+.css-mg1rqj .MuiSelect-select { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; padding: 2px 6px; }
+.css-1c6uga6 { font-family: Roboto, Helvetica, Arial, sans-serif; line-height: 1.4375em; letter-spacing: 0.00938em; color: rgba(0, 0, 0, 0.87); box-sizing: border-box; cursor: text; display: inline-flex; -webkit-box-align: center; align-items: center; position: relative; border-radius: 4px; font-size: 14px; font-weight: 600; }
+.css-1c6uga6.Mui-disabled { color: rgba(0, 0, 0, 0.38); cursor: default; }
+.css-1c6uga6:hover .MuiOutlinedInput-notchedOutline { border-color: rgba(0, 0, 0, 0.87); }
+@media (hover: none) {
+  .css-1c6uga6:hover .MuiOutlinedInput-notchedOutline { border-color: rgba(0, 0, 0, 0.23); }
+}
+.css-1c6uga6.Mui-focused .MuiOutlinedInput-notchedOutline { border-width: 2px; }
+.css-1c6uga6.Mui-focused .MuiOutlinedInput-notchedOutline { border-color: rgb(25, 118, 210); }
+.css-1c6uga6.Mui-error .MuiOutlinedInput-notchedOutline { border-color: rgb(211, 47, 47); }
+.css-1c6uga6.Mui-disabled .MuiOutlinedInput-notchedOutline { border-color: rgba(0, 0, 0, 0.26); }
+.css-1c6uga6 .MuiSelect-select { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; padding: 2px 6px; }
+.css-15v65ck { font: inherit; letter-spacing: inherit; color: currentcolor; border: 0px; box-sizing: content-box; background: none; height: 1.4375em; margin: 0px; -webkit-tap-highlight-color: transparent; display: block; min-width: 0px; width: 100%; animation-name: mui-auto-fill-cancel; animation-duration: 10ms; padding: 8.5px 14px; }
+.css-15v65ck::-webkit-input-placeholder { color: currentcolor; opacity: 0.42; transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1); }
+.css-15v65ck:focus { outline: 0px; }
+.css-15v65ck:invalid { box-shadow: none; }
+.css-15v65ck::-webkit-search-decoration { appearance: none; }
+label[data-shrink="false"] + .MuiInputBase-formControl .css-15v65ck::-webkit-input-placeholder { opacity: 0 !important; }
+label[data-shrink="false"] + .MuiInputBase-formControl .css-15v65ck:focus::-webkit-input-placeholder { opacity: 0.42; }
+.css-15v65ck.Mui-disabled { opacity: 1; -webkit-text-fill-color: rgba(0, 0, 0, 0.38); }
+.css-15v65ck:-webkit-autofill { animation-duration: 5000s; animation-name: mui-auto-fill; }
+.css-15v65ck:-webkit-autofill { border-radius: inherit; }
+.css-uxvpzc { appearance: none; user-select: none; cursor: pointer; border-radius: 4px; font: inherit; letter-spacing: inherit; color: currentcolor; border: 0px; box-sizing: content-box; background: none; height: 1.4375em; margin: 0px; -webkit-tap-highlight-color: transparent; display: block; min-width: 0px; width: 100%; animation-name: mui-auto-fill-cancel; animation-duration: 10ms; padding: 8.5px 14px; }
+.css-uxvpzc:focus { border-radius: 0px; }
+.css-uxvpzc.Mui-disabled { cursor: default; }
+.css-uxvpzc[multiple] { height: auto; }
+.css-uxvpzc:not([multiple]) option, .css-uxvpzc:not([multiple]) optgroup { background-color: rgb(255, 255, 255); }
+.css-uxvpzc:focus { border-radius: 4px; }
+.css-uxvpzc.css-uxvpzc.css-uxvpzc { padding-right: 32px; }
+.css-uxvpzc.MuiSelect-select { height: auto; min-height: 1.4375em; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
+.css-uxvpzc::-webkit-input-placeholder { color: currentcolor; opacity: 0.42; transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1); }
+.css-uxvpzc:focus { outline: 0px; }
+.css-uxvpzc:invalid { box-shadow: none; }
+.css-uxvpzc::-webkit-search-decoration { appearance: none; }
+label[data-shrink="false"] + .MuiInputBase-formControl .css-uxvpzc::-webkit-input-placeholder { opacity: 0 !important; }
+label[data-shrink="false"] + .MuiInputBase-formControl .css-uxvpzc:focus::-webkit-input-placeholder { opacity: 0.42; }
+.css-uxvpzc.Mui-disabled { opacity: 1; -webkit-text-fill-color: rgba(0, 0, 0, 0.38); }
+.css-uxvpzc:-webkit-autofill { animation-duration: 5000s; animation-name: mui-auto-fill; }
+.css-uxvpzc:-webkit-autofill { border-radius: inherit; }
+.css-147e5lo { bottom: 0px; left: 0px; position: absolute; opacity: 0; pointer-events: none; width: 100%; box-sizing: border-box; }
+.css-1g8ch8 { position: absolute; top: calc(50% - 0.5em); pointer-events: none; color: rgba(0, 0, 0, 0.54); right: 7px; }
+.css-1g8ch8.Mui-disabled { color: rgba(0, 0, 0, 0.26); }
+.css-1l3b12y { user-select: none; width: 1em; height: 1em; display: inline-block; flex-shrink: 0; transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1); fill: currentcolor; font-size: 1.5rem; position: absolute; top: calc(50% - 0.5em); pointer-events: none; color: rgba(0, 0, 0, 0.54); right: 7px; }
+.css-1l3b12y.Mui-disabled { color: rgba(0, 0, 0, 0.26); }
+.css-h2v8xi { border-color: rgba(0, 0, 0, 0.23); }
+.css-5v2ak0 { text-align: left; position: absolute; inset: -5px 0px 0px; margin: 0px; padding: 0px 8px; pointer-events: none; border-radius: inherit; border-style: solid; border-width: 1px; overflow: hidden; min-width: 0%; border-color: rgba(0, 0, 0, 0.23); }
+.css-w4cd9x { float: unset; width: auto; overflow: hidden; padding: 0px; line-height: 11px; transition: width 150ms cubic-bezier(0, 0, 0.2, 1); }
+.css-dasi4o { text-align: center; flex: 0 0 auto; border-radius: 50%; transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1); --IconButton-hoverBg: rgba(0, 0, 0, 0.04); font-size: 1.125rem; padding: 1.6px; color: red; }
+.css-dasi4o:hover { background-color: var(--IconButton-hoverBg); }
+@media (hover: none) {
+  .css-dasi4o:hover { background-color: transparent; }
+}
+.css-dasi4o.Mui-disabled { background-color: transparent; color: rgba(0, 0, 0, 0.26); }
+.css-dasi4o.MuiIconButton-loading { color: transparent; }
+.css-ilrvfx { display: inline-flex; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; position: relative; box-sizing: border-box; -webkit-tap-highlight-color: transparent; background-color: transparent; outline: 0px; border: 0px; margin: 0px; cursor: pointer; user-select: none; vertical-align: middle; appearance: none; text-decoration: none; text-align: center; flex: 0 0 auto; border-radius: 50%; transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1); --IconButton-hoverBg: rgba(0, 0, 0, 0.04); font-size: 1.125rem; padding: 1.6px; color: red; }
+.css-ilrvfx.Mui-disabled { pointer-events: none; cursor: default; }
+@media print {
+  .css-ilrvfx { print-color-adjust: exact; }
+}
+.css-ilrvfx:hover { background-color: var(--IconButton-hoverBg); }
+@media (hover: none) {
+  .css-ilrvfx:hover { background-color: transparent; }
+}
+.css-ilrvfx.Mui-disabled { background-color: transparent; color: rgba(0, 0, 0, 0.26); }
+.css-ilrvfx.MuiIconButton-loading { color: transparent; }
+.css-138pw9r { text-align: center; flex: 0 0 auto; border-radius: 50%; transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1); --IconButton-hoverBg: rgba(0, 0, 0, 0.04); font-size: 1.125rem; padding: 1.6px; color: green; }
+.css-138pw9r:hover { background-color: var(--IconButton-hoverBg); }
+@media (hover: none) {
+  .css-138pw9r:hover { background-color: transparent; }
+}
+.css-138pw9r.Mui-disabled { background-color: transparent; color: rgba(0, 0, 0, 0.26); }
+.css-138pw9r.MuiIconButton-loading { color: transparent; }
+.css-27hw4k { display: inline-flex; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; position: relative; box-sizing: border-box; -webkit-tap-highlight-color: transparent; background-color: transparent; outline: 0px; border: 0px; margin: 0px; cursor: pointer; user-select: none; vertical-align: middle; appearance: none; text-decoration: none; text-align: center; flex: 0 0 auto; border-radius: 50%; transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1); --IconButton-hoverBg: rgba(0, 0, 0, 0.04); font-size: 1.125rem; padding: 1.6px; color: green; }
+.css-27hw4k.Mui-disabled { pointer-events: none; cursor: default; }
+@media print {
+  .css-27hw4k { print-color-adjust: exact; }
+}
+.css-27hw4k:hover { background-color: var(--IconButton-hoverBg); }
+@media (hover: none) {
+  .css-27hw4k:hover { background-color: transparent; }
+}
+.css-27hw4k.Mui-disabled { background-color: transparent; color: rgba(0, 0, 0, 0.26); }
+.css-27hw4k.MuiIconButton-loading { color: transparent; }
+.css-13k30ec .MuiInputBase-input { font-size: 14px; padding: 8px; }
+.css-13k30ec .MuiOutlinedInput-root { padding: 0px; }
+.css-vcydbf { display: inline-flex; flex-direction: column; position: relative; min-width: 0px; padding: 0px; margin: 0px; border: 0px; vertical-align: top; width: 100%; }
+.css-vcydbf .MuiInputBase-input { font-size: 14px; padding: 8px; }
+.css-vcydbf .MuiOutlinedInput-root { padding: 0px; }
+.css-nu2kc4 { font-family: Roboto, Helvetica, Arial, sans-serif; font-weight: 400; font-size: 1rem; line-height: 1.4375em; letter-spacing: 0.00938em; color: rgba(0, 0, 0, 0.87); box-sizing: border-box; cursor: text; display: inline-flex; -webkit-box-align: center; align-items: center; width: 100%; position: relative; border-radius: 4px; padding: 8.5px 14px; }
+.css-nu2kc4.Mui-disabled { color: rgba(0, 0, 0, 0.38); cursor: default; }
+.css-nu2kc4:hover .MuiOutlinedInput-notchedOutline { border-color: rgba(0, 0, 0, 0.87); }
+@media (hover: none) {
+  .css-nu2kc4:hover .MuiOutlinedInput-notchedOutline { border-color: rgba(0, 0, 0, 0.23); }
+}
+.css-nu2kc4.Mui-focused .MuiOutlinedInput-notchedOutline { border-width: 2px; }
+.css-nu2kc4.Mui-focused .MuiOutlinedInput-notchedOutline { border-color: rgb(25, 118, 210); }
+.css-nu2kc4.Mui-error .MuiOutlinedInput-notchedOutline { border-color: rgb(211, 47, 47); }
+.css-nu2kc4.Mui-disabled .MuiOutlinedInput-notchedOutline { border-color: rgba(0, 0, 0, 0.26); }
+.css-2k2byj { font: inherit; letter-spacing: inherit; color: currentcolor; border: 0px; box-sizing: content-box; background: none; margin: 0px; -webkit-tap-highlight-color: transparent; display: block; min-width: 0px; width: 100%; animation-name: mui-auto-fill-cancel; animation-duration: 10ms; height: auto; resize: none; padding: 0px; }
+.css-2k2byj::-webkit-input-placeholder { color: currentcolor; opacity: 0.42; transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1); }
+.css-2k2byj:focus { outline: 0px; }
+.css-2k2byj:invalid { box-shadow: none; }
+.css-2k2byj::-webkit-search-decoration { appearance: none; }
+label[data-shrink="false"] + .MuiInputBase-formControl .css-2k2byj::-webkit-input-placeholder { opacity: 0 !important; }
+label[data-shrink="false"] + .MuiInputBase-formControl .css-2k2byj:focus::-webkit-input-placeholder { opacity: 0.42; }
+.css-2k2byj.Mui-disabled { opacity: 1; -webkit-text-fill-color: rgba(0, 0, 0, 0.38); }
+.css-2k2byj:-webkit-autofill { animation-duration: 5000s; animation-name: mui-auto-fill; }
+.css-2k2byj:-webkit-autofill { border-radius: inherit; }
 .picker-dialog-frame { width: 100%; height: 100%; border: 0px; overflow: hidden; }
 .picker-dialog-bg { position: absolute; top: 0px; left: 0px; background-color: rgb(255, 255, 255); z-index: 1000; }
 .picker-dialog { position: absolute; top: 0px; left: 0px; background-color: rgb(255, 255, 255); border: 1px solid rgb(172, 172, 172); width: auto; padding: 0px; z-index: 1001; overflow: auto; box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 16px; }
@@ -692,12 +1465,18 @@ Modern pedagogical approaches have evolved significantly with the integration of
     });
   })();
 
-  function openModal() {
+  function openModal(initialTime) {
     P.gen++; clearTimeout(P.timer); stopTicker();
     P.content = ""; P.cursor = 0; P.step = -1; P.elapsed = 0; P.inter = 0;
     P.playing = false; P.complete = false; P.dragging = false;
     playIcon.setAttribute("d", PLAY_D);
-    applyTo(-1);
+    if (typeof initialTime === "number" && initialTime > 0) {
+      P.step = findStep(initialTime);
+      applyTo(P.step);
+      P.inter = P.elapsed;
+    } else {
+      applyTo(-1);
+    }
     modalRoot.style.display = "";
   }
   function closeModal() {
@@ -709,6 +1488,445 @@ Modern pedagogical approaches have evolved significantly with the integration of
   backdrop.addEventListener("click", closeModal);
   document.addEventListener("keydown", function (e) {
     if (e.key === "Escape" && modalRoot.style.display !== "none") closeModal();
+  });
+
+  /* ── Highlight-to-add-feedback (grading modes) — port of the EssayViewer flow ── */
+  var FB_BTN_HTML = "<div class=\"add-feedback-btn\" style=\"position: fixed; z-index: 1000;\"><button class=\"MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeSmall MuiButton-containedSizeSmall MuiButton-colorPrimary MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeSmall MuiButton-containedSizeSmall MuiButton-colorPrimary css-u31ws5\" tabindex=\"0\" type=\"button\"><span class=\"MuiButton-icon MuiButton-startIcon MuiButton-iconSizeSmall css-1qfx30c\"><svg class=\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-q7mezt\" focusable=\"false\" aria-hidden=\"true\" viewBox=\"0 0 24 24\"><path d=\"M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6z\"><\/path><\/svg><\/span>Add Feedback<\/button><\/div>";
+  var FB_EDIT_HTML = "<div class=\"rounded-lg p-[14px] flex flex-col transition-colors duration-200 bg-background  !pt-[14px] !pb-[8px] !px-[8px]\"  style=\"cursor: pointer; border: 2px solid rgb(33, 150, 243);\"><div class=\"flex items-center justify-between mx-1\"><h4 class=\"flex items-center gap-1\"><div class=\"MuiFormControl-root css-1go36aw\"><div class=\"MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall MuiSelect-root css-1c6uga6\"><div tabindex=\"0\" role=\"combobox\" aria-expanded=\"false\" aria-haspopup=\"listbox\" class=\"MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-uxvpzc\">General Feedback<\/div><input aria-invalid=\"false\" aria-hidden=\"true\" tabindex=\"-1\" class=\"MuiSelect-nativeInput css-147e5lo\" value=\"General Feedback\"><svg class=\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconOutlined css-1l3b12y\" focusable=\"false\" aria-hidden=\"true\" viewBox=\"0 0 24 24\"><path d=\"M7 10l5 5 5-5z\"><\/path><\/svg><fieldset aria-hidden=\"true\" class=\"MuiOutlinedInput-notchedOutline css-5v2ak0\"><legend class=\"css-w4cd9x\"><span class=\"notranslate\" aria-hidden=\"true\">\u200b<\/span><\/legend><\/fieldset><\/div><\/div><\/h4><div class=\"flex items-center\"><div class=\"mr-1 flex items-center\"><button class=\"MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-ilrvfx\" tabindex=\"0\" type=\"button\"><svg class=\"MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-vh810p\" focusable=\"false\" aria-hidden=\"true\" viewBox=\"0 0 24 24\"><path d=\"M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z\"><\/path><\/svg><\/button><button class=\"MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-27hw4k\" tabindex=\"0\" type=\"button\"><svg class=\"MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-vh810p\" focusable=\"false\" aria-hidden=\"true\" viewBox=\"0 0 24 24\"><path d=\"M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z\"><\/path><\/svg><\/button><\/div><span class=\"text-xs text-secondary\"><\/span><\/div><\/div><div class=\"text-sm text-primary my-2 mx-2 !mx-1\" style=\"line-height: 1.5em;\"><div class=\"space-y-2\"><div><div class=\"MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-vcydbf\"><div class=\"MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-multiline css-nu2kc4\"><textarea rows=\"7\" aria-invalid=\"false\"  placeholder=\"Enter feedback...\" class=\"MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputMultiline MuiInputBase-inputSizeSmall css-2k2byj\" style=\"height: 161px;\"><\/textarea><textarea aria-hidden=\"true\" class=\"MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputMultiline MuiInputBase-inputSizeSmall css-2k2byj\" readonly=\"\" tabindex=\"-1\" style=\"visibility: hidden; position: absolute; overflow: hidden; height: 0px; top: 0px; left: 0px; transform: translateZ(0px); padding-top: 0px; padding-bottom: 0px; width: 230px;\"><\/textarea><fieldset aria-hidden=\"true\" class=\"MuiOutlinedInput-notchedOutline css-5v2ak0\"><legend class=\"css-w4cd9x\"><span class=\"notranslate\" aria-hidden=\"true\">\u200b<\/span><\/legend><\/fieldset><\/div><\/div><\/div><\/div><\/div><div><button class=\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-1c69r7k\" tabindex=\"0\" type=\"button\" style=\"text-transform: none;\">Show less<span class=\"MuiButton-icon MuiButton-endIcon MuiButton-iconSizeMedium css-6bt4d2\"><svg class=\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-q7mezt\" focusable=\"false\" aria-hidden=\"true\" viewBox=\"0 0 24 24\"><path d=\"M11.29 8.71 6.7 13.3c-.39.39-.39 1.02 0 1.41s1.02.39 1.41 0L12 10.83l3.88 3.88c.39.39 1.02.39 1.41 0s.39-1.02 0-1.41L12.7 8.71c-.38-.39-1.02-.39-1.41 0\"><\/path><\/svg><\/span><\/button><\/div><\/div>";
+  var FB_SAVED_HTML = "<div class=\"rounded-lg p-[14px] flex flex-col transition-colors duration-200 bg-background  \"  style=\"cursor: pointer; border: 2px solid rgb(33, 150, 243);\"><div class=\"flex items-center justify-between mx-2\"><h4 class=\"flex items-center gap-1\">General Feedback<\/h4><div class=\"flex items-center\"><button class=\"MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-85h54f\" tabindex=\"0\" type=\"button\"><svg class=\"MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-vh810p\" focusable=\"false\" aria-hidden=\"true\" viewBox=\"0 0 24 24\"><path d=\"M3 17.25V21h3.75L17.81 9.94l-3.75-3.75zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.996.996 0 0 0-1.41 0l-1.83 1.83 3.75 3.75z\"><\/path><\/svg><\/button><button class=\"MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-85h54f\" tabindex=\"0\" type=\"button\"><svg class=\"MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-vh810p\" focusable=\"false\" aria-hidden=\"true\" viewBox=\"0 0 24 24\"><path d=\"M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6zM19 4h-3.5l-1-1h-5l-1 1H5v2h14z\"><\/path><\/svg><\/button><span class=\"text-xs text-secondary\"><\/span><\/div><\/div><div class=\"text-sm text-primary my-2 mx-2 \" style=\"line-height: 1.5em;\"><div class=\"space-y-2\"><div class=\"text-sm whitespace-pre-wrap text-gray-700\">Nice point \u2014 expand on why human mentorship matters here.<\/div><\/div><\/div><div><button class=\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-1c69r7k\" tabindex=\"0\" type=\"button\" style=\"text-transform: none;\">Show less<span class=\"MuiButton-icon MuiButton-endIcon MuiButton-iconSizeMedium css-6bt4d2\"><svg class=\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-q7mezt\" focusable=\"false\" aria-hidden=\"true\" viewBox=\"0 0 24 24\"><path d=\"M11.29 8.71 6.7 13.3c-.39.39-.39 1.02 0 1.41s1.02.39 1.41 0L12 10.83l3.88 3.88c.39.39 1.02.39 1.41 0s.39-1.02 0-1.41L12.7 8.71c-.38-.39-1.02-.39-1.41 0\"><\/path><\/svg><\/span><\/button><\/div><\/div>";
+  var FB_HL_STYLE = "background-color: rgba(255, 0, 255, 0.2); border-radius: 4px; transition: background-color 0.1s;";
+  var fbSeq = 0, fbItems = {}, fbPending = null, fbBtnEl = null;
+
+  function parseTpl(html) { var d = document.createElement("div"); d.innerHTML = html; return d.firstElementChild; }
+  function essayOf(root) { return root.querySelector("#essay-scroll-container"); }
+  function sidebarOf(root) { return root.querySelector("#sidebar-scroll-container"); }
+  function gradingRoots() { return [states.b, states.b2]; }
+
+  function countOcc(hay, needle) {
+    if (!needle) return 0;
+    var n = 0, i = hay.indexOf(needle);
+    while (i !== -1) { n++; i = hay.indexOf(needle, i + needle.length); }
+    return n;
+  }
+
+  // Find the occ-th occurrence of quote in container's text and return a Range
+  function findQuoteRange(container, quote, occ) {
+    var walker = document.createTreeWalker(container, NodeFilter.SHOW_TEXT);
+    var nodes = [], starts = [], total = 0, node;
+    while ((node = walker.nextNode())) { nodes.push(node); starts.push(total); total += node.textContent.length; }
+    var full = "";
+    for (var f = 0; f < nodes.length; f++) full += nodes[f].textContent;
+    var idx = -1;
+    for (var k = 0; k <= occ; k++) { idx = full.indexOf(quote, idx + 1); if (idx === -1) return null; }
+    var endIdx = idx + quote.length;
+    var range = document.createRange(), startSet = false;
+    for (var j = 0; j < nodes.length; j++) {
+      var s0 = starts[j], e0 = s0 + nodes[j].textContent.length;
+      if (!startSet && idx >= s0 && idx < e0) { range.setStart(nodes[j], idx - s0); startSet = true; }
+      if (startSet && endIdx > s0 && endIdx <= e0) { range.setEnd(nodes[j], endIdx - s0); return range; }
+    }
+    return null;
+  }
+
+  function wrapRange(range, id) {
+    var span = document.createElement("span");
+    span.className = "grading-highlight";
+    span.setAttribute("style", FB_HL_STYLE);
+    span.setAttribute("data-ck-fb-hl", String(id));
+    try {
+      span.appendChild(range.extractContents());
+      range.insertNode(span);
+    } catch (err) { /* unusable range: skip highlight, keep the card */ }
+  }
+
+  function makeEditCard(id, text) {
+    var el = parseTpl(FB_EDIT_HTML);
+    el.setAttribute("data-ck-fb", String(id));
+    var ta = el.querySelector("textarea[placeholder]");
+    if (ta) ta.value = text || "";
+    return el;
+  }
+  function makeSavedCard(id, text) {
+    var el = parseTpl(FB_SAVED_HTML);
+    el.setAttribute("data-ck-fb", String(id));
+    var body = el.querySelector(".whitespace-pre-wrap");
+    if (body) body.textContent = text;
+    return el;
+  }
+  function replaceCards(id, maker) {
+    gradingRoots().forEach(function (root) {
+      var c = sidebarOf(root).querySelector('[data-ck-fb="' + id + '"]');
+      if (c) c.replaceWith(maker());
+    });
+  }
+  function fbRemove(id) {
+    gradingRoots().forEach(function (root) {
+      var c = sidebarOf(root).querySelector('[data-ck-fb="' + id + '"]');
+      if (c) c.remove();
+      root.querySelectorAll('[data-ck-fb-hl="' + id + '"]').forEach(function (hl) {
+        var parent = hl.parentNode;
+        while (hl.firstChild) parent.insertBefore(hl.firstChild, hl);
+        hl.remove();
+        parent.normalize();
+      });
+    });
+    delete fbItems[id];
+  }
+
+  function hideFbBtn() { if (fbBtnEl) fbBtnEl.style.display = "none"; fbPending = null; }
+  function showFbBtn(top, left, pending) {
+    if (!fbBtnEl) {
+      fbBtnEl = parseTpl(FB_BTN_HTML);
+      document.body.appendChild(fbBtnEl);
+      fbBtnEl.querySelector("button").addEventListener("click", fbAdd);
+      // keep the selection alive when pressing the button
+      fbBtnEl.addEventListener("mousedown", function (e) { e.preventDefault(); e.stopPropagation(); });
+    }
+    fbBtnEl.style.display = "";
+    fbBtnEl.style.top = top + "px";
+    fbBtnEl.style.left = left + "px";
+    fbPending = pending;
+  }
+
+  function fbAdd() {
+    if (!fbPending) return;
+    var pending = fbPending;
+    hideFbBtn();
+    var range = pending.range, root = pending.root;
+    var quote = range.toString();
+    if (!quote.trim()) return;
+    var essay = essayOf(root);
+    var before = document.createRange();
+    before.selectNodeContents(essay);
+    before.setEnd(range.startContainer, range.startOffset);
+    var occ = countOcc(before.toString(), quote);
+    var id = ++fbSeq;
+    fbItems[id] = { quote: quote, occ: occ, text: null };
+    gradingRoots().forEach(function (r2) {
+      var target = r2 === root ? range : findQuoteRange(essayOf(r2), quote, occ);
+      if (target) wrapRange(target, id);
+      var sb = sidebarOf(r2);
+      if (sb) sb.insertBefore(makeEditCard(id, ""), sb.children[1] || null);
+    });
+    var sel = window.getSelection();
+    if (sel) sel.removeAllRanges();
+    var vis = sidebarOf(root).querySelector('[data-ck-fb="' + id + '"]');
+    if (vis) {
+      vis.scrollIntoView({ block: "nearest", behavior: "smooth" });
+      var ta = vis.querySelector("textarea[placeholder]");
+      if (ta) setTimeout(function () { ta.focus(); }, 50);
+    }
+  }
+
+  gradingRoots().forEach(function (root) {
+    root.addEventListener("mouseup", function () {
+      setTimeout(function () {
+        var sel = window.getSelection();
+        if (!sel || sel.rangeCount === 0 || sel.isCollapsed) return hideFbBtn();
+        var range = sel.getRangeAt(0);
+        var essay = essayOf(root);
+        if (!essay || !essay.contains(range.commonAncestorContainer)) return hideFbBtn();
+        if (!range.toString().trim()) return hideFbBtn();
+        var rect = range.getBoundingClientRect();
+        showFbBtn(rect.bottom + 5, rect.left, { range: range.cloneRange(), root: root });
+      }, 0);
+    });
+
+    sidebarOf(root).addEventListener("click", function (e) {
+      var btn = e.target.closest("button");
+      var card = e.target.closest("[data-ck-fb]");
+      if (!btn || !card) return;
+      var id = card.getAttribute("data-ck-fb");
+      var item = fbItems[id];
+      if (!item) return;
+      var p = btn.querySelector("svg path");
+      var d = (p && p.getAttribute("d")) || "";
+      if (d.indexOf("M9 16.17") === 0) { // check: save
+        var ta = card.querySelector("textarea[placeholder]");
+        var val = ta ? ta.value.trim() : "";
+        if (!val) { fbRemove(id); return; }
+        item.text = val;
+        replaceCards(id, function () { return makeSavedCard(id, val); });
+      } else if (d.indexOf("M19 6.41") === 0) { // x: cancel
+        if (item.text == null) fbRemove(id);
+        else replaceCards(id, function () { return makeSavedCard(id, item.text); });
+      } else if (d.indexOf("M3 17.25") === 0) { // pencil: edit
+        replaceCards(id, function () { return makeEditCard(id, item.text || ""); });
+        var ta2 = sidebarOf(root).querySelector('[data-ck-fb="' + id + '"] textarea[placeholder]');
+        if (ta2) setTimeout(function () { ta2.focus(); }, 50);
+      } else if (d.indexOf("M6 19c0") === 0) { // trash: delete
+        fbRemove(id);
+      }
+    });
+  });
+
+  document.addEventListener("mousedown", function (e) {
+    if (fbBtnEl && fbBtnEl.style.display !== "none" && !fbBtnEl.contains(e.target)) hideFbBtn();
+  });
+  // MUI focus ring on the feedback textarea
+  document.addEventListener("focusin", function (e) {
+    if (e.target.matches && e.target.matches('[data-ck-fb] textarea[placeholder]')) {
+      var w = e.target.closest(".MuiInputBase-root");
+      if (w) w.classList.add("Mui-focused");
+    }
+  });
+  document.addEventListener("focusout", function (e) {
+    if (e.target.matches && e.target.matches('[data-ck-fb] textarea[placeholder]')) {
+      var w = e.target.closest(".MuiInputBase-root");
+      if (w) w.classList.remove("Mui-focused");
+    }
+  });
+
+  /* ── Event-card <-> highlight selection sync + per-event playback seek ──
+     Mirrors the app: spans get *-selected classes (styles already in the app
+     CSS); grading/feedback highlights also bump their inline rgba alpha
+     0.2 -> 0.4; cards swap bg-background for bg-white+shadow. */
+  var SEL = null;
+  var SEL_CFG = {
+    paste: { attr: "data-paste-id", cls: "pasted-highlight-selected", card: "pasted-" },
+    copied: { attr: "data-copied-id", cls: "copied-highlight-selected", card: "copied-" },
+    plagiarism: { attr: "data-plagiarism-id", cls: "plagiarism-underline-selected", card: "plagiarism-" },
+    ai: { attr: "data-ai-id", cls: "ai-underline-selected", card: "ai-" },
+    grading: { attr: "data-grading-id", cls: "grading-underline-selected", card: "grading-" },
+    ckfb: { attr: "data-ck-fb-hl", cls: "grading-underline-selected", card: null }
+  };
+  function allRoots() { return [states.a, states.b, states.b2]; }
+  function setAlpha(el, a) {
+    var st = el.getAttribute("style") || "";
+    el.setAttribute("style", st.replace(/rgba\((\d+),\s*(\d+),\s*(\d+),\s*[\d.]+\)/, "rgba($1, $2, $3, " + a + ")"));
+  }
+  function cardFor(root, type, id) {
+    var sb = sidebarOf(root);
+    if (!sb) return null;
+    if (type === "ckfb") return sb.querySelector('[data-ck-fb="' + id + '"]');
+    return sb.querySelector('[id="' + SEL_CFG[type].card + id + '"]');
+  }
+  function applySel(on) {
+    if (!SEL) return;
+    var cfg = SEL_CFG[SEL.type];
+    allRoots().forEach(function (root) {
+      root.querySelectorAll("[" + cfg.attr + '="' + SEL.id + '"]').forEach(function (sp) {
+        sp.classList[on ? "add" : "remove"](cfg.cls);
+        if (SEL.type === "grading" || SEL.type === "ckfb") setAlpha(sp, on ? 0.4 : 0.2);
+      });
+      var card = cardFor(root, SEL.type, SEL.id);
+      if (card) {
+        card.classList[on ? "remove" : "add"]("bg-background");
+        card.classList[on ? "add" : "remove"]("bg-white");
+        card.classList[on ? "add" : "remove"]("shadow");
+      }
+    });
+  }
+  function clearSel() { applySel(false); SEL = null; }
+  function selectFlag(root, type, id, source) {
+    if (SEL && SEL.type === type && String(SEL.id) === String(id)) { clearSel(); return; }
+    clearSel();
+    SEL = { type: type, id: id };
+    applySel(true);
+    if (source === "span") {
+      var card = cardFor(root, type, id);
+      if (card) card.scrollIntoView({ block: "nearest", behavior: "smooth" });
+    } else {
+      var sp = root.querySelector("[" + SEL_CFG[type].attr + '="' + id + '"]');
+      if (sp) sp.scrollIntoView({ block: "center", behavior: "smooth" });
+    }
+  }
+
+  allRoots().forEach(function (root) {
+    var essay = essayOf(root);
+    if (essay) essay.addEventListener("click", function (e) {
+      var s = window.getSelection();
+      if (s && !s.isCollapsed) return; // that was a text selection, not a click
+      var span = e.target.closest("span[data-paste-id],span[data-copied-id],span[data-grading-id],span[data-plagiarism-id],span[data-ai-id],span[data-ck-fb-hl]");
+      if (!span || !essay.contains(span)) { clearSel(); return; }
+      if (span.hasAttribute("data-ck-fb-hl")) return selectFlag(root, "ckfb", span.getAttribute("data-ck-fb-hl"), "span");
+      var order = ["paste", "copied", "grading", "plagiarism", "ai"];
+      for (var i = 0; i < order.length; i++) {
+        var v = span.getAttribute(SEL_CFG[order[i]].attr);
+        if (v !== null) return selectFlag(root, order[i], v, "span");
+      }
+    });
+
+    var sb = sidebarOf(root);
+    if (sb) sb.addEventListener("click", function (e) {
+      if (e.target.closest("button")) return; // play/pencil/trash/etc. have their own handlers
+      var card = e.target.closest('[id^="pasted-"],[id^="copied-"],[id^="ai-"],[id^="plagiarism-"],[id^="grading-"],[data-ck-fb]');
+      if (!card || !sb.contains(card)) return;
+      if (card.hasAttribute("data-ck-fb")) {
+        var item = fbItems[card.getAttribute("data-ck-fb")];
+        if (!item || item.text == null) return; // ignore while editing
+        return selectFlag(root, "ckfb", card.getAttribute("data-ck-fb"), "card");
+      }
+      var id = card.id;
+      var type = id.indexOf("pasted-") === 0 ? "paste"
+        : id.indexOf("copied-") === 0 ? "copied"
+        : id.indexOf("ai-") === 0 ? "ai"
+        : id.indexOf("plagiarism-") === 0 ? "plagiarism" : "grading";
+      var flagId = type === "grading" ? id.slice(8) : id.slice(id.lastIndexOf("-") + 1);
+      selectFlag(root, type, flagId, "card");
+    });
+  });
+
+  /* Per-event playback: play icons on External Paste / Transcribed cards
+     seek the modal to the event (paste rewinds 5 edits; copied backs up 1),
+     exactly like essay-viewer.tsx. */
+  function seekTimeFor(type, startIndex) {
+    var first = -1;
+    for (var i = 0; i < steps.length; i++) {
+      var ev = steps[i];
+      if (ev.t === "t" && ev.o === "i" && ev.i !== undefined && ev.i >= startIndex) { first = i; break; }
+    }
+    var target;
+    if (type === "paste") {
+      target = first > 0 ? first : 0;
+      if (first > 0) {
+        var seen = 0;
+        for (var j = first - 1; j >= 0; j--) {
+          if (steps[j].t === "t") { seen++; target = j; if (seen >= 5) break; }
+        }
+      }
+    } else {
+      if (first === -1) return 0;
+      target = first > 0 ? first - 1 : 0;
+    }
+    var t = 0;
+    for (var k = 0; k < target; k++) t += steps[k].d || 0;
+    return t;
+  }
+  (function () {
+    var sb = sidebarOf(states.a);
+    if (!sb) return;
+    sb.querySelectorAll('[id^="pasted-"], [id^="copied-"], [id^="ai-"], [id^="plagiarism-"]').forEach(function (card) {
+      var isPaste = card.id.indexOf("pasted-") === 0;
+      var attr = isPaste ? "paste" : card.id.slice(0, card.id.lastIndexOf("-"));
+      var flagId = card.id.slice(card.id.lastIndexOf("-") + 1);
+      card.querySelectorAll("button").forEach(function (btn) {
+        var p = btn.querySelector("svg path");
+        var d = ((p && p.getAttribute("d")) || "").toLowerCase();
+        if (d.indexOf("m10 16.5") !== 0) return;
+        btn.addEventListener("click", function (e) {
+          e.stopPropagation();
+          var span = essayOf(states.a).querySelector("[data-" + attr + '-id="' + flagId + '"]');
+          var startIndex = span ? parseInt(span.getAttribute("data-start-index") || "0", 10) : 0;
+          // paste rewinds 5 edits for run-up; everything else backs up 1 event
+          openModal(seekTimeFor(isPaste ? "paste" : "copied", startIndex));
+        });
+      });
+    });
+  })();
+})();
+</script>
+
+<script>
+/* ── "Why was this flagged?" evidence panels on the Transcribed cards ──
+   Mirrors the app's TranscriptionEvidence panel: the engine picks each
+   chunk's top tells (likelihood ratio vs the v5.23 training-corpus
+   population curves) and the card renders them. Here the tells + curves
+   for two real ground-truth transcribed chunks are baked in. */
+(function () {
+  var DATA = {"ev": [[{"k": "pb100", "v": 0.6, "t": 0.47, "lr": 47.541, "pa": 1}, {"k": "pgini", "v": 0.0608, "t": 0.0608, "lr": 32.556, "pa": 1}, {"k": "lbr", "v": 0.0, "t": 0.0, "lr": 5.629, "pa": 2}, {"k": "pp100", "v": 0.0, "t": 0.0, "lr": 4.771, "pa": 4}], [{"k": "pgini", "v": 0.0156, "t": 0.0156, "lr": 51.672, "pa": 1}, {"k": "pb100", "v": 1.0, "t": 0.6931, "lr": 24.118, "pa": 1}, {"k": "lbr", "v": 0.0, "t": 0.0, "lr": 5.629, "pa": 2}, {"k": "idr", "v": 480.0, "t": 6.1759, "lr": 5.019, "pa": 99}]], "evc": {"idr": {"lo": -0.216, "hi": 6.4137, "a": [0.089, 0.199, 0.308, 0.363, 0.387, 0.439, 0.537, 0.651, 0.757, 0.847, 0.916, 0.963, 0.991, 1.0, 0.979, 0.93, 0.864, 0.784, 0.694, 0.604, 0.53, 0.48, 0.449, 0.424, 0.398, 0.371, 0.342, 0.31, 0.274, 0.238, 0.208, 0.186, 0.169, 0.153, 0.138, 0.123, 0.109, 0.095, 0.081, 0.072, 0.068, 0.065, 0.061, 0.055, 0.046, 0.033, 0.019, 0.016], "t": [0.003, 0.008, 0.016, 0.022, 0.026, 0.027, 0.026, 0.028, 0.04, 0.071, 0.124, 0.206, 0.333, 0.514, 0.741, 0.947, 0.986, 0.797, 0.545, 0.395, 0.341, 0.32, 0.303, 0.285, 0.263, 0.242, 0.224, 0.207, 0.191, 0.176, 0.163, 0.152, 0.144, 0.134, 0.119, 0.102, 0.087, 0.075, 0.065, 0.06, 0.062, 0.067, 0.083, 0.109, 0.116, 0.086, 0.042, 0.029], "ticks": [{"t": 0.0, "label": "0"}, {"t": 1.3863, "label": "3"}, {"t": 2.3979, "label": "10"}, {"t": 3.434, "label": "30"}, {"t": 4.6151, "label": "100"}, {"t": 5.7071, "label": "300"}]}, "lbr": {"lo": -0.1546, "hi": 4.0188, "a": [0.212, 0.373, 0.439, 0.374, 0.284, 0.256, 0.28, 0.321, 0.369, 0.423, 0.481, 0.531, 0.564, 0.583, 0.594, 0.604, 0.616, 0.633, 0.655, 0.678, 0.706, 0.744, 0.795, 0.855, 0.913, 0.959, 0.988, 1.0, 0.991, 0.954, 0.895, 0.83, 0.763, 0.691, 0.606, 0.51, 0.413, 0.331, 0.272, 0.231, 0.195, 0.159, 0.127, 0.098, 0.075, 0.058, 0.047, 0.044], "t": [0.506, 0.881, 0.992, 0.745, 0.419, 0.242, 0.195, 0.196, 0.206, 0.216, 0.225, 0.233, 0.24, 0.251, 0.263, 0.276, 0.288, 0.295, 0.294, 0.285, 0.271, 0.258, 0.25, 0.243, 0.235, 0.22, 0.197, 0.171, 0.147, 0.129, 0.113, 0.096, 0.077, 0.058, 0.042, 0.031, 0.023, 0.017, 0.012, 0.009, 0.006, 0.004, 0.003, 0.002, 0.002, 0.001, 0.001, 0.001], "ticks": [{"t": 0.0, "label": "0%"}, {"t": 0.6931, "label": "1%"}, {"t": 1.3863, "label": "3%"}, {"t": 2.3979, "label": "10%"}, {"t": 3.434, "label": "30%"}]}, "pb100": {"lo": 0.4549, "hi": 6.8887, "a": [0.004, 0.015, 0.029, 0.035, 0.036, 0.044, 0.058, 0.072, 0.081, 0.091, 0.11, 0.132, 0.158, 0.185, 0.213, 0.242, 0.279, 0.331, 0.398, 0.477, 0.567, 0.668, 0.765, 0.85, 0.931, 0.99, 0.995, 0.949, 0.872, 0.763, 0.633, 0.509, 0.409, 0.329, 0.262, 0.209, 0.167, 0.136, 0.108, 0.086, 0.073, 0.065, 0.058, 0.051, 0.043, 0.034, 0.025, 0.023], "t": [0.32, 0.671, 0.958, 0.972, 0.776, 0.578, 0.461, 0.398, 0.357, 0.326, 0.313, 0.323, 0.352, 0.391, 0.432, 0.479, 0.541, 0.625, 0.726, 0.823, 0.894, 0.926, 0.924, 0.899, 0.864, 0.831, 0.804, 0.777, 0.731, 0.656, 0.552, 0.43, 0.31, 0.21, 0.134, 0.081, 0.047, 0.025, 0.012, 0.006, 0.004, 0.003, 0.003, 0.003, 0.002, 0.002, 0.001, 0.001], "ticks": [{"t": 1.3863, "label": "3"}, {"t": 2.3979, "label": "10"}, {"t": 3.434, "label": "30"}, {"t": 4.6151, "label": "100"}]}, "pgini": {"lo": -0.0354, "hi": 1.0362, "a": [0.003, 0.005, 0.008, 0.012, 0.017, 0.025, 0.033, 0.043, 0.055, 0.067, 0.079, 0.09, 0.105, 0.124, 0.146, 0.173, 0.206, 0.243, 0.284, 0.322, 0.35, 0.367, 0.372, 0.363, 0.344, 0.323, 0.301, 0.281, 0.264, 0.248, 0.235, 0.227, 0.225, 0.231, 0.244, 0.264, 0.291, 0.33, 0.385, 0.46, 0.554, 0.676, 0.834, 0.978, 0.973, 0.742, 0.408, 0.309], "t": [0.238, 0.449, 0.695, 0.903, 1.0, 0.947, 0.785, 0.607, 0.489, 0.444, 0.448, 0.479, 0.524, 0.57, 0.603, 0.615, 0.609, 0.595, 0.582, 0.572, 0.564, 0.559, 0.555, 0.553, 0.55, 0.542, 0.529, 0.516, 0.501, 0.486, 0.466, 0.434, 0.392, 0.348, 0.316, 0.301, 0.304, 0.318, 0.333, 0.34, 0.327, 0.292, 0.239, 0.177, 0.115, 0.064, 0.03, 0.022], "ticks": [{"t": 0.25, "label": "0.25"}, {"t": 0.5, "label": "0.50"}, {"t": 0.75, "label": "0.75"}]}, "pp100": {"lo": -0.2487, "hi": 6.4653, "a": [0.316, 0.578, 0.645, 0.447, 0.225, 0.175, 0.259, 0.351, 0.393, 0.414, 0.45, 0.504, 0.567, 0.634, 0.702, 0.77, 0.833, 0.889, 0.939, 0.976, 0.996, 1.0, 0.994, 0.982, 0.959, 0.917, 0.85, 0.767, 0.681, 0.598, 0.518, 0.442, 0.367, 0.298, 0.24, 0.197, 0.166, 0.145, 0.129, 0.114, 0.099, 0.086, 0.074, 0.063, 0.055, 0.047, 0.04, 0.038], "t": [0.386, 0.848, 0.975, 0.589, 0.199, 0.085, 0.132, 0.186, 0.194, 0.193, 0.203, 0.214, 0.227, 0.237, 0.244, 0.25, 0.252, 0.246, 0.232, 0.213, 0.196, 0.182, 0.166, 0.146, 0.124, 0.101, 0.078, 0.057, 0.041, 0.027, 0.017, 0.01, 0.006, 0.004, 0.003, 0.002, 0.001, 0.001, 0.001, 0.001, 0.0, 0.0, 0.0, 0.001, 0.001, 0.001, 0.001, 0.001], "ticks": [{"t": 0.0, "label": "0"}, {"t": 0.6931, "label": "1"}, {"t": 1.3863, "label": "3"}, {"t": 2.3979, "label": "10"}, {"t": 3.434, "label": "30"}, {"t": 4.6151, "label": "100"}]}}};
+  var META = {
+    pgini: ["Pause inequality", "Real writers concentrate pauses into a few long thinking breaks; transcribers pause evenly."],
+    pp100: ["Pauses per 100 words", "Thinking pauses while composing. Typical essays: ~13 per 100 words."],
+    lbr: ["Time in long breaks", "Share of writing time in breaks over 30s — planning what to say next."],
+    fbe: ["Backward edits", "How often the cursor jumps back to revise earlier text."],
+    idr: ["Typed vs deleted", "Characters typed per character deleted — high means little revision."],
+    pb100: ["Typing bursts per 100 words", "Burst-pause-burst rhythm of composing thought by thought."],
+    ls: ["Forward-typing share", "Share of edits extending the text vs revising it. 1.0 = pure forward typing."],
+    pc: ["Pause count", "Number of thinking pauses in this section."],
+    dp100: ["Deletes per 100 words", "Deletion density — composing is messy, copying is clean."],
+    wrcv: ["Word-rhythm variability", "Composers speed up and stall word to word; transcribers hold a steady cadence."],
+    plift: ["Pauses at meaning vs mid-word", "Above 1: pauses at sentence boundaries. Below 1: pauses mid-word (eyes on a source)."],
+    pslope: ["Pause hierarchy", "Authentic pauses grow char to word to sentence to paragraph; transcription flattens this."],
+    awt: ["Active writing time", "Time actively editing this section, excluding long pauses."],
+    ts: ["Typing speed", "Chars/min while actively typing this section."]
+  };
+  var BLUE = "#2a78d6", RED = "#e34948";
+
+  function fmtVal(k, v) {
+    if (k === "ls" || k === "pgini" || k === "plift" || k === "pslope" || k === "wrcv") return v.toFixed(2);
+    if (k === "lbr" || k === "fbe") return (v * 100).toFixed(1) + "%";
+    if (k === "awt") return (v / 60000).toFixed(1) + " min";
+    return v >= 100 ? String(Math.round(v)) : v.toFixed(1);
+  }
+
+  function chartSVG(c) {
+    var n = c.a.length, W = 300, H = 84, padL = 5, padR = 5, padT = 8, padB = 14;
+    var step = (c.hi - c.lo) / (n - 1);
+    var i0 = 0, i1 = n - 1;
+    while (i0 < n - 2 && c.a[i0] < 0.02 && c.t[i0] < 0.02) i0++;
+    while (i1 > i0 + 1 && c.a[i1] < 0.02 && c.t[i1] < 0.02) i1--;
+    var dLo = c.lo + Math.max(0, i0 - 1) * step;
+    var dHi = c.lo + Math.min(n - 1, i1 + 1) * step;
+    function X(t) { return padL + ((t - dLo) / (dHi - dLo)) * (W - padL - padR); }
+    function Y(v) { return H - padB - v * (H - padT - padB); }
+    function paths(arr, color) {
+      var line = "", first = null, last = null;
+      for (var i = 0; i < n; i++) {
+        var t = c.lo + i * step;
+        if (t < dLo || t > dHi) continue;
+        var pt = X(t).toFixed(1) + " " + Y(arr[i]).toFixed(1);
+        line += (line ? " L " : "M ") + pt;
+        if (first === null) first = X(t).toFixed(1);
+        last = X(t).toFixed(1);
+      }
+      var base = (H - padB).toFixed(1);
+      return '<path d="' + line + " L " + last + " " + base + " L " + first + " " + base + ' Z" fill="' + color + '" opacity="0.15"></path>' +
+             '<path d="' + line + '" fill="none" stroke="' + color + '" stroke-width="1.6" stroke-linejoin="round"></path>';
+    }
+    var s = '<svg viewBox="0 0 ' + W + " " + H + '" style="width:100%;height:auto;display:block" role="img">';
+    s += '<line x1="' + padL + '" y1="' + (H - padB) + '" x2="' + (W - padR) + '" y2="' + (H - padB) + '" stroke="#d1d5db" stroke-width="1"></line>';
+    (c.ticks || []).forEach(function (tk) {
+      if (tk.t < dLo || tk.t > dHi) return;
+      s += '<line x1="' + X(tk.t).toFixed(1) + '" y1="' + (H - padB) + '" x2="' + X(tk.t).toFixed(1) + '" y2="' + (H - padB + 3) + '" stroke="#9ca3af" stroke-width="1"></line>';
+      s += '<text x="' + X(tk.t).toFixed(1) + '" y="' + (H - 2) + '" font-size="8.5" fill="#9ca3af" text-anchor="middle" font-family="ui-monospace,monospace">' + tk.label + "</text>";
+    });
+    s += paths(c.a, BLUE) + paths(c.t, RED) + "</svg>";
+    return s;
+  }
+
+  function panelHTML(ev) {
+    var html = '<div style="display:flex;flex-wrap:wrap;gap:4px 16px;font-size:11px;color:#6b7280;margin:6px 0 8px">' +
+      '<span style="display:inline-flex;align-items:center;gap:6px"><span style="width:14px;height:4px;border-radius:2px;background:' + BLUE + '"></span>Authentic writing</span>' +
+      '<span style="display:inline-flex;align-items:center;gap:6px"><span style="width:14px;height:4px;border-radius:2px;background:' + RED + '"></span>Transcribed writing</span></div>';
+    html += '<div style="display:flex;flex-direction:column;gap:8px">';
+    ev.forEach(function (e) {
+      var curve = DATA.evc[e.k];
+      var meta = META[e.k] || [e.k, ""];
+      if (!curve) return;
+      var above = e.pa >= 50;
+      html += '<div style="border:1px solid #e5e7eb;border-radius:8px;padding:10px">' +
+        '<div style="font-size:12px;font-weight:600;color:#1f2937">' + meta[0] + "</div>" +
+        chartSVG(curve) +
+        '<div style="margin-top:4px;font-family:ui-monospace,monospace;font-size:10.5px;color:#6b7280">' +
+        fmtVal(e.k, e.v) + " \u00b7 " + (above ? "above " + e.pa : "below " + (100 - e.pa)) + "% of authentic writing</div>" +
+        '<div style="margin-top:3px;font-size:11px;line-height:1.4;color:#6b7280">' + meta[1] + "</div></div>";
+    });
+    return html + "</div>";
+  }
+
+  DATA.ev.forEach(function (ev, idx) {
+    var card = document.getElementById("copied-" + idx);
+    if (!card) return;
+    var wrap = document.createElement("div");
+    wrap.style.marginTop = "4px";
+    var btn = document.createElement("button");
+    btn.type = "button";
+    btn.style.cssText = "background:none;border:0;color:#1d4ed8;font-size:12px;font-weight:600;cursor:pointer;padding:2px 4px;";
+    btn.textContent = "Why was this flagged? \u25be";
+    var panel = document.createElement("div");
+    panel.style.display = "none";
+    panel.innerHTML = panelHTML(ev);
+    btn.addEventListener("click", function (e) {
+      e.stopPropagation();
+      var open = panel.style.display !== "none";
+      panel.style.display = open ? "none" : "block";
+      btn.textContent = open ? "Why was this flagged? \u25be" : "Hide details \u25b4";
+    });
+    panel.addEventListener("click", function (e) { e.stopPropagation(); });
+    wrap.appendChild(btn);
+    wrap.appendChild(panel);
+    card.appendChild(wrap);
   });
 })();
 </script>
