@@ -1954,5 +1954,89 @@ Modern pedagogical approaches have evolved significantly with the integration of
   });
 })();
 </script>
+<script>
+/* ── "Show quote" on the Plagiarism card ──
+   Mirrors the app's plagiarism event card: the matched quote + source live
+   behind a Show quote toggle styled like the Transcribed cards' "Why was
+   this flagged?" button. The baked React "Show more" button was inert, so
+   it is removed and replaced here. */
+(function () {
+  var card = document.getElementById("plagiarism-0");
+  if (!card) return;
+  var QUOTE = "The type of tracking has impact on the level of educational equity, which is especially determined by the degree in which the system is differentiated. Less differentiated systems, such as standardized comprehensive schools, reach higher levels of equity in comparison to more differentiated, or tracked, systems.";
+  var URL = "https://en.wikipedia.org/wiki/Educational_equity";
+  // Drop the dead React "Show more" button and the empty body div.
+  card.querySelectorAll("button").forEach(function (btn) {
+    if ((btn.textContent || "").indexOf("Show more") === 0) {
+      var holder = btn.parentElement;
+      if (holder && holder.parentElement === card) holder.remove();
+      else btn.remove();
+    }
+  });
+  card.querySelectorAll("div.text-sm.text-primary").forEach(function (d) {
+    if (!d.textContent.trim() && d.parentElement === card) d.remove();
+  });
+  var wrap = document.createElement("div");
+  wrap.style.marginTop = "4px";
+  var btn = document.createElement("button");
+  btn.type = "button";
+  btn.style.cssText = "background:none;border:0;color:#1d4ed8;font-size:12px;font-weight:600;cursor:pointer;padding:2px 4px;";
+  btn.textContent = "Show quote \u25be";
+  var panel = document.createElement("div");
+  panel.style.cssText = "display:none;margin:8px 8px 0;font-size:14px;line-height:1.5em;";
+  panel.innerHTML =
+    '<div style="font-style:italic">' + QUOTE + "</div>" +
+    '<div style="margin:16px 0 8px;font-weight:500">Source:</div>' +
+    '<a href="' + URL + '" target="_blank" rel="noopener noreferrer" style="color:#2563eb;word-break:break-all">' + URL + "</a>";
+  btn.addEventListener("click", function (e) {
+    e.stopPropagation();
+    var open = panel.style.display !== "none";
+    panel.style.display = open ? "none" : "block";
+    btn.textContent = open ? "Show quote \u25be" : "Hide quote \u25b4";
+  });
+  panel.addEventListener("click", function (e) { e.stopPropagation(); });
+  wrap.appendChild(btn);
+  wrap.appendChild(panel);
+  card.appendChild(wrap);
+})();
+</script>
+<script>
+/* ── "See full original paste" on the External Paste cards ──
+   The paste bodies are baked into the DOM behind Tailwind's line-clamp-2;
+   the React "Show more" buttons were inert. Replace them with a live
+   toggle styled like the other baked buttons. */
+(function () {
+  document.querySelectorAll('[id^="pasted-"]').forEach(function (card) {
+    var body = card.querySelector("div.text-sm.text-primary");
+    if (!body) return;
+    var dead = null;
+    card.querySelectorAll("button").forEach(function (btn) {
+      if ((btn.textContent || "").indexOf("Show more") === 0) dead = btn;
+    });
+    if (!dead) return;
+    var holder = dead.parentElement;
+    if (holder && holder.parentElement === card) holder.remove();
+    else dead.remove();
+    var wrap = document.createElement("div");
+    wrap.style.marginTop = "4px";
+    var btn = document.createElement("button");
+    btn.type = "button";
+    btn.style.cssText = "background:none;border:0;color:#1d4ed8;font-size:12px;font-weight:600;cursor:pointer;padding:2px 4px;";
+    btn.textContent = "See full original paste \u25be";
+    btn.addEventListener("click", function (e) {
+      e.stopPropagation();
+      if (body.classList.contains("line-clamp-2")) {
+        body.classList.remove("line-clamp-2");
+        btn.textContent = "Hide original paste \u25b4";
+      } else {
+        body.classList.add("line-clamp-2");
+        btn.textContent = "See full original paste \u25be";
+      }
+    });
+    wrap.appendChild(btn);
+    card.appendChild(wrap);
+  });
+})();
+</script>
 </body>
 </html>
