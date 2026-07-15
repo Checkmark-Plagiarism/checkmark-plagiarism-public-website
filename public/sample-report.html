@@ -2002,9 +2002,10 @@ Modern pedagogical approaches have evolved significantly with the integration of
 </script>
 <script>
 /* ── "See full original paste" on the External Paste cards ──
-   The paste bodies are baked into the DOM behind Tailwind's line-clamp-2;
-   the React "Show more" buttons were inert. Replace them with a live
-   toggle styled like the other baked buttons. */
+   The paste bodies are baked into the DOM; the React "Show more" buttons
+   were inert. Replace them with a live toggle styled like the other baked
+   buttons. Collapsed cards hide the pasted text entirely (just like the
+   Plagiarism card's quote). */
 (function () {
   document.querySelectorAll('[id^="pasted-"]').forEach(function (card) {
     var body = card.querySelector("div.text-sm.text-primary");
@@ -2017,6 +2018,8 @@ Modern pedagogical approaches have evolved significantly with the integration of
     var holder = dead.parentElement;
     if (holder && holder.parentElement === card) holder.remove();
     else dead.remove();
+    body.classList.remove("line-clamp-2");
+    body.style.display = "none";
     var wrap = document.createElement("div");
     wrap.style.marginTop = "4px";
     var btn = document.createElement("button");
@@ -2025,11 +2028,11 @@ Modern pedagogical approaches have evolved significantly with the integration of
     btn.textContent = "See full original paste \u25be";
     btn.addEventListener("click", function (e) {
       e.stopPropagation();
-      if (body.classList.contains("line-clamp-2")) {
-        body.classList.remove("line-clamp-2");
+      if (body.style.display === "none") {
+        body.style.display = "";
         btn.textContent = "Hide original paste \u25b4";
       } else {
-        body.classList.add("line-clamp-2");
+        body.style.display = "none";
         btn.textContent = "See full original paste \u25be";
       }
     });
