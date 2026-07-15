@@ -2005,7 +2005,8 @@ Modern pedagogical approaches have evolved significantly with the integration of
    The paste bodies are baked into the DOM; the React "Show more" buttons
    were inert. Replace them with a live toggle styled like the other baked
    buttons. Collapsed cards hide the pasted text entirely (just like the
-   Plagiarism card's quote). */
+   Plagiarism card's quote), and the toggle sits above the text so it
+   stays put when the text expands below it. */
 (function () {
   document.querySelectorAll('[id^="pasted-"]').forEach(function (card) {
     var body = card.querySelector("div.text-sm.text-primary");
@@ -2037,7 +2038,7 @@ Modern pedagogical approaches have evolved significantly with the integration of
       }
     });
     wrap.appendChild(btn);
-    card.appendChild(wrap);
+    card.insertBefore(wrap, body);
   });
 })();
 </script>
