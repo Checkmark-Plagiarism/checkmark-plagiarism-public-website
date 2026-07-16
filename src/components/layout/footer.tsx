@@ -16,7 +16,7 @@ const Footer = () => {
     {
       title: "Product",
       // TODO: "Features", "Updates" temporarily removed. Add back to array if needed
-      links: ["Integrations", "Pricing", "Security"],
+      links: ["Services", "Plagiarism Detection", "AI Detection", "Autograder", "Integrations", "Pricing", "Security"],
     },
     {
       title: "Resources",
@@ -39,7 +39,11 @@ const Footer = () => {
     const linkMap: { [key: string]: string } = {
       // Product
       // "Features": "/features", // TODO: Features page temporarily disabled
-      "Integrations": "/#integrations",
+      "Services": "/services",
+      "Plagiarism Detection": "/services/plagiarism-detection",
+      "AI Detection": "/services/ai-detection",
+      "Autograder": "/services/autograder",
+      "Integrations": "/services/integrations",
       "Pricing": "/pricing",
       "Security": "/security", 
       // "Updates": "#", // TODO: Create / find page

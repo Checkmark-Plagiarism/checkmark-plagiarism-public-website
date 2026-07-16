@@ -17,9 +17,20 @@ export default function Header() {
   const hasDarkHero = pathname === "/";
   const [scrolled, setScrolled] = useState(!hasDarkHero);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [servicesExpanded, setServicesExpanded] = useState(false);
   const [blogsExpanded, setBlogsExpanded] = useState(false);
   const [supportExpanded, setSupportExpanded] = useState(false);
   const [contactExpanded, setContactExpanded] = useState(false);
+
+  const serviceLinks = [
+    { href: "/services", label: "All Services" },
+    { href: "/services/plagiarism-detection", label: "Plagiarism Detection" },
+    { href: "/services/ai-detection", label: "AI Writing Detection" },
+    { href: "/services/writing-process", label: "Writing Process Analysis" },
+    { href: "/services/autograder", label: "AI Autograder & Rubrics" },
+    { href: "/services/integrations", label: "LMS Integrations" },
+    { href: "/services/analytics", label: "School Analytics" },
+  ];
 
   useEffect(() => {
     // Re-evaluate on mount (handles direct navigation and browser back/forward).
@@ -99,6 +110,26 @@ export default function Header() {
           >
             About
           </Link>
+          {/* Services Dropdown */}
+          <div className="relative group">
+            <button className={`font-medium transition-smooth flex items-center gap-1 ${scrolled ? "text-foreground hover:text-primary" : "text-white/90 hover:text-white"
+              }`}>
+              Services
+              <svg className="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+
+            <div className="absolute top-full left-0 mt-2 w-60 bg-white rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+              <div className="py-2">
+                {serviceLinks.map((s) => (
+                  <Link key={s.href} href={s.href} className="block px-4 py-2 text-sm text-gray-700 hover:bg-brand-50 hover:text-brand-700 transition-smooth">
+                    {s.label}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
           <Link
             href="/pricing"
             className={`font-medium transition-smooth ${scrolled ? "text-foreground hover:text-primary" : "text-white/90 hover:text-white"
@@ -251,6 +282,30 @@ export default function Header() {
           >
             About
           </Link>
+          {/* Services accordion */}
+          <div>
+            <button
+              className="w-full flex items-center justify-between px-4 py-3 rounded-lg text-foreground font-medium hover:bg-brand-50 hover:text-brand-700 transition-smooth"
+              onClick={() => setServicesExpanded(!servicesExpanded)}
+            >
+              Services
+              <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${servicesExpanded ? "rotate-180" : ""}`} />
+            </button>
+            {servicesExpanded && (
+              <div className="ml-4 flex flex-col gap-1">
+                {serviceLinks.map((s) => (
+                  <Link
+                    key={s.href}
+                    href={s.href}
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="px-4 py-2 rounded-lg text-sm text-gray-600 hover:bg-brand-50 hover:text-brand-700 transition-smooth"
+                  >
+                    {s.label}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
           <Link
             href="/pricing"
             onClick={() => setMobileMenuOpen(false)}
