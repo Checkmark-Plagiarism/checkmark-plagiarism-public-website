@@ -8,12 +8,12 @@ const BULLETS = [
   "Data stays in your existing LMS gradebook",
 ];
 
-type Lms = { name: string; tag: string; color: string; glyph: string; special?: boolean };
+type Lms = { name: string; tag: string; color: string; glyph: string };
 
 const PLATFORMS: Lms[] = [
   { name: "Canvas", tag: "Most-used LMS in higher ed", color: "#D2492A", glyph: "C" },
   { name: "Google Classroom", tag: "Most-used in K–12", color: "#1A73E8", glyph: "G" },
-  { name: "Buzz LMS", tag: "First and only native keystroke partner", color: "var(--teal)", glyph: "B", special: true },
+  { name: "Buzz LMS", tag: "Native keystroke capture", color: "var(--teal)", glyph: "B" },
 ];
 
 export function Lms() {
@@ -60,12 +60,7 @@ export function Lms() {
               <div
                 key={i}
                 className="px-6 py-5 rounded-[18px] bg-bg-elev flex items-center gap-[18px] relative"
-                style={
-                  {
-                    border: "1px solid " + (l.special ? "var(--teal)" : "var(--line)"),
-                    boxShadow: l.special ? "0 0 0 4px var(--teal-soft)" : "none",
-                  } as CSSProperties
-                }
+                style={{ border: "1px solid var(--line)" } as CSSProperties}
               >
                 <div
                   className="w-[52px] h-[52px] rounded-[14px] text-white grid place-items-center font-display italic font-semibold text-[26px] shrink-0"
@@ -77,11 +72,6 @@ export function Lms() {
                   <div className="font-semibold text-[17px]">{l.name}</div>
                   <div className="text-[13px] text-ink-mute">{l.tag}</div>
                 </div>
-                {l.special && (
-                  <div className="px-2.5 py-1 rounded-full bg-yellow text-ink text-[11px] font-bold font-mono tracking-[0.04em]">
-                    EXCLUSIVE
-                  </div>
-                )}
               </div>
             ))}
           </div>

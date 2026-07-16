@@ -43,10 +43,6 @@ const TEAM: Member[] = [
     name: "Kevin Lee",
     role: "Software Engineer - AI/ML",
     img: "/images/headshots/kevin-headshot.png",
-  },  
-  {
-    name: "Vince Plaza",
-    role: "VP Business",
   },
 ];
 

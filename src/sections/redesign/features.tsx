@@ -66,14 +66,14 @@ function LmsMock() {
   const rows = [
     { name: "Canvas", glyph: "C", color: "#D2492A" },
     { name: "Google Classroom", glyph: "G", color: "#1A73E8" },
-    { name: "Buzz LMS", glyph: "B", color: "var(--teal)", special: true },
+    { name: "Buzz LMS", glyph: "B", color: "var(--teal)" },
   ];
   return (
     <div className="flex flex-col gap-3">
       <div className="p-[18px] rounded-[16px] bg-teal text-white">
-        <div className="text-[11px] font-mono opacity-75 tracking-[0.06em] uppercase mb-1.5">Only on Checkmark</div>
+        <div className="text-[11px] font-mono opacity-75 tracking-[0.06em] uppercase mb-1.5">Keystroke capture</div>
         <div className="font-display text-[19px] leading-[1.25]">
-          Native keystroke capture inside Buzz LMS text boxes. No other tool does this.
+          Native keystroke capture inside Buzz LMS text boxes.
         </div>
       </div>
       {rows.map((r) => (
@@ -85,11 +85,6 @@ function LmsMock() {
             {r.glyph}
           </div>
           <div className="flex-1 font-semibold text-[15px] text-ink">{r.name}</div>
-          {r.special && (
-            <span className="text-[10px] font-bold font-mono tracking-[0.04em] px-2 py-1 rounded-full bg-yellow text-ink">
-              EXCLUSIVE
-            </span>
-          )}
         </div>
       ))}
     </div>

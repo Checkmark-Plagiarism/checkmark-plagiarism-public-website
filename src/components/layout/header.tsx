@@ -103,13 +103,6 @@ export default function Header() {
           >
             Home
           </Link>
-          <Link
-            href="/about"
-            className={`font-medium transition-smooth ${scrolled ? "text-foreground hover:text-primary" : "text-white/90 hover:text-white"
-              }`}
-          >
-            About
-          </Link>
           {/* Services Dropdown */}
           <div className="relative group">
             <button className={`font-medium transition-smooth flex items-center gap-1 ${scrolled ? "text-foreground hover:text-primary" : "text-white/90 hover:text-white"
@@ -274,13 +267,6 @@ export default function Header() {
             className="px-4 py-3 rounded-lg text-foreground font-medium hover:bg-brand-50 hover:text-brand-700 transition-smooth"
           >
             Home
-          </Link>
-          <Link
-            href="/about"
-            onClick={() => setMobileMenuOpen(false)}
-            className="px-4 py-3 rounded-lg text-foreground font-medium hover:bg-brand-50 hover:text-brand-700 transition-smooth"
-          >
-            About
           </Link>
           {/* Services accordion */}
           <div>
