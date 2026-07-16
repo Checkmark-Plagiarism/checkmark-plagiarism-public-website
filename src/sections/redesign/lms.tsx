@@ -26,9 +26,6 @@ export function Lms() {
               <span className="dot" />
               Native LMS integration
             </div>
-            <h2 className="display text-[clamp(34px,4.2vw,48px)] mb-[22px] leading-[1.05] text-balance">
-              The only tool with <em>native Buzz LMS</em> keystroke capture.
-            </h2>
             <p className="text-[17px] leading-[1.6] text-ink-soft mb-7">
               Most integrity tools redirect students to a third-party site. We don&apos;t. Checkmark
               reads the assignment text box where students already write, across Canvas, Google
