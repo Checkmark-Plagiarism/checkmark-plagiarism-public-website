@@ -6,14 +6,14 @@ export const metadata: Metadata = {
   description: "A plain-English guide to how LTI integrations connect tools like a plagiarism checker to Canvas, how to set one up, and the best practices that keep it reliable.",
   keywords: [],
   openGraph: {
-    images: ["/images/learning/how-canvas-integrations-work-a-practical-guide-for-schools/pexels-8199151.jpg"],
+    images: ["/images/learning/how-canvas-integrations-work-a-practical-guide-for-schools/pexels-6816590.jpg"],
   },
 };
 
 export const meta = {
   title: "How Canvas Integrations Work: A Practical Guide for Schools",
   description: "A plain-English guide to how LTI integrations connect tools like a plagiarism checker to Canvas, how to set one up, and the best practices that keep it reliable.",
-  "opengraph-image": "/images/learning/how-canvas-integrations-work-a-practical-guide-for-schools/pexels-8199151.jpg",
+  "opengraph-image": "/images/learning/how-canvas-integrations-work-a-practical-guide-for-schools/pexels-6816590.jpg",
   date: "06-25-2026",
   readTime: "~9 min read",
   category: "How It Works",

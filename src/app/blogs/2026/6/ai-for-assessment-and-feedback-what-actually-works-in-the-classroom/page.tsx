@@ -6,14 +6,14 @@ export const metadata: Metadata = {
   description: "Practical, classroom-tested ways teachers can use AI for grading, feedback, and assessment design without surrendering judgment or burning out on the tech.",
   keywords: [],
   openGraph: {
-    images: ["/images/blogs/ai-for-assessment-and-feedback-what-actually-works-in-the-classroom/pexels-6684360.jpg"],
+    images: ["/images/blogs/ai-for-assessment-and-feedback-what-actually-works-in-the-classroom/pexels-38472818.jpg"],
   },
 };
 
 export const meta = {
   title: "AI for Assessment and Feedback: What Actually Works in the Classroom",
   description: "Practical, classroom-tested ways teachers can use AI for grading, feedback, and assessment design without surrendering judgment or burning out on the tech.",
-  "opengraph-image": "/images/blogs/ai-for-assessment-and-feedback-what-actually-works-in-the-classroom/pexels-6684360.jpg",
+  "opengraph-image": "/images/blogs/ai-for-assessment-and-feedback-what-actually-works-in-the-classroom/pexels-38472818.jpg",
   date: "06-25-2026",
   readTime: "~7 min read",
   category: "Industry",

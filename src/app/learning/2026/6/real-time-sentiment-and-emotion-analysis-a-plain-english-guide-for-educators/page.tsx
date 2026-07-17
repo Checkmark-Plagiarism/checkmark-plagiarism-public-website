@@ -6,14 +6,14 @@ export const metadata: Metadata = {
   description: "What real-time sentiment and emotion analysis is, how it works, the types of models behind it, and what it can and cannot tell you in a classroom setting.",
   keywords: [],
   openGraph: {
-    images: ["/images/learning/real-time-sentiment-and-emotion-analysis-a-plain-english-guide-for-educators/pexels-9159042.jpg"],
+    images: ["/images/learning/real-time-sentiment-and-emotion-analysis-a-plain-english-guide-for-educators/pexels-5789907.jpg"],
   },
 };
 
 export const meta = {
   title: "Real-Time Sentiment and Emotion Analysis: A Plain-English Guide for Educators",
   description: "What real-time sentiment and emotion analysis is, how it works, the types of models behind it, and what it can and cannot tell you in a classroom setting.",
-  "opengraph-image": "/images/learning/real-time-sentiment-and-emotion-analysis-a-plain-english-guide-for-educators/pexels-9159042.jpg",
+  "opengraph-image": "/images/learning/real-time-sentiment-and-emotion-analysis-a-plain-english-guide-for-educators/pexels-5789907.jpg",
   date: "06-25-2026",
   readTime: "~9 min read",
   category: "How It Works",
