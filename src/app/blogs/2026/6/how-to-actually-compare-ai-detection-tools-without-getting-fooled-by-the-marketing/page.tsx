@@ -6,14 +6,14 @@ export const metadata: Metadata = {
   description: "A practical buyer's guide to comparing AI detection and plagiarism tools for schools, with the questions that matter more than any accuracy percentage on a landing page.",
   keywords: [],
   openGraph: {
-    images: ["/images/blogs/how-to-actually-compare-ai-detection-tools-without-getting-fooled-by-the-marketing/pexels-9159042.jpg"],
+    images: ["/images/blogs/how-to-actually-compare-ai-detection-tools-without-getting-fooled-by-the-marketing/pexels-10481252.jpg"],
   },
 };
 
 export const meta = {
   title: "How to Actually Compare AI Detection Tools (Without Getting Fooled by the Marketing)",
   description: "A practical buyer's guide to comparing AI detection and plagiarism tools for schools, with the questions that matter more than any accuracy percentage on a landing page.",
-  "opengraph-image": "/images/blogs/how-to-actually-compare-ai-detection-tools-without-getting-fooled-by-the-marketing/pexels-9159042.jpg",
+  "opengraph-image": "/images/blogs/how-to-actually-compare-ai-detection-tools-without-getting-fooled-by-the-marketing/pexels-10481252.jpg",
   date: "06-25-2026",
   readTime: "~7 min read",
   category: "Industry",

@@ -6,14 +6,14 @@ export const metadata: Metadata = {
   description: "A fair, teacher-focused evaluation of how Pangram's AI detector handles non-native English writing and the new wave of reasoning models, and what the claims actually mean for your classroom.",
   keywords: [],
   openGraph: {
-    images: ["/images/blogs/pangram-ai-detection-esl-writing-and-reasoning-models-an-honest-look/pexels-8197511.jpg"],
+    images: ["/images/blogs/pangram-ai-detection-esl-writing-and-reasoning-models-an-honest-look/pexels-25626448.jpg"],
   },
 };
 
 export const meta = {
   title: "Pangram AI Detection, ESL Writing, and Reasoning Models: An Honest Look",
   description: "A fair, teacher-focused evaluation of how Pangram's AI detector handles non-native English writing and the new wave of reasoning models, and what the claims actually mean for your classroom.",
-  "opengraph-image": "/images/blogs/pangram-ai-detection-esl-writing-and-reasoning-models-an-honest-look/pexels-8197511.jpg",
+  "opengraph-image": "/images/blogs/pangram-ai-detection-esl-writing-and-reasoning-models-an-honest-look/pexels-25626448.jpg",
   date: "06-25-2026",
   readTime: "~7 min read",
   category: "Industry",

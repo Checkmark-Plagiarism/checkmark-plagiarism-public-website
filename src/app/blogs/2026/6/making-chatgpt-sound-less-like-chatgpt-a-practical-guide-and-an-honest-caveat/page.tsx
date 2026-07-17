@@ -6,14 +6,14 @@ export const metadata: Metadata = {
   description: "A practical guide to coaxing more natural tone out of ChatGPT, plus an honest line on where editing for clarity ends and academic dishonesty begins.",
   keywords: [],
   openGraph: {
-    images: ["/images/blogs/making-chatgpt-sound-less-like-chatgpt-a-practical-guide-and-an-honest-caveat/pexels-1181644.jpg"],
+    images: ["/images/blogs/making-chatgpt-sound-less-like-chatgpt-a-practical-guide-and-an-honest-caveat/pexels-15940005.jpg"],
   },
 };
 
 export const meta = {
   title: "Making ChatGPT Sound Less Like ChatGPT: A Practical Guide (and an Honest Caveat)",
   description: "A practical guide to coaxing more natural tone out of ChatGPT, plus an honest line on where editing for clarity ends and academic dishonesty begins.",
-  "opengraph-image": "/images/blogs/making-chatgpt-sound-less-like-chatgpt-a-practical-guide-and-an-honest-caveat/pexels-1181644.jpg",
+  "opengraph-image": "/images/blogs/making-chatgpt-sound-less-like-chatgpt-a-practical-guide-and-an-honest-caveat/pexels-15940005.jpg",
   date: "06-25-2026",
   readTime: "~7 min read",
   category: "Quick Takes",

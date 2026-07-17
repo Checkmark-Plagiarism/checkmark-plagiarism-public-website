@@ -6,14 +6,14 @@ export const metadata: Metadata = {
   description: "xAI's Grok 4 lands with big benchmark claims and a steep price tier. Here is a plain-English breakdown of what it does and what it means for classrooms.",
   keywords: [],
   openGraph: {
-    images: ["/images/blogs/grok-4-is-here-what-teachers-actually-need-to-know-about-xais-new-model/pexels-9159042.jpg"],
+    images: ["/images/blogs/grok-4-is-here-what-teachers-actually-need-to-know-about-xais-new-model/pexels-4173338.jpg"],
   },
 };
 
 export const meta = {
   title: "Grok 4 Is Here: What Teachers Actually Need to Know About xAI's New Model",
   description: "xAI's Grok 4 lands with big benchmark claims and a steep price tier. Here is a plain-English breakdown of what it does and what it means for classrooms.",
-  "opengraph-image": "/images/blogs/grok-4-is-here-what-teachers-actually-need-to-know-about-xais-new-model/pexels-9159042.jpg",
+  "opengraph-image": "/images/blogs/grok-4-is-here-what-teachers-actually-need-to-know-about-xais-new-model/pexels-4173338.jpg",
   date: "06-25-2026",
   readTime: "~7 min read",
   category: "News",

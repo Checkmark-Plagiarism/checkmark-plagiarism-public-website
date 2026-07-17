@@ -6,14 +6,14 @@ export const metadata: Metadata = {
   description: "A clear-eyed comparison of plagiarism detection software for schools, covering the features that actually matter and the marketing claims that do not.",
   keywords: [],
   openGraph: {
-    images: ["/images/blogs/how-to-compare-plagiarism-detection-software-a-practical-buyers-guide-for-schools/pexels-9159042.jpg"],
+    images: ["/images/blogs/how-to-compare-plagiarism-detection-software-a-practical-buyers-guide-for-schools/pexels-276452.jpg"],
   },
 };
 
 export const meta = {
   title: "How to Compare Plagiarism Detection Software: A Practical Buyer's Guide for Schools",
   description: "A clear-eyed comparison of plagiarism detection software for schools, covering the features that actually matter and the marketing claims that do not.",
-  "opengraph-image": "/images/blogs/how-to-compare-plagiarism-detection-software-a-practical-buyers-guide-for-schools/pexels-9159042.jpg",
+  "opengraph-image": "/images/blogs/how-to-compare-plagiarism-detection-software-a-practical-buyers-guide-for-schools/pexels-276452.jpg",
   date: "06-25-2026",
   readTime: "~7 min read",
   category: "Product",

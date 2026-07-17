@@ -6,14 +6,14 @@ export const metadata: Metadata = {
   description: "AI humanizer tools promise to make machine-written text sound human and slip past detectors. Here is what they really do, and what it means for the classroom.",
   keywords: [],
   openGraph: {
-    images: ["/images/blogs/what-ai-humanizer-tools-actually-do-and-what-teachers-should-know/pexels-1375261.jpg"],
+    images: ["/images/blogs/what-ai-humanizer-tools-actually-do-and-what-teachers-should-know/pexels-5428146.jpg"],
   },
 };
 
 export const meta = {
   title: "What AI Humanizer Tools Actually Do, and What Teachers Should Know",
   description: "AI humanizer tools promise to make machine-written text sound human and slip past detectors. Here is what they really do, and what it means for the classroom.",
-  "opengraph-image": "/images/blogs/what-ai-humanizer-tools-actually-do-and-what-teachers-should-know/pexels-1375261.jpg",
+  "opengraph-image": "/images/blogs/what-ai-humanizer-tools-actually-do-and-what-teachers-should-know/pexels-5428146.jpg",
   date: "06-25-2026",
   readTime: "~7 min read",
   category: "Industry",

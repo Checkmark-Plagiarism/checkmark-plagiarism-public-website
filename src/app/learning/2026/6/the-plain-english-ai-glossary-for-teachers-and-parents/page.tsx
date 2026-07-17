@@ -6,14 +6,14 @@ export const metadata: Metadata = {
   description: "A jargon-free glossary of the AI terms showing up in classrooms, with simple definitions and real usage examples for teachers, administrators, and parents.",
   keywords: [],
   openGraph: {
-    images: ["/images/learning/the-plain-english-ai-glossary-for-teachers-and-parents/pexels-8419515.jpg"],
+    images: ["/images/learning/the-plain-english-ai-glossary-for-teachers-and-parents/pexels-159581.jpg"],
   },
 };
 
 export const meta = {
   title: "The Plain-English AI Glossary for Teachers and Parents",
   description: "A jargon-free glossary of the AI terms showing up in classrooms, with simple definitions and real usage examples for teachers, administrators, and parents.",
-  "opengraph-image": "/images/learning/the-plain-english-ai-glossary-for-teachers-and-parents/pexels-8419515.jpg",
+  "opengraph-image": "/images/learning/the-plain-english-ai-glossary-for-teachers-and-parents/pexels-159581.jpg",
   date: "06-25-2026",
   readTime: "~9 min read",
   category: "AI Basics",

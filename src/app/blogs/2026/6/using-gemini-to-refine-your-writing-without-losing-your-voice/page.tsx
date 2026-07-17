@@ -6,14 +6,14 @@ export const metadata: Metadata = {
   description: "Generative AI like Gemini can sharpen drafts, fix structure, and catch weak spots. Here is how to use it as an editor, not a ghostwriter, in the classroom and beyond.",
   keywords: [],
   openGraph: {
-    images: ["/images/blogs/using-gemini-to-refine-your-writing-without-losing-your-voice/pexels-7061.jpg"],
+    images: ["/images/blogs/using-gemini-to-refine-your-writing-without-losing-your-voice/pexels-30839680.jpg"],
   },
 };
 
 export const meta = {
   title: "Using Gemini to Refine Your Writing Without Losing Your Voice",
   description: "Generative AI like Gemini can sharpen drafts, fix structure, and catch weak spots. Here is how to use it as an editor, not a ghostwriter, in the classroom and beyond.",
-  "opengraph-image": "/images/blogs/using-gemini-to-refine-your-writing-without-losing-your-voice/pexels-7061.jpg",
+  "opengraph-image": "/images/blogs/using-gemini-to-refine-your-writing-without-losing-your-voice/pexels-30839680.jpg",
   date: "06-25-2026",
   readTime: "~6 min read",
   category: "Industry",

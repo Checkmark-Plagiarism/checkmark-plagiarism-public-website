@@ -6,14 +6,14 @@ export const metadata: Metadata = {
   description: "A plain comparison of how plagiarism and AI-writing checking fits into Moodle, Blackboard, Schoology, Google Classroom, Sakai, and Edsby, and how to choose without re-platforming your school.",
   keywords: [],
   openGraph: {
-    images: ["/images/blogs/your-lms-already-decides-how-you-check-for-plagiarism-here-is-what-that-means/pexels-5745576.jpg"],
+    images: ["/images/blogs/your-lms-already-decides-how-you-check-for-plagiarism-here-is-what-that-means/pexels-416322.jpg"],
   },
 };
 
 export const meta = {
   title: "Your LMS Already Decides How You Check for Plagiarism. Here Is What That Means.",
   description: "A plain comparison of how plagiarism and AI-writing checking fits into Moodle, Blackboard, Schoology, Google Classroom, Sakai, and Edsby, and how to choose without re-platforming your school.",
-  "opengraph-image": "/images/blogs/your-lms-already-decides-how-you-check-for-plagiarism-here-is-what-that-means/pexels-5745576.jpg",
+  "opengraph-image": "/images/blogs/your-lms-already-decides-how-you-check-for-plagiarism-here-is-what-that-means/pexels-416322.jpg",
   date: "06-25-2026",
   readTime: "~7 min read",
   category: "Product",

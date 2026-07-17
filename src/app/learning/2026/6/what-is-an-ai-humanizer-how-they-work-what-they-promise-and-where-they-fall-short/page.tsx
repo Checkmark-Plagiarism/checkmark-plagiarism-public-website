@@ -6,14 +6,14 @@ export const metadata: Metadata = {
   description: "A plain-English explainer on AI humanizers: what they are, how the rewriting actually works, what they can and cannot do, and what they mean for schools.",
   keywords: [],
   openGraph: {
-    images: ["/images/learning/what-is-an-ai-humanizer-how-they-work-what-they-promise-and-where-they-fall-short/pexels-1181644.jpg"],
+    images: ["/images/learning/what-is-an-ai-humanizer-how-they-work-what-they-promise-and-where-they-fall-short/pexels-8439099.jpg"],
   },
 };
 
 export const meta = {
   title: "What Is an AI Humanizer? How They Work, What They Promise, and Where They Fall Short",
   description: "A plain-English explainer on AI humanizers: what they are, how the rewriting actually works, what they can and cannot do, and what they mean for schools.",
-  "opengraph-image": "/images/learning/what-is-an-ai-humanizer-how-they-work-what-they-promise-and-where-they-fall-short/pexels-1181644.jpg",
+  "opengraph-image": "/images/learning/what-is-an-ai-humanizer-how-they-work-what-they-promise-and-where-they-fall-short/pexels-8439099.jpg",
   date: "06-25-2026",
   readTime: "~8 min read",
   category: "How It Works",

@@ -6,14 +6,14 @@ export const metadata: Metadata = {
   description: "A plain-English guide to web accessibility for schools: what WCAG, ADA, and Section 508 require, how compliance works, and the fixes that matter most.",
   keywords: [],
   openGraph: {
-    images: ["/images/learning/website-accessibility-for-schools-standards-compliance-and-what-actually-matters/pexels-9159042.jpg"],
+    images: ["/images/learning/website-accessibility-for-schools-standards-compliance-and-what-actually-matters/pexels-7695423.jpg"],
   },
 };
 
 export const meta = {
   title: "Website Accessibility for Schools: Standards, Compliance, and What Actually Matters",
   description: "A plain-English guide to web accessibility for schools: what WCAG, ADA, and Section 508 require, how compliance works, and the fixes that matter most.",
-  "opengraph-image": "/images/learning/website-accessibility-for-schools-standards-compliance-and-what-actually-matters/pexels-9159042.jpg",
+  "opengraph-image": "/images/learning/website-accessibility-for-schools-standards-compliance-and-what-actually-matters/pexels-7695423.jpg",
   date: "06-25-2026",
   readTime: "~8 min read",
   category: "How It Works",

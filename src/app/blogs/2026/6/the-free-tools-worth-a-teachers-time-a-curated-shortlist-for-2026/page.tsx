@@ -6,14 +6,14 @@ export const metadata: Metadata = {
   description: "A curated, honest shortlist of genuinely free tools for teachers in 2026, organized by the job they actually do in your week rather than by hype.",
   keywords: [],
   openGraph: {
-    images: ["/images/blogs/the-free-tools-worth-a-teachers-time-a-curated-shortlist-for-2026/pexels-8423092.jpg"],
+    images: ["/images/blogs/the-free-tools-worth-a-teachers-time-a-curated-shortlist-for-2026/pexels-5212648.jpg"],
   },
 };
 
 export const meta = {
   title: "The Free Tools Worth a Teacher's Time: A Curated Shortlist for 2026",
   description: "A curated, honest shortlist of genuinely free tools for teachers in 2026, organized by the job they actually do in your week rather than by hype.",
-  "opengraph-image": "/images/blogs/the-free-tools-worth-a-teachers-time-a-curated-shortlist-for-2026/pexels-8423092.jpg",
+  "opengraph-image": "/images/blogs/the-free-tools-worth-a-teachers-time-a-curated-shortlist-for-2026/pexels-5212648.jpg",
   date: "06-25-2026",
   readTime: "~7 min read",
   category: "Industry",

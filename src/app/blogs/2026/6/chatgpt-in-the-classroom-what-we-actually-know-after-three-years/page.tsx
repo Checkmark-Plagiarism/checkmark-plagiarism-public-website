@@ -6,14 +6,14 @@ export const metadata: Metadata = {
   description: "Three years into the ChatGPT era, here is an honest look at how students really use it, why detection is harder than vendors admit, and what teachers should do next.",
   keywords: [],
   openGraph: {
-    images: ["/images/blogs/chatgpt-in-the-classroom-what-we-actually-know-after-three-years/pexels-8197511.jpg"],
+    images: ["/images/blogs/chatgpt-in-the-classroom-what-we-actually-know-after-three-years/pexels-8423431.jpg"],
   },
 };
 
 export const meta = {
   title: "ChatGPT in the Classroom: What We Actually Know After Three Years",
   description: "Three years into the ChatGPT era, here is an honest look at how students really use it, why detection is harder than vendors admit, and what teachers should do next.",
-  "opengraph-image": "/images/blogs/chatgpt-in-the-classroom-what-we-actually-know-after-three-years/pexels-8197511.jpg",
+  "opengraph-image": "/images/blogs/chatgpt-in-the-classroom-what-we-actually-know-after-three-years/pexels-8423431.jpg",
   date: "06-25-2026",
   readTime: "~6 min read",
   category: "Industry",
