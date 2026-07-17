@@ -139,6 +139,46 @@ export default function TeacherSupportPage() {
                   </Button>
                 </CardContent>
               </Card>
+
+              <Card className="shadow-soft">
+                <CardHeader>
+                  <div className="w-12 h-12 bg-brand-500 rounded-lg flex items-center justify-center mb-4">
+                    <FileText className="w-6 h-6 text-white" />
+                  </div>
+                  <CardTitle>Reading the Checkmark Report</CardTitle>
+                  <CardDescription>
+                    How to read the originality tiles, follow highlights to evidence cards, check
+                    sources and paste events, replay the writing session, and use the grading view.
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <Button asChild variant="outline" size="sm">
+                    <a href="/teacher-support/reading-the-report">
+                      View Guide <ExternalLink className="ml-2 h-3 w-3" />
+                    </a>
+                  </Button>
+                </CardContent>
+              </Card>
+
+              <Card className="shadow-soft">
+                <CardHeader>
+                  <div className="w-12 h-12 bg-brand-500 rounded-lg flex items-center justify-center mb-4">
+                    <Settings className="w-6 h-6 text-white" />
+                  </div>
+                  <CardTitle>Autograder &amp; Rubrics Guide</CardTitle>
+                  <CardDescription>
+                    Attach any rubric to an assignment, review AI-drafted scores and justifications,
+                    edit feedback, and publish grades to Canvas, Buzz, or Google Classroom.
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <Button asChild variant="outline" size="sm">
+                    <a href="/teacher-support/autograder-and-rubrics">
+                      View Guide <ExternalLink className="ml-2 h-3 w-3" />
+                    </a>
+                  </Button>
+                </CardContent>
+              </Card>
             </div>
           </section>
 

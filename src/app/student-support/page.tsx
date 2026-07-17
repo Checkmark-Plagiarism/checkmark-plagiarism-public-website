@@ -102,6 +102,26 @@ export default function StudentSupportPage() {
                   </Button>
                 </CardContent>
               </Card>
+
+              <Card className="shadow-soft">
+                <CardHeader>
+                  <div className="w-12 h-12 bg-brand-500 rounded-lg flex items-center justify-center mb-4">
+                    <Download className="w-6 h-6 text-white" />
+                  </div>
+                  <CardTitle>Submitting Your Work</CardTitle>
+                  <CardDescription>
+                    Upload a Word doc, pick a file from Google Drive or OneDrive, or type right in
+                    the assignment — and see what happens after you hit Submit.
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <Button asChild variant="outline" size="sm">
+                    <a href="/student-support/submitting-your-work">
+                      View Guide
+                    </a>
+                  </Button>
+                </CardContent>
+              </Card>
             </div>
           </section>
 
