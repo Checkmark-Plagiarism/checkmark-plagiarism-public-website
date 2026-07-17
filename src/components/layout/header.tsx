@@ -75,8 +75,8 @@ export default function Header() {
             <Image
               src={logoImage}
               alt="Checkmark Plagiarism Logo"
-              width="50"
-              height="50"
+              width={50}
+              height={50}
             />
           </div>
           <span className={`font-bold text-xl ${scrolled ? "text-brand-700" : "text-white"}`}>

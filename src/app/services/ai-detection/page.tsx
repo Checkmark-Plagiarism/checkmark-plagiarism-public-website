@@ -8,9 +8,8 @@ import {
   AlertCircle,
 } from "lucide-react";
 import { LinkButton } from "@/components/ui/link";
-import { Card, CardContent } from "@/components/ui/card";
-import FeatureHero from "@/sections/features/feature-hero";
 import {
+  ServiceHero,
   Screenshot,
   IconFeature,
   RelatedLink,
@@ -27,24 +26,17 @@ export const metadata: Metadata = {
 export default function AiDetectionServicePage() {
   return (
     <main>
-      <FeatureHero bgTint="bg-rose-200">
-        <h1 className="text-center text-4xl md:text-5xl font-bold tracking-tight text-foreground">
-          AI detection that respects how high the stakes are
-        </h1>
-        <p className="mt-4 text-center max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground">
-          An accusation built on a single number isn&apos;t fair to anyone. Checkmark shows
-          which passages look AI-written, how confident the model is, and — uniquely — how the
-          text was actually typed, so the score never has to stand alone.
-        </p>
-        <div className="mt-6 flex flex-wrap justify-center gap-3">
-          <LinkButton href="#passage-level" size="sm">
-            See what teachers get
-          </LinkButton>
-          <LinkButton href="/demo" size="sm" variant="outline">
-            Test it yourself
-          </LinkButton>
-        </div>
-      </FeatureHero>
+      <ServiceHero
+        title="AI detection that respects how high the stakes are"
+        sub="An accusation built on a single number isn't fair to anyone. Checkmark shows which passages look AI-written, how confident the model is, and — uniquely — how the text was actually typed, so the score never has to stand alone."
+      >
+        <LinkButton href="#passage-level" variant="hero">
+          See what teachers get
+        </LinkButton>
+        <LinkButton href="/demo" variant="outline-white">
+          Test it yourself
+        </LinkButton>
+      </ServiceHero>
 
       {/* Highlights */}
       <section className="py-12">
@@ -54,19 +46,19 @@ export default function AiDetectionServicePage() {
               icon={Sparkles}
               title="Passage-level, not paper-level"
               text="AI-flagged passages are underlined in the essay itself, each with its own evidence card — you see which parts, not just how much."
-              accent="from-red-600/25 via-red-500/10"
+              tone="rose"
             />
             <IconFeature
               icon={SlidersHorizontal}
               title="Calibrated confidence"
               text="Each finding shows a confidence gradient from human-like to AI-like instead of a false-precision decimal."
-              accent="from-amber-600/25 via-amber-500/10"
+              tone="amber"
             />
             <IconFeature
               icon={History}
               title="Backed by process evidence"
               text="The same report shows paste events and typing patterns, so an AI signal can be confirmed — or cleared — by how the text was written."
-              accent="from-blue-600/25 via-blue-500/10"
+              tone="blue"
             />
           </div>
         </div>
@@ -81,7 +73,6 @@ export default function AiDetectionServicePage() {
               alt="AI Detection cards in the report sidebar with confidence sliders"
               width={864}
               height={1484}
-              ring="ring-rose-300/60"
               caption="AI Detection cards sit alongside paste and plagiarism findings — one integrated picture."
             />
             <div>
@@ -93,17 +84,15 @@ export default function AiDetectionServicePage() {
                 patterns and typical AI patterns. The report keeps a permanent reminder next to
                 the score:
               </p>
-              <Card className="mt-4 ring-1 ring-border bg-muted/50">
-                <CardContent className="p-4">
-                  <p className="text-sm italic text-muted-foreground">
-                    &ldquo;Typical AI writing pattern versus typical human writing styles. Do not
-                    solely rely on this score to determine AI authorship.&rdquo;
-                  </p>
-                  <p className="mt-2 text-xs text-muted-foreground">
-                    — the disclaimer shown on every AI Detection card, verbatim
-                  </p>
-                </CardContent>
-              </Card>
+              <div className="mt-4 rounded-2xl bg-muted p-5">
+                <p className="text-sm italic text-muted-foreground">
+                  &ldquo;Typical AI writing pattern versus typical human writing styles. Do not
+                  solely rely on this score to determine AI authorship.&rdquo;
+                </p>
+                <p className="mt-2 text-xs text-muted-foreground">
+                  — the disclaimer shown on every AI Detection card, verbatim
+                </p>
+              </div>
               <p className="mt-4 text-muted-foreground">
                 We put that in the product because it&apos;s true — of every AI detector,
                 including ours. What makes the score usable is the evidence around it.
@@ -125,19 +114,19 @@ export default function AiDetectionServicePage() {
                 icon={AlertCircle}
                 title="Short texts say N/A"
                 text="Below ~150 words there isn't enough signal for a trustworthy AI score, so the report says N/A instead of guessing."
-                accent="from-cyan-600/25 via-cyan-500/10"
+                tone="cyan"
               />
               <IconFeature
                 icon={Scale}
                 title="Findings start conversations"
                 text="Flag statuses (Flagged, Resolved, Not Flagged) are teacher-only. Nothing is shown to a student as an accusation."
-                accent="from-emerald-600/25 via-emerald-500/10"
+                tone="emerald"
               />
               <IconFeature
                 icon={ShieldCheck}
                 title="Cross-checked by process"
                 text="An 'AI-like' passage that was visibly drafted, revised, and typo-corrected over 40 minutes tells a different story than one pasted in at once. The report shows both signals."
-                accent="from-blue-600/25 via-blue-500/10"
+                tone="blue"
               />
             </div>
             <div className="mt-8 flex flex-wrap justify-center gap-3">

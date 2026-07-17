@@ -9,8 +9,8 @@ import {
   CheckCircle2,
 } from "lucide-react";
 import { LinkButton } from "@/components/ui/link";
-import FeatureHero from "@/sections/features/feature-hero";
 import {
+  ServiceHero,
   Screenshot,
   IconFeature,
   NumberedStep,
@@ -28,24 +28,17 @@ export const metadata: Metadata = {
 export default function AutograderServicePage() {
   return (
     <main>
-      <FeatureHero bgTint="bg-emerald-200">
-        <h1 className="text-center text-4xl md:text-5xl font-bold tracking-tight text-foreground">
-          First-draft grades in minutes. Final say always yours.
-        </h1>
-        <p className="mt-4 text-center max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground">
-          The autograder scores every submission against your rubric and writes out its reasoning,
-          criterion by criterion. You review, edit, and publish — and the grade lands back in your
-          LMS gradebook.
-        </p>
-        <div className="mt-6 flex flex-wrap justify-center gap-3">
-          <LinkButton href="#grading-view" size="sm">
-            See a graded essay
-          </LinkButton>
-          <LinkButton href="/demo" size="sm" variant="outline">
-            Grade one in the demo
-          </LinkButton>
-        </div>
-      </FeatureHero>
+      <ServiceHero
+        title="First-draft grades in minutes. Final say always yours."
+        sub="The autograder scores every submission against your rubric and writes out its reasoning, criterion by criterion. You review, edit, and publish — and the grade lands back in your LMS gradebook."
+      >
+        <LinkButton href="#grading-view" variant="hero">
+          See a graded essay
+        </LinkButton>
+        <LinkButton href="/demo" variant="outline-white">
+          Grade one in the demo
+        </LinkButton>
+      </ServiceHero>
 
       {/* Grading view screenshot */}
       <section id="grading-view" className="py-12">
@@ -57,7 +50,6 @@ export default function AutograderServicePage() {
               width={2000}
               height={1250}
               priority
-              ring="ring-emerald-300/60"
               caption="The grading view of a real report: per-criterion scores with editable justifications up top, quote-anchored feedback cards beside the essay."
             />
           </div>
@@ -72,19 +64,19 @@ export default function AutograderServicePage() {
               icon={GraduationCap}
               title="Scores per criterion"
               text="Each rubric category gets its own score out of its own point value — Thesis 7/10, Evidence 8/10 — not one opaque total."
-              accent="from-emerald-600/25 via-emerald-500/10"
+              tone="emerald"
             />
             <IconFeature
               icon={MessageSquareText}
               title="Written justifications"
               text="Every score comes with a paragraph explaining why, tied to what the student actually wrote. Edit it inline if you'd put it differently."
-              accent="from-blue-600/25 via-blue-500/10"
+              tone="blue"
             />
             <IconFeature
               icon={Eye}
               title="Quote-anchored feedback"
               text="Feedback items highlight the exact sentences they refer to. Add your own by selecting text in the essay and clicking Add Feedback."
-              accent="from-amber-600/25 via-amber-500/10"
+              tone="amber"
             />
           </div>
         </div>
@@ -106,19 +98,19 @@ export default function AutograderServicePage() {
                 icon={PencilRuler}
                 title="Build it in the app"
                 text="A rubric builder with criteria, rating levels, and live point totals — the same shape Canvas rubrics use."
-                accent="from-emerald-600/25 via-emerald-500/10"
+                tone="emerald"
               />
               <IconFeature
                 icon={Upload}
                 title="Upload what you have"
                 text="Drop in an existing rubric as a document or even a photo — Checkmark normalizes it into gradable criteria."
-                accent="from-blue-600/25 via-blue-500/10"
+                tone="blue"
               />
               <IconFeature
                 icon={Library}
                 title="Reuse from your library"
                 text="Save rubrics once and attach them across courses and assignments; duplicate and archive as terms roll over."
-                accent="from-fuchsia-600/25 via-fuchsia-500/10"
+                tone="fuchsia"
               />
             </div>
             <p className="mt-8 text-center text-sm text-muted-foreground">
@@ -175,7 +167,7 @@ export default function AutograderServicePage() {
       <section className="py-12">
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-3xl">
-            <div className="flex items-start gap-3 rounded-xl border border-border bg-muted/40 p-5">
+            <div className="flex items-start gap-3 rounded-2xl bg-brand-100 p-5">
               <CheckCircle2 className="h-5 w-5 mt-0.5 text-brand-700 flex-shrink-0" />
               <p className="text-sm text-muted-foreground">
                 <span className="font-medium text-foreground">

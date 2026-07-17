@@ -11,9 +11,12 @@ import {
   LineChart,
 } from "lucide-react";
 import { LinkButton } from "@/components/ui/link";
-import { Card, CardContent } from "@/components/ui/card";
-import FeatureHero from "@/sections/features/feature-hero";
-import { IconFeature, RelatedLink, ServiceCta } from "@/sections/services/shared";
+import {
+  ServiceHero,
+  IconFeature,
+  RelatedLink,
+  ServiceCta,
+} from "@/sections/services/shared";
 
 export const metadata: Metadata = {
   title: "School & District Analytics — Checkmark Plagiarism",
@@ -32,24 +35,17 @@ const metrics = [
 export default function AnalyticsServicePage() {
   return (
     <main>
-      <FeatureHero bgTint="bg-cyan-200">
-        <h1 className="text-center text-4xl md:text-5xl font-bold tracking-tight text-foreground">
-          See integrity and writing trends across your whole school
-        </h1>
-        <p className="mt-4 text-center max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground">
-          Individual reports answer &ldquo;what happened on this essay?&rdquo; The admin dashboard
-          answers the bigger ones: where integrity issues cluster, how writing is trending, and
-          whether interventions are working.
-        </p>
-        <div className="mt-6 flex flex-wrap justify-center gap-3">
-          <LinkButton href="/contact" size="sm">
-            Talk to us about your school
-          </LinkButton>
-          <LinkButton href="/pricing" size="sm" variant="outline">
-            School & district pricing
-          </LinkButton>
-        </div>
-      </FeatureHero>
+      <ServiceHero
+        title="See integrity and writing trends across your whole school"
+        sub="Individual reports answer “what happened on this essay?” The admin dashboard answers the bigger ones: where integrity issues cluster, how writing is trending, and whether interventions are working."
+      >
+        <LinkButton href="/contact" variant="hero">
+          Talk to us about your school
+        </LinkButton>
+        <LinkButton href="/pricing" variant="outline-white">
+          School &amp; district pricing
+        </LinkButton>
+      </ServiceHero>
 
       {/* Metric cards */}
       <section className="py-12">
@@ -60,14 +56,12 @@ export default function AnalyticsServicePage() {
             </h2>
             <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {metrics.map((m) => (
-                <Card key={m.label} className="ring-1 ring-border">
-                  <CardContent className="p-6">
-                    <p className="text-sm font-semibold text-brand-700 uppercase tracking-wide">
-                      {m.label}
-                    </p>
-                    <p className="mt-2 text-sm text-muted-foreground">{m.desc}</p>
-                  </CardContent>
-                </Card>
+                <div key={m.label} className="rounded-3xl bg-brand-100 p-6">
+                  <p className="text-sm font-semibold text-brand-700 uppercase tracking-wide">
+                    {m.label}
+                  </p>
+                  <p className="mt-2 text-sm text-foreground/70">{m.desc}</p>
+                </div>
               ))}
             </div>
           </div>
@@ -87,37 +81,37 @@ export default function AnalyticsServicePage() {
                 icon={TrendingUp}
                 title="Plagiarism rate over time"
                 text="Track integrity incidents as a rate, so growth in submissions doesn't read as growth in cheating."
-                accent="from-cyan-600/25 via-cyan-500/10"
+                tone="cyan"
               />
               <IconFeature
                 icon={PieChart}
                 title="Plagiarism by type"
                 text="Pasted vs. transcribed vs. uncited vs. AI — the mix tells you what to teach next."
-                accent="from-fuchsia-600/25 via-fuchsia-500/10"
+                tone="fuchsia"
               />
               <IconFeature
                 icon={LineChart}
                 title="Scores over time"
                 text="Average autograder scores by rubric category show whether writing is actually improving."
-                accent="from-emerald-600/25 via-emerald-500/10"
+                tone="emerald"
               />
               <IconFeature
                 icon={BarChart3}
                 title="Grade distribution"
                 text="Spot compression, inflation, or bimodal classes at a glance."
-                accent="from-amber-600/25 via-amber-500/10"
+                tone="amber"
               />
               <IconFeature
                 icon={Timer}
                 title="Writing efficiency"
                 text="Time-per-word from real sessions — a leading indicator reports alone can't give you."
-                accent="from-blue-600/25 via-blue-500/10"
+                tone="blue"
               />
               <IconFeature
                 icon={Users}
                 title="Compare up to 4 teachers"
                 text="Side-by-side trends across teachers or courses, color-coded — useful for calibration, not gotchas."
-                accent="from-purple-600/25 via-purple-500/10"
+                tone="purple"
               />
             </div>
             <p className="mt-8 text-center text-sm text-muted-foreground inline-flex items-center gap-2 w-full justify-center">
@@ -139,19 +133,19 @@ export default function AnalyticsServicePage() {
                 icon={Armchair}
                 title="Seat management"
                 text="See seats used vs. available at a glance; grant and revoke student seats individually or in bulk."
-                accent="from-emerald-600/25 via-emerald-500/10"
+                tone="emerald"
               />
               <IconFeature
                 icon={Users}
                 title="User management"
                 text="Admins manage teachers and students per school, with roles that map to how your district delegates."
-                accent="from-blue-600/25 via-blue-500/10"
+                tone="blue"
               />
               <IconFeature
                 icon={Building2}
                 title="District & multi-school views"
                 text="District admins see every school in one place; education partners can manage licenses across schools they serve."
-                accent="from-amber-600/25 via-amber-500/10"
+                tone="amber"
               />
             </div>
             <div className="mt-8 flex flex-wrap justify-center gap-3">

@@ -7,9 +7,12 @@ import {
   Sparkles,
 } from "lucide-react";
 import { LinkButton } from "@/components/ui/link";
-import { Card, CardContent } from "@/components/ui/card";
-import FeatureHero from "@/sections/features/feature-hero";
-import { IconFeature, RelatedLink, ServiceCta } from "@/sections/services/shared";
+import {
+  ServiceHero,
+  IconFeature,
+  RelatedLink,
+  ServiceCta,
+} from "@/sections/services/shared";
 
 export const metadata: Metadata = {
   title: "LMS Integrations — Checkmark Plagiarism",
@@ -27,7 +30,6 @@ type Integration = {
   teacher: string[];
   student: string;
   guide?: { href: string; label: string };
-  badge?: string;
 };
 
 const lmsIntegrations: Integration[] = [
@@ -113,77 +115,69 @@ const rosterIntegrations: Integration[] = [
 export default function IntegrationsServicePage() {
   return (
     <main>
-      <FeatureHero bgTint="bg-amber-200">
-        <h1 className="text-center text-4xl md:text-5xl font-bold tracking-tight text-foreground">
-          Checkmark works where your classes already live
-        </h1>
-        <p className="mt-4 text-center max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground">
-          Assignments sync in from your LMS, reports open in context, and grades push back to the
-          gradebook. Teachers keep their workflow; Checkmark does its work underneath it.
-        </p>
-        <div className="mt-6 flex flex-wrap justify-center gap-3">
-          <LinkButton href="#lms" size="sm">
-            LMS integrations
-          </LinkButton>
-          <LinkButton href="/teacher-support" size="sm" variant="outline">
-            Setup guides
-          </LinkButton>
-        </div>
-      </FeatureHero>
+      <ServiceHero
+        title="Checkmark works where your classes already live"
+        sub="Assignments sync in from your LMS, reports open in context, and grades push back to the gradebook. Teachers keep their workflow; Checkmark does its work underneath it."
+      >
+        <LinkButton href="#lms" variant="hero">
+          LMS integrations
+        </LinkButton>
+        <LinkButton href="/teacher-support" variant="outline-white">
+          Setup guides
+        </LinkButton>
+      </ServiceHero>
 
       {/* LMS cards */}
       <section id="lms" className="py-12">
         <div className="container mx-auto px-4">
-          <div className="mx-auto max-w-6xl space-y-8">
+          <div className="mx-auto max-w-6xl space-y-6">
             {lmsIntegrations.map((integ) => (
-              <Card key={integ.name} className="ring-1 ring-border overflow-hidden">
-                <CardContent className="p-6 md:p-8">
-                  <div className="flex flex-col md:flex-row md:items-start gap-6">
-                    <div className="flex items-center gap-4 md:w-64 flex-shrink-0">
-                      <div className="h-16 w-16 rounded-xl bg-muted flex items-center justify-center overflow-hidden">
-                        <Image
-                          src={integ.logo}
-                          alt={`${integ.name} logo`}
-                          width={integ.logoW}
-                          height={integ.logoH}
-                          className="object-contain max-h-12 w-auto"
-                        />
-                      </div>
-                      <div>
-                        <h3 className="text-xl font-semibold text-foreground">{integ.name}</h3>
-                        <p className="mt-1 text-xs text-muted-foreground">{integ.tagline}</p>
-                      </div>
+              <div key={integ.name} className="rounded-3xl bg-muted/40 border border-border p-6 md:p-8">
+                <div className="flex flex-col md:flex-row md:items-start gap-6">
+                  <div className="flex items-center gap-4 md:w-64 flex-shrink-0">
+                    <div className="h-16 w-16 rounded-2xl bg-white border border-border flex items-center justify-center overflow-hidden">
+                      <Image
+                        src={integ.logo}
+                        alt={`${integ.name} logo`}
+                        width={integ.logoW}
+                        height={integ.logoH}
+                        className="object-contain max-h-12 w-auto"
+                      />
                     </div>
-                    <div className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-6">
-                      <div>
-                        <h4 className="text-sm font-semibold text-foreground uppercase tracking-wide">
-                          For teachers
-                        </h4>
-                        <ul className="mt-2 space-y-1.5 text-sm text-muted-foreground list-disc list-inside">
-                          {integ.teacher.map((t) => (
-                            <li key={t}>{t}</li>
-                          ))}
-                        </ul>
-                      </div>
-                      <div>
-                        <h4 className="text-sm font-semibold text-foreground uppercase tracking-wide">
-                          For students
-                        </h4>
-                        <p className="mt-2 text-sm text-muted-foreground">{integ.student}</p>
-                        {integ.guide && (
-                          <div className="mt-4">
-                            <RelatedLink href={integ.guide.href} label={integ.guide.label} />
-                          </div>
-                        )}
-                      </div>
+                    <div>
+                      <h3 className="text-xl font-semibold text-foreground">{integ.name}</h3>
+                      <p className="mt-1 text-xs text-muted-foreground">{integ.tagline}</p>
                     </div>
                   </div>
-                </CardContent>
-              </Card>
+                  <div className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                      <h4 className="text-sm font-semibold text-foreground uppercase tracking-wide">
+                        For teachers
+                      </h4>
+                      <ul className="mt-2 space-y-1.5 text-sm text-muted-foreground list-disc list-inside">
+                        {integ.teacher.map((t) => (
+                          <li key={t}>{t}</li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div>
+                      <h4 className="text-sm font-semibold text-foreground uppercase tracking-wide">
+                        For students
+                      </h4>
+                      <p className="mt-2 text-sm text-muted-foreground">{integ.student}</p>
+                      {integ.guide && (
+                        <div className="mt-4">
+                          <RelatedLink href={integ.guide.href} label={integ.guide.label} />
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </div>
             ))}
 
             {/* Canvas Asset Processor early access note */}
-            <div className="flex items-start gap-3 rounded-xl border border-dashed border-brand-400/60 bg-brand-50/50 p-5">
+            <div className="flex items-start gap-3 rounded-3xl bg-brand-100 p-6">
               <Sparkles className="h-5 w-5 mt-0.5 text-brand-700 flex-shrink-0" />
               <p className="text-sm text-muted-foreground">
                 <span className="font-medium text-foreground">
@@ -214,31 +208,29 @@ export default function IntegrationsServicePage() {
             </p>
             <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
               {rosterIntegrations.map((integ) => (
-                <Card key={integ.name} className="ring-1 ring-border">
-                  <CardContent className="p-6">
-                    <div className="flex items-center gap-4">
-                      <div className="h-14 w-14 rounded-xl bg-background ring-1 ring-border flex items-center justify-center overflow-hidden">
-                        <Image
-                          src={integ.logo}
-                          alt={`${integ.name} logo`}
-                          width={integ.logoW}
-                          height={integ.logoH}
-                          className="object-contain max-h-10 w-auto"
-                        />
-                      </div>
-                      <div>
-                        <h3 className="text-lg font-semibold text-foreground">{integ.name}</h3>
-                        <p className="text-xs text-muted-foreground">{integ.tagline}</p>
-                      </div>
+                <div key={integ.name} className="rounded-3xl bg-white border border-border p-6">
+                  <div className="flex items-center gap-4">
+                    <div className="h-14 w-14 rounded-2xl bg-muted flex items-center justify-center overflow-hidden">
+                      <Image
+                        src={integ.logo}
+                        alt={`${integ.name} logo`}
+                        width={integ.logoW}
+                        height={integ.logoH}
+                        className="object-contain max-h-10 w-auto"
+                      />
                     </div>
-                    <ul className="mt-4 space-y-1.5 text-sm text-muted-foreground list-disc list-inside">
-                      {integ.teacher.map((t) => (
-                        <li key={t}>{t}</li>
-                      ))}
-                      <li>{integ.student}</li>
-                    </ul>
-                  </CardContent>
-                </Card>
+                    <div>
+                      <h3 className="text-lg font-semibold text-foreground">{integ.name}</h3>
+                      <p className="text-xs text-muted-foreground">{integ.tagline}</p>
+                    </div>
+                  </div>
+                  <ul className="mt-4 space-y-1.5 text-sm text-muted-foreground list-disc list-inside">
+                    {integ.teacher.map((t) => (
+                      <li key={t}>{t}</li>
+                    ))}
+                    <li>{integ.student}</li>
+                  </ul>
+                </div>
               ))}
             </div>
             <p className="mt-8 text-center text-sm text-muted-foreground">
@@ -263,19 +255,19 @@ export default function IntegrationsServicePage() {
                 icon={FileUp}
                 title="Flexible submissions"
                 text="Students upload Word documents, import straight from Google Drive, or pull files in from OneDrive."
-                accent="from-blue-600/25 via-blue-500/10"
+                tone="blue"
               />
               <IconFeature
                 icon={Users}
                 title="Simple rosters"
                 text="Enroll students by email or share a class code — bulk roster upload included."
-                accent="from-emerald-600/25 via-emerald-500/10"
+                tone="emerald"
               />
               <IconFeature
                 icon={KeyRound}
                 title="Google & Microsoft sign-in"
                 text="Students sign in with the school account they already have."
-                accent="from-amber-600/25 via-amber-500/10"
+                tone="amber"
               />
             </div>
             <div className="mt-8 flex flex-wrap justify-center gap-3">

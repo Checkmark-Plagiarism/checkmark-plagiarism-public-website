@@ -24,6 +24,13 @@ All colors MUST be HSL.
     --brand-500: 218 100% 59%;
     --brand-400: 218 100% 65%;
     --brand-300: 218 100% 75%;
+    /* Light tint ramp — these were referenced (bg-brand-50, hover:bg-brand-50,
+       services feature boxes) but never defined, so they rendered transparent.
+       Hue 218 / full sat to match the rest of the ramp; lightness mirrors the
+       standard Tailwind blue 50/100/200 ramp so tinted boxes read against gray. */
+    --brand-200: 218 100% 86%;
+    --brand-100: 218 100% 93%;
+    --brand-50: 218 100% 97%;
 
     --primary: 218 100% 59%;
     --primary-foreground: 0 0% 100%;

@@ -8,8 +8,8 @@ import {
   MessageSquare,
 } from "lucide-react";
 import { LinkButton } from "@/components/ui/link";
-import FeatureHero from "@/sections/features/feature-hero";
 import {
+  ServiceHero,
   Screenshot,
   IconFeature,
   NumberedStep,
@@ -27,24 +27,17 @@ export const metadata: Metadata = {
 export default function PlagiarismDetectionServicePage() {
   return (
     <main>
-      <FeatureHero bgTint="bg-fuchsia-200">
-        <h1 className="text-center text-4xl md:text-5xl font-bold tracking-tight text-foreground">
-          Plagiarism detection with evidence you can defend
-        </h1>
-        <p className="mt-4 text-center max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground">
-          Every match comes with the receipt: the exact passage, the source it matches, and a link
-          to the original. No mystery percentages — just evidence a teacher can put in front of a
-          student, a parent, or an administrator.
-        </p>
-        <div className="mt-6 flex flex-wrap justify-center gap-3">
-          <LinkButton href="#how-it-works" size="sm">
-            See how it works
-          </LinkButton>
-          <LinkButton href="/demo" size="sm" variant="outline">
-            Try it on a real essay
-          </LinkButton>
-        </div>
-      </FeatureHero>
+      <ServiceHero
+        title="Plagiarism detection with evidence you can defend"
+        sub="Every match comes with the receipt: the exact passage, the source it matches, and a link to the original. No mystery percentages — just evidence a teacher can put in front of a student, a parent, or an administrator."
+      >
+        <LinkButton href="#how-it-works" variant="hero">
+          See how it works
+        </LinkButton>
+        <LinkButton href="/demo" variant="outline-white">
+          Try it on a real essay
+        </LinkButton>
+      </ServiceHero>
 
       {/* What it catches */}
       <section className="py-12">
@@ -54,19 +47,19 @@ export default function PlagiarismDetectionServicePage() {
               icon={Globe}
               title="Web-source matches"
               text="Passages that match published web sources are flagged with a similarity score and a clickable link to the original page."
-              accent="from-fuchsia-600/25 via-fuchsia-500/10"
+              tone="fuchsia"
             />
             <IconFeature
               icon={Quote}
               title="Uncited references"
               text="Text that leans on a source without citing it gets its own tile and underline style, so citation coaching is easy to target."
-              accent="from-purple-600/25 via-purple-500/10"
+              tone="purple"
             />
             <IconFeature
               icon={Users}
               title="Copies between students"
               text="When a passage matches another student's submission, the evidence card says so directly — peer copying doesn't hide."
-              accent="from-blue-600/25 via-blue-500/10"
+              tone="blue"
             />
           </div>
         </div>
@@ -82,7 +75,6 @@ export default function PlagiarismDetectionServicePage() {
               width={2000}
               height={1312}
               priority
-              ring="ring-fuchsia-300/60"
               caption="The report highlights each finding directly in the essay. Click a highlight and the matching evidence card scrolls into view — and vice versa."
             />
           </div>
@@ -123,7 +115,6 @@ export default function PlagiarismDetectionServicePage() {
               alt="Plagiarism evidence card expanded to show the matched quote and its source link"
               width={864}
               height={1484}
-              ring="ring-purple-300/60"
               caption="A plagiarism card with the quote expanded and the matching source linked."
             />
           </div>
@@ -177,19 +168,19 @@ export default function PlagiarismDetectionServicePage() {
                 icon={ClipboardPaste}
                 title="External Paste events"
                 text="Text pasted in from outside the document is captured with the full original paste — even if it was edited afterward."
-                accent="from-amber-600/25 via-amber-500/10"
+                tone="amber"
               />
               <IconFeature
                 icon={Link2}
                 title="Transcription patterns"
                 text="Typing that mirrors an existing source — retyped from a phone, a second screen, or dictation — shows up as a Transcribed finding."
-                accent="from-blue-600/25 via-blue-500/10"
+                tone="sky"
               />
               <IconFeature
                 icon={MessageSquare}
                 title="Playback for the conversation"
                 text="Replay the writing session keystroke by keystroke when you need to see exactly what happened before talking with the student."
-                accent="from-emerald-600/25 via-emerald-500/10"
+                tone="emerald"
               />
             </div>
             <div className="mt-8 text-center">
