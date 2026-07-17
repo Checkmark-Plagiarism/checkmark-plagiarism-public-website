@@ -8,8 +8,8 @@ import {
   ShieldCheck,
 } from "lucide-react";
 import { LinkButton } from "@/components/ui/link";
-import FeatureHero from "@/sections/features/feature-hero";
 import {
+  ServiceHero,
   Screenshot,
   IconFeature,
   NumberedStep,
@@ -27,24 +27,17 @@ export const metadata: Metadata = {
 export default function WritingProcessServicePage() {
   return (
     <main>
-      <FeatureHero bgTint="bg-blue-200">
-        <h1 className="text-center text-4xl md:text-5xl font-bold tracking-tight text-foreground">
-          Don&apos;t just scan the essay. Watch it being written.
-        </h1>
-        <p className="mt-4 text-center max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground">
-          Paraphrasers beat text matchers. Humanizers beat AI detectors. Nothing beats the writing
-          session itself. Checkmark reconstructs how each submission came together — what was
-          typed, what was pasted, and when — and lets you replay it.
-        </p>
-        <div className="mt-6 flex flex-wrap justify-center gap-3">
-          <LinkButton href="#playback" size="sm">
-            See Playback
-          </LinkButton>
-          <LinkButton href="/demo" size="sm" variant="outline">
-            Try the demo
-          </LinkButton>
-        </div>
-      </FeatureHero>
+      <ServiceHero
+        title="Don't just scan the essay. Watch it being written."
+        sub="Paraphrasers beat text matchers. Humanizers beat AI detectors. Nothing beats the writing session itself. Checkmark reconstructs how each submission came together — what was typed, what was pasted, and when — and lets you replay it."
+      >
+        <LinkButton href="#playback" variant="hero">
+          See Playback
+        </LinkButton>
+        <LinkButton href="/demo" variant="outline-white">
+          Try the demo
+        </LinkButton>
+      </ServiceHero>
 
       {/* Signals */}
       <section className="py-12">
@@ -54,19 +47,19 @@ export default function WritingProcessServicePage() {
               icon={ClipboardPaste}
               title="External Paste"
               text="Text pasted from outside the document is captured with a timestamp and the full original paste — even if the student edited it afterward."
-              accent="from-amber-600/25 via-amber-500/10"
+              tone="amber"
             />
             <IconFeature
               icon={Keyboard}
               title="Transcribed"
               text="Steady, unnatural typing that mirrors an existing source — retyping from a second screen or dictation — is flagged as transcription."
-              accent="from-blue-600/25 via-blue-500/10"
+              tone="blue"
             />
             <IconFeature
               icon={PlayCircle}
               title="Playback"
               text="Replay the entire session keystroke by keystroke at 1x–8x speed, with a scrubber to jump straight to any moment."
-              accent="from-emerald-600/25 via-emerald-500/10"
+              tone="emerald"
             />
           </div>
         </div>
@@ -101,7 +94,6 @@ export default function WritingProcessServicePage() {
               alt="External Paste card expanded to show the full original pasted text"
               width={864}
               height={1484}
-              ring="ring-amber-300/60"
               caption="An External Paste card with the original pasted text expanded."
             />
           </div>
@@ -165,23 +157,23 @@ export default function WritingProcessServicePage() {
                 icon={FileText}
                 title="Google Docs"
                 text="Submissions imported from Google Drive bring their revision history with them — drafting over days, not just the final text."
-                accent="from-emerald-600/25 via-emerald-500/10"
+                tone="emerald"
               />
               <IconFeature
                 icon={Keyboard}
                 title="Typed-in editors"
                 text="Essay editors embedded in Canvas and Buzz assessments capture the session as students type — no setup for students at all."
-                accent="from-blue-600/25 via-blue-500/10"
+                tone="blue"
               />
               <IconFeature
                 icon={Timer}
                 title="Word documents"
                 text="DOCX submissions carry process data when written with Checkmark's editor tooling; standard DOCX files still get full plagiarism and AI analysis."
-                accent="from-amber-600/25 via-amber-500/10"
+                tone="amber"
               />
             </div>
             <div className="mt-10 mx-auto max-w-3xl text-center">
-              <div className="inline-flex items-start gap-3 rounded-xl border border-border bg-muted/40 p-4 text-left">
+              <div className="inline-flex items-start gap-3 rounded-2xl bg-brand-50 p-5 text-left">
                 <ShieldCheck className="h-5 w-5 mt-0.5 text-brand-700 flex-shrink-0" />
                 <p className="text-sm text-muted-foreground">
                   <span className="font-medium text-foreground">

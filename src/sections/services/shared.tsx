@@ -1,15 +1,64 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
 import { LinkButton } from "@/components/ui/link";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 /**
- * Shared building blocks for the /services pages. Every screenshot rendered
- * through <Screenshot> is a real capture of the product (the public example
- * report at teach.checkmarkplagiarism.com/example-report or the live demo),
- * so the marketing pages stay honest about what the app actually shows.
+ * Shared building blocks for the /services pages, styled to match the rest of
+ * the site: solid brand-900 heroes (like Pricing and the Support pages) and
+ * solid rounded-corner tinted boxes (like the homepage feature cards) — no
+ * gradient washes or gradient card tops.
+ *
+ * Every screenshot rendered through <Screenshot> is a real capture of the
+ * product (the public example report at
+ * teach.checkmarkplagiarism.com/example-report or the live demo), so the
+ * marketing pages stay honest about what the app actually shows.
  */
+
+/** Solid pastel tones for feature boxes, mirroring the homepage palette. */
+const TONES = {
+  blue: { box: "bg-blue-50", chip: "bg-blue-600" },
+  sky: { box: "bg-sky-50", chip: "bg-sky-600" },
+  amber: { box: "bg-amber-50", chip: "bg-amber-500" },
+  emerald: { box: "bg-emerald-50", chip: "bg-emerald-600" },
+  purple: { box: "bg-purple-50", chip: "bg-purple-600" },
+  fuchsia: { box: "bg-fuchsia-50", chip: "bg-fuchsia-600" },
+  rose: { box: "bg-rose-50", chip: "bg-rose-500" },
+  cyan: { box: "bg-cyan-50", chip: "bg-cyan-600" },
+  brand: { box: "bg-brand-50", chip: "bg-brand-600" },
+} as const;
+
+export type Tone = keyof typeof TONES;
+
+export function toneClasses(tone: Tone) {
+  return TONES[tone];
+}
+
+/** Solid dark hero, matching the Pricing / Support page pattern. */
+export function ServiceHero({
+  title,
+  sub,
+  children,
+}: {
+  title: string;
+  sub: string;
+  children?: React.ReactNode;
+}) {
+  return (
+    <section className="text-center bg-brand-900 pt-32 pb-16 relative overflow-hidden">
+      <div className="relative z-10 container mx-auto px-4">
+        <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 max-w-4xl mx-auto text-balance">
+          {title}
+        </h1>
+        <p className="text-xl text-white/90 max-w-3xl mx-auto px-4">{sub}</p>
+        {children && (
+          <div className="mt-8 flex flex-wrap justify-center gap-4">{children}</div>
+        )}
+      </div>
+    </section>
+  );
+}
 
 export function Screenshot({
   src,
@@ -18,7 +67,6 @@ export function Screenshot({
   height,
   caption,
   priority = false,
-  ring = "ring-border",
   className = "",
 }: {
   src: string;
@@ -27,23 +75,20 @@ export function Screenshot({
   height: number;
   caption?: string;
   priority?: boolean;
-  ring?: string;
   className?: string;
 }) {
   return (
     <figure className={className}>
-      <Card className={`overflow-hidden p-0 ring-1 ${ring} shadow-medium`}>
-        <CardContent className="p-0">
-          <Image
-            src={src}
-            alt={alt}
-            width={width}
-            height={height}
-            priority={priority}
-            className="w-full h-auto"
-          />
-        </CardContent>
-      </Card>
+      <div className="overflow-hidden rounded-2xl border border-border bg-white shadow-soft">
+        <Image
+          src={src}
+          alt={alt}
+          width={width}
+          height={height}
+          priority={priority}
+          className="w-full h-auto"
+        />
+      </div>
       {caption && (
         <figcaption className="mt-3 text-center text-sm text-muted-foreground">
           {caption}
@@ -53,30 +98,29 @@ export function Screenshot({
   );
 }
 
+/** Solid rounded tinted box with an icon chip — the homepage card idiom. */
 export function IconFeature({
   icon: Icon,
   title,
   text,
-  accent = "from-brand-600/20 via-brand-500/10",
+  tone = "brand",
 }: {
   icon: React.ComponentType<{ className?: string }>;
   title: string;
   text: string;
-  accent?: string;
+  tone?: Tone;
 }) {
+  const t = TONES[tone];
   return (
-    <Card className="overflow-hidden ring-1 ring-border h-full">
-      <div className={`h-2 bg-gradient-to-r ${accent} to-transparent`} />
-      <CardContent className="p-6">
-        <div className="flex items-center gap-3">
-          <div className="h-9 w-9 rounded-lg bg-muted flex items-center justify-center">
-            <Icon className="h-5 w-5 text-foreground/80" />
-          </div>
-          <h3 className="text-lg font-semibold">{title}</h3>
+    <div className={`h-full rounded-3xl p-6 ${t.box}`}>
+      <div className="flex items-center gap-3">
+        <div className={`h-11 w-11 rounded-lg ${t.chip} flex items-center justify-center flex-shrink-0`}>
+          <Icon className="h-5 w-5 text-white" />
         </div>
-        <p className="mt-3 text-sm text-muted-foreground">{text}</p>
-      </CardContent>
-    </Card>
+        <h3 className="text-lg font-semibold text-foreground">{title}</h3>
+      </div>
+      <p className="mt-3 text-sm leading-relaxed text-foreground/70">{text}</p>
+    </div>
   );
 }
 
@@ -115,6 +159,7 @@ export function RelatedLink({ href, label }: { href: string; label: string }) {
   );
 }
 
+/** Bottom CTA — the solid brand-900 card used at the foot of support pages. */
 export function ServiceCta({
   title = "See it on your own students' work",
   text = "Checkmark is free for teachers to try — run a real assignment through it in minutes.",
@@ -123,22 +168,30 @@ export function ServiceCta({
   text?: string;
 }) {
   return (
-    <section className="py-16 bg-muted/50 border-y border-border">
+    <section className="py-16">
       <div className="container mx-auto px-4">
-        <div className="mx-auto max-w-4xl text-center">
-          <h2 className="text-3xl font-bold">{title}</h2>
-          <p className="mt-2 text-muted-foreground">{text}</p>
-          <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
-            <LinkButton href="/demo">
-              Try the live demo <ArrowRight className="ml-2 h-4 w-4" />
-            </LinkButton>
-            <LinkButton href="/pricing" variant="outline">
-              See pricing
-            </LinkButton>
-            <LinkButton href="/contact" variant="outline">
-              Talk to us
-            </LinkButton>
-          </div>
+        <div className="mx-auto max-w-5xl">
+          <Card className="shadow-soft bg-brand-900 border-0">
+            <CardHeader>
+              <div className="text-center">
+                <CardTitle className="text-2xl text-white">{title}</CardTitle>
+                <CardDescription className="text-white/90 mt-2">{text}</CardDescription>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <div className="flex flex-wrap items-center justify-center gap-3">
+                <LinkButton href="/demo" variant="hero">
+                  Try the live demo <ArrowRight className="ml-2 h-4 w-4" />
+                </LinkButton>
+                <LinkButton href="/pricing" variant="outline-white">
+                  See pricing
+                </LinkButton>
+                <LinkButton href="/contact" variant="outline-white">
+                  Talk to us
+                </LinkButton>
+              </div>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </section>
