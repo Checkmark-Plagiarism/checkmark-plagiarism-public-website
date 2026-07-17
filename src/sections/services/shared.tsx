@@ -16,17 +16,19 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
  * marketing pages stay honest about what the app actually shows.
  */
 
-/** Solid pastel tones for feature boxes, mirroring the homepage palette. */
+/** Solid pastel tones for feature boxes, mirroring the homepage palette.
+ *  Boxes use the -100 shade (one step darker than -50) so they read against
+ *  light-gray section backgrounds instead of blending in. */
 const TONES = {
-  blue: { box: "bg-blue-50", chip: "bg-blue-600" },
-  sky: { box: "bg-sky-50", chip: "bg-sky-600" },
-  amber: { box: "bg-amber-50", chip: "bg-amber-500" },
-  emerald: { box: "bg-emerald-50", chip: "bg-emerald-600" },
-  purple: { box: "bg-purple-50", chip: "bg-purple-600" },
-  fuchsia: { box: "bg-fuchsia-50", chip: "bg-fuchsia-600" },
-  rose: { box: "bg-rose-50", chip: "bg-rose-500" },
-  cyan: { box: "bg-cyan-50", chip: "bg-cyan-600" },
-  brand: { box: "bg-brand-50", chip: "bg-brand-600" },
+  blue: { box: "bg-blue-100", chip: "bg-blue-600" },
+  sky: { box: "bg-sky-100", chip: "bg-sky-600" },
+  amber: { box: "bg-amber-100", chip: "bg-amber-500" },
+  emerald: { box: "bg-emerald-100", chip: "bg-emerald-600" },
+  purple: { box: "bg-purple-100", chip: "bg-purple-600" },
+  fuchsia: { box: "bg-fuchsia-100", chip: "bg-fuchsia-600" },
+  rose: { box: "bg-rose-100", chip: "bg-rose-500" },
+  cyan: { box: "bg-cyan-100", chip: "bg-cyan-600" },
+  brand: { box: "bg-brand-100", chip: "bg-brand-600" },
 } as const;
 
 export type Tone = keyof typeof TONES;

@@ -56,7 +56,7 @@ export default function AnalyticsServicePage() {
             </h2>
             <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {metrics.map((m) => (
-                <div key={m.label} className="rounded-3xl bg-brand-50 p-6">
+                <div key={m.label} className="rounded-3xl bg-brand-100 p-6">
                   <p className="text-sm font-semibold text-brand-700 uppercase tracking-wide">
                     {m.label}
                   </p>

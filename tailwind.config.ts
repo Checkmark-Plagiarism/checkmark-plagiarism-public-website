@@ -25,6 +25,9 @@ export default {
           500: "hsl(var(--brand-500))",
           400: "hsl(var(--brand-400))",
           300: "hsl(var(--brand-300))",
+          200: "hsl(var(--brand-200))",
+          100: "hsl(var(--brand-100))",
+          50: "hsl(var(--brand-50))",
         },
         primary: {
           DEFAULT: "hsl(var(--primary))",

@@ -173,7 +173,7 @@ export default function WritingProcessServicePage() {
               />
             </div>
             <div className="mt-10 mx-auto max-w-3xl text-center">
-              <div className="inline-flex items-start gap-3 rounded-2xl bg-brand-50 p-5 text-left">
+              <div className="inline-flex items-start gap-3 rounded-2xl bg-brand-100 p-5 text-left">
                 <ShieldCheck className="h-5 w-5 mt-0.5 text-brand-700 flex-shrink-0" />
                 <p className="text-sm text-muted-foreground">
                   <span className="font-medium text-foreground">

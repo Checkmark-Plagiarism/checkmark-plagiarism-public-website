@@ -177,7 +177,7 @@ export default function IntegrationsServicePage() {
             ))}
 
             {/* Canvas Asset Processor early access note */}
-            <div className="flex items-start gap-3 rounded-3xl bg-brand-50 p-6">
+            <div className="flex items-start gap-3 rounded-3xl bg-brand-100 p-6">
               <Sparkles className="h-5 w-5 mt-0.5 text-brand-700 flex-shrink-0" />
               <p className="text-sm text-muted-foreground">
                 <span className="font-medium text-foreground">

@@ -167,7 +167,7 @@ export default function AutograderServicePage() {
       <section className="py-12">
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-3xl">
-            <div className="flex items-start gap-3 rounded-2xl bg-brand-50 p-5">
+            <div className="flex items-start gap-3 rounded-2xl bg-brand-100 p-5">
               <CheckCircle2 className="h-5 w-5 mt-0.5 text-brand-700 flex-shrink-0" />
               <p className="text-sm text-muted-foreground">
                 <span className="font-medium text-foreground">
