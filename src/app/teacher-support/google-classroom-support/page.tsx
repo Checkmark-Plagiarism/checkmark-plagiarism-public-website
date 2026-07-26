@@ -47,6 +47,9 @@ export default function GoogleClassroomSupportPage() {
               </a>
             </Button>
             <Button asChild size="lg" variant="outline" className="bg-transparent text-white border-white hover:bg-white/10">
+              <a href="/services/integrations/google-classroom">Google Classroom Overview</a>
+            </Button>
+            <Button asChild size="lg" variant="outline" className="bg-transparent text-white border-white hover:bg-white/10">
               <a href="/contact">Contact Support</a>
             </Button>
           </div>

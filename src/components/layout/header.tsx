@@ -29,6 +29,9 @@ export default function Header() {
     { href: "/services/writing-process", label: "Writing Process Analysis" },
     { href: "/services/autograder", label: "AI Autograder & Rubrics" },
     { href: "/services/integrations", label: "LMS Integrations" },
+    { href: "/services/integrations/google-classroom", label: "↳ Google Classroom" },
+    { href: "/services/integrations/canvas-lms", label: "↳ Canvas LMS" },
+    { href: "/services/integrations/buzz-lms", label: "↳ Buzz LMS" },
     { href: "/services/analytics", label: "School Analytics" },
   ];
 

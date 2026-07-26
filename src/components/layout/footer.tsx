@@ -16,7 +16,7 @@ const Footer = () => {
     {
       title: "Product",
       // TODO: "Features", "Updates" temporarily removed. Add back to array if needed
-      links: ["Services", "Plagiarism Detection", "AI Detection", "Autograder", "Integrations", "Pricing", "Security"],
+      links: ["Services", "Plagiarism Detection", "AI Detection", "Autograder", "Integrations", "Google Classroom", "Canvas LMS", "Buzz LMS", "Pricing", "Security"],
     },
     {
       title: "Resources",
@@ -44,6 +44,9 @@ const Footer = () => {
       "AI Detection": "/services/ai-detection",
       "Autograder": "/services/autograder",
       "Integrations": "/services/integrations",
+      "Google Classroom": "/services/integrations/google-classroom",
+      "Canvas LMS": "/services/integrations/canvas-lms",
+      "Buzz LMS": "/services/integrations/buzz-lms",
       "Pricing": "/pricing",
       "Security": "/security", 
       // "Updates": "#", // TODO: Create / find page
