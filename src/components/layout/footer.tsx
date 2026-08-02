@@ -14,6 +14,10 @@ const Footer = () => {
   
   const footerSections = [
     {
+      title: "Solutions",
+      links: ["Schools Overview", "High Schools", "Middle Schools", "School Districts", "Private Schools"],
+    },
+    {
       title: "Product",
       // TODO: "Features", "Updates" temporarily removed. Add back to array if needed
       links: ["Services", "Plagiarism Detection", "AI Detection", "Autograder", "Integrations", "Google Classroom", "Canvas LMS", "Buzz LMS", "Pricing", "Security"],
@@ -37,6 +41,12 @@ const Footer = () => {
 
   const getLinkHref = (linkText: string): string => {
     const linkMap: { [key: string]: string } = {
+      // Solutions
+      "Schools Overview": "/solutions/schools",
+      "High Schools": "/solutions/high-schools",
+      "Middle Schools": "/solutions/middle-schools",
+      "School Districts": "/solutions/school-districts",
+      "Private Schools": "/solutions/private-schools",
       // Product
       // "Features": "/features", // TODO: Features page temporarily disabled
       "Services": "/services",
@@ -77,7 +87,7 @@ const Footer = () => {
   return (
     <footer className="bg-brand-900 text-white pt-20 pb-10">
       <div className="container mx-auto px-6">
-        <div className="grid md:grid-cols-2 lg:grid-cols-6 gap-12 mb-16">
+        <div className="grid md:grid-cols-3 lg:grid-cols-7 gap-8 mb-16">
           {/* Brand section */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-2 mb-4">

@@ -12,6 +12,16 @@ const socialLinks = {
 
 const COLUMNS = [
   {
+    title: "Solutions",
+    links: [
+      { label: "Schools Overview", href: "/solutions/schools" },
+      { label: "High Schools", href: "/solutions/high-schools" },
+      { label: "Middle Schools", href: "/solutions/middle-schools" },
+      { label: "School Districts", href: "/solutions/school-districts" },
+      { label: "Private Schools", href: "/solutions/private-schools" },
+    ],
+  },
+  {
     title: "Product",
     links: [
       { label: "Integrations", href: "/#integrations" },
@@ -48,7 +58,7 @@ export function SiteFooter() {
   return (
     <footer className="pt-20 pb-10 text-white">
       <div className="container mx-auto px-6">
-        <div className="grid md:grid-cols-2 lg:grid-cols-6 gap-12 mb-16">
+        <div className="grid md:grid-cols-3 lg:grid-cols-7 gap-8 mb-16">
           {/* Brand */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-2 mb-4">
