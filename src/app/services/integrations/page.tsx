@@ -15,7 +15,7 @@ import {
 } from "@/sections/services/shared";
 
 export const metadata: Metadata = {
-  title: "LMS Integrations — Checkmark Plagiarism",
+  title: "LMS Integrations - Checkmark Plagiarism",
   description:
     "Canvas LTI 1.3, Google Classroom Add-On, Buzz, ClassLink, and Clever. Assignments sync in, reports open in context, and grades push back to your gradebook.",
   openGraph: { images: ["/images/services/report-plagiarism-view.png"] },
@@ -38,7 +38,7 @@ const lmsIntegrations: Integration[] = [
     logo: "/images/Canvas_Bug_Color_RGB.png",
     logoW: 64,
     logoH: 64,
-    tagline: "LTI 1.3 — installed once by an admin, live for every course",
+    tagline: "LTI 1.3 - installed once by an admin, live for every course",
     teacher: [
       "Sync any Canvas assignment into Checkmark with one click",
       "Turn tracking on per assignment; process past submissions retroactively",
@@ -46,7 +46,7 @@ const lmsIntegrations: Integration[] = [
       "Push autograder scores to SpeedGrader and publish to students",
     ],
     student:
-      "Students submit through Canvas — including a typed essay editor that captures the writing process for Playback.",
+      "Students submit through Canvas - including a typed essay editor that captures the writing process for Playback.",
     guide: { href: "/teacher-support/canvas-integration", label: "Canvas setup guide" },
   },
   {
@@ -62,7 +62,7 @@ const lmsIntegrations: Integration[] = [
       "Sync autograder scores back to Classroom",
     ],
     student:
-      "Students work in Google Docs as usual — revision history comes along for full writing-process analysis.",
+      "Students work in Google Docs as usual - revision history comes along for full writing-process analysis.",
     guide: {
       href: "/teacher-support/google-classroom-support",
       label: "Google Classroom guide",
@@ -81,7 +81,7 @@ const lmsIntegrations: Integration[] = [
       "Grades flow back into Buzz grading",
     ],
     student:
-      "A Checkmark essay box can live inside a Buzz assessment — students just type, and the writing process is captured.",
+      "A Checkmark essay box can live inside a Buzz assessment - students just type, and the writing process is captured.",
   },
 ];
 
@@ -96,7 +96,7 @@ const rosterIntegrations: Integration[] = [
       "Teachers and students sign in with their ClassLink launchpad",
       "Classes import from OneRoster with students already enrolled",
     ],
-    student: "One click from the LaunchPad — no new passwords.",
+    student: "One click from the LaunchPad - no new passwords.",
   },
   {
     name: "Clever",
@@ -181,7 +181,7 @@ export default function IntegrationsServicePage() {
               <Sparkles className="h-5 w-5 mt-0.5 text-brand-700 flex-shrink-0" />
               <p className="text-sm text-muted-foreground">
                 <span className="font-medium text-foreground">
-                  Early access — originality &amp; AI results inside SpeedGrader.
+                  Early access - originality &amp; AI results inside SpeedGrader.
                 </span>{" "}
                 Built on Canvas&apos;s new Document Processor standard: students submit natively in
                 Canvas, and Checkmark&apos;s originality and AI chips appear right on each file in
@@ -234,7 +234,7 @@ export default function IntegrationsServicePage() {
               ))}
             </div>
             <p className="mt-8 text-center text-sm text-muted-foreground">
-              Google and Microsoft sign-in are built in for everyone else — no passwords to manage
+              Google and Microsoft sign-in are built in for everyone else - no passwords to manage
               either way.
             </p>
           </div>
@@ -260,7 +260,7 @@ export default function IntegrationsServicePage() {
               <IconFeature
                 icon={Users}
                 title="Simple rosters"
-                text="Enroll students by email or share a class code — bulk roster upload included."
+                text="Enroll students by email or share a class code - bulk roster upload included."
                 tone="emerald"
               />
               <IconFeature
@@ -283,7 +283,7 @@ export default function IntegrationsServicePage() {
 
       <ServiceCta
         title="Get Checkmark into your LMS"
-        text="Most integrations are a one-time, 15-minute admin setup. Our guides walk through every step — or we'll do it with you on a call."
+        text="Most integrations are a one-time, 15-minute admin setup. Our guides walk through every step - or we'll do it with you on a call."
       />
     </main>
   );

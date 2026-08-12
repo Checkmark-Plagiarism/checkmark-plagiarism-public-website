@@ -31,7 +31,7 @@ export const GoogleClassroomHero = () => {
 
                 {/* Subheadline */}
                 <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed">
-                    Checkmark helps educators uphold fairness in the classroom with plagiarism detection, AI writing analysis, and unbiased autograding — all built into Google Classroom.
+                    Checkmark helps educators uphold fairness in the classroom with plagiarism detection, AI writing analysis, and unbiased autograding - all built into Google Classroom.
                 </p>
 
                 {/* CTAs + Hero sticker images */}

@@ -49,7 +49,7 @@ export const CanvasHero = () => {
                         </h1>
 
                         <p className="text-lg md:text-xl text-white/80 mb-10 leading-relaxed">
-                            Checkmark brings AI detection, plagiarism checking, and autograding directly into your Canvas workflow — no tab-switching, no extra logins, just results.
+                            Checkmark brings AI detection, plagiarism checking, and autograding directly into your Canvas workflow - no tab-switching, no extra logins, just results.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4">

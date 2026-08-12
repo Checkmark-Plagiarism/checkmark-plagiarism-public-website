@@ -4,7 +4,7 @@ import { ArrowLeft, FileText, ShieldCheck, Calendar, Link as LinkIcon, Mail } fr
 import { Card, CardContent } from '@/components/ui/card';
 
 export const metadata: Metadata = {
-  title: 'Terms of Service — Checkmark Plagiarism',
+  title: 'Terms of Service - Checkmark Plagiarism',
   description:
     'Terms governing the use of the Checkmark Plagiarism add-on for Google Classroom™ and related integrations.',
   openGraph: { images: [''] },
@@ -55,7 +55,7 @@ export default function TermsOfServicePage() {
             {/* Main article */}
             <article className="lg:col-span-3 prose prose-neutral dark:prose-invert max-w-none leading-relaxed">
               <p className="text-muted-foreground">
-                <span className="font-medium text-foreground">Checkmark Plagiarism for Google Classroom™</span> — Terms of Service
+                <span className="font-medium text-foreground">Checkmark Plagiarism for Google Classroom™</span> - Terms of Service
               </p>
 
               <Section id="1-agreement" title="1. Agreement to Terms">

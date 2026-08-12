@@ -16,7 +16,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import FeatureHero from "@/sections/features/feature-hero";
 
 export const metadata: Metadata = {
-  title: "Google Classroom™ — Checkmark Plagiarism",
+  title: "Google Classroom™ - Checkmark Plagiarism",
   description:
     "Run AI detection, plagiarism checks, and auto-grading inside Google Classroom™. Sync classes, assignments, and submissions in minutes.",
   openGraph: { images: [""] },
@@ -32,7 +32,7 @@ export default function GoogleClassroomPage() {
         </h1>
         <p className="mt-4 text-center max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground">
           Connect once and go. Checkmark syncs classes, assignments, and submissions so you can run
-          AI detection, plagiarism checks, and auto-grading—right where teachers already work.
+          AI detection, plagiarism checks, and auto-grading-right where teachers already work.
         </p>
 
         <div className="mt-6 flex flex-wrap justify-center gap-3">
@@ -69,7 +69,7 @@ export default function GoogleClassroomPage() {
               </p>
 
               <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <Fact icon={PlugZap} title="Connect with Google OAuth" text="OAuth setup—no manual files." />
+                <Fact icon={PlugZap} title="Connect with Google OAuth" text="OAuth setup-no manual files." />
                 <Fact icon={Users2} title="Google Classroom roster sync" text="Classes & enrollments stay fresh." />
                 <Fact icon={ClipboardList} title="Assignment-level control" text="Enable checks where needed." />
                 <Fact icon={ShieldCheck} title="Secure Google access" text="Only enabled classes & work." />
@@ -128,7 +128,7 @@ export default function GoogleClassroomPage() {
               <ProcessStep
                 k="04"
                 title="Review reports in Classroom"
-                text="Open clear reports—highlights, rationales, and confidence ranges—to discuss integrity with students."
+                text="Open clear reports-highlights, rationales, and confidence ranges-to discuss integrity with students."
                 icon={ShieldCheck}
                 badge="Review"
                 color={{
@@ -190,7 +190,7 @@ export default function GoogleClassroomPage() {
                 <h3 className="text-xl font-semibold text-foreground">Integrity that builds confidence</h3>
                 <p className="mt-2 text-muted-foreground">
                   Revision-based evidence and plain-language reports turn integrity checks into
-                  coaching moments—supporting authentic writing.
+                  coaching moments-supporting authentic writing.
                 </p>
                 <ul className="mt-4 text-sm text-muted-foreground space-y-2 list-disc list-inside">
                   <li>Revision signals over one-off text scans</li>

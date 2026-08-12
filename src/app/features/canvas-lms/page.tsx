@@ -16,7 +16,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import FeatureHero from "@/sections/features/feature-hero";
 
 export const metadata: Metadata = {
-  title: "Canvas LMS — Checkmark Plagiarism",
+  title: "Canvas LMS - Checkmark Plagiarism",
   description:
     "Run AI detection, plagiarism checks, and auto-grading inside Canvas LMS. Sync rosters, assignments, and submissions in minutes.",
   openGraph: { images: [""] },
@@ -69,7 +69,7 @@ export default function CanvasLMSPage() {
               </p>
 
               <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <Fact icon={PlugZap} title="Connect with Canvas OAuth" text="OAuth-based setup—no CSVs." />
+                <Fact icon={PlugZap} title="Connect with Canvas OAuth" text="OAuth-based setup-no CSVs." />
                 <Fact icon={Users2} title="Canvas roster sync" text="Enrollments update automatically." />
                 <Fact
                   icon={ClipboardList}
@@ -136,7 +136,7 @@ export default function CanvasLMSPage() {
               <ProcessStep
                 k="04"
                 title="Review reports in Canvas"
-                text="Open transparent reports from Canvas—see highlights, rationales, and confidence ranges."
+                text="Open transparent reports from Canvas-see highlights, rationales, and confidence ranges."
                 icon={ShieldCheck}
                 badge="Review"
                 color={{

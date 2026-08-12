@@ -5,7 +5,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 
 export const metadata: Metadata = {
-  title: 'Accessibility — Checkmark Plagiarism',
+  title: 'Accessibility - Checkmark Plagiarism',
   description:
     'Our commitment to inclusive design and WCAG 2.1 AA conformance for all users, including those using assistive technologies.',
   openGraph: { images: [''] },

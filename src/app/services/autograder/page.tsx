@@ -19,9 +19,9 @@ import {
 } from "@/sections/services/shared";
 
 export const metadata: Metadata = {
-  title: "AI Autograder & Rubrics — Checkmark Plagiarism",
+  title: "AI Autograder & Rubrics - Checkmark Plagiarism",
   description:
-    "Rubric-based AI grading with per-criterion scores, written justifications, and quote-anchored feedback. Teachers edit everything and publish on their terms — grades can push straight to Canvas, Buzz, or Google Classroom.",
+    "Rubric-based AI grading with per-criterion scores, written justifications, and quote-anchored feedback. Teachers edit everything and publish on their terms - grades can push straight to Canvas, Buzz, or Google Classroom.",
   openGraph: { images: ["/images/services/report-grading-view.png"] },
 };
 
@@ -30,7 +30,7 @@ export default function AutograderServicePage() {
     <main>
       <ServiceHero
         title="First-draft grades in minutes. Final say always yours."
-        sub="The autograder scores every submission against your rubric and writes out its reasoning, criterion by criterion. You review, edit, and publish — and the grade lands back in your LMS gradebook."
+        sub="The autograder scores every submission against your rubric and writes out its reasoning, criterion by criterion. You review, edit, and publish - and the grade lands back in your LMS gradebook."
       >
         <LinkButton href="#grading-view" variant="hero">
           See a graded essay
@@ -63,7 +63,7 @@ export default function AutograderServicePage() {
             <IconFeature
               icon={GraduationCap}
               title="Scores per criterion"
-              text="Each rubric category gets its own score out of its own point value — Thesis 7/10, Evidence 8/10 — not one opaque total."
+              text="Each rubric category gets its own score out of its own point value - Thesis 7/10, Evidence 8/10 - not one opaque total."
               tone="emerald"
             />
             <IconFeature
@@ -90,20 +90,20 @@ export default function AutograderServicePage() {
               Your rubric, however you have it
             </h2>
             <p className="mt-3 text-center text-muted-foreground max-w-2xl mx-auto">
-              The autograder grades against <em>your</em> criteria — there&apos;s no house rubric
+              The autograder grades against <em>your</em> criteria - there&apos;s no house rubric
               you have to adopt.
             </p>
             <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
               <IconFeature
                 icon={PencilRuler}
                 title="Build it in the app"
-                text="A rubric builder with criteria, rating levels, and live point totals — the same shape Canvas rubrics use."
+                text="A rubric builder with criteria, rating levels, and live point totals - the same shape Canvas rubrics use."
                 tone="emerald"
               />
               <IconFeature
                 icon={Upload}
                 title="Upload what you have"
-                text="Drop in an existing rubric as a document or even a photo — Checkmark normalizes it into gradable criteria."
+                text="Drop in an existing rubric as a document or even a photo - Checkmark normalizes it into gradable criteria."
                 tone="blue"
               />
               <IconFeature
@@ -132,7 +132,7 @@ export default function AutograderServicePage() {
               <NumberedStep
                 n="1"
                 title="Attach a rubric to the assignment"
-                text="Build, upload, pick from your library — or let it sync from your LMS assignment."
+                text="Build, upload, pick from your library - or let it sync from your LMS assignment."
               />
               <NumberedStep
                 n="2"
@@ -146,7 +146,7 @@ export default function AutograderServicePage() {
               />
               <NumberedStep
                 n="4"
-                title="Publish — straight into your gradebook"
+                title="Publish - straight into your gradebook"
                 text="Push to Canvas, push to Buzz, sync to Google Classroom, or publish in Checkmark. Bulk-publish a whole assignment when you're done."
               />
             </div>
@@ -156,7 +156,7 @@ export default function AutograderServicePage() {
                 alt="Per-criterion autograder scores across the top of a report"
                 width={2000}
                 height={100}
-                caption="Rubric scores across the top of every graded report — click any pencil to adjust."
+                caption="Rubric scores across the top of every graded report - click any pencil to adjust."
               />
             </div>
           </div>
@@ -174,7 +174,7 @@ export default function AutograderServicePage() {
                   Published means published by you.
                 </span>{" "}
                 Autograder output is a draft until a teacher publishes it. What students see is
-                the snapshot you approved — with the scores and feedback exactly as you left them.
+                the snapshot you approved - with the scores and feedback exactly as you left them.
               </p>
             </div>
             <div className="mt-6 flex flex-wrap justify-center gap-3">
@@ -190,7 +190,7 @@ export default function AutograderServicePage() {
 
       <ServiceCta
         title="Grade an essay against a real rubric"
-        text="The demo ships with a sample rubric so you can see the scores and justifications it writes — create a free account to grade with your own."
+        text="The demo ships with a sample rubric so you can see the scores and justifications it writes - create a free account to grade with your own."
       />
     </main>
   );

@@ -13,7 +13,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Canvas Teacher Support — Checkmark Plagiarism",
+  title: "Canvas Teacher Support - Checkmark Plagiarism",
   description:
     "Learn how to use Checkmark Plagiarism within Canvas. Step-by-step guide for teachers to enable plagiarism detection on Canvas assignments and view reports.",
   openGraph: { images: [""] },

@@ -6,7 +6,7 @@ import ContactHero from "@/sections/contact/contact-hero";
 import ScheduleDemoButton from "@/components/schedule-demo-button";
 
 export const metadata: Metadata = {
-  title: "Contact Us — Checkmark Plagiarism",
+  title: "Contact Us - Checkmark Plagiarism",
   description: "Get in touch with Checkmark Plagiarism. Schedule a demo, request pricing, or ask questions about our AI detection and autograding solutions for teachers and schools.",
 };
 

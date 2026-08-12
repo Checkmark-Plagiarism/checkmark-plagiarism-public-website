@@ -5,10 +5,10 @@ import CTOIntegrationsSimple from "@/sections/cto/cto-integrations-simple";
 import CTOCTASection from "@/sections/cto/cto-cta-section";
 
 export const metadata: Metadata = {
-  title: "For CTOs — Checkmark Plagiarism",
+  title: "For CTOs - Checkmark Plagiarism",
   description: "Make smart adoption decisions with real instructional data. District-wide analytics on AI usage, writing patterns, and teacher workflow efficiency. Schedule a 15-minute demo.",
   openGraph: {
-    title: "For CTOs — Checkmark Plagiarism",
+    title: "For CTOs - Checkmark Plagiarism",
     description: "District intelligence layer for academic integrity. Real behavioral analytics, not vendor pitches.",
     type: "website",
   },

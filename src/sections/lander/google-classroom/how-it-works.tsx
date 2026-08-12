@@ -11,7 +11,7 @@ const steps = [
         number: "02",
         title: "Students Submit as Usual",
         description:
-            "Nothing changes for students — they submit assignments through Google Classroom exactly as they always do.",
+            "Nothing changes for students - they submit assignments through Google Classroom exactly as they always do.",
     },
     {
         number: "03",

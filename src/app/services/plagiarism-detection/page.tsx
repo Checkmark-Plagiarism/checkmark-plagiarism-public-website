@@ -18,9 +18,9 @@ import {
 } from "@/sections/services/shared";
 
 export const metadata: Metadata = {
-  title: "Plagiarism Detection — Checkmark Plagiarism",
+  title: "Plagiarism Detection - Checkmark Plagiarism",
   description:
-    "Web-source matching with side-by-side quotes and links to the original, uncited-source flags, and copies caught between classmates — evidence teachers can actually defend.",
+    "Web-source matching with side-by-side quotes and links to the original, uncited-source flags, and copies caught between classmates - evidence teachers can actually defend.",
   openGraph: { images: ["/images/services/report-plagiarism-view.png"] },
 };
 
@@ -29,7 +29,7 @@ export default function PlagiarismDetectionServicePage() {
     <main>
       <ServiceHero
         title="Plagiarism detection with evidence you can defend"
-        sub="Every match comes with the receipt: the exact passage, the source it matches, and a link to the original. No mystery percentages — just evidence a teacher can put in front of a student, a parent, or an administrator."
+        sub="Every match comes with the receipt: the exact passage, the source it matches, and a link to the original. No mystery percentages - just evidence a teacher can put in front of a student, a parent, or an administrator."
       >
         <LinkButton href="#how-it-works" variant="hero">
           See how it works
@@ -58,7 +58,7 @@ export default function PlagiarismDetectionServicePage() {
             <IconFeature
               icon={Users}
               title="Copies between students"
-              text="When a passage matches another student's submission, the evidence card says so directly — peer copying doesn't hide."
+              text="When a passage matches another student's submission, the evidence card says so directly - peer copying doesn't hide."
               tone="blue"
             />
           </div>
@@ -75,7 +75,7 @@ export default function PlagiarismDetectionServicePage() {
               width={2000}
               height={1312}
               priority
-              caption="The report highlights each finding directly in the essay. Click a highlight and the matching evidence card scrolls into view — and vice versa."
+              caption="The report highlights each finding directly in the essay. Click a highlight and the matching evidence card scrolls into view - and vice versa."
             />
           </div>
         </div>
@@ -92,14 +92,14 @@ export default function PlagiarismDetectionServicePage() {
               <p className="mt-3 text-muted-foreground">
                 The Plagiarism Breakdown sidebar holds one card per finding. Expand{" "}
                 <em>Show quote</em> on a plagiarism card and you get the matched passage in full,
-                the similarity score, and the source link — a Wikipedia article, a news story, an
+                the similarity score, and the source link - a Wikipedia article, a news story, an
                 essay mill page, or another student&apos;s submission.
               </p>
               <ul className="mt-4 text-sm text-muted-foreground space-y-2 list-disc list-inside">
                 <li>Side-by-side quote with the original source</li>
                 <li>Clickable source URLs for instant verification</li>
                 <li>
-                  Peer matches labeled as student submissions — no source URL games, just the fact
+                  Peer matches labeled as student submissions - no source URL games, just the fact
                 </li>
                 <li>Similarity score per finding, not one blended number</li>
               </ul>
@@ -134,7 +134,7 @@ export default function PlagiarismDetectionServicePage() {
               />
               <NumberedStep
                 n="2"
-                title="We check the web — and the class"
+                title="We check the web - and the class"
                 text="Each passage is compared against web sources and against other submissions, so both internet copying and peer copying surface."
               />
               <NumberedStep
@@ -145,7 +145,7 @@ export default function PlagiarismDetectionServicePage() {
               <NumberedStep
                 n="4"
                 title="Teachers act with confidence"
-                text="Flag the submission, resolve it, or clear it — the flag status stays private to teachers, so nothing reaches a student before you decide."
+                text="Flag the submission, resolve it, or clear it - the flag status stays private to teachers, so nothing reaches a student before you decide."
               />
             </div>
           </div>
@@ -167,13 +167,13 @@ export default function PlagiarismDetectionServicePage() {
               <IconFeature
                 icon={ClipboardPaste}
                 title="External Paste events"
-                text="Text pasted in from outside the document is captured with the full original paste — even if it was edited afterward."
+                text="Text pasted in from outside the document is captured with the full original paste - even if it was edited afterward."
                 tone="amber"
               />
               <IconFeature
                 icon={Link2}
                 title="Transcription patterns"
-                text="Typing that mirrors an existing source — retyped from a phone, a second screen, or dictation — shows up as a Transcribed finding."
+                text="Typing that mirrors an existing source - retyped from a phone, a second screen, or dictation - shows up as a Transcribed finding."
                 tone="sky"
               />
               <IconFeature

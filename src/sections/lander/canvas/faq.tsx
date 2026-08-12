@@ -13,8 +13,8 @@ const faqs = [
         answer: "Checkmark offers flexible enterprise/institutional plans for departments, institutions, and districts. Contact our team for a quote tailored to your institution's size and needs.",
     },
     {
-        question: "How accurate is Checkmark?",
-        answer: "Checkmark achieves 99.2% accuracy on AI detection and 98.7% on plagiarism detection. We recommend using these results as strong signals to inform your review, not as a substitute for it.",
+        question: "How accurate is Checkmark's AI writing detection?",
+        answer: "Checkmark is designed to identify AI-writing patterns with high confidence. When grammar, word choice, sentence structure, and rhythm align, AI-generated or AI-assisted writing is the most likely explanation. Review that signal alongside drafting history, paste events, and other context before making a decision.",
     },
     {
         question: "Will student work be stored or used to train AI models?",

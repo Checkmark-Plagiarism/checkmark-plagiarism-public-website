@@ -4,7 +4,7 @@ import { ArrowLeft, FileText, Shield, Mail, Calendar, Link as LinkIcon } from 'l
 import { Card, CardContent } from '@/components/ui/card';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy — Checkmark Plagiarism',
+  title: 'Privacy Policy - Checkmark Plagiarism',
   description:
     'How the Checkmark Plagiarism add-on for Google Classroom™ and other LMS integrations handle data, permissions, and security.',
   openGraph: { images: [''] },

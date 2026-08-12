@@ -9,7 +9,7 @@
    - Step 3 is a looping skeleton "report replay": a report page with colored
      flag lines and margin comment cards; a playback box pops in, the essay
      "types" back line by line, then the box fades and the loop restarts.
-     No real text — all skeleton bars.
+     No real text - all skeleton bars.
    - The sample-report modal now loads the app's public example report. */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
@@ -18,7 +18,7 @@ import { createPortal } from "react-dom";
 import { SectionHead } from "./section-head";
 
 const h = React.createElement;
-// Baked-in static sample report (public/sample-report.html) — no runtime
+// Baked-in static sample report (public/sample-report.html) - no runtime
 // dependency on the Laravel app.
 const LIVE_REPORT_URL = "/sample-report.html";
 
@@ -190,7 +190,7 @@ function Step2Visual() {
   );
 }
 
-// Step 3: skeleton report replay. All skeleton bars — no real text.
+// Step 3: skeleton report replay. All skeleton bars - no real text.
 // Loop: playback box pops in → lines "type" out (flag segments in scan
 // colors, margin comments land as their flag appears) → box fades → restart.
 const R_LINES: { segs: { w: number; c?: string }[] }[] = [

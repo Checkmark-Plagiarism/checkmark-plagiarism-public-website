@@ -13,9 +13,9 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Submitting Your Work — Student Support",
+  title: "Submitting Your Work - Student Support",
   description:
-    "How students submit to Checkmark: Word document upload, Google Drive, OneDrive, and typed essay editors — plus why your drafting history works in your favor.",
+    "How students submit to Checkmark: Word document upload, Google Drive, OneDrive, and typed essay editors - plus why your drafting history works in your favor.",
   openGraph: { images: ["/images/services/submit-assignment-card.png"] },
 };
 
@@ -30,7 +30,7 @@ export default function SubmittingYourWorkPage() {
           </h1>
           <p className="text-xl text-white max-w-3xl mx-auto px-4">
             Turning in an assignment takes about a minute: open the assignment, pick your file (or
-            type right in the editor), and submit. Here&apos;s each option — and why your drafting
+            type right in the editor), and submit. Here&apos;s each option - and why your drafting
             history is a good thing.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
@@ -62,7 +62,7 @@ export default function SubmittingYourWorkPage() {
               <p className="mt-3 text-muted-foreground max-w-2xl mx-auto">
                 Sign in with your school Google or Microsoft account and open the assignment from
                 your course page. If your class runs through Canvas, Google Classroom, or Buzz,
-                you&apos;ll reach Checkmark from the assignment there — same steps either way.
+                you&apos;ll reach Checkmark from the assignment there - same steps either way.
               </p>
             </div>
             <Card className="shadow-soft max-w-4xl mx-auto">
@@ -117,7 +117,7 @@ export default function SubmittingYourWorkPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground">
-                    Pick a Google Doc from your own Drive. Submit the doc you actually wrote in —
+                    Pick a Google Doc from your own Drive. Submit the doc you actually wrote in -
                     its revision history shows your drafting work.
                   </p>
                 </CardContent>
@@ -140,7 +140,7 @@ export default function SubmittingYourWorkPage() {
               <CardHeader>
                 <CardTitle>The Submission Box</CardTitle>
                 <CardDescription>
-                  Choose one source, hit <strong>Submit</strong>, and you&apos;re done — you&apos;ll
+                  Choose one source, hit <strong>Submit</strong>, and you&apos;re done - you&apos;ll
                   see a confirmation and your submission status on the assignment page.
                 </CardDescription>
               </CardHeader>
@@ -163,7 +163,7 @@ export default function SubmittingYourWorkPage() {
                 Typing Directly? Even Easier.
               </h2>
               <p className="mt-3 text-muted-foreground max-w-2xl mx-auto">
-                Some assignments — especially in Canvas and Buzz — give you a Checkmark essay box
+                Some assignments - especially in Canvas and Buzz - give you a Checkmark essay box
                 right inside the assignment. Just write. Your work saves as you type, and there&apos;s
                 nothing to upload.
               </p>
@@ -180,7 +180,7 @@ export default function SubmittingYourWorkPage() {
                     </CardTitle>
                     <CardDescription className="text-blue-700 mt-2">
                       When you type in the editor (or write in Google Docs), Checkmark can see your
-                      real writing process — drafts, edits, and time spent. That history is the
+                      real writing process - drafts, edits, and time spent. That history is the
                       strongest proof that your work is your own.
                     </CardDescription>
                   </div>
@@ -204,7 +204,7 @@ export default function SubmittingYourWorkPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground">
-                    Your submission shows as Processing while Checkmark analyzes it — usually just
+                    Your submission shows as Processing while Checkmark analyzes it - usually just
                     a few minutes.
                   </p>
                 </CardContent>
@@ -232,7 +232,7 @@ export default function SubmittingYourWorkPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground">
-                    Your essays aren&apos;t used to train AI models or sold — see our{" "}
+                    Your essays aren&apos;t used to train AI models or sold - see our{" "}
                     <a href="/security" className="text-primary underline">
                       security page
                     </a>{" "}

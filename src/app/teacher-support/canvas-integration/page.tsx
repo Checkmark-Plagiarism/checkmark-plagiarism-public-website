@@ -13,7 +13,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Canvas Integration Support — Checkmark Plagiarism",
+  title: "Canvas Integration Support - Checkmark Plagiarism",
   description:
     "Complete setup guide for integrating Checkmark Plagiarism with Canvas LMS. Step-by-step instructions for LTI 1.3 and API key configuration.",
   openGraph: { images: [""] },

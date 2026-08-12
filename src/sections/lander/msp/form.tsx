@@ -210,7 +210,7 @@ export const Form = () => {
                     </Button>
                     <div ref={turnstileRef} id="cf-turnstile" className="flex justify-center" />
                     {status === "error" && (
-                        <p className="text-destructive text-center text-sm">Sorry—something went wrong. Please try again.</p>
+                        <p className="text-destructive text-center text-sm">Sorry-something went wrong. Please try again.</p>
                     )}
                     <p className="text-xs text-center text-muted-foreground">
                         By signing up, you agree to our Terms of Service and Privacy Policy.

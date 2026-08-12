@@ -18,9 +18,9 @@ import Process from "@/sections/features/autograding/process";
 import type { Step } from "@/sections/features/autograding/process";
 
 export const metadata: Metadata = {
-  title: "Auto-Grading — Checkmark Plagiarism",
+  title: "Auto-Grading - Checkmark Plagiarism",
   description:
-    "Rubric-aligned scoring with transparent criteria so teachers can review, override, and give feedback—faster than ever.",
+    "Rubric-aligned scoring with transparent criteria so teachers can review, override, and give feedback-faster than ever.",
   openGraph: { images: [""] },
 };
 
@@ -109,7 +109,7 @@ export default function AutoGradingPage() {
         </h1>
         <p className="mt-4 text-center max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground">
           Import or build rubrics, calibrate scoring, and return feedback in minutes. Every score
-          is explainable, reviewable, and override-friendly—so students learn and teachers save time.
+          is explainable, reviewable, and override-friendly-so students learn and teachers save time.
         </p>
 
         <div className="mt-6 flex flex-wrap justify-center gap-3">
@@ -127,7 +127,7 @@ export default function AutoGradingPage() {
             <InfoCard
               icon={Ruler}
               title="Rubric-true"
-              text="Scores trace directly to your criteria and performance bands—no black box grading."
+              text="Scores trace directly to your criteria and performance bands-no black box grading."
               accent="from-emerald-600/20 via-emerald-500/10"
             />
             <InfoCard
@@ -172,7 +172,7 @@ export default function AutoGradingPage() {
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold text-foreground">Built for learning</h3>
                 <p className="mt-2 text-muted-foreground">
-                  Students see clear targets and how to improve. Feedback reinforces drafting, citing, and revising—
+                  Students see clear targets and how to improve. Feedback reinforces drafting, citing, and revising-
                   aligned with classroom standards.
                 </p>
                 <ul className="mt-4 text-sm text-muted-foreground space-y-2 list-disc list-inside">

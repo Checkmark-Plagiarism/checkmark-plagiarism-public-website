@@ -4,7 +4,7 @@ import ArticleLayout from "@/components/blog/article-layout";
 export const metadata: Metadata = {
   title: "An Insider's View: The Unseen Effects of AI on Youth",
   description:
-    "We spoke with a team lead from a major California school district about how AI is changing young students—from reliance on ChatGPT to declining confidence and lost foundational skills.",
+    "We spoke with a team lead from a major California school district about how AI is changing young students-from reliance on ChatGPT to declining confidence and lost foundational skills.",
   keywords: [],
   openGraph: {
     images: [
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 export const meta = {
   title: "An Insider's View: The Unseen Effects of AI on Youth",
   description:
-    "We spoke with a team lead from a major California school district about how AI is changing young students—from reliance on ChatGPT to declining confidence and lost foundational skills.",
+    "We spoke with a team lead from a major California school district about how AI is changing young students-from reliance on ChatGPT to declining confidence and lost foundational skills.",
   "opengraph-image":
     "/images/blog/an-insiders-view-the-unseen-effects-of-ai-on-youth/hero.jpg",
   date: "09-08-2025",
@@ -67,7 +67,7 @@ export default function Page({ searchParams }: PageProps) {
 
                   {/* Q2 */}
                   <div className="p-5 space-y-3">
-                    <p><span className="font-semibold text-foreground">CMP:</span> How do students typically use AI in their assignments—research, writing assistance, tutoring, coding, etc.?</p>
+                    <p><span className="font-semibold text-foreground">CMP:</span> How do students typically use AI in their assignments-research, writing assistance, tutoring, coding, etc.?</p>
                     <blockquote className="border-l-4 border-border pl-4 py-1 rounded-md bg-muted/40 italic text-muted-foreground">
                       <p>
                         <span className="font-semibold text-foreground">M:</span> From what I&apos;ve seen, oh, majority of the time, it&apos;s using them to fully complete the assignment, or even, like, they don&apos;t open a calculator app anymore if they&apos;re struggling with their math assignment. They open Chat GPT. Like, genuinely, I&apos;ve been helping kids with math homework, and I open the calculator app and they go “why are you on calculator, not ChatGPT?” It&apos;s just a bunch of algorithms and patterns, and they do not understand that and they use it for every single type of assignment. I know a lot of people lean towards English with it, but, like, it is prevalent in math right now. They are so heavily reliant on it. It&apos;s my school site in particular. Again, I even heard about them during summer unprompted from people talking about using AI on assignments. Like, it&apos;s their new norm in a lot of ways is what I&apos;m seeing here.
@@ -110,7 +110,7 @@ export default function Page({ searchParams }: PageProps) {
 
                   {/* Q5 */}
                   <div className="p-5 space-y-3">
-                    <p><span className="font-semibold text-foreground">CMP:</span> Have you seen AI use affecting students&apos; creativity, critical thinking, or written communication skills besides what we’ve already spoken about—positively or negatively?</p>
+                    <p><span className="font-semibold text-foreground">CMP:</span> Have you seen AI use affecting students&apos; creativity, critical thinking, or written communication skills besides what we’ve already spoken about-positively or negatively?</p>
                     <blockquote className="border-l-4 border-border pl-4 py-1 rounded-md bg-muted/40 italic text-muted-foreground">
                       <p>
                         <span className="font-semibold text-foreground">M:</span> It&apos;s confidence – students&apos; confidence in their own ability is, in my opinion, I&apos;ve been working with kids since I myself was a kid, since I was twelve. Yeah. I&apos;ve been working with elementary schoolers for thirteen years now. It is the least confident I&apos;ve ever seen kids be in their own intelligence. It&apos;s ungodly the way they&apos;re just like: &quot;no, but I can&apos;t do anything.&quot; They&apos;re so insecure about their own intelligence and their ability to actually do things. They&apos;re very aware of the fact that they&apos;re reliant on other things. But they do not want to actually become independent. And this is everyone from kindergarteners to seventh graders.

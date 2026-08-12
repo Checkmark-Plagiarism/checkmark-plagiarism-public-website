@@ -1,4 +1,4 @@
-/* src/sections/redesign/atmosphere.tsx — UPDATED
+/* src/sections/redesign/atmosphere.tsx - UPDATED
    Same as before except placeClouds(): clouds are now random squircle-puff
    clusters built by createCloudElement() (cloud-puffs.ts) instead of the old
    box-shadow `.cloud` variants, which collapsed into fuzzy rectangles under

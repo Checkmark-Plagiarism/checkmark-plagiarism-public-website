@@ -53,7 +53,7 @@ function StatRibbon({ focus }: { focus?: string }) {
   );
 }
 
-// ── PlaybackModule — keystroke replay (ported from PlaybackModal.tsx) ──
+// ── PlaybackModule - keystroke replay (ported from PlaybackModal.tsx) ──
 function buildSteps(): any[] {
   const steps: any[] = [];
   let cursor = 0;
@@ -372,34 +372,50 @@ function FeatureAI() {
   return panel([
     h(
       "div",
-      { key: "top", style: { marginBottom: 14 } },
-      h(StatRibbon, { focus: "ai" }),
-      h("div", { style: { fontSize: 12.5, fontFamily: "var(--font-mono)", color: "var(--ink-mute)", marginTop: 10 } }, "AI signal low, not a standalone verdict")
+      { key: "card", style: { padding: "14px 16px 16px", borderRadius: 14, background: "var(--surface)", border: "1px solid var(--line)", marginBottom: 14 } },
+      h(
+        "div",
+        { style: { display: "flex", alignItems: "center", justifyContent: "space-between", gap: 12, marginBottom: 12 } },
+        h("div", { style: { fontSize: 14, fontWeight: 700, color: "var(--ink)" } }, "AI Detection"),
+        h("div", { style: { fontSize: 11, fontFamily: "var(--font-mono)", color: "var(--ink-mute)", letterSpacing: "0.04em", textTransform: "uppercase" } }, "AI likeness")
+      ),
+      h(
+        "div",
+        { style: { position: "relative", paddingTop: 8 } },
+        h("div", { style: { height: 9, borderRadius: 999, background: "linear-gradient(90deg, #67C7A5 0%, #F6C453 54%, #E97878 100%)" } }),
+        h("div", { style: { position: "absolute", left: "72%", top: 2, width: 20, height: 20, borderRadius: 999, background: "var(--surface)", border: "3px solid #D94B4B", boxShadow: "0 2px 5px rgba(15,35,75,0.2)", transform: "translateX(-50%)" } }),
+        h(
+          "div",
+          { style: { display: "flex", justifyContent: "space-between", gap: 12, marginTop: 8, fontSize: 10.5, color: "var(--ink-mute)" } },
+          h("span", null, "Typical human writing"),
+          h("span", null, "Typical AI writing")
+        )
+      ),
+      h(
+        "div",
+        { style: { marginTop: 13, fontSize: 12.5, lineHeight: 1.5, color: "var(--ink-soft)" } },
+        h("strong", { style: { color: "var(--ink)" } }, "What this measures: "),
+        "how closely the passage's grammar, word choice, sentence structure, and rhythm resemble generated writing."
+      ),
+      h(
+        "div",
+        { style: { marginTop: 10, paddingTop: 10, borderTop: "1px solid var(--line)", fontSize: 12, lineHeight: 1.45, color: "var(--ink-mute)" } },
+        "AI likeness is a strong indicator of AI use. When several signals align, AI-generated or AI-assisted writing is the most likely explanation. The writing process supplies the context for a fair decision."
+      )
     ),
     h(
       "div",
       { key: "excerpt", style: { padding: "16px 18px", borderRadius: 12, background: "var(--surface)", border: "1px solid var(--line)", marginBottom: 14, fontFamily: "var(--font-display)", fontSize: 16, lineHeight: 1.7, color: "var(--ink)" } },
       "Most of the essay reads in the student’s own voice. ",
       h("mark", { style: { background: "rgba(217,45,32,0.20)", color: "var(--ink)", padding: "1px 3px", borderRadius: 3, boxDecorationBreak: "clone", WebkitBoxDecorationBreak: "clone" } }, "The multifaceted socioeconomic ramifications of imperial overextension precipitated a systemic decline across the empire’s administrative institutions."),
-      ", the one passage the classifier flags."
+      ", the one passage Checkmark flags for AI likeness."
     ),
     h(
       "div",
       { key: "v", style: { padding: 16, background: "var(--teal-soft)", borderRadius: 12, fontSize: 13, lineHeight: 1.5, color: "var(--ink-soft)", marginBottom: 14 } },
       h("strong", { style: { color: "var(--ink)" } }, "Cross-checked against keystrokes: "),
-      "The 17% signal sits in paragraph 3, which was typed continuously over 8 minutes with normal pauses. ",
-      h("strong", { style: { color: "var(--teal)" } }, "Likely a false positive.")
-    ),
-    h(
-      "div",
-      { key: "acc", style: { display: "flex", alignItems: "center", gap: 16, padding: "16px 20px", borderRadius: 14, background: "linear-gradient(135deg, hsl(218 100% 59%), hsl(224 80% 42%))", color: "#fff", boxShadow: "0 12px 28px -10px hsla(218, 100%, 50%, 0.55)" } },
-      h("div", { className: "display", style: { fontSize: 46, lineHeight: 1, flexShrink: 0 } }, "95%"),
-      h(
-        "div",
-        { style: { lineHeight: 1.35 } },
-        h("div", { style: { fontSize: 14, fontWeight: 700 } }, "Classifier accuracy"),
-        h("div", { style: { fontSize: 12, color: "rgba(255,255,255,0.85)" } }, "And it never stands alone, every flag is checked against the keystrokes.")
-      )
+      "This passage was typed continuously over 8 minutes with normal pauses. ",
+      h("strong", { style: { color: "var(--teal)" } }, "Process evidence suggests a false positive.")
     ),
   ]);
 }
@@ -430,24 +446,17 @@ function FeatureGrade() {
   return panel([
     h(
       "div",
-      { key: "h", style: { display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 14 } },
-      h("span", { style: { fontSize: 11, fontFamily: "var(--font-mono)", color: "var(--ink-mute)", letterSpacing: "0.06em", textTransform: "uppercase" } }, "Thesis & Argument"),
-      h("span", { className: "display", style: { fontSize: 22, color: "var(--ink)" } }, "22", h("span", { style: { fontSize: 15, color: "var(--ink-mute)" } }, " / 30"))
-    ),
-    h("div", { key: "bar", style: { height: 8, borderRadius: 999, background: "var(--bg-tint)", overflow: "hidden", marginBottom: 16 } }, h("div", { style: { width: "73%", height: "100%", background: "var(--teal)", borderRadius: 999 } })),
-    h(
-      "div",
-      { key: "fb", style: { padding: 16, background: "var(--bg-tint)", borderRadius: 12, fontSize: 14, lineHeight: 1.55, color: "var(--ink-soft)", marginBottom: 14 } },
-      "“Maria, your thesis lands, but paragraph 2 introduces a new claim without evidence. Tie it back to the source you used in paragraph 1, or cut it. ",
-      h("strong", { style: { color: "var(--ink)" } }, "Proficient."),
-      "”"
+      { key: "h", style: { display: "flex", alignItems: "center", justifyContent: "space-between", gap: 12, paddingBottom: 12, marginBottom: 14, borderBottom: "1px solid var(--line)" } },
+      h("span", { style: { fontSize: 14, fontWeight: 700, color: "var(--ink)" } }, "Thesis & Argument"),
+      h("span", { style: { fontSize: 12, color: "var(--ink-mute)", whiteSpace: "nowrap" } }, "Score: ", h("strong", { style: { color: "var(--ink)" } }, "22 / 30"))
     ),
     h(
       "div",
-      { key: "btns", style: { display: "flex", gap: 8 } },
-      h("button", { style: { flex: 1, padding: "10px 14px", borderRadius: 10, border: 0, background: "var(--teal)", color: "var(--bg)", fontWeight: 600, fontSize: 13, cursor: "pointer" } }, "Approve"),
-      h("button", { style: { flex: 1, padding: "10px 14px", borderRadius: 10, border: "1px solid var(--line-strong)", background: "var(--bg)", color: "var(--ink)", fontWeight: 600, fontSize: 13, cursor: "pointer" } }, "Edit"),
-      h("button", { style: { padding: "10px 14px", borderRadius: 10, border: "1px solid var(--line-strong)", background: "var(--bg)", color: "var(--ink-mute)", fontWeight: 600, fontSize: 13, cursor: "pointer" } }, "Skip")
+      { key: "body", style: { padding: "14px 16px", background: "var(--bg-tint)", borderRadius: 12, fontSize: 13, lineHeight: 1.55, color: "var(--ink-soft)" } },
+      h("div", { style: { marginBottom: 8, fontWeight: 600, color: "var(--ink)" } }, "Justification:"),
+      h("div", { style: { marginBottom: 14 } }, "Your thesis lands, but paragraph 2 introduces a new claim without evidence. Tie it back to the source you used in paragraph 1, or cut it."),
+      h("div", { style: { marginBottom: 8, fontWeight: 600, color: "var(--ink)" } }, "Feedback:"),
+      h("div", null, "Strengthen the connection between your thesis and the evidence in paragraph 2.")
     ),
   ]);
 }

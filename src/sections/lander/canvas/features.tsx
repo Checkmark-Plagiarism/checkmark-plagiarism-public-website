@@ -12,8 +12,8 @@ const features = [
         icon: Brain,
         title: "AI Writing Detection",
         description:
-            "Detect AI-generated content from ChatGPT, Claude, Gemini, and more. Sentence-level highlighting shows exactly which passages were flagged.",
-        stat: "99.2% accuracy",
+            "Detect AI-writing patterns from ChatGPT, Claude, Gemini, and more. Sentence-level highlighting shows exactly which passages strongly resemble generated writing, with the writing process there for context.",
+        stat: "High-confidence signals",
     },
     {
         icon: GraduationCap,
@@ -26,7 +26,7 @@ const features = [
         icon: Plug,
         title: "Native LTI Integration",
         description:
-            "Install once with LTI 1.3 and Checkmark lives inside Canvas. Submissions are automatically scanned, and results appear right in SpeedGrader — zero context-switching.",
+            "Install once with LTI 1.3 and Checkmark lives inside Canvas. Submissions are automatically scanned, and results appear right in SpeedGrader - zero context-switching.",
         stat: "Seamless integration",
     },
 ];
@@ -44,11 +44,11 @@ export const CanvasFeatures = () => {
                         Everything you need for academic integrity
                     </h2>
                     <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                        Four powerful tools, one seamless integration — all built for Canvas.
+                        Four powerful tools, one seamless integration - all built for Canvas.
                     </p>
                 </div>
 
-                {/* Feature cards — 2x2 grid */}
+                {/* Feature cards - 2x2 grid */}
                 <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
                     {features.map((feature, i) => (
                         <div

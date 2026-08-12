@@ -18,9 +18,9 @@ import type { Step } from "@/sections/features/ai-detection/process"
 import FeatureHero from "@/sections/features/feature-hero";
 
 export const metadata: Metadata = {
-  title: "AI Detection — Checkmark Plagiarism",
+  title: "AI Detection - Checkmark Plagiarism",
   description:
-    "How Checkmark Plagiarism detects likely AI-generated text using document revision history and machine learning—giving students confidence and teachers protection.",
+    "How Checkmark Plagiarism detects AI-writing patterns using language analysis, document revision history, and machine learning-giving teachers context for fair decisions.",
   openGraph: { images: [""] },
 };
 
@@ -44,7 +44,7 @@ export const steps: Step[] = [
   {
     k: '03',
     title: 'Behavior-aware modeling',
-    text: 'Machine learning considers human-like drafting patterns versus sudden, copy-pasted blocks.',
+    text: 'Machine learning considers the relationships among grammar, word choice, sentence structure, and rhythm - alongside human-like drafting patterns and sudden, copy-pasted blocks.',
     icon: 'scanText',
     badge: 'Analysis',
     color: { header: 'from-emerald-600/30 via-emerald-500/20 to-transparent', ring: 'ring-emerald-300/60 dark:ring-emerald-900/50', chip: 'bg-emerald-600/15 text-emerald-800 dark:text-emerald-200' }
@@ -68,9 +68,9 @@ export default function AIDetectionPage() {
           AI Detection built for real classrooms
         </h1>
         <p className="mt-4 text-center max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground">
-          We analyze <span className="font-semibold text-foreground">how</span> work was written—not just what it says.
-          By combining revision history with machine learning, we flag likely AI use while boosting student confidence
-          in authentic writing.
+          We analyze <span className="font-semibold text-foreground">the whole writing pattern</span>-not just one surface clue.
+          By combining grammar, word choice, sentence structure, and rhythm with revision history, we surface strong
+          AI-writing signals while keeping teachers in control of the conversation.
         </p>
 
         <div className="mt-6 flex flex-wrap justify-center gap-3">
@@ -88,13 +88,13 @@ export default function AIDetectionPage() {
             <InfoCard
               icon={ShieldCheck}
               title="Fair & Transparent"
-              text="Reports show what signals were used—so teachers can review, explain, and appeal with context."
+              text="Reports show what signals were used-so teachers can review, explain, and appeal with context."
               accent="from-blue-600/20 via-blue-500/10"
             />
             <InfoCard
               icon={Fingerprint}
               title="Authenticity First"
-              text="Patterns from real drafting—typing cadence, edits, and revisions—support students’ own voice."
+              text="Patterns from real drafting-typing cadence, edits, and revisions-support students’ own voice."
               accent="from-emerald-600/20 via-emerald-500/10"
             />
             <InfoCard
@@ -120,7 +120,7 @@ export default function AIDetectionPage() {
                   <h3 className="text-xl font-semibold text-foreground">Confidence for students</h3>
                   <p className="mt-2 text-muted-foreground">
                     We emphasize authentic effort. When a draft shows steady iteration and self-editing,
-                    reports reflect that—encouraging growth instead of fear of false flags.
+                    reports reflect that-encouraging growth instead of fear of false flags.
                   </p>
                   <ul className="mt-4 text-sm text-muted-foreground space-y-2 list-disc list-inside">
                     <li>Signals that reward revision and feedback cycles</li>
@@ -134,7 +134,7 @@ export default function AIDetectionPage() {
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold text-foreground">Clarity for teachers</h3>
                   <p className="mt-2 text-muted-foreground">
-                    Detailed context—where, when, and how a draft changed—helps teachers discuss integrity
+                    Detailed context-where, when, and how a draft changed-helps teachers discuss integrity
                     while keeping learning at the center.
                   </p>
                   <ul className="mt-4 text-sm text-muted-foreground space-y-2 list-disc list-inside">
@@ -169,7 +169,7 @@ export default function AIDetectionPage() {
               />
               <FAQItem
                 q="How do students benefit?"
-                a="Students see that drafting, revising, and citing sources are recognized as authentic effort—building confidence in their own voice."
+                a="Students see that drafting, revising, and citing sources are recognized as authentic effort-building confidence in their own voice."
               />
             </div>
 

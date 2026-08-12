@@ -14,7 +14,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Autograder & Rubrics — Teacher Support",
+  title: "Autograder & Rubrics - Teacher Support",
   description:
     "How to attach a rubric to an assignment, review the autograder's scores and justifications, edit feedback, and publish grades to Canvas, Buzz, or Google Classroom.",
   openGraph: { images: ["/images/services/report-grading-view.png"] },
@@ -30,7 +30,7 @@ export default function AutograderRubricsSupportPage() {
             Using the Autograder &amp; Rubrics
           </h1>
           <p className="text-xl text-white max-w-3xl mx-auto px-4">
-            Attach a rubric to an assignment and every submission arrives pre-graded — per-criterion
+            Attach a rubric to an assignment and every submission arrives pre-graded - per-criterion
             scores, written justifications, and feedback tied to the student&apos;s own sentences.
             This guide covers setup through publishing.
           </p>
@@ -67,7 +67,7 @@ export default function AutograderRubricsSupportPage() {
                 Step 1: Attach a Rubric to the Assignment
               </h2>
               <p className="mt-3 text-muted-foreground max-w-2xl mx-auto">
-                When you create or edit an assignment, add your grading criteria. Any rubric works —
+                When you create or edit an assignment, add your grading criteria. Any rubric works -
                 you don&apos;t have to rebuild what you already use.
               </p>
             </div>
@@ -99,7 +99,7 @@ export default function AutograderRubricsSupportPage() {
                 <CardContent>
                   <p className="text-sm text-muted-foreground">
                     Use the rubric builder to define criteria and rating levels with live point
-                    totals — the same structure Canvas rubrics use.
+                    totals - the same structure Canvas rubrics use.
                   </p>
                 </CardContent>
               </Card>
@@ -112,7 +112,7 @@ export default function AutograderRubricsSupportPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground">
-                    Drop in the rubric you already have — a document or even a photo of a paper
+                    Drop in the rubric you already have - a document or even a photo of a paper
                     rubric. Checkmark turns it into gradable criteria.
                   </p>
                 </CardContent>
@@ -126,7 +126,7 @@ export default function AutograderRubricsSupportPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground">
-                    Your Rubrics Library keeps every rubric you&apos;ve made — duplicate, edit, and
+                    Your Rubrics Library keeps every rubric you&apos;ve made - duplicate, edit, and
                     attach across courses and assignments.
                   </p>
                 </CardContent>
@@ -141,7 +141,7 @@ export default function AutograderRubricsSupportPage() {
                   <div>
                     <CardTitle className="text-blue-900">Using Canvas, Buzz, or Google Classroom?</CardTitle>
                     <CardDescription className="text-blue-700 mt-2">
-                      Rubrics attached to synced assignments come along automatically — Buzz rubrics
+                      Rubrics attached to synced assignments come along automatically - Buzz rubrics
                       are even converted from their native format. You usually don&apos;t need to do
                       anything here.
                     </CardDescription>
@@ -159,7 +159,7 @@ export default function AutograderRubricsSupportPage() {
               </h2>
               <p className="mt-3 text-muted-foreground max-w-2xl mx-auto">
                 Open any analyzed submission and select the grading row of tiles. Each rubric
-                category shows its score — expand it to read the justification, written against
+                category shows its score - expand it to read the justification, written against
                 what the student actually wrote.
               </p>
             </div>
@@ -171,7 +171,7 @@ export default function AutograderRubricsSupportPage() {
                 <CardTitle>The Grading View</CardTitle>
                 <CardDescription>
                   Pencil icons edit scores and justifications inline. Feedback cards highlight the
-                  exact quotes they refer to — select any text in the essay and click{" "}
+                  exact quotes they refer to - select any text in the essay and click{" "}
                   <strong>Add Feedback</strong> to leave your own.
                 </CardDescription>
               </CardHeader>
@@ -191,7 +191,7 @@ export default function AutograderRubricsSupportPage() {
           <section className="mb-16" id="publish">
             <div className="text-center mb-10">
               <h2 className="text-3xl font-bold text-foreground">
-                Step 3: Publish — On Your Terms
+                Step 3: Publish - On Your Terms
               </h2>
               <p className="mt-3 text-muted-foreground max-w-2xl mx-auto">
                 Nothing is visible to students until you publish. When you&apos;re ready, the
@@ -252,7 +252,7 @@ export default function AutograderRubricsSupportPage() {
                     See the Autograder in Action
                   </CardTitle>
                   <CardDescription className="text-white/90 mt-2">
-                    The live demo grades a sample essay against a rubric — watch the justifications
+                    The live demo grades a sample essay against a rubric - watch the justifications
                     write themselves.
                   </CardDescription>
                 </div>

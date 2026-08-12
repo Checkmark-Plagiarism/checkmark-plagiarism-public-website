@@ -33,10 +33,10 @@ export default function CTOHeroV2() {
       <div className="relative z-10 container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-heading-1 text-white mb-6 leading-tight">
-            Make Smart Adoption Decisions with Real Instructional Data — Not Sales Pitches
+            Make Smart Adoption Decisions with Real Instructional Data - Not Sales Pitches
           </h1>
           <p className="text-body-lg text-white/90 max-w-3xl mx-auto mb-10">
-            District-wide analytics on AI usage, writing patterns, student performance, and teacher workflow efficiency — all from real classroom behavior.
+            District-wide analytics on AI usage, writing patterns, student performance, and teacher workflow efficiency - all from real classroom behavior.
           </p>
 
           {/* CTAs */}

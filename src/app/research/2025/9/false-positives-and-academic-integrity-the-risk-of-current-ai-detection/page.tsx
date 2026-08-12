@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title:
     'False Positives and Academic Integrity: The Risk of Current AI Detection Tools',
   description:
-    'AI detectors can misfire—with lasting consequences for students, teachers, and schools. Here’s why false positives happen and how keystroke-based essay playback can help.',
+    'AI detectors can misfire-with lasting consequences for students, teachers, and schools. Here’s why false positives happen and how keystroke-based essay playback can help.',
   keywords: [
     'AI detection',
     'false positives',
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 
 export const meta = {
   title:
-    'False Positives and Academic Integrity: The Risk of Current AI Detection Tools — What Happens When AI Detection Fails?',
+    'False Positives and Academic Integrity: The Risk of Current AI Detection Tools - What Happens When AI Detection Fails?',
   description:
     'When detectors get it wrong, trust breaks. We explain misfires, the human cost, and a path forward using transparent process data and essay playback.',
   'opengraph-image':
@@ -58,7 +58,7 @@ export default function Page({ searchParams }: PageProps) {
                 {/* Epigraph */}
                 <blockquote className="border-l-4 border-border pl-4 py-3 rounded-md bg-muted/40 text-muted-foreground">
                   <p>
-                    “Where will things be in two year and a half years? And how do you prepare students for that world that&apos;s rapidly evolving?” — <span className="font-medium">Eddie Watson</span> (Teaching in Higher Ed, Ep. 517)
+                    “Where will things be in two year and a half years? And how do you prepare students for that world that&apos;s rapidly evolving?” - <span className="font-medium">Eddie Watson</span> (Teaching in Higher Ed, Ep. 517)
                   </p>
                 </blockquote>
 
@@ -95,7 +95,7 @@ export default function Page({ searchParams }: PageProps) {
                   Teachers, on the other hand, are often placed in an uncomfortable and difficult position when a detector identifies a student’s work as AI written. They may feel pressure to act, even if they personally believe in the student’s honesty, which can cause oversight that could’ve been avoided. This tension puts strain on the very teacher-student relationships that build the foundation of a classroom environment. Then there’s the guilt that may come after the realization that a student didn’t use AI. These situations can sow paranoia and suspicion, leading to a hesitance towards discussion in a place where transparency and communication should be encouraged.
                 </p>
                 <p className="text-muted-foreground">
-                  For the administrators and educators who oversee academic integrity policies, this is also a serious issue. They want to uphold academic standards and help students build their critical thinking skills, but they also must ensure that innocent students aren’t being penalized by faulty systems. Ultimately, if we rely too heavily on the tools we currently have, we risk replacing thoughtful human judgment with flawed automation—serving no one.
+                  For the administrators and educators who oversee academic integrity policies, this is also a serious issue. They want to uphold academic standards and help students build their critical thinking skills, but they also must ensure that innocent students aren’t being penalized by faulty systems. Ultimately, if we rely too heavily on the tools we currently have, we risk replacing thoughtful human judgment with flawed automation-serving no one.
                 </p>
 
                 <figure className="my-8">

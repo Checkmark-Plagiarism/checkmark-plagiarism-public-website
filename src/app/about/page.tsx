@@ -6,7 +6,7 @@ import { LinkButton } from "@/components/ui/link";
 import AboutHero from "@/sections/about/about-hero";
 
 export const metadata: Metadata = {
-  title: "Our Team — Checkmark Plagiarism",
+  title: "Our Team - Checkmark Plagiarism",
   description:
     "Meet the team building fair, transparent plagiarism detection and AI-aware grading for real classrooms.",
   openGraph: { images: [""] },

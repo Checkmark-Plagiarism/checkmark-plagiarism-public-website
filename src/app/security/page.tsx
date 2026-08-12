@@ -4,7 +4,7 @@ import { ArrowLeft, FileText, Shield, Calendar, Link as LinkIcon, Mail, CheckCir
 import { Card, CardContent } from '@/components/ui/card';
 
 export const metadata: Metadata = {
-  title: 'Security — Checkmark Plagiarism',
+  title: 'Security - Checkmark Plagiarism',
   description:
     'Our comprehensive security measures, data protection practices, and compliance standards for educational data safety.',
   openGraph: { images: [''] },

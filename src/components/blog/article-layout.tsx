@@ -29,7 +29,7 @@ type ArticleLayoutProps = {
   section: Section;
   /** Section-relative slug, e.g. "2026/2/schools-are-...". Used to exclude self from Related. */
   currentSlug: string;
-  /** The article body — pass the full <article className="lg:col-span-3 ..."> element. */
+  /** The article body - pass the full <article className="lg:col-span-3 ..."> element. */
   children: React.ReactNode;
   /** `?ref=<category>` carried through for the "Back to …" CTA. */
   refValue?: string;

@@ -17,7 +17,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Web App Support — Checkmark Plagiarism",
+  title: "Web App Support - Checkmark Plagiarism",
   description:
     "Learn how to use Checkmark Plagiarism as a standalone web application without LMS integration. Create classes, manage student submissions, and track plagiarism reports.",
   openGraph: { images: [""] },
