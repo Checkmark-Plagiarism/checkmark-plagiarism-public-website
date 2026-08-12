@@ -1,4 +1,4 @@
-// Checkmark wordmark + logo mark — ported from the checkmark-homepage prototype.
+// Checkmark wordmark + logo mark - ported from the checkmark-homepage prototype.
 
 export function CheckmarkLogo({
   size = 30,

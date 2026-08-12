@@ -11,7 +11,7 @@ import {
 } from "@/sections/solutions/shared";
 
 export const metadata: Metadata = {
-  title: "Plagiarism and AI Detection for Middle Schools — Checkmark",
+  title: "Plagiarism and AI Detection for Middle Schools - Checkmark",
   description:
     "Help middle school students build strong academic integrity habits early. Plagiarism checking, age-appropriate writing playback, and rubric feedback designed for 6th-8th grade classrooms.",
   keywords: [
@@ -40,7 +40,7 @@ export default function MiddleSchoolsSolutionPage() {
       icon: "sparkles",
       title: "Responsible AI Use",
       description:
-        "Establish age-appropriate boundaries so middle schoolers understand why AI should assist brainstorming—not write their papers.",
+        "Establish age-appropriate boundaries so middle schoolers understand why AI should assist brainstorming-not write their papers.",
     },
     {
       icon: "penTool",

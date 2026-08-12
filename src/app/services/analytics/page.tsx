@@ -19,9 +19,9 @@ import {
 } from "@/sections/services/shared";
 
 export const metadata: Metadata = {
-  title: "School & District Analytics — Checkmark Plagiarism",
+  title: "School & District Analytics - Checkmark Plagiarism",
   description:
-    "Integrity trends, writing metrics, grade distributions, and teacher comparisons for school and district admins — with seat management and CSV export built in.",
+    "Integrity trends, writing metrics, grade distributions, and teacher comparisons for school and district admins - with seat management and CSV export built in.",
   openGraph: { images: ["/images/services/report-originality-tiles.png"] },
 };
 
@@ -74,7 +74,7 @@ export default function AnalyticsServicePage() {
           <div className="mx-auto max-w-6xl">
             <h2 className="text-3xl font-bold text-foreground text-center">Trends, not anecdotes</h2>
             <p className="mt-3 text-center text-muted-foreground max-w-2xl mx-auto">
-              Filter by teacher, course, and time period — daily or monthly granularity.
+              Filter by teacher, course, and time period - daily or monthly granularity.
             </p>
             <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <IconFeature
@@ -86,7 +86,7 @@ export default function AnalyticsServicePage() {
               <IconFeature
                 icon={PieChart}
                 title="Plagiarism by type"
-                text="Pasted vs. transcribed vs. uncited vs. AI — the mix tells you what to teach next."
+                text="Pasted vs. transcribed vs. uncited vs. AI - the mix tells you what to teach next."
                 tone="fuchsia"
               />
               <IconFeature
@@ -104,13 +104,13 @@ export default function AnalyticsServicePage() {
               <IconFeature
                 icon={Timer}
                 title="Writing efficiency"
-                text="Time-per-word from real sessions — a leading indicator reports alone can't give you."
+                text="Time-per-word from real sessions - a leading indicator reports alone can't give you."
                 tone="blue"
               />
               <IconFeature
                 icon={Users}
                 title="Compare up to 4 teachers"
-                text="Side-by-side trends across teachers or courses, color-coded — useful for calibration, not gotchas."
+                text="Side-by-side trends across teachers or courses, color-coded - useful for calibration, not gotchas."
                 tone="purple"
               />
             </div>

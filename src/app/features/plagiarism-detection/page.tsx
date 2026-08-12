@@ -16,7 +16,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import FeatureHero from "@/sections/features/feature-hero";
 
 export const metadata: Metadata = {
-  title: "Plagiarism Detection — Checkmark Plagiarism",
+  title: "Plagiarism Detection - Checkmark Plagiarism",
   description:
     "Catch copy-paste, paraphrasing, and transcription with revision-history signals, web similarity checks, and clear reports built for classrooms.",
   openGraph: { images: [""] },
@@ -32,7 +32,7 @@ export default function PlagiarismDetectionPage() {
         </h1>
         <p className="mt-4 text-center max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground">
           We combine document revision history with web similarity analysis to distinguish authentic drafting
-          from copy-paste, paraphrasing, and transcription—so teachers get clarity and students build confidence.
+          from copy-paste, paraphrasing, and transcription-so teachers get clarity and students build confidence.
         </p>
 
         <div className="mt-6 flex flex-wrap justify-center gap-3">

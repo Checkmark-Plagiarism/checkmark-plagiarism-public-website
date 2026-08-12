@@ -59,7 +59,7 @@ const bodyHtml = `<p><strong>Teachers may identify signs that a student used Cha
 <p>Detectors evaluate writing by measuring key statistical metrics:</p>
 <ul>
   <li><strong>Perplexity (Word Choice Predictability):</strong> Generative AI models select words based on statistical probability. Text with low perplexity uses highly predictable word choices, whereas human writing features unexpected vocabulary and creative turns of phrase.</li>
-  <li><strong>Burstiness (Sentence Length & Structural Variation):</strong> Humans naturally vary their sentence structures—combining short, punchy statements with long, complex clauses. AI models tend to produce uniform sentence lengths and consistent paragraph rhythms.</li>
+  <li><strong>Burstiness (Sentence Length & Structural Variation):</strong> Humans naturally vary their sentence structures-combining short, punchy statements with long, complex clauses. AI models tend to produce uniform sentence lengths and consistent paragraph rhythms.</li>
   <li><strong>Tone & Vocabulary Uniformity:</strong> AI prose frequently exhibits an overly neutral, polished tone with characteristic transition words (&quot;furthermore,&quot; &quot;moreover,&quot; &quot;in conclusion&quot;, &quot;it is important to note&quot;) and balanced paragraph lengths.</li>
   <li><strong>Passage Discrepancies:</strong> Statistical differences between individual paragraphs within a single document, which may indicate that sections were generated separately or combined with human drafting.</li>
 </ul>
@@ -142,7 +142,7 @@ const bodyHtml = `<p><strong>Teachers may identify signs that a student used Cha
 <p><em>Caution for educators:</em> Students can improve dramatically over a semester after visiting a writing center or receiving feedback. A shift in style should prompt conversation, not immediate disciplinary action.</p>
 
 <h2>Reviewing Sources, Citations, and Factual Claims</h2>
-<p>Generative AI tools frequently invent source citations—a phenomenon known as hallucination. Checking citations is one of the most reliable ways for <a href="/solutions/school-districts">schools to detect AI writing</a> errors.</p>
+<p>Generative AI tools frequently invent source citations-a phenomenon known as hallucination. Checking citations is one of the most reliable ways for <a href="/solutions/school-districts">schools to detect AI writing</a> errors.</p>
 
 <p>Teachers use a simple 6-step citation audit workflow:</p>
 <ol>

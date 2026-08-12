@@ -17,9 +17,9 @@ import {
 } from "@/sections/services/shared";
 
 export const metadata: Metadata = {
-  title: "AI Writing Detection — Checkmark Plagiarism",
+  title: "AI Writing Detection - Checkmark Plagiarism",
   description:
-    "Passage-level AI detection with calibrated confidence sliders, honest guardrails for short texts, and writing-process evidence to back the score up — built to start fair conversations.",
+    "Passage-level AI detection with calibrated confidence sliders, honest guardrails for short texts, and writing-process evidence to back the score up - built to start fair conversations.",
   openGraph: { images: ["/images/services/report-breakdown-sidebar.png"] },
 };
 
@@ -28,7 +28,7 @@ export default function AiDetectionServicePage() {
     <main>
       <ServiceHero
         title="AI detection that respects how high the stakes are"
-        sub="An accusation built on a single number isn't fair to anyone. Checkmark shows which passages look AI-written, how confident the model is, and — uniquely — how the text was actually typed, so the score never has to stand alone."
+        sub="AI writing detection is more than spotting one punctuation mark or a familiar phrase. Checkmark analyzes the relationships among grammar, word choice, sentence structure, and rhythm, then shows which passages strongly resemble generated writing and how the text was actually typed."
       >
         <LinkButton href="#passage-level" variant="hero">
           See what teachers get
@@ -45,19 +45,19 @@ export default function AiDetectionServicePage() {
             <IconFeature
               icon={Sparkles}
               title="Passage-level, not paper-level"
-              text="AI-flagged passages are underlined in the essay itself, each with its own evidence card — you see which parts, not just how much."
+              text="AI-flagged passages are underlined in the essay itself, each with its own evidence card - you see which parts, not just how much."
               tone="rose"
             />
             <IconFeature
               icon={SlidersHorizontal}
               title="Calibrated confidence"
-              text="Each finding shows a confidence gradient from human-like to AI-like instead of a false-precision decimal."
+              text="Each finding shows how strongly a passage resembles patterns common in AI-generated writing - a high-confidence signal, not a claim about authorship."
               tone="amber"
             />
             <IconFeature
               icon={History}
               title="Backed by process evidence"
-              text="The same report shows paste events and typing patterns, so an AI signal can be confirmed — or cleared — by how the text was written."
+              text="The same report shows paste events and typing patterns, so an AI signal can be confirmed - or cleared - by how the text was written."
               tone="blue"
             />
           </div>
@@ -73,29 +73,29 @@ export default function AiDetectionServicePage() {
               alt="AI Detection cards in the report sidebar with confidence sliders"
               width={864}
               height={1484}
-              caption="AI Detection cards sit alongside paste and plagiarism findings — one integrated picture."
+              caption="AI Detection cards sit alongside paste and plagiarism findings - one integrated picture."
             />
             <div>
               <h2 className="text-2xl font-semibold text-foreground">
-                A slider, not a verdict
+                A signal, not a verdict
               </h2>
               <p className="mt-3 text-muted-foreground">
-                Every AI finding renders as a gradient slider between typical human writing
-                patterns and typical AI patterns. The report keeps a permanent reminder next to
-                the score:
+                Every AI finding renders as a gradient slider between typical human-writing
+                patterns and typical AI-writing patterns. It communicates the strength of the
+                signal without pretending that a finished passage can prove who wrote it:
               </p>
               <div className="mt-4 rounded-2xl bg-muted p-5">
-                <p className="text-sm italic text-muted-foreground">
-                  &ldquo;Typical AI writing pattern versus typical human writing styles. Do not
-                  solely rely on this score to determine AI authorship.&rdquo;
+                <p className="text-sm text-muted-foreground">
+                  Typical AI writing pattern versus typical human writing styles. Do not solely
+                  rely on this score to determine AI authorship.
                 </p>
                 <p className="mt-2 text-xs text-muted-foreground">
-                  — the disclaimer shown on every AI Detection card, verbatim
+                  This disclaimer appears on every AI Detection card.
                 </p>
               </div>
               <p className="mt-4 text-muted-foreground">
-                We put that in the product because it&apos;s true — of every AI detector,
-                including ours. What makes the score usable is the evidence around it.
+                We put that in the product because it&apos;s true - of every AI detector, including
+                ours. What makes the signal useful is the evidence around it.
               </p>
             </div>
           </div>
@@ -113,7 +113,7 @@ export default function AiDetectionServicePage() {
               <IconFeature
                 icon={AlertCircle}
                 title="Short texts say N/A"
-                text="Below ~150 words there isn't enough signal for a trustworthy AI score, so the report says N/A instead of guessing."
+                text="Below ~150 words there isn't enough signal for a trustworthy AI-writing finding, so the report says N/A instead of guessing."
                 tone="cyan"
               />
               <IconFeature
@@ -125,7 +125,7 @@ export default function AiDetectionServicePage() {
               <IconFeature
                 icon={ShieldCheck}
                 title="Cross-checked by process"
-                text="An 'AI-like' passage that was visibly drafted, revised, and typo-corrected over 40 minutes tells a different story than one pasted in at once. The report shows both signals."
+                text="A passage that strongly resembles generated writing but was visibly drafted, revised, and typo-corrected over 40 minutes tells a different story than one pasted in at once. The report shows both signals."
                 tone="blue"
               />
             </div>
@@ -151,11 +151,11 @@ export default function AiDetectionServicePage() {
               Why detection alone was never enough
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
-              AI detectors — all of them — work on the finished text. Humanizer tools exist
+              AI detectors - all of them - work on the finished text. Humanizer tools exist
               specifically to launder that text. But no tool can launder the writing session
               itself: a 900-word essay that appeared in one paste event, or was transcribed
               line-by-line at machine-steady speed, looks nothing like authentic drafting. That&apos;s
-              why every Checkmark AI score ships inside a report that also reconstructs the
+              why every Checkmark AI-writing finding ships inside a report that also reconstructs the
               writing process.
             </p>
             <div className="mt-8">
@@ -164,7 +164,7 @@ export default function AiDetectionServicePage() {
                 alt="Report tiles: Overall, Total Pasted, Total Transcribed, Total Uncited, Total AI, with the Playback button"
                 width={2000}
                 height={123}
-                caption="One glance: pasted, transcribed, uncited, and AI percentages side by side — plus Playback to see the session replayed."
+                caption="One glance: pasted, transcribed, uncited, and AI percentages side by side - plus Playback to see the session replayed."
               />
             </div>
           </div>

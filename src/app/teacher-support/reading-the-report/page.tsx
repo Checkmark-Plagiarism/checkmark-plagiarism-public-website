@@ -15,7 +15,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Reading the Checkmark Report — Teacher Support",
+  title: "Reading the Checkmark Report - Teacher Support",
   description:
     "A teacher's guide to the Checkmark report: originality tiles, highlighted passages, evidence cards, Playback, the grading view, and flag statuses.",
   openGraph: { images: ["/images/services/report-plagiarism-view.png"] },
@@ -33,7 +33,7 @@ export default function ReadingTheReportPage() {
           <p className="text-xl text-white max-w-3xl mx-auto px-4">
             Every submission gets one report that answers four questions: what was pasted, what was
             transcribed, what matches a source, and what looks AI-written. Here&apos;s how to read
-            it in under a minute — and how to dig in when something needs a closer look.
+            it in under a minute - and how to dig in when something needs a closer look.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <Button asChild size="lg" className="bg-white text-brand-900 hover:bg-white/90">
@@ -66,7 +66,7 @@ export default function ReadingTheReportPage() {
             <div className="text-center mb-10">
               <h2 className="text-3xl font-bold text-foreground">Step 1: Read the Tiles</h2>
               <p className="mt-3 text-muted-foreground max-w-2xl mx-auto">
-                The top of every report shows an Overall score plus four totals — <strong>Pasted</strong>{" "}
+                The top of every report shows an Overall score plus four totals - <strong>Pasted</strong>{" "}
                 (content pasted from outside the document), <strong>Transcribed</strong> (typed while
                 copying another source), <strong>Uncited</strong> (referenced text with no citation),
                 and <strong>AI</strong> (text that patterns like AI writing). Hover any tile for its
@@ -81,7 +81,7 @@ export default function ReadingTheReportPage() {
                 <CardTitle>The Originality Tiles</CardTitle>
                 <CardDescription>
                   A tile reading <strong>N/A</strong> means the text was too short for that detector
-                  to run reliably — the report says so instead of guessing.
+                  to run reliably - the report says so instead of guessing.
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -103,7 +103,7 @@ export default function ReadingTheReportPage() {
                 Step 2: Follow the Highlights
               </h2>
               <p className="mt-3 text-muted-foreground max-w-2xl mx-auto">
-                Findings are marked directly in the essay — pasted text, transcription, uncited
+                Findings are marked directly in the essay - pasted text, transcription, uncited
                 references, and AI-flagged passages each get their own color. Click any highlight
                 and its evidence card scrolls into view in the Plagiarism Breakdown sidebar; click
                 a card and the essay scrolls to the passage.
@@ -163,7 +163,7 @@ export default function ReadingTheReportPage() {
                   </div>
                   <CardTitle>Step 4: See What Was Pasted</CardTitle>
                   <CardDescription>
-                    External Paste cards keep the complete original pasted text — expand{" "}
+                    External Paste cards keep the complete original pasted text - expand{" "}
                     <strong>See full original paste</strong> to view it, even if the student edited
                     it afterward.
                   </CardDescription>
@@ -188,7 +188,7 @@ export default function ReadingTheReportPage() {
               <p className="mt-3 text-muted-foreground max-w-2xl mx-auto">
                 The <strong>Playback</strong> button (top right of the report) replays the writing
                 session keystroke by keystroke, with 1x–8x speed, ten-second skips, and a scrubber.
-                The play button on any paste card jumps Playback to just before that paste landed —
+                The play button on any paste card jumps Playback to just before that paste landed -
                 the fastest way to see an event in context.
               </p>
             </div>
@@ -206,7 +206,7 @@ export default function ReadingTheReportPage() {
                       Playback needs writing-process data, which comes with Google Docs submissions
                       (revision history), typed-in essay editors (Canvas and Buzz), and Word
                       documents written with Checkmark&apos;s editor tooling. Plain uploaded files
-                      still get full plagiarism and AI analysis — the Pasted and Transcribed tiles
+                      still get full plagiarism and AI analysis - the Pasted and Transcribed tiles
                       just read N/A.
                     </CardDescription>
                   </div>
@@ -254,14 +254,14 @@ export default function ReadingTheReportPage() {
                   <div className="w-12 h-12 bg-red-500 rounded-lg flex items-center justify-center mb-4">
                     <Flag className="w-6 h-6 text-white" />
                   </div>
-                  <CardTitle>Flag It — Privately</CardTitle>
+                  <CardTitle>Flag It - Privately</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground">
                     Every submission carries a status: <strong>Not Reviewed</strong>,{" "}
                     <strong>Flagged</strong>, <strong>Resolved</strong>, or{" "}
-                    <strong>Not Flagged</strong>. Statuses are visible to teachers only — students
-                    never see a flag — so you can track follow-ups without making accusations.
+                    <strong>Not Flagged</strong>. Statuses are visible to teachers only - students
+                    never see a flag - so you can track follow-ups without making accusations.
                   </p>
                 </CardContent>
               </Card>
@@ -270,13 +270,13 @@ export default function ReadingTheReportPage() {
                   <div className="w-12 h-12 bg-amber-500 rounded-lg flex items-center justify-center mb-4">
                     <Info className="w-6 h-6 text-white" />
                   </div>
-                  <CardTitle>A Note on AI Scores</CardTitle>
+                  <CardTitle>A Note on AI-Writing Signals</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground">
-                    AI cards show a confidence gradient, not a verdict, and the report says it
-                    plainly: don&apos;t rely on the score alone. Pair an AI signal with the writing
-                    process — paste events and typing patterns — before starting a conversation.
+                    AI cards show how strongly a passage resembles generated writing, not who wrote
+                    it. Don&apos;t rely on the signal alone: pair it with the writing process - paste
+                    events, revisions, and typing patterns - before starting a conversation.
                   </p>
                 </CardContent>
               </Card>
@@ -290,7 +290,7 @@ export default function ReadingTheReportPage() {
                 <div className="text-center">
                   <CardTitle className="text-2xl text-white">Try It on a Real Report</CardTitle>
                   <CardDescription className="text-white/90 mt-2">
-                    The interactive example report is live — click every card, expand every quote.
+                    The interactive example report is live - click every card, expand every quote.
                   </CardDescription>
                 </div>
               </CardHeader>

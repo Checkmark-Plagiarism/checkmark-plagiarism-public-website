@@ -308,7 +308,7 @@ export default function CanvasLMSIntegrationPage() {
               <NumberedStep
                 n="4"
                 title="Students submit work natively"
-                text="Students submit Word files, Google Docs, or text entries in Canvas as usual—no new interfaces to learn."
+                text="Students submit Word files, Google Docs, or text entries in Canvas as usual-no new interfaces to learn."
               />
               <NumberedStep
                 n="5"

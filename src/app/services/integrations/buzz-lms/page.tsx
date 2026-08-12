@@ -69,7 +69,7 @@ const faqs = [
   {
     question: "Can Checkmark analyze student writing history?",
     answer:
-      "Yes. For typed essay questions inside Buzz LMS assessments or submitted documents, Checkmark captures writing process telemetry—including typing cadence, revision events, and external pastes—allowing teachers to replay the writing session.",
+      "Yes. For typed essay questions inside Buzz LMS assessments or submitted documents, Checkmark captures writing process telemetry-including typing cadence, revision events, and external pastes-allowing teachers to replay the writing session.",
   },
   {
     question: "Can grades be returned to Buzz LMS?",

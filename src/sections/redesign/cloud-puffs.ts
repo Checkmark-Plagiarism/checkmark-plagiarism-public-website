@@ -1,14 +1,14 @@
 /* src/sections/redesign/cloud-puffs.ts
    Random squircle-cloud generator. One box per X step: each step advances X
-   by a RANDOM amount and goes to EITHER the +Y set or the −Y set — never both
+   by a RANDOM amount and goes to EITHER the +Y set or the −Y set - never both
    at the same X. Every box crosses the baseline band, so the cloud is always
    connected. Each set's height envelope rises stepwise to a single peak then
    steps back down (thick middle, thin ends). If a step would open a
    horizontal gap against the previous box of the SAME set, the new box is
-   widened back to cover it — so no C/O/U notches. +Y gets more steps and
+   widened back to cover it - so no C/O/U notches. +Y gets more steps and
    amplitude than −Y (top-heavy clouds, flatter belly).
 
-   Uses unseeded Math.random — CLIENT-ONLY: call after mount (useEffect) or
+   Uses unseeded Math.random - CLIENT-ONLY: call after mount (useEffect) or
    from imperative DOM code so the server never renders one. Every refresh
    gives a new sky, and createCloudElement regenerates its shape on every
    animation loop, so no cloud ever crosses the screen twice the same. */
@@ -61,7 +61,7 @@ export function randomCloudSpec(): CloudSpec {
     const v = isUp ? upVals[iu++] : dnVals[id++];
     const hh = v * U + pad;
     // Width is tied to height (aspect 0.8-1.5), so no long slabs and no tall
-    // bar-graph columns — every box stays squircle-ish.
+    // bar-graph columns - every box stays squircle-ish.
     let w = hh * (0.8 + Math.random() * 0.7);
     // Avoid two similar-sized boxes back to back: nudge the width if this box
     // is within ~18% of the previous one in both dimensions.
@@ -70,7 +70,7 @@ export function randomCloudSpec(): CloudSpec {
     }
     w = Math.max(34, Math.min(w, 150));
     // Cover any horizontal gap vs the previous box of the SAME set by
-    // shifting back (not stretching — keeps the aspect ratio bounded).
+    // shifting back (not stretching - keeps the aspect ratio bounded).
     let left = x;
     const lastR = isUp ? lastUpR : lastDnR;
     if (lastR > -1e8 && left > lastR - 12) left = lastR - 12;
@@ -98,7 +98,7 @@ export function randomCloudSpec(): CloudSpec {
 }
 
 /* Rounded-rectangle puffs at alpha 0.88 inside an opacity-wrapped group:
-   2 overlapping puffs composite to 0.986 (~1.12x one puff), 3 to 0.998 —
+   2 overlapping puffs composite to 0.986 (~1.12x one puff), 3 to 0.998 -
    a very subtle brightening on overlap instead of alpha doubling. */
 export function fillCloudInner(inner: HTMLDivElement, spec: CloudSpec): void {
   inner.textContent = "";

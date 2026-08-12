@@ -8,7 +8,7 @@ export const CanvasHowItWorks = () => {
         {
             number: "02",
             title: "Students Submit as Usual",
-            description: "Nothing changes for students — they submit assignments through Canvas like they always have.",
+            description: "Nothing changes for students - they submit assignments through Canvas like they always have.",
         },
         {
             number: "03",

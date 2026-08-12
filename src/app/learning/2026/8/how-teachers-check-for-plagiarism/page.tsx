@@ -117,7 +117,7 @@ const bodyHtml = `<p><strong>Teachers check for plagiarism by comparing student 
   <li><strong>Document Timelines:</strong> Did the essay develop over hours or days across multiple editing sessions, or was it created in a single 3-minute burst?</li>
   <li><strong>Drafting Progression:</strong> Can the teacher see natural typing, sentence deletion, restructuring, and typo correction over time?</li>
   <li><strong>Large Copy-and-Paste Events:</strong> Did major sections of text arrive in a single paste block from an external source?</li>
-  <li><strong>Transcription Patterns:</strong> Did the student type steadily without stopping or revising—a classic pattern when retyping text directly from a secondary screen, phone, or paper document?</li>
+  <li><strong>Transcription Patterns:</strong> Did the student type steadily without stopping or revising-a classic pattern when retyping text directly from a secondary screen, phone, or paper document?</li>
   <li><strong>Revision Between Drafts:</strong> Did the student incorporate early feedback, outlines, and structural edits between preliminary and final submissions?</li>
 </ul>
 

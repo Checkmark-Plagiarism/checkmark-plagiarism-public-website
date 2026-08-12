@@ -41,7 +41,7 @@ type StickyProcessColumnProps = {
  */
 export default function StickyProcessColumn({
   title = 'How our AI detection works',
-  subtitle = 'Multi-signal analysis designed for learning—rooted in revision history and classroom reality.',
+  subtitle = 'Multi-signal analysis designed for learning-rooted in revision history and classroom reality.',
   steps,
   className = '',
   stickyTop = 200,

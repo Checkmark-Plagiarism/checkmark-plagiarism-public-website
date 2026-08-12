@@ -11,7 +11,7 @@ import {
 } from "@/sections/solutions/shared";
 
 export const metadata: Metadata = {
-  title: "Plagiarism and AI Detection for High Schools — Checkmark",
+  title: "Plagiarism and AI Detection for High Schools - Checkmark",
   description:
     "Empower high school teachers with transparent plagiarism detection, AI writing indicators, document history playback, and rubric grading for ELA, History, and AP courses.",
   keywords: [
@@ -129,7 +129,7 @@ export default function HighSchoolsSolutionPage() {
     {
       title: "Can Teachers Detect ChatGPT?",
       description:
-        "Understanding what AI writing detectors can reliably spot — and how process playback confirms true authorship.",
+        "Understanding what AI writing detectors can reliably spot - and how process playback confirms true authorship.",
       href: "/learning/2026/6/chatgpt-detection-explained-how-tools-decide-whether-ai-wrote-it",
       category: "AI Insights",
     },

@@ -1,4 +1,4 @@
-/* src/sections/redesign/hero.tsx — UPDATED
+/* src/sections/redesign/hero.tsx - UPDATED
    Starfield changes:
    - ~220 stars (was 70), slightly larger, truly random per refresh: generated in useEffect
      (server renders none, so no SSR/CSR mismatch, no seed needed).

@@ -33,7 +33,7 @@ export const meta = {
   author: "The Checkmark Plagiarism Team",
 };
 
-const bodyHtml = `<p><strong>Generative AI tools such as ChatGPT, Gemini, and Claude can produce essays, discussion posts, and homework responses in seconds. For teachers, that creates a difficult question: how can you tell whether a student actually wrote an assignment themselves? There is no single test that can prove with complete certainty that a student used AI. The strongest approach is to look at several signals together: the student's writing style, the content of the assignment, AI detection results, and—when available—the actual writing process used to create the document.</strong></p>
+const bodyHtml = `<p><strong>Generative AI tools such as ChatGPT, Gemini, and Claude can produce essays, discussion posts, and homework responses in seconds. For teachers, that creates a difficult question: how can you tell whether a student actually wrote an assignment themselves? There is no single test that can prove with complete certainty that a student used AI. The strongest approach is to look at several signals together: the student's writing style, the content of the assignment, AI detection results, and-when available-the actual writing process used to create the document.</strong></p>
 
 <p>AI detection software can identify patterns associated with AI-generated writing, but a detector score should generally be treated as one piece of evidence rather than a final verdict.</p>
 
@@ -199,7 +199,7 @@ const bodyHtml = `<p><strong>Generative AI tools such as ChatGPT, Gemini, and Cl
 <h2>Can Teachers Prove That a Student Used ChatGPT?</h2>
 <p>Usually, the more useful question is not whether a teacher can identify the exact AI product a student used.</p>
 <p>Instead, the question is whether the available evidence indicates that the submitted work may not accurately represent the student's own writing process or abilities.</p>
-<p>Text alone may not provide definitive proof that ChatGPT—or any specific AI system—produced an assignment.</p>
+<p>Text alone may not provide definitive proof that ChatGPT-or any specific AI system-produced an assignment.</p>
 <p>Writing-process evidence can provide additional context.</p>
 <p>For instance, gradually drafting and revising an essay looks very different from inserting a nearly complete paper into a document in a short period of time.</p>
 <p>That is one reason Checkmark Plagiarism combines <strong>AI detection with essay writing playback</strong> rather than asking teachers to rely on a detector score alone. For more details on ChatGPT detection specifically, see <a href="/learning/2026/8/can-teachers-detect-chatgpt">Can Teachers Detect ChatGPT in Student Writing?</a></p>

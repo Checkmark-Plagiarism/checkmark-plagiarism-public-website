@@ -46,7 +46,7 @@ type RubricProcessColumnProps = {
 }
 
 export default function RubricProcessColumn({
-  title = 'From rubric to returned work—fast and fair',
+  title = 'From rubric to returned work-fast and fair',
   subtitle = 'Purpose-built for writing: standards-aligned criteria, transparent rationales, and quick teacher review.',
   steps,
   className = '',

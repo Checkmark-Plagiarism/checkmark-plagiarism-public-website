@@ -203,7 +203,7 @@ export default function CTOContactSection() {
 
                     {/* Error message */}
                     {status === "error" && (
-                      <p className="text-red-700">Sorry—something went wrong. Please try again.</p>
+                      <p className="text-red-700">Sorry-something went wrong. Please try again.</p>
                     )}
                   </form>
                 )}

@@ -7,7 +7,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 /**
  * Shared building blocks for the /services pages, styled to match the rest of
  * the site: solid brand-900 heroes (like Pricing and the Support pages) and
- * solid rounded-corner tinted boxes (like the homepage feature cards) — no
+ * solid rounded-corner tinted boxes (like the homepage feature cards) - no
  * gradient washes or gradient card tops.
  *
  * Every screenshot rendered through <Screenshot> is a real capture of the
@@ -100,7 +100,7 @@ export function Screenshot({
   );
 }
 
-/** Solid rounded tinted box with an icon chip — the homepage card idiom. */
+/** Solid rounded tinted box with an icon chip - the homepage card idiom. */
 export function IconFeature({
   icon: Icon,
   title,
@@ -161,10 +161,10 @@ export function RelatedLink({ href, label }: { href: string; label: string }) {
   );
 }
 
-/** Bottom CTA — the solid brand-900 card used at the foot of support pages. */
+/** Bottom CTA - the solid brand-900 card used at the foot of support pages. */
 export function ServiceCta({
   title = "See it on your own students' work",
-  text = "Checkmark is free for teachers to try — run a real assignment through it in minutes.",
+  text = "Checkmark is free for teachers to try - run a real assignment through it in minutes.",
 }: {
   title?: string;
   text?: string;

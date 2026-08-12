@@ -240,7 +240,7 @@ export default function CTOHeroInfographic() {
 
                   {/* Error message */}
                   {status === "error" && (
-                    <p className="text-red-700 text-sm">Sorry—something went wrong. Please try again.</p>
+                    <p className="text-red-700 text-sm">Sorry-something went wrong. Please try again.</p>
                   )}
                 </form>
               )}

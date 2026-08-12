@@ -13,8 +13,8 @@ const features = [
         icon: Brain,
         title: "AI Writing Detection",
         description:
-            "Detect AI-generated content from ChatGPT, Claude, Gemini, and more. Sentence-level highlighting shows exactly which passages were flagged.",
-        stat: "99.2% accuracy",
+            "Detect AI-writing patterns from ChatGPT, Claude, Gemini, and more. Sentence-level highlighting shows exactly which passages strongly resemble generated writing, with the writing process there for context.",
+        stat: "High-confidence signals",
     },
     {
         icon: GraduationCap,
@@ -27,7 +27,7 @@ const features = [
         icon: Plug,
         title: "Google Classroom Add-on",
         description:
-            "Install once as a Google Classroom add-on. Submissions are automatically scanned and results appear alongside student work — zero context-switching.",
+            "Install once as a Google Classroom add-on. Submissions are automatically scanned and results appear alongside student work - zero context-switching.",
         stat: "Seamless integration",
     },
 ];
@@ -53,11 +53,11 @@ export const GoogleClassroomFeatures = () => {
                         Everything you need for academic integrity
                     </h2>
                     <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                        Four powerful tools, one seamless add-on — all built for Google Classroom.
+                        Four powerful tools, one seamless add-on - all built for Google Classroom.
                     </p>
                 </div>
 
-                {/* Feature cards — 2x2 grid */}
+                {/* Feature cards - 2x2 grid */}
                 <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
                     {features.map((feature, i) => (
                         <div

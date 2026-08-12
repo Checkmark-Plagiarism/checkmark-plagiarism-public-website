@@ -12,7 +12,7 @@ import {
 } from "@/sections/solutions/shared";
 
 export const metadata: Metadata = {
-  title: "Plagiarism and AI Detection for Schools — Checkmark",
+  title: "Plagiarism and AI Detection for Schools - Checkmark",
   description:
     "Plagiarism detection, AI writing review, authorship evidence, and grading tools for K–12 schools, districts, and private academies.",
   openGraph: { images: ["/images/services/report-plagiarism-view.png"] },
@@ -134,7 +134,7 @@ export default function SchoolsOverviewPage() {
       <SolutionHero
         badge="Schools Overview"
         title="Plagiarism & AI Detection Built for K–12 Schools"
-        sub="Plagiarism detection, AI writing review, authorship evidence, and rubric grading tools — all in one transparent platform designed for teachers, schools, and districts."
+        sub="Plagiarism detection, AI writing review, authorship evidence, and rubric grading tools - all in one transparent platform designed for teachers, schools, and districts."
         primaryCtaText="Request a School Demo"
         secondaryCtaText="Explore Sample Report"
       />
@@ -159,7 +159,7 @@ export default function SchoolsOverviewPage() {
             alt="Checkmark assignment report showing originality tiles, autograder scores, highlighted essay, and side-by-side evidence"
             width={2000}
             height={1312}
-            caption="A real Checkmark assignment report — originality tiles, AI confidence indicators, and writing playback."
+            caption="A real Checkmark assignment report - originality tiles, AI confidence indicators, and writing playback."
             priority
           />
         </div>

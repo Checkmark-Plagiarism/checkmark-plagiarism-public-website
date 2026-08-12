@@ -44,9 +44,9 @@ const FEATURES: Feature[] = [
   },
   {
     id: "ai",
-    name: "AI Detection",
-    title: "A second opinion, not a verdict.",
-    desc: "We still run a state-of-the-art classifier, but it never stands alone. Every AI flag is paired with the keystroke evidence that supports or contradicts it.",
+    name: "AI Writing Detection",
+    title: "Not one tell. The whole pattern.",
+    desc: "Checkmark analyzes grammar, word choice, sentence structure, and rhythm - not just obvious clues. When the pattern strongly resembles generated writing, it surfaces a high-confidence AI-writing finding and pairs it with the keystroke evidence that supports or contradicts it.",
     accent: "hsl(2 75% 60%)",
     bg: "hsl(2 80% 95.5%)",
     mockKey: "FeatureAI",
@@ -54,8 +54,8 @@ const FEATURES: Feature[] = [
   {
     id: "grade",
     name: "Autograder + Feedback",
-    title: "Save the time you spend on the obvious.",
-    desc: "Rubric-aware drafts of feedback land in your queue. Approve, edit, or reject. You stay the teacher; we just do the typing.",
+    title: "Review feedback before it reaches students.",
+    desc: "Checkmark drafts rubric-aware justifications and feedback for each submission. Review, edit, and publish on your terms.",
     accent: "#6941C6",
     bg: "#F3E8FF",
     mockKey: "FeatureGrade",

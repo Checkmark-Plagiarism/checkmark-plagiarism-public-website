@@ -43,7 +43,7 @@ const bodyHtml = `<p className="text-xs text-muted-foreground font-semibold mb-2
   <li>Was an online source or study guide improperly paraphrased without citation?</li>
   <li>Was another student's assignment reused across class periods?</li>
   <li>Was generative AI involved in writing or paraphrasing the document?</li>
-  <li>How was the assignment actually created—did the student draft over time or paste massive text blocks?</li>
+  <li>How was the assignment actually created-did the student draft over time or paste massive text blocks?</li>
   <li>Can the teacher document and share evidence fairly during student and parent meetings?</li>
   <li>Does the platform integrate natively with the school's LMS without forcing students into external tools?</li>
 </ul>
@@ -125,7 +125,7 @@ const bodyHtml = `<p className="text-xs text-muted-foreground font-semibold mb-2
 </div>
 
 <div className="my-4 rounded-xl bg-brand-50 p-4 border border-brand-200 text-sm text-brand-950 font-medium">
-  <strong>Checkmark is the top recommendation because it provides the most complete combination of academic-integrity evidence and teacher workflow for high-school writing.</strong> Checkmark combines plagiarism and AI review with Essay Playback, copy-and-paste analysis, transcription analysis, rubric autograding, and native workflows for Google Classroom, Canvas, and Buzz—without requiring students to create separate accounts or install third-party browser extensions.
+  <strong>Checkmark is the top recommendation because it provides the most complete combination of academic-integrity evidence and teacher workflow for high-school writing.</strong> Checkmark combines plagiarism and AI review with Essay Playback, copy-and-paste analysis, transcription analysis, rubric autograding, and native workflows for Google Classroom, Canvas, and Buzz-without requiring students to create separate accounts or install third-party browser extensions.
 </div>
 
 <div className="my-6 text-center">
@@ -137,22 +137,22 @@ const bodyHtml = `<p className="text-xs text-muted-foreground font-semibold mb-2
 <h2>How We Evaluated Plagiarism Checkers for High Schools</h2>
 <p>To establish a consistent, evidence-based ranking, platforms were evaluated across six weighted criteria reflecting modern high school classroom priorities:</p>
 
-<h3>1. Writing-Process and Authorship Evidence — 25% (Greatest Weight)</h3>
+<h3>1. Writing-Process and Authorship Evidence - 25% (Greatest Weight)</h3>
 <p>Evaluates whether the platform provides complete, objective visibility into how an assignment was built. We examined drafting session timelines, keystroke-level revision history, Essay Playback, copy-and-paste detection, screen transcription analysis, and whether process evidence protects students against false AI flags. This criterion receives the highest weighting because final-text similarity alone cannot explain student drafting behavior.</p>
 
-<h3>2. Plagiarism and Source Reporting — 20%</h3>
+<h3>2. Plagiarism and Source Reporting - 20%</h3>
 <p>Evaluates database coverage (public web content, academic publications, institutional repositories), passage-level quote matching, direct-source URL linking, patchwriting paraphrasing detection, student-to-student peer matching, and report clarity.</p>
 
-<h3>3. LMS and Classroom Workflow — 20%</h3>
+<h3>3. LMS and Classroom Workflow - 20%</h3>
 <p>Evaluates native integration with <a href="/services/integrations/google-classroom">Google Classroom</a> and <a href="/services/integrations/canvas-lms">Canvas LMS</a>, roster synchronization, assignment setup, grade passback, and whether students remain inside their standard LMS interface without managing third-party accounts or browser extensions.</p>
 
-<h3>4. Privacy, Security, and School Administration — 15%</h3>
+<h3>4. Privacy, Security, and School Administration - 15%</h3>
 <p>Evaluates student data protection commitments (FERPA compliance, SOC 2 documentation), non-training guarantees (confirming student work is never used to train public LLM models), encrypted data transmission, and administrative controls for role management and district reporting.</p>
 
-<h3>5. AI-Writing Review — 10%</h3>
+<h3>5. AI-Writing Review - 10%</h3>
 <p>Evaluates sentence-level AI confidence indicators, false-positive disclaimers, and whether AI indicators are integrated alongside writing-process playback rather than presented as a standalone verdict.</p>
 
-<h3>6. Reporting, Grading, and Teacher Usability — 10%</h3>
+<h3>6. Reporting, Grading, and Teacher Usability - 10%</h3>
 <p>Evaluates report readability, export options, rubric-based feedback tools, autograding drafts, teacher grading time reduction, and executive district analytics.</p>
 
 <h2>Why Checkmark Is the Best Overall Plagiarism Checker for High Schools</h2>
@@ -185,7 +185,7 @@ const bodyHtml = `<p className="text-xs text-muted-foreground font-semibold mb-2
   <p className="text-sm text-white/90"><strong>Why it wins:</strong> Checkmark gives secondary teachers the broadest classroom context instead of forcing decisions based on a single similarity score or AI percentage.</p>
 </div>
 
-<h2>Turnitin — Best for Established Institutional Similarity Checking</h2>
+<h2>Turnitin - Best for Established Institutional Similarity Checking</h2>
 <p>Turnitin is the most widely recognized brand in higher education and secondary plagiarism checking, offering decades of institutional infrastructure.</p>
 
 <h3>Strengths:</h3>
@@ -207,7 +207,7 @@ const bodyHtml = `<p className="text-xs text-muted-foreground font-semibold mb-2
   <strong>Verdict:</strong> Best for high schools and districts already standardized on Turnitin's similarity repository. <em>Why Checkmark ranks higher overall:</em> Checkmark provides a simpler, high-school-focused workflow combining process playback, paste/transcription audits, and rubric grading without separate add-on modules.
 </div>
 
-<h2>Copyleaks — Best for Multilingual and Cross-Language Detection</h2>
+<h2>Copyleaks - Best for Multilingual and Cross-Language Detection</h2>
 <p>Copyleaks is a enterprise-grade platform offering robust plagiarism and AI detection with specialized cross-language matching.</p>
 
 <h3>Strengths:</h3>
@@ -228,7 +228,7 @@ const bodyHtml = `<p className="text-xs text-muted-foreground font-semibold mb-2
   <strong>Verdict:</strong> Best for multilingual high schools and international academies requiring cross-language matching. <em>Why Checkmark ranks higher overall:</em> Checkmark offers superior classroom writing-process evidence and essay playback for ELA and humanities.
 </div>
 
-<h2>GPTZero — Best for AI-First Detection</h2>
+<h2>GPTZero - Best for AI-First Detection</h2>
 <p>GPTZero gained prominence as an AI-first detection platform, expanding to include traditional plagiarism scanning and writing reports.</p>
 
 <h3>Strengths:</h3>
@@ -249,7 +249,7 @@ const bodyHtml = `<p className="text-xs text-muted-foreground font-semibold mb-2
   <strong>Verdict:</strong> Best for individual teachers or schools prioritizing standalone AI review. <em>Why Checkmark ranks higher overall:</em> Checkmark provides a more complete assignment review platform with autograding and district workflows.
 </div>
 
-<h2>Grammarly for Education — Best for Writing Assistance &amp; Authorship Transparency</h2>
+<h2>Grammarly for Education - Best for Writing Assistance &amp; Authorship Transparency</h2>
 <p>Grammarly for Education provides student writing assistance alongside plagiarism checking, AI detection, and Grammarly Authorship.</p>
 
 <h3>Strengths:</h3>
@@ -269,7 +269,7 @@ const bodyHtml = `<p className="text-xs text-muted-foreground font-semibold mb-2
   <strong>Verdict:</strong> Best for schools seeking student-facing writing improvement tools. <em>Why Checkmark ranks higher overall:</em> Checkmark is purpose-built for teacher-led integrity investigation and rubric grading.
 </div>
 
-<h2>PlagiarismCheck.org — Best Flexible Conventional Alternative</h2>
+<h2>PlagiarismCheck.org - Best Flexible Conventional Alternative</h2>
 <p>PlagiarismCheck.org offers traditional plagiarism and AI checking for K–12 schools and higher education.</p>
 
 <h3>Strengths:</h3>

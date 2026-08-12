@@ -17,7 +17,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Student Support — Checkmark Plagiarism",
+  title: "Student Support - Checkmark Plagiarism",
   description:
     "Student guide for using Checkmark Plagiarism. Learn how to install the Google Classroom add-on, enroll in classes, and submit assignments.",
   openGraph: { images: [""] },
@@ -111,7 +111,7 @@ export default function StudentSupportPage() {
                   <CardTitle>Submitting Your Work</CardTitle>
                   <CardDescription>
                     Upload a Word doc, pick a file from Google Drive or OneDrive, or type right in
-                    the assignment — and see what happens after you hit Submit.
+                    the assignment - and see what happens after you hit Submit.
                   </CardDescription>
                 </CardHeader>
                 <CardContent>

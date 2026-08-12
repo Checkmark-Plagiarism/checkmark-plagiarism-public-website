@@ -11,7 +11,7 @@ import {
 } from "@/sections/solutions/shared";
 
 export const metadata: Metadata = {
-  title: "Academic Integrity Tools for Private & Independent Schools — Checkmark",
+  title: "Academic Integrity Tools for Private & Independent Schools - Checkmark",
   description:
     "Protect rigorous academic standards and support honor codes with flexible, policy-aligned plagiarism detection, AI writing analysis, and essay playback for college-preparatory academies.",
   keywords: [

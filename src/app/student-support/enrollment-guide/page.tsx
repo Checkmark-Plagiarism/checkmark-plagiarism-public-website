@@ -12,7 +12,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "How to Enroll in Classes — Checkmark Plagiarism",
+  title: "How to Enroll in Classes - Checkmark Plagiarism",
   description:
     "Step-by-step guide for students to enroll in their teacher's Checkmark Plagiarism class using enrollment codes.",
   openGraph: { images: [""] },

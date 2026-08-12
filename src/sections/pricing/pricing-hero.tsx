@@ -45,7 +45,7 @@ export default function PricingHero() {
           Simple pricing
         </h1>
         <p className="text-xl text-white/90 max-w-3xl mx-auto mb-8 px-4">
-          Choose the plan that fits your needs—from individual teachers to entire districts.
+          Choose the plan that fits your needs-from individual teachers to entire districts.
           All plans include AI detection, plagiarism checking, and Essay Playback™.
         </p>
         <div className="flex flex-wrap justify-center gap-4">

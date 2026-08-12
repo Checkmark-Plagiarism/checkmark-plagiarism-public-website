@@ -1,7 +1,7 @@
 /* src/sections/redesign/problem-clouds.tsx
    Client-only replacement for buildProbClouds() in problem.tsx.
    Clouds are random squircle clusters (see cloud-puffs.ts), generated after
-   mount so every refresh produces a different sky — and each cloud gets a
+   mount so every refresh produces a different sky - and each cloud gets a
    brand-new random shape every time its drift animation loops, so no cloud
    ever crosses the screen twice the same. */
 "use client";

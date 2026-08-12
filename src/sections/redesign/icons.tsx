@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 
-// Custom-drawn line icons (1.6 stroke, rounded) — ported from the
+// Custom-drawn line icons (1.6 stroke, rounded) - ported from the
 // checkmark-homepage prototype (components.jsx).
 
 export type IconProps = {

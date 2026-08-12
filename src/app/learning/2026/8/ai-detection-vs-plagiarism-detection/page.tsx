@@ -54,7 +54,7 @@ const bodyHtml = `<p><strong>AI detection and plagiarism detection examine diffe
   <li><strong>Classroom Repositories:</strong> Current submissions from classmates responding to the same prompt.</li>
 </ul>
 
-<p>Plagiarism software identifies exact word-for-word matching text, close paraphrasing (patchwriting), missing quotation marks, and overlapping passages between student files. The software identifies similarities for teacher review—it does not evaluate student intent or automatically prove academic dishonesty.</p>
+<p>Plagiarism software identifies exact word-for-word matching text, close paraphrasing (patchwriting), missing quotation marks, and overlapping passages between student files. The software identifies similarities for teacher review-it does not evaluate student intent or automatically prove academic dishonesty.</p>
 
 <h2>What Is AI Detection?</h2>
 <p>AI detection is technology that evaluates whether writing contains mathematical and statistical patterns typical of large language models like ChatGPT, Claude, or Gemini.</p>
@@ -151,7 +151,7 @@ const bodyHtml = `<p><strong>AI detection and plagiarism detection examine diffe
   <li><strong>Passage Breakdown:</strong> Differentiating between fully human, mixed, or heavily machine-patterned sections.</li>
 </ul>
 
-<p>A high AI indicator is a signal for further teacher review—it does not establish that a student cheated or used ChatGPT. Read our full analysis in <a href="/learning/2026/8/can-teachers-detect-chatgpt">Can Teachers Detect ChatGPT in Student Writing?</a></p>
+<p>A high AI indicator is a signal for further teacher review-it does not establish that a student cheated or used ChatGPT. Read our full analysis in <a href="/learning/2026/8/can-teachers-detect-chatgpt">Can Teachers Detect ChatGPT in Student Writing?</a></p>
 
 <h2>Is AI-Generated Writing Plagiarism?</h2>
 <p>While <a href="/learning/2026/6/student-plagiarism-explained-causes-detection-prevention-and-consequences">AI-generated writing vs plagiarism</a> frequently overlap, they are legally and conceptually distinct:</p>

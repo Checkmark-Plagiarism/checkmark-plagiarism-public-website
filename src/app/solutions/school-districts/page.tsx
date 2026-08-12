@@ -11,7 +11,7 @@ import {
 } from "@/sections/solutions/shared";
 
 export const metadata: Metadata = {
-  title: "Academic Integrity & AI Detection for School Districts — Checkmark",
+  title: "Academic Integrity & AI Detection for School Districts - Checkmark",
   description:
     "Centralize academic integrity, AI writing review, and LMS integrations across all schools in your district. Enterprise controls, FERPA compliance, and district-wide analytics.",
   keywords: [

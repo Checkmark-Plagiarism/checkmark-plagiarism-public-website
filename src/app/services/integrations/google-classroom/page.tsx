@@ -181,7 +181,7 @@ export default function GoogleClassroomIntegrationPage() {
       {/* Hero Section */}
       <ServiceHero
         title="Plagiarism and AI detection for Google Classroom"
-        sub="Checkmark connects directly with Google Classroom to review text similarity, AI-writing indicators, Google Docs revision history, and student submissions—right inside your existing teacher workflow."
+        sub="Checkmark connects directly with Google Classroom to review text similarity, AI-writing indicators, Google Docs revision history, and student submissions-right inside your existing teacher workflow."
       >
         <LinkButton href="/demo" variant="hero">
           Request a Demo

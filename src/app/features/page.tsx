@@ -18,7 +18,7 @@ import FeatureHero from "@/sections/features/feature-hero";
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
-  title: 'Features — Checkmark Plagiarism',
+  title: 'Features - Checkmark Plagiarism',
   description:
     'Everything teachers need in one place: AI detection, auto‑grading, plagiarism checks, Google Classroom™ and Canvas LMS integrations, and more.',
   openGraph: { images: ['https://public.checkmarkplagiarism.com/images/features/ai-detection.jpg'] },
@@ -29,7 +29,7 @@ const mainFeatures = [
     slug: '/features/ai-detection',
     title: 'AI Detection',
     blurb:
-      'Behavior-aware analysis that flags likely AI-generated text using typing patterns and revision history—built for classrooms, not clickbait.',
+      'AI-writing detection that analyzes grammar, word choice, sentence structure, and rhythm alongside typing patterns and revision history-built for classrooms, not clickbait.',
     icon: Brain,
     tag: 'Integrity',
     image: '/images/home/test (12).png',
@@ -45,7 +45,7 @@ const mainFeatures = [
     slug: '/features/autograding',
     title: 'Auto-Grading',
     blurb:
-      'Rubric-aligned scoring with transparent criteria so teachers can review, override, and give feedback—faster than ever.',
+      'Rubric-aligned scoring with transparent criteria so teachers can review, override, and give feedback-faster than ever.',
     icon: PenTool,
     tag: 'Assessment',
     image: '/images/home/test (13).jpg',
@@ -109,7 +109,7 @@ const mainFeatures = [
     slug: '/features/integrations',
     title: 'More Integrations',
     blurb:
-      'A growing ecosystem that plays nicely with your stack—SSO, exports, and admin controls included.',
+      'A growing ecosystem that plays nicely with your stack-SSO, exports, and admin controls included.',
     icon: Boxes,
     tag: 'Ecosystem',
     image: '/images/home/test (18).png',

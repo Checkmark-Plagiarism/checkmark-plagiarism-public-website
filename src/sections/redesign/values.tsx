@@ -3,7 +3,7 @@ import type { ComponentType, CSSProperties } from "react";
 import { IconDollar, IconPlug, IconHeart, type IconProps } from "./icons";
 import { SectionHead } from "./section-head";
 
-// "What we believe" — a staggered cascade of 3 wide, overlapping blue boxes,
+// "What we believe" - a staggered cascade of 3 wide, overlapping blue boxes,
 // each with copy on one side and a photo on the other. Ported from
 // values-cascade.js; the prototype's <image-slot> is replaced with next/image.
 

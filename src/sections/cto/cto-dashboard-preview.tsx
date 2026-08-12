@@ -250,7 +250,7 @@ export default function CTODashboardPreview() {
                 Make adoption decisions using real evidence.
               </h3>
               <p className="text-body text-white/90">
-                Track AI usage patterns, identify curriculum gaps, inform PD initiatives, and justify tool budgets with concrete data — not vendor promises.
+                Track AI usage patterns, identify curriculum gaps, inform PD initiatives, and justify tool budgets with concrete data - not vendor promises.
               </p>
             </div>
           </div>

@@ -19,7 +19,7 @@ import {
 } from "@/sections/services/shared";
 
 export const metadata: Metadata = {
-  title: "Services — Checkmark Plagiarism",
+  title: "Services - Checkmark Plagiarism",
   description:
     "Everything Checkmark does for your classroom: plagiarism detection, AI writing detection, writing process analysis, an AI autograder, LMS integrations, and school analytics.",
   openGraph: { images: ["/images/services/report-plagiarism-view.png"] },
@@ -43,7 +43,7 @@ const services: {
     href: "/services/ai-detection",
     icon: Sparkles,
     title: "AI Writing Detection",
-    text: "Passage-level AI signals with calibrated confidence — designed to start a fair conversation, not end one.",
+    text: "Passage-level AI signals with calibrated confidence - designed to start a fair conversation, not end one.",
     tone: "rose",
   },
   {
@@ -57,14 +57,14 @@ const services: {
     href: "/services/autograder",
     icon: GraduationCap,
     title: "AI Autograder & Rubrics",
-    text: "Rubric-based scores with written justifications and per-criterion feedback — teachers edit and publish on their terms.",
+    text: "Rubric-based scores with written justifications and per-criterion feedback - teachers edit and publish on their terms.",
     tone: "emerald",
   },
   {
     href: "/services/integrations",
     icon: Plug,
     title: "LMS Integrations",
-    text: "Canvas, Google Classroom, Buzz, ClassLink, and Clever — reports and grades where your classes already live.",
+    text: "Canvas, Google Classroom, Buzz, ClassLink, and Clever - reports and grades where your classes already live.",
     tone: "amber",
   },
   {
@@ -81,7 +81,7 @@ export default function ServicesPage() {
     <main>
       <ServiceHero
         title="One submission. Every answer a teacher needs."
-        sub="A student turns in an essay once — Checkmark checks it against the web, screens for AI, reconstructs how it was written, and drafts rubric-based grades. Here is everything that happens, and how each piece works."
+        sub="A student turns in an essay once - Checkmark checks it against the web, screens for AI, reconstructs how it was written, and drafts rubric-based grades. Here is everything that happens, and how each piece works."
       >
         <LinkButton href="/demo" variant="hero">
           Try the live demo
@@ -103,7 +103,7 @@ export default function ServicesPage() {
               priority
             />
             <p className="mt-3 text-center text-sm text-muted-foreground">
-              A real Checkmark report — originality tiles, autograder scores, the highlighted essay,
+              A real Checkmark report - originality tiles, autograder scores, the highlighted essay,
               and evidence cards, all on one page.{" "}
               <a
                 href="https://teach.checkmarkplagiarism.com/example-report"
@@ -125,7 +125,7 @@ export default function ServicesPage() {
           <div className="mx-auto max-w-6xl">
             <h2 className="text-3xl font-bold text-foreground text-center">Our services</h2>
             <p className="mt-3 text-center text-muted-foreground max-w-2xl mx-auto">
-              Each service works on its own — together they give you the full picture of every
+              Each service works on its own - together they give you the full picture of every
               submission.
             </p>
             <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -162,7 +162,7 @@ export default function ServicesPage() {
 
       <ServiceCta
         title="Not sure where to start?"
-        text="Paste an essay into the live demo and get the full report — plagiarism, AI, writing process, and autograder feedback — in about a minute."
+        text="Paste an essay into the live demo and get the full report - plagiarism, AI, writing process, and autograder feedback - in about a minute."
       />
     </main>
   );

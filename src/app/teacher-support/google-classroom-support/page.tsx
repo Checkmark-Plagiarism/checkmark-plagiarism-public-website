@@ -13,7 +13,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Google Classroom Support — Checkmark Plagiarism",
+  title: "Google Classroom Support - Checkmark Plagiarism",
   description:
     "Step-by-step guide for installing and using the Checkmark Plagiarism add-on in Google Classroom. Learn how teachers and students access reports.",
   openGraph: { images: [""] },

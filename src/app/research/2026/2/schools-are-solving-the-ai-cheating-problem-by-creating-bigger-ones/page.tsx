@@ -4,7 +4,7 @@ import ArticleLayout from "@/components/blog/article-layout";
 export const metadata: Metadata = {
   title: "Schools Are Solving the AI Cheating Problem by Creating Bigger Ones",
   description:
-    "Schools are retreating to timed in-class essays to prevent AI cheating—but they're sacrificing the cognitive skills writing was designed to build. There's a better way.",
+    "Schools are retreating to timed in-class essays to prevent AI cheating-but they're sacrificing the cognitive skills writing was designed to build. There's a better way.",
   keywords: [
     "AI cheating",
     "timed essays",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 export const meta = {
   title: "Schools Are Solving the AI Cheating Problem by Creating Bigger Ones",
   description:
-    "Schools are retreating to timed in-class essays to prevent AI cheating—but they're sacrificing the cognitive skills writing was designed to build. There's a better way.",
+    "Schools are retreating to timed in-class essays to prevent AI cheating-but they're sacrificing the cognitive skills writing was designed to build. There's a better way.",
   "opengraph-image":
     "/images/blog/schools-are-solving-the-ai-cheating-problem-by-creating-bigger-ones/hero.jpg",
   date: "02-04-2026",
@@ -108,7 +108,7 @@ export default function Page({ searchParams }: PageProps) {
                   But note-taking and essay composition are fundamentally different cognitive tasks. For essays, typing has distinct advantages that matter for developing thinking skills:
                 </p>
                 <p className="text-muted-foreground">
-                  Students who type produce significantly more text, which allows for more developed arguments (Thomas, Paine, &amp; Price, 2003). More importantly, typed essays enable the iterative revision process&mdash;including creating drafts, rearranging paragraphs, restructuring arguments, and refining ideas across multiple sessions&mdash;that is central to developing higher-order thinking. This revision cycle (adding, rearranging, removing, and replacing) is where the deepest learning in writing actually occurs.
+                  Students who type produce significantly more text, which allows for more developed arguments (Thomas, Paine, &amp; Price, 2003). More importantly, typed essays enable the iterative revision process, including creating drafts, rearranging paragraphs, restructuring arguments, and refining ideas across multiple sessions, that is central to developing higher-order thinking. This revision cycle (adding, rearranging, removing, and replacing) is where the deepest learning in writing actually occurs.
                 </p>
                 <p className="text-muted-foreground">
                   Digital composition also enables something handwriting cannot: a verifiable record of the writing process. When students type in a monitored environment, every keystroke, paste, deletion, and revision is captured. This creates a forensic trail that serves two purposes: it protects honest students by providing evidence of authentic work, and it gives teachers actionable data rather than gut feelings when something looks off.
@@ -138,10 +138,10 @@ export default function Page({ searchParams }: PageProps) {
                   And when you can see that a student opened a blank document, pasted 800 words at 2 AM, changed two commas, and submitted it, you don&apos;t need an AI detector for that either. You have concrete behavioral data to point to, which transforms an accusation into a conversation grounded in evidence.
                 </p>
                 <p className="text-muted-foreground">
-                  This is fundamentally different from free playback tools like Draftback or Google Docs version history. Those tools require teachers to manually watch a replay of every student&apos;s writing session&mdash;an impossible task at scale when you have 150 students. They also require students to share their documents, creating opportunities for manipulation: a student could submit a plagiarized copy while sharing a clean document, forcing the teacher to manually compare versions. The approach doesn&apos;t just fail to scale; it adds work instead of removing it.
+                  This is fundamentally different from free playback tools like Draftback or Google Docs version history. Those tools require teachers to manually watch a replay of every student&apos;s writing session, an impossible task at scale when you have 150 students. They also require students to share their documents, creating opportunities for manipulation: a student could submit a plagiarized copy while sharing a clean document, forcing the teacher to manually compare versions. The approach doesn&apos;t just fail to scale; it adds work instead of removing it.
                 </p>
                 <p className="text-muted-foreground">
-                  What schools need is a system that automatically captures and analyzes the writing process, categorizes different types of potential integrity issues (copy-paste, AI generation, collaboration where it wasn&apos;t permitted), and surfaces only the cases that warrant teacher attention&mdash;with the evidence already organized.
+                  What schools need is a system that automatically captures and analyzes the writing process, categorizes different types of potential integrity issues (copy-paste, AI generation, collaboration where it wasn&apos;t permitted), and surfaces only the cases that warrant teacher attention, with the evidence already organized.
                 </p>
 
                 {/* The Real Question Schools Should Be Asking */}

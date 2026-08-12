@@ -1,6 +1,6 @@
 "use client";
 
-// LivePlayback — interactive "try it yourself" box. Faithful port of the
+// LivePlayback - interactive "try it yourself" box. Faithful port of the
 // checkmark-homepage prototype (try-playback.js): soft glow, white rounded card,
 // live status pills, keystroke/paste ticker, history-log modal, stepped scan
 // overlay, and a locally-simulated report. Inline-style structure is preserved

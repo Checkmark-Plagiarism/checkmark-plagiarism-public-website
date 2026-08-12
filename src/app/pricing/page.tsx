@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import PricingHero from "@/sections/pricing/pricing-hero";
 
 export const metadata: Metadata = {
-  title: "Pricing — Checkmark Plagiarism",
+  title: "Pricing - Checkmark Plagiarism",
   description:
     "Simple, education-friendly pricing. Start with a pilot, then scale to departments and districts with SSO and LMS integrations.",
   openGraph: { images: [""] },
@@ -84,7 +84,7 @@ export default function PricingPage() {
           <div className="mx-auto max-w-6xl">
             <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground">What&apos;s included</h2>
             <p className="mt-3 text-center text-muted-foreground">
-              All plans focus on transparent evidence and student growth—no black-box flags.
+              All plans focus on transparent evidence and student growth-no black-box flags.
             </p>
 
             <div className="mt-10 overflow-x-auto bg-white rounded-2xl shadow-soft">
@@ -106,14 +106,14 @@ export default function PricingPage() {
                     ["Plagiarism similarity & paraphrase cues", true, true, true],
                     ["Explainable reports & confidence ranges", true, true, true],
                     ["Google Docs support", true, true, true],
-                    ["Microsoft Word support", "—", "—", true],
+                    ["Microsoft Word support", "-", "-", true],
                     ["Google Classroom integration", true, true, true],
-                    ["Canvas LMS integration", "—", "—", true],
-                    ["Autograding", "—", true, true],
-                    ["Writing Feedback", "—", true, true],
-                    ["Google / Microsoft SSO", "—", "—", true],
-                    ["Admin controls & reporting", "—", "—", true],
-                    ["Onboarding & training", "—", "—", true],
+                    ["Canvas LMS integration", "-", "-", true],
+                    ["Autograding", "-", true, true],
+                    ["Writing Feedback", "-", true, true],
+                    ["Google / Microsoft SSO", "-", "-", true],
+                    ["Admin controls & reporting", "-", "-", true],
+                    ["Onboarding & training", "-", "-", true],
                   ].map((row, i) => (
                     <tr key={i} className="border-b border-border/60">
                       <td className="py-3 pl-6 pr-4 text-foreground">{row[0] as string}</td>
@@ -126,7 +126,7 @@ export default function PricingPage() {
                           ) : typeof v === "string" ? (
                             <span className="text-muted-foreground">{v}</span>
                           ) : (
-                            <span className="text-muted-foreground">—</span>
+                            <span className="text-muted-foreground">-</span>
                           )}
                         </td>
                       ))}
@@ -151,7 +151,7 @@ export default function PricingPage() {
             <div className="mt-8 grid grid-cols-1 gap-4">
               <Faq q="Do you have a free trial or pilot?" a="Yes. We offer educator pilots to validate fit in real classes before scaling to a department or district." />
               <Faq q="How are quotes determined?" a="Based on number of educators/students, enabled integrations (Google Classroom™/Canvas), and support/training needs." />
-              <Faq q="Can we use SSO?" a="Yes—Google and Microsoft SSO are available on Department and District plans." />
+              <Faq q="Can we use SSO?" a="Yes-Google and Microsoft SSO are available on Department and District plans." />
               <Faq q="Do you train on student work?" a="No. Student submissions aren't used to train general models. Processing is solely for integrity checks, grading, and reporting." />
               <Faq q="Where is data stored?" a="On secure cloud infrastructure with encryption in transit and at rest. Access is scoped to enabled classes/assignments with logs." />
             </div>
@@ -177,7 +177,7 @@ export default function PricingPage() {
               Ready to bring Checkmark to your school?
             </h2>
             <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
-              Start with a pilot and scale confidently—no surprises.
+              Start with a pilot and scale confidently-no surprises.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <LinkButton href="/contact" variant="outline-white" size="xl">

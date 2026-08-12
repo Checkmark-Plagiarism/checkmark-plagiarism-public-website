@@ -18,7 +18,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import FeatureHero from "@/sections/features/feature-hero";
 
 export const metadata: Metadata = {
-  title: "Integrations — Checkmark Plagiarism",
+  title: "Integrations - Checkmark Plagiarism",
   description:
     "Single Sign-On with Google and Microsoft, deep integrations with Google Docs and Microsoft Word, plus uploads from Google Drive and OneDrive.",
   openGraph: { images: [""] },
@@ -34,7 +34,7 @@ export default function IntegrationsPage() {
         </h1>
         <p className="mt-4 text-center max-w-3xl mx-auto text-lg md:text-xl text-white/90">
           Sign in with Google or Microsoft. Work in Google Docs or Microsoft Word. Upload directly
-          from Google Drive or OneDrive—no extra steps.
+          from Google Drive or OneDrive-no extra steps.
         </p>
 
         <div className="mt-6 flex flex-wrap justify-center gap-3">
@@ -58,7 +58,7 @@ export default function IntegrationsPage() {
             <Highlight
               icon={FileText}
               title="Docs & Word"
-              text="Analyze drafts written in Google Docs or Microsoft Word—no copy/paste required."
+              text="Analyze drafts written in Google Docs or Microsoft Word-no copy/paste required."
               accent="from-brand-600/20 via-brand-500/10"
             />
             <Highlight
@@ -96,7 +96,7 @@ export default function IntegrationsPage() {
                 <p className="mt-2 text-muted-foreground">
                   Skip new passwords. Teachers and students sign in with district credentials via
                   Google Workspace or Microsoft Entra ID (Azure AD). Roles and permissions follow
-                  your directory—fast onboarding, easy offboarding.
+                  your directory-fast onboarding, easy offboarding.
                 </p>
                 <ul className="mt-4 text-sm text-muted-foreground space-y-2 list-disc list-inside">
                   <li>SAML/OAuth flows with minimal scopes</li>
@@ -132,7 +132,7 @@ export default function IntegrationsPage() {
                 <Badge color="bg-brand-600/15 text-brand-800 dark:text-brand-200">Storage</Badge>
                 <h3 className="mt-2 text-xl font-semibold text-foreground">Google Drive & OneDrive</h3>
                 <p className="mt-2 text-muted-foreground">
-                  Pull submissions directly from your cloud storage—scoped to the assignment and class you enable.
+                  Pull submissions directly from your cloud storage-scoped to the assignment and class you enable.
                   Files are processed securely; access is time-boxed and logged.
                 </p>
                 <ul className="mt-4 text-sm text-muted-foreground space-y-2 list-disc list-inside">
@@ -172,12 +172,12 @@ export default function IntegrationsPage() {
               </h2>
               <p className="mt-3 text-muted-foreground">
                 Bring Checkmark Plagiarism directly into the Microsoft Word desktop app. Install
-                once and the add-in loads automatically every time Word opens—capturing
+                once and the add-in loads automatically every time Word opens-capturing
                 behavior-aware writing signals right where students write.
               </p>
               <ul className="mt-4 text-sm text-muted-foreground space-y-2 list-disc list-inside">
                 <li>Works with 32-bit and 64-bit Microsoft Word on Windows</li>
-                <li>Installs for every user on the machine—ideal for shared lab computers</li>
+                <li>Installs for every user on the machine-ideal for shared lab computers</li>
                 <li>No sign-in required at install time</li>
               </ul>
               <div className="mt-6 flex flex-wrap items-center gap-3">
@@ -209,7 +209,7 @@ export default function IntegrationsPage() {
                     Run <span className="font-mono text-foreground">checkmark-plagiarism-word-addin.msi</span>{" "}
                     and approve the administrator prompt.
                   </li>
-                  <li>Open Microsoft Word—the Checkmark Plagiarism add-in loads automatically.</li>
+                  <li>Open Microsoft Word-the Checkmark Plagiarism add-in loads automatically.</li>
                 </ol>
                 <p className="mt-4 text-xs text-muted-foreground">
                   Deploying district-wide? IT admins can push the MSI silently with{" "}
@@ -248,7 +248,7 @@ export default function IntegrationsPage() {
               <ConnectStep
                 k="03"
                 title="Start syncing"
-                text="Sync rosters, pull docs, and accept Drive/OneDrive uploads—all within your LMS flow."
+                text="Sync rosters, pull docs, and accept Drive/OneDrive uploads-all within your LMS flow."
                 icon={Cloud}
                 color="from-brand-600/30 via-brand-500/20 to-transparent"
               />
@@ -281,7 +281,7 @@ export default function IntegrationsPage() {
                 </div>
                 <p className="mt-2 text-muted-foreground">
                   Student submissions aren’t used to train general models. Processing is solely for integrity checks,
-                  grading, and reporting—full stop.
+                  grading, and reporting-full stop.
                 </p>
               </CardContent>
             </Card>

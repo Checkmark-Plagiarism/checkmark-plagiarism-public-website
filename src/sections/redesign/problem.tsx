@@ -1,4 +1,4 @@
-/* src/sections/redesign/problem.tsx — UPDATED
+/* src/sections/redesign/problem.tsx - UPDATED
    - buildProbClouds() removed; clouds come from <ProblemClouds /> (random
      squircle-puff clusters, client-only).
    - CARDS palette lightened to pastels: light backgrounds, deeper accent

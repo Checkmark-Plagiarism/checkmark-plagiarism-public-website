@@ -18,7 +18,7 @@ import {
 } from "@/sections/services/shared";
 
 export const metadata: Metadata = {
-  title: "Writing Process Analysis — Checkmark Plagiarism",
+  title: "Writing Process Analysis - Checkmark Plagiarism",
   description:
     "Replay how an essay was written: keystroke-level Playback, External Paste evidence with the full original text, and transcription patterns. The signal no paraphraser can fake.",
   openGraph: { images: ["/images/services/report-paste-evidence.png"] },
@@ -29,7 +29,7 @@ export default function WritingProcessServicePage() {
     <main>
       <ServiceHero
         title="Don't just scan the essay. Watch it being written."
-        sub="Paraphrasers beat text matchers. Humanizers beat AI detectors. Nothing beats the writing session itself. Checkmark reconstructs how each submission came together — what was typed, what was pasted, and when — and lets you replay it."
+        sub="Paraphrasers beat text matchers. Humanizers beat AI detectors. Nothing beats the writing session itself. Checkmark reconstructs how each submission came together - what was typed, what was pasted, and when - and lets you replay it."
       >
         <LinkButton href="#playback" variant="hero">
           See Playback
@@ -46,13 +46,13 @@ export default function WritingProcessServicePage() {
             <IconFeature
               icon={ClipboardPaste}
               title="External Paste"
-              text="Text pasted from outside the document is captured with a timestamp and the full original paste — even if the student edited it afterward."
+              text="Text pasted from outside the document is captured with a timestamp and the full original paste - even if the student edited it afterward."
               tone="amber"
             />
             <IconFeature
               icon={Keyboard}
               title="Transcribed"
-              text="Steady, unnatural typing that mirrors an existing source — retyping from a second screen or dictation — is flagged as transcription."
+              text="Steady, unnatural typing that mirrors an existing source - retyping from a second screen or dictation - is flagged as transcription."
               tone="blue"
             />
             <IconFeature
@@ -76,7 +76,7 @@ export default function WritingProcessServicePage() {
               <p className="mt-3 text-muted-foreground">
                 When content enters the document in one jump, the report keeps the receipt. Each
                 External Paste card records when it happened and stores the complete original
-                text. A student can rewrite every sentence afterward — the card still shows
+                text. A student can rewrite every sentence afterward - the card still shows
                 exactly what arrived and when.
               </p>
               <ul className="mt-4 text-sm text-muted-foreground space-y-2 list-disc list-inside">
@@ -108,7 +108,7 @@ export default function WritingProcessServicePage() {
               Playback: the writing session, replayed
             </h2>
             <p className="mt-3 text-center text-muted-foreground max-w-2xl mx-auto">
-              One button on every report opens a player that re-types the essay in front of you —
+              One button on every report opens a player that re-types the essay in front of you -
               pauses, deletions, rewrites, and pastes included.
             </p>
             <div className="mt-8">
@@ -117,7 +117,7 @@ export default function WritingProcessServicePage() {
                 alt="The report's originality tiles with the Playback button on the right"
                 width={2000}
                 height={123}
-                caption="Pasted, Transcribed, Uncited, and AI tiles — with Playback one click away."
+                caption="Pasted, Transcribed, Uncited, and AI tiles - with Playback one click away."
               />
             </div>
             <div className="mt-10 space-y-8">
@@ -134,7 +134,7 @@ export default function WritingProcessServicePage() {
               <NumberedStep
                 n="3"
                 title="Jump from evidence to replay"
-                text="Every paste card links into Playback a few edits before the event — context first, judgment second."
+                text="Every paste card links into Playback a few edits before the event - context first, judgment second."
               />
             </div>
           </div>
@@ -150,19 +150,19 @@ export default function WritingProcessServicePage() {
             </h2>
             <p className="mt-3 text-center text-muted-foreground max-w-3xl mx-auto">
               Process signals come from how students write, so coverage depends on the submission
-              path — and Checkmark supports the ones classrooms actually use.
+              path - and Checkmark supports the ones classrooms actually use.
             </p>
             <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
               <IconFeature
                 icon={FileText}
                 title="Google Docs"
-                text="Submissions imported from Google Drive bring their revision history with them — drafting over days, not just the final text."
+                text="Submissions imported from Google Drive bring their revision history with them - drafting over days, not just the final text."
                 tone="emerald"
               />
               <IconFeature
                 icon={Keyboard}
                 title="Typed-in editors"
-                text="Essay editors embedded in Canvas and Buzz assessments capture the session as students type — no setup for students at all."
+                text="Essay editors embedded in Canvas and Buzz assessments capture the session as students type - no setup for students at all."
                 tone="blue"
               />
               <IconFeature
@@ -180,7 +180,7 @@ export default function WritingProcessServicePage() {
                     Process evidence protects honest students.
                   </span>{" "}
                   A visible drafting history is the strongest possible answer to a false AI
-                  flag — which is exactly why we show authentic effort as clearly as we show
+                  flag - which is exactly why we show authentic effort as clearly as we show
                   shortcuts.
                 </p>
               </div>
@@ -199,7 +199,7 @@ export default function WritingProcessServicePage() {
 
       <ServiceCta
         title="Watch a session for yourself"
-        text="The live demo analyzes a real submission end to end — paste something in and open the report."
+        text="The live demo analyzes a real submission end to end - paste something in and open the report."
       />
     </main>
   );

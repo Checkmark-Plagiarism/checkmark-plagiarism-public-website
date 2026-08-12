@@ -9,7 +9,7 @@ export const CanvasCTA = () => {
                     Ready to protect academic integrity?
                 </h2>
                 <p className="text-xl text-white/80 mb-10 max-w-2xl mx-auto">
-                    Join thousands of educators using Checkmark inside Canvas. Start your free pilot today — no credit card, no commitment.
+                    Join thousands of educators using Checkmark inside Canvas. Start your free pilot today - no credit card, no commitment.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                     <Button variant="hero" size="xl" asChild>
