@@ -6,14 +6,14 @@ export const metadata: Metadata = {
   description: "A plain-English guide to what AI writing detectors are, how they work, the main types, and how teachers, students, and parents can use them responsibly.",
   keywords: [],
   openGraph: {
-    images: ["/images/learning/ai-detection-tools-in-education-how-they-work-and-how-to-use-them-well/pexels-8197511.jpg"],
+    images: ["/images/learning/ai-detection-tools-in-education-how-they-work-and-how-to-use-them-well/pexels-10481249.jpg"],
   },
 };
 
 export const meta = {
   title: "AI Detection Tools in Education: How They Work and How to Use Them Well",
   description: "A plain-English guide to what AI writing detectors are, how they work, the main types, and how teachers, students, and parents can use them responsibly.",
-  "opengraph-image": "/images/learning/ai-detection-tools-in-education-how-they-work-and-how-to-use-them-well/pexels-8197511.jpg",
+  "opengraph-image": "/images/learning/ai-detection-tools-in-education-how-they-work-and-how-to-use-them-well/pexels-10481249.jpg",
   date: "06-25-2026",
   readTime: "~9 min read",
   category: "Detection",

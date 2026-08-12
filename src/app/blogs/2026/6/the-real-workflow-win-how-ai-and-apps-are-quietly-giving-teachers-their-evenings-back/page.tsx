@@ -6,14 +6,14 @@ export const metadata: Metadata = {
   description: "AI and classroom apps are not replacing teachers. They are clearing the administrative pileup that eats nights and weekends. Here is where the real time savings live.",
   keywords: [],
   openGraph: {
-    images: ["/images/blogs/the-real-workflow-win-how-ai-and-apps-are-quietly-giving-teachers-their-evenings-back/pexels-8423092.jpg"],
+    images: ["/images/blogs/the-real-workflow-win-how-ai-and-apps-are-quietly-giving-teachers-their-evenings-back/pexels-34804017.jpg"],
   },
 };
 
 export const meta = {
   title: "The Real Workflow Win: How AI and Apps Are Quietly Giving Teachers Their Evenings Back",
   description: "AI and classroom apps are not replacing teachers. They are clearing the administrative pileup that eats nights and weekends. Here is where the real time savings live.",
-  "opengraph-image": "/images/blogs/the-real-workflow-win-how-ai-and-apps-are-quietly-giving-teachers-their-evenings-back/pexels-8423092.jpg",
+  "opengraph-image": "/images/blogs/the-real-workflow-win-how-ai-and-apps-are-quietly-giving-teachers-their-evenings-back/pexels-34804017.jpg",
   date: "06-25-2026",
   readTime: "~7 min read",
   category: "Industry",

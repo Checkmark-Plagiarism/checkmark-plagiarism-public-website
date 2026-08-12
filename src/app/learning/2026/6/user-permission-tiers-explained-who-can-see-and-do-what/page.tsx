@@ -6,14 +6,14 @@ export const metadata: Metadata = {
   description: "A plain-English guide to user permission tiers in school software: what admin, teacher, and student roles can do, why the differences exist, and how to avoid common mistakes.",
   keywords: [],
   openGraph: {
-    images: ["/images/learning/user-permission-tiers-explained-who-can-see-and-do-what/pexels-8199151.jpg"],
+    images: ["/images/learning/user-permission-tiers-explained-who-can-see-and-do-what/pexels-5060982.jpg"],
   },
 };
 
 export const meta = {
   title: "User Permission Tiers Explained: Who Can See and Do What",
   description: "A plain-English guide to user permission tiers in school software: what admin, teacher, and student roles can do, why the differences exist, and how to avoid common mistakes.",
-  "opengraph-image": "/images/learning/user-permission-tiers-explained-who-can-see-and-do-what/pexels-8199151.jpg",
+  "opengraph-image": "/images/learning/user-permission-tiers-explained-who-can-see-and-do-what/pexels-5060982.jpg",
   date: "06-25-2026",
   readTime: "~7 min read",
   category: "How It Works",

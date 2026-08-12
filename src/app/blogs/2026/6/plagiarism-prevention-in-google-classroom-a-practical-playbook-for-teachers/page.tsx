@@ -6,14 +6,14 @@ export const metadata: Metadata = {
   description: "Google Classroom won't catch plagiarism for you, but it gives you the levers. A practical playbook of settings, assignment design, and detection resources teachers can actually use.",
   keywords: [],
   openGraph: {
-    images: ["/images/blogs/plagiarism-prevention-in-google-classroom-a-practical-playbook-for-teachers/pexels-8197511.jpg"],
+    images: ["/images/blogs/plagiarism-prevention-in-google-classroom-a-practical-playbook-for-teachers/pexels-218717.jpg"],
   },
 };
 
 export const meta = {
   title: "Plagiarism Prevention in Google Classroom: A Practical Playbook for Teachers",
   description: "Google Classroom won't catch plagiarism for you, but it gives you the levers. A practical playbook of settings, assignment design, and detection resources teachers can actually use.",
-  "opengraph-image": "/images/blogs/plagiarism-prevention-in-google-classroom-a-practical-playbook-for-teachers/pexels-8197511.jpg",
+  "opengraph-image": "/images/blogs/plagiarism-prevention-in-google-classroom-a-practical-playbook-for-teachers/pexels-218717.jpg",
   date: "06-25-2026",
   readTime: "~7 min read",
   category: "Industry",

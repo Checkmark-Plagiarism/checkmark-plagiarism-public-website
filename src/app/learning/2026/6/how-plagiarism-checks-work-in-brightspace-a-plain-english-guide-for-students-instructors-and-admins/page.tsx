@@ -6,14 +6,14 @@ export const metadata: Metadata = {
   description: "A clear walkthrough of how assignment submissions and originality checks actually work inside Brightspace (D2L), from the student dropbox to instructor review to admin setup.",
   keywords: [],
   openGraph: {
-    images: ["/images/learning/how-plagiarism-checks-work-in-brightspace-a-plain-english-guide-for-students-instructors-and-admins/pexels-9159042.jpg"],
+    images: ["/images/learning/how-plagiarism-checks-work-in-brightspace-a-plain-english-guide-for-students-instructors-and-admins/pexels-8052583.jpg"],
   },
 };
 
 export const meta = {
   title: "How Plagiarism Checks Work in Brightspace: A Plain-English Guide for Students, Instructors, and Admins",
   description: "A clear walkthrough of how assignment submissions and originality checks actually work inside Brightspace (D2L), from the student dropbox to instructor review to admin setup.",
-  "opengraph-image": "/images/learning/how-plagiarism-checks-work-in-brightspace-a-plain-english-guide-for-students-instructors-and-admins/pexels-9159042.jpg",
+  "opengraph-image": "/images/learning/how-plagiarism-checks-work-in-brightspace-a-plain-english-guide-for-students-instructors-and-admins/pexels-8052583.jpg",
   date: "06-25-2026",
   readTime: "~9 min read",
   category: "How It Works",

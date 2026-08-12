@@ -6,14 +6,14 @@ export const metadata: Metadata = {
   description: "A grounded look at how teachers can actually use AI tools, what detection can and cannot tell you, and how to rebuild academic integrity for the GPT era.",
   keywords: [],
   openGraph: {
-    images: ["/images/blogs/ai-tools-in-the-classroom-a-practical-guide-to-usage-detection-and-integrity/pexels-8197511.jpg"],
+    images: ["/images/blogs/ai-tools-in-the-classroom-a-practical-guide-to-usage-detection-and-integrity/pexels-8471907.jpg"],
   },
 };
 
 export const meta = {
   title: "AI Tools in the Classroom: A Practical Guide to Usage, Detection, and Integrity",
   description: "A grounded look at how teachers can actually use AI tools, what detection can and cannot tell you, and how to rebuild academic integrity for the GPT era.",
-  "opengraph-image": "/images/blogs/ai-tools-in-the-classroom-a-practical-guide-to-usage-detection-and-integrity/pexels-8197511.jpg",
+  "opengraph-image": "/images/blogs/ai-tools-in-the-classroom-a-practical-guide-to-usage-detection-and-integrity/pexels-8471907.jpg",
   date: "06-25-2026",
   readTime: "~7 min read",
   category: "Industry",

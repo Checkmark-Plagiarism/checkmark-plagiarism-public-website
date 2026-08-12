@@ -6,14 +6,14 @@ export const metadata: Metadata = {
   description: "A plain-English guide to the difference between generative, predictive, and agentic AI, with classroom examples and the misconceptions that trip people up.",
   keywords: [],
   openGraph: {
-    images: ["/images/learning/generative-predictive-agentic-the-three-kinds-of-ai-schools-keep-mixing-up/pexels-9159042.jpg"],
+    images: ["/images/learning/generative-predictive-agentic-the-three-kinds-of-ai-schools-keep-mixing-up/pexels-18069814.jpg"],
   },
 };
 
 export const meta = {
   title: "Generative, Predictive, Agentic: The Three Kinds of AI Schools Keep Mixing Up",
   description: "A plain-English guide to the difference between generative, predictive, and agentic AI, with classroom examples and the misconceptions that trip people up.",
-  "opengraph-image": "/images/learning/generative-predictive-agentic-the-three-kinds-of-ai-schools-keep-mixing-up/pexels-9159042.jpg",
+  "opengraph-image": "/images/learning/generative-predictive-agentic-the-three-kinds-of-ai-schools-keep-mixing-up/pexels-18069814.jpg",
   date: "06-25-2026",
   readTime: "~8 min read",
   category: "AI Basics",

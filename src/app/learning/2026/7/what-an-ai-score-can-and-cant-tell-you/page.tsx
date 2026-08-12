@@ -40,9 +40,9 @@ const bodyHtml = `<p>We build an AI detector, so take this from the people with 
 </ul>
 <p>This is also the honest answer to humanizer tools. Rewriting AI output can move the AI score; it cannot retroactively create a writing session that never happened.</p>
 <h2>What this means in practice</h2>
-<p>For teachers: treat the AI tile as a reason to look, never as a verdict. Open the flagged passages, check the process evidence, and use the report’s private flag statuses (Flagged, Resolved, Not Flagged) to track follow-ups - students never see the flags.</p>
-<p>For students: your drafting history is your best protection. Writing in Google Docs or a tracked editor means a false flag can be answered with the strongest evidence there is - the visible record of you doing the work.</p>
-<p>More on the mechanics: <a href="/services/ai-detection">AI Writing Detection</a> and <a href="/services/writing-process">Writing Process Analysis</a>. Or <a href="/demo">run your own text through the demo</a> and read the report it produces.</p>`;
+<p>For teachers: treat the AI tile as a reason to look, never as a verdict. Open the flagged passages, check the process evidence, and use the report’s private flag statuses (Flagged, Resolved, Not Flagged) to track follow-ups, students never see the flags.</p>
+<p>For students: your drafting history is your best protection. Writing in Google Docs or a tracked editor means a false flag can be answered with the strongest evidence there is, the visible record of you doing the work.</p>
+<p>More on the mechanics: <a href="/services/ai-detection">AI Writing Detection</a> and <a href="/services/writing-process">Writing Process Analysis</a>. Learn how Checkmark works for your institution: <a href="/solutions/schools">Schools Overview</a>, <a href="/solutions/high-schools">High Schools</a>, <a href="/solutions/middle-schools">Middle Schools</a>, and <a href="/solutions/school-districts">School Districts</a>. Or <a href="/demo">run your own text through the demo</a> and read the report it produces.</p>`;
 
 type PageProps = {
   searchParams?: Record<string, string | string[] | undefined>;

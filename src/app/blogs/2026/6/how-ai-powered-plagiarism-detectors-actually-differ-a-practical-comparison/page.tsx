@@ -6,14 +6,14 @@ export const metadata: Metadata = {
   description: "A practical, jargon-free comparison of how AI-powered plagiarism and writing-detection tools differ, and how schools should actually choose between them.",
   keywords: [],
   openGraph: {
-    images: ["/images/blogs/how-ai-powered-plagiarism-detectors-actually-differ-a-practical-comparison/pexels-9159042.jpg"],
+    images: ["/images/blogs/how-ai-powered-plagiarism-detectors-actually-differ-a-practical-comparison/pexels-12198522.jpg"],
   },
 };
 
 export const meta = {
   title: "How AI-Powered Plagiarism Detectors Actually Differ: A Practical Comparison",
   description: "A practical, jargon-free comparison of how AI-powered plagiarism and writing-detection tools differ, and how schools should actually choose between them.",
-  "opengraph-image": "/images/blogs/how-ai-powered-plagiarism-detectors-actually-differ-a-practical-comparison/pexels-9159042.jpg",
+  "opengraph-image": "/images/blogs/how-ai-powered-plagiarism-detectors-actually-differ-a-practical-comparison/pexels-12198522.jpg",
   date: "06-25-2026",
   readTime: "~7 min read",
   category: "Industry",

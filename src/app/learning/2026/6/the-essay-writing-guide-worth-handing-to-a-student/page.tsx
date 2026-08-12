@@ -6,14 +6,14 @@ export const metadata: Metadata = {
   description: "A plain-English guide to how essays actually work: the core structure, the main types, worked examples, and the myths that trip students up most.",
   keywords: [],
   openGraph: {
-    images: ["/images/learning/the-essay-writing-guide-worth-handing-to-a-student/pexels-37860169.jpg"],
+    images: ["/images/learning/the-essay-writing-guide-worth-handing-to-a-student/pexels-4160143.jpg"],
   },
 };
 
 export const meta = {
   title: "The Essay Writing Guide Worth Handing to a Student",
   description: "A plain-English guide to how essays actually work: the core structure, the main types, worked examples, and the myths that trip students up most.",
-  "opengraph-image": "/images/learning/the-essay-writing-guide-worth-handing-to-a-student/pexels-37860169.jpg",
+  "opengraph-image": "/images/learning/the-essay-writing-guide-worth-handing-to-a-student/pexels-4160143.jpg",
   date: "06-25-2026",
   readTime: "~9 min read",
   category: "How It Works",

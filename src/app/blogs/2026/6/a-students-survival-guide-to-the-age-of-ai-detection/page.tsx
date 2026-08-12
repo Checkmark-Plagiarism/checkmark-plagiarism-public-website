@@ -6,14 +6,14 @@ export const metadata: Metadata = {
   description: "Honest, practical guidance for students navigating plagiarism checks, AI detectors, and academic integrity without panic, paranoia, or shortcuts.",
   keywords: [],
   openGraph: {
-    images: ["/images/blogs/a-students-survival-guide-to-the-age-of-ai-detection/pexels-8197511.jpg"],
+    images: ["/images/blogs/a-students-survival-guide-to-the-age-of-ai-detection/pexels-37065064.jpg"],
   },
 };
 
 export const meta = {
   title: "A Student's Survival Guide to the Age of AI Detection",
   description: "Honest, practical guidance for students navigating plagiarism checks, AI detectors, and academic integrity without panic, paranoia, or shortcuts.",
-  "opengraph-image": "/images/blogs/a-students-survival-guide-to-the-age-of-ai-detection/pexels-8197511.jpg",
+  "opengraph-image": "/images/blogs/a-students-survival-guide-to-the-age-of-ai-detection/pexels-37065064.jpg",
   date: "06-25-2026",
   readTime: "~7 min read",
   category: "Industry",

@@ -8,6 +8,14 @@ import { Badge } from "@/components/ui/badge";
 import { getCategoryVariant, getHoverVariant } from "@/lib/blog-category-utils";
 import { getPostsForSection, type Section } from "@/lib/blog";
 
+// Posts store dates as "MM-DD-YYYY" (e.g. "05-08-2026"). Blog/Learning cards
+// only show month + year; Research keeps the raw date string.
+function formatMonthYear(d: string): string {
+  const date = new Date(d);
+  if (Number.isNaN(date.getTime())) return d;
+  return date.toLocaleDateString("en-US", { month: "long", year: "numeric" });
+}
+
 type PostListProps = {
   section: Section;
   basePath: string;            // "/research" | "/blogs" | "/learning"
@@ -105,7 +113,7 @@ export default function PostList({
                           </Badge>
                         )}
                         <span>•</span>
-                        <span>{post.date}</span>
+                        <span>{section === "research" ? post.date : formatMonthYear(post.date)}</span>
                         <span>•</span>
                         <span>{post.readTime}</span>
                       </div>

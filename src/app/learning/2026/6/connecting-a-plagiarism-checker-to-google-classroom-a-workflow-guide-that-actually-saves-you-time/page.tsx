@@ -6,14 +6,14 @@ export const metadata: Metadata = {
   description: "A plain-English guide to how Google Classroom integrations work, how to set one up, and how to build grading workflows that save teachers real time.",
   keywords: [],
   openGraph: {
-    images: ["/images/learning/connecting-a-plagiarism-checker-to-google-classroom-a-workflow-guide-that-actually-saves-you-time/pexels-8199151.jpg"],
+    images: ["/images/learning/connecting-a-plagiarism-checker-to-google-classroom-a-workflow-guide-that-actually-saves-you-time/pexels-15406292.jpg"],
   },
 };
 
 export const meta = {
   title: "Connecting a Plagiarism Checker to Google Classroom: A Workflow Guide That Actually Saves You Time",
   description: "A plain-English guide to how Google Classroom integrations work, how to set one up, and how to build grading workflows that save teachers real time.",
-  "opengraph-image": "/images/learning/connecting-a-plagiarism-checker-to-google-classroom-a-workflow-guide-that-actually-saves-you-time/pexels-8199151.jpg",
+  "opengraph-image": "/images/learning/connecting-a-plagiarism-checker-to-google-classroom-a-workflow-guide-that-actually-saves-you-time/pexels-15406292.jpg",
   date: "06-25-2026",
   readTime: "~9 min read",
   category: "How It Works",

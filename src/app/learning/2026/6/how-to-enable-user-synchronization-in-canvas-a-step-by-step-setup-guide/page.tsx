@@ -6,14 +6,14 @@ export const metadata: Metadata = {
   description: "A plain-English walkthrough of what Canvas user synchronization is, how it works, and how to set it up so rosters, roles, and submissions flow correctly into Checkmark.",
   keywords: [],
   openGraph: {
-    images: ["/images/learning/how-to-enable-user-synchronization-in-canvas-a-step-by-step-setup-guide/pexels-9159042.jpg"],
+    images: ["/images/learning/how-to-enable-user-synchronization-in-canvas-a-step-by-step-setup-guide/pexels-270700.jpg"],
   },
 };
 
 export const meta = {
   title: "How to Enable User Synchronization in Canvas: A Step-by-Step Setup Guide",
   description: "A plain-English walkthrough of what Canvas user synchronization is, how it works, and how to set it up so rosters, roles, and submissions flow correctly into Checkmark.",
-  "opengraph-image": "/images/learning/how-to-enable-user-synchronization-in-canvas-a-step-by-step-setup-guide/pexels-9159042.jpg",
+  "opengraph-image": "/images/learning/how-to-enable-user-synchronization-in-canvas-a-step-by-step-setup-guide/pexels-270700.jpg",
   date: "06-25-2026",
   readTime: "~8 min read",
   category: "How It Works",

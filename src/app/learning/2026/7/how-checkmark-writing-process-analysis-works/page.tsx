@@ -49,8 +49,8 @@ const bodyHtml = `<p>Most integrity tools analyze a finished document. Checkmark
 </ul>
 <p>This is why every process signal in Checkmark is presented as evidence with receipts, not as an accusation score - and why flag statuses in the report are visible to teachers only.</p>
 <h2>Why this protects honest students</h2>
-<p>The same evidence that exposes shortcuts vindicates real work. A student falsely flagged by an AI detector - any AI detector - has, in their revision history, the strongest rebuttal that exists: the visible record of their own drafting. We built the report so that record is one click away, every time.</p>
-<p>See it in the product on our <a href="/services/writing-process">Writing Process Analysis</a> page, walk through a full report in the <a href="/teacher-support/reading-the-report">teacher guide</a>, or <a href="/demo">try the live demo</a>.</p>`;
+<p>The same evidence that exposes shortcuts vindicates real work. A student falsely flagged by an AI detector, any AI detector, has, in their revision history, the strongest rebuttal that exists: the visible record of their own drafting. We built the report so that record is one click away, every time.</p>
+<p>See it in the product on our <a href="/services/writing-process">Writing Process Analysis</a> page, explore tailored solutions for <a href="/solutions/high-schools">High Schools</a> and <a href="/solutions/private-schools">Private Academies</a>, walk through a full report in the <a href="/teacher-support/reading-the-report">teacher guide</a>, or <a href="/demo">try the live demo</a>.</p>`;
 
 type PageProps = {
   searchParams?: Record<string, string | string[] | undefined>;
