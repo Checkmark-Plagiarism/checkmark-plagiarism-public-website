@@ -1,0 +1,172 @@
+import { Metadata } from 'next';
+import ArticleLayout from "@/components/blog/article-layout";
+
+export const metadata: Metadata = {
+  title: "Can Teachers Use Writing History With Canvas Assignments?",
+  description: "Learn how Checkmark integrates writing history and keystroke playback directly into Canvas SpeedGrader to verify authentic student composition.",
+  keywords: [
+    "can teachers use writing history with Canvas assignments",
+    "Canvas essay writing history integration",
+    "keystroke playback Canvas SpeedGrader",
+    "viewing student writing process in Canvas LMS",
+    "Checkmark writing history Canvas integration",
+    "verifying human writing in Canvas SpeedGrader",
+    "Canvas revision history essay audit guide",
+  ],
+  openGraph: {
+    images: ["/images/services/report-breakdown-sidebar.png"],
+  },
+};
+
+export const meta = {
+  title: "Can Teachers Use Writing History With Canvas Assignments?",
+  description: "Learn how Checkmark integrates writing history and keystroke playback directly into Canvas SpeedGrader to verify authentic student composition.",
+  "opengraph-image": "/images/services/report-breakdown-sidebar.png",
+  date: "08-14-2026",
+  readTime: "~17 min read",
+  category: "Teacher Guide",
+  categories: ["Teacher Guide", "Detection", "How It Works"],
+  author: "The Checkmark Plagiarism Team",
+};
+
+const bodyHtml = `<p><strong>Yes. With Checkmark Plagiarism's LTI 1.3 integration, teachers can view complete document writing history and video playback replays directly inside Canvas SpeedGrader—verifying active typing hours, revision depth, thinking pauses, and clipboard paste events for every Canvas assignment submission.</strong></p>
+
+<p>Canvas LMS natively accepts file uploads and text submissions, but it does not capture the real-time writing process. If a student submits a Word document or pastes an essay into Canvas, the teacher has no native way to know whether the paper was written over four days with deep revisions or pasted from ChatGPT in two seconds. By integrating <strong>Checkmark's Writing History Engine into Canvas SpeedGrader</strong>, educators gain full visibility into the creation timeline of every submission.</p>
+
+<p>Below is a detailed guide on how writing history works in Canvas and how educators use it to verify authentic student scholarship.</p>
+
+<p><strong>Checkmark Plagiarism</strong> powers Canvas process verification by pairing <a href="/services/writing-playback">essay writing playback</a> with <a href="/services/ai-detection">AI detection</a>, <a href="/services/plagiarism-detection">plagiarism detection</a>, <a href="/services/autograder">autograding</a>, and native <a href="/services/integrations/canvas-lms">Canvas LMS integration</a>.</p>
+
+<h2>The 4 Writing History Features Inside Canvas SpeedGrader</h2>
+
+<div className="my-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+  <div className="rounded-xl bg-slate-50 p-4 border border-border text-sm">
+    <p className="font-bold text-foreground mb-1">1. 15-Second Video Playback Replay</p>
+    <p className="text-xs text-muted-foreground">An embedded video player inside SpeedGrader accelerates hours of student drafting into a smooth visual replay showing text creation and self-editing.</p>
+  </div>
+  <div className="rounded-xl bg-slate-50 p-4 border border-border text-sm">
+    <p className="font-bold text-foreground mb-1">2. Active Drafting Time &amp; Session Metrics</p>
+    <p className="text-xs text-muted-foreground">Displays the exact total hours of active keyboard engagement (e.g., 4.2 hours) and the number of distinct drafting sessions across calendar dates.</p>
+  </div>
+  <div className="rounded-xl bg-slate-50 p-4 border border-border text-sm">
+    <p className="font-bold text-foreground mb-1">3. Backspace &amp; Revision Depth Tracking</p>
+    <p className="text-xs text-muted-foreground">Quantifies character deletions and sentence restructuring: authentic human drafting exhibits a healthy 15% to 30% backspace rate.</p>
+  </div>
+  <div className="rounded-xl bg-slate-50 p-4 border border-border text-sm">
+    <p className="font-bold text-foreground mb-1">4. Original Paste Payload Capture</p>
+    <p className="text-xs text-muted-foreground">Flags every external paste event, recording the exact timestamp, character count, and raw unedited text before any subsequent edits occurred.</p>
+  </div>
+</div>
+
+<h2>Why Writing History Is Essential for Canvas Grading</h2>
+<p>Integrating writing history directly into Canvas SpeedGrader provides two decisive pedagogical safeguards:</p>
+
+<ul>
+  <li><strong>Instant False Positive Exoneration:</strong> If an articulate student's paper triggers a high AI score due to formal vocabulary, the teacher clicks &quot;Play&quot; in SpeedGrader. Seeing 4 hours of typing and 25% backspaces immediately dismisses the alert in seconds.</li>
+  <li><strong>Conclusive Misconduct Proof:</strong> If an essay was generated by AI or copied from a friend, the timeline shows 1,500 words appearing in a single 1-second paste event with zero active typing, providing unassailable evidence for student conferences.</li>
+  <li><strong>Encourages Iterative Writing:</strong> Students who know their drafting process is visible are motivated to draft over multiple days rather than procrastinating or seeking shortcuts.</li>
+</ul>
+
+<p>Read more in <a href="/learning/2026/7/how-checkmark-writing-process-analysis-works">how Checkmark writing process analysis works</a>.</p>
+
+<h2>Comparison: Standard Canvas Submissions vs. Checkmark Writing History in Canvas</h2>
+
+<div className="my-6 rounded-2xl bg-slate-50 p-6 border border-border text-xs">
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div>
+      <p className="font-bold text-foreground mb-1 text-sm">Standard Canvas Submissions (Black Box)</p>
+      <ul className="space-y-1.5 list-disc pl-4 text-muted-foreground">
+        <li>Displays only the final static submitted file.</li>
+        <li>Zero insight into drafting time or session counts.</li>
+        <li>Cannot tell if text was typed or copy-pasted.</li>
+        <li>Leaves teachers guessing about student authorship.</li>
+      </ul>
+    </div>
+    <div>
+      <p className="font-bold text-foreground mb-1 text-sm">Checkmark Writing History in Canvas (Transparent)</p>
+      <ul className="space-y-1.5 list-disc pl-4 text-muted-foreground">
+        <li>Embedded 15-second video replay in SpeedGrader.</li>
+        <li>Quantifies active typing hours, sessions, and edits.</li>
+        <li>Logs exact clipboard paste timestamps and payloads.</li>
+        <li>Provides objective physical proof of human creation.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<h2>A 5-Step Educator Protocol for Writing History in Canvas</h2>
+<div className="my-6 rounded-2xl bg-slate-50 p-6 border border-border">
+  <p className="font-bold text-foreground mb-3 text-base">Canvas Writing History Workflow:</p>
+  <ol className="space-y-1.5 text-xs font-medium text-foreground">
+    <li>1. Enable Checkmark Plagiarism &amp; Playback on your Canvas assignment.</li>
+    <li>2. Open Canvas SpeedGrader after student submissions are turned in.</li>
+    <li>3. Review the Active Drafting Hours metric displayed in the assessment sidebar.</li>
+    <li>4. Click &quot;Play&quot; on the 15-second playback video to observe drafting evolution and revisions.</li>
+    <li>5. Verify that backspace rates exceed 15% and confirm human composition with confidence.</li>
+  </ol>
+</div>
+
+<h2>How Checkmark Plagiarism Powers Canvas Writing History</h2>
+<p>Checkmark Plagiarism combines **AI detection, essay writing playback, static AI detection, plagiarism detection, autograding, and Canvas/Google Classroom integrations** to turn Canvas SpeedGrader into a transparent, process-oriented grading environment.</p>
+
+<h2>Frequently Asked Questions</h2>
+
+<h3>How do I access writing history for a Canvas assignment?</h3>
+<p>Once Checkmark is enabled on your Canvas assignment, open Canvas SpeedGrader. The writing playback replay and drafting metrics appear directly in the assessment sidebar.</p>
+
+<h3>Can teachers see how long a student spent writing in Canvas?</h3>
+<p>Yes. Checkmark displays the exact total active typing time (excluding inactive idle time) and the number of distinct drafting sessions.</p>
+
+<h3>What does writing playback look like inside Canvas SpeedGrader?</h3>
+<p>It appears as an embedded, interactive video player that replays the document's creation in a smooth, accelerated 15-second timeline.</p>
+
+<h3>What is a normal student backspace rate?</h3>
+<p>Authentic student writing typically exhibits a 15% to 30% backspace/edit rate as thoughts are refined. AI copy-pastes show 0% edits.</p>
+
+<h3>Can students see their own writing history in Canvas?</h3>
+<p>Yes. Students can view their drafting timeline in their Canvas submission portal to reflect on their writing habits and verify their work.</p>
+
+<h3>How does Checkmark Plagiarism integrate with Canvas LMS?</h3>
+<p>Checkmark provides 1-click LTI 1.3 installation, SpeedGrader sidebar embeds, two-way grade passback, and single sign-on (SSO).</p>
+
+<h3>What if a student wrote their paper in Google Docs or Word?</h3>
+<p>Checkmark integrates with Google Docs and Word to capture full version history metadata, active hours, and revision logs upon submission.</p>
+
+<h3>Does writing history work for Canvas text entry submissions?</h3>
+<p>Yes. Checkmark tracks real-time keystrokes and paste events for both file uploads and direct Canvas text box submissions.</p>
+
+<h3>Can Checkmark check for plagiarism and AI while showing writing history?</h3>
+<p>Yes. Checkmark runs simultaneous AI detection, plagiarism database matching, writing playback, and autograding in a single SpeedGrader view.</p>
+
+<h3>Why is writing history better than static AI detection in Canvas?</h3>
+<p>Detectors calculate statistical guesses on static text, whereas writing history provides undeniable physical proof of human typing and revision behavior.</p>
+
+<h2>Transforming Canvas Grading with Process Transparency</h2>
+<p>Evaluating writing should celebrate the human journey of drafting and revision. By integrating writing history and essay playback directly into Canvas SpeedGrader, Checkmark Plagiarism empowers educators to evaluate student work with speed, fairness, and total transparency.</p>
+<p><strong>Checkmark Plagiarism supports this comprehensive approach with AI detection, essay writing playback, static AI detection, plagiarism detection, autograding, and integrations with Canvas and Google Classroom.</strong></p>
+
+<hr className="my-8 border-border" />
+
+<p className="font-semibold text-lg text-foreground">See how Checkmark pairs Canvas writing history with multi-signal detection to verify student drafting inside Canvas SpeedGrader. <a href="https://teach.checkmarkplagiarism.com/example-report" target="_blank" rel="noopener noreferrer">View a sample report</a> or <a href="/solutions/schools">request a demonstration</a>.</p>`;
+
+type PageProps = {
+  searchParams?: Record<string, string | string[] | undefined>;
+};
+
+export default function Page({ searchParams }: PageProps) {
+  const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
+
+  return (
+    <ArticleLayout
+      meta={meta}
+      section="learning"
+      currentSlug="2026/8/can-teachers-use-writing-history-with-canvas-assignments"
+      refValue={refValue}
+    >
+      <article
+        className="lg:col-span-3 text-base leading-7 tracking-normal space-y-5 [&_p]:text-muted-foreground [&_h2]:pt-4 [&_h2]:text-2xl [&_h2]:font-semibold [&_h2]:tracking-tight [&_h3]:pt-4 [&_h3]:text-xl [&_h3]:font-semibold [&_h3]:tracking-tight [&_ul]:list-disc [&_ul]:pl-6 [&_ul]:space-y-2 [&_ol]:list-decimal [&_ol]:pl-6 [&_ol]:space-y-2 [&_blockquote]:border-l-4 [&_blockquote]:border-primary [&_blockquote]:pl-4 [&_blockquote]:italic [&_blockquote]:text-muted-foreground [&_a]:text-primary [&_a]:underline [&_img]:rounded-xl [&_img]:my-6 [&_code]:bg-muted [&_code]:px-1 [&_code]:py-0.5 [&_code]:rounded [&_code]:text-sm"
+        dangerouslySetInnerHTML={{ __html: bodyHtml }}
+      />
+    </ArticleLayout>
+  );
+}
