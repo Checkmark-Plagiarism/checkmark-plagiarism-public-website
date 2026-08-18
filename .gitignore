@@ -44,3 +44,7 @@ durable-verve-378102-9c8bedf1ffbb.json
 
 # Local Netlify folder
 .netlify
+
+.venv/
+
+scripts/credentials.json

@@ -1,0 +1,4 @@
+gspread>=6.1.0
+google-auth>=2.30.0
+numpy>=1.26.0
+requests>=2.32.0
