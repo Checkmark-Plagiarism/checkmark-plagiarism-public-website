@@ -24,7 +24,7 @@ module.exports = {
   additionalPaths: async (config) => {
     const fs = require('fs');
     const path = require('path');
-    const SECTIONS = ['research', 'blogs', 'learning'];
+    const SECTIONS = ['blogs'];
     const APP_DIR = path.join(process.cwd(), 'src/app');
     const PAGE_FILES = ['page.tsx', 'page.ts', 'page.jsx', 'page.js'];
     const isDir = (p) => { try { return fs.statSync(p).isDirectory(); } catch { return false; } };
