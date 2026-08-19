@@ -1,15 +1,4 @@
-# -*- coding: utf-8 -*-
-import os
-import gspread
-
-slug = "what-objective-telemetry-evidence-should-school-principals-review-with-parents-during-contested-ai-misconduct-conferences"
-dest_dir = os.path.join("src", "app", "learning", "2026", "8", slug)
-os.makedirs(dest_dir, exist_ok=True)
-dest_file = os.path.join(dest_dir, "page.tsx")
-
-parts = []
-
-parts.append('''import { Metadata } from 'next';
+import { Metadata } from 'next';
 import ArticleLayout from "@/components/blog/article-layout";
 
 export const metadata: Metadata = {
@@ -194,9 +183,7 @@ const bodyHtml = `
 </div>
 
 <hr class="my-8 border-border" />
-''')
 
-parts.append('''
 <h2>2. The Evidentiary Paradigm Shift: Moving from Guesswork to Writing Telemetry</h2>
 
 <p>To eliminate contentious disputes and protect both students and faculty, school districts must execute an evidentiary paradigm shift: <strong>transitioning from probabilistic text scoring to deterministic writing telemetry.</strong></p>
@@ -546,9 +533,7 @@ parts.append('''
 </div>
 
 <hr class="my-8 border-border" />
-''')
 
-parts.append('''
 <h2>4. Checkmark Plagiarism's Administrative Parent Conference Suite</h2>
 
 <p>Checkmark Plagiarism equips secondary administrators with dedicated administrative tools specifically engineered to prepare for, conduct, and resolve contested integrity hearings.</p>
@@ -776,9 +761,7 @@ parts.append('''
 </div>
 
 <hr class="my-8 border-border" />
-''')
 
-parts.append('''
 <h2>7. Turnkey Administrative Tools &amp; Compliance Frameworks</h2>
 
 <p>To institutionalize these best practices, secondary administrative teams should implement the following standardized checklists and compliance safeguards.</p>
@@ -948,9 +931,7 @@ parts.append('''
 </ul>
 
 <hr class="my-8 border-border" />
-''')
 
-parts.append('''
 <h2>9. Frequently Asked Questions (FAQ) for High School Administrators</h2>
 
 <div class="my-8 space-y-4">
@@ -1070,23 +1051,3 @@ export default function Page({ searchParams }: PageProps) {
     </ArticleLayout>
   );
 }
-''')
-
-full_content = "".join(parts)
-with open(dest_file, "w", encoding="utf-8") as f:
-    f.write(full_content)
-
-print(f"Successfully compiled page.tsx to {dest_file} ({len(full_content)} characters)")
-
-# Update Google Sheets row 612
-CREDENTIALS_PATH = os.path.join("scripts", "credentials.json")
-gc = gspread.service_account(filename=CREDENTIALS_PATH)
-sheet = gc.open("Blog Topic Engine").sheet1
-
-# Row 612: Col B is 'published', Col F is file path
-published_path = f"src/app/learning/2026/8/{slug}/page.tsx"
-sheet.update_cell(612, 2, "published")
-sheet.update_cell(612, 6, published_path)
-
-print(f"Google Sheet Row 612 updated: Status='published', File Path='{published_path}'")
-
