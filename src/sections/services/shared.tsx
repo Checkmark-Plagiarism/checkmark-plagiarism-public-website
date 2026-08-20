@@ -43,7 +43,8 @@ export function ServiceHero({
   sub,
   children,
 }: {
-  title: string;
+  /** ReactNode, not string, so a hero can set a brand mark inline with the words. */
+  title: React.ReactNode;
   sub: string;
   children?: React.ReactNode;
 }) {
