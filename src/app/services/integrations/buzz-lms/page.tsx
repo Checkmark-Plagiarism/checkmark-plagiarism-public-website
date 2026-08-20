@@ -388,11 +388,11 @@ export default function BuzzLMSIntegrationPage() {
               </ul>
             </div>
             <Screenshot
-              src="/images/services/report-plagiarism-view.png"
-              alt="A Checkmark report showing flagged passages and their sources"
+              src="/images/services/buzz/cq-report-in-buzz.png"
+              alt="A Checkmark report open inside the Buzz grading view, showing flagged passages and their sources"
               width={2000}
-              height={1312}
-              caption="The integrity report a teacher opens from inside the Buzz question."
+              height={1500}
+              caption="The report inside Buzz's own grading view - the teacher never leaves the gradebook."
             />
           </div>
         </div>
@@ -450,7 +450,7 @@ export default function BuzzLMSIntegrationPage() {
               </table>
             </div>
 
-            <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               <Card className="rounded-3xl border border-border bg-white p-6 shadow-sm">
                 <CardContent className="p-0 space-y-3">
                   <div className="h-10 w-10 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center">
@@ -490,22 +490,36 @@ export default function BuzzLMSIntegrationPage() {
                   </p>
                 </CardContent>
               </Card>
+              <Card className="rounded-3xl border border-border bg-white p-6 shadow-sm">
+                <CardContent className="p-0 space-y-3">
+                  <div className="h-10 w-10 rounded-xl bg-cyan-100 text-cyan-700 flex items-center justify-center">
+                    <KeyRound className="h-5 w-5" />
+                  </div>
+                  <h3 className="text-lg font-semibold text-foreground">Nothing to unlock</h3>
+                  <p className="text-sm text-muted-foreground">
+                    Access is handled by the question itself, so the report is simply there when
+                    the teacher opens it - no link to find, nothing to click through, and nothing
+                    to re-do on another device. One less step in a workflow teachers repeat
+                    thirty times a night.
+                  </p>
+                </CardContent>
+              </Card>
             </div>
 
             <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8">
               <Screenshot
-                src="/images/services/report-paste-evidence.png"
-                alt="Evidence card showing text that entered the document as a paste"
-                width={864}
-                height={1484}
-                caption="Pasted text is recorded as it happens, with the moment it landed."
+                src="/images/services/buzz/cq-playback.png"
+                alt="Playback replaying a student's writing session inside the Buzz grading view"
+                width={2000}
+                height={1500}
+                caption="Playback replays the writing session from blank page to submission."
               />
               <Screenshot
-                src="/images/services/report-source-quote.png"
-                alt="A matched passage shown side by side with the source it came from"
-                width={864}
-                height={1484}
-                caption="Every match shows the source and the quote, side by side."
+                src="/images/services/buzz/essay-report-in-buzz.png"
+                alt="A Checkmark report under a native Buzz essay question, beside the Buzz rubric"
+                width={2000}
+                height={1500}
+                caption="The same prompt as a native Buzz essay: plagiarism and AI likeness, beside Buzz's own rubric."
               />
             </div>
           </div>
@@ -517,11 +531,11 @@ export default function BuzzLMSIntegrationPage() {
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             <Screenshot
-              src="/images/services/report-grading-view.png"
-              alt="Per-criterion feedback anchored to the sentences it refers to"
+              src="/images/services/buzz/essay-report-in-buzz.png"
+              alt="Per-criterion rubric scoring and written feedback beside the Checkmark report in Buzz"
               width={2000}
-              height={1250}
-              caption="Each comment points at the sentence it is about."
+              height={1500}
+              caption="Scores and feedback land in the rubric the school already authored in Buzz."
               className="order-last md:order-first"
             />
             <div className="space-y-4">
@@ -700,11 +714,13 @@ export default function BuzzLMSIntegrationPage() {
                     How teachers get access
                   </h3>
                   <p className="text-sm text-muted-foreground">
-                    On Custom Question, nothing - the report is simply there when the teacher opens
-                    the question. On the native essay path a teacher opens a link delivered through
-                    the grade editor&apos;s private note, a channel only someone who can already
-                    grade the course can see. It grants the ability to view reports for that
-                    course, not a Checkmark account.
+                    Both paths verify that the person reading a report can already grade the
+                    course, and neither asks teachers to create a Checkmark account. They differ
+                    only in how many steps that takes. On the native essay path the teacher opens
+                    a link delivered through the grade editor&apos;s private note - a channel only
+                    course graders can see - which grants report access for that course. Custom
+                    Question does the same check as part of the question exchange itself, so there
+                    is no link to open and nothing to click through.
                   </p>
                 </CardContent>
               </Card>
