@@ -1,4 +1,4 @@
-import { google } from "googleapis";
+import { auth as googleAuth, calendar as calendarClient } from "@googleapis/calendar";
 import { addMinutes } from "date-fns";
 import { formatInTimeZone, fromZonedTime } from "date-fns-tz";
 
@@ -17,17 +17,17 @@ function getCalendarClient() {
 
   if (workspaceUser) {
     // Use JWT with user impersonation (required for creating Meet links)
-    const auth = new google.auth.JWT({
+    const auth = new googleAuth.JWT({
       email: process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL,
       key: process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, "\n"),
       scopes: ["https://www.googleapis.com/auth/calendar"],
       subject: workspaceUser, // Impersonate this user
     });
 
-    return google.calendar({ version: "v3", auth });
+    return calendarClient({ version: "v3", auth });
   } else {
     // Fallback to regular service account (won't be able to create Meet links)
-    const auth = new google.auth.GoogleAuth({
+    const auth = new googleAuth.GoogleAuth({
       credentials: {
         client_email: process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL,
         private_key: process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, "\n"),
@@ -35,7 +35,7 @@ function getCalendarClient() {
       scopes: ["https://www.googleapis.com/auth/calendar"],
     });
 
-    return google.calendar({ version: "v3", auth });
+    return calendarClient({ version: "v3", auth });
   }
 }
 

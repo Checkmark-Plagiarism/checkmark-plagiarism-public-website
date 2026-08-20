@@ -5,6 +5,15 @@ const nextConfig = {
   images: {
     domains: ['public.checkmarkplagiarism.com'],
   },
+  outputFileTracingExcludes: {
+    '*': [
+      './content/**/*',
+      './scripts/**/*',
+      './tests/**/*',
+      './logs/**/*',
+      './**/*.md',
+    ],
+  },
   async redirects() {
     return [
       // The old "Blog" section is now "Research". Permanently redirect every

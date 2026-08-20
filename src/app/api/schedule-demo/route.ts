@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 import { z } from "zod";
-import { google } from "googleapis";
+import { auth as googleAuth, sheets as sheetsClient } from "@googleapis/sheets";
 import { getAvailableSlots, createDemoEvent, isSlotAvailable } from "@/lib/google-calendar";
 import { format, parse } from "date-fns";
 
@@ -52,7 +52,7 @@ async function writeToGoogleSheets(
   }
 
   try {
-    const auth = new google.auth.GoogleAuth({
+    const auth = new googleAuth.GoogleAuth({
       credentials: {
         client_email: process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL,
         private_key: process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, "\n"),
@@ -60,7 +60,7 @@ async function writeToGoogleSheets(
       scopes: ["https://www.googleapis.com/auth/spreadsheets"],
     });
 
-    const sheets = google.sheets({ version: "v4", auth });
+    const sheets = sheetsClient({ version: "v4", auth });
 
     // Match contact form columns: Timestamp, Name, Email, School, Role, Inquiry Type, Message
     await sheets.spreadsheets.values.append({

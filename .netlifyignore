@@ -1,0 +1,6 @@
+.agents/
+scripts/
+tests/
+logs/
+content/drafts/
+**/*.md

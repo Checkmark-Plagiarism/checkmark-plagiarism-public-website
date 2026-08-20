@@ -1,0 +1,14 @@
+---
+title: "How High School Yearbook Advisers Can Audit Feature Profiles and Senior Tributes for AI-Generated Quotes | Checkmark Plagiarism"
+slug: "how-high-school-yearbook-advisers-can-audit-feature-profiles-and-senior-tributes-for-ai-generated-quotes"
+date: "2026-08-20"
+description: "A comprehensive guide for high school yearbook advisers and journalism educators to audit personality profiles, club featurettes, and senior tributes for AI-generated quotes using keystroke playback and writing telemetry."
+keywords: ["high school yearbook adviser", "yearbook journalism", "AI-generated quotes", "senior tributes", "personality profiles", "JEA", "NSPA", "Essay Playback", "Checkmark Plagiarism", "keystroke dynamics", "plant deadlines", "ladder management", "caption writing", "journalistic integrity", "AP style"]
+category: "Journalism & Media"
+categories: ["Journalism & Media", "Detection", "Writing Process", "Teacher Guide", "Academic Integrity"]
+author: "The Checkmark Plagiarism Team"
+---
+
+# How High School Yearbook Advisers Can Audit Feature Profiles and Senior Tributes for AI-Generated Quotes
+
+> **Executive Summary:** High school yearbook production is a high-stakes, deadline-driven endeavor where student journalists manage hundreds of pages, tight publishing plant deadlines, and dense rosters of student profiles, athletic recaps, club featurettes, and senior tributes. When novice student journalists face unreturned messages, uncooperative peers, or looming submission cutoffs, the temptation to prompt Large Language Models (LLMs) to synthesize realistic quotes or "polish" peer statements into adult corporate rhetoric creates an acute ethical and legal crisis. Unlike digital school newspapers where retractions can be published instantly online, printed yearbooks represent permanent, unalterable historical records bound in ink and distributed to thousands of homes and school archives. Generic whole-document AI detectors fail yearbook staffs because their statistical probability scores routinely flag standardized, formulaic Associated Press (AP) Style leads and concise 25-word photo captions while missing isolated, AI-synthesized quotes tucked inside genuine spreads. This guide provides yearbook advisers, **Journalism Education Association (JEA)** and **National Scholastic Press Association (NSPA)** media educators, and student editorial boards with an actionable, non-punitive audit protocol. By combining primary asset triangulation (audio recordings and mobile transcripts), forensic voice analysis (contrasting spontaneous adolescent vernacular with synthetic corporate diction), and **Checkmark Plagiarism's** patent-pending **Essay Playback** (1x-8x keystroke replay, audio transcription pause analysis, and external paste tracking), advisers can verify quote authenticity, protect honest student writers from false accusations, and preserve the journalistic integrity of the school's historical record.

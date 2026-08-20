@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 import { z } from "zod";
-import { google } from "googleapis";
+import { auth as googleAuth, sheets as sheetsClient } from "@googleapis/sheets";
 
 // Google sheets function
 async function writeToGoogleSheets(formData: { name: string; email: string; school?: string; role: string; inquiryType: string; message: string }, timestamp: string) {
@@ -11,12 +11,12 @@ async function writeToGoogleSheets(formData: { name: string; email: string; scho
   }
 
   try {
-    const auth = new google.auth.GoogleAuth({
+    const auth = new googleAuth.GoogleAuth({
       credentials: { client_email: process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL, private_key: process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, '\n'), },
       scopes: ['https://www.googleapis.com/auth/spreadsheets'],
     });
 
-    const sheets = google.sheets({ version: 'v4', auth });
+    const sheets = sheetsClient({ version: 'v4', auth });
 
     await sheets.spreadsheets.values.append({
       spreadsheetId: process.env.GOOGLE_CONTACT_SHEET_ID,
