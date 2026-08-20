@@ -1,0 +1,100 @@
+## 2. Anatomy of AI Hallucinations in AP Music Theory & Voice-Leading Writeups
+
+Understanding the underlying mechanics of generative AI errors allows AP Music Theory teachers to rapidly spot synthetic submissions during routine grading. Generative LLMs process music as text strings or tokenized image segments rather than auditory sound waves or rigorous counterpoint rule trees. This produces four consistent failure modes.
+
+```
+┌────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│                        FOUR CORE TAXONOMIES OF AI MUSIC THEORY HALLUCINATIONS                          │
+├────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                                        │
+│   1. THE AURAL DICTATION DISCONNECT                                                                    │
+│      └─ Fabricating pitch/rhythm solutions without the iterative temporal cadence of listening passes.  │
+│                                                                                                        │
+│   2. ROMAN NUMERAL & FIGURED BASS CONFABULATION                                                        │
+│      └─ Inverting chord figures, confusing cadential 6/4 with tonic I, and hallucinating modulations.  │
+│                                                                                                        │
+│   3. VOICE-LEADING RULE BLINDNESS                                                                      │
+│      └─ Overlooking parallel 5ths/8ves, unresolved 7ths, leading-tone leaps, and voice crossings.      │
+│                                                                                                        │
+│   4. SCORE-TO-PROSE CONCORDANCE MISMATCH                                                               │
+│      └─ Describing nonexistent cadences, wrong clefs, false meter signatures, and phantom textures.   │
+│                                                                                                        │
+└────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+### 2.1 The Aural Dictation Disconnect: Melodic & Harmonic Multi-Pass Audition
+
+On the AP Music Theory exam, Free-Response Questions (FRQs) 1 and 2 (Melodic Dictation) and FRQs 3 and 4 (Harmonic Dictation) follow strict College Board audio administration protocols:
+- **Melodic Dictation:** 3 to 4 listening passes (Pass 1: overall contour, rhythm, pitch range, and cadence; Pass 2: first and second measure pitch-by-pitch solfège; Pass 3: interior leaps and syncopations; Pass 4: final notation check and rhythm dots).
+- **Harmonic Dictation:** 3 to 4 listening passes (Pass 1: bass line skeleton and final cadence; Pass 2: soprano melody and outer-voice counterpoint; Pass 3: Roman numerals and harmonic quality; Pass 4: interior voice realization and inversion checking).
+
+```
+┌────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│           AUTHENTIC STUDENT LISTENING WORKFLOW VS. SYNTHETIC AI DICTATION INGESTION                    │
+├────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                                        │
+│   AUTHENTIC HUMAN 3-PASS MELODIC DICTATION (Tracked in Checkmark Playback):                            │
+│   [Audio Pass 1] ───► Pauses 15s ───► Types meter (6/8), key (G Maj), rough contour dots               │
+│   [Audio Pass 2] ───► Pauses 20s ───► Types solfège (Do-Re-Mi-Sol), fills mm. 1-2, backspaces rhythm   │
+│   [Audio Pass 3] ───► Pauses 25s ───► Refines leap to high Fi, fixes dotted-quarter value in m. 3       │
+│   [Audio Pass 4] ───► Pauses 10s ───► Final proofreading of accidental and terminal tonic Do           │
+│                                                                                                        │
+│   ══════════════════════════════════════════════════════════════════════════════════════════════════   │
+│                                                                                                        │
+│   SYNTHETIC AI DICTATION INGESTION (Tracked in Checkmark Paste Buffer & Playback):                     │
+│   [Zero Audio Interaction] ───► External Copy from Web Bot ───► Single Paste of Full Roman Numerals    │
+│   or 180 WPM continuous typing without rhythmic revision, pause intervals, or contour mapping.        │
+│                                                                                                        │
+└────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+```
+
+When high school students submit written reflections or digital score transcriptions of dictation exercises, genuine student drafting mirrors these distinct listening cycles. An authentic keystroke timeline displays rhythmic bursts of typing interspersed with 15–30 second cognitive pauses matching the audio replays, accompanied by frequent backspacing and interval adjustments.
+
+In contrast, an AI-generated dictation writeup or copied solution appears either as a single block paste from an external clipboard or as a continuous, unhesitating typing stream with zero reflective listening pauses.
+
+---
+
+### 2.2 Roman Numeral Analysis & Figured Bass Confabulations
+
+Roman Numeral Analysis (RNA) requires identifying the root, quality, inversion, and functional harmonic purpose of every vertical sonority within a tonal context. Generative LLMs frequently make foundational errors in standard AP convention:
+
+#### 1. Cadential 6/4 Misclassification:
+* **The Error:** LLMs regularly label a cadential six-four chord as a standalone tonic inversion: `I6/4 - V7 - I`.
+* **AP Music Theory Standard:** In the AP curriculum and common-practice theory, the cadential six-four is functionally a dominant harmony with double suspensions/appoggiaturas resolving down by step (6–5 and 4–3 above the bass). It must be analyzed as `V6/4-5/3` or `Cad 6/4 - V - I`. An AI writeup asserting that "the tonic triad appears in second inversion to provide stable harmonic resting" reveals a total misunderstanding of dominant prolongation.
+
+#### 2. Seventh Chord Inversion Scrambling:
+* **The Error:** Inverting figured bass numbers or failing to distinguish between `V7` (root position), `V6/5` (first inversion, 3rd in bass), `V4/3` (second inversion, 5th in bass), and `V4/2` (third inversion, 7th in bass).
+* **Classroom Example:** An AI will frequently describe a bass note moving from `Fa` to `Mi` as a "root-position dominant resolving to tonic," missing that `Fa` in the bass necessitates a `V4/2` resolving to a first-inversion tonic `I6`.
+
+#### 3. Secondary Dominant & Leading-Tone Confusions:
+* **The Error:** Mislabeling secondary dominants (e.g., `V/V`, `V7/iv`, `vii°7/V`) as random modal borrowings or modulating to foreign keys for a single passing chord.
+* **Classroom Example:** In C Major, encountering a `D - F# - A - C` chord resolving to `G - B - D`. An LLM often writes: *"The piece briefly modulates to G major and establishes a new tonic,"* rather than recognizing the local secondary dominant function (`V7/V`) that remains anchored in the home key.
+
+#### 4. Chromatic Predominant Harmonies (Neapolitan & Augmented Sixths):
+* **The Error:** Misidentifying the **Neapolitan Sixth (`N6` or `bII6`)** as a standard minor second chord, or confusing the three distinct national varieties of **Augmented Sixth chords**:
+  - **Italian 6th (`It+6`):** `Le - Do - Fi` (1 tonic, 1 3rd, augmented 6th).
+  - **French 6th (`Fr+6`):** `Le - Do - Re - Fi` (includes scale degree 2, containing a whole-tone feel).
+  - **German 6th (`Gr+6`):** `Le - Do - Me - Fi` (includes minor 3rd, resolves to `V6/4-5/3` to avoid parallel 5ths).
+* Generative bots routinely invent fifths in Italian sixth chords or describe French sixth chords as diminished triads.
+
+```
+┌──────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│                   AP MUSIC THEORY CHROMATIC HARMONY CONFABULATION MATRIX                                 │
+├───────────────────────┬──────────────────────────────────────────┬───────────────────────────────────────┤
+│ CHORD CLASSIFICATION  │ COMMON AI GENERATIVE HALLUCINATION       │ AP MUSIC THEORY GROUND TRUTH          │
+├───────────────────────┼──────────────────────────────────────────┼───────────────────────────────────────┤
+│ Cadential 6/4         │ Labels as independent tonic triad `I6/4` │ Functional dominant `V6/4-5/3`;       │
+│                       │ with stable tonic function               │ 6-5 and 4-3 linear step resolutions   │
+├───────────────────────┼──────────────────────────────────────────┼───────────────────────────────────────┤
+│ Secondary Dominant    │ Claims permanent key modulation on every │ Secondary function (`V7/V`, `V/iv`)   │
+│ (`V/V`, `V7/ii`)      │ applied accidental chromatic chord       │ tonicizing the subsequent diatonic root│
+├───────────────────────┼──────────────────────────────────────────┼───────────────────────────────────────┤
+│ Neapolitan Sixth      │ Misinterprets as diatonic `ii` or flat   │ Major triad built on lowered 2nd      │
+│ (`N6` / `bII6`)       │ supertonic in root position              │ (`Ra-Fa-Le`), almost always in 1st inv│
+├───────────────────────┼──────────────────────────────────────────┼───────────────────────────────────────┤
+│ German Augmented 6th  │ Asserts direct resolution to root `V`,   │ Must resolve through `V6/4-5/3` or    │
+│ (`Gr+6`)              │ ignoring resulting parallel fifths       │ `Cad 6/4` to avoid parallel 5ths      │
+└───────────────────────┴──────────────────────────────────────────┴───────────────────────────────────────┘
+```

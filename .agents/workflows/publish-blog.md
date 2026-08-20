@@ -1,6 +1,6 @@
 ---
 name: publish-blog
-description: Smart, autonomous end-to-end pipeline for publishing Checkmark Plagiarism Learning Center articles with conditional queue checking, persistent vector scoring, drafting, and Next.js page styling.
+description: Smart, autonomous end-to-end pipeline for publishing Checkmark Plagiarism Learning Center articles focused on high school classroom settings and student writing assignments, with conditional queue checking, persistent vector scoring, drafting, and Next.js page styling.
 ---
 
 ### Step 1: Check Queue Status (Smart Dispatch)
@@ -29,7 +29,7 @@ python scripts/get_pipeline_status.py
 ---
 
 ### Step 1B: Topic Generation (Only When Queue Is Empty)
-Invoke `topic-generator` to brainstorm 3 fresh, high-intent educator-facing candidate topics and append them to the Google Sheet with status `pending`.
+Invoke `topic-generator` to brainstorm 3 fresh candidate topics strictly focused on high school classroom settings (grades 9–12) and student writing assignments (DBQs, literary analysis, argumentative essays, research papers, CER lab reports) and append them to the Google Sheet with status `pending`.
 
 ### Step 2: Uniqueness Vector Check
 Run the fast Ollama vector uniqueness scoring script (reads cached embeddings from Column G and evaluates similarity against all site pages):

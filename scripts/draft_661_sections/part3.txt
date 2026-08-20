@@ -1,0 +1,83 @@
+### 2.3 Fatal Voice-Leading Rule Violations in AI-Authored Part-Writing
+
+Part-writing in four-voice SATB texture is the core of AP Music Theory Free-Response Questions 5, 6, and 7. The College Board enforces strict voice-leading deductions for classical contrapuntal errors.
+
+When students use AI to generate explanations of their part-writing or writeups on error-detection assignments, the AI routinely generates prose that endorses or obscures fatal contrapuntal errors:
+
+```
+┌────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│             VOICE-LEADING AUDIT: AI HALLUCINATION VS. 18th-CENTURY SATB REALITY                        │
+├────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                                        │
+│   EXCERPT: SATB Part-Writing Exercise (FRQ 5 / Figured Bass in G Minor)                                │
+│                                                                                                        │
+│   AI-GENERATED STUDENT WRITEUP (EXTRACT):                                                              │
+│   "The voice leading between mm. 2-3 demonstrates flawless classical counterpoint. The soprano        │
+│   moves from D5 down to C5 while the bass steps from G2 to F2, creating a resonant harmonic motion.   │
+│   The alto holds Bb4 while the tenor moves forcefully from G3 to C4, completing full triad voicing."  │
+│                                                                                                        │
+│   ══════════════════════════════════════════════════════════════════════════════════════════════════   │
+│                                                                                                        │
+│   GROUND-TRUTH VOICE-LEADING AUDIT:                                                                    │
+│   1. PARALLEL FIFTHS: Bass has G2->F2 and Tenor has D3->C3 (or G3->C4 leap creating parallel 5ths      │
+│      against the Alto Bb4).                                                                            │
+│   2. UNRESOLVED LEADING TONE: In G minor, the leading tone F# was omitted or left unresolved to F-nat. │
+│   3. VOICE CROSSING: Tenor moving to C4 crosses below/above the Alto Bb4.                              │
+│   4. VERDICT: The AI authored a generic compliment praising 'smooth motion' while completely           │
+│      ignoring three critical AP rubric deductions.                                                     │
+│                                                                                                        │
+└────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+```
+
+#### Major Voice-Leading Rule Deductions Overlooked by AI:
+1. **Parallel Fifths and Octaves:** Two voices moving in the same direction by parallel motion from one perfect fifth/octave to another. LLMs cannot calculate vertical intervals between moving horizontal vectors simultaneously.
+2. **Direct (Hidden) Fifths and Octaves:** Soprano and bass moving in similar motion into a perfect fifth or octave with a leap in the soprano voice.
+3. **Unresolved Leading Tones:** In outer voices, scale degree `7` (leading tone) must resolve up by half step to `1` (tonic) in dominant-to-tonic progressions (`V - I` or `V7 - I`). AI writeups routinely leave leading tones unresolved or drop them down by third.
+4. **Seventh Resolutions:** The chordal 7th of any seventh chord (`V7`, `iiø7`, `vii°7`) must resolve downward by step. AI models routinely leap upward from the seventh to double a root.
+5. **Improper Doubling & Voice Crossing:** In root-position major/minor triads, doubling the root is standard. Doubling the leading tone or doubling the 3rd in a major triad (except in deceptive `V - vi` progressions) incurs major AP scoring penalties. Voice crossing (e.g., tenor singing above alto) or voice overlap severely disrupts SATB clarity.
+
+---
+
+### 2.4 Score-to-Prose Concordance Mismatch
+
+When generative AI tools are prompted with incomplete musical information or low-resolution score images, they confabulate structural features that contradict the actual musical notation:
+
+* **Modulation Hallucinations:** Generative bots frequently declare transitions to distant foreign keys (such as modulating from E-flat Major to F-sharp Minor) when the music simply contains an unaccented chromatic passing tone.
+* **Clef Misreadings:** LLMs regularly misinterpret alto clef (viola) or tenor clef (cello/bassoon) as treble clef, shifting every note in their harmonic narrative by a third or a fifth.
+* **Cadence Misclassification:** Confusing Deceptive Cadences (`V - vi` or `V - VI`) with Authentic Cadences (`V - I`), or failing to notice that an imperfect authentic cadence (IAC) has scale degree 3 or 5 in the soprano rather than the tonic scale degree 1.
+
+---
+
+## 3. The AP Music Theory Evidentiary Matrix
+
+To evaluate student submissions fairly without relying on unscientific black-box scores, high school music departments must establish a multi-evidence framework. Below is a direct comparison of traditional red-pen manuscript grading, generic AI detectors, and Checkmark Plagiarism’s integrated telemetry suite.
+
+```
+┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│                                   AP MUSIC THEORY EVIDENTIARY COMPARISON MATRIX                                        │
+├────────────────────────────┬─────────────────────────────┬─────────────────────────────┬───────────────────────────────┤
+│ CAPABILITY / FEATURE       │ PAPER MANUSCRIPT / RED PEN  │ GENERIC AI TEXT DETECTORS   │ CHECKMARK PLAGIARISM SUITE    │
+├────────────────────────────┼─────────────────────────────┼─────────────────────────────┼───────────────────────────────┤
+│ Whole-Assignment Accuracy  │ High for final notation;    │ Opaque whole-paper % score; │ Replaces percentages with     │
+│ & False-Positive Risk      │ impossible to verify digital│ rampant false flags on RNA  │ passage-level calibrated      │
+│                            │ take-home drafting steps    │ formulas (`I - IV - V7`)    │ confidence sliders & telemetry│
+├────────────────────────────┼─────────────────────────────┼─────────────────────────────┼───────────────────────────────┤
+│ Writing Process History    │ None (Evaluates static      │ None (Only analyzes final   │ Patent-Pending Essay          │
+│ & Keystroke Dynamics       │ submitted paper/PDF)        │ text string in isolation)   │ Playback™ (1x–8x replay)      │
+├────────────────────────────┼─────────────────────────────┼─────────────────────────────┼───────────────────────────────┤
+│ Auditory Listening-Pause   │ None (Cannot track audio    │ None (Completely blind to   │ Accurately tracks cognitive   │
+│ Telemetry (Dictation)      │ cycles on digital drafts)   │ temporal listening cycles)  │ drafting pauses matching audio│
+├────────────────────────────┼─────────────────────────────┼─────────────────────────────┼───────────────────────────────┤
+│ External Clipboard &       │ None                        │ None                        │ Preserves original external   │
+│ Paste Buffer Inspector     │                             │                             │ text before student retyping  │
+├────────────────────────────┼─────────────────────────────┼─────────────────────────────┼───────────────────────────────┤
+│ Mechanical Transcription   │ None                        │ None                        │ Detects steady, zero-pause    │
+│ Detection (2nd Screen/Bot) │                             │                             │ retyping from external phones │
+├────────────────────────────┼─────────────────────────────┼─────────────────────────────┼───────────────────────────────┤
+│ Short-Answer Guardrails    │ Manual teacher review       │ Unreliable; massive false   │ Honest `<150w N/A` disclaimer │
+│ (<150 Words / FRQ Checks)  │                             │ positives on short prompts  │ prevents false accusations    │
+├────────────────────────────┼─────────────────────────────┼─────────────────────────────┼───────────────────────────────┤
+│ Quote-Anchored AP Music    │ Manual, labor-intensive     │ None                        │ AI Autograder with direct SATB│
+│ Theory Rubric Feedback     │ grading across 150+ students│                             │ quote anchors & LMS passback  │
+└────────────────────────────┴─────────────────────────────┴─────────────────────────────┴───────────────────────────────┘
+```
