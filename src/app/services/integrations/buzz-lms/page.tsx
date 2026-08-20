@@ -87,7 +87,7 @@ const faqs = [
   {
     question: "What does a Buzz administrator need to set up?",
     answer:
-      "One DLAP service account in the Buzz Admin App with exactly two read permissions, Domains: Read and Courses: Read full, and nothing else. Those credentials go into Checkmark once, at the school or reseller level. A reseller managing many subdomains can hold a single credential at the parent domain. There is no per-teacher authorization.",
+      "One DLAP service account in the Buzz Admin App with exactly two read permissions (Domains: Read and Courses: Read full) and nothing else. Those credentials go into Checkmark once, at the school or reseller level. A reseller managing many subdomains can hold a single credential at the parent domain. There is no per-teacher authorization.",
   },
   {
     question: "Does Checkmark also support LTI 1.3 with Buzz?",
@@ -97,7 +97,7 @@ const faqs = [
   {
     question: "How does Checkmark report AI writing?",
     answer:
-      "As AI likeness, not a verdict about a student. Checkmark reports the share of an essay that crosses a high-confidence threshold and underlines those passages, so a teacher sees which parts rather than one number. Text alone cannot establish authorship, which is why the same report shows how the writing was produced.",
+      "As AI likeness, not a verdict about a student. Checkmark reports the share of an essay that crosses a high-confidence threshold and underlines those passages, so a teacher sees which parts rather than one number. Text alone cannot establish authorship, which is why on Custom Question the same report also shows how the writing was produced.",
   },
 ];
 
@@ -188,7 +188,7 @@ export default function BuzzLMSIntegrationPage() {
       {/* Hero */}
       <ServiceHero
         title="Integrity evidence inside the Buzz questions you already use"
-        sub="Checkmark attaches to the essay questions already in your Buzz assessments. No rebuilt courses, no separate assignment for students to find, and nothing taken away from the grading you run today."
+        sub="No rebuilt courses, no separate assignment for students to find, and no change to how you grade."
       >
         <LinkButton href="/demo" variant="hero">
           Request a Demo
@@ -227,8 +227,9 @@ export default function BuzzLMSIntegrationPage() {
                     The report lives under the question, not in another tab
                   </h2>
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    Checkmark renders its report inside the Buzz question, so similarity matches,
-                    AI likeness, and writing-process evidence sit next to the answer being graded.
+                    Checkmark renders its report inside the Buzz question, so similarity matches
+                    and AI likeness sit next to the answer being graded. On Custom Question, the
+                    writing-process evidence sits there too.
                   </p>
                   <div className="space-y-2 pt-2">
                     <div className="flex items-center gap-2 text-sm text-foreground/80">
@@ -285,7 +286,7 @@ export default function BuzzLMSIntegrationPage() {
           </div>
 
           <p className="mx-auto max-w-3xl mt-8 text-center text-sm text-muted-foreground">
-            Most schools start with the native essay path, then move individual courses to Custom
+            The native essay path is the fastest way to go live. Move individual courses to Custom
             Question where process evidence matters most. You can run all three at once.
           </p>
         </div>
@@ -326,7 +327,7 @@ export default function BuzzLMSIntegrationPage() {
               <NumberedStep
                 n="5"
                 title="The report appears under the question"
-                text="Similarity matches with their sources, AI likeness marked passage by passage, and on Custom Question, Playback, pasted text, and transcription."
+                text="Similarity matches with their sources, and AI likeness marked passage by passage. On Custom Question the report adds Playback, pasted text, and transcription."
               />
             </div>
           </div>
@@ -342,12 +343,13 @@ export default function BuzzLMSIntegrationPage() {
                 Compatibility
               </span>
               <h2 className="text-3xl font-bold text-foreground">
-                Already using BusyBee? Nothing changes.
+                Already using BusyBee? On native essay questions, nothing changes.
               </h2>
               <p className="text-muted-foreground leading-relaxed">
-                Checkmark and Buzz&apos;s own AI grading are not competing for the same job, and on
-                native essay questions they never write to the same fields. That is built into how
-                Checkmark writes to Buzz, not something an administrator has to configure.
+                On native essay questions the two never write to the same fields, and that is
+                built into how Checkmark writes to Buzz rather than something an administrator has
+                to configure. Custom Question is different by design: BusyBee does not grade custom
+                questions, so on those Checkmark fills the rubric instead of competing for it.
               </p>
               <ul className="space-y-3 text-sm text-muted-foreground">
                 <li className="flex gap-3">
@@ -384,11 +386,11 @@ export default function BuzzLMSIntegrationPage() {
               </ul>
             </div>
             <Screenshot
-              src="/images/services/buzz/cq-report-in-buzz.png"
-              alt="A Checkmark report open inside the Buzz grading view, showing flagged passages and their sources"
+              src="/images/services/buzz/essay-report-in-buzz.png"
+              alt="A Checkmark report under a native Buzz essay question, beside Buzz's own rubric"
               width={2000}
               height={1500}
-              caption="The report inside Buzz's own grading view. The teacher never leaves the gradebook."
+              caption="A native essay question: the report sits under the question, and grading stays where it was."
             />
           </div>
         </div>
@@ -467,9 +469,9 @@ export default function BuzzLMSIntegrationPage() {
                   </div>
                   <h3 className="text-lg font-semibold text-foreground">Transcription</h3>
                   <p className="text-sm text-muted-foreground">
-                    Retyping defeats paste detection but not rhythm. Composing and copying produce
-                    different timing signatures, and the report names the patterns behind each flag
-                    rather than asking you to trust a score.
+                    Retyping defeats paste detection, so Checkmark reads timing as a separate
+                    signal. Composing and copying produce different rhythms, and the report names
+                    the patterns behind each flag rather than asking you to trust a score.
                   </p>
                 </CardContent>
               </Card>
@@ -480,8 +482,9 @@ export default function BuzzLMSIntegrationPage() {
                   </div>
                   <h3 className="text-lg font-semibold text-foreground">Playback</h3>
                   <p className="text-sm text-muted-foreground">
-                    Replay the session from blank page to submission. It clears a student as often
-                    as it flags one, and turns an accusation into something you can watch together.
+                    Replay the session from blank page to submission. It can support a
+                    student&apos;s account of how they wrote just as readily as it raises a
+                    question, and turns an accusation into something you can watch together.
                   </p>
                 </CardContent>
               </Card>
@@ -493,8 +496,7 @@ export default function BuzzLMSIntegrationPage() {
                   <h3 className="text-lg font-semibold text-foreground">Nothing to unlock</h3>
                   <p className="text-sm text-muted-foreground">
                     The question handles access, so the report is there when the teacher opens it.
-                    No link to find, nothing to redo on another device. One less step in a workflow
-                    teachers repeat thirty times a night.
+                    No link to find, nothing to redo on another device.
                   </p>
                 </CardContent>
               </Card>
@@ -502,18 +504,18 @@ export default function BuzzLMSIntegrationPage() {
 
             <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8">
               <Screenshot
+                src="/images/services/buzz/cq-report-in-buzz.png"
+                alt="A Custom Question report in the Buzz grading view showing pasted, transcribed, uncited and AI tiles"
+                width={2000}
+                height={1500}
+                caption="Custom Question adds the Pasted and Transcribed tiles, and Playback."
+              />
+              <Screenshot
                 src="/images/services/buzz/cq-playback.png"
                 alt="Playback replaying a student's writing session inside the Buzz grading view"
                 width={2000}
                 height={1500}
-                caption="Playback replays the writing session from blank page to submission."
-              />
-              <Screenshot
-                src="/images/services/buzz/essay-report-in-buzz.png"
-                alt="A Checkmark report under a native Buzz essay question, beside the Buzz rubric"
-                width={2000}
-                height={1500}
-                caption="The same prompt as a native Buzz essay: plagiarism and AI likeness, beside Buzz's own rubric."
+                caption="Playback replays the session from blank page to submission."
               />
             </div>
           </div>
@@ -523,15 +525,7 @@ export default function BuzzLMSIntegrationPage() {
       {/* Grading */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <div className="mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-            <Screenshot
-              src="/images/services/buzz/essay-report-in-buzz.png"
-              alt="Per-criterion rubric scoring and written feedback beside the Checkmark report in Buzz"
-              width={2000}
-              height={1500}
-              caption="Scores and feedback land in the rubric your school already authored in Buzz."
-              className="order-last md:order-first"
-            />
+          <div className="mx-auto max-w-3xl">
             <div className="space-y-4">
               <span className="text-xs font-bold uppercase tracking-wider text-cyan-700">
                 Grading on Custom Question
@@ -606,10 +600,10 @@ export default function BuzzLMSIntegrationPage() {
                   statement about the text, not about the student.
                 </p>
                 <p>
-                  So passages are underlined individually rather than reduced to one number, short
-                  answers are reported as not applicable instead of guessed at, and on Custom
-                  Question the same report shows how the text was produced. An AI signal can be
-                  corroborated, or cleared, by the writing process behind it.
+                  So passages are underlined individually rather than reduced to one number, and
+                  short answers are reported as not applicable instead of guessed at. On Custom
+                  Question the same report also shows how the text was produced, so an AI signal can
+                  be corroborated, or cleared, by the writing process behind it.
                 </p>
               </div>
               <div className="pt-6">
@@ -683,10 +677,9 @@ export default function BuzzLMSIntegrationPage() {
                     Connecting questions in bulk
                   </h3>
                   <p className="text-sm text-muted-foreground">
-                    Nobody wants to edit questions one at a time. Checkmark supplies a conversion
-                    script, generated for your domain, that connects every essay question across
-                    every course in one pass, preserving the prompt, points, and rubric. Run it in
-                    preview first, and reverse it at any time.
+                    Checkmark supplies a conversion script, generated for your domain, that
+                    connects every essay question across every course in one pass, preserving the
+                    prompt, points, and rubric. Run it in preview first, and reverse it at any time.
                   </p>
                 </CardContent>
               </Card>
