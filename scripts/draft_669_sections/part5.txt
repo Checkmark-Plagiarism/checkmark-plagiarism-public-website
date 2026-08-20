@@ -1,0 +1,52 @@
+---
+
+## 6. Real High School Yearbook Case Scenarios
+
+The following real-world case studies illustrate how high school yearbook advisers encounter synthetic quote challenges, how generic tools fail, and how Checkmark writing process telemetry resolves each situation with pedagogical integrity.
+
+### 6.1 Case Study 1: The Midnight Track & Field Signature Deadline (Full AI Fabrication)
+
+**Context:** At Oak Creek High School (1,800 students, 1:1 Chromebook environment), sophomore reporter Tyler was responsible for the Varsity Track & Field double-page spread. The plant deadline for Signature 4 (Pages 49-64) was midnight on Friday. By 8:30 PM, Tyler realized he had zero quotes from senior pole-vaulter Marcus, who had not responded to three Instagram DMs.
+
+**The Incident:** In a panic over missing the deadline and incurring plant penalties, Tyler opened ChatGPT on his personal smartphone and entered the prompt: *'Write two inspirational quotes from a high school senior pole vaulter who cleared 14 feet to break a school record at the regional invitational.'* Tyler manually typed the resulting quotes into the shared Google Doc copy sheet. The quote read:
+
+> *'Clearing the bar at 14 feet was the culmination of countless hours of relentless training. It stands as a profound testament to the unwavering support of my coaches and teammates who inspired me to transcend my previous limitations.'*
+
+**The Generic AI Detector Failure:** The student editor-in-chief pasted the full 400-word track spread copy into a generic AI detector. Because the surrounding paragraphs contained standard AP-style event statistics, the whole-document score registered at 22% AI ('Likely Human'), and the fake quote was approved for layout.
+
+**The Checkmark Resolution:** Adviser Ms. Gallagher conducted a pre-upload audit using **Checkmark Plagiarism**:
+1. **Passage-Level Highlighting:** Checkmark flagged the 42-word pole vault quote with a 94% synthetic confidence slider, identifying unnatural adult vocabulary ('culmination,' 'profound testament,' 'transcend limitations').
+2. **Essay Playback Keystroke Replay:** Ms. Gallagher scrubbed through Tyler's drafting timeline in Essay Playback. The telemetry revealed that Tyler typed the 42-word quote at a continuous, steady 48 words per minute with zero pauses, zero deletions, and zero audio playback windows--the classic signature of second-screen manual transcription from a phone.
+3. **Restorative Resolution:** Ms. Gallagher called Tyler into the publication office during Period 2 on Friday. Rather than accusing him of intentional fraud, she opened Essay Playback and showed him the keystroke timeline alongside the missing audio upload. Tyler admitted that Marcus had ghosted him and that he panicked about the midnight plant cutoff. Ms. Gallagher held Marcus after school for an impromptu 3-minute recorded audio interview in the stadium. Tyler transcribed Marcus's actual words (*'I honestly didn't think the bar was gonna stay up. When I saw the white flag, I just started screaming and ran straight to Coach Dan'*), redrafted the copy block, and uploaded the signature on time.
+
+---
+
+### 6.2 Case Study 2: The Senior Superlative 'Polishing' Trap (Synthetic Rewriting)
+
+**Context:** At Lincoln High School, junior staff writer Chloe was compiling the Senior Superlatives featurettes. For the 'Most Likely to Build the Next Tech Giant' spread, senior Jordan submitted a brief 6-word response to Chloe's Google Form prompt: *'I just like coding robotics stuff.'*
+
+**The Incident:** Chloe worried that the 6-word quote was too short to fill the designated 65-word text box on the InDesign layout. She pasted Jordan's response into Claude with the prompt: *'Expand this short quote into a sophisticated, 3-sentence statement about entrepreneurship, passion for computer science, and high school memories for a senior yearbook tribute.'* Chloe then pasted the polished output into the Google Docs copy sheet:
+
+> *'Developing algorithmic solutions and constructing competitive robotics has provided me with an invaluable foundation. My time at Lincoln has nurtured my passion for innovation, and I am excited to leverage these skills as I pursue technological entrepreneurship in higher education.'*
+
+**The Generic AI Detector Failure:** A whole-document scanner evaluated the 12-profile superlative spread and returned an inconclusive 35% AI score without indicating which of the 12 senior entries contained synthetic text.
+
+**The Checkmark Resolution:** Publication adviser Mr. Henderson opened Checkmark's **External Paste Inspector**:
+1. **External Paste Capture:** Checkmark recorded an external paste event of 48 words at 10:14 PM, preserving the full clipboard content.
+2. **Source Asset Comparison:** Mr. Henderson cross-referenced the raw Google Form submission with the pasted copy, revealing that 85% of the printed words were never spoken or written by Jordan.
+3. **Restorative Resolution:** Mr. Henderson met with Chloe and explained the legal and ethical principles of scholastic journalism: student journalists cannot put words into a source's mouth or alter quotes to fill visual space. Instead of using generative AI to expand short responses, Mr. Henderson taught Chloe how to conduct a 2-minute follow-up interview asking open-ended questions (*'What specific robotics project did you work on this year?'*). Jordan explained how their team spent 40 hours redesigning an aluminum gear intake after it broke at the state qualifiers. Chloe wrote an authentic 2-sentence narrative context lead followed by Jordan's genuine 15-word quote, perfectly filling the layout geometry without violating journalistic ethics.
+
+---
+
+### 6.3 Case Study 3: The False Positive Exoneration of an AP-Style Sports Lead
+
+**Context:** At Westlake High School, junior sports editor Sam wrote the season recap for the girls varsity soccer team. Following standard Associated Press (AP) Style rules taught in scholastic journalism class, Sam opened his feature story with a traditional inverted-pyramid lead:
+
+> *'The varsity girls soccer team concluded their 2025-2026 campaign with a 14-3-2 overall record, capturing the Class 5A Region III championship title on Saturday, Nov. 8, at Legacy Stadium after defeating Westlake North 2-1 in extra time.'*
+
+**The Generic AI Detector Failure:** The student copy editor ran Sam's draft through a commercial AI detector. Because the sentence followed strict, formulaic AP style conventions with predictable syntax (low perplexity), the detector flagged Sam's opening paragraph as **92% AI-Generated**, leading the student editorial board to accuse Sam of using ChatGPT.
+
+**The Checkmark Resolution:** Distressed by the accusation, Sam requested a formal review with adviser Mrs. Alvarez using **Checkmark Plagiarism**:
+1. **Essay Playback Forensic Replay:** Mrs. Alvarez launched Essay Playback at 4x speed. The playback video demonstrated that Sam drafted the lead sentence over 14 minutes on his school Chromebook, consulting the team's official MaxPreps scorebook in another tab. Sam paused to calculate the overall record, backspaced twice to correct the capitalization of 'Region III,' and reordered the prepositional phrases to align with JEA caption formatting.
+2. **Definitive Exoneration:** The presence of authentic composing pauses, manual character revisions, and source consultation telemetry proved conclusively that the low perplexity was the natural result of excellent journalistic training, not generative AI.
+3. **Restorative Outcome:** Mrs. Alvarez utilized the incident to teach the entire editorial staff why generic black-box percentage detectors cannot be trusted for disciplinary decisions and established Checkmark Essay Playback as the mandatory standard of proof for all publication audits.

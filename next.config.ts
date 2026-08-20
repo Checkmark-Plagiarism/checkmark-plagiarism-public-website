@@ -7,11 +7,14 @@ const nextConfig = {
   },
   outputFileTracingExcludes: {
     '*': [
+      './public/**/*',
+      'public/**/*',
       './content/**/*',
       './scripts/**/*',
       './tests/**/*',
       './logs/**/*',
       './**/*.md',
+      './.next/cache/**/*',
     ],
   },
   async redirects() {
