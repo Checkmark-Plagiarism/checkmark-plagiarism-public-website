@@ -1,0 +1,39 @@
+---
+## 5. Technical Architecture: How Checkmark Evaluates Sourcing with Quote-Anchored Precision
+Checkmark Plagiarism does not treat student essays as an unstructured block of text passed to a black-box model. Instead, Checkmark employs a multi-tiered **Deterministic Abstract Syntax Tree (AST) Parsing and Evidence Extraction Engine** specifically tuned to College Board DBQ rubrics.
+┌──────────────────────────────────────────────────────────────────────────────────────────┐
+│              CHECKMARK AI RUBRIC AUTOGRADING PIPELINE FOR AP HISTORY DBQS                │
+├──────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                          │
+│   1. SUBMISSION INGESTION                                                                │
+│      ├── Canvas LMS / Agilix Buzz / Google Classroom LTI 1.3 Sync                        │
+│      └── Essay Playback™ Writing Telemetry & Keystroke Verification                      │
+│                                                                                          │
+│   2. STRUCTURAL PARSING & DISCIPLINARY DECOMPOSITION                                     │
+│      ├── Thesis/Claim Node Identification (Intro/Conclusion Boundary Scan)               │
+│      ├── Historical Contextualization Window Detection                                   │
+│      ├── Document Reference Extraction (Docs 1–7 regex & semantic mapping)               │
+│      └── Outside Evidence Fact-Checking Engine                                           │
+│                                                                                          │
+│   3. HIPP SOURCING & POV EVALUATION ENGINE                                               │
+│      ├── Multi-Tier Classification (Summary vs. Attribution vs. Sourcing)               │
+│      ├── Author Position & Bias Causal Link Verification                                 │
+│      ├── Mandatory 2/3 Document Threshold Tallying                                       │
+│      └── Verbatim Quote Extraction & Sidebar Card Generation                             │
+│                                                                                          │
+│   4. TEACHER-IN-THE-LOOP CONTROL CONSOLE                                                 │
+│      ├── Calibrated Sourcing Sliders & 1-Click Score Adjustments                         │
+│      ├── Editable Formative Feedback Justifications                                      │
+│      └── Batch Pre-Moderation & Inter-Rater Alignment                                    │
+│                                                                                          │
+│   5. DIRECT LMS GRADEBOOK PASSBACK                                                       │
+│      └── 1EdTech LTI 1.3 Advantage AGS 2.0 Direct Passback into Gradebook                 │
+│                                                                                          │
+└──────────────────────────────────────────────────────────────────────────────────────────┘
+### The Three Technical Pillars of Checkmark's Sourcing Evaluator
+#### 1. Verbatim Quote-Anchored Evidence Extraction
+Every single point assigned or withheld on the 7-point rubric is anchored to the student's exact prose. Checkmark highlights the specific sentence in the essay viewer and generates a corresponding **Evidence Card** in the right-hand sidebar. If a student or parent asks why the Sourcing point was not awarded, the teacher does not have to defend an opaque score; the evidence card displays the exact student sentence alongside the specific disciplinary rule that was not satisfied.
+#### 2. Two-Way Interactive Linking
+Clicking any highlighted sourcing passage in the essay immediately scrolls to and expands its evaluation card in the sidebar. Conversely, clicking the 'Doc 3 Sourcing' tag in the rubric breakdown highlights the corresponding student paragraph in yellow. This eliminates the frantic search through five-page essays to locate where a student hid their HIPP attempt.
+#### 3. Honest Guardrails & Confidence Calibration
+If an essay is under 250 words or fails to cite at least three documents, Checkmark’s engine marks the Sourcing criterion as Incomplete / Insufficient Evidence rather than generating speculative scores. When student writing falls into borderline territory (such as subtle irony or ambiguous tone analysis), Checkmark surfaces a **Calibrated Confidence Slider** that flags the passage for teacher review rather than making an arbitrary automated decision.
