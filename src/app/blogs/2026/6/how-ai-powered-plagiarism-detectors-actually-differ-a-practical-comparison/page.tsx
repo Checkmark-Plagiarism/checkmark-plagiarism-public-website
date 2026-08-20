@@ -51,10 +51,12 @@ const bodyHtml = `<p>Walk into any faculty meeting in 2026 and ask which plagiar
 <p>The right tool is not the one with the highest advertised accuracy. It is the one your teachers trust enough to question.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

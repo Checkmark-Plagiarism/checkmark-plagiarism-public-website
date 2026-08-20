@@ -45,10 +45,12 @@ const bodyHtml = `<p>There is a strange moment that happens to almost every grad
 <p>Graduate teaching assistants are doing some of the most important and least recognized work in the university. The least we can do is stop pretending it requires no preparation, and start treating teaching like the demanding, learnable craft it actually is.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

@@ -53,10 +53,12 @@ const bodyHtml = `<p>There is a thriving genre of internet video where a person 
 <p>Mirror, mirror on the wall: the realest one was never the one that looked perfect. It was the one that could show its work.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

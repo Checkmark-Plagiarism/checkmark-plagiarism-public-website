@@ -50,10 +50,12 @@ const bodyHtml = `<p>Version history in Google Docs is the running log of every 
 <p>But if the reason you are reading this is academic pressure, pause. The edit history you want to erase is usually the strongest proof of honest work you will ever have. Deleting it does not make the underlying question go away; it just removes your best answer to it. The smartest move is almost never to scrub the record. It is to write in a way that makes the record something you are glad to show.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

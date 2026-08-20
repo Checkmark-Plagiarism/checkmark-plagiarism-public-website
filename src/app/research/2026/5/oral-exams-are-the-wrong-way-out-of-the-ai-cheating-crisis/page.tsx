@@ -51,10 +51,12 @@ Annual Review of Applied Linguistics on L2 anxiety (Gkonou et al., 2017)</p>
 <p>If the reason we&#39;re going medieval is that we can no longer tell whose thinking an essay represents, the answer is not to stop assigning essays. It&#39;s to stop pretending that a clean final draft was ever the only thing worth looking at.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

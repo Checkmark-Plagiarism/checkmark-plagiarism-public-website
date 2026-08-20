@@ -52,10 +52,12 @@ const bodyHtml = `<p>A teenager scrolling TikTok late at night sees a familiar f
 <p>If a celebrity in your feed is asking for your credit card, the safest assumption is the simplest one. It is not them.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

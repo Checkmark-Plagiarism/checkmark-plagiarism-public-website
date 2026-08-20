@@ -855,11 +855,12 @@ const bodyHtml = `
 `;
 
 type PageProps = {
-  searchParams?: Promise<Record<string, string | string[] | undefined>> | Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
 export default async function Page(props: PageProps) {
-  const searchParams = props.searchParams ? await props.searchParams : undefined;
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

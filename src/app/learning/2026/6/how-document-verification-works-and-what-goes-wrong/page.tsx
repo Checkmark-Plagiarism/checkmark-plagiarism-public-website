@@ -51,10 +51,12 @@ const bodyHtml = `<p>Document verification is the set of steps a plagiarism and 
 <p>Document verification is invisible when it works and baffling when it does not, but it is not magic. It is a short pipeline of ingest, extract, normalize, compare, and report, and nearly every problem traces back to the extraction step quietly failing on a difficult file. A score you can trust is a score on text the tool genuinely read, so check the word count, open the highlighted view, and never let a confident percentage substitute for a glance at what the system actually saw. The most important number in any report is not the percentage. It is the count of words the tool was able to read in the first place.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

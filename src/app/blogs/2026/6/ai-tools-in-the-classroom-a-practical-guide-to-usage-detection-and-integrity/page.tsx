@@ -51,10 +51,12 @@ const bodyHtml = `<p>Two years into the ChatGPT era, the conversation in most st
 <p>The tools are not going away, and neither is the value of a student who can actually reason on the page. Our job did not change. The terrain did. AI in the classroom is not a thing to detect and defeat. It is a thing to manage, the way we manage every other tool that makes shortcuts cheap: by making the real work matter more than the shortcut ever could.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

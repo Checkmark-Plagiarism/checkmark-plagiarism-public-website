@@ -58,10 +58,12 @@ const bodyHtml = `<p>AI text detection is the practice of estimating whether a p
 <p>Detection is a useful signal and a poor judge. Across languages that gap only widens. The right way to use these tools is as a prompt to look closer, never as the last word, and the further you travel from English the more that caution matters.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

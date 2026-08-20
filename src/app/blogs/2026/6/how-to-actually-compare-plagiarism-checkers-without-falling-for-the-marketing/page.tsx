@@ -52,10 +52,12 @@ const bodyHtml = `<p>Search &quot;best plagiarism checker&quot; and you will get
 <p>The best plagiarism checker is not the one with the most features. It is the one whose reports you would be comfortable defending in a meeting with the kid sitting across from you.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

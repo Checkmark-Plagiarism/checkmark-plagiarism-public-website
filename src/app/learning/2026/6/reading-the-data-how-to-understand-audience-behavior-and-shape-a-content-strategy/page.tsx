@@ -55,10 +55,12 @@ const bodyHtml = `<p>Analyzing audience behavior means looking at the trail peop
 <p>Understanding audience behavior is less about software and more about a habit of mind: ask a real question, find the few numbers that answer it, look for patterns rather than flukes, make a change, and check what happened. Do that on a loop and your content strategy stops being a stack of guesses and starts being a conversation with the people you are actually trying to reach. The data does not make the decisions for you. It just makes sure you are listening.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

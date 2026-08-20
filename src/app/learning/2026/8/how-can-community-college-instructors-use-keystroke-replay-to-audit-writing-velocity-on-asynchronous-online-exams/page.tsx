@@ -894,12 +894,13 @@ const bodyHtml = `
 `;
 
 type PageProps = {
-  searchParams?: Promise<Record<string, string | string[] | undefined>> | Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
 export default async function Page(props: PageProps) {
-  const resolvedSearchParams = await props.searchParams;
-  const refValue = typeof resolvedSearchParams?.ref === 'string' ? resolvedSearchParams.ref : undefined;
+  const searchParams = await props.searchParams;
+  const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (
     <ArticleLayout

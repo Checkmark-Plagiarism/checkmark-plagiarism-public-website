@@ -51,10 +51,12 @@ const bodyHtml = `<p>There is no shortage of &quot;100 best free tools for teach
 <p>The best free tool a teacher has is still the judgment to know which tools are worth keeping. Spend it well.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

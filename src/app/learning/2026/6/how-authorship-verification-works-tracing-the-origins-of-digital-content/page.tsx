@@ -45,10 +45,12 @@ const bodyHtml = `<p>Authorship verification is the practice of asking a simple 
 <p>Authorship verification will not hand anyone a certainty, and that is the honest takeaway. What it does is turn a vague feeling that something is off into a set of concrete, checkable signals. Used well, it gives a teacher reasons instead of just suspicions, and reasons are what a fair conversation is built on.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

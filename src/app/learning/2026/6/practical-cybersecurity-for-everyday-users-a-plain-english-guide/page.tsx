@@ -56,10 +56,12 @@ const bodyHtml = `<p>Cybersecurity sounds like something that belongs to IT depa
 <p>Cybersecurity for everyday people is not about becoming an expert. It is about being a little harder to fool and a little harder to crack than you were last week. Lock the doors that matter, and most of the danger simply moves along to someone who left theirs open.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

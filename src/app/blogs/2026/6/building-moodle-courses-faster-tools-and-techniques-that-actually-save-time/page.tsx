@@ -45,10 +45,12 @@ const bodyHtml = `<p>Moodle is one of those tools that rewards the people who le
 <p>The thread running through all of this is simple. Moodle is built for reuse, and the teachers who thrive on it are the ones who treat every hour of setup as an investment rather than a chore. Build it well once, copy it forever, and automate the checks that would otherwise pile up. Do that, and the empty whiteboard stops being intimidating. It becomes a place you have already been.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

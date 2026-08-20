@@ -66,10 +66,12 @@ const bodyHtml = `<p>If you have ever set up a new tool inside Canvas and watche
 <p>Get user synchronization right once at the top, and the rest of the year mostly takes care of itself: every student is recognized, every submission lands where it should, and nobody spends their planning period matching essays to names by hand.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

@@ -53,10 +53,12 @@ const bodyHtml = `<p>By now, every teacher reading this has had the moment. A pa
 <p>ChatGPT did not break education. It just made it impossible to keep pretending that assigning a five-paragraph essay over the weekend was ever really teaching writing in the first place. The tool is here. The only question left is whether your school is teaching students to think alongside it, or just hoping to catch them with it.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

@@ -48,10 +48,12 @@ const bodyHtml = `<p>If you have searched for any AI writing tool lately, you ha
 <p>Schools do not need another scorecard ranking paraphrasers by price. They need a clear-eyed account of what these tools do to learning, written by people who answer to teachers rather than to affiliate dashboards. Until that account is the default, treat every five-star verdict as the start of your homework, not the end of it.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

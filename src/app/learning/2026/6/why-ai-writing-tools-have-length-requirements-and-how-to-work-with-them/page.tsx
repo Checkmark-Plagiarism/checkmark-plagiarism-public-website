@@ -60,10 +60,12 @@ const bodyHtml = `<p>If you have ever pasted a paragraph into an AI detector and
 <p>Length requirements are not a bug or a dodge. They are the tool drawing a line between what it can defend and what it cannot. The teachers who get the most out of these systems are the ones who read that line as information rather than as an obstacle. Give the tool enough to work with, believe it when it says it is unsure, and let the score start a conversation rather than end one.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

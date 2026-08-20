@@ -46,10 +46,12 @@ const bodyHtml = `<p>Every few years a song you love ends up in a courtroom. A j
 <p>There are only twelve notes and twenty six letters, and the whole question of originality lives in what you do with the overlap. Teach students to hear that difference, and you have taught them something no detector ever could.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

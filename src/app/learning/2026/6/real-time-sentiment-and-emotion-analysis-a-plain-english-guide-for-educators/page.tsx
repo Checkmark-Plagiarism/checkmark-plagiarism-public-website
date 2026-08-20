@@ -62,10 +62,12 @@ const bodyHtml = `<p>Sentiment analysis is the practice of using software to rea
 <p>Real-time sentiment and emotion analysis is a useful instrument with a narrow honest job: spotting patterns in text fast enough to prompt timely human attention. It is not a mind reader, and it should never be sold as one. The schools that get the most out of it are the ones that understand the machinery well enough to trust it a little and question it a lot. Read the label as a question, not an answer, and you will be using it the way it actually works.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

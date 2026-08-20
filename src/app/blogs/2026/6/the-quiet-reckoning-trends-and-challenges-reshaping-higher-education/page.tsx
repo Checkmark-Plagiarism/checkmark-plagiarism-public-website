@@ -48,10 +48,12 @@ const bodyHtml = `<p>There is a particular kind of pressure that builds slowly, 
 <p>The colleges that thrive in the next decade will not be the ones that wait for things to go back to normal. They will be the ones that decide normal is something they get to redefine.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

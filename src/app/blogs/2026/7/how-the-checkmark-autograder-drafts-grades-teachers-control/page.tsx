@@ -45,10 +45,12 @@ const bodyHtml = `<p>Teachers do not need convincing that grading essays eats ev
 <p>The mechanics, end to end, are in our <a href="/teacher-support/autograder-and-rubrics">Autograder &amp; Rubrics guide</a>, and the service overview lives at <a href="/services/autograder">AI Autograder &amp; Rubrics</a>. Or watch it grade something real: the <a href="/demo">live demo</a> scores a sample essay against a rubric and writes out its reasoning while you wait.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

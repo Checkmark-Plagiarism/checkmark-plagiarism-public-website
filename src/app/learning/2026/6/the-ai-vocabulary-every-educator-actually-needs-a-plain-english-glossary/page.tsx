@@ -60,10 +60,12 @@ const bodyHtml = `<p>An AI glossary is just a list of definitions for the words 
 <p>Vocabulary is not the point. Good questions are. But you cannot ask a good question about a word you do not understand, and now you understand the words. Next time someone drops &quot;the AI engine uses deep learning for personalization,&quot; you will hear it for what it is: a sentence that means something, and one you are fully equipped to push on.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

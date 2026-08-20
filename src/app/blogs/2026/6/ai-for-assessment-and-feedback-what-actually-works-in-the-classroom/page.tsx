@@ -46,10 +46,12 @@ const bodyHtml = `<p>There is a particular kind of Sunday that every teacher kno
 <p>The teachers who will thrive in the next few years are not the ones who resist AI and not the ones who surrender to it. They are the ones who figured out which parts of the job are sacred human judgment and which parts are just toil, then aimed the machine squarely at the toil. Grade with your own eyes. Design with the machine&#39;s speed. Give feedback with both. And take back the Sunday.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

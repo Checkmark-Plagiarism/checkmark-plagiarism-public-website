@@ -53,10 +53,12 @@ const bodyHtml = `<p>When people say &quot;AI&quot; in a staff meeting, they alm
 <p>Next time someone says &quot;we should use AI for this,&quot; ask which of the three questions it answers. Is it producing new content, forecasting a likely outcome, or carrying out a multi-step task? Generators write, predictors guess, agents act. Hold those three verbs in your head and the buzzwords stop being a fog and start being a map.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

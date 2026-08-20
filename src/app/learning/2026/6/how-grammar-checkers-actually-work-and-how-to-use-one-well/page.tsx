@@ -55,10 +55,12 @@ const bodyHtml = `<p>A grammar checker is software that reads a piece of writing
 <p>A grammar checker is a good listener with a narrow vocabulary. Use it for what it hears well, and keep your own judgment for everything else.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

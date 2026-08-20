@@ -59,10 +59,12 @@ const bodyHtml = `<p>A password is something you know. A key card is something y
 <p>The honest summary is this. Biometrics are a genuine upgrade over passwords for many everyday uses, and they are not a magic solution to security. They trade one set of problems for another. The convenience is real. So is the permanence. Treat your fingerprint less like a password and more like a tattoo: useful, distinctive, and very, very hard to take back.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

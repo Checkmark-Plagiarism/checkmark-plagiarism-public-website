@@ -70,10 +70,12 @@ const bodyHtml = `<p>Clarity in writing is the quality that lets a reader unders
 <p>Clarity is not a gift some writers are born with. It is a set of moves, repeated until they become habit, and the writer who runs every sentence through one question, will the reader get this the first time, is already most of the way there.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

@@ -49,10 +49,12 @@ const bodyHtml = `<p>Ask a woman who reports for a living what lands in her inbo
 <p>A byline should be an invitation to read someone&#39;s work, not a target painted on her back. Protecting the people who report the news is not a favor to them. It is how the rest of us keep getting the truth.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

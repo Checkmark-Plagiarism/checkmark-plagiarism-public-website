@@ -68,10 +68,12 @@ const bodyHtml = `<p>If you have ever glanced over a student&#39;s shoulder or s
 <p>&quot;TS&quot; does not have one meaning, and pretending it does is how adults get it wrong. Most of the time, from a teenager, it just means &quot;this&quot; with a little attitude. Sometimes it means &quot;talking stage,&quot; sometimes it means TypeScript, and occasionally it carries an edge or an older meaning that lives in a different corner of the internet. Read the context, check the platform, and when the stakes are real, just ask. The two letters are not the mystery. The meaning is, and now you know where to find it.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

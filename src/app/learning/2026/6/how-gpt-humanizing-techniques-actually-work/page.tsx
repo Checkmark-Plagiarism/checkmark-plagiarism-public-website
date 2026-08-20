@@ -55,10 +55,12 @@ const bodyHtml = `<p>When people talk about &quot;humanizing&quot; GPT output, t
 <p>The smartest posture for a school is not panic and not blind faith in any one tool. It is to understand the techniques well enough to read the room, and to keep building the kind of human knowledge of a student&#39;s work that no rewriting tool can touch.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

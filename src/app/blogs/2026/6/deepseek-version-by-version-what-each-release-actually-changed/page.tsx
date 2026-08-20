@@ -47,10 +47,12 @@ const bodyHtml = `<p>DeepSeek went from a name almost nobody outside of machine 
 <p>You do not have to track the version numbers. You just have to teach, and assess, like the tools are good and getting better, because they are.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

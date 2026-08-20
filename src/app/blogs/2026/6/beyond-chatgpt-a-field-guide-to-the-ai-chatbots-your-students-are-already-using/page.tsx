@@ -51,10 +51,12 @@ const bodyHtml = `<p>When a teacher says &quot;I think a student used AI on this
 <p>The next time a student hands you something that sounds a little too polished, resist the urge to ask which robot wrote it. Ask them to tell you what they meant. That question works no matter how long the shelf gets.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

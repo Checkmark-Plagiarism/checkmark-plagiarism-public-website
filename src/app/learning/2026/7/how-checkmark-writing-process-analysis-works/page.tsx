@@ -53,10 +53,12 @@ const bodyHtml = `<p>Most integrity tools analyze a finished document. Checkmark
 <p>See it in the product on our <a href="/services/writing-process">Writing Process Analysis</a> page, explore tailored solutions for <a href="/solutions/high-schools">High Schools</a> and <a href="/solutions/private-schools">Private Academies</a>, walk through a full report in the <a href="/teacher-support/reading-the-report">teacher guide</a>, or <a href="/demo">try the live demo</a>.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

@@ -68,10 +68,12 @@ const bodyHtml = `<p>Say a student stubs a toe on a desk leg and lets out a shar
 <p>And for anyone curious about language, interjections are a reminder that even our most automatic sounds are quietly shaped by the people around us. We think we yelp by instinct. Mostly, we yelp the way our language taught us to. Huh. Who knew.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

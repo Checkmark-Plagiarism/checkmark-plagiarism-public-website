@@ -58,10 +58,12 @@ const bodyHtml = `<p>A large language model, or LLM, is a computer program that 
 <p>The single most useful thing you can teach a student about AI is this: it is very good at sounding right, which is exactly why you have to check whether it is.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

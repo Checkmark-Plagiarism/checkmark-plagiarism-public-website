@@ -43,10 +43,12 @@ const bodyHtml = `<p>If you have spent any time shopping for an AI detection too
 <p>Compare tools the way you would want to be evaluated yourself: on the whole picture, with the benefit of the doubt, and never on a single number out of context.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

@@ -45,10 +45,12 @@ const bodyHtml = `<p>We build an AI detector, so take this from the people with 
 <p>More on the mechanics: <a href="/services/ai-detection">AI Writing Detection</a> and <a href="/services/writing-process">Writing Process Analysis</a>. Learn how Checkmark works for your institution: <a href="/solutions/schools">Schools Overview</a>, <a href="/solutions/high-schools">High Schools</a>, <a href="/solutions/middle-schools">Middle Schools</a>, and <a href="/solutions/school-districts">School Districts</a>. Or <a href="/demo">run your own text through the demo</a> and read the report it produces.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

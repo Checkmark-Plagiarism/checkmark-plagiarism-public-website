@@ -59,10 +59,12 @@ const bodyHtml = `<p>An AI humanizer is a tool that takes text written by an AI 
 <p>Detection still matters as a signal, and it should be used as one. But the deepest defense against a tool built to fake human writing is to ask students to do the human thinking out loud, where no app can do it for them.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

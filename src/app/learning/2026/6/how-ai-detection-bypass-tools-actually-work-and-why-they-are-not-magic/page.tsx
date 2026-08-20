@@ -54,10 +54,12 @@ const bodyHtml = `<p>Search the phrase &quot;bypass AI detection&quot; and you w
 <p>The bypass industry sells a shortcut around a number. Your job was never to win a fight against a number. It was to know whether a student can think, and that is one test no humanizer has figured out how to pass.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

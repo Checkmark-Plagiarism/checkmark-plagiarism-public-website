@@ -52,10 +52,12 @@ const bodyHtml = `<p>An AI language model is a computer program trained to predi
 <p>The clearest way to stay sane about AI in education is to remember the one sentence we started with: it predicts the next piece of text. Generation, detection, and everything beyond is just that idea, pushed in different directions. Understand the trick, and the tools stop being magic and start being manageable.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

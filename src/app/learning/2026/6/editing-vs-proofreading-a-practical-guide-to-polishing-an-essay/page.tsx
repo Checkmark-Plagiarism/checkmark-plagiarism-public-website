@@ -61,10 +61,12 @@ const bodyHtml = `<p>Most students treat the end of an essay as a single act: yo
 <p>The first four are editing. The fifth is proofreading. Keep them separate, do them in that order, and the gap between a rushed draft and a polished essay turns out to be smaller, and far more achievable, than it looks.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

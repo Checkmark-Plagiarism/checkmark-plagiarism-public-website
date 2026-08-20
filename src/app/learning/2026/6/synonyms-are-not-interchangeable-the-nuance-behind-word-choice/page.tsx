@@ -54,10 +54,12 @@ const bodyHtml = `<p>A synonym is a word that means roughly the same thing as an
 <p>A definition tells you what a word can mean. Only nuance tells you what it will do once you put it in a sentence, and the writers worth reading are the ones who learned the difference.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

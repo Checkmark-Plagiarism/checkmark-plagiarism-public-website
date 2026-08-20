@@ -62,10 +62,12 @@ const bodyHtml = `<p>Moodle is one of the most widely used learning management s
 <p>The short version: a Moodle integration is plumbing, and good plumbing is the kind you stop noticing. Set the connection once, decide what to sync, and your originality checks become a quiet, automatic part of how assignments already work.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

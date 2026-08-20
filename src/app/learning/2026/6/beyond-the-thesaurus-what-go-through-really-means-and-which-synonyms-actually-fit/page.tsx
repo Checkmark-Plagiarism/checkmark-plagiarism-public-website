@@ -55,10 +55,12 @@ const bodyHtml = `<p>&quot;Go through&quot; is a phrasal verb that means, in the
 <p>&quot;Go through&quot; is a useful phrase precisely because it is flexible. But flexibility is the enemy of precision, and good writing lives on precision. The best synonym is never the most impressive one. It is the one that says exactly what you already meant.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

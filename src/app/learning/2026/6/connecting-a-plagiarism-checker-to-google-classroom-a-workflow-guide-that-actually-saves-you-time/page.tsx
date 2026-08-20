@@ -55,10 +55,12 @@ const bodyHtml = `<p>A Google Classroom integration is a connection between Clas
 <p>The right mental model is simple: a Google Classroom integration is plumbing. It moves work from where students submit it to where it gets checked and back to where you grade, automatically and in the background. Set it up once, configure the defaults on purpose, send that one email to your admin if you hit a wall, and then let it disappear into your routine. The best integration is the one you stop thinking about, because it quietly hands you back the part of the day you would rather spend teaching.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

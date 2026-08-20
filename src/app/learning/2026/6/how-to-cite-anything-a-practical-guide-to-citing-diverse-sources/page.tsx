@@ -62,10 +62,12 @@ const bodyHtml = `<p>A citation is a short, structured note that tells a reader 
 <p>Cite the thing you actually used, answer the four questions, and nest outward through the containers. Do that and you can cite anything, even the strange stuff that does not have a tidy example in the handbook.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

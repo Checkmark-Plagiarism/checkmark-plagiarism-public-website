@@ -53,10 +53,12 @@ const bodyHtml = `<p>Artistic creation is the process by which a person turns ra
 <p>Understanding how art is actually made does not strip away its wonder. It just moves the wonder to the right place: not in a flash of genius, but in the long, deliberate, deeply human work of choosing.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

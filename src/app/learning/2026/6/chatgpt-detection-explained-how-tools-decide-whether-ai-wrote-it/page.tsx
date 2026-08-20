@@ -64,10 +64,12 @@ const bodyHtml = `<p>A ChatGPT detector is a tool that reads a piece of writing 
 <p>ChatGPT detection is real, it is useful, and it is getting better. It is also probabilistic, fallible, and easy to misread as something more certain than it is. The teachers who get the most out of these tools are the ones who understand exactly that: a detector hands you a well-informed guess, and the judgment of what to do with it stays human.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

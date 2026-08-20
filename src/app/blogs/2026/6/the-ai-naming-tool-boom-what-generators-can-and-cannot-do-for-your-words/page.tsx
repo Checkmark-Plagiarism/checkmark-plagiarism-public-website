@@ -51,10 +51,12 @@ const bodyHtml = `<p>There is a particular kind of writer&#39;s block that has n
 <p>The best name was never going to come from a button anyway. But the button can get you unstuck, and sometimes unstuck is exactly what the work needs. Use the generator to find the door. Just make sure you are the one who walks through it.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

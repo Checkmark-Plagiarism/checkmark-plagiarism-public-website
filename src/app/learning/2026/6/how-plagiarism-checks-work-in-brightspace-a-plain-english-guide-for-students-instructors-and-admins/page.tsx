@@ -54,10 +54,12 @@ const bodyHtml = `<p>A plagiarism check in Brightspace is an automated compariso
 <p>Brightspace is the building, not the inspector. Students submit through the Assignments tool, instructors read the highlighted report rather than the headline number, and administrators wire up the integration through LTI and set the policies that govern it. The technology is genuinely useful, but only in the hands of people who treat a similarity score as the beginning of a question, never the end of one. Used that way, an originality check stops being a gotcha and becomes one more way to teach students how to write honestly.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

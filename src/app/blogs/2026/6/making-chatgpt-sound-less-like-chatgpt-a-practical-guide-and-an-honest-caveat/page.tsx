@@ -60,10 +60,12 @@ const bodyHtml = `<p>You can usually spot it within a sentence or two. The throa
 <p>So yes, you can make ChatGPT sound less like ChatGPT. The honest way is also the easy way, and it does not come in a one-click button. It comes from caring enough to put the words back in your own mouth.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

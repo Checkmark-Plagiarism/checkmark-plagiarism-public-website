@@ -53,10 +53,12 @@ const bodyHtml = `<p>Web accessibility means building a website so that people w
 <p>Accessibility is not a project you complete and forget. It is a habit, the same way proofreading or backing up files is a habit. The schools that do it well are not the ones with the biggest budgets. They are the ones who treat every new page as something a real person, with a real disability, will try to use tomorrow morning. Build for that person, and you have built for everyone.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

@@ -46,10 +46,12 @@ const bodyHtml = `<p>When ChatGPT arrived in late 2022, a lot of educators treat
 <p>The tools will keep changing. The goal does not have to. Teach the thinking, design assignments worth doing, and treat every AI flag as the start of a conversation rather than the end of one.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

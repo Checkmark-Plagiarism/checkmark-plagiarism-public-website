@@ -49,10 +49,12 @@ const bodyHtml = `<p>Ask a teenager where they go when they are stuck on homewor
 <p>The tools will keep changing. Chegg may reinvent itself, Quizlet may win back the users it annoyed, and three apps nobody has heard of yet will be on this list in two years. What will not change is the underlying test: a good study tool leaves the student smarter when they close the laptop. Pick for that, and the brand on the icon barely matters.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

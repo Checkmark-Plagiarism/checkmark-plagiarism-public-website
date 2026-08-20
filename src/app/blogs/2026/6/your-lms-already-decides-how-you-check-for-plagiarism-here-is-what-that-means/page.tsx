@@ -55,10 +55,12 @@ const bodyHtml = `<p>If you run a school, you almost never get to choose your pl
 <p>Plagiarism and AI-writing detection are only as good as the moment a teacher actually looks at them, and that moment happens inside your LMS or it does not happen at all. Pick the checker that fits the floor you already built, not the one with the loudest demo. The best detection tool in your school is the one your teachers never have to think about using.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

@@ -64,10 +64,12 @@ const bodyHtml = `<p>Plagiarism is presenting someone else&#39;s words, ideas, s
 <p>Handled well, a plagiarism case is less a violation to punish than a moment to teach. The students who learn to cite honestly, manage their time, and trust their own voice are the ones who never needed to copy in the first place.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

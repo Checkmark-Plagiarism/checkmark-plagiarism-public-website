@@ -51,10 +51,12 @@ const bodyHtml = `<p>When a student submits an essay, a teacher usually has to a
 <p>If you want the deeper dive on any piece, we have a service page for each: <a href="/services/plagiarism-detection">plagiarism detection</a>, <a href="/services/ai-detection">AI detection</a>, <a href="/services/writing-process">writing process analysis</a>, and the <a href="/services/autograder">autograder</a>. Or skip the reading and <a href="/demo">run an essay through the live demo</a> - the report you get back is the one described above.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

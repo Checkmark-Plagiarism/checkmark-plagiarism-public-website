@@ -66,10 +66,12 @@ const bodyHtml = `<p>A Canvas integration is a piece of software that plugs an o
 <p>A Canvas integration is a trusted, standards-based handshake that lets an outside tool work inside your courses without extra logins or manual data shuffling. The standard doing the work is LTI, the setup is a one-time administrator task followed by a quick per-assignment choice, and the difference between a smooth integration and a frustrating one comes down to piloting, permissions, and knowing who owns it. Get those right and the technology disappears, which is exactly what a good integration is supposed to do.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

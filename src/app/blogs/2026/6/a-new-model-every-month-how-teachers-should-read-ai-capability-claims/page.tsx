@@ -47,10 +47,12 @@ const bodyHtml = `<p>If you teach, you have probably noticed that the AI news cy
 <p>If a tool&#39;s only pitch is that it caught this month&#39;s model, ask what it plans to say next month. The good ones already know they will be asked.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

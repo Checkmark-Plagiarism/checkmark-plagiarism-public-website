@@ -46,10 +46,12 @@ const bodyHtml = `<p>Every few months a new AI detector arrives with a headline 
 <p>Then keep the percentage in its proper place: a flag that starts a conversation, never a gavel that ends one. The best AI detector in the world is still just the second-best teacher in the room.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

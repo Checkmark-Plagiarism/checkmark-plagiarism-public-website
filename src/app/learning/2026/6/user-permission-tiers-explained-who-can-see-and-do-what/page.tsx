@@ -53,10 +53,12 @@ const bodyHtml = `<p>A user permission tier is a named bundle of rules that deci
 <p>Permission tiers are not bureaucracy for its own sake. They are the quiet structure that lets a hundred people share one platform without stepping on each other or on a student&#39;s privacy. Get the tiers right, and the rest of the system mostly takes care of itself.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

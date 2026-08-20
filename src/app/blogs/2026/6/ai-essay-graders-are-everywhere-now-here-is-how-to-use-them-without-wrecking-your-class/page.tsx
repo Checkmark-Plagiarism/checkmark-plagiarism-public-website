@@ -50,10 +50,12 @@ const bodyHtml = `<p>If you teach writing, you already know the math that breaks
 <p>The tools are not going away, and the good ones can give you back some of your weekend. Just remember what you are buying. An AI essay grader is a very fast opinion, not a verdict, and the only person in the room qualified to give the verdict is still you.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

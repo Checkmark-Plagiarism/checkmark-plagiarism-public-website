@@ -62,10 +62,12 @@ const bodyHtml = `<p>Canvas is a learning management system, not a plagiarism de
 <p>Canvas, in the end, is a very good hallway. What catches plagiarism is the tool a school chose to install in it, the settings a teacher chose to use, and the human who chooses to actually read the report.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

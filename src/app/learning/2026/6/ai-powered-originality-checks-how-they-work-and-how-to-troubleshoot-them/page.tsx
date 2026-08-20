@@ -53,10 +53,12 @@ const bodyHtml = `<p>An AI-powered originality check is a tool that scans a piec
 <p>Used that way, an AI-powered originality check stops being a stressful gatekeeper and becomes what it should be: a fast, tireless reader that points at the three paragraphs worth your attention so you can spend your judgment where it counts.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

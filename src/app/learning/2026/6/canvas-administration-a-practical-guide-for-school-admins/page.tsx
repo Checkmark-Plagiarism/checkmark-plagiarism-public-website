@@ -50,10 +50,12 @@ const bodyHtml = `<p>If you have just been handed the keys to your school&#39;s 
 <p>Canvas administration rewards people who think in systems rather than in one-off fixes. The interface really is simple. The discipline of deciding where each setting lives, who can touch it, and how it stays in sync is the part that takes practice, and it is the part that keeps a school running on the day everyone else assumes the technology will just work.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

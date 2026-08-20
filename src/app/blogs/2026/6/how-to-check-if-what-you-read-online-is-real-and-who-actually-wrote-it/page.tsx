@@ -58,10 +58,12 @@ const bodyHtml = `<p>A few years ago, the hardest part of checking a fact online
 <p>Verification is not cynicism. It is the opposite. It is taking information seriously enough to find out whether it deserves your trust, instead of handing that trust out for free to whoever writes the most confident sentence. In a world where anyone can sound like an expert and anything can be generated, the people who keep asking &quot;how do you know&quot; are not the paranoid ones. They are the ones still worth listening to.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

@@ -80,10 +80,12 @@ const bodyHtml = `<p>User onboarding is the process of getting new people into y
 <p>Good access management is invisible when it works. Nobody thanks you for it, but the day a login fails during a deadline or an auditor asks who can see what, the quiet ten minutes you spent setting roles correctly will be the best ten minutes you ever spent.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

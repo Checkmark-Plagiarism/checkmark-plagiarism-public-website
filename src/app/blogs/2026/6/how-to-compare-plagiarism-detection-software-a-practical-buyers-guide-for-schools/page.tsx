@@ -50,10 +50,12 @@ const bodyHtml = `<p>Every school that buys plagiarism detection software eventu
 <p>Compare the reports, not the marketing. Compare the privacy terms as carefully as the features. And remember that the software&#39;s job is to support a teacher&#39;s judgment, never to replace it. The best tool is the one that makes a thoughtful educator faster and more confident, not the one that promises to make the thinking unnecessary.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

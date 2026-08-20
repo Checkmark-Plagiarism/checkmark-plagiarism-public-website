@@ -45,10 +45,12 @@ const bodyHtml = `<p>Most teachers I talk to assume Google Classroom is doing mo
 <p>Google Classroom is a delivery truck, not a security guard. Use its originality reports as a coaching tool, design prompts that only your classroom can answer, read the version history when your gut twitches, save your deepest detector for the work that matters, and spend more energy building honesty than catching its absence. Do that, and the platform stops being a blind spot and starts being a real part of how you keep a classroom honest.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

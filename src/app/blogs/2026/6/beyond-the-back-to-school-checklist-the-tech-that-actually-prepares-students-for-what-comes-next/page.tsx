@@ -49,10 +49,12 @@ const bodyHtml = `<p>Every August, the same article appears in a thousand slight
 <p>The future-focused student is not the one with the most apps. It is the one who knows which tool to reach for, and which one to put down. Everything else is just stuff in a backpack.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

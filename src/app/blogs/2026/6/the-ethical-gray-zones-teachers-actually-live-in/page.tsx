@@ -51,10 +51,12 @@ const bodyHtml = `<p>Search for &quot;ethical issues in education&quot; and you 
 <p>None of this makes the forty seconds easy. Teaching is a moral job disguised as an academic one, and the dilemmas do not stop coming. But the goal was never to be a teacher who never faces hard calls. It is to be one who, when the hard call comes, has already decided what kind of teacher they are going to be.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

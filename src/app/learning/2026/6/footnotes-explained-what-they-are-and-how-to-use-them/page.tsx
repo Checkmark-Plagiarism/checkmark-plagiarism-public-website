@@ -51,10 +51,12 @@ const bodyHtml = `<p>A footnote is a small note placed at the bottom of a page t
 <p>That habit, citing as you write rather than after, is the real skill hiding inside the footnote. The format is just the visible part. Underneath it is a quieter discipline: showing your work, crediting your sources, and trusting that good ideas hold up better when readers can see exactly where they came from.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

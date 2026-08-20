@@ -50,10 +50,12 @@ const bodyHtml = `<p>Every August, a wave of freshmen arrives on campus carrying
 <p>College does not have to be a test of who already knew the rules. The kindest thing we can do for the next class of freshmen is to hand them the rules before they arrive, and then trust them to play.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

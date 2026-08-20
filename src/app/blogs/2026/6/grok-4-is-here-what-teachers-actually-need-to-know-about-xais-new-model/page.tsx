@@ -43,10 +43,12 @@ const bodyHtml = `<p>Every few months a new frontier AI model arrives wearing a 
 <p>The smartest response to the smartest AI in the world is not a smarter detector arms race. It is teaching, and assessment, that a chatbot cannot do your students&#39; thinking for them.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

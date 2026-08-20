@@ -50,10 +50,12 @@ const bodyHtml = `<p>Every few weeks, a plagiarism or AI detection company puts 
 <p>The best integration is the one you forget is there, right up until the moment you remember it is only a tool, and you are still the one grading the paper.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

@@ -47,10 +47,12 @@ const bodyHtml = `<p>A few times a year, a story comes along that looks like bus
 <p>Teach the seams. The headlines will keep supplying new material, and your students will keep needing the skill long after they have forgotten which executive the fuss was ever about.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

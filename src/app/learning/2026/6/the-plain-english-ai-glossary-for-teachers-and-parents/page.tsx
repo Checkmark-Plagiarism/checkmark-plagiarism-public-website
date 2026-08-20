@@ -69,10 +69,12 @@ const bodyHtml = `<p>Every few years a new vocabulary sneaks into the staff room
 <p>Print this page, hand it to the colleague who keeps asking what a &quot;hallucination&quot; is, and you have done more for your school&#39;s AI literacy than most professional development days manage. The jargon is only intimidating until someone defines it plainly. Now someone has.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

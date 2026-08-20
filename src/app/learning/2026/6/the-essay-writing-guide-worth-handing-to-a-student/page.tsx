@@ -59,10 +59,12 @@ const bodyHtml = `<p>An essay is a short piece of writing that makes one point a
 <p>The whole craft comes down to one discipline practiced over and over: decide what you are claiming, then make every paragraph earn it. Teach a student that, and the five paragraphs were never the point. The thinking was.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

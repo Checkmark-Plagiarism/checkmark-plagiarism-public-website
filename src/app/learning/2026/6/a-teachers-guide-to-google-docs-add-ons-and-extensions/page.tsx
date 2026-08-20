@@ -63,10 +63,12 @@ const bodyHtml = `<p>A Google Docs add-on is a small piece of software that bolt
 <p>The takeaway is simple: the most powerful upgrade to Google Docs is already built in, hiding behind the Extensions menu, and the only real skill is learning to read a permission screen before you click Allow.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

@@ -87,10 +87,12 @@ const bodyHtml = `<p>Avoiding first-person pronouns means writing an essay witho
 <p>Avoiding first person is not about hiding. It is about trusting your evidence enough to let it carry the sentence, which is the whole point of an essay anyway.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

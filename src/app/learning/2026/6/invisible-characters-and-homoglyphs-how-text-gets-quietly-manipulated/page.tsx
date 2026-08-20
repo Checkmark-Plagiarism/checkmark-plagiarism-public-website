@@ -51,10 +51,12 @@ const bodyHtml = `<p>Open a student essay in your word processor and what you se
 <p>The deeper lesson is almost philosophical. We tend to believe that reading is the same as knowing, that the visible surface of a text is the text. Subtle manipulation works by exploiting exactly that trust. The defense is not paranoia. It is simply remembering that a document is data, and data can be inspected. What you cannot see, a good tool can.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

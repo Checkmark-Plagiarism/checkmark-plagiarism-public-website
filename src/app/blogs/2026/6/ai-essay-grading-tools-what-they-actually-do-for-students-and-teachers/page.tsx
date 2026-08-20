@@ -51,10 +51,12 @@ const bodyHtml = `<p>Every teacher who has ever carried a tote bag of essays hom
 <p>AI essay graders are not the end of teaching judgment and they are not a magic answer to the grading stack. They are a fast, tireless, slightly unreliable assistant that is brilliant at the first ninety percent and dangerous in the last ten. Use them for the ninety. Keep the ten for yourself, because the last ten percent was always the part that actually mattered.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

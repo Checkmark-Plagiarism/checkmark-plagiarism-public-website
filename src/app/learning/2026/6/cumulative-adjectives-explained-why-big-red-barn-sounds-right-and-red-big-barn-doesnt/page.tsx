@@ -67,10 +67,12 @@ const bodyHtml = `<p>Say these two phrases out loud: &quot;a big red barn&quot; 
 <p>So the next time a phrase sounds right and you cannot say why, you can. Big red barn, every time.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

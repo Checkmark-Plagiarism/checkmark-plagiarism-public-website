@@ -55,10 +55,12 @@ const bodyHtml = `<p>When a teacher pastes a student essay into an AI detector a
 <p>Granularity is not a feature to shop for, it is a lens to choose deliberately. The number is only as meaningful as the chunk of text behind it, so before you trust any AI detection result, ask the question that started this whole piece: 68 percent of what?</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

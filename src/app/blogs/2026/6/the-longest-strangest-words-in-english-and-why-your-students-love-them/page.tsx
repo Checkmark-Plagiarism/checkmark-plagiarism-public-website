@@ -50,10 +50,12 @@ const bodyHtml = `<p>Every teacher has met the kid who, when asked to write a se
 <p>Language is the longest-running collaborative project humans have ever built, and every strange word is a little fossil of someone&#39;s choice. The longest word is a fun question. The better question, the one worth handing to a curious student, is simpler: where do words come from, and who gets to decide what counts?</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

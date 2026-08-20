@@ -55,10 +55,12 @@ const bodyHtml = `<p>An AI text detector is a tool that estimates how likely it 
 <p>The honest summary is this: AI detection tools are useful instruments for measuring the statistical texture of writing, and they are genuinely improving. But they measure surface, not authorship, and the surface is easy to change. Use them as a flashlight, not a gavel.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

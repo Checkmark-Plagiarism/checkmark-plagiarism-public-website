@@ -91,10 +91,12 @@ const bodyHtml = `<p>Every August the same two lists make the rounds. One is the
 <p>And the next time you reach for &quot;welcome back&quot; or a coffee joke, ask which of these seven the room actually needs. The best back-to-school quote is not the cleverest one. It is the one a kid happens to read on the morning they needed exactly that.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

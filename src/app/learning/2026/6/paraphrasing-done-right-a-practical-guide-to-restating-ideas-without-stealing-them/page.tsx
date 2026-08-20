@@ -76,10 +76,12 @@ const bodyHtml = `<p>Paraphrasing is the act of taking someone else&#39;s idea a
 <p>If you remember nothing else: close the source before you write. Almost every paraphrasing failure traces back to writing with the original in view. Read it, understand it well enough to explain it to a friend, look away, write your version, then check it and cite it. That single habit turns paraphrasing from a plagiarism risk into proof that you actually learned something. Which, after all, is the entire point of the assignment.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

@@ -48,10 +48,12 @@ const bodyHtml = `<p>Ask a teacher what they wish they had more of and almost no
 <p>Give a teacher back two hours a night and you have not built a smarter classroom. You have built a sustainable one. That is the workflow win that actually matters.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (

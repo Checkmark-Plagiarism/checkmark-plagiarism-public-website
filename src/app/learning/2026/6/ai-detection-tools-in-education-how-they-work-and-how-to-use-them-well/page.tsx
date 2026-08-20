@@ -52,10 +52,12 @@ const bodyHtml = `<p>An AI detection tool is software that looks for writing pat
 <p>AI detection tools are useful, imperfect, and frequently oversold. They measure statistical traces of how machines write, they get a lot right, and they get enough wrong that no score should ever stand alone as evidence. The schools that use them well treat detection as the start of a conversation rather than the end of one. The technology will keep improving and so will the writing it tries to catch, which means the durable answer was never going to be a better detector. It was always going to be better teaching, clearer policy, and a little more trust in the slow, visible, human process of learning to write.</p>`;
 
 type PageProps = {
-  searchParams?: Record<string, string | string[] | undefined>;
+  params?: Promise<Record<string, string | string[] | undefined>>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export default function Page({ searchParams }: PageProps) {
+export default async function Page(props: PageProps) {
+  const searchParams = await props.searchParams;
   const refValue = typeof searchParams?.ref === 'string' ? searchParams.ref : undefined;
 
   return (
