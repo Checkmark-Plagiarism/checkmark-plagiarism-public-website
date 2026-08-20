@@ -388,8 +388,8 @@ export default function BuzzLMSIntegrationPage() {
             <Screenshot
               src="/images/services/buzz/essay-report-in-buzz.png"
               alt="A Checkmark report under a native Buzz essay question, beside Buzz's own rubric"
-              width={2000}
-              height={1500}
+              width={2646}
+              height={1714}
               caption="A native essay question: the report sits under the question, and grading stays where it was."
             />
           </div>
@@ -506,15 +506,15 @@ export default function BuzzLMSIntegrationPage() {
               <Screenshot
                 src="/images/services/buzz/cq-report-in-buzz.png"
                 alt="A Custom Question report in the Buzz grading view showing pasted, transcribed, uncited and AI tiles"
-                width={2000}
-                height={1500}
+                width={2646}
+                height={1714}
                 caption="Custom Question adds the Pasted and Transcribed tiles, and Playback."
               />
               <Screenshot
                 src="/images/services/buzz/cq-playback.png"
                 alt="Playback replaying a student's writing session inside the Buzz grading view"
-                width={2000}
-                height={1500}
+                width={2646}
+                height={1714}
                 caption="Playback replays the session from blank page to submission."
               />
             </div>
