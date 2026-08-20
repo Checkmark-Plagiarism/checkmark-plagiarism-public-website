@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import {
   ArrowRight,
@@ -6,6 +7,7 @@ import {
   ClipboardList,
   Clipboard,
   ExternalLink,
+  FileText,
   Highlighter,
   KeyRound,
   Lock,
@@ -171,7 +173,23 @@ export default function BuzzLMSIntegrationPage() {
 
       {/* Hero */}
       <ServiceHero
-        title="Integrity evidence inside the Buzz questions you already use"
+        title={
+          <>
+            Integrity evidence inside the{" "}
+            <span className="inline-flex items-baseline whitespace-nowrap">
+              <Image
+                src="/images/services/buzz_icon.png"
+                alt=""
+                aria-hidden="true"
+                width={48}
+                height={48}
+                className="mr-2 h-[0.9em] w-auto self-center"
+              />
+              Buzz
+            </span>{" "}
+            questions you already use
+          </>
+        }
         sub="No rebuilt courses, no separate assignment for students to find, and no change to how you grade."
       >
         <LinkButton href="/demo" variant="hero">
@@ -187,13 +205,13 @@ export default function BuzzLMSIntegrationPage() {
               The native Buzz integration
             </span>
             <h2 className="mt-2 text-3xl font-bold text-foreground">
-              Yes, we support LTI 1.3. On Buzz we can do better than that.
+              We support LTI 1.3. On Buzz, we can do better than that.
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
               Dynamic registration, single sign-on, deep linking, roster sync: all of it works. But
-              an LTI assignment is still a separate activity a teacher has to build and a student
-              has to find. On Buzz, Checkmark attaches to the essay questions already sitting in
-              your assessments.
+              an LTI assignment is still a separate activity a teacher builds and a student has to
+              find. On Buzz, Checkmark attaches to the essay questions already sitting in your
+              assessments.
             </p>
           </div>
 
@@ -239,21 +257,12 @@ export default function BuzzLMSIntegrationPage() {
               </div>
               <div className="space-y-2">
                 <h3 className="text-lg font-semibold text-foreground">
-                  Already using BusyBee? Switch our grading off.
+                  You choose who grades
                 </h3>
                 <p className="text-sm leading-relaxed text-foreground/75">
-                  Checkmark&apos;s autograding is a switch, not a requirement. Leave it off on a
-                  native essay question and BusyBee grades the assignment exactly as it does today,
-                  because Checkmark writes no rubric scores, no per-criterion comments, and nothing
-                  at all into a grading field. You still get the integrity report under the
-                  question.
-                </p>
-                <p className="text-sm leading-relaxed text-foreground/75">
-                  That separation is enforced in code rather than left to configuration, and it is
-                  reversible. Switch our grading on later and it fills your rubric scores, while
-                  the per-criterion Feedback boxes stay BusyBee&apos;s on native questions. Where
-                  Checkmark does write to Buzz it merges into the current teacher response, so
-                  anything already sitting there survives.
+                  Let Checkmark grade, or leave our grading off and let BusyBee do it. With ours
+                  off, Checkmark writes nothing into a grading field at all and you still get the
+                  integrity report under the question. Change your mind whenever you like.
                 </p>
               </div>
             </div>
@@ -320,6 +329,20 @@ export default function BuzzLMSIntegrationPage() {
             </Card>
             <Card className="rounded-3xl border border-border bg-white p-6 shadow-sm">
               <CardContent className="p-0 space-y-3">
+                <div className="h-10 w-10 rounded-xl bg-sky-100 text-sky-700 flex items-center justify-center">
+                  <FileText className="h-5 w-5" />
+                </div>
+                <h3 className="text-lg font-semibold text-foreground">Google Docs, brought over whole</h3>
+                <p className="text-sm text-muted-foreground">
+                  Students who drafted in Google Docs import the document with one button. The text
+                  arrives instantly, and so does the document&apos;s edit history, so paste
+                  detection, transcription and Playback still work on writing that happened before
+                  the student ever opened Buzz.
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="rounded-3xl border border-border bg-white p-6 shadow-sm">
+              <CardContent className="p-0 space-y-3">
                 <div className="h-10 w-10 rounded-xl bg-cyan-100 text-cyan-700 flex items-center justify-center">
                   <KeyRound className="h-5 w-5" />
                 </div>
@@ -328,32 +351,6 @@ export default function BuzzLMSIntegrationPage() {
                   The question handles access, so the report is there when the teacher opens it. No
                   link to find, nothing to redo on another device. Both paths confirm the reader
                   can already grade the course. This one takes fewer steps.
-                </p>
-              </CardContent>
-            </Card>
-            <Card className="rounded-3xl border border-border bg-white p-6 shadow-sm">
-              <CardContent className="p-0 space-y-3">
-                <div className="h-10 w-10 rounded-xl bg-purple-100 text-purple-700 flex items-center justify-center">
-                  <ClipboardList className="h-5 w-5" />
-                </div>
-                <h3 className="text-lg font-semibold text-foreground">Autograding built in</h3>
-                <p className="text-sm text-muted-foreground">
-                  BusyBee does not grade custom questions, so here Checkmark fills your rubric
-                  rather than competing for it. Per-criterion scores land in the rows you authored
-                  in Buzz, for the teacher to accept or change before submitting.
-                </p>
-              </CardContent>
-            </Card>
-            <Card className="rounded-3xl border border-border bg-white p-6 shadow-sm">
-              <CardContent className="p-0 space-y-3">
-                <div className="h-10 w-10 rounded-xl bg-rose-100 text-rose-700 flex items-center justify-center">
-                  <Highlighter className="h-5 w-5" />
-                </div>
-                <h3 className="text-lg font-semibold text-foreground">Anchored feedback</h3>
-                <p className="text-sm text-muted-foreground">
-                  One paragraph per criterion, written to the student, without restating the number.
-                  Feedback quotes the span it refers to and highlights it, so a student can see what
-                  the comment is about instead of guessing.
                 </p>
               </CardContent>
             </Card>
