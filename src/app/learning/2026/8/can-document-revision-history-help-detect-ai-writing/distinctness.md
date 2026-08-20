@@ -2,9 +2,9 @@
 route: "/learning/2026/8/can-document-revision-history-help-detect-ai-writing"
 title: "Can Document Revision History Help Detect AI Writing?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "c9a700ed5ba1f66b106effcd8bfe75f09fe7fab653227ab43b7d208a95fbba89"
-uniqueness_score: 20.86
+uniqueness_score: 21.06
 combined_similarity: 0.9664
 whole_page_top5_similarity: 0.9626
 top_chunk_overlap: 0.9689
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 20.86 / 100
+- **Uniqueness Score**: 21.06 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/can-writing-history-show-whether-a-student-used-ai`
 

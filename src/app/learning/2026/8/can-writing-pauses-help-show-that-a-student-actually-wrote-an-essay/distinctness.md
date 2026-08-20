@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-writing-pauses-help-show-that-a-student-actually-wrote-an-essay"
 title: "Can Writing Pauses Help Show That a Student Actually Wrote an Essay?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "8616b29c7eaf13f97c26a0a9d656a1359f3a6127d99833390a51c124306e793e"
 uniqueness_score: 83.03
 combined_similarity: 0.9366
@@ -21,11 +21,11 @@ remediation_status: "not_needed"
 
 | Rank | Route / Slug | Combined Sim | Page Sim | Top Chunk Sim |
 | :--- | :--- | :--- | :--- | :--- |
-| 1 | `/learning/2026/8/what-does-human-writing-look-like-even-when-an-ai-detector-flags-it` | 0.9552 | 0.8990 | 0.9926 |
+| 1 | `/learning/2026/8/what-does-human-writing-look-like-even-when-an-ai-detector-flags-it` | 0.9551 | 0.8988 | 0.9926 |
 | 2 | `/learning/2026/8/can-typing-patterns-reveal-that-a-student-was-copying` | 0.9548 | 0.9062 | 0.9873 |
-| 3 | `/learning/2026/8/can-students-beat-ai-detection-by-manually-rewriting-chatgpt` | 0.9537 | 0.8948 | 0.9930 |
-| 4 | `/learning/2026/8/what-does-a-normal-writing-session-look-like` | 0.9534 | 0.8921 | 0.9944 |
-| 5 | `/learning/2026/8/can-writing-history-reveal-humanized-ai-content` | 0.9531 | 0.8940 | 0.9926 |
+| 3 | `/learning/2026/8/can-writing-history-reveal-humanized-ai-content` | 0.9543 | 0.8968 | 0.9926 |
+| 4 | `/learning/2026/8/can-students-beat-ai-detection-by-manually-rewriting-chatgpt` | 0.9536 | 0.8944 | 0.9930 |
+| 5 | `/learning/2026/8/what-does-a-normal-writing-session-look-like` | 0.9534 | 0.8921 | 0.9944 |
 
 ## Semantic Chunks
 ### Section: Introduction

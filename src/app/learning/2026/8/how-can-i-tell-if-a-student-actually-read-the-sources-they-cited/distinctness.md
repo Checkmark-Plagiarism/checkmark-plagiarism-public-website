@@ -2,11 +2,11 @@
 route: "/learning/2026/8/how-can-i-tell-if-a-student-actually-read-the-sources-they-cited"
 title: "How Can I Tell If a Student Actually Read the Sources They Cited?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "1864fd916f9e282bd39a1d771f278c907632fa9cb3b484fb80ef2f1c77d829b0"
-uniqueness_score: 24.34
-combined_similarity: 0.9651
-whole_page_top5_similarity: 0.9685
+uniqueness_score: 23.52
+combined_similarity: 0.9653
+whole_page_top5_similarity: 0.9689
 top_chunk_overlap: 0.9629
 action: "remediation_candidate"
 nearest_competitor: "/learning/2026/8/what-should-i-do-if-a-students-citation-doesnt-support-their-claim"
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 24.34 / 100
+- **Uniqueness Score**: 23.52 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/what-should-i-do-if-a-students-citation-doesnt-support-their-claim`
 

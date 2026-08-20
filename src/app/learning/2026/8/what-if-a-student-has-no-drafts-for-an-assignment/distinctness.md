@@ -2,9 +2,9 @@
 route: "/learning/2026/8/what-if-a-student-has-no-drafts-for-an-assignment"
 title: "What If a Student Has No Drafts for an Assignment?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "568a4a67234f3cc0827e1efd5b0d34f77a450f0516f671797252c43eee3decfb"
-uniqueness_score: 39.47
+uniqueness_score: 39.67
 combined_similarity: 0.9589
 whole_page_top5_similarity: 0.9499
 top_chunk_overlap: 0.9649
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 39.47 / 100
+- **Uniqueness Score**: 39.67 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/how-can-i-verify-who-actually-wrote-an-assignment`
 

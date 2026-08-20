@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-i-see-exactly-how-a-student-built-their-essay-from-start-to-finish"
 title: "Can I See Exactly How a Student Built Their Essay From Start to Finish?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "8de46f7e2b5feb80ebcf347ff41ce559c35d699c7fa5d24fc6ff4ffd6ef42182"
 uniqueness_score: 62.78
 combined_similarity: 0.9502
@@ -22,7 +22,7 @@ remediation_status: "not_needed"
 | Rank | Route / Slug | Combined Sim | Page Sim | Top Chunk Sim |
 | :--- | :--- | :--- | :--- | :--- |
 | 1 | `/learning/2026/8/can-teachers-replay-how-a-student-wrote-an-essay` | 0.9653 | 0.9677 | 0.9636 |
-| 2 | `/learning/2026/8/what-does-human-writing-look-like-even-when-an-ai-detector-flags-it` | 0.9558 | 0.9428 | 0.9645 |
+| 2 | `/learning/2026/8/what-does-human-writing-look-like-even-when-an-ai-detector-flags-it` | 0.9562 | 0.9438 | 0.9645 |
 | 3 | `/learning/2026/8/what-does-a-large-paste-event-mean-in-a-student-essay` | 0.9545 | 0.9311 | 0.9700 |
 | 4 | `/learning/2026/8/why-did-a-student-write-most-of-an-essay-in-just-a-few-minutes` | 0.9532 | 0.9493 | 0.9557 |
 | 5 | `/learning/2026/8/how-can-writing-process-evidence-discourage-ai-cheating` | 0.9529 | 0.9481 | 0.9561 |

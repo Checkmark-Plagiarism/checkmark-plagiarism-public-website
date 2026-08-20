@@ -2,9 +2,9 @@
 route: "/learning/2026/8/how-can-academic-integrity-deans-use-essay-playback-to-resolve-disputed-honor-code-violations-without-adversarial-confrontation"
 title: "How Can Academic Integrity Deans Use Essay Playback to Resolve Disputed Honor Code Violations Without Adversarial Confrontation? | Checkmark Plagiarism"
 seniority_date: "2026-08-19"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:29Z"
 content_hash: "e448e1edce9c8ddf4279f90b8baf106868803bad27b78cf265d65a162081a396"
-uniqueness_score: 31.7
+uniqueness_score: 31.9
 combined_similarity: 0.9614
 whole_page_top5_similarity: 0.9798
 top_chunk_overlap: 0.9492
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 31.7 / 100
+- **Uniqueness Score**: 31.9 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/what-protocols-should-academic-deans-use-when-reviewing-keystroke-telemetry-during-student-misconduct-appeals`
 

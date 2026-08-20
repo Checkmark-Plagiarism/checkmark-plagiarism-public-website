@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-schools-track-ai-use-across-classes"
 title: "How Can Schools Track AI Use Across Classes?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "5aa460b723099a1a7e93edcfe204faee4e07d551f4700d4b9732ddfc8edbea09"
 uniqueness_score: 40.7
 combined_similarity: 0.9586

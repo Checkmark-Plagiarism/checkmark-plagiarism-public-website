@@ -2,9 +2,9 @@
 route: "/learning/2026/8/what-keystroke-telemetry-signals-distinguish-authentic-drafting-from-manual-transcription"
 title: "What Keystroke Telemetry Signals Distinguish Authentic Drafting From Manual Transcription? | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "ca7460b952c40957138336900b3ba4fcde93c4b7681b77d2ca4e0126989cca1a"
-uniqueness_score: 41.92
+uniqueness_score: 42.13
 combined_similarity: 0.9579
 whole_page_top5_similarity: 0.9846
 top_chunk_overlap: 0.94
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 41.92 / 100
+- **Uniqueness Score**: 42.13 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/how-keystroke-playback-detects-students-retyping-from-a-second-screen-or-phone`
 

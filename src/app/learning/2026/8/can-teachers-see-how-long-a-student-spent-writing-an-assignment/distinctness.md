@@ -2,9 +2,9 @@
 route: "/learning/2026/8/can-teachers-see-how-long-a-student-spent-writing-an-assignment"
 title: "Can Teachers See How Long a Student Spent Writing an Assignment?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "1fede1b14fef6feaba3ac5605c47b3b84a6c96451efa29445fd7d891f48ebdef"
-uniqueness_score: 39.88
+uniqueness_score: 40.08
 combined_similarity: 0.9587
 whole_page_top5_similarity: 0.9605
 top_chunk_overlap: 0.9576
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 39.88 / 100
+- **Uniqueness Score**: 40.08 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/does-writing-time-matter-when-investigating-ai-use`
 

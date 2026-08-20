@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-district-instructional-technology-coaches-train-faculty-to-integrate-essay-playback-telemetry-into-formative-writing-conferences"
 title: "How Can District Instructional Technology Coaches Train Faculty to Integrate Essay Playback Telemetry Into Formative Writing Conferences? | Checkmark Plagiarism"
 seniority_date: "2026-08-19"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:29Z"
 content_hash: "0003e39fe128bba5e0a8d025d4cc3d7b08c97877487a3aa9fa9892e007c9d0ac"
 uniqueness_score: 84.25
 combined_similarity: 0.935

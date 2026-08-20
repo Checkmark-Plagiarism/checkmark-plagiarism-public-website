@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-schools-track-repeat-academic-integrity-violations"
 title: "How Can Schools Track Repeat Academic Integrity Violations?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "646e53d3617da8fddfc9ce60dde766c6dd4f2a4eb72b808a88d2561751cbcb31"
 uniqueness_score: 86.3
 combined_similarity: 0.9309

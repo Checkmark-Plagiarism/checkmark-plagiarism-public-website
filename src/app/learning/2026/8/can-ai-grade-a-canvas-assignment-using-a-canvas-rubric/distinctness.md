@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-ai-grade-a-canvas-assignment-using-a-canvas-rubric"
 title: "Can AI Grade a Canvas Assignment Using a Canvas Rubric?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "e40616cb811552c39136265713c19716392c3c8c64bf237f3910c64ff0fd45f6"
 uniqueness_score: 38.45
 combined_similarity: 0.9594

@@ -2,11 +2,11 @@
 route: "/learning/2026/8/should-teachers-check-writing-history-before-running-an-ai-detector"
 title: "Should Teachers Check Writing History Before Running an AI Detector?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "ce90fa8f0c31d25edbe32891fcba83c619d3bd5eed5d026da52f61f5f9d0e74b"
-uniqueness_score: 39.67
+uniqueness_score: 39.47
 combined_similarity: 0.9589
-whole_page_top5_similarity: 0.9626
+whole_page_top5_similarity: 0.9627
 top_chunk_overlap: 0.9564
 action: "remediation_candidate"
 nearest_competitor: "/learning/2026/8/does-writing-time-matter-when-investigating-ai-use"
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 39.67 / 100
+- **Uniqueness Score**: 39.47 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/does-writing-time-matter-when-investigating-ai-use`
 

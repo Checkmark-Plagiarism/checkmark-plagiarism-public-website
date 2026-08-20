@@ -2,11 +2,11 @@
 route: "/learning/2026/8/a-students-essay-has-perfect-citations-but-the-sources-dont-exist-what-happened"
 title: "A Student"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "e32adc79fbf8f80aa00b1baba7822a02b5bd6b86108d3b25b90bfe1800e099b1"
-uniqueness_score: 31.9
-combined_similarity: 0.9614
-whole_page_top5_similarity: 0.9741
+uniqueness_score: 31.08
+combined_similarity: 0.9618
+whole_page_top5_similarity: 0.9749
 top_chunk_overlap: 0.953
 action: "remediation_candidate"
 nearest_competitor: "/learning/2026/8/can-chatgpt-create-fake-sources-for-student-essays"
@@ -15,17 +15,17 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 31.9 / 100
+- **Uniqueness Score**: 31.08 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/can-chatgpt-create-fake-sources-for-student-essays`
 
 | Rank | Route / Slug | Combined Sim | Page Sim | Top Chunk Sim |
 | :--- | :--- | :--- | :--- | :--- |
-| 1 | `/learning/2026/8/can-chatgpt-create-fake-sources-for-student-essays` | 0.9710 | 0.9706 | 0.9712 |
+| 1 | `/learning/2026/8/can-chatgpt-create-fake-sources-for-student-essays` | 0.9717 | 0.9724 | 0.9712 |
 | 2 | `/learning/2026/8/how-can-teachers-detect-fake-citations-created-by-ai` | 0.9705 | 0.9867 | 0.9598 |
 | 3 | `/learning/2026/8/can-chatgpt-invent-academic-sources` | 0.9688 | 0.9791 | 0.9619 |
-| 4 | `/learning/2026/8/how-can-i-check-whether-a-students-sources-actually-exist` | 0.9575 | 0.9684 | 0.9502 |
-| 5 | `/learning/2026/8/can-chatgpt-cite-sources-that-dont-exist` | 0.9574 | 0.9655 | 0.9520 |
+| 4 | `/learning/2026/8/can-chatgpt-cite-sources-that-dont-exist` | 0.9584 | 0.9679 | 0.9520 |
+| 5 | `/learning/2026/8/how-can-i-check-whether-a-students-sources-actually-exist` | 0.9575 | 0.9684 | 0.9502 |
 
 ## Semantic Chunks
 ### Section: Introduction

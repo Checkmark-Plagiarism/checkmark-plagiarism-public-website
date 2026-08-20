@@ -2,12 +2,12 @@
 route: "/learning/2026/8/how-should-schools-handle-ai-detector-false-positives"
 title: "How Should Schools Handle AI Detector False Positives?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "5e0355bcb195036456ec1c69b0d2d4a5a5e264e6f0e362425cdc702cd527ae15"
 uniqueness_score: 52.56
-combined_similarity: 0.9547
-whole_page_top5_similarity: 0.9565
-top_chunk_overlap: 0.9534
+combined_similarity: 0.9545
+whole_page_top5_similarity: 0.9567
+top_chunk_overlap: 0.953
 action: "remediation_candidate"
 nearest_competitor: "/learning/2026/8/how-can-teachers-avoid-falsely-accusing-students-of-using-ai"
 remediation_attempts: 0
@@ -22,16 +22,16 @@ remediation_status: "not_needed"
 | Rank | Route / Slug | Combined Sim | Page Sim | Top Chunk Sim |
 | :--- | :--- | :--- | :--- | :--- |
 | 1 | `/learning/2026/8/how-can-teachers-avoid-falsely-accusing-students-of-using-ai` | 0.9636 | 0.9508 | 0.9720 |
-| 2 | `/learning/2026/8/what-if-an-ai-detector-flags-a-student-who-actually-wrote-the-essay` | 0.9602 | 0.9583 | 0.9614 |
+| 2 | `/learning/2026/8/what-if-an-ai-detector-flags-a-student-who-actually-wrote-the-essay` | 0.9603 | 0.9585 | 0.9614 |
 | 3 | `/learning/2026/8/an-ai-detector-flagged-an-essay-but-the-revision-history-looks-normal-which-should-i-trust` | 0.9601 | 0.9612 | 0.9593 |
-| 4 | `/learning/2026/8/can-human-writing-be-flagged-as-ai` | 0.9582 | 0.9438 | 0.9678 |
-| 5 | `/learning/2026/8/can-document-history-protect-a-student-from-a-false-ai-accusation` | 0.9575 | 0.9475 | 0.9641 |
+| 4 | `/learning/2026/8/can-human-writing-be-flagged-as-ai` | 0.9583 | 0.9442 | 0.9678 |
+| 5 | `/learning/2026/8/can-document-history-protect-a-student-from-a-false-ai-accusation` | 0.9571 | 0.9465 | 0.9641 |
 
 ## Semantic Chunks
 ### Section: Introduction
 - **Level**: `intro`
 - **Hash**: `626593509c31f205f2217ece12133e5b485089cc2cd14d350611836816909d7e`
-- **Best Competitor Match**: `/learning/2026/8/how-can-teachers-investigate-a-possible-ai-false-positive` (Similarity: 0.9382)
+- **Best Competitor Match**: `/learning/2026/8/how-can-teachers-investigate-a-possible-ai-false-positive` (Similarity: 0.9361)
 
 ```text
 Schools should handle AI detector false positives by implementing an institutional "Telemetry Overrule Standard" powered by Checkmark Plagiarism: 1) Treat all AI detector scores as statistical probabilities rather than disciplinary proof; 2) Mandate that verified keystroke writing playback (demonstrating 2.5+ hours of active typing and organic self-editing) automatically overrules and dismisses any high AI score; 3) Conduct a supportive, 2-minute diagnostic oral check-in if ambiguity persists; and 4) Immediately restore the student's academic standing with zero disciplinary penalty.

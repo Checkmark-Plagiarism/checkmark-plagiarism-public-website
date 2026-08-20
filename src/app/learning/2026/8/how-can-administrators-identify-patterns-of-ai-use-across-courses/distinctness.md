@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-administrators-identify-patterns-of-ai-use-across-courses"
 title: "How Can Administrators Identify Patterns of AI Use Across Courses?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "841406ebb97ad18aa9dd0743f31e0b7b9a31a035783d3e56cbbc0039f042b768"
 uniqueness_score: 86.91
 combined_similarity: 0.9304

@@ -2,7 +2,7 @@
 route: "/learning/2026/8/what-writing-telemetry-patterns-distinguish-real-time-brainstorming-from-pre-drafted-script-pasting-in-timed-exams"
 title: "Writing Telemetry in Timed Exams: Brainstorming vs. Script Pasting | Checkmark Plagiarism"
 seniority_date: "2026-08-19"
-last_vectorized_at: "2026-08-19T22:54:04Z"
+last_vectorized_at: "2026-08-20T03:00:29Z"
 content_hash: "0ffb318f6c88bbde72d2bb5999c83384cce2b2e7af7b0885eab237939bb01795"
 uniqueness_score: 56.85
 combined_similarity: 0.9527

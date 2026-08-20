@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-teachers-detect-a-student-typing-chatgpts-answer-word-for-word"
 title: "Can Teachers Detect a Student Typing ChatGPT"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "076448f55210a3f6377e69e57c2d046fd174d88ea763bf1a38f967810da0ce7a"
 uniqueness_score: 10.02
 combined_similarity: 0.9733

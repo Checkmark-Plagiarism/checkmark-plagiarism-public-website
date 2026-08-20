@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-should-school-boards-evaluate-vendor-data-retention-claims-in-edtech-ai-contracts"
 title: "How Should School Boards Evaluate Vendor Data Retention Claims in EdTech AI Contracts? | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "2cc6d950b68e8285ec144c7682a868bdb34506699029518b5d379de42ed41360"
 uniqueness_score: 37.01
 combined_similarity: 0.96

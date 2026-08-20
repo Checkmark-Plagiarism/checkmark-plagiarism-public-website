@@ -2,9 +2,9 @@
 route: "/learning/2026/6/generative-predictive-agentic-the-three-kinds-of-ai-schools-keep-mixing-up"
 title: "Generative, Predictive, Agentic: The Three Kinds of AI Schools Keep Mixing Up"
 seniority_date: "2026-06-25"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "4ff7ca625ebff461f55b0d29dd874d9c7b7b9e5bedd1ff7610aec5422a6c9f87"
-uniqueness_score: 94.48
+uniqueness_score: 94.68
 combined_similarity: 0.8533
 whole_page_top5_similarity: 0.8696
 top_chunk_overlap: 0.8425
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 94.48 / 100
+- **Uniqueness Score**: 94.68 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/6/the-ai-vocabulary-every-educator-actually-needs-a-plain-english-glossary`
 

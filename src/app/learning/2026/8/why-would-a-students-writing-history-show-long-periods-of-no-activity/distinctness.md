@@ -2,7 +2,7 @@
 route: "/learning/2026/8/why-would-a-students-writing-history-show-long-periods-of-no-activity"
 title: "Why Would a Student"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "eb52a97091df071fe73575ab49d770446c52e51a8d2eb23213d426cdf8579727"
 uniqueness_score: 69.12
 combined_similarity: 0.9476

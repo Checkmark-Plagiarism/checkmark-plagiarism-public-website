@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-do-i-check-an-assignment-for-both-ai-and-plagiarism"
 title: "How Do I Check an Assignment for Both AI and Plagiarism?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "7ee78e64fde71853c4395cd8d6e66b935220afb58af41836e4c147268f2fb719"
 uniqueness_score: 45.4
 combined_similarity: 0.9572

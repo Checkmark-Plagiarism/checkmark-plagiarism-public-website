@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-high-school-social-studies-departments-sync-formative-dbq-rubric-scores-back-to-canvas-gradebook"
 title: "How Can High School Social Studies Departments Sync Formative DBQ Rubric Scores Back to Canvas Gradebook? | Checkmark Plagiarism"
 seniority_date: "2026-08-19"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:29Z"
 content_hash: "af3521e58623dace5c38a3da15f507cd375347a5938b28e0c68b9387fce87a6f"
 uniqueness_score: 41.31
 combined_similarity: 0.9582

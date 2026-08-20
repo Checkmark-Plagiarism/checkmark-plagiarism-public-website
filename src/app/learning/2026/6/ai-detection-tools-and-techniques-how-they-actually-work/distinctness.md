@@ -2,7 +2,7 @@
 route: "/learning/2026/6/ai-detection-tools-and-techniques-how-they-actually-work"
 title: "AI Detection Tools and Techniques: How They Actually Work"
 seniority_date: "2026-06-25"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "88280945b5c0efe42eaa97f43e896450361c08cecc719c7008cd43beae385398"
 uniqueness_score: 77.3
 combined_similarity: 0.9426

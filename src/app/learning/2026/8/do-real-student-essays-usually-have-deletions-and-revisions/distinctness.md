@@ -2,11 +2,11 @@
 route: "/learning/2026/8/do-real-student-essays-usually-have-deletions-and-revisions"
 title: "Do Real Student Essays Usually Have Deletions and Revisions?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "4439933fd7c51b2908e0b59ef1da6b584370c293b5212db66ca469cff9486bfe"
 uniqueness_score: 22.29
-combined_similarity: 0.9661
-whole_page_top5_similarity: 0.9677
+combined_similarity: 0.966
+whole_page_top5_similarity: 0.9676
 top_chunk_overlap: 0.9649
 action: "remediation_candidate"
 nearest_competitor: "/learning/2026/8/what-does-authentic-essay-writing-look-like-in-revision-history"
@@ -23,8 +23,8 @@ remediation_status: "not_needed"
 | :--- | :--- | :--- | :--- | :--- |
 | 1 | `/learning/2026/8/what-does-authentic-essay-writing-look-like-in-revision-history` | 0.9868 | 0.9741 | 0.9953 |
 | 2 | `/learning/2026/8/what-does-it-mean-if-a-student-makes-almost-no-revisions` | 0.9801 | 0.9838 | 0.9776 |
-| 3 | `/learning/2026/8/can-revision-history-prove-an-ai-detector-wrong` | 0.9783 | 0.9558 | 0.9934 |
-| 4 | `/learning/2026/8/what-does-human-writing-look-like-even-when-an-ai-detector-flags-it` | 0.9726 | 0.9413 | 0.9934 |
+| 3 | `/learning/2026/8/can-revision-history-prove-an-ai-detector-wrong` | 0.9781 | 0.9552 | 0.9934 |
+| 4 | `/learning/2026/8/what-does-human-writing-look-like-even-when-an-ai-detector-flags-it` | 0.9730 | 0.9424 | 0.9934 |
 | 5 | `/learning/2026/8/what-evidence-can-clear-a-student-accused-of-using-ai` | 0.9712 | 0.9380 | 0.9934 |
 
 ## Semantic Chunks

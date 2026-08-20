@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-teachers-detect-students-sharing-old-assignments"
 title: "Can Teachers Detect Students Sharing Old Assignments?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "fc07d86f12331c5a9f914be7ce5ae38a66ecb10c67c3864b080e9cdb9c0dc83c"
 uniqueness_score: 36.2
 combined_similarity: 0.9602

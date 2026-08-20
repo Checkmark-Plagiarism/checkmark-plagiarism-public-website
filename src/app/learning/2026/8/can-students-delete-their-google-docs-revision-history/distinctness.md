@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-students-delete-their-google-docs-revision-history"
 title: "Can Students Delete Their Google Docs Revision History?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "a96f403076b133a286e1dd3577422315c3264949f01d0afcf90e58f5f248cfc9"
 uniqueness_score: 61.76
 combined_similarity: 0.9506

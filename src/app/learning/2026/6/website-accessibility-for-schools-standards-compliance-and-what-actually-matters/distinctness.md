@@ -2,7 +2,7 @@
 route: "/learning/2026/6/website-accessibility-for-schools-standards-compliance-and-what-actually-matters"
 title: "Website Accessibility for Schools: Standards, Compliance, and What Actually Matters"
 seniority_date: "2026-06-25"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "4009b9295b66adfd86a123e108ce7d808e4f6ccc037c6c65b747e228d2ff4c64"
 uniqueness_score: 99.18
 combined_similarity: 0.7662

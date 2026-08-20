@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-schools-measure-whether-ai-cheating-is-increasing"
 title: "How Can Schools Measure Whether AI Cheating Is Increasing?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "b2f0815a73f9201e410e882af9e707ddb9bf323a2f0a0f4b19a080c00851cc43"
 uniqueness_score: 62.37
 combined_similarity: 0.9503

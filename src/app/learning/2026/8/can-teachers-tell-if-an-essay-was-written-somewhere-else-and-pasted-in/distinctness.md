@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-teachers-tell-if-an-essay-was-written-somewhere-else-and-pasted-in"
 title: "Can Teachers Tell If an Essay Was Written Somewhere Else and Pasted In?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "6cab09f444637c22e9e5dab780f2e00ab9502ecca6b9d1035750f89aa4156de0"
 uniqueness_score: 18.81
 combined_similarity: 0.967

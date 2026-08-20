@@ -2,7 +2,7 @@
 route: "/learning/2026/8/why-does-this-students-essay-sound-different-from-their-previous-work"
 title: "Why Does This Student"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "2bd57e65473d950580148c612b637b6b229eb3da23aa6f781f0b32bdf353eb56"
 uniqueness_score: 22.09
 combined_similarity: 0.9661

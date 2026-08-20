@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-should-schools-document-ai-misconduct-cases"
 title: "How Should Schools Document AI Misconduct Cases?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "4088aadb2e863af764f0e9e55e697743729962a40f3c2d19b088cabff651aed0"
 uniqueness_score: 50.51
 combined_similarity: 0.9553

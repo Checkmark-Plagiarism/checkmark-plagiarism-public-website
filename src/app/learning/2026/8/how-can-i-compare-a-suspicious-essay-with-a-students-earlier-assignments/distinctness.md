@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-i-compare-a-suspicious-essay-with-a-students-earlier-assignments"
 title: "How Can I Compare a Suspicious Essay With a Student"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "1687f509c1fa1a335920a1012952b43449cc41774114fecbe08bf9979aa5784b"
 uniqueness_score: 59.51
 combined_similarity: 0.9518

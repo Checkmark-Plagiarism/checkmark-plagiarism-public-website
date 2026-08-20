@@ -2,11 +2,11 @@
 route: "/learning/2026/6/how-to-cite-anything-a-practical-guide-to-citing-diverse-sources"
 title: "How to Cite Anything: A Practical Guide to Citing Diverse Sources"
 seniority_date: "2026-06-25"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "6e062b07e4cade5e9c7c49daed5980196b6924eaa016e7363a856ba86b136593"
 uniqueness_score: 96.11
 combined_similarity: 0.8442
-whole_page_top5_similarity: 0.8776
+whole_page_top5_similarity: 0.8775
 top_chunk_overlap: 0.822
 action: "remediation_candidate"
 nearest_competitor: "/learning/2026/8/should-teachers-require-students-to-explain-their-sources"
@@ -23,9 +23,9 @@ remediation_status: "not_needed"
 | :--- | :--- | :--- | :--- | :--- |
 | 1 | `/learning/2026/8/should-teachers-require-students-to-explain-their-sources` | 0.8743 | 0.8827 | 0.8688 |
 | 2 | `/learning/2026/8/how-teachers-check-for-plagiarism` | 0.8652 | 0.8380 | 0.8833 |
-| 3 | `/learning/2026/8/can-chatgpt-create-fake-sources-for-student-essays` | 0.8594 | 0.8744 | 0.8494 |
-| 4 | `/learning/2026/8/can-chatgpt-cite-sources-that-dont-exist` | 0.8548 | 0.8727 | 0.8429 |
-| 5 | `/learning/2026/8/a-students-essay-has-perfect-citations-but-the-sources-dont-exist-what-happened` | 0.8541 | 0.8481 | 0.8581 |
+| 3 | `/learning/2026/8/can-chatgpt-create-fake-sources-for-student-essays` | 0.8542 | 0.8730 | 0.8417 |
+| 4 | `/learning/2026/8/a-students-essay-has-perfect-citations-but-the-sources-dont-exist-what-happened` | 0.8541 | 0.8481 | 0.8581 |
+| 5 | `/learning/2026/8/how-can-i-tell-if-a-student-actually-read-the-sources-they-cited` | 0.8514 | 0.8724 | 0.8375 |
 
 ## Semantic Chunks
 ### Section: Introduction

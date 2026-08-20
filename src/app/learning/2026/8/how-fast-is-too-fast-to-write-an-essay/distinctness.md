@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-fast-is-too-fast-to-write-an-essay"
 title: "How Fast Is Too Fast to Write an Essay?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "c4ee991ccecceea4f41dc840efc3aefb8500360645b3a5741d6a9ad2b28b8197"
 uniqueness_score: 74.64
 combined_similarity: 0.944

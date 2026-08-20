@@ -2,9 +2,9 @@
 route: "/learning/2026/8/can-ai-give-students-feedback-based-on-a-rubric"
 title: "Can AI Give Students Feedback Based on a Rubric?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "028b2e835907d9bb7846f1b4f855db8a78506aee749c63f95c2069b613164288"
-uniqueness_score: 16.36
+uniqueness_score: 16.56
 combined_similarity: 0.9689
 whole_page_top5_similarity: 0.9501
 top_chunk_overlap: 0.9815
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 16.36 / 100
+- **Uniqueness Score**: 16.56 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/can-ai-grade-essays-using-my-own-rubric`
 

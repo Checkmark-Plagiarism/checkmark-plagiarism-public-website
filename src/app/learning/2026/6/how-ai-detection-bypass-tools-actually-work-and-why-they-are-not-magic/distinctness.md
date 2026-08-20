@@ -2,7 +2,7 @@
 route: "/learning/2026/6/how-ai-detection-bypass-tools-actually-work-and-why-they-are-not-magic"
 title: "How AI Detection Bypass Tools Actually Work (And Why They Are Not Magic)"
 seniority_date: "2026-06-25"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "e097d5c38451ed8eeb4158d9ff66dddbd4898c86c83764cf62b3ae3f761f40d0"
 uniqueness_score: 91.0
 combined_similarity: 0.9178

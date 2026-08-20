@@ -2,7 +2,7 @@
 route: "/learning/2026/6/how-plagiarism-checks-work-in-brightspace-a-plain-english-guide-for-students-instructors-and-admins"
 title: "How Plagiarism Checks Work in Brightspace: A Plain-English Guide for Students, Instructors, and Admins"
 seniority_date: "2026-06-25"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "9ff453ad0e1ae19deaf2b53232eb6ef5b3588f9536c36b23bdf4ea98751cc214"
 uniqueness_score: 93.05
 combined_similarity: 0.8879

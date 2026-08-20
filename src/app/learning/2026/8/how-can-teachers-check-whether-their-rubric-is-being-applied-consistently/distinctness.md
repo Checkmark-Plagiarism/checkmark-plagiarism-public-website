@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-teachers-check-whether-their-rubric-is-being-applied-consistently"
 title: "How Can Teachers Check Whether Their Rubric Is Being Applied Consistently?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "bc131f1ce23e5ab0fb718862ded9271f53842bfa53ab09fc1134d3f15aaf4504"
 uniqueness_score: 84.46
 combined_similarity: 0.9342

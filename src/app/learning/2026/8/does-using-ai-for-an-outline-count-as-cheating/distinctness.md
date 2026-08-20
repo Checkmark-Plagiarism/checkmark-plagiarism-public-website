@@ -2,7 +2,7 @@
 route: "/learning/2026/8/does-using-ai-for-an-outline-count-as-cheating"
 title: "Does Using AI for an Outline Count as Cheating?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "4e9241ea8f0681a15d9b56af1439a464eb16de9c51cfec1fcc951b60867f586a"
 uniqueness_score: 43.15
 combined_similarity: 0.9576

@@ -2,9 +2,9 @@
 route: "/learning/2026/8/what-should-a-technology-director-look-for-in-a-plagiarism-checker"
 title: "What Should a Technology Director Look for in a Plagiarism Checker?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "491330eb095d6092060dbe6c10d6adfa9f671739d5c2b56030179d1ead57eb29"
-uniqueness_score: 40.08
+uniqueness_score: 40.29
 combined_similarity: 0.9587
 whole_page_top5_similarity: 0.9437
 top_chunk_overlap: 0.9688
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 40.08 / 100
+- **Uniqueness Score**: 40.29 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/what-questions-should-a-school-ask-before-buying-an-ai-detector`
 

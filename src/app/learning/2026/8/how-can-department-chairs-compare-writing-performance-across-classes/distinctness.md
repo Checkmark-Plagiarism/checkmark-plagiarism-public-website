@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-department-chairs-compare-writing-performance-across-classes"
 title: "How Can Department Chairs Compare Writing Performance Across Classes?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "4889088730c9b770981ac602466abf2bbe9618da958e87354f8b4f3abc996c91"
 uniqueness_score: 72.8
 combined_similarity: 0.9461

@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-social-studies-department-chairs-detect-hallucinated-archival-citations-in-student-history-research-papers"
 title: "How Can Social Studies Department Chairs Detect Hallucinated Archival Citations in Student History Research Papers? | Checkmark Plagiarism"
 seniority_date: "2026-08-19"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:29Z"
 content_hash: "46cfec071ab7edb64fc13998fdcc3a2cf462bd26dbec044ff2cea05d681e3203"
 uniqueness_score: 80.98
 combined_similarity: 0.9396

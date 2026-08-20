@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-academic-integrity-officers-detect-unauthorized-peer-assignment-sharing-across-different-lms-sections"
 title: "How Can Academic Integrity Officers Detect Unauthorized Peer Assignment Sharing Across Different LMS Sections? | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "6d56157628aad2b39f1841b1ed1c5a75bbfe20c531d5724f25729ec2affa420d"
 uniqueness_score: 75.05
 combined_similarity: 0.9438

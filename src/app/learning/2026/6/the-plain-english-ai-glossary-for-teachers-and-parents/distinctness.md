@@ -2,7 +2,7 @@
 route: "/learning/2026/6/the-plain-english-ai-glossary-for-teachers-and-parents"
 title: "The Plain-English AI Glossary for Teachers and Parents"
 seniority_date: "2026-06-25"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "ebfab2cd650fab584dc9a532f6060dfad9c7f400a36f173f0a2a596d6a888598"
 uniqueness_score: 88.96
 combined_similarity: 0.9261

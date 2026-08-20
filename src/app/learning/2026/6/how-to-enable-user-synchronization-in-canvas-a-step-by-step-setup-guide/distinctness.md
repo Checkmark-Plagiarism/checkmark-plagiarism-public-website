@@ -2,7 +2,7 @@
 route: "/learning/2026/6/how-to-enable-user-synchronization-in-canvas-a-step-by-step-setup-guide"
 title: "How to Enable User Synchronization in Canvas: A Step-by-Step Setup Guide"
 seniority_date: "2026-06-25"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "04456bfbcd8b4da136e1860a736b1ca368f426b4a80495cbd5c67cd5fe1f6246"
 uniqueness_score: 96.73
 combined_similarity: 0.8253

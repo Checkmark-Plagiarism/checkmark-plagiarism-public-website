@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-teachers-use-draft-history-to-investigate-ai-use"
 title: "How Can Teachers Use Draft History to Investigate AI Use?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "81fc4ce11f25eda01f283f3e01aba6fa1e3d1f90358b8659981d0252fbbc2231"
 uniqueness_score: 16.16
 combined_similarity: 0.9692

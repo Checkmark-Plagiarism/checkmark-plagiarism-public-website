@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-district-technology-directors-audit-ai-writing-detection-vendors-for-ferpa-third-party-sharing-risks"
 title: "How Can District Technology Directors Audit AI Writing Detection Vendors for FERPA Third-Party Sharing Risks? | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "059ccf97d0ac23baa10be5c02e7f4d0e0a30e8e9c19389f62515b63c7aafe4c8"
 uniqueness_score: 46.22
 combined_similarity: 0.9569

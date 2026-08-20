@@ -2,7 +2,7 @@
 route: "/learning/2026/8/what-academic-integrity-metrics-should-schools-track"
 title: "What Academic Integrity Metrics Should Schools Track?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "066158712e413689206b8b8db93b5244ab7dbd8456360e82eb36f8f3d9cbc6de"
 uniqueness_score: 53.78
 combined_similarity: 0.954

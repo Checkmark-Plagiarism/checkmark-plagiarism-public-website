@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-department-chairs-standardize-rubric-grading-across-multiple-class-sections-in-canvas-lms"
 title: "How Can Department Chairs Standardize Rubric Grading Across Multiple Class Sections in Canvas LMS? | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "4ddb7f1db18207b4d5dd75ea57983cc0b136394652f9f6337bc01f4b3849fc2f"
 uniqueness_score: 70.76
 combined_similarity: 0.9473

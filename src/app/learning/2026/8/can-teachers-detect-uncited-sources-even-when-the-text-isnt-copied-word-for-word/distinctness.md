@@ -2,9 +2,9 @@
 route: "/learning/2026/8/can-teachers-detect-uncited-sources-even-when-the-text-isnt-copied-word-for-word"
 title: "Can Teachers Detect Uncited Sources Even When the Text Isn"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "b3dea37b5c4cbb3270c32dcf17b93e02f850000f2929e0c84759c7bbb123d47c"
-uniqueness_score: 78.53
+uniqueness_score: 78.73
 combined_similarity: 0.9418
 whole_page_top5_similarity: 0.9499
 top_chunk_overlap: 0.9364
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 78.53 / 100
+- **Uniqueness Score**: 78.73 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/whats-the-difference-between-uncited-writing-and-plagiarism`
 

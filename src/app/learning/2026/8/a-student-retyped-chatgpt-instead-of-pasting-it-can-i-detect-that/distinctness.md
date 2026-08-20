@@ -2,11 +2,11 @@
 route: "/learning/2026/8/a-student-retyped-chatgpt-instead-of-pasting-it-can-i-detect-that"
 title: "A Student Retyped ChatGPT Instead of Pasting It — Can I Detect That?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "65c9bfcb9971710e784556b68c15273e8f36d2a8f544413560f3a57bdd655f51"
 uniqueness_score: 20.65
-combined_similarity: 0.9664
-whole_page_top5_similarity: 0.976
+combined_similarity: 0.9665
+whole_page_top5_similarity: 0.9762
 top_chunk_overlap: 0.96
 action: "remediation_candidate"
 nearest_competitor: "/learning/2026/8/can-teachers-detect-a-student-typing-chatgpts-answer-word-for-word"
@@ -24,7 +24,7 @@ remediation_status: "not_needed"
 | 1 | `/learning/2026/8/can-teachers-detect-a-student-typing-chatgpts-answer-word-for-word` | 0.9802 | 0.9831 | 0.9782 |
 | 2 | `/learning/2026/8/a-student-typed-an-entire-essay-with-almost-no-pauses-is-that-suspicious` | 0.9760 | 0.9767 | 0.9756 |
 | 3 | `/learning/2026/8/can-teachers-detect-when-a-student-retypes-a-source-instead-of-copying-and-pasting` | 0.9693 | 0.9721 | 0.9674 |
-| 4 | `/learning/2026/8/can-students-beat-ai-detection-by-manually-rewriting-chatgpt` | 0.9684 | 0.9707 | 0.9668 |
+| 4 | `/learning/2026/8/can-students-beat-ai-detection-by-manually-rewriting-chatgpt` | 0.9692 | 0.9729 | 0.9668 |
 | 5 | `/learning/2026/8/can-teachers-detect-manually-typed-ai-responses` | 0.9625 | 0.9721 | 0.9560 |
 
 ## Semantic Chunks

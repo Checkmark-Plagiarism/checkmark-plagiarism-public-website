@@ -2,9 +2,9 @@
 route: "/learning/2026/8/what-does-authentic-essay-writing-look-like-in-revision-history"
 title: "What Does Authentic Essay Writing Look Like in Revision History?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "1902707f63cbdb2decc2321684530c7b778fbe48fbb061ab319b8f3bb2ec0d01"
-uniqueness_score: 3.89
+uniqueness_score: 4.09
 combined_similarity: 0.9785
 whole_page_top5_similarity: 0.9643
 top_chunk_overlap: 0.988
@@ -15,17 +15,17 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 3.89 / 100
+- **Uniqueness Score**: 4.09 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/do-real-student-essays-usually-have-deletions-and-revisions`
 
 | Rank | Route / Slug | Combined Sim | Page Sim | Top Chunk Sim |
 | :--- | :--- | :--- | :--- | :--- |
 | 1 | `/learning/2026/8/do-real-student-essays-usually-have-deletions-and-revisions` | 0.9868 | 0.9741 | 0.9953 |
-| 2 | `/learning/2026/8/can-revision-history-prove-an-ai-detector-wrong` | 0.9852 | 0.9659 | 0.9981 |
-| 3 | `/learning/2026/8/can-writing-history-reveal-humanized-ai-content` | 0.9771 | 0.9448 | 0.9986 |
+| 2 | `/learning/2026/8/can-revision-history-prove-an-ai-detector-wrong` | 0.9851 | 0.9656 | 0.9981 |
+| 3 | `/learning/2026/8/can-writing-history-reveal-humanized-ai-content` | 0.9780 | 0.9472 | 0.9986 |
 | 4 | `/learning/2026/8/can-typing-history-show-whether-an-essay-is-authentic` | 0.9769 | 0.9423 | 1.0000 |
-| 5 | `/learning/2026/8/can-document-history-protect-a-student-from-a-false-ai-accusation` | 0.9751 | 0.9402 | 0.9984 |
+| 5 | `/learning/2026/8/can-document-history-protect-a-student-from-a-false-ai-accusation` | 0.9764 | 0.9433 | 0.9984 |
 
 ## Semantic Chunks
 ### Section: Introduction

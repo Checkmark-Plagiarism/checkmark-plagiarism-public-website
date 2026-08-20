@@ -2,7 +2,7 @@
 route: "/learning/2026/8/what-is-hecvat-and-why-does-it-matter-when-buying-edtech"
 title: "What Is HECVAT and Why Does It Matter When Buying EdTech?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "74074dfc47e0e8d313c9025b785987cb7465413477980067f36373e7e32cf561"
 uniqueness_score: 91.82
 combined_similarity: 0.9001

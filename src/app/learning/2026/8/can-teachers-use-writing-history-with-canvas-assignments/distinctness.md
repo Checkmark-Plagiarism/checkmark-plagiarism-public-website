@@ -2,9 +2,9 @@
 route: "/learning/2026/8/can-teachers-use-writing-history-with-canvas-assignments"
 title: "Can Teachers Use Writing History With Canvas Assignments?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "c1e171b833919df1b4cbd77a98e478ae2a8fd6d0264c72faf0dbee499076da29"
-uniqueness_score: 30.27
+uniqueness_score: 30.47
 combined_similarity: 0.962
 whole_page_top5_similarity: 0.9331
 top_chunk_overlap: 0.9813
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 30.27 / 100
+- **Uniqueness Score**: 30.47 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/how-can-i-check-for-ai-writing-inside-canvas`
 
@@ -23,7 +23,7 @@ remediation_status: "not_needed"
 | :--- | :--- | :--- | :--- | :--- |
 | 1 | `/learning/2026/8/how-can-i-check-for-ai-writing-inside-canvas` | 0.9721 | 0.9302 | 1.0000 |
 | 2 | `/learning/2026/8/can-teachers-view-ai-detection-results-in-canvas-speedgrader` | 0.9699 | 0.9247 | 1.0000 |
-| 3 | `/learning/2026/8/can-writing-history-reveal-humanized-ai-content` | 0.9689 | 0.9260 | 0.9974 |
+| 3 | `/learning/2026/8/can-writing-history-reveal-humanized-ai-content` | 0.9692 | 0.9269 | 0.9974 |
 | 4 | `/learning/2026/8/should-teachers-check-writing-history-before-running-an-ai-detector` | 0.9688 | 0.9379 | 0.9895 |
 | 5 | `/learning/2026/8/can-a-plagiarism-checker-automatically-check-canvas-assignments` | 0.9683 | 0.9207 | 1.0000 |
 

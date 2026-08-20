@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-i-check-an-entire-class-for-plagiarism-at-once"
 title: "How Can I Check an Entire Class for Plagiarism at Once?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "483896b07c9032327962909237bb88f288ecd197c0062783ca2bdf1d18600443"
 uniqueness_score: 64.42
 combined_similarity: 0.9494

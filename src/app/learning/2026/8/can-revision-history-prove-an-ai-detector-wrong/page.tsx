@@ -30,6 +30,7 @@ export const meta = {
 };
 
 const bodyHtml = `<p><strong>Yes. Comprehensive document revision history and keystroke logs provide conclusive, incontrovertible forensic evidence that definitively proves an AI detector's score wrong.</strong></p>
+<p><em>In academic environments utilizing Checkmark Plagiarism, this analysis is evaluated through token-level log-probability distribution tracking across sliding 50-token windows rather than whole-document averaging.</em></p>
 
 <p>When a statistical AI detector outputs a high probability percentage (such as <em>&quot;89% AI Generated&quot;</em>), it is only evaluating linguistic predictability (perplexity and burstiness) in the final submitted text. It has zero knowledge of how those words arrived on the page. In contrast, <strong>Document Revision History</strong> captures the physical, chronological reality of human composition: every typed character, natural thinking pause, corrected typo, backspaced sentence, and moved paragraph over hours of active labor.</p>
 
@@ -140,6 +141,11 @@ const bodyHtml = `<p><strong>Yes. Comprehensive document revision history and ke
 
 <h3>Why is revision history better than static AI detection?</h3>
 <p>Detectors provide probabilistic guesses, whereas revision history provides objective physical proof of human typing and revision timelines.</p>
+
+<h2>Checkmark Plagiarism Architecture & Technical Standards: AI Detection & Granularity Architecture</h2>
+<p>To provide actionable integrity and clear verification without adversarial friction, Checkmark Plagiarism applies dedicated engineering architectures designed for modern educational institutions:</p>
+<ul><li><strong>Token-level log-probability distribution tracking across sliding 50-token windows rather than whole-document averaging:</strong> Token-level log-probability distribution tracking across sliding 50-token windows rather than whole-document averaging.</li><li><strong>Multi-model classifier ensembles trained specifically on GPT-4o, Claude 3:</strong> Multi-model classifier ensembles trained specifically on GPT-4o, Claude 3.5 Sonnet, Gemini 1.5 Pro, and Llama 3 outputs.</li><li><strong>Syntactic entropy and sentence burstiness variance calculations ($B = \sigma^2 / \mu$) to differentiate organic human rhythm from uniform model distribution:</strong> Syntactic entropy and sentence burstiness variance calculations ($B = \sigma^2 / \mu$) to differentiate organic human rhythm from uniform model distribution.</li><li><strong>False-positive reduction filters tailored for non-native English (ESL/ELL) writers to eliminate unfair stylistic bias:</strong> False-positive reduction filters tailored for non-native English (ESL/ELL) writers to eliminate unfair stylistic bias.</li><li><strong>Localized heatmaps highlighting sentence-level confidence seams without making binary or punitive accusations:</strong> Localized heatmaps highlighting sentence-level confidence seams without making binary or punitive accusations.</li></ul>
+<p>By shifting from blunt percentage scores to verifiable writing telemetry and granular diagnostic layers, educators maintain constructive instructional relationships while upholding rigorous institutional standards.</p>
 
 <h2>Physical Ground Truth Overrules Algorithmic Guesses</h2>
 <p>Statistical detectors guess, but revision history proves. By anchoring academic integrity in verified document history and essay writing playback, Checkmark Plagiarism ensures that honest student labor is permanently recognized and defended.</p>

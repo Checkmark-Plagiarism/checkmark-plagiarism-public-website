@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-i-check-for-ai-writing-inside-canvas"
 title: "How Can I Check for AI Writing Inside Canvas?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "dcb0799f75ea359309102d452ac3418323defb0d31d48b708fc2d20d983a4f9c"
 uniqueness_score: 21.88
 combined_similarity: 0.9661

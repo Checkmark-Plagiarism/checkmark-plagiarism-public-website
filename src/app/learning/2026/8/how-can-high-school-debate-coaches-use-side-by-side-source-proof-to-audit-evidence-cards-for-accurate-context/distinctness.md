@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-high-school-debate-coaches-use-side-by-side-source-proof-to-audit-evidence-cards-for-accurate-context"
 title: "How Can High School Debate Coaches Use Side-by-Side Source Proof to Audit Evidence Cards for Accurate Context? | Checkmark Plagiarism"
 seniority_date: "2026-08-19"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:29Z"
 content_hash: "b977dab9272ba9aa8cb6fa6d575e9efa629b2d3386c9da6bbfea6590128f0843"
 uniqueness_score: 89.98
 combined_similarity: 0.9208

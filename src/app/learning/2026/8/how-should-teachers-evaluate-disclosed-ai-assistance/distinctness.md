@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-should-teachers-evaluate-disclosed-ai-assistance"
 title: "How Should Teachers Evaluate Disclosed AI Assistance?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "328311bd7a3e5b0c5bb418421931a9895e203f187172903e52cb820a2b2f8245"
 uniqueness_score: 68.1
 combined_similarity: 0.9479

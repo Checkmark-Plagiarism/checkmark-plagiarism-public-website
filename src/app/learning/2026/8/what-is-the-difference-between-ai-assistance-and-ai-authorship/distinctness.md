@@ -2,7 +2,7 @@
 route: "/learning/2026/8/what-is-the-difference-between-ai-assistance-and-ai-authorship"
 title: "What Is the Difference Between AI Assistance and AI Authorship?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "e49aedb7718c2b8c3994c3c75bf9d5b07c4728149e92556fcffd2377219984d7"
 uniqueness_score: 55.83
 combined_similarity: 0.9534

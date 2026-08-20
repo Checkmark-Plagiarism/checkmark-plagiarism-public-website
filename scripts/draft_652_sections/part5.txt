@@ -1,0 +1,130 @@
+﻿---
+
+### Phase 3: Writing Process Forensics with Essay Playback™
+
+Open the student's submission in **Checkmark Plagiarism** and launch **Patent-Pending Essay Playback™** to inspect the temporal writing history:
+
+```
+┌────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│                        ESSAY PLAYBACK™ FORENSIC TIMELINE INSPECTION                                    │
+├────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                                        │
+│   00:00:00 ───┐                                                                                        │
+│               │ [Session Start] Student types Title and Introduction organically (35–45 WPM).          │
+│   00:14:22 ───┴────────────────────────────────────────────────────────────────────────────────────────┤
+│   00:14:23 ───┐                                                                                        │
+│               │ [EXTERNAL PASTE DETECTED: +842 characters in 0.2s]                                     │
+│               │ Clipboard Inspector: "Station 1: DO=8.4, BOD=1.2; Station 2: DO=5.1, BOD=4.8..."     │
+│               │ Origin: Pasted directly from external spreadsheet or AI generator.                     │
+│   00:14:24 ───┴────────────────────────────────────────────────────────────────────────────────────────┤
+│   00:14:25 ───┐                                                                                        │
+│               │ [48-Second Cognitive Pause] Student consults graphs and performs molarity calculations.│
+│   00:15:13 ───┼────────────────────────────────────────────────────────────────────────────────────────┤
+│               │ [Organic CER Drafting] Student drafts Claim, backspaces to correct "nitrification" to │
+│               │ "denitrification", adjusts evidence citations, and re-reads paragraph (28 WPM).       │
+│   00:32:45 ───┴────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                                        │
+└────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+```
+
+#### What Authentic Scientific Drafting Telemetry Looks Like:
+* **The "Data-Thinking" Pause Rhythm:** As students write their CER analysis, they do not type continuously. Authentic scientific writing exhibits frequent **15- to 90-second pauses** where the cursor remains idle while the student looks at their spreadsheet, consults a graph, checks a unit conversion on a calculator, or re-reads their lab handout.
+* **Organic Vocabulary Corrections:** Students frequently type a specialized term, pause, delete it, and replace it with a more precise concept (e.g., typing *"decomposition"*, backspacing 13 characters, and replacing it with *"microbial cellular respiration"*).
+* **Non-Linear Revision Loops:** Authentic writers jump between their Evidence and Reasoning sections, refining their numerical citations to align with their explanatory arguments.
+
+#### What Generative AI Shortcuts Look Like:
+* **The Instant External Payload Dump:** The entire data table or CER analysis appears in a single 0.2-second event ($+1,200\text{ characters}$). Checkmark's **Immutable Clipboard Inspector** reveals the raw external text payload—allowing the teacher to confirm whether the pasted text originated from a school-approved spreadsheet or an LLM chatbot.
+* **Mechanical Second-Screen Transcription:** If a student retypes text while looking at an LLM response on their phone or second monitor, Essay Playback™ reveals a **robotic, steady typing velocity (60–80 WPM)** with zero backspaces, zero conceptual pauses, and uniform keypress intervals across multi-sentence paragraphs.
+
+---
+
+### Phase 4: Restorative Scientific Integrity Debriefs
+
+When writing telemetry indicates that a student relied on AI-generated data or synthetic interpretations, avoid punitive confrontations. Instead, schedule a supportive, 10-minute restorative conference anchored by the scrubbable **Essay Playback™** timeline.
+
+```
+┌────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│                      RESTORATIVE SCIENCE INTEGRITY CONFERENCE PROTOCOL                                 │
+├────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                                        │
+│   1. OPEN WITH OBJECTIVE INQUIRY                                                                       │
+│      Teacher: "Let's review your APES lab writeup together. I love how clearly your reasoning          │
+│      connects the nitrogen cycle to the eutrophication curve. Let's look at your drafting timeline     │
+│      in Checkmark to see how your thinking developed."                                                │
+│                                                                                                        │
+│   2. SCRUB TO CRITICAL TELEMETRY CHECKPOINTS                                                           │
+│      Teacher plays back the session at 4x speed, stopping at the 0.2s external paste event or the      │
+│      instant data generation block.                                                                    │
+│      Teacher: "I noticed that your complete 14-day dissolved oxygen dataset and CER analysis were      │
+│      inserted at 11:42 PM in a single paste. Walk me through how your lab group collected these        │
+│      measurements and calculated the biological oxygen demand between Station 2 and Station 3."       │
+│                                                                                                        │
+│   3. FOCUS ON COGNITIVE MASTERY & RECOVERY                                                             │
+│      When the student acknowledges using generative AI to replace missed field measurements:           │
+│      Teacher: "In AP Environmental Science, the learning happens when we wrestle with messy,         │
+│      imperfect data. When AI gives us perfect numbers, we miss the chance to master AP Science         │
+│      Practice 5. Here is our restorative pathway: you can join the after-school lab session to run a   │
+│      calibrated bench titration, record real data, and draft an authentic CER analysis for full       │
+│      mastery credit."                                                                                 │
+│                                                                                                        │
+└────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+```
+
+By anchoring the conversation in objective playback evidence rather than an opaque percentage score, the conference shifts from an adversarial disciplinary clash to a formative scientific learning opportunity.
+
+---
+
+## 6. How Checkmark Plagiarism Empowers AP Environmental Science Educators
+
+Checkmark Plagiarism delivers an integrated edtech platform engineered specifically for secondary and collegiate science educators, STEM curriculum leaders, and academic integrity committees.
+
+```
+┌────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│                     THE CHECKMARK INTEGRATED SCIENCE INTEGRITY SUITE                                   │
+├────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                                        │
+│   ┌───────────────────────────────────┐               ┌───────────────────────────────────┐            │
+│   │     PATENT-PENDING ESSAY PLAYBACK │               │   IMMUTABLE CLIPBOARD INSPECTOR   │            │
+│   │  • Keystroke replay at 1x to 8x   │               │  • Captures 100% of pasted text   │            │
+│   │  • Visualizes data-thinking pauses│               │  • Preserves external LLM dumps   │            │
+│   │  • Differentiates typing vs paste │               │  • Timestamped jump-to-replay     │            │
+│   └─────────────────┬─────────────────┘               └─────────────────┬─────────────────┘            │
+│                     │                                                   │                              │
+│                     └─────────────────────────┬─────────────────────────┘                              │
+│                                               ▼                                                        │
+│   ┌───────────────────────────────────────────────────────────────────────────────────────────────┐    │
+│   │                   PASSAGE-LEVEL AI DETECTOR & HONEST SHORT-TEXT GUARDRAILS                    │    │
+│   │  • Calibrated confidence sliders evaluate individual CER paragraphs independently             │    │
+│   │  • Automatic N/A for text <150 words prevents false flags on hypotheses and data table labels  │    │
+│   │  • Immune to text humanizers and paraphrasers via immutable temporal telemetry                │    │
+│   └───────────────────────────────────────────┬───────────────────────────────────────────────────┘    │
+│                                               │                                                        │
+│                     ┌─────────────────────────┴─────────────────────────┐                              │
+│                     ▼                                                   ▼                              │
+│   ┌───────────────────────────────────┐               ┌───────────────────────────────────┐            │
+│   │  TEACHER-CONTROLLED AUTOGRADER    │               │    ENTERPRISE PRIVACY & LMS SYNC  │            │
+│   │  • Aligned with AP Practices 1–7  │               │  • FERPA & COPPA compliant        │            │
+│   │  • Quote-anchored rubric feedback │               │  • Zero LLM model training        │            │
+│   │  • Full teacher editing authority │               │  • Canvas, Buzz & Google Classroom│            │
+│   └───────────────────────────────────┘               └───────────────────────────────────┘            │
+│                                                                                                        │
+└────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+```
+
+### 1. Patent-Pending Essay Playback™ (1x–8x Replay)
+Science educators can scrub through a student's complete writing and calculation session keystroke by keystroke. Teachers can observe the exact moment data points were entered, watch how formulas were drafted and revised, and verify authentic cognitive struggle during complex stoichiometric derivations.
+
+### 2. 100% Immutable Clipboard Payload Inspection
+When students import data from external spreadsheets, sensor software (Vernier Logger Pro, Graphical Analysis), or outside websites, Checkmark captures and stores the exact external text payload. Even if a student rewrites or paraphrases every single word of a pasted AI response, Checkmark's sidebar preserves the original clipboard content, complete with a direct **"Jump to Playback"** button.
+
+### 3. Passage-Level Calibrated AI Sliders with `<150-Word` Guardrails
+Rather than labeling an entire 2,000-word laboratory report with a single deceptive percentage, Checkmark underlines specific sentences and paragraphs with individual **Evidence Cards** in the sidebar. Each card features a calibrated confidence slider (Typical Human Writing Style vs. Typical AI Pattern). For short procedural text, hypotheses, or data table labels under 150 words, Checkmark automatically displays `N/A`, protecting students from false positive flags on standard scientific formatting.
+
+### 4. Teacher-in-the-Loop Quote-Anchored Rubric Autograding
+Checkmark's Autograder accelerates grading workflows while preserving teacher authority. Educators can upload custom AP Environmental Science rubrics or sync directly with **Canvas LMS**, **Buzz LMS**, or **Google Classroom**. The autograder generates:
+* **Per-Criterion Point Allocations:** Evaluated against **AP Science Practice 5 (Data Analysis)**, **Practice 6 (Mathematical Routines)**, and **Practice 7 (Environmental Solutions)**.
+* **Quote-Anchored Justifications:** Every rubric score is linked directly to specific student prose and numerical calculations.
+* **Teacher Final Authority:** All AI evaluations remain provisional drafts until reviewed, edited, and approved by the teacher before gradebook passback.
+
+### 5. Enterprise FERPA & COPPA Compliance with Zero Model Training
+Under Checkmark's strict enterprise privacy agreements, student laboratory data, experimental writeups, and personal information are **never retained to train public or commercial AI models**. All data is encrypted in transit and at rest, fully compliant with federal student privacy standards.

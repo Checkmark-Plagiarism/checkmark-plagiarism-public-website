@@ -2,7 +2,7 @@
 route: "/learning/2026/8/what-should-a-good-plagiarism-report-actually-show-a-teacher"
 title: "What Should a Good Plagiarism Report Actually Show a Teacher?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "3bfa05fc2b9dd4b4e7d8c41664ccfa223cf1442897bd1ef75f230785547a64e5"
 uniqueness_score: 37.22
 combined_similarity: 0.9599
@@ -23,9 +23,9 @@ remediation_status: "not_needed"
 | :--- | :--- | :--- | :--- | :--- |
 | 1 | `/learning/2026/8/why-is-showing-the-original-source-more-useful-than-a-similarity-percentage` | 0.9681 | 0.9572 | 0.9754 |
 | 2 | `/learning/2026/8/can-a-plagiarism-checker-show-me-the-exact-source` | 0.9640 | 0.9469 | 0.9754 |
-| 3 | `/learning/2026/8/should-teachers-run-both-ai-detection-and-plagiarism-detection` | 0.9632 | 0.9415 | 0.9777 |
-| 4 | `/learning/2026/8/can-document-history-protect-a-student-from-a-false-ai-accusation` | 0.9617 | 0.9410 | 0.9756 |
-| 5 | `/learning/2026/8/what-should-i-do-when-ai-detection-and-writing-history-disagree` | 0.9615 | 0.9438 | 0.9733 |
+| 3 | `/learning/2026/8/can-document-history-protect-a-student-from-a-false-ai-accusation` | 0.9634 | 0.9452 | 0.9756 |
+| 4 | `/learning/2026/8/should-teachers-run-both-ai-detection-and-plagiarism-detection` | 0.9632 | 0.9415 | 0.9777 |
+| 5 | `/learning/2026/8/why-doesnt-ai-detection-tell-the-whole-story` | 0.9621 | 0.9454 | 0.9733 |
 
 ## Semantic Chunks
 ### Section: Introduction

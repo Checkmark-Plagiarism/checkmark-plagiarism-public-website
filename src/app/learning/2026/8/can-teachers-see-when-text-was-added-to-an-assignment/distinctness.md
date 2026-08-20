@@ -2,11 +2,11 @@
 route: "/learning/2026/8/can-teachers-see-when-text-was-added-to-an-assignment"
 title: "Can Teachers See When Text Was Added to an Assignment?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "26e4764b0640ce88f34470c93ff0004997856ceb5998d4e3f60304ee98e75f82"
 uniqueness_score: 76.69
-combined_similarity: 0.9429
-whole_page_top5_similarity: 0.9458
+combined_similarity: 0.9431
+whole_page_top5_similarity: 0.9464
 top_chunk_overlap: 0.941
 action: "remediation_candidate"
 nearest_competitor: "/learning/2026/8/can-writing-history-reveal-humanized-ai-content"
@@ -21,10 +21,10 @@ remediation_status: "not_needed"
 
 | Rank | Route / Slug | Combined Sim | Page Sim | Top Chunk Sim |
 | :--- | :--- | :--- | :--- | :--- |
-| 1 | `/learning/2026/8/can-writing-history-reveal-humanized-ai-content` | 0.9681 | 0.9409 | 0.9862 |
+| 1 | `/learning/2026/8/can-writing-history-reveal-humanized-ai-content` | 0.9695 | 0.9443 | 0.9862 |
 | 2 | `/learning/2026/8/can-typing-history-show-whether-an-essay-is-authentic` | 0.9657 | 0.9383 | 0.9839 |
-| 3 | `/learning/2026/8/can-revision-history-prove-an-ai-detector-wrong` | 0.9635 | 0.9293 | 0.9862 |
-| 4 | `/learning/2026/8/can-document-history-protect-a-student-from-a-false-ai-accusation` | 0.9634 | 0.9306 | 0.9852 |
+| 3 | `/learning/2026/8/can-document-history-protect-a-student-from-a-false-ai-accusation` | 0.9652 | 0.9351 | 0.9852 |
+| 4 | `/learning/2026/8/can-revision-history-prove-an-ai-detector-wrong` | 0.9634 | 0.9291 | 0.9862 |
 | 5 | `/learning/2026/8/what-does-authentic-essay-writing-look-like-in-revision-history` | 0.9630 | 0.9315 | 0.9839 |
 
 ## Semantic Chunks

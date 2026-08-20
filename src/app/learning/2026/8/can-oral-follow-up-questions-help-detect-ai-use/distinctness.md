@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-oral-follow-up-questions-help-detect-ai-use"
 title: "Can Oral Follow-Up Questions Help Detect AI Use?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "ca537eb994f86ce3fab4e76aae32a899d2748dba8932bd310ad2486eeb719af7"
 uniqueness_score: 55.21
 combined_similarity: 0.9536

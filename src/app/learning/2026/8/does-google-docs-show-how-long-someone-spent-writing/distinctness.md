@@ -2,7 +2,7 @@
 route: "/learning/2026/8/does-google-docs-show-how-long-someone-spent-writing"
 title: "Does Google Docs Show How Long Someone Spent Writing?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "bd50d30cd7022b41ac5b63b3a498148f73df5aa5aff5598dfbaf07cd5c1d1a29"
 uniqueness_score: 62.17
 combined_similarity: 0.9504

@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-teachers-review-ai-generated-grades-before-students-see-them"
 title: "Can Teachers Review AI-Generated Grades Before Students See Them?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "ac16f9db98fa2fcbad9a65883a8016bc8fb12b9d94b62c43b8ad36b275fd06ba"
 uniqueness_score: 39.26
 combined_similarity: 0.959

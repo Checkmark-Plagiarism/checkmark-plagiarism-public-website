@@ -2,7 +2,7 @@
 route: "/learning/2026/8/what-are-the-signs-that-a-student-used-chatgpt"
 title: "What Are the Signs That a Student Used ChatGPT?"
 seniority_date: "2026-08-10"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "00ad434c7e11765e054312373d99acfd3a3fef5f5bad4eb979a310bef3b671c2"
 uniqueness_score: 20.04
 combined_similarity: 0.9666

@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-multidimensional-integrity-reports-distinguish-citation-errors-from-intentional-plagiarism"
 title: "How Multidimensional Integrity Reports Distinguish Citation Errors From Intentional Plagiarism | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "c212c0ec9eae8bef07a660d2efba10e93de411d22028a63cdd6892f19c6f96e6"
 uniqueness_score: 25.77
 combined_similarity: 0.9646

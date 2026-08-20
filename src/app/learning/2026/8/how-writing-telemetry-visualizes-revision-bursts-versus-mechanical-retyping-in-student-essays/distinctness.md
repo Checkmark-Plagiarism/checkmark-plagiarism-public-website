@@ -2,9 +2,9 @@
 route: "/learning/2026/8/how-writing-telemetry-visualizes-revision-bursts-versus-mechanical-retyping-in-student-essays"
 title: "How Writing Telemetry Visualizes Revision Bursts vs. Retyping | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "1ad1edf5de0d9268e2e7f93de8786031cc1cdb831035c3f6b1a044cd65abf8d5"
-uniqueness_score: 34.56
+uniqueness_score: 34.76
 combined_similarity: 0.9605
 whole_page_top5_similarity: 0.9835
 top_chunk_overlap: 0.9451
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 34.56 / 100
+- **Uniqueness Score**: 34.76 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/what-keystroke-dynamics-distinguish-genuine-dual-monitor-note-synthesizing-from-ai-paraphrase-transcribing`
 

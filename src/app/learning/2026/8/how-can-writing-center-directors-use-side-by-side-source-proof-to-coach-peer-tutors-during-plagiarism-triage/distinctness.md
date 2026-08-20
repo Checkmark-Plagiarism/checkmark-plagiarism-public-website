@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-writing-center-directors-use-side-by-side-source-proof-to-coach-peer-tutors-during-plagiarism-triage"
 title: "How Can Writing Center Directors Use Side-by-Side Source Proof to Coach Peer Tutors During Plagiarism Triage? | Checkmark Plagiarism"
 seniority_date: "2026-08-19"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:29Z"
 content_hash: "e3bde79198909fc7afeb0454665726f035c1ce6f68cdee75e7fb40048c05d8de"
 uniqueness_score: 83.84
 combined_similarity: 0.9358

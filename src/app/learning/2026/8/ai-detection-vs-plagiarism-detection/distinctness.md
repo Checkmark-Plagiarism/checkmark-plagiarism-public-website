@@ -2,7 +2,7 @@
 route: "/learning/2026/8/ai-detection-vs-plagiarism-detection"
 title: "AI Detection vs. Plagiarism Detection: Key Differences"
 seniority_date: "2026-08-02"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "9cf0d5f4d830b1edf27da496a5a4826f59551447c3b77516f53a7b5eddf69790"
 uniqueness_score: 35.79
 combined_similarity: 0.9604

@@ -2,11 +2,11 @@
 route: "/learning/2026/8/can-writing-history-show-whether-a-student-used-ai"
 title: "Can Writing History Show Whether a Student Used AI?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "6122bf8fb09e0a2d9ca41353c1890dc4d1c900b3e7766a24459cb3ca45f20996"
-uniqueness_score: 17.18
-combined_similarity: 0.9685
-whole_page_top5_similarity: 0.9624
+uniqueness_score: 17.59
+combined_similarity: 0.9684
+whole_page_top5_similarity: 0.9623
 top_chunk_overlap: 0.9725
 action: "remediation_candidate"
 nearest_competitor: "/learning/2026/8/how-can-i-verify-who-actually-wrote-an-assignment"
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 17.18 / 100
+- **Uniqueness Score**: 17.59 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/how-can-i-verify-who-actually-wrote-an-assignment`
 

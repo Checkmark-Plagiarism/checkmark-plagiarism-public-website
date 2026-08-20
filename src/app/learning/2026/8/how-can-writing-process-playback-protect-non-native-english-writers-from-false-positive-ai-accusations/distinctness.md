@@ -2,9 +2,9 @@
 route: "/learning/2026/8/how-can-writing-process-playback-protect-non-native-english-writers-from-false-positive-ai-accusations"
 title: "How Can Writing Process Playback Protect Non-Native English Writers From False-Positive AI Accusations? | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "6ccaeb45e81b007f278dc3d431a3552298f01853b582a8a3b08060fedaed8573"
-uniqueness_score: 30.06
+uniqueness_score: 30.27
 combined_similarity: 0.9622
 whole_page_top5_similarity: 0.9739
 top_chunk_overlap: 0.9544
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 30.06 / 100
+- **Uniqueness Score**: 30.27 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/what-specific-evidence-distinguishes-machine-translation-from-generative-ai-in-english-language-learner-submissions`
 

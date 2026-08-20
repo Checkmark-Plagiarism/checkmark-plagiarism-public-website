@@ -2,9 +2,9 @@
 route: "/learning/2026/8/how-can-i-tell-if-ai-edited-an-essay-versus-wrote-it"
 title: "How Can I Tell If AI Edited an Essay Versus Wrote It?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "3707c196e2c472ead34b1ab3f357fdc0141b7da0a16d6f0ad2bc5c8cc8ef6cc2"
-uniqueness_score: 30.67
+uniqueness_score: 30.88
 combined_similarity: 0.9618
 whole_page_top5_similarity: 0.9641
 top_chunk_overlap: 0.9602
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 30.67 / 100
+- **Uniqueness Score**: 30.88 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/when-does-ai-editing-become-ai-writing`
 

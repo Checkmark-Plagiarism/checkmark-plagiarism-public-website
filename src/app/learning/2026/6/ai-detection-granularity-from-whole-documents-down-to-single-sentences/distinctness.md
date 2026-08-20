@@ -2,7 +2,7 @@
 route: "/learning/2026/6/ai-detection-granularity-from-whole-documents-down-to-single-sentences"
 title: "AI Detection Granularity: From Whole Documents Down to Single Sentences"
 seniority_date: "2026-06-25"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "be45674bc17eeae012c4b0009ae75ce9feedd94242e59107250d2fee580e90c4"
 uniqueness_score: 93.87
 combined_similarity: 0.8767

@@ -2,11 +2,11 @@
 route: "/learning/2026/8/what-is-the-difference-between-version-history-and-writing-history"
 title: "What Is the Difference Between Version History and Writing History?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "b38353e8d3780e8159327fbcf15a5fd18bc63fe026ea2c980176904471c2550d"
-uniqueness_score: 58.28
-combined_similarity: 0.9523
-whole_page_top5_similarity: 0.9493
+uniqueness_score: 57.87
+combined_similarity: 0.9524
+whole_page_top5_similarity: 0.9496
 top_chunk_overlap: 0.9543
 action: "remediation_candidate"
 nearest_competitor: "/learning/2026/8/should-teachers-check-writing-history-before-running-an-ai-detector"
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 58.28 / 100
+- **Uniqueness Score**: 57.87 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/should-teachers-check-writing-history-before-running-an-ai-detector`
 

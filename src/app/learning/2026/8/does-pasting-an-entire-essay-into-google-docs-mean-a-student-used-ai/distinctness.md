@@ -2,7 +2,7 @@
 route: "/learning/2026/8/does-pasting-an-entire-essay-into-google-docs-mean-a-student-used-ai"
 title: "Does Pasting an Entire Essay Into Google Docs Mean a Student Used AI?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "cda77288bdb764624c826696280cc0537049522df10ca4587af766ac0c716512"
 uniqueness_score: 27.4
 combined_similarity: 0.9637

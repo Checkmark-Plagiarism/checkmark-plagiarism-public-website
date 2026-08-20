@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-should-teachers-investigate-a-sudden-change-in-writing-ability"
 title: "How Should Teachers Investigate a Sudden Change in Writing Ability?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "b25cbbfddd71828cd5e9ab1f5c3f28b11fd83b306aa3fcd25f07d28a56d4949f"
 uniqueness_score: 19.43
 combined_similarity: 0.967

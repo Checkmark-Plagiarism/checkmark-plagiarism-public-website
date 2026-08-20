@@ -2,7 +2,7 @@
 route: "/learning/2026/8/what-does-a-normal-writing-session-look-like"
 title: "What Does a Normal Writing Session Look Like?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "0040c13570d5be3796c709dd7f13802343476b0db2bad1f5706cde6904269ff0"
 uniqueness_score: 43.56
 combined_similarity: 0.9575
@@ -22,10 +22,10 @@ remediation_status: "not_needed"
 | Rank | Route / Slug | Combined Sim | Page Sim | Top Chunk Sim |
 | :--- | :--- | :--- | :--- | :--- |
 | 1 | `/learning/2026/8/can-typing-history-show-whether-an-essay-is-authentic` | 0.9727 | 0.9318 | 1.0000 |
-| 2 | `/learning/2026/8/can-writing-history-reveal-humanized-ai-content` | 0.9677 | 0.9214 | 0.9986 |
-| 3 | `/learning/2026/8/what-does-authentic-essay-writing-look-like-in-revision-history` | 0.9669 | 0.9173 | 1.0000 |
-| 4 | `/learning/2026/8/can-document-history-protect-a-student-from-a-false-ai-accusation` | 0.9668 | 0.9171 | 1.0000 |
-| 5 | `/learning/2026/8/how-can-teachers-investigate-a-possible-ai-false-positive` | 0.9666 | 0.9165 | 1.0000 |
+| 2 | `/learning/2026/8/can-writing-history-reveal-humanized-ai-content` | 0.9694 | 0.9258 | 0.9986 |
+| 3 | `/learning/2026/8/can-document-history-protect-a-student-from-a-false-ai-accusation` | 0.9687 | 0.9218 | 1.0000 |
+| 4 | `/learning/2026/8/what-does-human-writing-look-like-even-when-an-ai-detector-flags-it` | 0.9672 | 0.9207 | 0.9981 |
+| 5 | `/learning/2026/8/how-can-teachers-investigate-a-possible-ai-false-positive` | 0.9670 | 0.9176 | 1.0000 |
 
 ## Semantic Chunks
 ### Section: Introduction

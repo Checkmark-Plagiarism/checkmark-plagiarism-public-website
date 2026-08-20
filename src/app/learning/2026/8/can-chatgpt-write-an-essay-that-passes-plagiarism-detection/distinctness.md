@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-chatgpt-write-an-essay-that-passes-plagiarism-detection"
 title: "Can ChatGPT Write an Essay That Passes Plagiarism Detection?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "5660de41d2a69ded7be44133c67f90cd14aeeb2a5ab39e90190cb6b2b2482d9e"
 uniqueness_score: 6.54
 combined_similarity: 0.9766

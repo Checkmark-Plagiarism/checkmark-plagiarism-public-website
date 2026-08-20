@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-should-teachers-handle-assignments-with-mixed-human-and-ai-writing"
 title: "How Should Teachers Handle Assignments With Mixed Human and AI Writing?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "f200bebe15a6dfe45224d2057145a3ab9f7eb6e71da7edf5255d1a436bb71053"
 uniqueness_score: 54.6
 combined_similarity: 0.9537

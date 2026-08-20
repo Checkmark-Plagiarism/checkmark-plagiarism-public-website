@@ -2,11 +2,11 @@
 route: "/learning/2026/8/can-teachers-detect-partial-ai-use-in-an-essay"
 title: "Can Teachers Detect Partial AI Use in an Essay?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "e192e6c1d3bf9dd2a85288e213e407e05ef2bc95e0d4bb7d943407e3af0a0e49"
-uniqueness_score: 22.9
-combined_similarity: 0.9656
-whole_page_top5_similarity: 0.9638
+uniqueness_score: 22.7
+combined_similarity: 0.9658
+whole_page_top5_similarity: 0.9642
 top_chunk_overlap: 0.9669
 action: "remediation_candidate"
 nearest_competitor: "/learning/2026/8/can-an-essay-be-partially-ai-generated"
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 22.9 / 100
+- **Uniqueness Score**: 22.7 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/can-an-essay-be-partially-ai-generated`
 

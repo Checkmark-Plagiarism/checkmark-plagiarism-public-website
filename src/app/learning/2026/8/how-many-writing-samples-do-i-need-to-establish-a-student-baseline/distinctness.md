@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-many-writing-samples-do-i-need-to-establish-a-student-baseline"
 title: "How Many Writing Samples Do I Need to Establish a Student Baseline?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "3f26012906787957e98712dba8ce02b3afcd0228fc48fad22b9ea7be3940bf97"
 uniqueness_score: 67.89
 combined_similarity: 0.948

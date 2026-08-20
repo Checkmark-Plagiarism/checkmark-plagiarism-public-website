@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-a-student-plagiarize-even-when-their-similarity-score-is-low"
 title: "Can a Student Plagiarize Even When Their Similarity Score Is Low?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "e79a635d6116f32d569e0e9d08d6dfab8fd6c1fb61589245f6d209a574310195"
 uniqueness_score: 50.92
 combined_similarity: 0.9551

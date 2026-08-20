@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-writing-process-evidence-discourage-ai-cheating"
 title: "How Can Writing Process Evidence Discourage AI Cheating?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "43ee47afc602861035018f3382778bb434146cc605d888d18024edfeaedc1ddc"
 uniqueness_score: 54.19
 combined_similarity: 0.9538
@@ -22,10 +22,10 @@ remediation_status: "not_needed"
 | Rank | Route / Slug | Combined Sim | Page Sim | Top Chunk Sim |
 | :--- | :--- | :--- | :--- | :--- |
 | 1 | `/learning/2026/8/how-can-i-require-students-to-show-their-writing-process` | 0.9736 | 0.9758 | 0.9721 |
-| 2 | `/learning/2026/8/can-document-history-protect-a-student-from-a-false-ai-accusation` | 0.9661 | 0.9565 | 0.9725 |
-| 3 | `/learning/2026/8/what-if-an-ai-detector-flags-a-student-who-actually-wrote-the-essay` | 0.9619 | 0.9473 | 0.9716 |
+| 2 | `/learning/2026/8/can-document-history-protect-a-student-from-a-false-ai-accusation` | 0.9666 | 0.9578 | 0.9725 |
+| 3 | `/learning/2026/8/what-if-an-ai-detector-flags-a-student-who-actually-wrote-the-essay` | 0.9614 | 0.9461 | 0.9716 |
 | 4 | `/learning/2026/8/what-evidence-can-clear-a-student-accused-of-using-ai` | 0.9599 | 0.9425 | 0.9716 |
-| 5 | `/learning/2026/8/why-doesnt-ai-detection-tell-the-whole-story` | 0.9592 | 0.9405 | 0.9716 |
+| 5 | `/learning/2026/8/should-ai-detection-be-used-as-evidence-or-as-a-starting-point` | 0.9590 | 0.9400 | 0.9716 |
 
 ## Semantic Chunks
 ### Section: Introduction

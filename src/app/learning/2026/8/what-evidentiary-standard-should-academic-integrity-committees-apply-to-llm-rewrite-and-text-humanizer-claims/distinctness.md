@@ -2,7 +2,7 @@
 route: "/learning/2026/8/what-evidentiary-standard-should-academic-integrity-committees-apply-to-llm-rewrite-and-text-humanizer-claims"
 title: "What Evidentiary Standard Should Academic Integrity Committees Apply to LLM Rewrite and Text Humanizer Claims? | Checkmark Plagiarism"
 seniority_date: "2026-08-19"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:29Z"
 content_hash: "d01b1a8955f5499045ea593ebf00bc8066eab8202e3e1a2a79b56d12c2997d3a"
 uniqueness_score: 73.62
 combined_similarity: 0.945

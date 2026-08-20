@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-i-compare-a-students-assignment-to-their-previous-writing"
 title: "How Can I Compare a Student"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "bdf64026ac835b366f4e192e0105aea6538f5f3965a1447f023869d130ebc2d3"
 uniqueness_score: 55.42
 combined_similarity: 0.9536

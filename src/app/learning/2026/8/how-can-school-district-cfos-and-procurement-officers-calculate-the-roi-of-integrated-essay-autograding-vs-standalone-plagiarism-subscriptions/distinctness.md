@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-school-district-cfos-and-procurement-officers-calculate-the-roi-of-integrated-essay-autograding-vs-standalone-plagiarism-subscriptions"
 title: "How Can School District CFOs and Procurement Officers Calculate the ROI of Integrated Essay Autograding vs. Standalone Plagiarism Subscriptions? | Checkmark Plagiarism"
 seniority_date: "2026-08-19"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:29Z"
 content_hash: "234aedf33bd2c03c219d0482e60f640ff35d2bb3baa301bcc4a45c69d6403d36"
 uniqueness_score: 89.16
 combined_similarity: 0.9257

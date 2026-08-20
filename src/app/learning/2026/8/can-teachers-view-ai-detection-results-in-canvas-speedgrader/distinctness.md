@@ -2,9 +2,9 @@
 route: "/learning/2026/8/can-teachers-view-ai-detection-results-in-canvas-speedgrader"
 title: "Can Teachers View AI Detection Results in Canvas SpeedGrader?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "8d0e2d64a1c42cb4b0c08645abe6e33c10e04811d76a72879aa7a1843a9a5adb"
-uniqueness_score: 26.79
+uniqueness_score: 26.99
 combined_similarity: 0.964
 whole_page_top5_similarity: 0.9373
 top_chunk_overlap: 0.9818
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 26.79 / 100
+- **Uniqueness Score**: 26.99 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/how-can-i-check-for-ai-writing-inside-canvas`
 

@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-teachers-see-pasted-text-after-a-student-rewrites-it"
 title: "Can Teachers See Pasted Text After a Student Rewrites It?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "032a6c9d5bc4b088490a5cbae251db2505f799c3b2fcf9f19b9cf1c0d566e14c"
 uniqueness_score: 27.81
 combined_similarity: 0.9635

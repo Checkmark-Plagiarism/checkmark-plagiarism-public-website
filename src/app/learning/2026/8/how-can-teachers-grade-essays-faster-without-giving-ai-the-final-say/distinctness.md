@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-teachers-grade-essays-faster-without-giving-ai-the-final-say"
 title: "How Can Teachers Grade Essays Faster Without Giving AI the Final Say?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "00ec4b11e140c9fc5e0f67d8052083bea2a383c9b449dfa444cd254740beab32"
 uniqueness_score: 18.2
 combined_similarity: 0.968

@@ -2,7 +2,7 @@
 route: "/learning/2026/8/a-student-pasted-half-their-essay-does-that-prove-plagiarism"
 title: "A Student Pasted Half Their Essay — Does That Prove Plagiarism?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "3c861d9d06f2be502036b3188e420a7a73b1b4e739a221e49c2c9c1a2d153692"
 uniqueness_score: 57.46
 combined_similarity: 0.9526

@@ -2,9 +2,9 @@
 route: "/learning/2026/6/the-ai-vocabulary-every-educator-actually-needs-a-plain-english-glossary"
 title: "The AI Vocabulary Every Educator Actually Needs (A Plain-English Glossary)"
 seniority_date: "2026-06-25"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "c78e602994acae901b278eca51c82063af1d994ce3afd71734ab9178a5c03aed"
-uniqueness_score: 92.43
+uniqueness_score: 92.23
 combined_similarity: 0.8965
 whole_page_top5_similarity: 0.9101
 top_chunk_overlap: 0.8875
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 92.43 / 100
+- **Uniqueness Score**: 92.23 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/6/ai-language-models-explained-what-they-generate-what-detects-them-and-what-comes-next`
 

@@ -2,7 +2,7 @@
 route: "/learning/2026/6/how-canvas-detects-plagiarism-features-policies-and-the-gaps-you-should-know"
 title: "How Canvas Detects Plagiarism: Features, Policies, and the Gaps You Should Know"
 seniority_date: "2026-06-25"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "0f17ede64736afda0385c18a07f86cbe44cab8f48309f1a959bea9673e11d683"
 uniqueness_score: 92.84
 combined_similarity: 0.889

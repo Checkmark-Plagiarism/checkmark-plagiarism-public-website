@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-middle-school-ela-leads-sync-ai-drafted-formative-rubric-comments-directly-into-google-classroom-without-overriding-teacher-grades"
 title: "How Can Middle School ELA Leads Sync AI-Drafted Formative Rubric Comments Directly Into Google Classroom Without Overriding Teacher Grades? | Checkmark Plagiarism"
 seniority_date: "2026-08-19"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:29Z"
 content_hash: "43e28124fc782630a208fb419a9026a994fc263c6742c54bc4b7bb8bece33da2"
 uniqueness_score: 80.78
 combined_similarity: 0.9397

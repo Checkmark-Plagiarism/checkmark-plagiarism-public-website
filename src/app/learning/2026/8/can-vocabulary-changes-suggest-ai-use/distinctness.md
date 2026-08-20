@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-vocabulary-changes-suggest-ai-use"
 title: "Can Vocabulary Changes Suggest AI Use?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "be558e891c9cec128add5c7f7bd3d04a0c9c094da41f473b823fcfa2f396ca7e"
 uniqueness_score: 70.35
 combined_similarity: 0.9474

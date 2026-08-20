@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-ai-detectors-accurately-analyze-short-answers-under-150-words"
 title: "Can AI Detectors Accurately Analyze Short Answers Under 150 Words? | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "a01b0eb12f674347d4e35d6e21a1f48d00946662d88bd475befa3a6683bfa534"
 uniqueness_score: 27.2
 combined_similarity: 0.9638

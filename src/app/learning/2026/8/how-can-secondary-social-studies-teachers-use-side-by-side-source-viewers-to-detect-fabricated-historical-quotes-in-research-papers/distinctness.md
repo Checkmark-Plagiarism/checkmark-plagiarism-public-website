@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-secondary-social-studies-teachers-use-side-by-side-source-viewers-to-detect-fabricated-historical-quotes-in-research-papers"
 title: "How Can Secondary Social Studies Teachers Use Side-by-Side Source Viewers to Detect Fabricated Historical Quotes in Research Papers? | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "784f7366c628eb371507b71a9288148fa6e9a81d3749538df2e7e63bec7c4fee"
 uniqueness_score: 38.04
 combined_similarity: 0.9595

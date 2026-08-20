@@ -2,7 +2,7 @@
 route: "/learning/2026/6/reading-the-data-how-to-understand-audience-behavior-and-shape-a-content-strategy"
 title: "Reading the Data: How to Understand Audience Behavior and Shape a Content Strategy"
 seniority_date: "2026-06-25"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "1f795115fd14a8b432b3608c5cd36406dc231d595ea22a3cb7d12d1285ee97bc"
 uniqueness_score: 98.36
 combined_similarity: 0.7831

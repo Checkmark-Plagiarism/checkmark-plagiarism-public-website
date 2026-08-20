@@ -2,9 +2,9 @@
 route: "/learning/2026/8/how-can-science-instructors-use-writing-process-replay-to-verify-original-data-analysis-in-lab-reports"
 title: "How Can Science Instructors Use Writing Process Replay to Verify Original Data Analysis in Lab Reports? | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "57c960475d20deff9564f6fe9090a1a968351be82bb406becb7463cf6c727b8a"
-uniqueness_score: 79.14
+uniqueness_score: 79.35
 combined_similarity: 0.9412
 whole_page_top5_similarity: 0.9552
 top_chunk_overlap: 0.9318
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 79.14 / 100
+- **Uniqueness Score**: 79.35 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/what-keystroke-dynamics-distinguish-genuine-dual-monitor-note-synthesizing-from-ai-paraphrase-transcribing`
 

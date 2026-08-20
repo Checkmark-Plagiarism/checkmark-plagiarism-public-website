@@ -2,7 +2,7 @@
 route: "/learning/2026/8/what-does-it-mean-when-an-essay-has-sources-but-no-matching-citations"
 title: "What Does It Mean When an Essay Has Sources but No Matching Citations?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "88fa98476785e14a6c06d6bb0d124dfee5ebd586f0f0b44fc46807a8c3131316"
 uniqueness_score: 76.89
 combined_similarity: 0.9427

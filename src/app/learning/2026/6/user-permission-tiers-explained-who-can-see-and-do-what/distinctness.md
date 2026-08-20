@@ -2,7 +2,7 @@
 route: "/learning/2026/6/user-permission-tiers-explained-who-can-see-and-do-what"
 title: "User Permission Tiers Explained: Who Can See and Do What"
 seniority_date: "2026-06-25"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "707c223173b28eb25d22d94cb9565af52e2ffda2ea255f1fff6d102530c19f92"
 uniqueness_score: 97.75
 combined_similarity: 0.7972

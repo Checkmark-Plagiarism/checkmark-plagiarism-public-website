@@ -2,9 +2,9 @@
 route: "/learning/2026/8/when-does-using-ai-become-academic-dishonesty"
 title: "When Does Using AI Become Academic Dishonesty?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "bb2b17e7d77257056ed162066f35733eb3546872199f5452509d205fdcd64604"
-uniqueness_score: 30.88
+uniqueness_score: 31.29
 combined_similarity: 0.9617
 whole_page_top5_similarity: 0.9586
 top_chunk_overlap: 0.9638
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 30.88 / 100
+- **Uniqueness Score**: 31.29 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/what-counts-as-acceptable-ai-use-in-school`
 

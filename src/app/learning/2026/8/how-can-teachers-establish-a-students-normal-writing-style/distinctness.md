@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-teachers-establish-a-students-normal-writing-style"
 title: "How Can Teachers Establish a Student"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "735b9dde287468fa983fa8b92dc57568b5e87eb63a8fa172c5a84183fbdad935"
 uniqueness_score: 80.16
 combined_similarity: 0.9403

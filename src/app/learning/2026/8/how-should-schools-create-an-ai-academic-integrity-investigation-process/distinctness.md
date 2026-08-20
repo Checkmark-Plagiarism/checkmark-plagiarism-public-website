@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-should-schools-create-an-ai-academic-integrity-investigation-process"
 title: "How Should Schools Create an AI Academic Integrity Investigation Process?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "fa03da6b3392a87a42dd181d758ef1924af77ebff59e9184c935acb4eec8e8ea"
 uniqueness_score: 48.67
 combined_similarity: 0.9557

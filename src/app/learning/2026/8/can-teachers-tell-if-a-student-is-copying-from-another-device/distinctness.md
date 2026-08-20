@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-teachers-tell-if-a-student-is-copying-from-another-device"
 title: "Can Teachers Tell If a Student Is Copying From Another Device?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "ca06f0319a12dc22f4cf2f0b51c4260e75b8057be1aae72cf7862995a0d8b835"
 uniqueness_score: 42.54
 combined_similarity: 0.9578

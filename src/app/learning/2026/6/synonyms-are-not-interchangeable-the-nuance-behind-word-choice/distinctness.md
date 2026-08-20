@@ -2,7 +2,7 @@
 route: "/learning/2026/6/synonyms-are-not-interchangeable-the-nuance-behind-word-choice"
 title: "Synonyms Are Not Interchangeable: The Nuance Behind Word Choice"
 seniority_date: "2026-06-25"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "09eb9c8f033e7a6cc049bcb98b886f1fe67c6b3e57be7d14970fe8f48308727b"
 uniqueness_score: 95.09
 combined_similarity: 0.8508

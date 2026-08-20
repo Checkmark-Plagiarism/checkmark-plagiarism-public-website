@@ -2,7 +2,7 @@
 route: "/learning/2026/8/is-using-ai-to-rewrite-a-paragraph-cheating"
 title: "Is Using AI to Rewrite a Paragraph Cheating?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "0fd73ddc6d60533cd22dbcdc4e4770331af7c80b572b8049cac5eb36f17938bf"
 uniqueness_score: 26.58
 combined_similarity: 0.9642

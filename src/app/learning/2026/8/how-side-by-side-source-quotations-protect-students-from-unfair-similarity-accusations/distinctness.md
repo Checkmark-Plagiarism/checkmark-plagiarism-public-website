@@ -2,9 +2,9 @@
 route: "/learning/2026/8/how-side-by-side-source-quotations-protect-students-from-unfair-similarity-accusations"
 title: "How Side-by-Side Source Quotations Protect Students From Unfair Similarity Accusations | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "7398d84fabf46cf2f0a1d558be744c67a0a387b70d74480c098f1c4d198b0eb2"
-uniqueness_score: 29.86
+uniqueness_score: 30.06
 combined_similarity: 0.9622
 whole_page_top5_similarity: 0.9873
 top_chunk_overlap: 0.9456
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 29.86 / 100
+- **Uniqueness Score**: 30.06 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/how-can-department-chairs-use-multidimensional-plagiarism-matching-to-identify-uncited-patchwriting-in-capstone-research`
 

@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-schools-detect-reused-student-papers"
 title: "How Can Schools Detect Reused Student Papers?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "559648b363be2b412b30f99e0924531809e7d06bb439e42d9ac4fbc74c759012"
 uniqueness_score: 45.6
 combined_similarity: 0.957

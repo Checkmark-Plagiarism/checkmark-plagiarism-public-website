@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-ap-capstone-coordinators-use-keystroke-playback-to-validate-primary-source-synthesis-in-academic-research-papers"
 title: "How Can AP Capstone Coordinators Use Keystroke Playback to Validate Primary Source Synthesis in Academic Research Papers? | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "d18ee1fa00160e0595004b88ac3f715439be079cc0db126068515d487c492b28"
 uniqueness_score: 64.62
 combined_similarity: 0.9493

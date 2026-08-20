@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-should-teachers-document-suspected-ai-use"
 title: "How Should Teachers Document Suspected AI Use?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "da132db65d2c50b39201226dbbacaba64674a3d633b145bfe70c43b2f139a401"
 uniqueness_score: 43.76
 combined_similarity: 0.9575

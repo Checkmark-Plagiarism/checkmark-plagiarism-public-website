@@ -2,7 +2,7 @@
 route: "/learning/2026/8/should-teachers-run-both-ai-detection-and-plagiarism-detection"
 title: "Should Teachers Run Both AI Detection and Plagiarism Detection?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "a5494d2e5289dc3bbf4bb54661a02da9d3fe1652acec6410ef41539a41ecd28a"
 uniqueness_score: 17.79
 combined_similarity: 0.9681
@@ -23,8 +23,8 @@ remediation_status: "not_needed"
 | :--- | :--- | :--- | :--- | :--- |
 | 1 | `/learning/2026/8/what-should-i-do-when-ai-detection-and-writing-history-disagree` | 0.9761 | 0.9589 | 0.9876 |
 | 2 | `/learning/2026/8/how-can-teachers-investigate-ai-writing-that-passes-an-ai-detector` | 0.9743 | 0.9544 | 0.9876 |
-| 3 | `/learning/2026/8/how-do-i-check-an-assignment-for-both-ai-and-plagiarism` | 0.9735 | 0.9775 | 0.9709 |
-| 4 | `/learning/2026/8/why-doesnt-ai-detection-tell-the-whole-story` | 0.9729 | 0.9510 | 0.9876 |
+| 3 | `/learning/2026/8/why-doesnt-ai-detection-tell-the-whole-story` | 0.9739 | 0.9534 | 0.9876 |
+| 4 | `/learning/2026/8/how-do-i-check-an-assignment-for-both-ai-and-plagiarism` | 0.9735 | 0.9775 | 0.9709 |
 | 5 | `/learning/2026/8/what-does-an-ai-written-essay-look-like-in-writing-history` | 0.9722 | 0.9469 | 0.9891 |
 
 ## Semantic Chunks
@@ -46,7 +46,7 @@ Checkmark Plagiarism unites both capabilities into a seamless platform by combin
 ### Section: The Blind Spots of Running Only One Tool
 - **Level**: `h2`
 - **Hash**: `306fa3e1656e518f5cbb9a34e00f35c3381a01d480d90c9c8b9b40d4133f51aa`
-- **Best Competitor Match**: `/learning/2026/8/can-ai-humanizers-fool-ai-detectors` (Similarity: 0.8717)
+- **Best Competitor Match**: `/learning/2026/8/best-plagiarism-checkers-for-high-schools` (Similarity: 0.8708)
 
 ```text
 Danger of Plagiarism Detection Alone

@@ -2,12 +2,12 @@
 route: "/learning/2026/8/can-chatgpt-invent-academic-sources"
 title: "Can ChatGPT Invent Academic Sources?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "957a8a5ec8dfb66743b9cf68dbf76b0dff7f23fe597db5a363dcab0ec1d247a2"
 uniqueness_score: 8.18
-combined_similarity: 0.9748
-whole_page_top5_similarity: 0.9768
-top_chunk_overlap: 0.9735
+combined_similarity: 0.9749
+whole_page_top5_similarity: 0.9776
+top_chunk_overlap: 0.9731
 action: "remediation_candidate"
 nearest_competitor: "/learning/2026/8/how-can-teachers-detect-fake-citations-created-by-ai"
 remediation_attempts: 0
@@ -25,13 +25,13 @@ remediation_status: "not_needed"
 | 2 | `/learning/2026/8/how-can-i-check-whether-a-students-sources-actually-exist` | 0.9865 | 0.9662 | 1.0000 |
 | 3 | `/learning/2026/8/how-can-i-tell-if-a-student-actually-read-the-sources-they-cited` | 0.9846 | 0.9615 | 1.0000 |
 | 4 | `/learning/2026/8/what-should-i-do-if-a-students-citation-doesnt-support-their-claim` | 0.9797 | 0.9494 | 1.0000 |
-| 5 | `/learning/2026/8/can-chatgpt-create-fake-sources-for-student-essays` | 0.9734 | 0.9820 | 0.9677 |
+| 5 | `/learning/2026/8/can-chatgpt-create-fake-sources-for-student-essays` | 0.9741 | 0.9838 | 0.9677 |
 
 ## Semantic Chunks
 ### Section: Introduction
 - **Level**: `intro`
 - **Hash**: `52c4ab2cd9638bba25152f8ef426aa13a0a8a8624c64dca090f6eed30933c1b3`
-- **Best Competitor Match**: `/learning/2026/8/can-chatgpt-create-fake-sources-for-student-essays` (Similarity: 0.9638)
+- **Best Competitor Match**: `/learning/2026/8/can-chatgpt-create-fake-sources-for-student-essays` (Similarity: 0.9620)
 
 ```text
 Yes. ChatGPT frequently invents completely fabricated academic sources—generating non-existent journal articles, phantom book titles, fake digital object identifiers (DOIs), and "Frankenstein" author pairings that look impeccably formatted according to APA, MLA, or Chicago standards but do not exist in reality.

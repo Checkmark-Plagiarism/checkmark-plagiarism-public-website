@@ -2,7 +2,7 @@
 route: "/learning/2026/6/ai-detection-tools-in-education-how-they-work-and-how-to-use-them-well"
 title: "AI Detection Tools in Education: How They Work and How to Use Them Well"
 seniority_date: "2026-06-25"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "ae893241823bc10b1b536e0721deecc99142f2aac72b0f45c01b5ed16607b22b"
 uniqueness_score: 72.19
 combined_similarity: 0.9463

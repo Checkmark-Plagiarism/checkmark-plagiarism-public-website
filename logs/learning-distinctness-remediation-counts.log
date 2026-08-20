@@ -1,0 +1,51 @@
+# Learning Distinctness Remediation Queue Count Log
+
+Periodic 10-minute audit tracking of actionable learning center posts requiring distinctness remediation.
+
+---
+
+## Remediation Queue Count: 2026-08-19 23:01:10 UTC
+- **Timestamp (UTC)**: `2026-08-19 23:01:10 UTC`
+- **Timestamp (Local)**: `2026-08-19 16:01:10 Pacific Daylight Time`
+- **Total Actionable Posts Needing Remediation**: **467**
+  - **Junior Candidates (Priority Queue)**: 437
+  - **Senior Candidates (Secondary Queue)**: 30
+- **Total Learning Center Posts**: 491
+- **Distinct / Passing Articles (Action: `none`)**: 22
+- **Observing Articles (Action: `observe`)**: 0
+- **Exhausted / Manual Review (Attempts >= 2)**: 1
+- **Unvectorized / Missing Distinctness**: 1
+- **Top Next Candidate**: `/learning/2026/8/what-if-an-ai-detector-flags-a-student-who-actually-wrote-the-essay` (Score: 0.20/100, Attempts: 0/2, Nearest: `/learning/2026/8/can-document-history-protect-a-student-from-a-false-ai-accusation`)
+- **Notes**: Manual CLI --count request
+
+---
+## Remediation Queue Count: 2026-08-19 23:01:21 UTC
+- **Timestamp (UTC)**: `2026-08-19 23:01:21 UTC`
+- **Timestamp (Local)**: `2026-08-19 16:01:21 Pacific Daylight Time`
+- **Total Actionable Posts Needing Remediation**: **467**
+  - **Junior Candidates (Priority Queue)**: 437
+  - **Senior Candidates (Secondary Queue)**: 30
+- **Total Learning Center Posts**: 491
+- **Distinct / Passing Articles (Action: `none`)**: 22
+- **Observing Articles (Action: `observe`)**: 0
+- **Exhausted / Manual Review (Attempts >= 2)**: 1
+- **Unvectorized / Missing Distinctness**: 1
+- **Top Next Candidate**: `/learning/2026/8/what-if-an-ai-detector-flags-a-student-who-actually-wrote-the-essay` (Score: 0.20/100, Attempts: 0/2, Nearest: `/learning/2026/8/can-document-history-protect-a-student-from-a-false-ai-accusation`)
+- **Notes**: Monitor iteration #1 (Interval: 1s)
+
+---
+## Remediation Queue Count: 2026-08-19 23:01:29 UTC
+- **Timestamp (UTC)**: `2026-08-19 23:01:29 UTC`
+- **Timestamp (Local)**: `2026-08-19 16:01:29 Pacific Daylight Time`
+- **Total Actionable Posts Needing Remediation**: **467**
+  - **Junior Candidates (Priority Queue)**: 437
+  - **Senior Candidates (Secondary Queue)**: 30
+- **Total Learning Center Posts**: 491
+- **Distinct / Passing Articles (Action: `none`)**: 22
+- **Observing Articles (Action: `observe`)**: 0
+- **Exhausted / Manual Review (Attempts >= 2)**: 1
+- **Unvectorized / Missing Distinctness**: 1
+- **Top Next Candidate**: `/learning/2026/8/what-if-an-ai-detector-flags-a-student-who-actually-wrote-the-essay` (Score: 0.20/100, Attempts: 0/2, Nearest: `/learning/2026/8/can-document-history-protect-a-student-from-a-false-ai-accusation`)
+- **Notes**: Monitor iteration #2 (Interval: 1s)
+
+---

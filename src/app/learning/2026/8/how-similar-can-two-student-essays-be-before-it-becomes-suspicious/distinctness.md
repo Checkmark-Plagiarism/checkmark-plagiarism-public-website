@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-similar-can-two-student-essays-be-before-it-becomes-suspicious"
 title: "How Similar Can Two Student Essays Be Before It Becomes Suspicious?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "0b21238ef6775791a4713583ddbde16824b8fac2c8037eac21f3db2f876db703"
 uniqueness_score: 53.99
 combined_similarity: 0.9538

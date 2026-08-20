@@ -2,11 +2,11 @@
 route: "/learning/2026/8/why-shouldnt-teachers-rely-on-an-ai-percentage-alone"
 title: "Why Shouldn"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "8c3f28e59c74afcd56ad5a44da9ea6c8f7b4e176dc46f07fc65ee676b200c401"
 uniqueness_score: 5.52
-combined_similarity: 0.9771
-whole_page_top5_similarity: 0.9706
+combined_similarity: 0.9772
+whole_page_top5_similarity: 0.9709
 top_chunk_overlap: 0.9815
 action: "remediation_candidate"
 nearest_competitor: "/learning/2026/8/should-ai-detection-be-used-as-evidence-or-as-a-starting-point"
@@ -22,10 +22,10 @@ remediation_status: "not_needed"
 | Rank | Route / Slug | Combined Sim | Page Sim | Top Chunk Sim |
 | :--- | :--- | :--- | :--- | :--- |
 | 1 | `/learning/2026/8/should-ai-detection-be-used-as-evidence-or-as-a-starting-point` | 0.9911 | 0.9777 | 1.0000 |
-| 2 | `/learning/2026/8/what-should-i-do-when-ai-detection-and-writing-history-disagree` | 0.9879 | 0.9696 | 1.0000 |
-| 3 | `/learning/2026/8/why-doesnt-ai-detection-tell-the-whole-story` | 0.9878 | 0.9695 | 1.0000 |
-| 4 | `/learning/2026/8/what-if-an-ai-detector-flags-a-student-who-actually-wrote-the-essay` | 0.9857 | 0.9642 | 1.0000 |
-| 5 | `/learning/2026/8/how-can-teachers-investigate-ai-writing-that-passes-an-ai-detector` | 0.9856 | 0.9641 | 1.0000 |
+| 2 | `/learning/2026/8/why-doesnt-ai-detection-tell-the-whole-story` | 0.9883 | 0.9708 | 1.0000 |
+| 3 | `/learning/2026/8/what-should-i-do-when-ai-detection-and-writing-history-disagree` | 0.9879 | 0.9696 | 1.0000 |
+| 4 | `/learning/2026/8/what-if-an-ai-detector-flags-a-student-who-actually-wrote-the-essay` | 0.9865 | 0.9662 | 1.0000 |
+| 5 | `/learning/2026/8/how-can-teachers-investigate-a-possible-ai-false-positive` | 0.9862 | 0.9655 | 1.0000 |
 
 ## Semantic Chunks
 ### Section: Introduction

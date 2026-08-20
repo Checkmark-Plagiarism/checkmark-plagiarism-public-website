@@ -2,7 +2,7 @@
 route: "/learning/2026/8/should-i-ask-a-student-to-explain-their-writing-if-i-suspect-ai"
 title: "Should I Ask a Student to Explain Their Writing If I Suspect AI?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "cffa9ae095641e67ca2eea80bc1927b7d2254b9269c903ed5c5b73f53fad56fc"
 uniqueness_score: 5.11
 combined_similarity: 0.9774

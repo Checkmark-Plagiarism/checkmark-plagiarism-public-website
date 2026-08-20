@@ -2,9 +2,9 @@
 route: "/learning/2026/8/what-should-schools-ask-an-ai-detection-vendor-about-student-privacy"
 title: "What Should Schools Ask an AI Detection Vendor About Student Privacy?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "e69dd5fde52f39e08b6d6b9ee018177c732334738ef165d42b15876656a2bce6"
-uniqueness_score: 31.29
+uniqueness_score: 31.49
 combined_similarity: 0.9616
 whole_page_top5_similarity: 0.9509
 top_chunk_overlap: 0.9687
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 31.29 / 100
+- **Uniqueness Score**: 31.49 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/do-ai-detectors-store-student-essays`
 

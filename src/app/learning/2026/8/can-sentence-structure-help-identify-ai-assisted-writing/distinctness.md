@@ -2,12 +2,12 @@
 route: "/learning/2026/8/can-sentence-structure-help-identify-ai-assisted-writing"
 title: "Can Sentence Structure Help Identify AI-Assisted Writing?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "16ce0df8e3d6d866031466076c6c26675c1ea623333fbda099d3144b9e351446"
-uniqueness_score: 79.35
-combined_similarity: 0.9411
-whole_page_top5_similarity: 0.9344
-top_chunk_overlap: 0.9456
+uniqueness_score: 78.53
+combined_similarity: 0.9419
+whole_page_top5_similarity: 0.9354
+top_chunk_overlap: 0.9461
 action: "remediation_candidate"
 nearest_competitor: "/learning/2026/8/can-a-student-copy-ai-text-slowly-enough-to-avoid-detection"
 remediation_attempts: 0
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 79.35 / 100
+- **Uniqueness Score**: 78.53 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/can-a-student-copy-ai-text-slowly-enough-to-avoid-detection`
 
@@ -31,7 +31,7 @@ remediation_status: "not_needed"
 ### Section: Introduction
 - **Level**: `intro`
 - **Hash**: `49ca612339c9944fc5ac69b4687cb7f06e320932900402d4746b653008ce8ff3`
-- **Best Competitor Match**: `/learning/2026/8/can-human-writing-be-flagged-as-ai` (Similarity: 0.8907)
+- **Best Competitor Match**: `/learning/2026/8/can-human-writing-be-flagged-as-ai` (Similarity: 0.8934)
 
 ```text
 Yes. Sentence structure is one of the most accurate, scientifically proven indicators of AI-assisted writing—because Large Language Models generate text with unnaturally uniform sentence lengths (low burstiness), repetitive fronted participial clauses, balanced triadic lists ("X, Y, and Z"), and passive academic hedging that contrasts sharply with the dynamic, irregular rhythms of authentic human prose.

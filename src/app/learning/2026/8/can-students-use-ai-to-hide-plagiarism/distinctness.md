@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-students-use-ai-to-hide-plagiarism"
 title: "Can Students Use AI to Hide Plagiarism?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "44ed81a9ba4e8a01970f9b52d2fc2a33b6f37028f83cd8d1cca07788ef9893c8"
 uniqueness_score: 6.13
 combined_similarity: 0.9767

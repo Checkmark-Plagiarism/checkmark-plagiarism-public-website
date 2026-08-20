@@ -2,7 +2,7 @@
 route: "/learning/2026/8/my-students-essay-doesnt-match-their-normal-writing-what-should-i-do"
 title: "My Student"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "5d5c1c7ed5edc97df63c10511659bff7d5982631204addf162757061e2dbc0a1"
 uniqueness_score: 40.9
 combined_similarity: 0.9584

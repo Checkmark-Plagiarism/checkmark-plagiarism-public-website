@@ -2,11 +2,11 @@
 route: "/learning/2026/8/an-essay-passed-the-ai-detector-but-still-looks-ai-written-what-can-i-check"
 title: "An Essay Passed the AI Detector but Still Looks AI-Written — What Can I Check?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "514d568ab95d09a63e65bec65e86a9c20fc064b50e06c25679bc41a2228023fb"
-uniqueness_score: 34.36
-combined_similarity: 0.9605
-whole_page_top5_similarity: 0.9692
+uniqueness_score: 32.92
+combined_similarity: 0.9609
+whole_page_top5_similarity: 0.9702
 top_chunk_overlap: 0.9547
 action: "remediation_candidate"
 nearest_competitor: "/learning/2026/8/can-ai-humanizers-fool-ai-detectors"
@@ -15,17 +15,17 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 34.36 / 100
+- **Uniqueness Score**: 32.92 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/can-ai-humanizers-fool-ai-detectors`
 
 | Rank | Route / Slug | Combined Sim | Page Sim | Top Chunk Sim |
 | :--- | :--- | :--- | :--- | :--- |
-| 1 | `/learning/2026/8/can-ai-humanizers-fool-ai-detectors` | 0.9687 | 0.9743 | 0.9649 |
+| 1 | `/learning/2026/8/can-ai-humanizers-fool-ai-detectors` | 0.9694 | 0.9762 | 0.9649 |
 | 2 | `/learning/2026/8/can-teachers-detect-humanized-ai-writing` | 0.9674 | 0.9712 | 0.9649 |
-| 3 | `/learning/2026/8/what-happens-when-a-student-runs-chatgpt-through-an-ai-humanizer` | 0.9656 | 0.9666 | 0.9649 |
+| 3 | `/learning/2026/8/what-happens-when-a-student-runs-chatgpt-through-an-ai-humanizer` | 0.9668 | 0.9695 | 0.9649 |
 | 4 | `/learning/2026/8/can-teachers-detect-manually-typed-ai-responses` | 0.9648 | 0.9664 | 0.9637 |
-| 5 | `/learning/2026/8/can-human-writing-be-flagged-as-ai` | 0.9626 | 0.9626 | 0.9626 |
+| 5 | `/learning/2026/8/can-human-writing-be-flagged-as-ai` | 0.9632 | 0.9641 | 0.9626 |
 
 ## Semantic Chunks
 ### Section: Introduction

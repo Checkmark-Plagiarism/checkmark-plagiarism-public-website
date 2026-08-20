@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-i-check-whether-a-students-sources-actually-exist"
 title: "How Can I Check Whether a Student"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "490e843a7858b46190aa14b08a55375f6593af62419cbfc78614ac9c9cfefd18"
 uniqueness_score: 15.54
 combined_similarity: 0.9695

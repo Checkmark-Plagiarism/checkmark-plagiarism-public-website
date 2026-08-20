@@ -2,9 +2,9 @@
 route: "/learning/2026/8/can-a-plagiarism-checker-detect-another-students-essay"
 title: "Can a Plagiarism Checker Detect Another Student"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "20d1c3b473f6c56fcff194960ea7762e69c8e25ae30494a3c216bfdc049539b3"
-uniqueness_score: 25.36
+uniqueness_score: 25.56
 combined_similarity: 0.9647
 whole_page_top5_similarity: 0.9675
 top_chunk_overlap: 0.9628
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 25.36 / 100
+- **Uniqueness Score**: 25.56 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/can-teachers-detect-students-copying-from-each-other`
 

@@ -2,7 +2,7 @@
 route: "/learning/2026/8/why-zero-retention-ai-policies-are-critical-for-school-district-compliance-under-ferpa-and-coppa"
 title: "Why Zero-Retention AI Policies Are Critical for School District Compliance Under FERPA and COPPA | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:29Z"
 content_hash: "be93459acb5771008146d7a78fef89a26d77755390ba5073ae5b7b889a2ba1c3"
 uniqueness_score: 14.52
 combined_similarity: 0.9697

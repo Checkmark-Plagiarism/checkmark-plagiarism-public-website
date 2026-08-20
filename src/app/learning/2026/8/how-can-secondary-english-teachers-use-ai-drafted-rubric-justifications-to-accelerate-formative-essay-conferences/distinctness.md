@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-secondary-english-teachers-use-ai-drafted-rubric-justifications-to-accelerate-formative-essay-conferences"
 title: "How Can Secondary English Teachers Use AI-Drafted Rubric Justifications to Accelerate Formative Essay Conferences? | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "f3c920c381660f613163896a405cce6163388945186cb41d15f2b3ee26fe85c5"
 uniqueness_score: 56.03
 combined_similarity: 0.9532

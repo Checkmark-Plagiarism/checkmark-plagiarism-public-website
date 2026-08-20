@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-ai-grade-writing-consistently-across-multiple-classes"
 title: "Can AI Grade Writing Consistently Across Multiple Classes?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "023f5f10ee38ae4703d5612468511f096efe35f52a924f00710a32d00db878cc"
 uniqueness_score: 81.6
 combined_similarity: 0.9389

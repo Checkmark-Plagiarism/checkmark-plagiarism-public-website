@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-should-teachers-interpret-conflicting-ai-detection-results"
 title: "How Should Teachers Interpret Conflicting AI Detection Results?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "66d55eae3b448a23472fed99380668f75c04d9903bbce9277283309c3959da1e"
 uniqueness_score: 68.71
 combined_similarity: 0.9477
@@ -24,7 +24,7 @@ remediation_status: "not_needed"
 | 1 | `/learning/2026/8/why-do-different-ai-detectors-give-different-results` | 0.9618 | 0.9682 | 0.9575 |
 | 2 | `/learning/2026/8/what-is-enough-evidence-to-say-a-student-used-ai` | 0.9503 | 0.9423 | 0.9557 |
 | 3 | `/learning/2026/8/should-teachers-rely-on-ai-detector-scores` | 0.9494 | 0.9588 | 0.9432 |
-| 4 | `/learning/2026/8/can-human-writing-be-flagged-as-ai` | 0.9478 | 0.9362 | 0.9555 |
+| 4 | `/learning/2026/8/can-human-writing-be-flagged-as-ai` | 0.9482 | 0.9372 | 0.9555 |
 | 5 | `/learning/2026/8/can-a-student-be-disciplined-based-only-on-an-ai-detector` | 0.9466 | 0.9378 | 0.9524 |
 
 ## Semantic Chunks

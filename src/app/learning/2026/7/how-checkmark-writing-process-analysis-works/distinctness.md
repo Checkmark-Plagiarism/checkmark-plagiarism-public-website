@@ -2,11 +2,11 @@
 route: "/learning/2026/7/how-checkmark-writing-process-analysis-works"
 title: "How Checkmark"
 seniority_date: "2026-07-16"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "f8d19fb7fa58572b84c611ddcf80d4845c888a618af14395df489d6db2848697"
 uniqueness_score: 92.64
-combined_similarity: 0.8948
-whole_page_top5_similarity: 0.9268
+combined_similarity: 0.895
+whole_page_top5_similarity: 0.9272
 top_chunk_overlap: 0.8735
 action: "remediation_candidate"
 nearest_competitor: "/learning/2026/8/what-evidence-can-clear-a-student-accused-of-using-ai"
@@ -22,8 +22,8 @@ remediation_status: "not_needed"
 | Rank | Route / Slug | Combined Sim | Page Sim | Top Chunk Sim |
 | :--- | :--- | :--- | :--- | :--- |
 | 1 | `/learning/2026/8/what-evidence-can-clear-a-student-accused-of-using-ai` | 0.8919 | 0.9171 | 0.8751 |
-| 2 | `/learning/2026/8/can-document-history-protect-a-student-from-a-false-ai-accusation` | 0.8878 | 0.9260 | 0.8623 |
-| 3 | `/learning/2026/8/what-should-a-good-plagiarism-report-actually-show-a-teacher` | 0.8843 | 0.9128 | 0.8653 |
+| 2 | `/learning/2026/8/what-should-a-good-plagiarism-report-actually-show-a-teacher` | 0.8843 | 0.9128 | 0.8653 |
+| 3 | `/learning/2026/8/can-document-history-protect-a-student-from-a-false-ai-accusation` | 0.8832 | 0.9281 | 0.8533 |
 | 4 | `/learning/2026/8/what-does-it-mean-if-a-student-makes-almost-no-revisions` | 0.8769 | 0.9203 | 0.8479 |
 | 5 | `/learning/2026/8/what-is-better-evidence-than-an-ai-detector-score` | 0.8761 | 0.9160 | 0.8495 |
 

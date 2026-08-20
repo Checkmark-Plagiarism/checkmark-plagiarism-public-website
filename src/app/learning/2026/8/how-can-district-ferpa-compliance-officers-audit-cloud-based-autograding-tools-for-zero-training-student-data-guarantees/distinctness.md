@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-district-ferpa-compliance-officers-audit-cloud-based-autograding-tools-for-zero-training-student-data-guarantees"
 title: "How Can District FERPA Compliance Officers Audit Cloud-Based Autograding Tools for Zero-Training Student Data Guarantees? | Checkmark Plagiarism"
 seniority_date: "2026-08-19"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:29Z"
 content_hash: "3e523f34c48154fa353ef8ec899b488e1fffec2499fdc16e56ea797d0659753d"
 uniqueness_score: 42.94
 combined_similarity: 0.9577

@@ -2,9 +2,9 @@
 route: "/learning/2026/8/should-teachers-keep-writing-samples-to-help-detect-ai"
 title: "Should Teachers Keep Writing Samples to Help Detect AI?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "35b82f204ae5c426f6ee137dd83860b70de229c463eac23956fb11d47822fc56"
-uniqueness_score: 17.38
+uniqueness_score: 17.18
 combined_similarity: 0.9685
 whole_page_top5_similarity: 0.9636
 top_chunk_overlap: 0.9717
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 17.38 / 100
+- **Uniqueness Score**: 17.18 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/how-can-teachers-establish-a-baseline-for-student-writing`
 

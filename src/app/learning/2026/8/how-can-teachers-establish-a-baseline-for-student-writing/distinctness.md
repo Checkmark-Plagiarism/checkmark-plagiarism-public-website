@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-teachers-establish-a-baseline-for-student-writing"
 title: "How Can Teachers Establish a Baseline for Student Writing?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "2d71690a3418dca672c1992bfd3fae3fe8f9b39bc841d07c69f3b053b1f3158f"
 uniqueness_score: 26.38
 combined_similarity: 0.9643

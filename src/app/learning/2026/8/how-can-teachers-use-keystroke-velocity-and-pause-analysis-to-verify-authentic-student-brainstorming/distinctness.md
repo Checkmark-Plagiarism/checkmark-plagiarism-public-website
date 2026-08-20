@@ -2,9 +2,9 @@
 route: "/learning/2026/8/how-can-teachers-use-keystroke-velocity-and-pause-analysis-to-verify-authentic-student-brainstorming"
 title: "How Can Teachers Use Keystroke Velocity and Pause Analysis to Verify Authentic Student Brainstorming? | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "1062448c7079c22f2888dba44a4ac2ff1149f0739dfa8bfbbe866d0a2a8d9dd6"
-uniqueness_score: 29.04
+uniqueness_score: 29.24
 combined_similarity: 0.9625
 whole_page_top5_similarity: 0.9826
 top_chunk_overlap: 0.9491
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 29.04 / 100
+- **Uniqueness Score**: 29.24 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/how-can-teachers-use-essay-playback-to-differentiate-natural-brainstorming-pauses-from-external-device-transcription`
 

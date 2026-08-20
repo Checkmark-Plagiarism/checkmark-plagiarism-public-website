@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-a-student-be-disciplined-based-only-on-an-ai-detector"
 title: "Can a Student Be Disciplined Based Only on an AI Detector?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "6f8ddd202c9d06f3416b26ce2e57e1da8652fe1223af5ebdf17f9a4e6f7007bf"
 uniqueness_score: 51.33
 combined_similarity: 0.955
@@ -225,7 +225,7 @@ Writing playback provides objective physical timeline records: keystroke cadence
 ### Section: What if a student with a 95% AI score proves they drafted the essay in Google Docs?
 - **Level**: `h3`
 - **Hash**: `8e77998fa1e944e4810f769fc8b530ea015b87703f1470c71842db242bf8db2f`
-- **Best Competitor Match**: `/learning/2026/8/how-can-teachers-investigate-a-possible-ai-false-positive` (Similarity: 0.8754)
+- **Best Competitor Match**: `/learning/2026/8/how-can-teachers-investigate-a-possible-ai-false-positive` (Similarity: 0.8719)
 
 ```text
 If writing playback logs demonstrate multi-session drafting and the student explains the work fluently, the detector result is dismissed as a false positive, and no penalty is assigned.

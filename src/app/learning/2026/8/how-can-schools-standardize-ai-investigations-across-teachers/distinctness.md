@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-schools-standardize-ai-investigations-across-teachers"
 title: "How Can Schools Standardize AI Investigations Across Teachers?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "4f5ba294e8350ed4bb5d974176e81f6515c49188a43a01030fe634042b5591fa"
 uniqueness_score: 36.81
 combined_similarity: 0.9602

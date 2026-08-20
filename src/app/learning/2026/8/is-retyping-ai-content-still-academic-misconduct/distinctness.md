@@ -2,7 +2,7 @@
 route: "/learning/2026/8/is-retyping-ai-content-still-academic-misconduct"
 title: "Is Retyping AI Content Still Academic Misconduct?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "9836362d508e35f214f0f75cf357c3815a8b7ed619447a8b33e0520a6aed8e0a"
 uniqueness_score: 54.4
 combined_similarity: 0.9537

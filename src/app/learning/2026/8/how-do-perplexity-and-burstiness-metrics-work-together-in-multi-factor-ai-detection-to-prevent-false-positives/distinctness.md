@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-do-perplexity-and-burstiness-metrics-work-together-in-multi-factor-ai-detection-to-prevent-false-positives"
 title: "How Do Perplexity and Burstiness Metrics Work Together in Multi-Factor AI Detection to Prevent False Positives? | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "fa940fad03e81ff1a66b8ff65c0ddbdcab50b36dd6fd9fdb81ccdc351e00c199"
 uniqueness_score: 56.65
 combined_similarity: 0.9527

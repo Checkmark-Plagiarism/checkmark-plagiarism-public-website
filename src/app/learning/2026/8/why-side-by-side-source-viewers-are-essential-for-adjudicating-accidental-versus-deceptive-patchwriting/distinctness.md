@@ -2,9 +2,9 @@
 route: "/learning/2026/8/why-side-by-side-source-viewers-are-essential-for-adjudicating-accidental-versus-deceptive-patchwriting"
 title: "Why Side-by-Side Source Viewers Are Essential for Adjudicating Accidental Versus Deceptive Patchwriting | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:29Z"
 content_hash: "02581db31b0c154fb1ec3deec8cc60c2960fc6f666d8d5c370860dbdf9187471"
-uniqueness_score: 9.0
+uniqueness_score: 9.2
 combined_similarity: 0.9738
 whole_page_top5_similarity: 0.9868
 top_chunk_overlap: 0.9651
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 9.0 / 100
+- **Uniqueness Score**: 9.2 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/how-can-secondary-teachers-use-side-by-side-source-comparisons-to-teach-proper-paraphrasing-in-research-units`
 

@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-ai-give-feedback-on-specific-sentences-in-an-essay"
 title: "Can AI Give Feedback on Specific Sentences in an Essay?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "012e8c458d1bc11688a423fcab705a4ad09034c694910ddd1fab4761cddfd09f"
 uniqueness_score: 81.8
 combined_similarity: 0.9383

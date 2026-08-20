@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-teachers-tell-when-a-student-pasted-text-into-an-essay"
 title: "Can Teachers Tell When a Student Pasted Text Into an Essay?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "1340b081a61d8f397e54cd7c0d10fe9c0bb57266ff39db4e3fa39407e098696c"
 uniqueness_score: 8.38
 combined_similarity: 0.9747

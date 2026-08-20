@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-teachers-detect-chatgpt-after-a-student-changes-the-words"
 title: "Can Teachers Detect ChatGPT After a Student Changes the Words?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "412b50eed0834bad8bb47b73ae4f399252e86aa2dd6180d61f78d0967f045537"
 uniqueness_score: 28.43
 combined_similarity: 0.9629

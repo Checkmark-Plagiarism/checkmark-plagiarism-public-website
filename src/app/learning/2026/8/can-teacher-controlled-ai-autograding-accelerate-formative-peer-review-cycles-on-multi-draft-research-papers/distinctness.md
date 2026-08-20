@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-teacher-controlled-ai-autograding-accelerate-formative-peer-review-cycles-on-multi-draft-research-papers"
 title: "Can Teacher-Controlled AI Autograding Accelerate Formative Peer-Review Cycles on Multi-Draft Research Papers? | Checkmark Plagiarism"
 seniority_date: "2026-08-19"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:29Z"
 content_hash: "c1027cdd65571c7318637ca69a40df04bf99e0a21205efe8bf6e626a753df0e2"
 uniqueness_score: 77.1
 combined_similarity: 0.9427

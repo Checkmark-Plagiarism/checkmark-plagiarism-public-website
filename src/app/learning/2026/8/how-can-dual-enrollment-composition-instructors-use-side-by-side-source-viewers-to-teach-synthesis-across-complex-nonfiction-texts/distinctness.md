@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-dual-enrollment-composition-instructors-use-side-by-side-source-viewers-to-teach-synthesis-across-complex-nonfiction-texts"
 title: "How Can Dual Enrollment Composition Instructors Use Side-by-Side Source Viewers to Teach Synthesis Across Complex Nonfiction Texts? | Checkmark Plagiarism"
 seniority_date: "2026-08-19"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:29Z"
 content_hash: "74dfbf26a4f9dd02d67979dd779b1c39bd4a88629f6a2950e7fcf3b51e881edf"
 uniqueness_score: 66.67
 combined_similarity: 0.9487

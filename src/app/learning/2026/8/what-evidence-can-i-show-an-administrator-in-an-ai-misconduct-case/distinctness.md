@@ -2,7 +2,7 @@
 route: "/learning/2026/8/what-evidence-can-i-show-an-administrator-in-an-ai-misconduct-case"
 title: "What Evidence Can I Show an Administrator in an AI Misconduct Case?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "be2640a4c613a772f3a16b25e7d53fc006487bef5e3024b59cb31ac8d2c18ea7"
 uniqueness_score: 58.69
 combined_similarity: 0.9522

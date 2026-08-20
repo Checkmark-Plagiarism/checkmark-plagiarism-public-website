@@ -2,7 +2,7 @@
 route: "/learning/2026/8/what-security-requirements-should-schools-have-for-ai-detection-software"
 title: "What Security Requirements Should Schools Have for AI Detection Software?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "ab60b8e52d5b427c7455d3740c816e1129ca0bd0f55d0d98ad1c8c2e2e775877"
 uniqueness_score: 83.23
 combined_similarity: 0.9364

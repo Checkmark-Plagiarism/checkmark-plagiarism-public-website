@@ -2,9 +2,9 @@
 route: "/learning/2026/8/how-do-i-know-if-my-student-used-chatgpt"
 title: "How Do I Know If My Student Used ChatGPT?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "dae2f46da89681584574988807e377bdf39688949070e20426c744345d8cecda"
-uniqueness_score: 29.24
+uniqueness_score: 29.45
 combined_similarity: 0.9625
 whole_page_top5_similarity: 0.9637
 top_chunk_overlap: 0.9617
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 29.24 / 100
+- **Uniqueness Score**: 29.45 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/what-are-the-signs-that-a-student-used-chatgpt`
 

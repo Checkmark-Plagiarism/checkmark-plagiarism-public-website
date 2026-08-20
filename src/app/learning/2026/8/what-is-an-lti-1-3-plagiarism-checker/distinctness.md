@@ -2,7 +2,7 @@
 route: "/learning/2026/8/what-is-an-lti-1-3-plagiarism-checker"
 title: "What Is an LTI 1.3 Plagiarism Checker?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "1e1c33a8273b20a4cfe5d051c4e61b6e1f1791236ab43989a906c8892ae6670b"
 uniqueness_score: 91.21
 combined_similarity: 0.9113
@@ -147,7 +147,7 @@ LTI 1.1 used basic shared keys with limited security, while LTI 1.3 uses OAuth 2
 ### Section: Which LMS platforms support LTI 1.3 plagiarism checking?
 - **Level**: `h3`
 - **Hash**: `421cef82c014f1baa2be07c8c01cb55d41d122f9107edbdbe5d8626b906711de`
-- **Best Competitor Match**: `/learning/2026/8/how-do-teachers-detect-patchwriting` (Similarity: 0.8497)
+- **Best Competitor Match**: `/learning/2026/8/can-a-student-copy-ai-text-slowly-enough-to-avoid-detection` (Similarity: 0.8497)
 
 ```text
 Canvas LMS, Blackboard Learn, Brightspace (D2L), Schoology, and Moodle all support certified LTI 1.3 integrations with Checkmark.

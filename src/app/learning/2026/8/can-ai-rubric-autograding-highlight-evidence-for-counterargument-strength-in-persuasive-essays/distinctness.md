@@ -2,9 +2,9 @@
 route: "/learning/2026/8/can-ai-rubric-autograding-highlight-evidence-for-counterargument-strength-in-persuasive-essays"
 title: "Can AI Rubric Autograding Highlight Evidence for Counterargument Strength in Persuasive Essays? | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "81b83841877078a9139c2c356c3731a67ef27fec3851c65c1145535d5f681508"
-uniqueness_score: 51.53
+uniqueness_score: 51.74
 combined_similarity: 0.9549
 whole_page_top5_similarity: 0.9757
 top_chunk_overlap: 0.941
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 51.53 / 100
+- **Uniqueness Score**: 51.74 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/how-can-department-chairs-implement-ai-assisted-rubric-calibration-across-grade-level-writing-teams`
 

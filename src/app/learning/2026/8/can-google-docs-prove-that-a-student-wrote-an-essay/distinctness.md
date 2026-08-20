@@ -2,11 +2,11 @@
 route: "/learning/2026/8/can-google-docs-prove-that-a-student-wrote-an-essay"
 title: "Can Google Docs Prove That a Student Wrote an Essay?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "f7d269a62fb3a46e547ff4728910d19f175091901834b51a8fbce94b88d3b35c"
-uniqueness_score: 35.17
-combined_similarity: 0.9604
-whole_page_top5_similarity: 0.9626
+uniqueness_score: 33.54
+combined_similarity: 0.9607
+whole_page_top5_similarity: 0.9633
 top_chunk_overlap: 0.959
 action: "remediation_candidate"
 nearest_competitor: "/learning/2026/8/how-do-i-find-out-whether-a-student-actually-wrote-an-assignment"
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 35.17 / 100
+- **Uniqueness Score**: 33.54 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/how-do-i-find-out-whether-a-student-actually-wrote-an-assignment`
 
@@ -24,7 +24,7 @@ remediation_status: "not_needed"
 | 1 | `/learning/2026/8/how-do-i-find-out-whether-a-student-actually-wrote-an-assignment` | 0.9663 | 0.9654 | 0.9669 |
 | 2 | `/learning/2026/8/is-google-docs-revision-history-enough-to-detect-ai` | 0.9608 | 0.9449 | 0.9714 |
 | 3 | `/learning/2026/8/what-writing-differences-suggest-that-someone-else-wrote-an-assignment` | 0.9600 | 0.9501 | 0.9666 |
-| 4 | `/learning/2026/8/what-if-an-ai-detector-flags-a-student-who-actually-wrote-the-essay` | 0.9568 | 0.9579 | 0.9561 |
+| 4 | `/learning/2026/8/what-if-an-ai-detector-flags-a-student-who-actually-wrote-the-essay` | 0.9571 | 0.9587 | 0.9561 |
 | 5 | `/learning/2026/8/can-teachers-see-every-revision-a-student-made` | 0.9558 | 0.9449 | 0.9630 |
 
 ## Semantic Chunks

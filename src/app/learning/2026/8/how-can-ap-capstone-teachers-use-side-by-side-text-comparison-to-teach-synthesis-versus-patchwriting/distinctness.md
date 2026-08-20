@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-ap-capstone-teachers-use-side-by-side-text-comparison-to-teach-synthesis-versus-patchwriting"
 title: "How Can AP Capstone Teachers Use Side-by-Side Text Comparison to Teach Synthesis Versus Patchwriting? | Checkmark Plagiarism"
 seniority_date: "2026-08-19"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:29Z"
 content_hash: "ce075977d6332bc26d4d47b0debfaf83a1e64736d48a92a676292f4a1419cc78"
 uniqueness_score: 53.17
 combined_similarity: 0.9543

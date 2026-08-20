@@ -2,7 +2,7 @@
 route: "/learning/2026/6/user-onboarding-and-access-management-adding-teachers-roles-and-permissions-in-checkmark"
 title: "User Onboarding and Access Management: Adding Teachers, Roles, and Permissions in Checkmark"
 seniority_date: "2026-06-25"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "399abf543a33fb50ce2a56cf89b22179040e1dbea4e6c801bf9e1861a17adf3a"
 uniqueness_score: 97.55
 combined_similarity: 0.8009

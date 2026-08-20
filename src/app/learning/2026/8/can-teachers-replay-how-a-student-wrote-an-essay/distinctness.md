@@ -2,11 +2,11 @@
 route: "/learning/2026/8/can-teachers-replay-how-a-student-wrote-an-essay"
 title: "Can Teachers Replay How a Student Wrote an Essay?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "4ab4dbd08526410a73f331023338d661fd19474eaeca08dbb83bfba6cf47e1d1"
-uniqueness_score: 23.11
-combined_similarity: 0.9654
-whole_page_top5_similarity: 0.9524
+uniqueness_score: 23.31
+combined_similarity: 0.9653
+whole_page_top5_similarity: 0.9521
 top_chunk_overlap: 0.9741
 action: "remediation_candidate"
 nearest_competitor: "/learning/2026/8/what-does-human-writing-look-like-even-when-an-ai-detector-flags-it"
@@ -15,14 +15,14 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 23.11 / 100
+- **Uniqueness Score**: 23.31 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/what-does-human-writing-look-like-even-when-an-ai-detector-flags-it`
 
 | Rank | Route / Slug | Combined Sim | Page Sim | Top Chunk Sim |
 | :--- | :--- | :--- | :--- | :--- |
-| 1 | `/learning/2026/8/what-does-human-writing-look-like-even-when-an-ai-detector-flags-it` | 0.9807 | 0.9518 | 1.0000 |
-| 2 | `/learning/2026/8/can-writing-history-reveal-humanized-ai-content` | 0.9713 | 0.9282 | 1.0000 |
+| 1 | `/learning/2026/8/what-does-human-writing-look-like-even-when-an-ai-detector-flags-it` | 0.9800 | 0.9501 | 1.0000 |
+| 2 | `/learning/2026/8/can-writing-history-reveal-humanized-ai-content` | 0.9727 | 0.9318 | 1.0000 |
 | 3 | `/learning/2026/8/can-i-see-exactly-how-a-student-built-their-essay-from-start-to-finish` | 0.9653 | 0.9677 | 0.9636 |
 | 4 | `/learning/2026/8/how-can-teachers-investigate-an-essay-that-appeared-all-at-once` | 0.9642 | 0.9315 | 0.9859 |
 | 5 | `/learning/2026/8/can-typing-history-show-whether-an-essay-is-authentic` | 0.9632 | 0.9246 | 0.9889 |

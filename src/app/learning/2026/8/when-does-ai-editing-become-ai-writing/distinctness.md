@@ -2,9 +2,9 @@
 route: "/learning/2026/8/when-does-ai-editing-become-ai-writing"
 title: "When Does AI Editing Become AI Writing?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "f5c8d5d8831554e52d59ef59811a94a53cd494916dfb10f105fb025ba74412c6"
-uniqueness_score: 23.93
+uniqueness_score: 24.34
 combined_similarity: 0.9652
 whole_page_top5_similarity: 0.9656
 top_chunk_overlap: 0.9649
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 23.93 / 100
+- **Uniqueness Score**: 24.34 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/how-can-i-tell-if-ai-edited-an-essay-versus-wrote-it`
 

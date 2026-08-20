@@ -2,7 +2,7 @@
 route: "/learning/2026/6/what-does-ts-mean-a-plain-english-guide-for-teachers-and-parents"
 title: "What Does \"
 seniority_date: "2026-06-25"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "ff24d1f7221dc01171350c9c0e8bd97a677aecbcc3c360390a3bfdc775354bd4"
 uniqueness_score: 100.0
 combined_similarity: 0.7198

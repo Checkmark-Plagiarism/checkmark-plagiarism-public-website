@@ -2,9 +2,9 @@
 route: "/learning/2026/8/how-can-i-make-essays-more-ai-resistant"
 title: "How Can I Make Essays More AI-Resistant?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "acf342f79fc215199bc46dbe8258a5f548361168301f5d77c5e1d951de93b1bc"
-uniqueness_score: 28.63
+uniqueness_score: 28.83
 combined_similarity: 0.9626
 whole_page_top5_similarity: 0.9575
 top_chunk_overlap: 0.9661
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 28.63 / 100
+- **Uniqueness Score**: 28.83 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/how-can-i-design-assignments-that-are-harder-to-complete-with-ai`
 

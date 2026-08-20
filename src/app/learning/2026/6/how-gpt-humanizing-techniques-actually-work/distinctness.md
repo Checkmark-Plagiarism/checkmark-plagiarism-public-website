@@ -2,11 +2,11 @@
 route: "/learning/2026/6/how-gpt-humanizing-techniques-actually-work"
 title: "How GPT \"
 seniority_date: "2026-06-25"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "1ac0ce571ced902607a2129929046e3ccbebbf32ab2ccc185c5c9230bab3d795"
-uniqueness_score: 92.23
-combined_similarity: 0.8966
-whole_page_top5_similarity: 0.9175
+uniqueness_score: 92.43
+combined_similarity: 0.8963
+whole_page_top5_similarity: 0.9168
 top_chunk_overlap: 0.8827
 action: "remediation_candidate"
 nearest_competitor: "/learning/2026/6/what-is-an-ai-humanizer-how-they-work-what-they-promise-and-where-they-fall-short"
@@ -15,15 +15,15 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 92.23 / 100
+- **Uniqueness Score**: 92.43 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/6/what-is-an-ai-humanizer-how-they-work-what-they-promise-and-where-they-fall-short`
 
 | Rank | Route / Slug | Combined Sim | Page Sim | Top Chunk Sim |
 | :--- | :--- | :--- | :--- | :--- |
 | 1 | `/learning/2026/6/what-is-an-ai-humanizer-how-they-work-what-they-promise-and-where-they-fall-short` | 0.9170 | 0.9535 | 0.8926 |
-| 2 | `/learning/2026/8/can-ai-humanizers-fool-ai-detectors` | 0.8832 | 0.9179 | 0.8601 |
-| 3 | `/learning/2026/8/can-teachers-detect-humanized-ai-writing` | 0.8827 | 0.9143 | 0.8616 |
+| 2 | `/learning/2026/8/can-teachers-detect-humanized-ai-writing` | 0.8827 | 0.9143 | 0.8616 |
+| 3 | `/learning/2026/8/can-ai-humanizers-fool-ai-detectors` | 0.8823 | 0.9157 | 0.8601 |
 | 4 | `/learning/2026/8/an-essay-passed-the-ai-detector-but-still-looks-ai-written-what-can-i-check` | 0.8767 | 0.8897 | 0.8680 |
 | 5 | `/learning/2026/6/how-ai-detection-bypass-tools-actually-work-and-why-they-are-not-magic` | 0.8739 | 0.8910 | 0.8624 |
 

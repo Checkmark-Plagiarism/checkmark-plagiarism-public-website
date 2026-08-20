@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-ai-rubric-autograding-evaluate-claim-evidence-reasoning-cer-structure-in-high-school-science-lab-reports"
 title: "Can AI Rubric Autograding Evaluate Claim-Evidence-Reasoning (CER) Structure in High School Science Lab Reports? | Checkmark Plagiarism"
 seniority_date: "2026-08-19"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:29Z"
 content_hash: "127a6d2bd7d857f56f14abd64ba2c6d5a20cb2f591b7fdffba13789e94b7608b"
 uniqueness_score: 85.28
 combined_similarity: 0.933

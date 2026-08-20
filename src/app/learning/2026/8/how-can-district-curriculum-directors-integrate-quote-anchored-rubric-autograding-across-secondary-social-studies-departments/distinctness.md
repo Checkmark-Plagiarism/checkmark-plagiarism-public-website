@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-district-curriculum-directors-integrate-quote-anchored-rubric-autograding-across-secondary-social-studies-departments"
 title: "How Can District Curriculum Directors Integrate Quote-Anchored Rubric Autograding Across Secondary Social Studies Departments? | Checkmark Plagiarism"
 seniority_date: "2026-08-19"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:29Z"
 content_hash: "46c6e39a25052bd7897ae5b2ced19d09b845be18c6e6e96824ab6322affbdc46"
 uniqueness_score: 47.24
 combined_similarity: 0.9564

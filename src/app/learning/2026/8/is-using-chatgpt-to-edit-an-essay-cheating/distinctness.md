@@ -2,7 +2,7 @@
 route: "/learning/2026/8/is-using-chatgpt-to-edit-an-essay-cheating"
 title: "Is Using ChatGPT to Edit an Essay Cheating?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "9cbc6c67e9319e9dd6b70745322515fa2ade84bf1adbdf1b4ad3c5add4cce9e1"
 uniqueness_score: 26.18
 combined_similarity: 0.9645
@@ -23,7 +23,7 @@ remediation_status: "not_needed"
 | :--- | :--- | :--- | :--- | :--- |
 | 1 | `/learning/2026/8/is-using-ai-to-paraphrase-your-own-writing-cheating` | 0.9794 | 0.9706 | 0.9852 |
 | 2 | `/learning/2026/8/does-retyping-chatgpts-answer-make-it-undetectable` | 0.9696 | 0.9444 | 0.9865 |
-| 3 | `/learning/2026/8/can-students-beat-ai-detection-by-manually-rewriting-chatgpt` | 0.9684 | 0.9589 | 0.9747 |
+| 3 | `/learning/2026/8/can-students-beat-ai-detection-by-manually-rewriting-chatgpt` | 0.9686 | 0.9595 | 0.9747 |
 | 4 | `/learning/2026/8/is-using-grammarly-considered-ai-cheating` | 0.9683 | 0.9401 | 0.9870 |
 | 5 | `/learning/2026/8/can-paraphrasing-ai-text-make-it-undetectable` | 0.9636 | 0.9489 | 0.9734 |
 

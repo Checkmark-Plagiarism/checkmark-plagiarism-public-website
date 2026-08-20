@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-career-and-technical-education-cte-instructors-sync-rubric-based-first-draft-evaluations-into-buzz-lms"
 title: "How Can Career and Technical Education (CTE) Instructors Sync Rubric-Based First-Draft Evaluations Into Buzz LMS? | Checkmark Plagiarism"
 seniority_date: "2026-08-19"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:29Z"
 content_hash: "c48511e75cce9f2d6a6bbad24dd0d1d5bb38b77a012900937707a573347ec2fe"
 uniqueness_score: 86.71
 combined_similarity: 0.9306

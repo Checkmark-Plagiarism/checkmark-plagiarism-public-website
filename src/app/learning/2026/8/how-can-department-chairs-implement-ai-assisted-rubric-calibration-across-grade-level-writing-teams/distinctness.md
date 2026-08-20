@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-department-chairs-implement-ai-assisted-rubric-calibration-across-grade-level-writing-teams"
 title: "How Can Department Chairs Implement AI-Assisted Rubric Calibration Across Grade-Level Writing Teams? | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "883437aefe1bcee5d064ee4d27d935ae57c4ba97a6b8c23f376b676b949c51fb"
 uniqueness_score: 52.97
 combined_similarity: 0.9543

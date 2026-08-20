@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-students-avoid-plagiarism-detection-by-retyping-an-article"
 title: "Can Students Avoid Plagiarism Detection by Retyping an Article?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "e289804b40d57954ea0b3b9e7ed639603912e1ba46937fd6560c768b3d024c99"
 uniqueness_score: 11.25
 combined_similarity: 0.9728

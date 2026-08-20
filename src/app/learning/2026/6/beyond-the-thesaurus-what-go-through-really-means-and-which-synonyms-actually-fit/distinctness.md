@@ -2,7 +2,7 @@
 route: "/learning/2026/6/beyond-the-thesaurus-what-go-through-really-means-and-which-synonyms-actually-fit"
 title: "Beyond the Thesaurus: What \"
 seniority_date: "2026-06-25"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "8b97555867f9235d8152a0876e00ab6c649788069f9e9af75e76b88240fff117"
 uniqueness_score: 97.34
 combined_similarity: 0.8081

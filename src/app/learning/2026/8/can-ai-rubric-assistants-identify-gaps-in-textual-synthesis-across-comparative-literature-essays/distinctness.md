@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-ai-rubric-assistants-identify-gaps-in-textual-synthesis-across-comparative-literature-essays"
 title: "Can AI Rubric Assistants Identify Gaps in Textual Synthesis Across Comparative Literature Essays? | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "53ed06a8399b9c34a979de9ba7b33d8f595da08bebe6b534b4cf9000e1ccd835"
 uniqueness_score: 61.96
 combined_similarity: 0.9505

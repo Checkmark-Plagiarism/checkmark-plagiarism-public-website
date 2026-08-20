@@ -2,9 +2,9 @@
 route: "/learning/2026/8/who-should-make-the-final-decision-about-suspected-ai-use"
 title: "Who Should Make the Final Decision About Suspected AI Use?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "f32e069e604f476c90cee9696d592c09699c00555afafa04dc95004855fd2658"
-uniqueness_score: 60.12
+uniqueness_score: 60.33
 combined_similarity: 0.9514
 whole_page_top5_similarity: 0.9444
 top_chunk_overlap: 0.956
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 60.12 / 100
+- **Uniqueness Score**: 60.33 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/how-can-teachers-resolve-an-ai-detection-dispute`
 

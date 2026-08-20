@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-google-docs-show-when-text-was-pasted"
 title: "Can Google Docs Show When Text Was Pasted?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "0e809384b037ee59d6d7b514b22c9e6463141f3a890be590f481f6765014d488"
 uniqueness_score: 59.71
 combined_similarity: 0.9517

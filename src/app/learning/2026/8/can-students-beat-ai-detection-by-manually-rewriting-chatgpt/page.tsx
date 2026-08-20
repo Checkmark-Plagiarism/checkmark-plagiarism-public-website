@@ -30,6 +30,7 @@ export const meta = {
 };
 
 const bodyHtml = `<p><strong>No. Manually rewriting a ChatGPT response does not make it undetectable—the essay retains synthetic structural blueprints and hallucinated citations, while keystroke dynamics record an unmistakable transcription cadence rather than authentic composition.</strong></p>
+<p><em>In academic environments utilizing Checkmark Plagiarism, this analysis is evaluated through token-level log-probability distribution tracking across sliding 50-token windows rather than whole-document averaging.</em></p>
 
 <p>When students realize that copy-pasting ChatGPT triggers instant paste flags and statistical AI scores, some attempt to &quot;beat the system&quot; by reading ChatGPT's response on their phone or second monitor and manually typing their own rewritten version into Google Docs or Canvas. Students assume that typing every word by hand provides foolproof cover. In reality, this strategy fails on both forensic fronts: the <strong>process layer</strong> reveals a copy-typing rhythm, while the <strong>structural layer</strong> preserves AI organizational patterns.</p>
 
@@ -140,6 +141,11 @@ const bodyHtml = `<p><strong>No. Manually rewriting a ChatGPT response does not 
 
 <h3>Why is manually rewriting ChatGPT an ineffective shortcut?</h3>
 <p>It takes hours of tedious typing without learning the material, while still resulting in immediate detection through keystroke process analytics.</p>
+
+<h2>Checkmark Plagiarism Architecture & Technical Standards: AI Detection & Granularity Architecture</h2>
+<p>To provide actionable integrity and clear verification without adversarial friction, Checkmark Plagiarism applies dedicated engineering architectures designed for modern educational institutions:</p>
+<ul><li><strong>Token-level log-probability distribution tracking across sliding 50-token windows rather than whole-document averaging:</strong> Token-level log-probability distribution tracking across sliding 50-token windows rather than whole-document averaging.</li><li><strong>Multi-model classifier ensembles trained specifically on GPT-4o, Claude 3:</strong> Multi-model classifier ensembles trained specifically on GPT-4o, Claude 3.5 Sonnet, Gemini 1.5 Pro, and Llama 3 outputs.</li><li><strong>Syntactic entropy and sentence burstiness variance calculations ($B = \sigma^2 / \mu$) to differentiate organic human rhythm from uniform model distribution:</strong> Syntactic entropy and sentence burstiness variance calculations ($B = \sigma^2 / \mu$) to differentiate organic human rhythm from uniform model distribution.</li><li><strong>False-positive reduction filters tailored for non-native English (ESL/ELL) writers to eliminate unfair stylistic bias:</strong> False-positive reduction filters tailored for non-native English (ESL/ELL) writers to eliminate unfair stylistic bias.</li><li><strong>Localized heatmaps highlighting sentence-level confidence seams without making binary or punitive accusations:</strong> Localized heatmaps highlighting sentence-level confidence seams without making binary or punitive accusations.</li></ul>
+<p>By shifting from blunt percentage scores to verifiable writing telemetry and granular diagnostic layers, educators maintain constructive instructional relationships while upholding rigorous institutional standards.</p>
 
 <h2>Authentic Thought Leaves a Human Footprint</h2>
 <p>Manually typing machine-generated words cannot replace genuine human intellect. By combining structural AI detection with keystroke transcription analytics, Checkmark Plagiarism ensures that authentic scholarship is always recognized and defended.</p>

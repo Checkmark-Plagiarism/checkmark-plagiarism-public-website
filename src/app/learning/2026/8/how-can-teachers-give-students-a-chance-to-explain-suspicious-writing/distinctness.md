@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-teachers-give-students-a-chance-to-explain-suspicious-writing"
 title: "How Can Teachers Give Students a Chance to Explain Suspicious Writing?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "046718e6971a0c89aa7e487af4bf4be9c2e9fac4dbbfc70dec6ed46ef0a919f4"
 uniqueness_score: 61.55
 combined_similarity: 0.9507

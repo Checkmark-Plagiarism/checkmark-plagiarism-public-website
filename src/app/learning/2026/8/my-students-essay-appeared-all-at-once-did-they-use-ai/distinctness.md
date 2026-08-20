@@ -2,9 +2,9 @@
 route: "/learning/2026/8/my-students-essay-appeared-all-at-once-did-they-use-ai"
 title: "My Student"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "82cc4b6a16e02d643b1e93d2ba44bda3a3d83818bbd3e75e0ac9f2b1824b907e"
-uniqueness_score: 57.87
+uniqueness_score: 58.08
 combined_similarity: 0.9524
 whole_page_top5_similarity: 0.9708
 top_chunk_overlap: 0.9401
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 57.87 / 100
+- **Uniqueness Score**: 58.08 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/how-can-teachers-investigate-an-essay-that-appeared-all-at-once`
 

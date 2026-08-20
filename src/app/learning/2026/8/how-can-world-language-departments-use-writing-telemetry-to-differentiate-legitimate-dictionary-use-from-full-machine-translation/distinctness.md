@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-world-language-departments-use-writing-telemetry-to-differentiate-legitimate-dictionary-use-from-full-machine-translation"
 title: "How Can World Language Departments Use Writing Telemetry to Differentiate Legitimate Dictionary Use From Full Machine Translation? | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "e7139fc4aa9b4402e62910678177d8fdba3f045f3deea7aaf7f7905b18ae9b27"
 uniqueness_score: 66.05
 combined_similarity: 0.9489

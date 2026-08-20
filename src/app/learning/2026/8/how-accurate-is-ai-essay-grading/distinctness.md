@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-accurate-is-ai-essay-grading"
 title: "How Accurate Is AI Essay Grading?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "87ea558554d675e9b9e107aedadac509dc95655bce644c6bd52383f7da9c796a"
 uniqueness_score: 62.99
 combined_similarity: 0.9501

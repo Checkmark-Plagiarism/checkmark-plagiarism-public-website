@@ -2,11 +2,11 @@
 route: "/learning/2026/8/what-should-teachers-check-before-accusing-a-student-of-ai-use"
 title: "What Should Teachers Check Before Accusing a Student of AI Use?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "04ad2f4e59f54be524471262ca255c6ac0204a12046c820758606f6dffee1bc7"
-uniqueness_score: 25.56
+uniqueness_score: 25.36
 combined_similarity: 0.9647
-whole_page_top5_similarity: 0.9686
+whole_page_top5_similarity: 0.9688
 top_chunk_overlap: 0.9621
 action: "remediation_candidate"
 nearest_competitor: "/learning/2026/8/what-is-the-best-way-to-investigate-a-suspicious-essay"
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 25.56 / 100
+- **Uniqueness Score**: 25.36 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/what-is-the-best-way-to-investigate-a-suspicious-essay`
 

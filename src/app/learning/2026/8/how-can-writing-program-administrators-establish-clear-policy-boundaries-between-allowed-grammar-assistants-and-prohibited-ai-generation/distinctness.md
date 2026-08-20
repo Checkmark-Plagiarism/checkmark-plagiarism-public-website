@@ -2,12 +2,12 @@
 route: "/learning/2026/8/how-can-writing-program-administrators-establish-clear-policy-boundaries-between-allowed-grammar-assistants-and-prohibited-ai-generation"
 title: "How Can Writing Program Administrators Establish Clear Policy Boundaries Between Allowed Grammar Assistants and Prohibited AI Generation? | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "5c11548945321de60addee63705371a7229c0d83fea8082a4042c744561b65a3"
 uniqueness_score: 86.5
-combined_similarity: 0.9308
+combined_similarity: 0.9309
 whole_page_top5_similarity: 0.9658
-top_chunk_overlap: 0.9074
+top_chunk_overlap: 0.9077
 action: "remediation_candidate"
 nearest_competitor: "/learning/2026/8/how-can-writing-process-playback-protect-non-native-english-writers-from-false-positive-ai-accusations"
 remediation_attempts: 0
@@ -90,7 +90,7 @@ Vehemently denies cheating but lacks verifiable telemetry to prove hours of kitc
 ### Section: The Inadequacy of Commercial “AI vs. Human” Percentage Scores
 - **Level**: `h3`
 - **Hash**: `49d7d09fc9673a447f4635e5bc08a2abec83dd95630261bc8064349c7c11a6d0`
-- **Best Competitor Match**: `/learning/2026/8/can-human-writing-be-flagged-as-ai` (Similarity: 0.8983)
+- **Best Competitor Match**: `/learning/2026/8/can-human-writing-be-flagged-as-ai` (Similarity: 0.9006)
 
 ```text
 The crisis is exacerbated by commercial plagiarism and AI detection platforms that market opaque, monolithic percentage scores (e.g., “This paper is 78% AI” ).

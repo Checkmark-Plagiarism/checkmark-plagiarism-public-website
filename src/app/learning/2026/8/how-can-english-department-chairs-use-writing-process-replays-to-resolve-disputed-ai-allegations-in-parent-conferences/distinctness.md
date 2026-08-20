@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-english-department-chairs-use-writing-process-replays-to-resolve-disputed-ai-allegations-in-parent-conferences"
 title: "How Can English Department Chairs Use Writing Process Replays to Resolve Disputed AI Allegations in Parent Conferences? | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "177fbd9a6c8289ab9d02896ab76ab36589fd5c4aff3ce600464a9bdb2820437a"
 uniqueness_score: 56.44
 combined_similarity: 0.9529

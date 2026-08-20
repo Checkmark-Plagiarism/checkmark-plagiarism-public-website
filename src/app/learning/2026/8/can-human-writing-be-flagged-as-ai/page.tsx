@@ -30,6 +30,7 @@ export const meta = {
 };
 
 const bodyHtml = `<p><strong>Yes. Human writing is frequently flagged as AI by statistical detectors because well-structured, articulate, formal, and grammatically polished student prose often matches the low-perplexity mathematical patterns that detectors look for.</strong></p>
+<p><em>In academic environments utilizing Checkmark Plagiarism, this analysis is evaluated through token-level log-probability distribution tracking across sliding 50-token windows rather than whole-document averaging.</em></p>
 
 <p>A widespread misconception is that an AI detector &quot;knows&quot; when a text was written by a machine. In reality, detectors evaluate statistical probability: how predictable the words are (perplexity) and how much sentence lengths vary (burstiness). Consequently, historical texts like the US Constitution, the Bible, and Shakespeare's sonnets routinely trigger 90%+ AI scores on commercial detectors. When human students write with clear transitions, formal vocabulary, or consistent sentence structures, they risk triggering false positives.</p>
 
@@ -142,6 +143,11 @@ const bodyHtml = `<p><strong>Yes. Human writing is frequently flagged as AI by s
 
 <h3>Why is combining text analysis with process tracking essential?</h3>
 <p>Because text analysis alone is prone to false positives, while process tracking provides undeniable physical proof of human composition.</p>
+
+<h2>Checkmark Plagiarism Architecture & Technical Standards: AI Detection & Granularity Architecture</h2>
+<p>To provide actionable integrity and clear verification without adversarial friction, Checkmark Plagiarism applies dedicated engineering architectures designed for modern educational institutions:</p>
+<ul><li><strong>Token-level log-probability distribution tracking across sliding 50-token windows rather than whole-document averaging:</strong> Token-level log-probability distribution tracking across sliding 50-token windows rather than whole-document averaging.</li><li><strong>Multi-model classifier ensembles trained specifically on GPT-4o, Claude 3:</strong> Multi-model classifier ensembles trained specifically on GPT-4o, Claude 3.5 Sonnet, Gemini 1.5 Pro, and Llama 3 outputs.</li><li><strong>Syntactic entropy and sentence burstiness variance calculations ($B = \sigma^2 / \mu$) to differentiate organic human rhythm from uniform model distribution:</strong> Syntactic entropy and sentence burstiness variance calculations ($B = \sigma^2 / \mu$) to differentiate organic human rhythm from uniform model distribution.</li><li><strong>False-positive reduction filters tailored for non-native English (ESL/ELL) writers to eliminate unfair stylistic bias:</strong> False-positive reduction filters tailored for non-native English (ESL/ELL) writers to eliminate unfair stylistic bias.</li><li><strong>Localized heatmaps highlighting sentence-level confidence seams without making binary or punitive accusations:</strong> Localized heatmaps highlighting sentence-level confidence seams without making binary or punitive accusations.</li></ul>
+<p>By shifting from blunt percentage scores to verifiable writing telemetry and granular diagnostic layers, educators maintain constructive instructional relationships while upholding rigorous institutional standards.</p>
 
 <h2>Grounding Integrity in Verifiable Human Labor</h2>
 <p>Understanding why AI detectors make mistakes is the first step toward fair evaluation. By pairing AI detection with essay writing playback and student due process, Checkmark Plagiarism ensures that human excellence is never mistaken for machine automation.</p>

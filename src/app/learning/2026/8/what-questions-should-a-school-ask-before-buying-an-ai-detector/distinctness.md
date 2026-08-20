@@ -2,9 +2,9 @@
 route: "/learning/2026/8/what-questions-should-a-school-ask-before-buying-an-ai-detector"
 title: "What Questions Should a School Ask Before Buying an AI Detector?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "77e1bc7f347f5b7ecd014ae865c8bd1bf8fb24574b57bde5cf70f542c96ffd5f"
-uniqueness_score: 24.13
+uniqueness_score: 24.54
 combined_similarity: 0.9651
 whole_page_top5_similarity: 0.9571
 top_chunk_overlap: 0.9705
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 24.13 / 100
+- **Uniqueness Score**: 24.54 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/what-should-a-technology-director-look-for-in-a-plagiarism-checker`
 

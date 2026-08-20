@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-online-course-designers-embed-keystroke-telemetry-to-eliminate-invasive-webcam-proctoring-in-virtual-high-schools"
 title: "How Can Online Course Designers Embed Keystroke Telemetry to Eliminate Invasive Webcam Proctoring in Virtual High Schools? | Checkmark Plagiarism"
 seniority_date: "2026-08-19"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:29Z"
 content_hash: "5c62e27f01c479e8a0634d9b6dfb4333e01e08b65df3ba82b93e285c6e91873c"
 uniqueness_score: 76.28
 combined_similarity: 0.9435

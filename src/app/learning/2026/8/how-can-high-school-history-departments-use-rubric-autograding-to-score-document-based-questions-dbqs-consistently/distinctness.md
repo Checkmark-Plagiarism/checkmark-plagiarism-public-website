@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-high-school-history-departments-use-rubric-autograding-to-score-document-based-questions-dbqs-consistently"
 title: "How Can High School History Departments Use Rubric Autograding to Score Document-Based Questions (DBQs) Consistently? | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "154f00163d78084dbd35da02546e7b0abc1001f01f62f6de6736c02820ea0a6f"
 uniqueness_score: 75.87
 combined_similarity: 0.9437

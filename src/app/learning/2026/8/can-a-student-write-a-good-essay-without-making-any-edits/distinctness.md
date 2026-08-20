@@ -2,11 +2,11 @@
 route: "/learning/2026/8/can-a-student-write-a-good-essay-without-making-any-edits"
 title: "Can a Student Write a Good Essay Without Making Any Edits?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "7ea704272c9ee1296f4badca3be7bd0c89927a4ae11681e0e7ebd532c43c867e"
 uniqueness_score: 24.95
-combined_similarity: 0.9648
-whole_page_top5_similarity: 0.9617
+combined_similarity: 0.9649
+whole_page_top5_similarity: 0.9618
 top_chunk_overlap: 0.9669
 action: "remediation_candidate"
 nearest_competitor: "/learning/2026/8/what-does-it-mean-if-a-student-makes-almost-no-revisions"

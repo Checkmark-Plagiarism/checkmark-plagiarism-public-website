@@ -2,9 +2,9 @@
 route: "/learning/2026/8/how-can-i-require-students-to-show-their-writing-process"
 title: "How Can I Require Students to Show Their Writing Process?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "9a22165d4525755184d7b5d27e14402584f199b885346d9721e7bda67b0ee4af"
-uniqueness_score: 23.72
+uniqueness_score: 24.13
 combined_similarity: 0.9652
 whole_page_top5_similarity: 0.9563
 top_chunk_overlap: 0.9711
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 23.72 / 100
+- **Uniqueness Score**: 24.13 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/how-can-writing-process-evidence-discourage-ai-cheating`
 

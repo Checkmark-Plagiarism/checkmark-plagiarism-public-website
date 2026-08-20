@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-paraphrased-sources-still-count-as-plagiarism"
 title: "Can Paraphrased Sources Still Count as Plagiarism?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "81bcf5be043fdcf601783e019d5854368aae5356e57faf9f146f46084e159a5f"
 uniqueness_score: 52.35
 combined_similarity: 0.9547

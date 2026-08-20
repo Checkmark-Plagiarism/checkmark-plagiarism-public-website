@@ -2,11 +2,11 @@
 route: "/learning/2026/8/what-evidence-can-clear-a-student-accused-of-using-ai"
 title: "What Evidence Can Clear a Student Accused of Using AI?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "dfa877e670f0d526fc846f55123cc386e6f4ecdaca86a809568bcaced13d1279"
 uniqueness_score: 5.73
 combined_similarity: 0.977
-whole_page_top5_similarity: 0.9729
+whole_page_top5_similarity: 0.973
 top_chunk_overlap: 0.9797
 action: "remediation_candidate"
 nearest_competitor: "/learning/2026/8/can-document-history-protect-a-student-from-a-false-ai-accusation"
@@ -21,17 +21,17 @@ remediation_status: "not_needed"
 
 | Rank | Route / Slug | Combined Sim | Page Sim | Top Chunk Sim |
 | :--- | :--- | :--- | :--- | :--- |
-| 1 | `/learning/2026/8/can-document-history-protect-a-student-from-a-false-ai-accusation` | 0.9916 | 0.9840 | 0.9966 |
-| 2 | `/learning/2026/8/what-if-an-ai-detector-flags-a-student-who-actually-wrote-the-essay` | 0.9899 | 0.9749 | 1.0000 |
-| 3 | `/learning/2026/8/can-revision-history-prove-an-ai-detector-wrong` | 0.9883 | 0.9708 | 1.0000 |
-| 4 | `/learning/2026/8/how-can-teachers-investigate-a-possible-ai-false-positive` | 0.9861 | 0.9653 | 1.0000 |
+| 1 | `/learning/2026/8/can-document-history-protect-a-student-from-a-false-ai-accusation` | 0.9915 | 0.9839 | 0.9966 |
+| 2 | `/learning/2026/8/what-if-an-ai-detector-flags-a-student-who-actually-wrote-the-essay` | 0.9899 | 0.9746 | 1.0000 |
+| 3 | `/learning/2026/8/can-revision-history-prove-an-ai-detector-wrong` | 0.9887 | 0.9717 | 1.0000 |
+| 4 | `/learning/2026/8/how-can-teachers-investigate-a-possible-ai-false-positive` | 0.9865 | 0.9663 | 1.0000 |
 | 5 | `/learning/2026/8/should-ai-detection-be-used-as-evidence-or-as-a-starting-point` | 0.9835 | 0.9586 | 1.0000 |
 
 ## Semantic Chunks
 ### Section: Introduction
 - **Level**: `intro`
 - **Hash**: `ca631b640f18861d2e15fa666160894f6973aa5d7875a88d2075f44cfe8ef09d`
-- **Best Competitor Match**: `/learning/2026/8/what-if-an-ai-detector-flags-a-student-who-actually-wrote-the-essay` (Similarity: 0.9542)
+- **Best Competitor Match**: `/learning/2026/8/what-if-an-ai-detector-flags-a-student-who-actually-wrote-the-essay` (Similarity: 0.9510)
 
 ```text
 A student falsely accused of using AI can be definitively cleared by presenting authentic drafting evidence—including multi-day document revision histories, keystroke playback logs showing high backspace rates, pre-writing research artifacts, and oral defense fluency.

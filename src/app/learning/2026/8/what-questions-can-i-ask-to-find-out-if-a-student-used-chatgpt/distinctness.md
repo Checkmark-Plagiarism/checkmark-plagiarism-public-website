@@ -2,7 +2,7 @@
 route: "/learning/2026/8/what-questions-can-i-ask-to-find-out-if-a-student-used-chatgpt"
 title: "What Questions Can I Ask to Find Out If a Student Used ChatGPT?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "8483054c6b3b3b754e06a246abcd5fe9cacdcaf6c575d95266d006d0eefdf85f"
 uniqueness_score: 45.81
 combined_similarity: 0.9569

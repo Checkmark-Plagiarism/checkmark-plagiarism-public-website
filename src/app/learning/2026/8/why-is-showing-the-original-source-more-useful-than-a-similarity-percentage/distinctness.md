@@ -2,7 +2,7 @@
 route: "/learning/2026/8/why-is-showing-the-original-source-more-useful-than-a-similarity-percentage"
 title: "Why Is Showing the Original Source More Useful Than a Similarity Percentage?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "8f2824d56d8217de7d2888cbe5a79846e8b0f30decd693679aa77ce6512f7981"
 uniqueness_score: 41.1
 combined_similarity: 0.9583

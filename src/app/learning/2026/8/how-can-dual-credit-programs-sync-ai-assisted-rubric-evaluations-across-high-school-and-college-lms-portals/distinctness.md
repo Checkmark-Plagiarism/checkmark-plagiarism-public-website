@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-dual-credit-programs-sync-ai-assisted-rubric-evaluations-across-high-school-and-college-lms-portals"
 title: "How Can Dual Credit Programs Sync AI-Assisted Rubric Evaluations Across High School and College LMS Portals? | Checkmark Plagiarism"
 seniority_date: "2026-08-19"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:29Z"
 content_hash: "c89cd1aa6b58888568b0e43e236c5df9912c0c190fb993e82fd116b97ecaa4db"
 uniqueness_score: 83.44
 combined_similarity: 0.9363

@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-do-you-investigate-suspected-ai-cheating-fairly"
 title: "How Do You Investigate Suspected AI Cheating Fairly?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "cafff651f71dfbc10ee4884d0d969b3584f8237dc94516fee623f22d8b0ad85b"
 uniqueness_score: 44.79
 combined_similarity: 0.9573

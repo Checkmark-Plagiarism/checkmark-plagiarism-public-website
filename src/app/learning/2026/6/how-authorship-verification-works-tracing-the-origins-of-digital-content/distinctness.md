@@ -2,7 +2,7 @@
 route: "/learning/2026/6/how-authorship-verification-works-tracing-the-origins-of-digital-content"
 title: "How Authorship Verification Works: Tracing the Origins of Digital Content"
 seniority_date: "2026-06-25"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "4c293f3175dc54fd2969a0df0d3e727be866132a4488ad0cf48d5efe07d1ffa6"
 uniqueness_score: 93.46
 combined_similarity: 0.8833

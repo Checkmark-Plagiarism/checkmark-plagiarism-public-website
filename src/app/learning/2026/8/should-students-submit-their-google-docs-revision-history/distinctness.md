@@ -2,9 +2,9 @@
 route: "/learning/2026/8/should-students-submit-their-google-docs-revision-history"
 title: "Should Students Submit Their Google Docs Revision History?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "984870b74064fdc343f0b56043b1aa439e4ca9e109c30c9400cc5e7dc397ec18"
-uniqueness_score: 30.47
+uniqueness_score: 30.67
 combined_similarity: 0.962
 whole_page_top5_similarity: 0.9727
 top_chunk_overlap: 0.9548
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 30.47 / 100
+- **Uniqueness Score**: 30.67 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/can-teachers-see-what-a-student-pasted-into-google-docs`
 

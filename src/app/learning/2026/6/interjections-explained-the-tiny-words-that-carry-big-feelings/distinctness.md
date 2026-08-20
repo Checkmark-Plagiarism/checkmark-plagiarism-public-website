@@ -2,7 +2,7 @@
 route: "/learning/2026/6/interjections-explained-the-tiny-words-that-carry-big-feelings"
 title: "Interjections, Explained: The Tiny Words That Carry Big Feelings"
 seniority_date: "2026-06-25"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "98cfb9672d6275446c0035214a73daad72c5e05e3618d9fb898ab6d41b4e346d"
 uniqueness_score: 99.39
 combined_similarity: 0.7559

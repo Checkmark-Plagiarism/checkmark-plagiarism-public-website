@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-automated-essay-grades-be-sent-back-to-my-lms"
 title: "Can Automated Essay Grades Be Sent Back to My LMS?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "a019bb18d3b9cabf36b9c9e1bb2d4c125c48cc5c108641b2875610c8e3f04fcc"
 uniqueness_score: 63.8
 combined_similarity: 0.9496

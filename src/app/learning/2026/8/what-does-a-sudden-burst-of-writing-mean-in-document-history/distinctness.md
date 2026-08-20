@@ -2,9 +2,9 @@
 route: "/learning/2026/8/what-does-a-sudden-burst-of-writing-mean-in-document-history"
 title: "What Does a Sudden Burst of Writing Mean in Document History?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "ef9ec40e74a5f7630dc7116c9d23d20acff10849edd68d72a8316e58903abee2"
-uniqueness_score: 31.49
+uniqueness_score: 31.7
 combined_similarity: 0.9615
 whole_page_top5_similarity: 0.9502
 top_chunk_overlap: 0.969
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 31.49 / 100
+- **Uniqueness Score**: 31.7 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/why-did-a-student-write-most-of-an-essay-in-just-a-few-minutes`
 

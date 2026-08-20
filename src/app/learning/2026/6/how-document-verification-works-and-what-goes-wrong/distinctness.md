@@ -2,11 +2,11 @@
 route: "/learning/2026/6/how-document-verification-works-and-what-goes-wrong"
 title: "How Document Verification Works, and What Goes Wrong"
 seniority_date: "2026-06-25"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "07e47afaa4789ae1cae1dd981787ce50129ccf6ea7d772a9538880fe47bb3a4d"
-uniqueness_score: 94.68
-combined_similarity: 0.8533
-whole_page_top5_similarity: 0.8736
+uniqueness_score: 94.48
+combined_similarity: 0.8534
+whole_page_top5_similarity: 0.8738
 top_chunk_overlap: 0.8397
 action: "remediation_candidate"
 nearest_competitor: "/learning/2026/6/ai-powered-originality-checks-how-they-work-and-how-to-troubleshoot-them"
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 94.68 / 100
+- **Uniqueness Score**: 94.48 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/6/ai-powered-originality-checks-how-they-work-and-how-to-troubleshoot-them`
 

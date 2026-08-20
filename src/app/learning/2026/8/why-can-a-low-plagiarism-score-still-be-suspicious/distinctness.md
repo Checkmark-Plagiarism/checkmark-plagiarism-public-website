@@ -2,9 +2,9 @@
 route: "/learning/2026/8/why-can-a-low-plagiarism-score-still-be-suspicious"
 title: "Why Can a Low Plagiarism Score Still Be Suspicious?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "f9372dbbbfbb55549448efc556789f74ed8077393b5ea8146d5067ab75dd0ee0"
-uniqueness_score: 4.7
+uniqueness_score: 4.5
 combined_similarity: 0.978
 whole_page_top5_similarity: 0.975
 top_chunk_overlap: 0.98
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 4.7 / 100
+- **Uniqueness Score**: 4.5 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/how-can-teachers-detect-ai-use-without-copy-and-paste-evidence`
 

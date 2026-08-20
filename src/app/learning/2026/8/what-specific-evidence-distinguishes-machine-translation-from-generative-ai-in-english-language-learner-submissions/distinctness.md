@@ -2,7 +2,7 @@
 route: "/learning/2026/8/what-specific-evidence-distinguishes-machine-translation-from-generative-ai-in-english-language-learner-submissions"
 title: "What Specific Evidence Distinguishes Machine Translation From Generative AI in English Language Learner Submissions? | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "48618c6b1f2d88dd4fa9527bbc92bf5d0358600466a1ab6d9bfb53da8fedb25d"
 uniqueness_score: 54.81
 combined_similarity: 0.9536

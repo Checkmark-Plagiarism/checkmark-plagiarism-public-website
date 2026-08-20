@@ -2,7 +2,7 @@
 route: "/learning/2026/8/what-counts-as-acceptable-ai-use-in-school"
 title: "What Counts as Acceptable AI Use in School?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "067188f458c9a02ef45b2648f452ddc73e033f82e3676adc49adc476b54acfc3"
 uniqueness_score: 41.72
 combined_similarity: 0.9579

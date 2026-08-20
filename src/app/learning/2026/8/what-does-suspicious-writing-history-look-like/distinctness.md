@@ -2,7 +2,7 @@
 route: "/learning/2026/8/what-does-suspicious-writing-history-look-like"
 title: "What Does Suspicious Writing History Look Like?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "6300bc884dac0fe9cc77bccd8c973e5feb07b3ae07e4a7dd1064b2dedfb47c5a"
 uniqueness_score: 20.25
 combined_similarity: 0.9666

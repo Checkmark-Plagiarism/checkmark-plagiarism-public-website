@@ -2,11 +2,11 @@
 route: "/learning/2026/8/what-should-i-do-when-ai-detection-and-writing-history-disagree"
 title: "What Should I Do When AI Detection and Writing History Disagree?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "dc2f8976ef378de438cea5999f4a38df6dcb0adc3de98302b592eb2382851d18"
-uniqueness_score: 7.57
-combined_similarity: 0.9756
-whole_page_top5_similarity: 0.973
+uniqueness_score: 7.16
+combined_similarity: 0.9759
+whole_page_top5_similarity: 0.9738
 top_chunk_overlap: 0.9774
 action: "remediation_candidate"
 nearest_competitor: "/learning/2026/8/what-if-an-ai-detector-flags-a-student-who-actually-wrote-the-essay"
@@ -15,17 +15,17 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 7.57 / 100
+- **Uniqueness Score**: 7.16 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/what-if-an-ai-detector-flags-a-student-who-actually-wrote-the-essay`
 
 | Rank | Route / Slug | Combined Sim | Page Sim | Top Chunk Sim |
 | :--- | :--- | :--- | :--- | :--- |
-| 1 | `/learning/2026/8/what-if-an-ai-detector-flags-a-student-who-actually-wrote-the-essay` | 0.9901 | 0.9752 | 1.0000 |
-| 2 | `/learning/2026/8/how-can-teachers-verify-an-ai-detection-result` | 0.9894 | 0.9734 | 1.0000 |
-| 3 | `/learning/2026/8/how-can-teachers-investigate-a-possible-ai-false-positive` | 0.9889 | 0.9723 | 1.0000 |
-| 4 | `/learning/2026/8/why-doesnt-ai-detection-tell-the-whole-story` | 0.9888 | 0.9720 | 1.0000 |
-| 5 | `/learning/2026/8/can-human-writing-be-flagged-as-ai` | 0.9888 | 0.9719 | 1.0000 |
+| 1 | `/learning/2026/8/what-if-an-ai-detector-flags-a-student-who-actually-wrote-the-essay` | 0.9905 | 0.9763 | 1.0000 |
+| 2 | `/learning/2026/8/how-can-teachers-investigate-a-possible-ai-false-positive` | 0.9897 | 0.9742 | 1.0000 |
+| 3 | `/learning/2026/8/how-can-teachers-verify-an-ai-detection-result` | 0.9894 | 0.9734 | 1.0000 |
+| 4 | `/learning/2026/8/why-doesnt-ai-detection-tell-the-whole-story` | 0.9891 | 0.9728 | 1.0000 |
+| 5 | `/learning/2026/8/can-human-writing-be-flagged-as-ai` | 0.9889 | 0.9723 | 1.0000 |
 
 ## Semantic Chunks
 ### Section: Introduction

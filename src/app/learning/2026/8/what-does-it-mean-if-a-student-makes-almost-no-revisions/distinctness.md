@@ -2,11 +2,11 @@
 route: "/learning/2026/8/what-does-it-mean-if-a-student-makes-almost-no-revisions"
 title: "What Does It Mean If a Student Makes Almost No Revisions?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "1359c7bb1fc997b2228145857ebea24074b34213ba73fa67dd9658df427bd045"
-uniqueness_score: 10.63
-combined_similarity: 0.973
-whole_page_top5_similarity: 0.97
+uniqueness_score: 10.22
+combined_similarity: 0.9731
+whole_page_top5_similarity: 0.9703
 top_chunk_overlap: 0.9751
 action: "remediation_candidate"
 nearest_competitor: "/learning/2026/8/can-a-student-write-a-good-essay-without-making-any-edits"
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 10.63 / 100
+- **Uniqueness Score**: 10.22 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/can-a-student-write-a-good-essay-without-making-any-edits`
 

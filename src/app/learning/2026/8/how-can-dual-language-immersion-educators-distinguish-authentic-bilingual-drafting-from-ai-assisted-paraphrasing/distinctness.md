@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-dual-language-immersion-educators-distinguish-authentic-bilingual-drafting-from-ai-assisted-paraphrasing"
 title: "How Can Dual-Language Immersion Educators Distinguish Authentic Bilingual Drafting From AI-Assisted Paraphrasing? | Checkmark Plagiarism"
 seniority_date: "2026-08-19"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:29Z"
 content_hash: "3272f188b2150ecda48d6177638957cf1e75649ecc5942de114b42ba79eb6ced"
 uniqueness_score: 84.05
 combined_similarity: 0.935

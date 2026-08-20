@@ -2,7 +2,7 @@
 route: "/learning/2026/8/what-should-an-ai-policy-for-student-assignments-include"
 title: "What Should an AI Policy for Student Assignments Include?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "1d281cbf72f3a40312823374021adb6a9c8a4d7413dc59e2aeebcf83b024f3c0"
 uniqueness_score: 13.7
 combined_similarity: 0.9706

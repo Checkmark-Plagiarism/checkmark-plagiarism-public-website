@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-academic-integrity-committees-can-use-multi-evidence-dossiers-in-student-appeal-hearings"
 title: "How Academic Integrity Committees Can Use Multi-Evidence Dossiers in Student Appeal Hearings | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "a92f6bbf9430dcf3b400cc341388741995d3fffda7a1e4967eca664fa0349a6c"
 uniqueness_score: 35.58
 combined_similarity: 0.9604

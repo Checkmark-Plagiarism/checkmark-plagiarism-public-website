@@ -2,7 +2,7 @@
 route: "/learning/2026/8/what-keystroke-dynamics-distinguish-genuine-dual-monitor-note-synthesizing-from-ai-paraphrase-transcribing"
 title: "What Keystroke Dynamics Distinguish Genuine Dual-Monitor Note Synthesizing From AI Paraphrase Transcribing? | Checkmark Plagiarism"
 seniority_date: "2026-08-19"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:29Z"
 content_hash: "f91fc9a8a610f6a3091fb9f2c2173e0b785c5ad545d396cb4e0aba157f7b5eaa"
 uniqueness_score: 43.35
 combined_similarity: 0.9576

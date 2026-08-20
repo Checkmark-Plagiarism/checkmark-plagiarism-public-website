@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-keystroke-playback-detects-students-retyping-from-a-second-screen-or-phone"
 title: "How Keystroke Playback Detects Students Retyping From a Second Screen or Phone | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "b60e6db8ab15e03b960799835f94a9b4d54df50e3075b69aa5bcf8d12f1b21f9"
 uniqueness_score: 15.13
 combined_similarity: 0.9696

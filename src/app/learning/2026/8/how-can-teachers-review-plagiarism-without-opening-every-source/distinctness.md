@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-teachers-review-plagiarism-without-opening-every-source"
 title: "How Can Teachers Review Plagiarism Without Opening Every Source?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "b1c4558d487863d17c7b44d628a1156f15259fa007b6d6356cb152d4c687893d"
 uniqueness_score: 88.14
 combined_similarity: 0.9286

@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-teachers-see-deleted-text-in-google-docs"
 title: "Can Teachers See Deleted Text in Google Docs?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "9a24dd908e14f50a996ed41949854e53c685bcfa5f79064e9f5eef651ba1f3ff"
 uniqueness_score: 86.09
 combined_similarity: 0.9313

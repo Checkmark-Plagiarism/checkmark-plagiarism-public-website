@@ -2,11 +2,11 @@
 route: "/learning/2026/8/what-order-should-teachers-review-evidence-of-ai-use"
 title: "What Order Should Teachers Review Evidence of AI Use?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "039fe22a08cbc0fde59755682f161afa9b9aa0d2b114b64b89ed6432c6912bfc"
-uniqueness_score: 42.33
-combined_similarity: 0.9578
-whole_page_top5_similarity: 0.9616
+uniqueness_score: 41.92
+combined_similarity: 0.9579
+whole_page_top5_similarity: 0.9618
 top_chunk_overlap: 0.9553
 action: "remediation_candidate"
 nearest_competitor: "/learning/2026/8/what-should-teachers-check-before-accusing-a-student-of-ai-use"
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 42.33 / 100
+- **Uniqueness Score**: 41.92 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/what-should-teachers-check-before-accusing-a-student-of-ai-use`
 

@@ -2,11 +2,11 @@
 route: "/learning/2026/8/can-teachers-detect-humanized-ai-writing"
 title: "Can Teachers Detect Humanized AI Writing?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "4d83a22af6fa569f33e66715e5b29240ea6393895039ecfb90cd366d8e37a8e1"
 uniqueness_score: 2.86
-combined_similarity: 0.9799
-whole_page_top5_similarity: 0.9738
+combined_similarity: 0.9797
+whole_page_top5_similarity: 0.9735
 top_chunk_overlap: 0.9839
 action: "remediation_candidate"
 nearest_competitor: "/learning/2026/8/what-happens-when-a-student-runs-chatgpt-through-an-ai-humanizer"
@@ -21,17 +21,17 @@ remediation_status: "not_needed"
 
 | Rank | Route / Slug | Combined Sim | Page Sim | Top Chunk Sim |
 | :--- | :--- | :--- | :--- | :--- |
-| 1 | `/learning/2026/8/what-happens-when-a-student-runs-chatgpt-through-an-ai-humanizer` | 0.9935 | 0.9838 | 1.0000 |
-| 2 | `/learning/2026/8/can-ai-humanizers-fool-ai-detectors` | 0.9934 | 0.9836 | 1.0000 |
-| 3 | `/learning/2026/8/can-writing-history-reveal-humanized-ai-content` | 0.9857 | 0.9643 | 1.0000 |
-| 4 | `/learning/2026/8/what-does-human-writing-look-like-even-when-an-ai-detector-flags-it` | 0.9824 | 0.9600 | 0.9974 |
-| 5 | `/learning/2026/8/can-human-writing-be-flagged-as-ai` | 0.9822 | 0.9595 | 0.9974 |
+| 1 | `/learning/2026/8/what-happens-when-a-student-runs-chatgpt-through-an-ai-humanizer` | 0.9936 | 0.9839 | 1.0000 |
+| 2 | `/learning/2026/8/can-ai-humanizers-fool-ai-detectors` | 0.9933 | 0.9832 | 1.0000 |
+| 3 | `/learning/2026/8/can-writing-history-reveal-humanized-ai-content` | 0.9852 | 0.9630 | 1.0000 |
+| 4 | `/learning/2026/8/what-does-human-writing-look-like-even-when-an-ai-detector-flags-it` | 0.9834 | 0.9623 | 0.9974 |
+| 5 | `/learning/2026/8/can-human-writing-be-flagged-as-ai` | 0.9822 | 0.9593 | 0.9974 |
 
 ## Semantic Chunks
 ### Section: Introduction
 - **Level**: `intro`
 - **Hash**: `1f502a7813b7e0d9d9fcf562bb68c8d0e08c7ea688ba085f19de62dbaf5f4378`
-- **Best Competitor Match**: `/learning/2026/8/can-human-writing-be-flagged-as-ai` (Similarity: 0.9341)
+- **Best Competitor Match**: `/learning/2026/8/can-teachers-detect-manually-typed-ai-responses` (Similarity: 0.9336)
 
 ```text
 Yes. Teachers can easily detect humanized AI writing by analyzing unnatural stylistic artifacts ("thesaurus soup"), document creation playback logs showing instant paste events, hallucinated citations, and oral defense fluency.
@@ -138,7 +138,7 @@ Yes. Humanized AI text sounds awkwardly convoluted ("thesaurus soup"), and writi
 ### Section: What tools do students use to humanize AI text?
 - **Level**: `h3`
 - **Hash**: `33ae274498ed78d9d7f88464ed9c424c80fade7d8a0960aa90604a4dbabd5a06`
-- **Best Competitor Match**: `/learning/2026/8/can-ai-humanizers-fool-ai-detectors` (Similarity: 0.8687)
+- **Best Competitor Match**: `/learning/2026/8/how-can-online-course-designers-embed-keystroke-telemetry-to-eliminate-invasive-webcam-proctoring-in-virtual-high-schools` (Similarity: 0.8636)
 
 ```text
 Tools like Undetectable AI, StealthGPT, and QuillBot scramble vocabulary and sentence lengths to attempt to bypass static AI detectors.

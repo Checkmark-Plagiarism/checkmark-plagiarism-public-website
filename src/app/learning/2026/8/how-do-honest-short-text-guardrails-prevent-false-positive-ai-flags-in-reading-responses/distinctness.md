@@ -2,9 +2,9 @@
 route: "/learning/2026/8/how-do-honest-short-text-guardrails-prevent-false-positive-ai-flags-in-reading-responses"
 title: "How Do Honest Short-Text Guardrails Prevent False-Positive AI Flags in Reading Responses? | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "d3de5f151c1cbf73f41f78e530a3171ac575d0941506df8a3e3e03ff593d0673"
-uniqueness_score: 23.31
+uniqueness_score: 23.11
 combined_similarity: 0.9654
 whole_page_top5_similarity: 0.9749
 top_chunk_overlap: 0.959
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 23.31 / 100
+- **Uniqueness Score**: 23.11 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/can-ai-detectors-accurately-analyze-short-answers-under-150-words`
 

@@ -2,7 +2,7 @@
 route: "/learning/2026/8/should-i-allow-students-to-use-chatgpt-for-assignments"
 title: "Should I Allow Students to Use ChatGPT for Assignments?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "943e27d90fee007c038d9688d6200d284bc9f085d49b507d36df815d33fc7921"
 uniqueness_score: 32.11
 combined_similarity: 0.9613

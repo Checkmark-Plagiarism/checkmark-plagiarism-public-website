@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-teachers-edit-ai-generated-grades"
 title: "Can Teachers Edit AI-Generated Grades?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "82a20afb134fecc82c268bb892b679625fee31783ee28fcfba99a8557f593e4f"
 uniqueness_score: 57.06
 combined_similarity: 0.9527

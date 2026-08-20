@@ -2,9 +2,9 @@
 route: "/learning/2026/8/how-can-teachers-use-essay-playback-to-differentiate-natural-brainstorming-pauses-from-external-device-transcription"
 title: "How Can Teachers Use Essay Playback to Differentiate Natural Brainstorming Pauses From External Device Transcription? | Checkmark Plagiarism"
 seniority_date: "2026-08-19"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:29Z"
 content_hash: "8d0e63ca613f511eb38476808353dec6f6892f9b82f34f8d0f4fb7285f4a1e1c"
-uniqueness_score: 50.31
+uniqueness_score: 50.1
 combined_similarity: 0.9554
 whole_page_top5_similarity: 0.9857
 top_chunk_overlap: 0.9351
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 50.31 / 100
+- **Uniqueness Score**: 50.1 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/what-writing-telemetry-patterns-distinguish-real-time-brainstorming-from-pre-drafted-script-pasting-in-timed-exams`
 

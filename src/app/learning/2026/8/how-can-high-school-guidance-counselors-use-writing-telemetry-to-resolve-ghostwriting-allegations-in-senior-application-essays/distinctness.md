@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-high-school-guidance-counselors-use-writing-telemetry-to-resolve-ghostwriting-allegations-in-senior-application-essays"
 title: "How Can High School Guidance Counselors Use Writing Telemetry to Resolve Ghostwriting Allegations in Senior Application Essays? | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "d9459941c1d566023a46432d76f6cb18531f58211d7109515ce9440a0400e388"
 uniqueness_score: 85.07
 combined_similarity: 0.9331

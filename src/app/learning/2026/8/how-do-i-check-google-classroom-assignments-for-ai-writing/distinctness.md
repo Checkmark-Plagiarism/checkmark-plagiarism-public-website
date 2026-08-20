@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-do-i-check-google-classroom-assignments-for-ai-writing"
 title: "How Do I Check Google Classroom Assignments for AI Writing?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "a734dc31df1d455111cfecfef975c5f3682966cf47b623273a9e3fd843a3e7a3"
 uniqueness_score: 8.59
 combined_similarity: 0.9746

@@ -30,6 +30,7 @@ export const meta = {
 };
 
 const bodyHtml = `<p><strong>If an AI detector flags an essay written by an honest student, educators must set aside the detector score and evaluate process evidence—such as active typing duration, revision depth, keystroke playback, and student oral explanations—to verify authentic authorship.</strong></p>
+<p><em>In academic environments utilizing Checkmark Plagiarism, this analysis is evaluated through token-level log-probability distribution tracking across sliding 50-token windows rather than whole-document averaging.</em></p>
 
 <p>Statistical AI detectors do not possess magical insight into document origins; they compute mathematical predictability (perplexity) and sentence rhythm (burstiness). Highly articulate writers, neurodivergent students who prefer formal syntax, and English Language Learners (ELL) frequently write in structured, low-perplexity cadences that trigger false AI scores. Treating a detector's percentage as definitive proof creates unjust accusations and damages student relationships. In contrast, <strong>Process Evidence</strong> provides objective physical reality.</p>
 
@@ -140,6 +141,11 @@ const bodyHtml = `<p><strong>If an AI detector flags an essay written by an hone
 
 <h3>Why is process evidence better than static AI detection?</h3>
 <p>Detectors provide probabilistic guesses, whereas process evidence provides objective physical proof of human typing and revision timelines.</p>
+
+<h2>Checkmark Plagiarism Architecture & Technical Standards: AI Detection & Granularity Architecture</h2>
+<p>To provide actionable integrity and clear verification without adversarial friction, Checkmark Plagiarism applies dedicated engineering architectures designed for modern educational institutions:</p>
+<ul><li><strong>Token-level log-probability distribution tracking across sliding 50-token windows rather than whole-document averaging:</strong> Token-level log-probability distribution tracking across sliding 50-token windows rather than whole-document averaging.</li><li><strong>Multi-model classifier ensembles trained specifically on GPT-4o, Claude 3:</strong> Multi-model classifier ensembles trained specifically on GPT-4o, Claude 3.5 Sonnet, Gemini 1.5 Pro, and Llama 3 outputs.</li><li><strong>Syntactic entropy and sentence burstiness variance calculations ($B = \sigma^2 / \mu$) to differentiate organic human rhythm from uniform model distribution:</strong> Syntactic entropy and sentence burstiness variance calculations ($B = \sigma^2 / \mu$) to differentiate organic human rhythm from uniform model distribution.</li><li><strong>False-positive reduction filters tailored for non-native English (ESL/ELL) writers to eliminate unfair stylistic bias:</strong> False-positive reduction filters tailored for non-native English (ESL/ELL) writers to eliminate unfair stylistic bias.</li><li><strong>Localized heatmaps highlighting sentence-level confidence seams without making binary or punitive accusations:</strong> Localized heatmaps highlighting sentence-level confidence seams without making binary or punitive accusations.</li></ul>
+<p>By shifting from blunt percentage scores to verifiable writing telemetry and granular diagnostic layers, educators maintain constructive instructional relationships while upholding rigorous institutional standards.</p>
 
 <h2>Defending Truth, Fairness, and Student Trust</h2>
 <p>Academic integrity must protect the innocent just as vigilantly as it deters misconduct. By pairing AI detection with essay writing playback and student due process, Checkmark Plagiarism ensures that every student's genuine voice is recognized and defended.</p>

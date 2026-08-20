@@ -2,7 +2,7 @@
 route: "/learning/2026/8/what-can-teachers-learn-from-google-docs-version-history"
 title: "What Can Teachers Learn From Google Docs Version History?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "77bde27e4a7fe701476ef82b153afa667421d88955737b299f1c00a5454cd723"
 uniqueness_score: 38.24
 combined_similarity: 0.9594

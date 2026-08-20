@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-to-configure-canvas-speedgrader-with-ai-rubric-suggestions-for-multi-draft-revision-assignments"
 title: "How to Configure Canvas SpeedGrader with AI Rubric Suggestions for Multi-Draft Revision Assignments | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "704094bafbb567ab0d87f681a792bb924e2ff340fc07a573f6310f4d7d59fe2b"
 uniqueness_score: 69.94
 combined_similarity: 0.9474

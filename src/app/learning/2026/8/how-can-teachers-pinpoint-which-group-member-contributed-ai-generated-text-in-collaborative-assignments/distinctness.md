@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-teachers-pinpoint-which-group-member-contributed-ai-generated-text-in-collaborative-assignments"
 title: "How Can Teachers Pinpoint Which Group Member Contributed AI-Generated Text in Collaborative Assignments? | Checkmark Plagiarism"
 seniority_date: "2026-08-19"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:29Z"
 content_hash: "63438a450c906dbb88260b8fdfe863529a4eb66d00a251c0abbfe6da545a29b2"
 uniqueness_score: 65.85
 combined_similarity: 0.9489

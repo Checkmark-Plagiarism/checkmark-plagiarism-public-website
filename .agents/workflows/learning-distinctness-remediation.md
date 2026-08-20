@@ -15,12 +15,33 @@ Selects junior candidate learning posts flagged with `action: remediation_candid
   - `remediation.py`: AST / JSX section injector modifying `page.tsx`.
   - `verification.py`: Re-vectorizes and re-scores corpus against acceptance criteria ($\ge 60$ score OR $+10$ points improvement; max 2 attempts).
   - `change_log.py`: Structured Before vs. After diff logger in `logs/learning-distinctness-changes.md`.
+  - `count_logger.py`: Queue counting and 10-minute periodic monitor logging to `logs/learning-distinctness-remediation-counts.log`.
   - `main.py`: CLI driver.
 
 ## Chronological Seniority Precedence
 When two posts share high semantic overlap, the older post (based on route path `{year}/{month}` and metadata date) holds seniority as the established original. The newer post is prioritized for remediation so legacy content remains untouched.
 
+## Remediation Queue Logs
+- **Candidate Changes & Verification**: `logs/learning-distinctness-changes.md`
+- **Periodic Queue Count Audit (Every 10 mins)**: `logs/learning-distinctness-remediation-counts.log`
+
 ## CLI Usage
+
+### Check and log current count of actionable remediation posts
+```bash
+python scripts/learning-distinctness-remediation/main.py --count
+```
+
+### Run continuous 10-minute periodic monitor counting actionable posts
+```bash
+python scripts/learning-distinctness-remediation/main.py --monitor
+```
+
+### Run periodic monitor with custom interval or max iterations
+```bash
+# Every 10 minutes (600s) for 6 iterations (1 hour total)
+python scripts/learning-distinctness-remediation/main.py --monitor --interval=600 --max-iterations=6
+```
 
 ### Preview next candidate in priority queue
 ```bash

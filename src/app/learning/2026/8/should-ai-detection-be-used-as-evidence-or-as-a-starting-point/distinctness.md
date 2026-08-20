@@ -2,11 +2,11 @@
 route: "/learning/2026/8/should-ai-detection-be-used-as-evidence-or-as-a-starting-point"
 title: "Should AI Detection Be Used as Evidence or as a Starting Point?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "40f41fb2117ee52fec1534684c6ec47015bd3b3ca688ae8f5ab21d6bdbb6fa95"
-uniqueness_score: 9.82
-combined_similarity: 0.9736
-whole_page_top5_similarity: 0.97
+uniqueness_score: 8.79
+combined_similarity: 0.9738
+whole_page_top5_similarity: 0.9706
 top_chunk_overlap: 0.976
 action: "remediation_candidate"
 nearest_competitor: "/learning/2026/8/why-shouldnt-teachers-rely-on-an-ai-percentage-alone"
@@ -15,16 +15,16 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 9.82 / 100
+- **Uniqueness Score**: 8.79 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/why-shouldnt-teachers-rely-on-an-ai-percentage-alone`
 
 | Rank | Route / Slug | Combined Sim | Page Sim | Top Chunk Sim |
 | :--- | :--- | :--- | :--- | :--- |
 | 1 | `/learning/2026/8/why-shouldnt-teachers-rely-on-an-ai-percentage-alone` | 0.9911 | 0.9777 | 1.0000 |
-| 2 | `/learning/2026/8/why-doesnt-ai-detection-tell-the-whole-story` | 0.9898 | 0.9744 | 1.0000 |
-| 3 | `/learning/2026/8/what-if-an-ai-detector-flags-a-student-who-actually-wrote-the-essay` | 0.9865 | 0.9662 | 1.0000 |
-| 4 | `/learning/2026/8/how-can-teachers-investigate-a-possible-ai-false-positive` | 0.9858 | 0.9645 | 1.0000 |
+| 2 | `/learning/2026/8/why-doesnt-ai-detection-tell-the-whole-story` | 0.9898 | 0.9746 | 1.0000 |
+| 3 | `/learning/2026/8/what-if-an-ai-detector-flags-a-student-who-actually-wrote-the-essay` | 0.9870 | 0.9674 | 1.0000 |
+| 4 | `/learning/2026/8/how-can-teachers-investigate-a-possible-ai-false-positive` | 0.9865 | 0.9664 | 1.0000 |
 | 5 | `/learning/2026/8/what-should-i-do-when-ai-detection-and-writing-history-disagree` | 0.9848 | 0.9621 | 1.0000 |
 
 ## Semantic Chunks

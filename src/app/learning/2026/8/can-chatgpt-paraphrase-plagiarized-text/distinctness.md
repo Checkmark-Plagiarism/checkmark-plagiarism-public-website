@@ -2,11 +2,11 @@
 route: "/learning/2026/8/can-chatgpt-paraphrase-plagiarized-text"
 title: "Can ChatGPT Paraphrase Plagiarized Text?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "85cf580e7b0e77f1e06adeb44d56b651ac96c533aebbcc284637784d59a7eff6"
 uniqueness_score: 18.4
 combined_similarity: 0.9679
-whole_page_top5_similarity: 0.969
+whole_page_top5_similarity: 0.9691
 top_chunk_overlap: 0.9671
 action: "remediation_candidate"
 nearest_competitor: "/learning/2026/8/does-chatgpt-plagiarize"

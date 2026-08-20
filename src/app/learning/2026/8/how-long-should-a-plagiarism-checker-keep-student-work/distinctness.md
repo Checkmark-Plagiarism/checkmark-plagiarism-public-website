@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-long-should-a-plagiarism-checker-keep-student-work"
 title: "How Long Should a Plagiarism Checker Keep Student Work?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "dbd08745851db071117f3a1c5ed5de8ae97636343e3bd312825b038a34f123ac"
 uniqueness_score: 83.64
 combined_similarity: 0.9363

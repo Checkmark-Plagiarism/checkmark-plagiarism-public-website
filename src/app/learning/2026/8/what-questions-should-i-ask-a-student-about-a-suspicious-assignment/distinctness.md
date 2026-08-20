@@ -2,7 +2,7 @@
 route: "/learning/2026/8/what-questions-should-i-ask-a-student-about-a-suspicious-assignment"
 title: "What Questions Should I Ask a Student About a Suspicious Assignment?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "2bb714d2b548aa9652e1d237e0a328b2e6971982423699b726f44f3de4761ce3"
 uniqueness_score: 7.77
 combined_similarity: 0.9751

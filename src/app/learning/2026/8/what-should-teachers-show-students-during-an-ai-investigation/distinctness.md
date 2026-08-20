@@ -2,11 +2,11 @@
 route: "/learning/2026/8/what-should-teachers-show-students-during-an-ai-investigation"
 title: "What Should Teachers Show Students During an AI Investigation?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "89af198dd8c3707f6f60187a0b18d84f83c9ce126c0fe5de30c6be11a86b3838"
 uniqueness_score: 71.98
-combined_similarity: 0.9463
-whole_page_top5_similarity: 0.9504
+combined_similarity: 0.9464
+whole_page_top5_similarity: 0.9507
 top_chunk_overlap: 0.9435
 action: "remediation_candidate"
 nearest_competitor: "/learning/2026/8/how-should-teachers-investigate-a-sudden-change-in-writing-ability"

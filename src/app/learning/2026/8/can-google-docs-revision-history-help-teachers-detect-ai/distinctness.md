@@ -2,9 +2,9 @@
 route: "/learning/2026/8/can-google-docs-revision-history-help-teachers-detect-ai"
 title: "Can Google Docs Revision History Help Teachers Detect AI?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "3fe4127930fd076d1bdaff16f3d7b62e34c000a518f9754fd5c4684882878974"
-uniqueness_score: 10.43
+uniqueness_score: 10.63
 combined_similarity: 0.9731
 whole_page_top5_similarity: 0.9675
 top_chunk_overlap: 0.9768
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 10.43 / 100
+- **Uniqueness Score**: 10.63 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/can-teachers-see-google-docs-editing-history`
 
@@ -24,8 +24,8 @@ remediation_status: "not_needed"
 | 1 | `/learning/2026/8/can-teachers-see-google-docs-editing-history` | 0.9743 | 0.9782 | 0.9716 |
 | 2 | `/learning/2026/8/how-do-i-check-google-classroom-assignments-for-ai-writing` | 0.9692 | 0.9515 | 0.9810 |
 | 3 | `/learning/2026/8/what-does-authentic-essay-writing-look-like-in-revision-history` | 0.9661 | 0.9180 | 0.9981 |
-| 4 | `/learning/2026/8/can-revision-history-prove-an-ai-detector-wrong` | 0.9655 | 0.9138 | 1.0000 |
-| 5 | `/learning/2026/8/can-writing-history-reveal-humanized-ai-content` | 0.9627 | 0.9106 | 0.9974 |
+| 4 | `/learning/2026/8/can-revision-history-prove-an-ai-detector-wrong` | 0.9658 | 0.9144 | 1.0000 |
+| 5 | `/learning/2026/8/can-writing-history-reveal-humanized-ai-content` | 0.9633 | 0.9120 | 0.9974 |
 
 ## Semantic Chunks
 ### Section: Introduction

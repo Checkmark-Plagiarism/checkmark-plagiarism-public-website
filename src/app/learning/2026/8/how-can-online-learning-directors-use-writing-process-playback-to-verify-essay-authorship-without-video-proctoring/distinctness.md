@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-online-learning-directors-use-writing-process-playback-to-verify-essay-authorship-without-video-proctoring"
 title: "How Can Online Learning Directors Use Writing Process Playback to Verify Essay Authorship Without Video Proctoring? | Checkmark Plagiarism"
 seniority_date: "2026-08-19"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:29Z"
 content_hash: "b57a1c0ac450679e0541d3db2d5be731047c1dbf7fe6cd570861dd4114596344"
 uniqueness_score: 52.15
 combined_similarity: 0.9548

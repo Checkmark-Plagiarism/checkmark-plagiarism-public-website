@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-do-i-talk-to-a-student-i-suspect-of-using-ai"
 title: "How Do I Talk to a Student I Suspect of Using AI?"
 seniority_date: "2026-08-12"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "3c14476667d788eb8e3eae6a10528a4dee5170b74f4e41f665aea41fb79c2be6"
 uniqueness_score: 13.29
 combined_similarity: 0.9707

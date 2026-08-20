@@ -2,11 +2,11 @@
 route: "/learning/2026/8/should-teachers-require-students-to-explain-their-sources"
 title: "Should Teachers Require Students to Explain Their Sources?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "964fd64cded6bb3f18c89c3d5d7e67c2eb7550abf8552d5ad0f475dc5b80f747"
-uniqueness_score: 51.94
-combined_similarity: 0.9548
-whole_page_top5_similarity: 0.962
+uniqueness_score: 51.53
+combined_similarity: 0.9549
+whole_page_top5_similarity: 0.9624
 top_chunk_overlap: 0.95
 action: "remediation_candidate"
 nearest_competitor: "/learning/2026/8/can-chatgpt-create-fake-sources-for-student-essays"
@@ -15,14 +15,14 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 51.94 / 100
+- **Uniqueness Score**: 51.53 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/can-chatgpt-create-fake-sources-for-student-essays`
 
 | Rank | Route / Slug | Combined Sim | Page Sim | Top Chunk Sim |
 | :--- | :--- | :--- | :--- | :--- |
-| 1 | `/learning/2026/8/can-chatgpt-create-fake-sources-for-student-essays` | 0.9753 | 0.9601 | 0.9854 |
-| 2 | `/learning/2026/8/can-chatgpt-cite-sources-that-dont-exist` | 0.9731 | 0.9547 | 0.9854 |
+| 1 | `/learning/2026/8/can-chatgpt-create-fake-sources-for-student-essays` | 0.9757 | 0.9612 | 0.9854 |
+| 2 | `/learning/2026/8/can-chatgpt-cite-sources-that-dont-exist` | 0.9739 | 0.9565 | 0.9854 |
 | 3 | `/learning/2026/8/how-can-i-tell-if-a-student-actually-read-the-sources-they-cited` | 0.9718 | 0.9757 | 0.9692 |
 | 4 | `/learning/2026/8/how-can-i-check-whether-a-students-sources-actually-exist` | 0.9619 | 0.9559 | 0.9659 |
 | 5 | `/learning/2026/8/can-chatgpt-invent-academic-sources` | 0.9617 | 0.9560 | 0.9655 |
@@ -46,7 +46,7 @@ Checkmark Plagiarism supports citation verification by pairing essay writing pla
 ### Section: The 4 Pedagogical Benefits of Requiring Source Explanations
 - **Level**: `h2`
 - **Hash**: `0f4bc59aed83ab0bdfb0753dc5476deeae6e972dbe94975232ebf7e7069301c3`
-- **Best Competitor Match**: `/learning/2026/8/can-chatgpt-create-fake-sources-for-student-essays` (Similarity: 0.8470)
+- **Best Competitor Match**: `/learning/2026/8/can-chatgpt-create-fake-sources-for-student-essays` (Similarity: 0.8417)
 
 ```text
 1. Instantly Exposing AI Hallucinations
@@ -99,7 +99,7 @@ During routine grading check-ins, ask the student: "Pick one source from your bi
 ### Section: Why Fake AI Citations Collapse Under Source Questioning
 - **Level**: `h2`
 - **Hash**: `b0859bee2d3209bbf4efe6f2ab33f2e5ef66d1e8836b036c6affe3a7839a125b`
-- **Best Competitor Match**: `/learning/2026/8/can-chatgpt-create-fake-sources-for-student-essays` (Similarity: 0.9090)
+- **Best Competitor Match**: `/learning/2026/8/can-chatgpt-create-fake-sources-for-student-essays` (Similarity: 0.9023)
 
 ```text
 Large language models predict text based on statistical frequency. When asked for APA citations, ChatGPT generates plausible-sounding strings without querying real databases like JSTOR or Google Scholar:

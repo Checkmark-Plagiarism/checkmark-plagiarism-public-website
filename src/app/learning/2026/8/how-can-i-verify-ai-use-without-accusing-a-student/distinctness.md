@@ -2,9 +2,9 @@
 route: "/learning/2026/8/how-can-i-verify-ai-use-without-accusing-a-student"
 title: "How Can I Verify AI Use Without Accusing a Student?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "4b4d7dfed304dfdcf0d6ac8bc5f38bd035a3d9fb16d2393d6698eded8dd7d5e0"
-uniqueness_score: 7.36
+uniqueness_score: 7.57
 combined_similarity: 0.9758
 whole_page_top5_similarity: 0.9788
 top_chunk_overlap: 0.9738
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 7.36 / 100
+- **Uniqueness Score**: 7.57 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/can-teachers-detect-ai-without-using-an-ai-detector`
 

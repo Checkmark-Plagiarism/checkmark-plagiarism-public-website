@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-an-essay-pass-a-plagiarism-checker-and-still-be-written-by-ai"
 title: "Can an Essay Pass a Plagiarism Checker and Still Be Written by AI?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "f5eb10669d59b61ba9cb5e3f281a4bc89f869912c8023595e14e65c8f22e6f14"
 uniqueness_score: 3.07
 combined_similarity: 0.9794

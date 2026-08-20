@@ -2,11 +2,11 @@
 route: "/learning/2026/8/how-do-i-investigate-ai-use-without-relying-on-an-ai-detector"
 title: "How Do I Investigate AI Use Without Relying on an AI Detector?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "047980d4bb99211f3a34ce4cba03921fbb5dae770d5344d605d7cf3d151535c2"
-uniqueness_score: 40.49
-combined_similarity: 0.9586
-whole_page_top5_similarity: 0.9632
+uniqueness_score: 39.88
+combined_similarity: 0.9588
+whole_page_top5_similarity: 0.9636
 top_chunk_overlap: 0.9556
 action: "remediation_candidate"
 nearest_competitor: "/learning/2026/8/how-do-i-find-out-whether-a-student-actually-wrote-an-assignment"
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 40.49 / 100
+- **Uniqueness Score**: 39.88 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/how-do-i-find-out-whether-a-student-actually-wrote-an-assignment`
 
@@ -24,8 +24,8 @@ remediation_status: "not_needed"
 | 1 | `/learning/2026/8/how-do-i-find-out-whether-a-student-actually-wrote-an-assignment` | 0.9665 | 0.9574 | 0.9726 |
 | 2 | `/learning/2026/8/what-is-the-best-way-to-investigate-a-suspicious-essay` | 0.9618 | 0.9646 | 0.9599 |
 | 3 | `/learning/2026/8/my-student-says-the-ai-detector-is-wrong-what-should-i-check` | 0.9595 | 0.9546 | 0.9627 |
-| 4 | `/learning/2026/8/should-ai-detection-be-used-as-evidence-or-as-a-starting-point` | 0.9583 | 0.9626 | 0.9554 |
-| 5 | `/learning/2026/8/how-can-teachers-investigate-ai-writing-that-passes-an-ai-detector` | 0.9582 | 0.9624 | 0.9554 |
+| 4 | `/learning/2026/8/can-document-history-protect-a-student-from-a-false-ai-accusation` | 0.9586 | 0.9643 | 0.9547 |
+| 5 | `/learning/2026/8/should-ai-detection-be-used-as-evidence-or-as-a-starting-point` | 0.9583 | 0.9626 | 0.9554 |
 
 ## Semantic Chunks
 ### Section: Introduction

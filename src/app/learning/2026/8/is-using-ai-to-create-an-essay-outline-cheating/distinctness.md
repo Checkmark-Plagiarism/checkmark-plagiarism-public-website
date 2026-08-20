@@ -2,7 +2,7 @@
 route: "/learning/2026/8/is-using-ai-to-create-an-essay-outline-cheating"
 title: "Is Using AI to Create an Essay Outline Cheating?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "64df1c731c9d22eb4f5bb4bbcc0af8fe000a3fd6099e060f9185e9ece68a1ae7"
 uniqueness_score: 35.99
 combined_similarity: 0.9602

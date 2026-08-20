@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-teachers-see-what-a-student-pasted-into-google-docs"
 title: "Can Teachers See What a Student Pasted Into Google Docs?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "967d741e9458e5e6cb266a4b0615fba28aadcb65b462829dd667c8e89246a551"
 uniqueness_score: 19.22
 combined_similarity: 0.967

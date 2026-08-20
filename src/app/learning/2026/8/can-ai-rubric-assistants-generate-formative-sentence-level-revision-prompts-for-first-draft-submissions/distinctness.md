@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-ai-rubric-assistants-generate-formative-sentence-level-revision-prompts-for-first-draft-submissions"
 title: "Can AI Rubric Assistants Generate Formative Sentence-Level Revision Prompts for First-Draft Submissions? | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "1222f3562f7f5c9e4f2181728461ebb75e6ccd1fe40cb5880ac5a4acfad0d55f"
 uniqueness_score: 79.75
 combined_similarity: 0.9407

@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-ai-writing-be-detected-if-a-student-types-it-instead-of-pasting-it"
 title: "Can AI Writing Be Detected If a Student Types It Instead of Pasting It?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "b321f44daaf64d2f5145018c7a301f60fd56e412a795b228fe9c4bd5cf846956"
 uniqueness_score: 7.98
 combined_similarity: 0.9751

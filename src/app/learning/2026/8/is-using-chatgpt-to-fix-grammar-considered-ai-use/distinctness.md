@@ -2,7 +2,7 @@
 route: "/learning/2026/8/is-using-chatgpt-to-fix-grammar-considered-ai-use"
 title: "Is Using ChatGPT to Fix Grammar Considered AI Use?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "e42b41f72fe3e8b79f8b7cdfbf8be2043465bb06152a2b09cf955599d71eaba5"
 uniqueness_score: 64.01
 combined_similarity: 0.9494

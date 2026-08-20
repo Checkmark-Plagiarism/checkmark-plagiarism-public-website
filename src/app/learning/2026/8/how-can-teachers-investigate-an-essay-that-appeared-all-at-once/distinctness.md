@@ -2,9 +2,9 @@
 route: "/learning/2026/8/how-can-teachers-investigate-an-essay-that-appeared-all-at-once"
 title: "How Can Teachers Investigate an Essay That Appeared All at Once?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "5f8b940a7f2d122a91e10d774063a9321d683febc3a94c961c09f0e1dd8db810"
-uniqueness_score: 7.16
+uniqueness_score: 7.36
 combined_similarity: 0.9759
 whole_page_top5_similarity: 0.9738
 top_chunk_overlap: 0.9772
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 7.16 / 100
+- **Uniqueness Score**: 7.36 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/what-does-a-large-paste-event-mean-in-a-student-essay`
 
@@ -25,7 +25,7 @@ remediation_status: "not_needed"
 | 2 | `/learning/2026/8/does-copying-and-pasting-automatically-mean-a-student-cheated` | 0.9835 | 0.9706 | 0.9920 |
 | 3 | `/learning/2026/8/can-paraphrasing-ai-text-make-it-undetectable` | 0.9785 | 0.9517 | 0.9964 |
 | 4 | `/learning/2026/8/what-does-an-ai-written-essay-look-like-in-writing-history` | 0.9772 | 0.9430 | 1.0000 |
-| 5 | `/learning/2026/8/what-should-i-do-when-ai-detection-and-writing-history-disagree` | 0.9757 | 0.9466 | 0.9951 |
+| 5 | `/learning/2026/8/can-document-history-protect-a-student-from-a-false-ai-accusation` | 0.9764 | 0.9521 | 0.9925 |
 
 ## Semantic Chunks
 ### Section: Introduction

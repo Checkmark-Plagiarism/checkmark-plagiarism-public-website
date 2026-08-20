@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-writing-speed-help-determine-whether-a-student-wrote-an-assignment"
 title: "Can Writing Speed Help Determine Whether a Student Wrote an Assignment?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "c49da533bcb0aac984e5f96a8cf104115d2b6d105a826b35059f2ae6c91e1295"
 uniqueness_score: 65.44
 combined_similarity: 0.9492

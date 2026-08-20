@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-plagiarism-checkers-detect-text-copied-from-another-screen"
 title: "Can Plagiarism Checkers Detect Text Copied From Another Screen?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "b95e1d9616c707696c502c3a7626129b348c3403430b3df06abc7dcd00d610fb"
 uniqueness_score: 19.63
 combined_similarity: 0.9667
@@ -25,7 +25,7 @@ remediation_status: "not_needed"
 | 2 | `/learning/2026/8/can-teachers-tell-if-a-student-is-typing-from-their-phone` | 0.9755 | 0.9573 | 0.9876 |
 | 3 | `/learning/2026/8/can-typing-patterns-reveal-that-a-student-was-copying` | 0.9748 | 0.9508 | 0.9908 |
 | 4 | `/learning/2026/8/can-students-avoid-plagiarism-detection-by-retyping-an-article` | 0.9737 | 0.9511 | 0.9887 |
-| 5 | `/learning/2026/8/can-teachers-detect-manually-typed-ai-responses` | 0.9679 | 0.9468 | 0.9820 |
+| 5 | `/learning/2026/8/can-students-beat-ai-detection-by-manually-rewriting-chatgpt` | 0.9683 | 0.9479 | 0.9818 |
 
 ## Semantic Chunks
 ### Section: Introduction

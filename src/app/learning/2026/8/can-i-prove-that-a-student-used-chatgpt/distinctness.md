@@ -2,9 +2,9 @@
 route: "/learning/2026/8/can-i-prove-that-a-student-used-chatgpt"
 title: "Can I Prove That a Student Used ChatGPT?"
 seniority_date: "2026-08-10"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "a917fe5f83caaf282f82885641c9f224dadaa87c142f9b63d19df4adf056c8b7"
-uniqueness_score: 9.61
+uniqueness_score: 9.82
 combined_similarity: 0.9736
 whole_page_top5_similarity: 0.976
 top_chunk_overlap: 0.972
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 9.61 / 100
+- **Uniqueness Score**: 9.82 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/what-should-i-do-if-i-suspect-a-student-used-ai`
 

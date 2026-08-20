@@ -2,7 +2,7 @@
 route: "/learning/2026/8/what-types-of-assignments-are-hardest-for-chatgpt-to-complete"
 title: "What Types of Assignments Are Hardest for ChatGPT to Complete?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "17f1ca3e22d9fd6e1550ba61298cf80067b566b26867f90d55382eeb9c827ba0"
 uniqueness_score: 44.99
 combined_similarity: 0.9573

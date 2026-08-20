@@ -2,9 +2,9 @@
 route: "/learning/2026/8/how-can-i-automate-first-draft-essay-grading"
 title: "How Can I Automate First-Draft Essay Grading?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "79fe8e5b7212cad18230033838a0d69b4b9f31529478ecedd97899b0dd43141b"
-uniqueness_score: 32.92
+uniqueness_score: 33.13
 combined_similarity: 0.9609
 whole_page_top5_similarity: 0.9534
 top_chunk_overlap: 0.9659
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 32.92 / 100
+- **Uniqueness Score**: 33.13 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/can-teachers-automatically-grade-first-drafts-and-review-the-results`
 

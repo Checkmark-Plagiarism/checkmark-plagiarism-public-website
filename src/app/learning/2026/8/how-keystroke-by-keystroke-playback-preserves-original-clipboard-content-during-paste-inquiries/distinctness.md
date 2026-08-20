@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-keystroke-by-keystroke-playback-preserves-original-clipboard-content-during-paste-inquiries"
 title: "How Keystroke-by-Keystroke Playback Preserves Original Clipboard Content During Paste Inquiries | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "aaa83db94d91463689b3a2a05b32a6f6a672a095bd37bd9ec5720562b25b6007"
 uniqueness_score: 77.91
 combined_similarity: 0.942

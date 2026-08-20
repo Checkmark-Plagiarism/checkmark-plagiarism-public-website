@@ -2,7 +2,7 @@
 route: "/learning/2026/8/a-student-pasted-an-entire-essay-at-once-how-can-keystroke-playback-verify-if-it-was-drafted-elsewhere"
 title: "A Student Pasted an Entire Essay at Once: How Can Keystroke Playback Verify If It Was Drafted Elsewhere? | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "9be3b0902b975e826702f8e46b8635cdf179025cbd0268484b32197792a6267e"
 uniqueness_score: 68.51
 combined_similarity: 0.9478

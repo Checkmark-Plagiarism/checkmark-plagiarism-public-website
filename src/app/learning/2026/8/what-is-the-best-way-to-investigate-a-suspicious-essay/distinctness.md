@@ -2,11 +2,11 @@
 route: "/learning/2026/8/what-is-the-best-way-to-investigate-a-suspicious-essay"
 title: "What Is the Best Way to Investigate a Suspicious Essay?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "d11ca769cc053c3eae90f6085e9593c6b67c00e4bfde777780cd2d6ffd3478d7"
-uniqueness_score: 24.74
-combined_similarity: 0.965
-whole_page_top5_similarity: 0.9667
+uniqueness_score: 23.93
+combined_similarity: 0.9652
+whole_page_top5_similarity: 0.9671
 top_chunk_overlap: 0.9639
 action: "remediation_candidate"
 nearest_competitor: "/learning/2026/8/how-should-teachers-investigate-a-sudden-change-in-writing-ability"
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 24.74 / 100
+- **Uniqueness Score**: 23.93 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/how-should-teachers-investigate-a-sudden-change-in-writing-ability`
 

@@ -2,9 +2,9 @@
 route: "/learning/2026/8/can-a-student-copy-an-essay-from-someone-who-took-the-class-last-year"
 title: "Can a Student Copy an Essay From Someone Who Took the Class Last Year?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "f58ab061761974b187176d8e41c7a6b51af73124963c95704eb3c7608b6e8ed5"
-uniqueness_score: 40.29
+uniqueness_score: 40.49
 combined_similarity: 0.9586
 whole_page_top5_similarity: 0.9617
 top_chunk_overlap: 0.9566
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 40.29 / 100
+- **Uniqueness Score**: 40.49 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/can-teachers-detect-students-sharing-old-assignments`
 

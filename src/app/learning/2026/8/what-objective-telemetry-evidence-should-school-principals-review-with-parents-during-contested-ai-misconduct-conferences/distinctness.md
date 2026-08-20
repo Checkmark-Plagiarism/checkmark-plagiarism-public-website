@@ -2,7 +2,7 @@
 route: "/learning/2026/8/what-objective-telemetry-evidence-should-school-principals-review-with-parents-during-contested-ai-misconduct-conferences"
 title: "What Objective Telemetry Evidence Should School Principals Review With Parents During Contested AI Misconduct Conferences? | Checkmark Plagiarism"
 seniority_date: "2026-08-19"
-last_vectorized_at: "2026-08-19T22:54:04Z"
+last_vectorized_at: "2026-08-20T03:00:29Z"
 content_hash: "d7c767bbcc5f31b247c2f79341ce256fd4f5d8661aee0be3d8b33a8ef29beb3e"
 uniqueness_score: 77.71
 combined_similarity: 0.9421

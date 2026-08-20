@@ -2,7 +2,7 @@
 route: "/learning/2026/8/what-restorative-conferencing-protocols-should-high-school-writing-departments-use-for-disputed-ai-submissions"
 title: "What Restorative Conferencing Protocols Should High School Writing Departments Use for Disputed AI Submissions? | Checkmark Plagiarism"
 seniority_date: "2026-08-19"
-last_vectorized_at: "2026-08-19T22:54:04Z"
+last_vectorized_at: "2026-08-20T03:00:29Z"
 content_hash: "4813ba11e84b9f7b806336e221b123907c4c4ef34c79dbee6a34a6a2116aecf5"
 uniqueness_score: 48.47
 combined_similarity: 0.9558

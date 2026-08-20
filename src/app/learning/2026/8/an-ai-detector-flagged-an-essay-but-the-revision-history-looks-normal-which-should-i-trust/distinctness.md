@@ -2,12 +2,12 @@
 route: "/learning/2026/8/an-ai-detector-flagged-an-essay-but-the-revision-history-looks-normal-which-should-i-trust"
 title: "An AI Detector Flagged an Essay but the Revision History Looks Normal — Which Should I Trust?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "a3e28b44741857e23e0ea8945e153fb19bc751557f7fec3618469f486eb1aaec"
-uniqueness_score: 60.53
-combined_similarity: 0.9511
-whole_page_top5_similarity: 0.9615
-top_chunk_overlap: 0.9442
+uniqueness_score: 60.12
+combined_similarity: 0.9515
+whole_page_top5_similarity: 0.9624
+top_chunk_overlap: 0.9443
 action: "remediation_candidate"
 nearest_competitor: "/learning/2026/8/how-should-schools-handle-ai-detector-false-positives"
 remediation_attempts: 0
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 60.53 / 100
+- **Uniqueness Score**: 60.12 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/how-should-schools-handle-ai-detector-false-positives`
 
@@ -23,7 +23,7 @@ remediation_status: "not_needed"
 | :--- | :--- | :--- | :--- | :--- |
 | 1 | `/learning/2026/8/how-should-schools-handle-ai-detector-false-positives` | 0.9601 | 0.9612 | 0.9593 |
 | 2 | `/learning/2026/8/how-do-i-investigate-ai-use-without-relying-on-an-ai-detector` | 0.9572 | 0.9640 | 0.9527 |
-| 3 | `/learning/2026/8/what-if-an-ai-detector-flags-a-student-who-actually-wrote-the-essay` | 0.9556 | 0.9634 | 0.9503 |
+| 3 | `/learning/2026/8/what-if-an-ai-detector-flags-a-student-who-actually-wrote-the-essay` | 0.9565 | 0.9657 | 0.9503 |
 | 4 | `/learning/2026/8/my-student-says-the-ai-detector-is-wrong-what-should-i-check` | 0.9555 | 0.9520 | 0.9577 |
 | 5 | `/learning/2026/8/an-essay-passed-the-ai-detector-but-still-looks-ai-written-what-can-i-check` | 0.9551 | 0.9543 | 0.9557 |
 
@@ -31,7 +31,7 @@ remediation_status: "not_needed"
 ### Section: Introduction
 - **Level**: `intro`
 - **Hash**: `daeafccfffc23575d7ae9a992e8991e82b253e88521db72c070366111b2de9d8`
-- **Best Competitor Match**: `/learning/2026/8/what-should-i-do-when-ai-detection-and-writing-history-disagree` (Similarity: 0.9319)
+- **Best Competitor Match**: `/learning/2026/8/what-if-an-ai-detector-flags-a-student-who-actually-wrote-the-essay` (Similarity: 0.9324)
 
 ```text
 You should always trust the verified revision history over the AI detector score. An AI detector percentage is merely a statistical probability estimate that can generate false positives on eloquent, structured, or multilingual human writing. In contrast, Checkmark Writing Playback provides physical, empirical proof of human cognitive labor: logging hours of active typing, natural pause-and-burst cycles, organic backspace deletions (15–25%), and authentic thesis evolution. When revision telemetry confirms multi-hour human drafting, the AI score must be ruled a false positive and dismissed.

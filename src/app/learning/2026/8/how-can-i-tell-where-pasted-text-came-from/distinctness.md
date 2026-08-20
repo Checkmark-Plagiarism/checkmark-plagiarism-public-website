@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-i-tell-where-pasted-text-came-from"
 title: "How Can I Tell Where Pasted Text Came From?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "f6a199956ba1e454cde1797e427e723595222cd2f59f68cd8cedf3f9cd28f76f"
 uniqueness_score: 36.61
 combined_similarity: 0.9602

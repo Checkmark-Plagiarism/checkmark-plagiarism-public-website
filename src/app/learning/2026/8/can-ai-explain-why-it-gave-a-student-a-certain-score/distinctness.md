@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-ai-explain-why-it-gave-a-student-a-certain-score"
 title: "Can AI Explain Why It Gave a Student a Certain Score?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "4d244388bc91406f19b64a6f3660b958df2250cc40a9ece33f38780f41ff625c"
 uniqueness_score: 82.21
 combined_similarity: 0.9378

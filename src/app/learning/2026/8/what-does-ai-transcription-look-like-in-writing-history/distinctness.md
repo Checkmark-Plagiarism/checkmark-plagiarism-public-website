@@ -2,11 +2,11 @@
 route: "/learning/2026/8/what-does-ai-transcription-look-like-in-writing-history"
 title: "What Does AI Transcription Look Like in Writing History?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "dab57e100531e0849d0d1ae74e7df6100d21dfbeab8eb8375e7b1fbbfb0f0e74"
 uniqueness_score: 46.63
-combined_similarity: 0.9566
-whole_page_top5_similarity: 0.9601
+combined_similarity: 0.9567
+whole_page_top5_similarity: 0.9603
 top_chunk_overlap: 0.9543
 action: "remediation_candidate"
 nearest_competitor: "/learning/2026/8/can-teachers-detect-a-student-typing-chatgpts-answer-word-for-word"

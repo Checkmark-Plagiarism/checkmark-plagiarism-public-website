@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-teachers-detect-ai-answers-transcribed-from-a-phone"
 title: "Can Teachers Detect AI Answers Transcribed From a Phone?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "14437a90dd19775adb3d934ceac7d65bb8bd0b206fe27e8ba7a92ec4a96a483c"
 uniqueness_score: 5.93
 combined_similarity: 0.9768

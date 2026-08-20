@@ -2,11 +2,11 @@
 route: "/learning/2026/8/can-an-essay-be-partially-ai-generated"
 title: "Can an Essay Be Partially AI-Generated?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "c3fe90a3f93fb95bc4741246aa9edb4129a0a180b82da2ed1f72f59c30e53042"
 uniqueness_score: 41.51
 combined_similarity: 0.958
-whole_page_top5_similarity: 0.9592
+whole_page_top5_similarity: 0.9593
 top_chunk_overlap: 0.9572
 action: "remediation_candidate"
 nearest_competitor: "/learning/2026/8/can-teachers-detect-partial-ai-use-in-an-essay"

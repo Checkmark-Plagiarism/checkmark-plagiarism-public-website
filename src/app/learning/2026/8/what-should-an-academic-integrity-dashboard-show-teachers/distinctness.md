@@ -2,9 +2,9 @@
 route: "/learning/2026/8/what-should-an-academic-integrity-dashboard-show-teachers"
 title: "What Should an Academic Integrity Dashboard Show Teachers?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "0a8c84551781b3f698af2498713cc45f440159942fa693b72595bbe882174e2a"
-uniqueness_score: 78.73
+uniqueness_score: 78.94
 combined_similarity: 0.9417
 whole_page_top5_similarity: 0.9286
 top_chunk_overlap: 0.9505
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 78.73 / 100
+- **Uniqueness Score**: 78.94 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/what-should-an-academic-integrity-dashboard-show`
 

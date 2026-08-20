@@ -2,9 +2,9 @@
 route: "/learning/2026/8/how-can-teachers-check-google-classroom-assignments-for-plagiarism"
 title: "How Can Teachers Check Google Classroom Assignments for Plagiarism?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "8d20fc2ec68ddfa1062762f520245aeaedc7fe144e5e8561f494344274846a54"
-uniqueness_score: 22.7
+uniqueness_score: 22.9
 combined_similarity: 0.9657
 whole_page_top5_similarity: 0.9391
 top_chunk_overlap: 0.9834
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 22.7 / 100
+- **Uniqueness Score**: 22.9 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/how-do-i-check-google-classroom-assignments-for-ai-writing`
 

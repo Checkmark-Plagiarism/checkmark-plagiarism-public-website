@@ -2,7 +2,7 @@
 route: "/learning/2026/8/what-does-an-ai-detection-percentage-actually-mean"
 title: "What Does an AI Detection Percentage Actually Mean?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "acfca3108a87bdfb03f2dc38af88fa9a241ac83a0d06fddefd59c339b70d107f"
 uniqueness_score: 47.03
 combined_similarity: 0.9565

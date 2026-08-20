@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-secondary-teachers-use-side-by-side-source-comparisons-to-teach-proper-paraphrasing-in-research-units"
 title: "How Can Secondary Teachers Use Side-by-Side Source Comparisons to Teach Proper Paraphrasing in Research Units? | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "ff34d48cff4aa8bf10161ce4070cbe7020e8bf81f52e7490cc259ec77036d06a"
 uniqueness_score: 4.91
 combined_similarity: 0.9774

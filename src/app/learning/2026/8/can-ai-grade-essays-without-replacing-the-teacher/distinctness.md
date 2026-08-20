@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-ai-grade-essays-without-replacing-the-teacher"
 title: "Can AI Grade Essays Without Replacing the Teacher?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "dd4bb22320e4483f591fd67cd0deb57dfdf56868e2fc5be0c498781342b6b607"
 uniqueness_score: 25.97
 combined_similarity: 0.9645

@@ -2,7 +2,7 @@
 route: "/learning/2026/6/how-canvas-integrations-work-a-practical-guide-for-schools"
 title: "How Canvas Integrations Work: A Practical Guide for Schools"
 seniority_date: "2026-06-25"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "b9be14cbd0261a43a7e767d151ce55342dbff7d828b16fa64e2cadb7128b82b8"
 uniqueness_score: 95.5
 combined_similarity: 0.8489

@@ -2,7 +2,7 @@
 route: "/learning/2026/8/what-should-a-district-review-committee-look-for-in-zero-retention-ai-plagiarism-contracts"
 title: "What Should a District Review Committee Look for in Zero-Retention AI Plagiarism Contracts? | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "ccd0fc57c4cbcac3d849f60bf30607ce6bbc152bbda5b492e57d79224d3b2a0c"
 uniqueness_score: 20.45
 combined_similarity: 0.9665

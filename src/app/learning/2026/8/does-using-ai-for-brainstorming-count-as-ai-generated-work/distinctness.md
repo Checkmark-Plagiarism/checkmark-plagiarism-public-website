@@ -2,7 +2,7 @@
 route: "/learning/2026/8/does-using-ai-for-brainstorming-count-as-ai-generated-work"
 title: "Does Using AI for Brainstorming Count as AI-Generated Work?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "6efa778939dbbb2fd799b62d13e01b8ce4394788b21179e9fded06307e4d131d"
 uniqueness_score: 55.62
 combined_similarity: 0.9534

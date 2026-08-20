@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-ai-grade-essays-using-my-own-rubric"
 title: "Can AI Grade Essays Using My Own Rubric?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "c8c3a4595e3be9efe99c941d188f081911e24adf10f108d6c9dd6e49ac098a5c"
 uniqueness_score: 3.68
 combined_similarity: 0.9787

@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-middle-school-team-leads-use-teacher-controlled-autograding-to-accelerate-short-response-diagnostic-feedback"
 title: "How Can Middle School Team Leads Use Teacher-Controlled Autograding to Accelerate Short-Response Diagnostic Feedback? | Checkmark Plagiarism"
 seniority_date: "2026-08-19"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:29Z"
 content_hash: "091f544c243e37bb79a15253dac9e3a6b47593fa702fb1b3ada5c13d6971f745"
 uniqueness_score: 82.41
 combined_similarity: 0.9377

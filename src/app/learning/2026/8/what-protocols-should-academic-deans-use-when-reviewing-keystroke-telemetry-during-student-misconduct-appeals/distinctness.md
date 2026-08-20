@@ -2,7 +2,7 @@
 route: "/learning/2026/8/what-protocols-should-academic-deans-use-when-reviewing-keystroke-telemetry-during-student-misconduct-appeals"
 title: "What Protocols Should Academic Deans Use When Reviewing Keystroke Telemetry During Student Misconduct Appeals? | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "d1a36f725d694298235d048d2ab6bd2d8e1043ca155e4b16f9ddd28f8c045fa5"
 uniqueness_score: 57.67
 combined_similarity: 0.9525

@@ -2,7 +2,7 @@
 route: "/learning/2026/6/writing-for-clarity-the-techniques-that-actually-make-prose-easier-to-read"
 title: "Writing for Clarity: The Techniques That Actually Make Prose Easier to Read"
 seniority_date: "2026-06-25"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "fbf71c1618f07cdd4e0a1ec6bf47c45f2937708e88faae1794a8195a9628ff57"
 uniqueness_score: 96.52
 combined_similarity: 0.8303

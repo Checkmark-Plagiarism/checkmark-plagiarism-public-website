@@ -2,7 +2,7 @@
 route: "/learning/2026/8/is-google-docs-revision-history-enough-to-detect-ai"
 title: "Is Google Docs Revision History Enough to Detect AI?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "3244f5f4a79c10607aebb36d7e8f82d027026941964ec8d326989c44d05691a6"
 uniqueness_score: 52.76
 combined_similarity: 0.9543
@@ -174,7 +174,7 @@ Checkmark integrates seamlessly with Google Classroom, displaying writing playba
 ### Section: What if a student has rich version history but fake sources?
 - **Level**: `h3`
 - **Hash**: `e0b6f27bcf42942e721500430de125ce7d684c5854a99544e6b3ecc157e4b581`
-- **Best Competitor Match**: `/learning/2026/8/can-chatgpt-create-fake-sources-for-student-essays` (Similarity: 0.8852)
+- **Best Competitor Match**: `/learning/2026/8/can-chatgpt-create-fake-sources-for-student-essays` (Similarity: 0.8790)
 
 ```text
 Fake citations are definitive proof of AI generation, regardless of whether the student pasted the text or typed it from an AI chat window.

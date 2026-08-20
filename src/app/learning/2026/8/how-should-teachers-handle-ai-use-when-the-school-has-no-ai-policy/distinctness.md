@@ -2,9 +2,9 @@
 route: "/learning/2026/8/how-should-teachers-handle-ai-use-when-the-school-has-no-ai-policy"
 title: "How Should Teachers Handle AI Use When the School Has No AI Policy?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "2b9fcdeec69b9c5ab31c468ec9d10edee4fcf9a700b342511a5e9b6814672dc7"
-uniqueness_score: 60.33
+uniqueness_score: 60.53
 combined_similarity: 0.9513
 whole_page_top5_similarity: 0.9532
 top_chunk_overlap: 0.95
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 60.33 / 100
+- **Uniqueness Score**: 60.53 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/what-should-an-ai-policy-for-student-assignments-include`
 
@@ -25,7 +25,7 @@ remediation_status: "not_needed"
 | 2 | `/learning/2026/8/should-ai-detection-be-used-as-evidence-or-as-a-starting-point` | 0.9754 | 0.9474 | 0.9941 |
 | 3 | `/learning/2026/8/how-can-i-design-assignments-that-are-harder-to-complete-with-ai` | 0.9710 | 0.9381 | 0.9930 |
 | 4 | `/learning/2026/8/what-evidence-can-clear-a-student-accused-of-using-ai` | 0.9700 | 0.9340 | 0.9941 |
-| 5 | `/learning/2026/8/can-document-history-protect-a-student-from-a-false-ai-accusation` | 0.9687 | 0.9334 | 0.9923 |
+| 5 | `/learning/2026/8/can-document-history-protect-a-student-from-a-false-ai-accusation` | 0.9685 | 0.9328 | 0.9923 |
 
 ## Semantic Chunks
 ### Section: Introduction

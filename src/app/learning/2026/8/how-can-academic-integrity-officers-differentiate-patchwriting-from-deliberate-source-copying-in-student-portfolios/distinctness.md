@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-academic-integrity-officers-differentiate-patchwriting-from-deliberate-source-copying-in-student-portfolios"
 title: "How Can Academic Integrity Officers Differentiate Patchwriting From Deliberate Source Copying in Student Portfolios? | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "9f50931e26a9045745911fe5fd828b0ef21b26f93356dd987eb08f151872b894"
 uniqueness_score: 70.55
 combined_similarity: 0.9473

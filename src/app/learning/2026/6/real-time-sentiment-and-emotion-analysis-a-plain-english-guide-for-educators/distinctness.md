@@ -2,7 +2,7 @@
 route: "/learning/2026/6/real-time-sentiment-and-emotion-analysis-a-plain-english-guide-for-educators"
 title: "Real-Time Sentiment and Emotion Analysis: A Plain-English Guide for Educators"
 seniority_date: "2026-06-25"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "e40e6098328f91c595c61795ae424bc2879082d50efe5b87ffa40752f2c15d2b"
 uniqueness_score: 96.93
 combined_similarity: 0.8252

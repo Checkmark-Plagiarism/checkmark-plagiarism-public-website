@@ -2,7 +2,7 @@
 route: "/learning/2026/6/how-to-avoid-first-person-pronouns-in-an-essay-without-sounding-stilted"
 title: "How to Avoid First-Person Pronouns in an Essay (Without Sounding Stilted)"
 seniority_date: "2026-06-25"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "4c65d62e19860f36ea3ec9bc096c5664f961490acc9a843410f777738a490866"
 uniqueness_score: 97.96
 combined_similarity: 0.7893

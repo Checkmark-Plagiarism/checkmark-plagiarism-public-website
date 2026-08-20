@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-writing-process-evidence-protects-neurodivergent-students-who-compose-non-linearly"
 title: "How Writing Process Evidence Protects Neurodivergent Students Who Compose Non-Linearly | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "0f6e8ee11338c0b9ba55abf323ebfded58f5b3388614c8b11befec1db5c278b1"
 uniqueness_score: 70.14
 combined_similarity: 0.9474

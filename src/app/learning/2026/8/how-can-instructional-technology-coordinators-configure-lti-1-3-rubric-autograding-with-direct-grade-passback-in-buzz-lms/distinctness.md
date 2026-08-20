@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-instructional-technology-coordinators-configure-lti-1-3-rubric-autograding-with-direct-grade-passback-in-buzz-lms"
 title: "How Can Instructional Technology Coordinators Configure LTI 1.3 Rubric Autograding With Direct Grade Passback in Buzz LMS? | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "42b1537746e3811551c7e8e450d11bdbcab5b99024b1175ce7c321334450d526"
 uniqueness_score: 73.82
 combined_similarity: 0.9448

@@ -2,7 +2,7 @@
 route: "/learning/2026/8/does-chatgpt-plagiarize"
 title: "Does ChatGPT Plagiarize?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "7e900c4b5afe759803d0482c236025ab658bbdc2da163def7222a763cd70efa9"
 uniqueness_score: 47.44
 combined_similarity: 0.9563

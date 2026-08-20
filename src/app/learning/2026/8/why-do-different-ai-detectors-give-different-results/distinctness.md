@@ -2,7 +2,7 @@
 route: "/learning/2026/8/why-do-different-ai-detectors-give-different-results"
 title: "Why Do Different AI Detectors Give Different Results?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "ddb49e2715d902d4c6ff8e65a8e650e2e3d5ad71864300096fecd5994d4dae95"
 uniqueness_score: 37.42
 combined_similarity: 0.9598

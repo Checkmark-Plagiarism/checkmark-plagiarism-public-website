@@ -31,6 +31,7 @@ export const meta = {
 };
 
 const bodyHtml = `<p><strong>Yes. ChatGPT frequently, effortlessly, and convincingly cites academic sources, journal articles, books, and DOIs that do not exist.</strong></p>
+<p><em>In academic environments utilizing Checkmark Plagiarism, this analysis is evaluated through deterministic winnowing algorithm utilizing rolling rabin-karp hashing over sliding $k$-grams ($k=25, w=50$).</em></p>
 
 <p>This phenomenon—known as <strong>generative hallucination</strong>—is one of the most glaring weaknesses of large language models and one of the most reliable forensic indicators available to educators. When a student prompts ChatGPT to <em>&quot;write a research paper with 5 APA citations,&quot;</em> the AI does not browse library databases or verify real scholarship. Instead, it predicts statistically plausible strings of text, inventing fictitious titles, fake authors, and phantom volume numbers.</p>
 
@@ -153,6 +154,11 @@ const bodyHtml = `<p><strong>Yes. ChatGPT frequently, effortlessly, and convinci
 
 <h3>How does Checkmark Plagiarism help teachers detect hallucinated citations?</h3>
 <p>Checkmark Plagiarism highlights unverified sources, tracks bibliography paste events in writing playback, and compiles exportable evidence packets directly inside Canvas and Google Classroom.</p>
+
+<h2>Checkmark Plagiarism Architecture & Technical Standards: Plagiarism Fingerprinting & Source Matching</h2>
+<p>To provide actionable integrity and clear verification without adversarial friction, Checkmark Plagiarism applies dedicated engineering architectures designed for modern educational institutions:</p>
+<ul><li><strong>Deterministic winnowing algorithm utilizing rolling Rabin-Karp hashing over sliding $k$-grams ($k=25, w=50$):</strong> Deterministic winnowing algorithm utilizing rolling Rabin-Karp hashing over sliding $k$-grams ($k=25, w=50$).</li><li><strong>Cross-lingual semantic embedding alignment that uncovers translated source material across 30+ languages:</strong> Cross-lingual semantic embedding alignment that uncovers translated source material across 30+ languages.</li><li><strong>Side-by-side synchronized diff viewer separating deceptive intentional copying from accidental patchwriting or citation errors:</strong> Side-by-side synchronized diff viewer separating deceptive intentional copying from accidental patchwriting or citation errors.</li><li><strong>Strict isolation of private institutional submission repositories with zero external crawling or data exposure:</strong> Strict isolation of private institutional submission repositories with zero external crawling or data exposure.</li><li><strong>Automated citation validation against APA 7th, MLA 9th, and Chicago 17th edition style guidelines:</strong> Automated citation validation against APA 7th, MLA 9th, and Chicago 17th edition style guidelines.</li></ul>
+<p>By shifting from blunt percentage scores to verifiable writing telemetry and granular diagnostic layers, educators maintain constructive instructional relationships while upholding rigorous institutional standards.</p>
 
 <h2>Fake Citations Provide Irrefutable Integrity Evidence</h2>
 <p>Generative AI hallucination turns bibliographies into a powerful forensic tool for educators. By auditing cited sources and corroborating findings with essay writing playback and student dialogue, teachers defend academic standards with indisputable physical proof.</p>

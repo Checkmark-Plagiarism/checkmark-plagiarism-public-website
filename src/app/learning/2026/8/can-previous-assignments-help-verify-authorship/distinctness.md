@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-previous-assignments-help-verify-authorship"
 title: "Can Previous Assignments Help Verify Authorship?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "498d7bfdf72e06136830d0b4d954853c0b9462c7bbb2e96bbaecf09c83203bce"
 uniqueness_score: 36.4
 combined_similarity: 0.9602

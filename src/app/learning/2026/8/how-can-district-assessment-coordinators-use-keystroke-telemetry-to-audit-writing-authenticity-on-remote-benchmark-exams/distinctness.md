@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-district-assessment-coordinators-use-keystroke-telemetry-to-audit-writing-authenticity-on-remote-benchmark-exams"
 title: "How Can District Assessment Coordinators Use Keystroke Telemetry to Audit Writing Authenticity on Remote Benchmark Exams? | Checkmark Plagiarism"
 seniority_date: "2026-08-19"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:29Z"
 content_hash: "561bafee9f6ce666f5cfce0b9862b62f036d44c32f831292e486cbe9ca5fb664"
 uniqueness_score: 61.35
 combined_similarity: 0.9508

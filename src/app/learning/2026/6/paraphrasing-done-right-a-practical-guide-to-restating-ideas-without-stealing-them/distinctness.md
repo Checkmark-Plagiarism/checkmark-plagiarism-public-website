@@ -2,7 +2,7 @@
 route: "/learning/2026/6/paraphrasing-done-right-a-practical-guide-to-restating-ideas-without-stealing-them"
 title: "Paraphrasing, Done Right: A Practical Guide to Restating Ideas Without Stealing Them"
 seniority_date: "2026-06-25"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "277b3ff3fd2b2ccd3a722bbde853b5a71d472bc7449ec87123f38e92c46d2d48"
 uniqueness_score: 93.25
 combined_similarity: 0.8849

@@ -2,7 +2,7 @@
 route: "/learning/2026/8/what-should-i-do-if-i-suspect-a-student-used-ai"
 title: "What Should I Do If I Suspect a Student Used AI?"
 seniority_date: "2026-08-12"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "56b98b0aedb9d56e60ce99cf163badd93956896a6deea3161a6f9be876b80d6b"
 uniqueness_score: 16.97
 combined_similarity: 0.9685

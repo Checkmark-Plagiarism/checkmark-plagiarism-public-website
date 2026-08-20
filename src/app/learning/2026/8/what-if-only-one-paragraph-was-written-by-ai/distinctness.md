@@ -2,11 +2,11 @@
 route: "/learning/2026/8/what-if-only-one-paragraph-was-written-by-ai"
 title: "What If Only One Paragraph Was Written by AI?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "0e0440a4b9e98bfdbe5fe481b778a8fb7b7f916df505dd842552eb3e606e3528"
 uniqueness_score: 38.65
-combined_similarity: 0.9593
-whole_page_top5_similarity: 0.9602
+combined_similarity: 0.9594
+whole_page_top5_similarity: 0.9603
 top_chunk_overlap: 0.9587
 action: "remediation_candidate"
 nearest_competitor: "/learning/2026/8/how-should-teachers-handle-assignments-with-mixed-human-and-ai-writing"

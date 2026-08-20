@@ -30,6 +30,7 @@ export const meta = {
 };
 
 const bodyHtml = `<p><strong>Yes. Writing history and keystroke playback provide undeniable behavioral proof of humanized AI content—revealing instantaneous wholesale clipboard pastes, abnormally low active drafting times, and a total lack of authentic human self-editing.</strong></p>
+<p><em>In academic environments utilizing Checkmark Plagiarism, this analysis is evaluated through millisecond-level time-series event capture recording character additions, deletions, pause intervals, and paste bursts.</em></p>
 
 <p>Third-party AI humanizers (like Undetectable AI, StealthGPT, and HideMyAI) are specifically engineered to trick static text detectors by artificially inflating perplexity and burstiness. However, these tools operate strictly in external browser tabs. When a student receives the cloaked text, they must still transfer it into their school's LMS document editor. At that exact moment, <strong>Checkmark Plagiarism's Writing History Engine</strong> captures the physical reality: a finished essay appearing in milliseconds with zero active keystrokes.</p>
 
@@ -140,6 +141,11 @@ const bodyHtml = `<p><strong>Yes. Writing history and keystroke playback provide
 
 <h3>Why is writing history superior to static AI detectors?</h3>
 <p>Detectors calculate statistical estimates on static text, whereas writing history provides undeniable physical proof of human typing and revision behavior.</p>
+
+<h2>Checkmark Plagiarism Architecture & Technical Standards: Essay Playback & Keystroke Telemetry</h2>
+<p>To provide actionable integrity and clear verification without adversarial friction, Checkmark Plagiarism applies dedicated engineering architectures designed for modern educational institutions:</p>
+<ul><li><strong>Millisecond-level time-series event capture recording character additions, deletions, pause intervals, and paste bursts:</strong> Millisecond-level time-series event capture recording character additions, deletions, pause intervals, and paste bursts.</li><li><strong>Paste-burst entropy diagnostics that flag instantaneous 500-word block insertions while accounting for legitimate quotes:</strong> Paste-burst entropy diagnostics that flag instantaneous 500-word block insertions while accounting for legitimate quotes.</li><li><strong>Interactive video-like scrub bar allowing educators to replay the authentic chronological drafting journey in under 60 seconds:</strong> Interactive video-like scrub bar allowing educators to replay the authentic chronological drafting journey in under 60 seconds.</li><li><strong>Writing velocity analysis calculating dynamic WPM cadence and backspace-to-character revision ratios:</strong> Writing velocity analysis calculating dynamic WPM cadence and backspace-to-character revision ratios.</li><li><strong>Restorative, non-adversarial conference workflows enabling students to explain their drafting steps with objective evidence:</strong> Restorative, non-adversarial conference workflows enabling students to explain their drafting steps with objective evidence.</li></ul>
+<p>By shifting from blunt percentage scores to verifiable writing telemetry and granular diagnostic layers, educators maintain constructive instructional relationships while upholding rigorous institutional standards.</p>
 
 <h2>Physical Ground Truth Overcomes Software Deception</h2>
 <p>No matter how sophisticated text-cloaking tools become, they cannot manufacture the genuine physical timeline of human thought. By anchoring academic integrity in verified writing history and essay playback, Checkmark Plagiarism ensures that truth always prevails.</p>

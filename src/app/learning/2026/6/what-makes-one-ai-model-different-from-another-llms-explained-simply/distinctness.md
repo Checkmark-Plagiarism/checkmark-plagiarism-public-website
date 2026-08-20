@@ -2,7 +2,7 @@
 route: "/learning/2026/6/what-makes-one-ai-model-different-from-another-llms-explained-simply"
 title: "What Makes One AI Model Different From Another: LLMs Explained Simply"
 seniority_date: "2026-06-25"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "957e4f7ddc8a3ffec9850b73df9bd1d4afa2ab47a9b9f79cc2bb9a5827f9023d"
 uniqueness_score: 92.02
 combined_similarity: 0.8994

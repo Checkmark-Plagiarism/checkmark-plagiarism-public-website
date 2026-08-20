@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-teachers-tell-if-a-student-is-typing-from-their-phone"
 title: "Can Teachers Tell If a Student Is Typing From Their Phone?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "cdd7727d81e3a16a516820784f402627d395e83a1e6fd32334584d8135c68d23"
 uniqueness_score: 53.37
 combined_similarity: 0.9542

@@ -2,7 +2,7 @@
 route: "/learning/2026/8/why-school-districts-are-banning-edtech-vendors-that-train-ai-models-on-student-essays"
 title: "Why School Districts Are Banning EdTech Vendors That Train AI Models on Student Essays | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "60f97cf7c0aba9fa4bd463949c47fbdc21829506f1903dd30a1e3217ac07dc5d"
 uniqueness_score: 12.88
 combined_similarity: 0.9708

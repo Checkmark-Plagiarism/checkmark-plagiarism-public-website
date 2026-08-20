@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-ai-highlight-evidence-for-a-rubric-score"
 title: "Can AI Highlight Evidence for a Rubric Score?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "0820684ead89f6c8d3a52fd906cbcbd920fe9a8b6fdeb52afa0e5e97d3008c31"
 uniqueness_score: 87.93
 combined_similarity: 0.9298

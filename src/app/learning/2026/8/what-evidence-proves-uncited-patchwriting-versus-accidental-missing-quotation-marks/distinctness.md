@@ -2,7 +2,7 @@
 route: "/learning/2026/8/what-evidence-proves-uncited-patchwriting-versus-accidental-missing-quotation-marks"
 title: "What Evidence Proves Uncited Patchwriting Versus Accidental Missing Quotation Marks? | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "5e93752a81348181e1f4639d4edf24ad0e263b8eaf0252d70383b446680a3440"
 uniqueness_score: 22.49
 combined_similarity: 0.966

@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-ai-follow-a-teacher-created-rubric"
 title: "Can AI Follow a Teacher-Created Rubric?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "35e93eabd324255cfe23622d35fb9a67462dfd0326d707e1a717ec2bb9f75ab2"
 uniqueness_score: 39.06
 combined_similarity: 0.959

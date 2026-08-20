@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-teachers-detect-chatgpt"
 title: "Can Teachers Detect ChatGPT in Student Writing?"
 seniority_date: "2026-08-02"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "96fde04a7764f49bbcdb5093b92d59e0017a9363fe61db32b96e3b6f96b1c387"
 uniqueness_score: 46.01
 combined_similarity: 0.9569

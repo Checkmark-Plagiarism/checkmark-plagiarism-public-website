@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-a-plagiarism-checker-automatically-check-canvas-assignments"
 title: "Can a Plagiarism Checker Automatically Check Canvas Assignments?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "a130a02836976019805bb794ddd170466768950290185a104c05155237dfe80c"
 uniqueness_score: 11.66
 combined_similarity: 0.9724

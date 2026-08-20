@@ -2,11 +2,11 @@
 route: "/learning/2026/8/can-teachers-detect-manually-typed-ai-responses"
 title: "Can Teachers Detect Manually Typed AI Responses?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "d9d19960c4e8a8ab0ec284778194f67c4dce0f29f7398634e3316cc88794b272"
 uniqueness_score: 2.66
-combined_similarity: 0.9802
-whole_page_top5_similarity: 0.9788
+combined_similarity: 0.9804
+whole_page_top5_similarity: 0.9793
 top_chunk_overlap: 0.9811
 action: "remediation_candidate"
 nearest_competitor: "/learning/2026/8/can-students-beat-ai-detection-by-manually-rewriting-chatgpt"
@@ -21,10 +21,10 @@ remediation_status: "not_needed"
 
 | Rank | Route / Slug | Combined Sim | Page Sim | Top Chunk Sim |
 | :--- | :--- | :--- | :--- | :--- |
-| 1 | `/learning/2026/8/can-students-beat-ai-detection-by-manually-rewriting-chatgpt` | 0.9856 | 0.9729 | 0.9941 |
+| 1 | `/learning/2026/8/can-students-beat-ai-detection-by-manually-rewriting-chatgpt` | 0.9867 | 0.9755 | 0.9941 |
 | 2 | `/learning/2026/8/does-retyping-chatgpts-answer-make-it-undetectable` | 0.9835 | 0.9588 | 1.0000 |
 | 3 | `/learning/2026/8/how-can-teachers-investigate-ai-writing-that-passes-an-ai-detector` | 0.9815 | 0.9717 | 0.9881 |
-| 4 | `/learning/2026/8/can-human-writing-be-flagged-as-ai` | 0.9803 | 0.9687 | 0.9881 |
+| 4 | `/learning/2026/8/can-human-writing-be-flagged-as-ai` | 0.9806 | 0.9695 | 0.9881 |
 | 5 | `/learning/2026/8/what-does-an-ai-written-essay-look-like-in-writing-history` | 0.9802 | 0.9688 | 0.9879 |
 
 ## Semantic Chunks

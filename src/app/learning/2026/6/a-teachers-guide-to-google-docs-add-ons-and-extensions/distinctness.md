@@ -2,7 +2,7 @@
 route: "/learning/2026/6/a-teachers-guide-to-google-docs-add-ons-and-extensions"
 title: "A Teacher"
 seniority_date: "2026-06-25"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "33dd28bfe791ccd4f8750dc65893a06d95b4f44e92b78654f37fda4067b4bbbb"
 uniqueness_score: 98.57
 combined_similarity: 0.7817

@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-a-plagiarism-checker-show-me-the-exact-source"
 title: "Can a Plagiarism Checker Show Me the Exact Source?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "1ca106c9343a8ee0889049f9e0c791642168268b540555c231895e6e861eed72"
 uniqueness_score: 59.3
 combined_similarity: 0.952

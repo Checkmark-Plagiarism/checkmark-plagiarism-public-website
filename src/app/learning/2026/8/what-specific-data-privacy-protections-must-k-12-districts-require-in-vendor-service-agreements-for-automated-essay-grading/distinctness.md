@@ -2,7 +2,7 @@
 route: "/learning/2026/8/what-specific-data-privacy-protections-must-k-12-districts-require-in-vendor-service-agreements-for-automated-essay-grading"
 title: "What Specific Data Privacy Protections Must K-12 Districts Require in Vendor Service Agreements for Automated Essay Grading? | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "0fe706cc157f05976255dc5560ab0fabe00c82c32cf7ccc77861bf70bee5ab87"
 uniqueness_score: 48.06
 combined_similarity: 0.9562

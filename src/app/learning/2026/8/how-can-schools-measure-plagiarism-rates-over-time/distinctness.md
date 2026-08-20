@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-schools-measure-plagiarism-rates-over-time"
 title: "How Can Schools Measure Plagiarism Rates Over Time?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "9cc2b5a51b3a1fb5f48c4cb827ee3bbf23e954d462272259b71515f6dbe09826"
 uniqueness_score: 49.28
 combined_similarity: 0.9555

@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-teachers-detect-students-copying-from-each-other"
 title: "Can Teachers Detect Students Copying From Each Other?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "fca9e9144398bc79dccf456bbd552c0a7c15f1a6da76b350d6e5ec4f92f1fa1f"
 uniqueness_score: 11.45
 combined_similarity: 0.9724

@@ -2,9 +2,9 @@
 route: "/learning/2026/8/how-much-can-a-students-writing-style-change-between-assignments"
 title: "How Much Can a Student"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "f6b939b4ac6824fff1e205764d0b2a89d552ba03e1bc4e92fa41b5125a067656"
-uniqueness_score: 60.74
+uniqueness_score: 60.94
 combined_similarity: 0.9511
 whole_page_top5_similarity: 0.9549
 top_chunk_overlap: 0.9486
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 60.74 / 100
+- **Uniqueness Score**: 60.94 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/how-can-i-compare-a-suspicious-essay-with-a-students-earlier-assignments`
 

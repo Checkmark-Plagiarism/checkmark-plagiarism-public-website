@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-much-evidence-should-a-teacher-have-before-meeting-with-a-student"
 title: "How Much Evidence Should a Teacher Have Before Meeting With a Student?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "094fcd749cb0d473a90669da3631055d3aefc1b2f8ac569bf5df081f32565b66"
 uniqueness_score: 65.24
 combined_similarity: 0.9492

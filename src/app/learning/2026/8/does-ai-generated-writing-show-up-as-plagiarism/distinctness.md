@@ -2,7 +2,7 @@
 route: "/learning/2026/8/does-ai-generated-writing-show-up-as-plagiarism"
 title: "Does AI-Generated Writing Show Up as Plagiarism?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "ee132cf16250efe43194da72ff6cf68262430d552a52bbb8fa535d9487a73a48"
 uniqueness_score: 5.32
 combined_similarity: 0.9773

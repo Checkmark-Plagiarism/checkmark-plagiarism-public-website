@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-teachers-check-multiple-assignments-against-each-other-automatically"
 title: "Can Teachers Check Multiple Assignments Against Each Other Automatically?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "d6ceaa4f1f963198eef923a734893ec95a95ee08d4891b1613d4f6f54961c393"
 uniqueness_score: 69.33
 combined_similarity: 0.9476

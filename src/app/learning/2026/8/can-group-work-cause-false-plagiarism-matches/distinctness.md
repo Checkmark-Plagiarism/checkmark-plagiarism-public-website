@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-group-work-cause-false-plagiarism-matches"
 title: "Can Group Work Cause False Plagiarism Matches?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "c582d953540bbcbde0f52da824fa9fc4d45456afe5c6c1af2866ec0d3e7ece00"
 uniqueness_score: 87.53
 combined_similarity: 0.9301

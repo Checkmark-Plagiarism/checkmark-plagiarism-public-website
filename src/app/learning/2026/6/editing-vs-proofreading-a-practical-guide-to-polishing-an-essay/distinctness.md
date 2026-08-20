@@ -2,7 +2,7 @@
 route: "/learning/2026/6/editing-vs-proofreading-a-practical-guide-to-polishing-an-essay"
 title: "Editing vs Proofreading: A Practical Guide to Polishing an Essay"
 seniority_date: "2026-06-25"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "84d535bf863bcecb2604857f3da535de7781eb2c6276bcfc5d2ab4b7f9e53c9a"
 uniqueness_score: 94.27
 combined_similarity: 0.854

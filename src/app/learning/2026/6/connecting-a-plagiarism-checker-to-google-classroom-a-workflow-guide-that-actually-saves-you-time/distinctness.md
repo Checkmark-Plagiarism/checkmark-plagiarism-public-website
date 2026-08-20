@@ -2,7 +2,7 @@
 route: "/learning/2026/6/connecting-a-plagiarism-checker-to-google-classroom-a-workflow-guide-that-actually-saves-you-time"
 title: "Connecting a Plagiarism Checker to Google Classroom: A Workflow Guide That Actually Saves You Time"
 seniority_date: "2026-06-25"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "12c98bbd2a9681267fd6becf855b6eb1533bf28d17e97ab933297bd486c899c0"
 uniqueness_score: 95.91
 combined_similarity: 0.8449

@@ -2,11 +2,11 @@
 route: "/learning/2026/8/can-a-student-copy-ai-text-slowly-enough-to-avoid-detection"
 title: "Can a Student Copy AI Text Slowly Enough to Avoid Detection?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "cd3c959002f7b7f966726493fcf4019eea4000cde491f572cc0399cadae0d477"
-uniqueness_score: 26.99
-combined_similarity: 0.9639
-whole_page_top5_similarity: 0.962
+uniqueness_score: 26.79
+combined_similarity: 0.9642
+whole_page_top5_similarity: 0.9626
 top_chunk_overlap: 0.9652
 action: "remediation_candidate"
 nearest_competitor: "/learning/2026/8/can-ai-writing-be-detected-if-a-student-types-it-instead-of-pasting-it"
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 26.99 / 100
+- **Uniqueness Score**: 26.79 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/can-ai-writing-be-detected-if-a-student-types-it-instead-of-pasting-it`
 

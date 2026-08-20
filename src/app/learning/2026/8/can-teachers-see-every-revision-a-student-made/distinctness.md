@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-teachers-see-every-revision-a-student-made"
 title: "Can Teachers See Every Revision a Student Made?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "89305b4aa7b32088c16b8d35e0ecf75f7e1c07dbde9767e716d6167082196d9b"
 uniqueness_score: 66.26
 combined_similarity: 0.9489

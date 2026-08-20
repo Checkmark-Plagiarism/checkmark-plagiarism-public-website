@@ -2,9 +2,9 @@
 route: "/learning/2026/8/what-does-ferpa-compliance-mean-for-an-ai-detection-tool"
 title: "What Does FERPA Compliance Mean for an AI Detection Tool?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "87b3252bf553280e01a76f7b19b810ba7f1b05ea242b9311ee42ae0e313499f6"
-uniqueness_score: 58.08
+uniqueness_score: 58.28
 combined_similarity: 0.9524
 whole_page_top5_similarity: 0.9388
 top_chunk_overlap: 0.9614
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 58.08 / 100
+- **Uniqueness Score**: 58.28 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/do-ai-detection-companies-use-student-writing-to-train-ai`
 

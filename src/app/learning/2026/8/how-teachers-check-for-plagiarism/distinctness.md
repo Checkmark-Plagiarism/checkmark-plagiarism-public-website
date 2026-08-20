@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-teachers-check-for-plagiarism"
 title: "How Do Teachers Check for Plagiarism? Methods and Tools"
 seniority_date: "2026-08-02"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "0276af6fcedf1cb7ef75b9ac4e3a5cce22b1b1060b5054dccc96d0eb7555fe45"
 uniqueness_score: 85.48
 combined_similarity: 0.9325

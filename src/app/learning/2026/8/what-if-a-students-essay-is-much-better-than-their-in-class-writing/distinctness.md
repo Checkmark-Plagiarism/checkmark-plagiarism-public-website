@@ -2,11 +2,11 @@
 route: "/learning/2026/8/what-if-a-students-essay-is-much-better-than-their-in-class-writing"
 title: "What If a Student"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "cf4f3eff0b8e04058f8473e8a40ba21ec9f8858f0afa09ed4cb092e43b3a7e83"
 uniqueness_score: 33.74
-combined_similarity: 0.9606
-whole_page_top5_similarity: 0.9556
+combined_similarity: 0.9607
+whole_page_top5_similarity: 0.9557
 top_chunk_overlap: 0.964
 action: "remediation_candidate"
 nearest_competitor: "/learning/2026/8/how-can-i-compare-a-suspicious-essay-with-a-students-earlier-assignments"

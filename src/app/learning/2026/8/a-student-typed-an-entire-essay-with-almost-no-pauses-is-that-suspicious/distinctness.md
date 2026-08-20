@@ -2,7 +2,7 @@
 route: "/learning/2026/8/a-student-typed-an-entire-essay-with-almost-no-pauses-is-that-suspicious"
 title: "A Student Typed an Entire Essay With Almost No Pauses — Is That Suspicious?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "46c86973e174ec1fe44c11db3c6f84d019398c894b1fe8099b1ecd18c77d5af1"
 uniqueness_score: 37.63
 combined_similarity: 0.9597
@@ -24,7 +24,7 @@ remediation_status: "not_needed"
 | 1 | `/learning/2026/8/a-student-retyped-chatgpt-instead-of-pasting-it-can-i-detect-that` | 0.9760 | 0.9767 | 0.9756 |
 | 2 | `/learning/2026/8/can-teachers-detect-when-a-student-retypes-a-source-instead-of-copying-and-pasting` | 0.9749 | 0.9755 | 0.9746 |
 | 3 | `/learning/2026/8/can-teachers-detect-a-student-typing-chatgpts-answer-word-for-word` | 0.9686 | 0.9747 | 0.9644 |
-| 4 | `/learning/2026/8/can-students-beat-ai-detection-by-manually-rewriting-chatgpt` | 0.9665 | 0.9601 | 0.9708 |
+| 4 | `/learning/2026/8/can-students-beat-ai-detection-by-manually-rewriting-chatgpt` | 0.9669 | 0.9611 | 0.9708 |
 | 5 | `/learning/2026/8/can-typing-patterns-reveal-that-a-student-was-copying` | 0.9636 | 0.9664 | 0.9618 |
 
 ## Semantic Chunks

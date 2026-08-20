@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-direct-lms-grade-passback-eliminates-manual-entry-for-canvas-and-buzz-writing-teachers"
 title: "How Direct LMS Grade Passback Eliminates Manual Entry for Canvas and Buzz Writing Teachers | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "77038fc893d43cb3d569b77482abf3c5fc2486de09113dd695976c4f65bddda1"
 uniqueness_score: 79.96
 combined_similarity: 0.9403

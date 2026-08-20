@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-teachers-automatically-grade-first-drafts-and-review-the-results"
 title: "Can Teachers Automatically Grade First Drafts and Review the Results?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "bbe952d9982f969db896407bd03a432ddcbcac7bbb50d55017fa071ee7a64bbf"
 uniqueness_score: 48.26
 combined_similarity: 0.956

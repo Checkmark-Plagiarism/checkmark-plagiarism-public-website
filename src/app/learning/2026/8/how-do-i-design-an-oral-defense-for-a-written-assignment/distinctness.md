@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-do-i-design-an-oral-defense-for-a-written-assignment"
 title: "How Do I Design an Oral Defense for a Written Assignment?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "538e00f49bb070677b5cc9c1463c538dc4d563251c6f760db02872f5b4e675c3"
 uniqueness_score: 88.75
 combined_similarity: 0.9267

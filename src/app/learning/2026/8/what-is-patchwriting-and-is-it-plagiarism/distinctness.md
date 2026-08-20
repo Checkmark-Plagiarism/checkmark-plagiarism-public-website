@@ -2,7 +2,7 @@
 route: "/learning/2026/8/what-is-patchwriting-and-is-it-plagiarism"
 title: "What Is Patchwriting and Is It Plagiarism?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "0b3d93e48b63a28ab0bd52e6f9a29f0be8d3ac2bbcdddbe204f3bb3020824739"
 uniqueness_score: 28.02
 combined_similarity: 0.9634

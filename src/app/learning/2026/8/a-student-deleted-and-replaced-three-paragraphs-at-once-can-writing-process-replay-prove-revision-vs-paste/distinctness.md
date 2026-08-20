@@ -2,7 +2,7 @@
 route: "/learning/2026/8/a-student-deleted-and-replaced-three-paragraphs-at-once-can-writing-process-replay-prove-revision-vs-paste"
 title: "A Student Deleted and Replaced Three Paragraphs at Once: Can Writing Process Replay Prove Revision vs Paste? | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "95ab66b624888da386fbf118279189fff92e19d2b1a4e3b31ab2570d8e35bac8"
 uniqueness_score: 64.21
 combined_similarity: 0.9494

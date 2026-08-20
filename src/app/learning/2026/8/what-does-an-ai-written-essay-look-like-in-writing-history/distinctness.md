@@ -2,11 +2,11 @@
 route: "/learning/2026/8/what-does-an-ai-written-essay-look-like-in-writing-history"
 title: "What Does an AI-Written Essay Look Like in Writing History?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "e8e56f9c407cb3965a26f36716e28744cde9747b7ec8d15f817a9ab28eb4ec5e"
-uniqueness_score: 12.47
-combined_similarity: 0.9717
-whole_page_top5_similarity: 0.969
+uniqueness_score: 12.27
+combined_similarity: 0.9718
+whole_page_top5_similarity: 0.9693
 top_chunk_overlap: 0.9734
 action: "remediation_candidate"
 nearest_competitor: "/learning/2026/8/can-writing-history-reveal-humanized-ai-content"
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 12.47 / 100
+- **Uniqueness Score**: 12.27 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/can-writing-history-reveal-humanized-ai-content`
 
@@ -23,15 +23,15 @@ remediation_status: "not_needed"
 | :--- | :--- | :--- | :--- | :--- |
 | 1 | `/learning/2026/8/can-writing-history-reveal-humanized-ai-content` | 0.9880 | 0.9772 | 0.9951 |
 | 2 | `/learning/2026/8/how-can-teachers-investigate-ai-writing-that-passes-an-ai-detector` | 0.9843 | 0.9680 | 0.9951 |
-| 3 | `/learning/2026/8/what-if-an-ai-detector-flags-a-student-who-actually-wrote-the-essay` | 0.9837 | 0.9665 | 0.9951 |
-| 4 | `/learning/2026/8/what-should-i-do-when-ai-detection-and-writing-history-disagree` | 0.9829 | 0.9647 | 0.9951 |
-| 5 | `/learning/2026/8/why-doesnt-ai-detection-tell-the-whole-story` | 0.9827 | 0.9640 | 0.9951 |
+| 3 | `/learning/2026/8/what-if-an-ai-detector-flags-a-student-who-actually-wrote-the-essay` | 0.9842 | 0.9678 | 0.9951 |
+| 4 | `/learning/2026/8/why-doesnt-ai-detection-tell-the-whole-story` | 0.9831 | 0.9650 | 0.9951 |
+| 5 | `/learning/2026/8/what-should-i-do-when-ai-detection-and-writing-history-disagree` | 0.9829 | 0.9647 | 0.9951 |
 
 ## Semantic Chunks
 ### Section: Introduction
 - **Level**: `intro`
 - **Hash**: `a552dd42f74117143c0f2dd63255e978ce0043931086f3e42f35863421fde10d`
-- **Best Competitor Match**: `/learning/2026/8/what-does-ai-transcription-look-like-in-writing-history` (Similarity: 0.9294)
+- **Best Competitor Match**: `/learning/2026/8/what-does-human-writing-look-like-even-when-an-ai-detector-flags-it` (Similarity: 0.9296)
 
 ```text
 An AI-written essay in writing history leaves unmistakable behavioral anomalies—characterized by instantaneous wholesale text pastes, section-by-section prompt assemblies, unnatural linear transcriptions, or minimal active drafting times.

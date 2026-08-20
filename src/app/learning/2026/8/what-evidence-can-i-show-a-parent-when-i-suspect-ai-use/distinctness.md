@@ -2,7 +2,7 @@
 route: "/learning/2026/8/what-evidence-can-i-show-a-parent-when-i-suspect-ai-use"
 title: "What Evidence Can I Show a Parent When I Suspect AI Use?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "b860ef6757694524e94aec0b9057593fa956015d79e27666ba1ed83392a48f28"
 uniqueness_score: 79.55
 combined_similarity: 0.9407

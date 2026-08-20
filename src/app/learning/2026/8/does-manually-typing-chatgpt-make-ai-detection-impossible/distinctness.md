@@ -2,7 +2,7 @@
 route: "/learning/2026/8/does-manually-typing-chatgpt-make-ai-detection-impossible"
 title: "Does Manually Typing ChatGPT Make AI Detection Impossible?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "51f6af999afbce29d3122d307953022bd5ab3539db16673d467386b45f1e3cb2"
 uniqueness_score: 14.72
 combined_similarity: 0.9697

@@ -2,9 +2,9 @@
 route: "/learning/2026/8/what-should-teachers-look-for-in-an-ai-essay-grader"
 title: "What Should Teachers Look for in an AI Essay Grader?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "d21dfa4dffcea73cb5585d63eaa95c518e3ec33a79f007fd827525cfc1686733"
-uniqueness_score: 51.74
+uniqueness_score: 51.94
 combined_similarity: 0.9549
 whole_page_top5_similarity: 0.964
 top_chunk_overlap: 0.9489
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 51.74 / 100
+- **Uniqueness Score**: 51.94 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/can-ai-grade-essays-without-replacing-the-teacher`
 

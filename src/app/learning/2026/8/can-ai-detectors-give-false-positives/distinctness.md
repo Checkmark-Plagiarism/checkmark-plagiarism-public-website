@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-ai-detectors-give-false-positives"
 title: "Can AI Detectors Give False Positives?"
 seniority_date: "2026-08-12"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "f15d2af38e0c159acc8a5a39d1d10b82cd77a2da92f4e345be61906caa8470a8"
 uniqueness_score: 16.77
 combined_similarity: 0.9688
@@ -96,7 +96,7 @@ This is why teachers should avoid treating either writing style or an AI detecti
 ### Section: Can Human Writing Look Like AI Writing?
 - **Level**: `h2`
 - **Hash**: `12047f613163eb031cc148080006b9c100de1b40f05eee731a3a0d9e66cf6a18`
-- **Best Competitor Match**: `/learning/2026/8/can-human-writing-be-flagged-as-ai` (Similarity: 0.8705)
+- **Best Competitor Match**: `/learning/2026/8/can-ai-detectors-detect-edited-chatgpt-text` (Similarity: 0.8684)
 
 ```text
 Yes. Some students naturally write in styles that may be more difficult for an AI detector to classify.

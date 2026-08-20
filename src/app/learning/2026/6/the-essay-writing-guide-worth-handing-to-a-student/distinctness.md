@@ -2,7 +2,7 @@
 route: "/learning/2026/6/the-essay-writing-guide-worth-handing-to-a-student"
 title: "The Essay Writing Guide Worth Handing to a Student"
 seniority_date: "2026-06-25"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "ef72cfd44ce58dfa422993d4c41513b71f350465218bbb6621584ae40a30e3b0"
 uniqueness_score: 96.32
 combined_similarity: 0.8347

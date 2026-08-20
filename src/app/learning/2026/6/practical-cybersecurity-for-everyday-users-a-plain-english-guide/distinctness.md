@@ -2,7 +2,7 @@
 route: "/learning/2026/6/practical-cybersecurity-for-everyday-users-a-plain-english-guide"
 title: "Practical Cybersecurity for Everyday Users: A Plain-English Guide"
 seniority_date: "2026-06-23"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "4b8815bf855197ed7269c84faca37e4ea6fd6d49e8c8e2526eb11e5f12b055ab"
 uniqueness_score: 99.8
 combined_similarity: 0.7352

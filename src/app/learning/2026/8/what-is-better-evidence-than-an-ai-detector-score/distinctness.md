@@ -2,12 +2,12 @@
 route: "/learning/2026/8/what-is-better-evidence-than-an-ai-detector-score"
 title: "What Is Better Evidence Than an AI Detector Score?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "16fe54ccf52f5b27968f18eea8739b788112d8a0d8cad08094891e8dc2eed797"
-uniqueness_score: 31.08
-combined_similarity: 0.9616
-whole_page_top5_similarity: 0.9673
-top_chunk_overlap: 0.9578
+uniqueness_score: 28.63
+combined_similarity: 0.9627
+whole_page_top5_similarity: 0.9676
+top_chunk_overlap: 0.9594
 action: "remediation_candidate"
 nearest_competitor: "/learning/2026/8/what-is-enough-evidence-to-say-a-student-used-ai"
 remediation_attempts: 0
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 31.08 / 100
+- **Uniqueness Score**: 28.63 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/what-is-enough-evidence-to-say-a-student-used-ai`
 
@@ -31,7 +31,7 @@ remediation_status: "not_needed"
 ### Section: Introduction
 - **Level**: `intro`
 - **Hash**: `1c54c97cdf932ac4dbe2ba61f0c90d1fb797c08ca70afad65b19b44bbc06a75d`
-- **Best Competitor Match**: `/learning/2026/8/what-if-an-ai-detector-flags-a-student-who-actually-wrote-the-essay` (Similarity: 0.9426)
+- **Best Competitor Match**: `/learning/2026/8/what-if-an-ai-detector-flags-a-student-who-actually-wrote-the-essay` (Similarity: 0.9504)
 
 ```text
 When evaluating academic integrity in student writing, a statistical AI detector score is one of the weakest forms of evidence available.

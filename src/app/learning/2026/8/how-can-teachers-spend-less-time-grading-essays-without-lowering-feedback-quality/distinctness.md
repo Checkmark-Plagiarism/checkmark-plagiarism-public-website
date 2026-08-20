@@ -2,9 +2,9 @@
 route: "/learning/2026/8/how-can-teachers-spend-less-time-grading-essays-without-lowering-feedback-quality"
 title: "How Can Teachers Spend Less Time Grading Essays Without Lowering Feedback Quality?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "399c9c274ca95228f46874f38addb3acd24e8ff6b2af118859a1a6e4af9f40af"
-uniqueness_score: 12.27
+uniqueness_score: 12.47
 combined_similarity: 0.9718
 whole_page_top5_similarity: 0.9662
 top_chunk_overlap: 0.9755
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 12.27 / 100
+- **Uniqueness Score**: 12.47 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/how-can-teachers-grade-essays-faster-without-giving-ai-the-final-say`
 

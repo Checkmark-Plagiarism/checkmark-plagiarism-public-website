@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-teachers-review-100-essays-for-ai-use-efficiently"
 title: "How Can Teachers Review 100 Essays for AI Use Efficiently?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "c6fcaf69db8a56af3e4b4777d9755a9278316ab300f88ec85e3dc0c80bfa3065"
 uniqueness_score: 67.08
 combined_similarity: 0.9484

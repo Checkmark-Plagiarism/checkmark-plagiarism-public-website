@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-teachers-prioritize-which-assignments-need-manual-review"
 title: "How Can Teachers Prioritize Which Assignments Need Manual Review?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "e3bc0ff2de080ce013131263cb9cd24eb7cf8a8186677e5a5c6d3c1c19c30d85"
 uniqueness_score: 87.73
 combined_similarity: 0.93

@@ -2,11 +2,11 @@
 route: "/learning/2026/8/what-if-a-student-denies-using-ai"
 title: "What If a Student Denies Using AI?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "29becc097a289f8692863b444a242c4c0544b1af617239a556b1ed969dfe5ce1"
-uniqueness_score: 49.49
+uniqueness_score: 50.31
 combined_similarity: 0.9554
-whole_page_top5_similarity: 0.9581
+whole_page_top5_similarity: 0.9579
 top_chunk_overlap: 0.9537
 action: "remediation_candidate"
 nearest_competitor: "/learning/2026/8/what-should-teachers-check-before-accusing-a-student-of-ai-use"
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 49.49 / 100
+- **Uniqueness Score**: 50.31 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/what-should-teachers-check-before-accusing-a-student-of-ai-use`
 

@@ -2,7 +2,7 @@
 route: "/learning/2026/8/should-teachers-rely-on-ai-detector-scores"
 title: "Should Teachers Rely on AI Detector Scores?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "7c8d58895846bacda8d8798eb723ff7032379f3aadcc2225dfa9bed6210d6dc4"
 uniqueness_score: 21.27
 combined_similarity: 0.9663

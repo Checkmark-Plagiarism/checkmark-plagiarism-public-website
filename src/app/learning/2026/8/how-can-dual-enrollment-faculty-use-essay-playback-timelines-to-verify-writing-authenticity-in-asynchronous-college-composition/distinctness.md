@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-dual-enrollment-faculty-use-essay-playback-timelines-to-verify-writing-authenticity-in-asynchronous-college-composition"
 title: "How Can Dual Enrollment Faculty Use Essay Playback Timelines to Verify Writing Authenticity in Asynchronous College Composition? | Checkmark Plagiarism"
 seniority_date: "2026-08-19"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:29Z"
 content_hash: "94bc48e7cf37e2c349178e0cd23a087531344c96e909616c620192f60bd8f6fc"
 uniqueness_score: 72.6
 combined_similarity: 0.9462

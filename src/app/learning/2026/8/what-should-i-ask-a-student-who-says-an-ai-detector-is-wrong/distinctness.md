@@ -2,7 +2,7 @@
 route: "/learning/2026/8/what-should-i-ask-a-student-who-says-an-ai-detector-is-wrong"
 title: "What Should I Ask a Student Who Says an AI Detector Is Wrong?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "76635f9ee41285f5b7db7669c86b9eade0c4f544c809f64c3c34ca8a967b2256"
 uniqueness_score: 66.87
 combined_similarity: 0.9486

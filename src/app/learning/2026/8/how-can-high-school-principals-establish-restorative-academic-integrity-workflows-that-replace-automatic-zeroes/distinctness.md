@@ -2,9 +2,9 @@
 route: "/learning/2026/8/how-can-high-school-principals-establish-restorative-academic-integrity-workflows-that-replace-automatic-zeroes"
 title: "How Can High School Principals Establish Restorative Academic Integrity Workflows That Replace Automatic Zeroes? | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "8b26741ff9da581b676d626bf5cdba4a4366491a3e6bb202ee45edaa714237cd"
-uniqueness_score: 78.94
+uniqueness_score: 79.14
 combined_similarity: 0.9417
 whole_page_top5_similarity: 0.9721
 top_chunk_overlap: 0.9213
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 78.94 / 100
+- **Uniqueness Score**: 79.14 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/how-can-instructional-coaches-train-secondary-faculty-on-restorative-post-plagiarism-revision-conferences`
 

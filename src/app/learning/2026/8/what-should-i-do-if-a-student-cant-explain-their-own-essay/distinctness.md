@@ -2,7 +2,7 @@
 route: "/learning/2026/8/what-should-i-do-if-a-student-cant-explain-their-own-essay"
 title: "What Should I Do If a Student Can"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "32444b3ab1c8c113f76315bb0cb66face7a7cf8e38a3203598b1d90502534e78"
 uniqueness_score: 6.34
 combined_similarity: 0.9766

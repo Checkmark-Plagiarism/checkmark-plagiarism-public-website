@@ -2,7 +2,7 @@
 route: "/learning/2026/8/what-should-teachers-do-before-reporting-a-student-for-ai-use"
 title: "What Should Teachers Do Before Reporting a Student for AI Use?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "07c910dabb0b0dc2ff67079498bbd0c05240c13808622b60f2cbb38cbdb68c49"
 uniqueness_score: 57.26
 combined_similarity: 0.9526

@@ -2,7 +2,7 @@
 route: "/learning/2026/6/chatgpt-detection-explained-how-tools-decide-whether-ai-wrote-it"
 title: "ChatGPT Detection, Explained: How Tools Decide Whether AI Wrote It"
 seniority_date: "2026-06-25"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "79511680caf6b81fa9232051d2ecd2dafbd44544d3619a3c45017bb8c009b6d2"
 uniqueness_score: 90.18
 combined_similarity: 0.9195

@@ -2,7 +2,7 @@
 route: "/learning/2026/8/should-teachers-use-ai-to-grade-essays"
 title: "Should Teachers Use AI to Grade Essays?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "ce073452891661c3bbac34239b00fe5bfa61b0053392ea490218bdfe3f286d8a"
 uniqueness_score: 35.38
 combined_similarity: 0.9604

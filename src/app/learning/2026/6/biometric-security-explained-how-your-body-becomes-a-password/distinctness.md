@@ -2,7 +2,7 @@
 route: "/learning/2026/6/biometric-security-explained-how-your-body-becomes-a-password"
 title: "Biometric Security, Explained: How Your Body Becomes a Password"
 seniority_date: "2026-06-25"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "2b136f2dd6b60da6976e5e78738f34bb8ce28ee54a1936a08f2facd546d5531f"
 uniqueness_score: 98.98
 combined_similarity: 0.7747

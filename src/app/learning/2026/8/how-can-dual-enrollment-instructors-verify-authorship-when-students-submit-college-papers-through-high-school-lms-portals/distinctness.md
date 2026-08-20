@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-dual-enrollment-instructors-verify-authorship-when-students-submit-college-papers-through-high-school-lms-portals"
 title: "How Can Dual Enrollment Instructors Verify Authorship Across High School LMS Portals? | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "38c97140ea6eccbbce495204e522fc402d6fc8c30e5555077adf51b5c0c410f9"
 uniqueness_score: 84.66
 combined_similarity: 0.9341

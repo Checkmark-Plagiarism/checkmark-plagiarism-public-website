@@ -2,7 +2,7 @@
 route: "/learning/2026/6/footnotes-explained-what-they-are-and-how-to-use-them"
 title: "Footnotes Explained: What They Are and How to Use Them"
 seniority_date: "2026-06-25"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "b8f65ec9c23c4e054ca1c831dabf327831bcaf032932be35c5daa111be6e8239"
 uniqueness_score: 98.16
 combined_similarity: 0.7886

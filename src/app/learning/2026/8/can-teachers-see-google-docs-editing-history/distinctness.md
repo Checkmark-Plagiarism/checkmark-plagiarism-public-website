@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-teachers-see-google-docs-editing-history"
 title: "Can Teachers See Google Docs Editing History?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "45e5eb8eb264d594aa5d7ca827887b51c616d1376a643bcaf3afec23da05e4ef"
 uniqueness_score: 25.15
 combined_similarity: 0.9648

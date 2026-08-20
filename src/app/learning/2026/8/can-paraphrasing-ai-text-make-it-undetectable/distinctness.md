@@ -2,11 +2,11 @@
 route: "/learning/2026/8/can-paraphrasing-ai-text-make-it-undetectable"
 title: "Can Paraphrasing AI Text Make It Undetectable?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "473cb4f9a1c91dab14144df397cd8002194db4365eadefa37402992343f56fd5"
-uniqueness_score: 16.56
-combined_similarity: 0.9689
-whole_page_top5_similarity: 0.9599
+uniqueness_score: 16.36
+combined_similarity: 0.9691
+whole_page_top5_similarity: 0.9602
 top_chunk_overlap: 0.975
 action: "remediation_candidate"
 nearest_competitor: "/learning/2026/8/can-students-beat-ai-detection-by-manually-rewriting-chatgpt"
@@ -15,17 +15,17 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 16.56 / 100
+- **Uniqueness Score**: 16.36 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/can-students-beat-ai-detection-by-manually-rewriting-chatgpt`
 
 | Rank | Route / Slug | Combined Sim | Page Sim | Top Chunk Sim |
 | :--- | :--- | :--- | :--- | :--- |
-| 1 | `/learning/2026/8/can-students-beat-ai-detection-by-manually-rewriting-chatgpt` | 0.9801 | 0.9606 | 0.9931 |
+| 1 | `/learning/2026/8/can-students-beat-ai-detection-by-manually-rewriting-chatgpt` | 0.9808 | 0.9625 | 0.9931 |
 | 2 | `/learning/2026/8/what-does-an-ai-written-essay-look-like-in-writing-history` | 0.9791 | 0.9530 | 0.9964 |
 | 3 | `/learning/2026/8/how-can-teachers-investigate-an-essay-that-appeared-all-at-once` | 0.9785 | 0.9517 | 0.9964 |
 | 4 | `/learning/2026/8/can-teachers-detect-humanized-ai-writing` | 0.9779 | 0.9501 | 0.9964 |
-| 5 | `/learning/2026/8/what-happens-when-a-student-runs-chatgpt-through-an-ai-humanizer` | 0.9765 | 0.9466 | 0.9964 |
+| 5 | `/learning/2026/8/what-happens-when-a-student-runs-chatgpt-through-an-ai-humanizer` | 0.9775 | 0.9491 | 0.9964 |
 
 ## Semantic Chunks
 ### Section: Introduction

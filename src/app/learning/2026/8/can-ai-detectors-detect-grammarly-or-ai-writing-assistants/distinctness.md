@@ -2,9 +2,9 @@
 route: "/learning/2026/8/can-ai-detectors-detect-grammarly-or-ai-writing-assistants"
 title: "Can AI Detectors Detect Grammarly or AI Writing Assistants?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "52e133089539c10c3105c73ce60ac51e9887a6995ab93190b9cc66a0fb9cf626"
-uniqueness_score: 50.1
+uniqueness_score: 49.9
 combined_similarity: 0.9554
 whole_page_top5_similarity: 0.9559
 top_chunk_overlap: 0.9551
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 50.1 / 100
+- **Uniqueness Score**: 49.9 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/can-ai-detectors-detect-edited-chatgpt-text`
 

@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-quote-anchored-rubric-justifications-help-teachers-defend-grading-decisions-to-students-and-parents"
 title: "How Quote-Anchored Rubric Justifications Help Teachers Defend Grading Decisions to Students and Parents | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "95d271a0030f9655657f33eef083cf20504e89bfdd962a6062a2a8612f5f46ef"
 uniqueness_score: 73.01
 combined_similarity: 0.9459

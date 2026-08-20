@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-teachers-detect-ai-assisted-plagiarism"
 title: "How Can Teachers Detect AI-Assisted Plagiarism?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "60ba7180b80eff38383366eeb892422dc2f3e2da75d40e14efe10e9f467754ec"
 uniqueness_score: 6.75
 combined_similarity: 0.9765

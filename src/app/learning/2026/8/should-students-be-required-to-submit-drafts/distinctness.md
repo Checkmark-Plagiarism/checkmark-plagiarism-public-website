@@ -2,7 +2,7 @@
 route: "/learning/2026/8/should-students-be-required-to-submit-drafts"
 title: "Should Students Be Required to Submit Drafts?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "ca740e571df21ffe39e3d675d7b7633a47f754787b2a035570865e21453c4bfb"
 uniqueness_score: 80.37
 combined_similarity: 0.9401

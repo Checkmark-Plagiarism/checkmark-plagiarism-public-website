@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-do-passage-level-ai-confidence-sliders-prevent-false-accusations-in-hybrid-student-drafts"
 title: "How Do Passage-Level AI Confidence Sliders Prevent False Accusations in Hybrid Student Drafts? | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "782737cdda2dc45487d4922b6333f0b6281d08161d8cf0795ce4303f50730f24"
 uniqueness_score: 63.39
 combined_similarity: 0.9499
@@ -95,7 +95,7 @@ Because legacy tools provide no passage-level visibility or interactive sensitiv
 ### Section: The Catastrophic Failure of Binary Whole-Paper AI Scores
 - **Level**: `h2`
 - **Hash**: `75422ab6346f71a112339f9638a126388b943a35ea084922d6b177ab26b731ed`
-- **Best Competitor Match**: `/learning/2026/8/how-can-writing-program-administrators-establish-clear-policy-boundaries-between-allowed-grammar-assistants-and-prohibited-ai-generation` (Similarity: 0.8889)
+- **Best Competitor Match**: `/learning/2026/8/why-doesnt-ai-detection-tell-the-whole-story` (Similarity: 0.8890)
 
 ```text
 Legacy AI detectors evaluate student work through a flawed paradigm borrowed from traditional string-matching plagiarism tools. By attempting to compress a multi-page document into a single aggregate index, whole-paper detectors fail educators in three critical ways.

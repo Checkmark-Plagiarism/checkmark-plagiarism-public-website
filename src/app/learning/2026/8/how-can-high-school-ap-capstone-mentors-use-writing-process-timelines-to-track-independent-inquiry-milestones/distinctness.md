@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-high-school-ap-capstone-mentors-use-writing-process-timelines-to-track-independent-inquiry-milestones"
 title: "How Can High School AP Capstone Mentors Use Writing Process Timelines to Track Independent Inquiry Milestones? | Checkmark Plagiarism"
 seniority_date: "2026-08-19"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:29Z"
 content_hash: "33c25417d14ef2d3c5d263e404ac6cff0cd67d22859b8d2947f6269d421c9b42"
 uniqueness_score: 76.48
 combined_similarity: 0.9434

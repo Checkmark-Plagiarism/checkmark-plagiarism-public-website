@@ -2,7 +2,7 @@
 route: "/learning/2026/8/what-is-enough-evidence-to-say-a-student-used-ai"
 title: "What Is Enough Evidence to Say a Student Used AI?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "671934ed4d711e88c387a5465a10027a1aa23a987c468300db16dc2d822f3514"
 uniqueness_score: 14.31
 combined_similarity: 0.9704

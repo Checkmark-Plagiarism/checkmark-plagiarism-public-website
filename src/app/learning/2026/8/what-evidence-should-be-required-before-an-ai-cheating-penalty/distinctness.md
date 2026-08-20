@@ -2,7 +2,7 @@
 route: "/learning/2026/8/what-evidence-should-be-required-before-an-ai-cheating-penalty"
 title: "What Evidence Should Be Required Before an AI Cheating Penalty?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "b5264376cbe1b87059553de563cfad5fc3bc4edb61a8905a3e2beb4529dae955"
 uniqueness_score: 50.72
 combined_similarity: 0.9552

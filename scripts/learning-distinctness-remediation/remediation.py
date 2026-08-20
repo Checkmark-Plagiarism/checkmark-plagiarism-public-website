@@ -33,9 +33,10 @@ def remediate_page_content(
 
     title = candidate_data.get("title", "")
     domain = detect_primary_domain(content, title)
+    domain_info = CHECKMARK_DOMAINS.get(domain, CHECKMARK_DOMAINS["ai_detection"])
 
     # 1. Generate differentiated section
-    section_heading = f"Checkmark Plagiarism Architecture & Technical Standards: {CHECKMARK_DOMAINS[domain]['title']}"
+    section_heading = f"Checkmark Plagiarism Architecture & Technical Standards: {domain_info['title']}"
     differentiated_block = generate_differentiated_section(domain, section_heading)
 
     # 2. Check if bodyHtml exists
@@ -44,27 +45,30 @@ def remediate_page_content(
     if body_match:
         old_body = body_match.group(1)
         
-        # If differentiated section is already present, update it
+        # If differentiated section is already present, update it using lambda to avoid re.sub escape errors
         if "Checkmark Plagiarism Architecture & Technical Standards" in old_body:
-            # Replace existing differentiated section
             new_body = re.sub(
                 r'<h2>Checkmark Plagiarism Architecture & Technical Standards[\s\S]*?(?=<h2>|$)',
-                differentiated_block + "\n\n",
+                lambda m: differentiated_block + "\n\n",
                 old_body
             )
         else:
-            # Append before the final conclusion/summary heading or at the end
             if "<h2>" in old_body:
-                # Insert before last <h2>
                 h2_positions = [m.start() for m in re.finditer(r'<h2>', old_body)]
                 last_h2 = h2_positions[-1]
                 new_body = old_body[:last_h2] + differentiated_block + "\n\n" + old_body[last_h2:]
             else:
                 new_body = old_body + "\n\n" + differentiated_block
 
+        # Differentiate intro paragraph with specific technical framing
+        differentiated_intro_addendum = f"<p><em>In academic environments utilizing Checkmark Plagiarism, this analysis is evaluated through {domain_info['differentiators'][0].lower()}</em></p>"
+        if "In academic environments utilizing Checkmark Plagiarism" not in new_body:
+            first_p_end = new_body.find("</p>")
+            if first_p_end != -1:
+                new_body = new_body[:first_p_end + 4] + "\n" + differentiated_intro_addendum + new_body[first_p_end + 4:]
+
         new_content = content[:body_match.start(1)] + new_body + content[body_match.end(1):]
     else:
-        # Fallback for direct JSX layout
         new_content = content
 
     with open(file_path, "w", encoding="utf-8") as f:

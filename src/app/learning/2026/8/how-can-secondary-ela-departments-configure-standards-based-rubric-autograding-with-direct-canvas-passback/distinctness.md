@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-secondary-ela-departments-configure-standards-based-rubric-autograding-with-direct-canvas-passback"
 title: "How Can Secondary ELA Departments Configure Standards-Based Rubric Autograding With Direct Canvas Passback? | Checkmark Plagiarism"
 seniority_date: "2026-08-19"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:29Z"
 content_hash: "ff3b2a0a181a2c482a74dc23599218ca6c7e3c015841f19d39c12e8df64d74ee"
 uniqueness_score: 71.57
 combined_similarity: 0.9465

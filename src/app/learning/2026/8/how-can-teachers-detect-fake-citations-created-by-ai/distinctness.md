@@ -2,11 +2,11 @@
 route: "/learning/2026/8/how-can-teachers-detect-fake-citations-created-by-ai"
 title: "How Can Teachers Detect Fake Citations Created by AI?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "09c37b0099f56102401e8ff532797192f47cc43a38cf97ad1f15708df4d245b6"
 uniqueness_score: 12.07
-combined_similarity: 0.9718
-whole_page_top5_similarity: 0.9755
+combined_similarity: 0.9721
+whole_page_top5_similarity: 0.9763
 top_chunk_overlap: 0.9693
 action: "remediation_candidate"
 nearest_competitor: "/learning/2026/8/can-chatgpt-invent-academic-sources"

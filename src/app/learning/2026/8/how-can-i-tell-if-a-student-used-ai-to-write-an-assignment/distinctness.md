@@ -2,9 +2,9 @@
 route: "/learning/2026/8/how-can-i-tell-if-a-student-used-ai-to-write-an-assignment"
 title: "How Can I Tell If a Student Used AI to Write an Assignment?"
 seniority_date: "2026-08-10"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "2aabd76321b5d96b370f8a21ae4a9460bf08e5a2f112eb747dce559e37fd89d6"
-uniqueness_score: 17.59
+uniqueness_score: 17.38
 combined_similarity: 0.9684
 whole_page_top5_similarity: 0.9762
 top_chunk_overlap: 0.9633
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 17.59 / 100
+- **Uniqueness Score**: 17.38 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/can-i-prove-that-a-student-used-chatgpt`
 

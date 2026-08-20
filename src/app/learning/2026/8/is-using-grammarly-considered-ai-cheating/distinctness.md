@@ -2,7 +2,7 @@
 route: "/learning/2026/8/is-using-grammarly-considered-ai-cheating"
 title: "Is Using Grammarly Considered AI Cheating?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "a886b7aca142b5cd3628525b05059a5138f21fd9432a7e8bee3cb7fa8b5b38a0"
 uniqueness_score: 69.53
 combined_similarity: 0.9475
@@ -25,7 +25,7 @@ remediation_status: "not_needed"
 | 2 | `/learning/2026/8/is-using-ai-to-paraphrase-your-own-writing-cheating` | 0.9641 | 0.9265 | 0.9892 |
 | 3 | `/learning/2026/8/is-using-chatgpt-to-fix-grammar-considered-ai-use` | 0.9612 | 0.9635 | 0.9597 |
 | 4 | `/learning/2026/8/can-teachers-detect-manually-typed-ai-responses` | 0.9549 | 0.9098 | 0.9849 |
-| 5 | `/learning/2026/8/can-ai-detectors-detect-grammarly-or-ai-writing-assistants` | 0.9519 | 0.9553 | 0.9495 |
+| 5 | `/learning/2026/8/can-students-beat-ai-detection-by-manually-rewriting-chatgpt` | 0.9532 | 0.9172 | 0.9772 |
 
 ## Semantic Chunks
 ### Section: Introduction

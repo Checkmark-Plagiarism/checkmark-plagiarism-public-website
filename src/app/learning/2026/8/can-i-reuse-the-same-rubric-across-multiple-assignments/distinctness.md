@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-i-reuse-the-same-rubric-across-multiple-assignments"
 title: "Can I Reuse the Same Rubric Across Multiple Assignments?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "6aa569d031580c78d039e6089ec0428a3fdffac719295477829334d0ec4bd2e1"
 uniqueness_score: 49.08
 combined_similarity: 0.9555

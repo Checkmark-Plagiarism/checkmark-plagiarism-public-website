@@ -2,7 +2,7 @@
 route: "/learning/2026/8/what-should-i-look-for-when-a-students-writing-suddenly-improves"
 title: "What Should I Look for When a Student"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "e845afbdfc0ee35dca935674f8b18931278898f95c01738ef5527c09c3b22138"
 uniqueness_score: 14.93
 combined_similarity: 0.9696

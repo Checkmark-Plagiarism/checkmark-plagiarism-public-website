@@ -2,7 +2,7 @@
 route: "/learning/2026/8/should-students-be-allowed-to-appeal-ai-detection-decisions"
 title: "Should Students Be Allowed to Appeal AI Detection Decisions?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "82fee18c35d9a016ddc430c0b4523debb579bd16b1f9677b3cbd2286018bc9ab"
 uniqueness_score: 89.57
 combined_similarity: 0.9248

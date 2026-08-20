@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-writing-telemetry-differentiate-speech-to-text-dictation-from-pasted-ai-generation"
 title: "How Can Writing Telemetry Differentiate Speech-to-Text Dictation From Pasted AI Generation? | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "c2544553a9caed71f4374fac74860db44547a4b017c17fef1140278d96e95e67"
 uniqueness_score: 82.82
 combined_similarity: 0.9369

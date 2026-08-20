@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-teachers-build-an-evidence-based-ai-misconduct-case"
 title: "How Can Teachers Build an Evidence-Based AI Misconduct Case?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "5c983e9c8e89385c6765ffce5c699425ddf5ec30bc4943eb4a0dcd14c0136b8d"
 uniqueness_score: 67.28
 combined_similarity: 0.9483

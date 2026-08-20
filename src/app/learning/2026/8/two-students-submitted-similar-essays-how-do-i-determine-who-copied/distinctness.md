@@ -2,7 +2,7 @@
 route: "/learning/2026/8/two-students-submitted-similar-essays-how-do-i-determine-who-copied"
 title: "Two Students Submitted Similar Essays — How Do I Determine Who Copied?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "d5165d5728a29305aa849911374043375941b8bbdd7fb68343efdcdf0f394ad9"
 uniqueness_score: 48.88
 combined_similarity: 0.9555

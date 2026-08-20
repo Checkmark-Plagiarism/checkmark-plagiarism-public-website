@@ -2,7 +2,7 @@
 route: "/learning/2026/8/what-can-keystroke-history-tell-teachers-about-an-assignment"
 title: "What Can Keystroke History Tell Teachers About an Assignment?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "1e7139865551bd6be861ca1682d4af25ab29b86223aa08c07957a6cf790974b7"
 uniqueness_score: 47.65
 combined_similarity: 0.9562
@@ -23,9 +23,9 @@ remediation_status: "not_needed"
 | :--- | :--- | :--- | :--- | :--- |
 | 1 | `/learning/2026/8/what-does-unnaturally-consistent-typing-look-like-in-an-essay` | 0.9733 | 0.9509 | 0.9882 |
 | 2 | `/learning/2026/8/can-typing-history-show-whether-an-essay-is-authentic` | 0.9700 | 0.9478 | 0.9848 |
-| 3 | `/learning/2026/8/can-typing-patterns-reveal-that-a-student-was-copying` | 0.9641 | 0.9279 | 0.9882 |
-| 4 | `/learning/2026/8/can-students-beat-ai-detection-by-manually-rewriting-chatgpt` | 0.9634 | 0.9195 | 0.9927 |
-| 5 | `/learning/2026/8/can-document-history-protect-a-student-from-a-false-ai-accusation` | 0.9630 | 0.9283 | 0.9861 |
+| 3 | `/learning/2026/8/can-document-history-protect-a-student-from-a-false-ai-accusation` | 0.9644 | 0.9320 | 0.9861 |
+| 4 | `/learning/2026/8/can-typing-patterns-reveal-that-a-student-was-copying` | 0.9641 | 0.9279 | 0.9882 |
+| 5 | `/learning/2026/8/can-students-beat-ai-detection-by-manually-rewriting-chatgpt` | 0.9640 | 0.9210 | 0.9927 |
 
 ## Semantic Chunks
 ### Section: Introduction

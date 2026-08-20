@@ -2,9 +2,9 @@
 route: "/learning/2026/8/how-can-i-tell-the-difference-between-ai-writing-and-a-student-improving"
 title: "How Can I Tell the Difference Between AI Writing and a Student Improving?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "ecb46827f375e02b6c2798351a4478e22d1b2f66225a5c6a4aaf943b471ad765"
-uniqueness_score: 9.2
+uniqueness_score: 9.41
 combined_similarity: 0.9737
 whole_page_top5_similarity: 0.9675
 top_chunk_overlap: 0.9779
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 9.2 / 100
+- **Uniqueness Score**: 9.41 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/what-should-i-look-for-when-a-students-writing-suddenly-improves`
 

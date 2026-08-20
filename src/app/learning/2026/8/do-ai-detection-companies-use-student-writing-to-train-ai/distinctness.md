@@ -2,9 +2,9 @@
 route: "/learning/2026/8/do-ai-detection-companies-use-student-writing-to-train-ai"
 title: "Do AI Detection Companies Use Student Writing to Train AI?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "6d86fd7c23d129022e8b074da04c74af4081032cd874175df4152066be2c69dd"
-uniqueness_score: 24.54
+uniqueness_score: 24.74
 combined_similarity: 0.965
 whole_page_top5_similarity: 0.9576
 top_chunk_overlap: 0.97
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 24.54 / 100
+- **Uniqueness Score**: 24.74 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/is-it-safe-to-upload-student-essays-to-an-ai-detector`
 

@@ -2,11 +2,11 @@
 route: "/learning/2026/8/should-schools-track-ai-copy-paste-and-plagiarism-separately"
 title: "Should Schools Track AI, Copy/Paste, and Plagiarism Separately?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "a9840ca7bcf0ac9761bed80eda7692c9ef9b32fb383dbc8c40fcdc72c4d1e12f"
 uniqueness_score: 46.42
-combined_similarity: 0.9566
-whole_page_top5_similarity: 0.9596
+combined_similarity: 0.9568
+whole_page_top5_similarity: 0.9602
 top_chunk_overlap: 0.9546
 action: "remediation_candidate"
 nearest_competitor: "/learning/2026/8/how-can-schools-track-ai-use-across-classes"

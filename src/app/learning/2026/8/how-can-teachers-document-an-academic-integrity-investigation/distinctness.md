@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-teachers-document-an-academic-integrity-investigation"
 title: "How Can Teachers Document an Academic Integrity Investigation?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "4a44ec4ac64249dbec6e63442fd61aa37089ed1af2ed6df35afda6b7a8ffb6c2"
 uniqueness_score: 42.74
 combined_similarity: 0.9577

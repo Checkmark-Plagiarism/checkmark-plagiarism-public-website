@@ -2,7 +2,7 @@
 route: "/learning/2026/8/what-evidence-should-teachers-collect-when-they-suspect-ai-use"
 title: "What Evidence Should Teachers Collect When They Suspect AI Use?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "cd56cba963536f79b3f3c2bf7d833e064ffee1e02fa8ad053548d58bfb47d771"
 uniqueness_score: 11.86
 combined_similarity: 0.9724

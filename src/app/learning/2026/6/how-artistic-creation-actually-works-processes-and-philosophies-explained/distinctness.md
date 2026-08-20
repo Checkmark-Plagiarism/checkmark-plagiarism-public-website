@@ -2,7 +2,7 @@
 route: "/learning/2026/6/how-artistic-creation-actually-works-processes-and-philosophies-explained"
 title: "How Artistic Creation Actually Works: Processes and Philosophies Explained"
 seniority_date: "2026-06-25"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "485d4cb535edb134b08996453eeb256f9dd7155a1e57edc1c91b4acc920e4148"
 uniqueness_score: 98.77
 combined_similarity: 0.7781

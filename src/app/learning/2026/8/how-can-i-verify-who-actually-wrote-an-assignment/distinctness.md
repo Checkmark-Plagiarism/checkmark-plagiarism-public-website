@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-i-verify-who-actually-wrote-an-assignment"
 title: "How Can I Verify Who Actually Wrote an Assignment?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "1d3c169b5902f47507d950059c06e17b1ab2ac3db072a6859be06bc4697c7d70"
 uniqueness_score: 6.95
 combined_similarity: 0.976

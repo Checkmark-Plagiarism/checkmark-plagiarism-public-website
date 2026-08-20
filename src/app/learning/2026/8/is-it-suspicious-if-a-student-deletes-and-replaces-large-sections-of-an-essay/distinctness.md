@@ -2,11 +2,11 @@
 route: "/learning/2026/8/is-it-suspicious-if-a-student-deletes-and-replaces-large-sections-of-an-essay"
 title: "Is It Suspicious If a Student Deletes and Replaces Large Sections of an Essay?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "44e2f99a296d889c08d4353f16717663e4e370fcb75bdd6bae34cf0b51da1608"
 uniqueness_score: 53.58
-combined_similarity: 0.9541
-whole_page_top5_similarity: 0.9524
+combined_similarity: 0.9542
+whole_page_top5_similarity: 0.9527
 top_chunk_overlap: 0.9552
 action: "remediation_candidate"
 nearest_competitor: "/learning/2026/8/what-does-it-mean-if-a-student-makes-almost-no-revisions"

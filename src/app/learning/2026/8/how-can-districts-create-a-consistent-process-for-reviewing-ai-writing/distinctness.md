@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-districts-create-a-consistent-process-for-reviewing-ai-writing"
 title: "How Can Districts Create a Consistent Process for Reviewing AI Writing?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "1be303017e28d7d376e132a38a6fb60550031ca7a33a93e09d17894b45bc8d50"
 uniqueness_score: 63.19
 combined_similarity: 0.95

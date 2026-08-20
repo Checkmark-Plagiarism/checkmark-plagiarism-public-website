@@ -2,7 +2,7 @@
 route: "/learning/2026/6/how-ai-text-detection-works-across-languages"
 title: "How AI Text Detection Works Across Languages"
 seniority_date: "2026-06-25"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "c785bee6f03926275246990817907e42951b6bd48935a8553c05120e183491e2"
 uniqueness_score: 90.8
 combined_similarity: 0.918

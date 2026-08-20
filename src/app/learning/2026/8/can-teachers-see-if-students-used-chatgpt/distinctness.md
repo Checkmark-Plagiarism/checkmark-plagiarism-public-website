@@ -2,11 +2,11 @@
 route: "/learning/2026/8/can-teachers-see-if-students-used-chatgpt"
 title: "Can Teachers See If Students Used ChatGPT?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "77b2f3432f8876a73a1d7b7d0bb8a61318572e55cedf222b851c34df8cfd593a"
-uniqueness_score: 60.94
+uniqueness_score: 60.74
 combined_similarity: 0.9511
-whole_page_top5_similarity: 0.9551
+whole_page_top5_similarity: 0.9553
 top_chunk_overlap: 0.9484
 action: "remediation_candidate"
 nearest_competitor: "/learning/2026/8/how-do-i-know-if-my-student-used-chatgpt"
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 60.94 / 100
+- **Uniqueness Score**: 60.74 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/how-do-i-know-if-my-student-used-chatgpt`
 

@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-academic-integrity-officers-audit-suspicious-turnaround-times-on-take-home-essay-exams"
 title: "How Can Academic Integrity Officers Audit Suspicious Turnaround Times on Take-Home Essay Exams? | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "ff547dbef3951b4f043cfc845ec29527f01473cf2d27ec8d8749f543c76f90c6"
 uniqueness_score: 67.69
 combined_similarity: 0.948

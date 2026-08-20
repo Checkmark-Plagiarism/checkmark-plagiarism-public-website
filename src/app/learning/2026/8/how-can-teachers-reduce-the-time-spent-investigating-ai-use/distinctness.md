@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-teachers-reduce-the-time-spent-investigating-ai-use"
 title: "How Can Teachers Reduce the Time Spent Investigating AI Use?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "0cb88fa9e0707310a3fdc0e63e187370ab645eaba6fb521b6776c99b8d3c7ea2"
 uniqueness_score: 64.83
 combined_similarity: 0.9493

@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-alternative-education-directors-use-writing-process-replays-to-support-self-paced-mastery-in-credit-recovery-programs"
 title: "How Can Alternative Education Directors Use Writing Process Replays to Support Self-Paced Mastery in Credit Recovery Programs? | Checkmark Plagiarism"
 seniority_date: "2026-08-19"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:29Z"
 content_hash: "9d243d93c12b417b3ac7059aeca7a809d2ed53c5250786a52551070cf7200d12"
 uniqueness_score: 75.66
 combined_similarity: 0.9438

@@ -2,7 +2,7 @@
 route: "/learning/2026/6/how-to-delete-google-docs-version-history-and-why-you-probably-should-not"
 title: "How to Delete Google Docs Version History (and Why You Probably Should Not)"
 seniority_date: "2026-06-25"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "a72021d3730569e7cc57221c928229c0fabd735b6b28d9dca2a08d4d44bf1177"
 uniqueness_score: 94.07
 combined_similarity: 0.8695

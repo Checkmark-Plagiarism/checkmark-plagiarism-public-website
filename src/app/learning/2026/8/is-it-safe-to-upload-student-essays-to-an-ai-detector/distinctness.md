@@ -2,7 +2,7 @@
 route: "/learning/2026/8/is-it-safe-to-upload-student-essays-to-an-ai-detector"
 title: "Is It Safe to Upload Student Essays to an AI Detector?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "f672201c8a078466c6a19eb27ad2636374a6c0daa59a79e720895f35660fbac2"
 uniqueness_score: 21.47
 combined_similarity: 0.9662

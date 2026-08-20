@@ -2,7 +2,7 @@
 route: "/learning/2026/8/what-should-be-included-in-an-ai-academic-integrity-report"
 title: "What Should Be Included in an AI Academic Integrity Report?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "b003ce9fee3b1230846e90317289ab74cac1577b0b3cbb038db21a776fc21596"
 uniqueness_score: 71.37
 combined_similarity: 0.947

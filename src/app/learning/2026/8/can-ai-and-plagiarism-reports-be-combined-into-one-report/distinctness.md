@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-ai-and-plagiarism-reports-be-combined-into-one-report"
 title: "Can AI and Plagiarism Reports Be Combined Into One Report?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "5ca532a372a880b32b4ab5c48f9c5297cfaa17e37bb2d16275e00d6d05311066"
 uniqueness_score: 75.46
 combined_similarity: 0.9438

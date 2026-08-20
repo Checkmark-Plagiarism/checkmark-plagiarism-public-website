@@ -2,9 +2,9 @@
 route: "/learning/2026/8/should-schools-require-evidence-beyond-an-ai-detection-score"
 title: "Should Schools Require Evidence Beyond an AI Detection Score?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "6fc4da3899286ae03f7770e1da0bd0143c28f8926a0b66c8ba82f43d2e4b9073"
-uniqueness_score: 49.69
+uniqueness_score: 49.49
 combined_similarity: 0.9554
 whole_page_top5_similarity: 0.9557
 top_chunk_overlap: 0.9552
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 49.69 / 100
+- **Uniqueness Score**: 49.49 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/what-evidence-should-be-required-before-an-ai-cheating-penalty`
 

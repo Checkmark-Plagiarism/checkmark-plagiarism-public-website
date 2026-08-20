@@ -2,9 +2,9 @@
 route: "/learning/2026/8/can-typing-patterns-reveal-that-a-student-was-copying"
 title: "Can Typing Patterns Reveal That a Student Was Copying?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "a7ea91452427a92ca8b5d0d2e38d7cb702d62a3ac87dfbf4286a1273a43d4097"
-uniqueness_score: 4.5
+uniqueness_score: 4.29
 combined_similarity: 0.9781
 whole_page_top5_similarity: 0.9618
 top_chunk_overlap: 0.989
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 4.5 / 100
+- **Uniqueness Score**: 4.29 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/what-does-unnaturally-consistent-typing-look-like-in-an-essay`
 
@@ -24,7 +24,7 @@ remediation_status: "not_needed"
 | 1 | `/learning/2026/8/what-does-unnaturally-consistent-typing-look-like-in-an-essay` | 0.9830 | 0.9574 | 1.0000 |
 | 2 | `/learning/2026/8/can-plagiarism-checkers-detect-text-copied-from-another-screen` | 0.9748 | 0.9508 | 0.9908 |
 | 3 | `/learning/2026/8/can-typing-history-show-whether-an-essay-is-authentic` | 0.9744 | 0.9586 | 0.9849 |
-| 4 | `/learning/2026/8/can-students-beat-ai-detection-by-manually-rewriting-chatgpt` | 0.9713 | 0.9466 | 0.9877 |
+| 4 | `/learning/2026/8/can-students-beat-ai-detection-by-manually-rewriting-chatgpt` | 0.9722 | 0.9490 | 0.9877 |
 | 5 | `/learning/2026/8/can-teachers-detect-manually-typed-ai-responses` | 0.9712 | 0.9486 | 0.9863 |
 
 ## Semantic Chunks

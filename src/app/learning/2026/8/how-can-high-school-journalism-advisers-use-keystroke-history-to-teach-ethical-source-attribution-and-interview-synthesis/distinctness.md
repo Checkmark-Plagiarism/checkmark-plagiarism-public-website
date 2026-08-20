@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-high-school-journalism-advisers-use-keystroke-history-to-teach-ethical-source-attribution-and-interview-synthesis"
 title: "How Can High School Journalism Advisers Use Keystroke History to Teach Ethical Source Attribution and Interview Synthesis? | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "cf129e1242785a01f3fd2eb255d3f2e7e771f1380cadc87ba90aa717507260f9"
 uniqueness_score: 87.12
 combined_similarity: 0.9301

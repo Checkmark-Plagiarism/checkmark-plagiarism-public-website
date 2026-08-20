@@ -2,7 +2,7 @@
 route: "/learning/2026/8/a-student-typed-with-no-pauses-and-zero-backspaces-can-keystroke-dynamics-prove-ai-transcription"
 title: "A Student Typed With No Pauses and Zero Backspaces: Can Keystroke Dynamics Prove AI Transcription?"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "5dfb022a2e4f02d1b931440b133f4a0997c53924870d3ff557a4227ef5b6459c"
 uniqueness_score: 18.0
 combined_similarity: 0.968

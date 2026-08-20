@@ -2,7 +2,7 @@
 route: "/learning/2026/8/whats-the-difference-between-uncited-writing-and-plagiarism"
 title: "What"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "3c2909c2bf215b5ce80a86f056e376486ba5198787d8e07ab1596e2f8aac0a87"
 uniqueness_score: 44.17
 combined_similarity: 0.9574
@@ -25,7 +25,7 @@ remediation_status: "not_needed"
 | 2 | `/learning/2026/8/why-is-showing-the-original-source-more-useful-than-a-similarity-percentage` | 0.9788 | 0.9469 | 1.0000 |
 | 3 | `/learning/2026/8/how-much-matching-text-is-enough-to-investigate-plagiarism` | 0.9708 | 0.9316 | 0.9970 |
 | 4 | `/learning/2026/8/can-a-plagiarism-checker-show-me-the-exact-source` | 0.9697 | 0.9242 | 1.0000 |
-| 5 | `/learning/2026/8/can-document-history-protect-a-student-from-a-false-ai-accusation` | 0.9671 | 0.9289 | 0.9926 |
+| 5 | `/learning/2026/8/can-document-history-protect-a-student-from-a-false-ai-accusation` | 0.9680 | 0.9312 | 0.9926 |
 
 ## Semantic Chunks
 ### Section: Introduction

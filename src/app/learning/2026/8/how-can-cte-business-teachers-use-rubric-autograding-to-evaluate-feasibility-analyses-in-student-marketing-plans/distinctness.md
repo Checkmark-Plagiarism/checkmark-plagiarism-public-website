@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-cte-business-teachers-use-rubric-autograding-to-evaluate-feasibility-analyses-in-student-marketing-plans"
 title: "How Can CTE Business Teachers Use Rubric Autograding to Evaluate Feasibility Analyses in Student Marketing Plans? | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "ac3a4c8fc4bd38c38aa9a95fdd0251a85c74c80d51128af5738d4f2ac0660278"
 uniqueness_score: 81.19
 combined_similarity: 0.9393

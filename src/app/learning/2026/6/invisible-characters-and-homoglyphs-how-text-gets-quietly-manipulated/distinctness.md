@@ -2,7 +2,7 @@
 route: "/learning/2026/6/invisible-characters-and-homoglyphs-how-text-gets-quietly-manipulated"
 title: "Invisible Characters and Homoglyphs: How Text Gets Quietly Manipulated"
 seniority_date: "2026-06-25"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "f2f10f694735f5a1b1f466b7b79f399c2c8f0c64bd6f80749871fea05a901cfa"
 uniqueness_score: 94.89
 combined_similarity: 0.8528
@@ -31,7 +31,7 @@ remediation_status: "not_needed"
 ### Section: Introduction
 - **Level**: `intro`
 - **Hash**: `ef385ad6c9c71b96c04aa63535ab4a6c9793f59af3671f157afa27d7dcc6ca79`
-- **Best Competitor Match**: `/learning/2026/8/what-happens-when-a-student-runs-chatgpt-through-an-ai-humanizer` (Similarity: 0.7617)
+- **Best Competitor Match**: `/learning/2026/8/how-keystroke-by-keystroke-playback-preserves-original-clipboard-content-during-paste-inquiries` (Similarity: 0.7576)
 
 ```text
 Open a student essay in your word processor and what you see is what you get. Or so you assume. Most of us treat text as a transparent medium: the letters on the screen are the whole story. But underneath that clean paragraph there can be characters you cannot see, letters that are not the letters they appear to be, and spacing that hides instructions a machine will read even though no human ever will. This is the strange world of subtle text manipulation, and it has become a quiet arms race between people trying to game detection tools and the tools trying to catch them.

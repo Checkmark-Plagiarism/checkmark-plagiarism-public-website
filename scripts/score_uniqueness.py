@@ -9,7 +9,7 @@ SHEET_NAME = "Blog Topic Engine"
 CREDENTIALS_PATH = os.path.join(os.path.dirname(__file__), "credentials.json")
 OLLAMA_URL = "http://localhost:11434/api/embeddings"
 EMBEDDING_MODEL = "nomic-embed-text:latest"
-UNIQUENESS_THRESHOLD = 0.80  # Max cosine similarity threshold (<0.80 means unique / approved)
+MIN_UNIQUENESS_THRESHOLD = 0.20  # Minimum uniqueness score (20%) required for approval (max cosine similarity <= 0.80)
 
 EXPECTED_HEADERS = [
     "Topic Title",
@@ -130,7 +130,7 @@ def main():
 
         uniqueness_score = round(1.0 - max_similarity, 3)
         now_iso = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S")
-        new_status = "approved" if max_similarity < UNIQUENESS_THRESHOLD else "rejected_duplicate"
+        new_status = "approved" if uniqueness_score >= MIN_UNIQUENESS_THRESHOLD else "rejected_duplicate"
 
         # Update sheet cells for this candidate: Status (B), Score (C), Last Scored (D), Embedding (G)
         sheet.update_cell(row_idx, 2, new_status)

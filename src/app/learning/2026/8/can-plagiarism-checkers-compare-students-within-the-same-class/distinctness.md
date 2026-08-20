@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-plagiarism-checkers-compare-students-within-the-same-class"
 title: "Can Plagiarism Checkers Compare Students Within the Same Class?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "1263a50e3006eba937b7862f98a623bb1b3dc3ee07cf307f0fb7efff857d8084"
 uniqueness_score: 45.19
 combined_similarity: 0.9572

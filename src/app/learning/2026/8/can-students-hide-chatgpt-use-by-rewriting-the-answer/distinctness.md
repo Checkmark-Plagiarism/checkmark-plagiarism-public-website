@@ -2,12 +2,12 @@
 route: "/learning/2026/8/can-students-hide-chatgpt-use-by-rewriting-the-answer"
 title: "Can Students Hide ChatGPT Use by Rewriting the Answer?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "95bd0491b16ccbd5be667c5682dfa2f45476dd99a9f04b56fc99ea40c0eb3f80"
-uniqueness_score: 32.31
+uniqueness_score: 32.52
 combined_similarity: 0.9612
 whole_page_top5_similarity: 0.9732
-top_chunk_overlap: 0.9533
+top_chunk_overlap: 0.9532
 action: "remediation_candidate"
 nearest_competitor: "/learning/2026/8/can-chatgpt-paraphrase-plagiarized-text"
 remediation_attempts: 0
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 32.31 / 100
+- **Uniqueness Score**: 32.52 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/can-chatgpt-paraphrase-plagiarized-text`
 
@@ -23,7 +23,7 @@ remediation_status: "not_needed"
 | :--- | :--- | :--- | :--- | :--- |
 | 1 | `/learning/2026/8/can-chatgpt-paraphrase-plagiarized-text` | 0.9768 | 0.9741 | 0.9786 |
 | 2 | `/learning/2026/8/can-teachers-detect-chatgpt-after-a-student-changes-the-words` | 0.9733 | 0.9619 | 0.9810 |
-| 3 | `/learning/2026/8/can-students-beat-ai-detection-by-manually-rewriting-chatgpt` | 0.9711 | 0.9805 | 0.9649 |
+| 3 | `/learning/2026/8/can-students-beat-ai-detection-by-manually-rewriting-chatgpt` | 0.9713 | 0.9808 | 0.9649 |
 | 4 | `/learning/2026/8/a-student-typed-an-entire-essay-with-almost-no-pauses-is-that-suspicious` | 0.9614 | 0.9419 | 0.9744 |
 | 5 | `/learning/2026/8/can-students-use-ai-to-hide-plagiarism` | 0.9612 | 0.9509 | 0.9681 |
 
@@ -31,7 +31,7 @@ remediation_status: "not_needed"
 ### Section: Introduction
 - **Level**: `intro`
 - **Hash**: `c01908fa39f09163a2a6044a4a86e73eae89873e470dcd04616b9a098e443671`
-- **Best Competitor Match**: `/learning/2026/8/can-students-beat-ai-detection-by-manually-rewriting-chatgpt` (Similarity: 0.9365)
+- **Best Competitor Match**: `/learning/2026/8/can-teachers-detect-chatgpt-after-a-student-changes-the-words` (Similarity: 0.9346)
 
 ```text
 No. While manually rewriting or retyping ChatGPT-generated text can lower scores on simple automated AI detectors, students cannot hide AI usage from a comprehensive, multi-signal evaluation.

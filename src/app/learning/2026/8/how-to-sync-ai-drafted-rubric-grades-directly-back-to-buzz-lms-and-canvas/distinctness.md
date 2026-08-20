@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-to-sync-ai-drafted-rubric-grades-directly-back-to-buzz-lms-and-canvas"
 title: "How to Sync AI-Drafted Rubric Grades Directly Back to Buzz LMS and Canvas | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "81b2186ea3011b1fb7e5e61f999aba0e9e57c5251b6ac20416e460005565f6db"
 uniqueness_score: 78.12
 combined_similarity: 0.942

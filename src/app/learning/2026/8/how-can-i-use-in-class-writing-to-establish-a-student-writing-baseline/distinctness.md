@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-i-use-in-class-writing-to-establish-a-student-writing-baseline"
 title: "How Can I Use In-Class Writing to Establish a Student Writing Baseline?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "71093d83df9482a25e0486d90bb4bea57eb3c3349c19e32bf1a6111cecd2bf09"
 uniqueness_score: 78.32
 combined_similarity: 0.9419

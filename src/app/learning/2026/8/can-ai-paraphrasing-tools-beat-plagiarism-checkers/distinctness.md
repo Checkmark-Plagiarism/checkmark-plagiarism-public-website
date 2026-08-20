@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-ai-paraphrasing-tools-beat-plagiarism-checkers"
 title: "Can AI Paraphrasing Tools Beat Plagiarism Checkers?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "c43fe28aa68d33983a1cab90d35ec4ab62af4525fe19876c3dac28e9ca1e8c55"
 uniqueness_score: 18.61
 combined_similarity: 0.9673

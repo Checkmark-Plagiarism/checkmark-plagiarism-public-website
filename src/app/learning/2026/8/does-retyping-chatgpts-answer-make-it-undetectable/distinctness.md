@@ -2,12 +2,12 @@
 route: "/learning/2026/8/does-retyping-chatgpts-answer-make-it-undetectable"
 title: "Does Retyping ChatGPT"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "3ba1ff6ae9c116eccf80a33c65f99eb4959fe2dcf6d6c05589408a135b79a317"
-uniqueness_score: 4.29
-combined_similarity: 0.9781
-whole_page_top5_similarity: 0.9692
-top_chunk_overlap: 0.9841
+uniqueness_score: 4.7
+combined_similarity: 0.9776
+whole_page_top5_similarity: 0.9693
+top_chunk_overlap: 0.9831
 action: "remediation_candidate"
 nearest_competitor: "/learning/2026/8/can-students-beat-ai-detection-by-manually-rewriting-chatgpt"
 remediation_attempts: 0
@@ -15,15 +15,15 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 4.29 / 100
+- **Uniqueness Score**: 4.7 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/can-students-beat-ai-detection-by-manually-rewriting-chatgpt`
 
 | Rank | Route / Slug | Combined Sim | Page Sim | Top Chunk Sim |
 | :--- | :--- | :--- | :--- | :--- |
-| 1 | `/learning/2026/8/can-students-beat-ai-detection-by-manually-rewriting-chatgpt` | 0.9902 | 0.9794 | 0.9974 |
+| 1 | `/learning/2026/8/can-students-beat-ai-detection-by-manually-rewriting-chatgpt` | 0.9906 | 0.9804 | 0.9974 |
 | 2 | `/learning/2026/8/can-teachers-detect-manually-typed-ai-responses` | 0.9835 | 0.9588 | 1.0000 |
-| 3 | `/learning/2026/8/what-happens-when-a-student-runs-chatgpt-through-an-ai-humanizer` | 0.9702 | 0.9426 | 0.9886 |
+| 3 | `/learning/2026/8/what-happens-when-a-student-runs-chatgpt-through-an-ai-humanizer` | 0.9712 | 0.9452 | 0.9886 |
 | 4 | `/learning/2026/8/can-paraphrasing-ai-text-make-it-undetectable` | 0.9699 | 0.9485 | 0.9841 |
 | 5 | `/learning/2026/8/is-using-chatgpt-to-edit-an-essay-cheating` | 0.9696 | 0.9444 | 0.9865 |
 
@@ -31,7 +31,7 @@ remediation_status: "not_needed"
 ### Section: Introduction
 - **Level**: `intro`
 - **Hash**: `3cb69b4509ab936836a1c1aa3545de0e7023d2f49edead5385df6e0c4bef859a`
-- **Best Competitor Match**: `/learning/2026/8/can-students-beat-ai-detection-by-manually-rewriting-chatgpt` (Similarity: 0.9658)
+- **Best Competitor Match**: `/learning/2026/8/can-students-beat-ai-detection-by-manually-rewriting-chatgpt` (Similarity: 0.9602)
 
 ```text
 No. Manually retyping a ChatGPT response keystroke-by-keystroke does not make it undetectable—it remains immediately detectable through both linguistic AI analysis and behavioral keystroke process tracking.

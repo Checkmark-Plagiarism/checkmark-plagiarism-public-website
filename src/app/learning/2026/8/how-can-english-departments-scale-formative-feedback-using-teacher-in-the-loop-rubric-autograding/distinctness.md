@@ -2,9 +2,9 @@
 route: "/learning/2026/8/how-can-english-departments-scale-formative-feedback-using-teacher-in-the-loop-rubric-autograding"
 title: "How Can English Departments Scale Formative Feedback Using Teacher-in-the-Loop Rubric Autograding? | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "7fc6883c79dee76dde50e079e8b5609db8a2dfbc4131f94fdb1b1ef1a4699b3a"
-uniqueness_score: 28.83
+uniqueness_score: 29.04
 combined_similarity: 0.9625
 whole_page_top5_similarity: 0.9806
 top_chunk_overlap: 0.9504
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 28.83 / 100
+- **Uniqueness Score**: 29.04 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/how-can-department-chairs-standardize-rubric-grading-across-multiple-class-sections-in-canvas-lms`
 

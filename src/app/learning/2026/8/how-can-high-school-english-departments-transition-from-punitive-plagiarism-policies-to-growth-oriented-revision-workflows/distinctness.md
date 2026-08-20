@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-high-school-english-departments-transition-from-punitive-plagiarism-policies-to-growth-oriented-revision-workflows"
 title: "How Can High School English Departments Transition From Punitive Plagiarism Policies to Growth-Oriented Revision Workflows? | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "5a647a1b712fbc86d7711c68d7ada2dfd76e92704ebc34e8d71a0d173d82d13d"
 uniqueness_score: 61.15
 combined_similarity: 0.9508

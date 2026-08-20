@@ -2,9 +2,9 @@
 route: "/learning/2026/8/what-should-i-do-if-a-students-citation-doesnt-support-their-claim"
 title: "What Should I Do If a Student"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "16b0c02b76cfa49f1afcdf448e2e68503e6bcdce874586969de30d1f0cf79b91"
-uniqueness_score: 29.65
+uniqueness_score: 29.86
 combined_similarity: 0.9623
 whole_page_top5_similarity: 0.958
 top_chunk_overlap: 0.9653
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 29.65 / 100
+- **Uniqueness Score**: 29.86 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/how-can-i-tell-if-a-student-actually-read-the-sources-they-cited`
 

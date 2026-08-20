@@ -2,9 +2,9 @@
 route: "/learning/2026/8/how-do-i-tell-the-difference-between-paraphrasing-and-plagiarism"
 title: "How Do I Tell the Difference Between Paraphrasing and Plagiarism?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "4e25db4922de45a740b99d7bb21cf096291eb104b9bbc1c8689daddce1c036da"
-uniqueness_score: 33.54
+uniqueness_score: 34.15
 combined_similarity: 0.9607
 whole_page_top5_similarity: 0.9403
 top_chunk_overlap: 0.9743
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 33.54 / 100
+- **Uniqueness Score**: 34.15 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/can-paraphrased-sources-still-count-as-plagiarism`
 

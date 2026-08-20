@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-504-and-iep-coordinators-use-keystroke-replays-to-verify-student-typing-accommodations-and-extended-time-compliance"
 title: "How Can 504 and IEP Coordinators Use Keystroke Replays to Verify Student Typing Accommodations and Extended Time Compliance? | Checkmark Plagiarism"
 seniority_date: "2026-08-19"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:29Z"
 content_hash: "b88ae1b077de31df1d2a6264131e00f4932b19cfd59a19a61e92d3b9e57c9225"
 uniqueness_score: 72.39
 combined_similarity: 0.9463

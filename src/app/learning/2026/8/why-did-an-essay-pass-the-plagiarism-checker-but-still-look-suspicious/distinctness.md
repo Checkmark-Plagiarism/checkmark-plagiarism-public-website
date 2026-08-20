@@ -2,9 +2,9 @@
 route: "/learning/2026/8/why-did-an-essay-pass-the-plagiarism-checker-but-still-look-suspicious"
 title: "Why Did an Essay Pass the Plagiarism Checker but Still Look Suspicious?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "bc2214c597cce76c30bbbc7aa98f45b254259d87a76d82d7eff8931a966cad11"
-uniqueness_score: 33.33
+uniqueness_score: 33.95
 combined_similarity: 0.9607
 whole_page_top5_similarity: 0.952
 top_chunk_overlap: 0.9665
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 33.33 / 100
+- **Uniqueness Score**: 33.95 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/can-students-use-ai-to-hide-plagiarism`
 

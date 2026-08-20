@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-should-teachers-investigate-peer-to-peer-plagiarism"
 title: "How Should Teachers Investigate Peer-to-Peer Plagiarism?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "c836849c7ab259de178dd58417affa205d37c175e8cda52b0c6fbe23b9d81465"
 uniqueness_score: 19.02
 combined_similarity: 0.967

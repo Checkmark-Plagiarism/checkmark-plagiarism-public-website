@@ -2,11 +2,11 @@
 route: "/learning/2026/8/how-can-teachers-investigate-ai-writing-that-passes-an-ai-detector"
 title: "How Can Teachers Investigate AI Writing That Passes an AI Detector?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "5a4c5d66f6e22a80e587106228c0a43401d2cecea062fa64af0e60fd37a4ab35"
-uniqueness_score: 4.09
-combined_similarity: 0.9783
-whole_page_top5_similarity: 0.9725
+uniqueness_score: 3.89
+combined_similarity: 0.9786
+whole_page_top5_similarity: 0.9731
 top_chunk_overlap: 0.9822
 action: "remediation_candidate"
 nearest_competitor: "/learning/2026/8/why-doesnt-ai-detection-tell-the-whole-story"
@@ -15,23 +15,23 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 4.09 / 100
+- **Uniqueness Score**: 3.89 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/why-doesnt-ai-detection-tell-the-whole-story`
 
 | Rank | Route / Slug | Combined Sim | Page Sim | Top Chunk Sim |
 | :--- | :--- | :--- | :--- | :--- |
-| 1 | `/learning/2026/8/why-doesnt-ai-detection-tell-the-whole-story` | 0.9897 | 0.9743 | 1.0000 |
-| 2 | `/learning/2026/8/what-should-i-do-when-ai-detection-and-writing-history-disagree` | 0.9883 | 0.9708 | 1.0000 |
-| 3 | `/learning/2026/8/what-if-an-ai-detector-flags-a-student-who-actually-wrote-the-essay` | 0.9883 | 0.9707 | 1.0000 |
-| 4 | `/learning/2026/8/can-human-writing-be-flagged-as-ai` | 0.9872 | 0.9680 | 1.0000 |
-| 5 | `/learning/2026/8/how-can-teachers-investigate-a-possible-ai-false-positive` | 0.9868 | 0.9670 | 1.0000 |
+| 1 | `/learning/2026/8/why-doesnt-ai-detection-tell-the-whole-story` | 0.9902 | 0.9755 | 1.0000 |
+| 2 | `/learning/2026/8/what-if-an-ai-detector-flags-a-student-who-actually-wrote-the-essay` | 0.9890 | 0.9725 | 1.0000 |
+| 3 | `/learning/2026/8/what-should-i-do-when-ai-detection-and-writing-history-disagree` | 0.9883 | 0.9708 | 1.0000 |
+| 4 | `/learning/2026/8/how-can-teachers-investigate-a-possible-ai-false-positive` | 0.9878 | 0.9696 | 1.0000 |
+| 5 | `/learning/2026/8/can-human-writing-be-flagged-as-ai` | 0.9876 | 0.9691 | 1.0000 |
 
 ## Semantic Chunks
 ### Section: Introduction
 - **Level**: `intro`
 - **Hash**: `385246d546857e4d1233021794f5ee6dd814641ee2cb97dbf2224538ad55e3f9`
-- **Best Competitor Match**: `/learning/2026/8/an-essay-passed-the-ai-detector-but-still-looks-ai-written-what-can-i-check` (Similarity: 0.9512)
+- **Best Competitor Match**: `/learning/2026/8/what-if-an-ai-detector-flags-a-student-who-actually-wrote-the-essay` (Similarity: 0.9522)
 
 ```text
 When an essay looks suspiciously artificial but passes a statistical AI detector with a low score, educators can investigate and verify AI use through a 4-step multi-signal audit combining essay writing playback, citation verification, in-class baseline comparisons, and oral check-ins.

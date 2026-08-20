@@ -2,7 +2,7 @@
 route: "/learning/2026/8/should-every-teacher-at-a-school-use-the-same-ai-detection-process"
 title: "Should Every Teacher at a School Use the Same AI Detection Process?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "20940b369eece3287a8b8566071f3864ad1e1038d7095bca80e69eacb32c8008"
 uniqueness_score: 55.01
 combined_similarity: 0.9536

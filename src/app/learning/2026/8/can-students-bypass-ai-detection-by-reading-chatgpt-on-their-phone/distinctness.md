@@ -2,9 +2,9 @@
 route: "/learning/2026/8/can-students-bypass-ai-detection-by-reading-chatgpt-on-their-phone"
 title: "Can Students Bypass AI Detection by Reading ChatGPT on Their Phone?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "c3ccc059fd8158c5f25e338a59db68a54f1716d6e4360fb284e29bb6a6d34f3c"
-uniqueness_score: 3.27
+uniqueness_score: 3.48
 combined_similarity: 0.9792
 whole_page_top5_similarity: 0.9655
 top_chunk_overlap: 0.9883
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 3.27 / 100
+- **Uniqueness Score**: 3.48 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/can-teachers-detect-ai-answers-transcribed-from-a-phone`
 

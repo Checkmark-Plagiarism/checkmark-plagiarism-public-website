@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-high-school-english-departments-standardize-evidence-requirements-before-initiating-academic-dishonesty-referrals"
 title: "How Can High School English Departments Standardize Evidence Requirements Before Initiating Academic Dishonesty Referrals? | Checkmark Plagiarism"
 seniority_date: "2026-08-19"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:29Z"
 content_hash: "6a79294634a59b198fc3b10b0ffdaef16f90d6572288b698fffe21fca04ae427"
 uniqueness_score: 81.39
 combined_similarity: 0.9389

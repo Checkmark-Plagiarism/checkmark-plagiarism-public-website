@@ -2,7 +2,7 @@
 route: "/learning/2026/6/ai-powered-originality-checks-how-they-work-and-how-to-troubleshoot-them"
 title: "AI-Powered Originality Checks: How They Work and How to Troubleshoot Them"
 seniority_date: "2026-06-25"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "2870394685d870314dd0167da2d9219de8ef7b924f85513e027c1ceb06f60055"
 uniqueness_score: 91.41
 combined_similarity: 0.9085

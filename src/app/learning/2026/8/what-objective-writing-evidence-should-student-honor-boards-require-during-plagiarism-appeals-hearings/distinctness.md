@@ -2,7 +2,7 @@
 route: "/learning/2026/8/what-objective-writing-evidence-should-student-honor-boards-require-during-plagiarism-appeals-hearings"
 title: "What Objective Writing Evidence Should Student Honor Boards Require During Plagiarism Appeals Hearings? | Checkmark Plagiarism"
 seniority_date: "2026-08-19"
-last_vectorized_at: "2026-08-19T22:54:04Z"
+last_vectorized_at: "2026-08-20T03:00:29Z"
 content_hash: "ce8ab8fed0fe5f5fde9a6aae7e0ec70069a40bf61a7a9e9b550b6957de67389e"
 uniqueness_score: 77.51
 combined_similarity: 0.9423

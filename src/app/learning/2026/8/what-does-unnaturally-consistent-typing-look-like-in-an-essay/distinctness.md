@@ -2,9 +2,9 @@
 route: "/learning/2026/8/what-does-unnaturally-consistent-typing-look-like-in-an-essay"
 title: "What Does Unnaturally Consistent Typing Look Like in an Essay?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "d0139d53e1272bea341993f283c0f3649d774ec3fa2470400161637039f33d78"
-uniqueness_score: 42.13
+uniqueness_score: 42.33
 combined_similarity: 0.9578
 whole_page_top5_similarity: 0.9561
 top_chunk_overlap: 0.959
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 42.13 / 100
+- **Uniqueness Score**: 42.33 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/can-typing-patterns-reveal-that-a-student-was-copying`
 
@@ -25,7 +25,7 @@ remediation_status: "not_needed"
 | 2 | `/learning/2026/8/what-can-keystroke-history-tell-teachers-about-an-assignment` | 0.9733 | 0.9509 | 0.9882 |
 | 3 | `/learning/2026/8/can-teachers-detect-manually-typed-ai-responses` | 0.9663 | 0.9363 | 0.9863 |
 | 4 | `/learning/2026/8/can-teachers-detect-when-a-student-retypes-a-source-instead-of-copying-and-pasting` | 0.9654 | 0.9513 | 0.9748 |
-| 5 | `/learning/2026/8/can-students-beat-ai-detection-by-manually-rewriting-chatgpt` | 0.9647 | 0.9302 | 0.9877 |
+| 5 | `/learning/2026/8/can-students-beat-ai-detection-by-manually-rewriting-chatgpt` | 0.9653 | 0.9316 | 0.9877 |
 
 ## Semantic Chunks
 ### Section: Introduction

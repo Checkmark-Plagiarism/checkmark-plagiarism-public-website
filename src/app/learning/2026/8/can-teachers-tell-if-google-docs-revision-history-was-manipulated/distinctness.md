@@ -2,14 +2,14 @@
 route: "/learning/2026/8/can-teachers-tell-if-google-docs-revision-history-was-manipulated"
 title: "Can Teachers Tell If Google Docs Revision History Was Manipulated?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "dbf033f9815d71b6c6740f40bf2ea4c1a5a0b9ef222d1b2aa1e57ba2c691d57d"
 uniqueness_score: 65.64
 combined_similarity: 0.9491
 whole_page_top5_similarity: 0.9573
 top_chunk_overlap: 0.9436
 action: "remediation_candidate"
-nearest_competitor: "/learning/2026/8/can-teachers-detect-a-student-typing-chatgpts-answer-word-for-word"
+nearest_competitor: "/learning/2026/8/can-students-beat-ai-detection-by-manually-rewriting-chatgpt"
 remediation_attempts: 0
 remediation_status: "not_needed"
 ---
@@ -17,13 +17,13 @@ remediation_status: "not_needed"
 ## Summary & Similar Pages
 - **Uniqueness Score**: 65.64 / 100
 - **Action**: `remediation_candidate`
-- **Nearest Competitor**: `/learning/2026/8/can-teachers-detect-a-student-typing-chatgpts-answer-word-for-word`
+- **Nearest Competitor**: `/learning/2026/8/can-students-beat-ai-detection-by-manually-rewriting-chatgpt`
 
 | Rank | Route / Slug | Combined Sim | Page Sim | Top Chunk Sim |
 | :--- | :--- | :--- | :--- | :--- |
-| 1 | `/learning/2026/8/can-teachers-detect-a-student-typing-chatgpts-answer-word-for-word` | 0.9616 | 0.9466 | 0.9717 |
-| 2 | `/learning/2026/8/a-student-retyped-chatgpt-instead-of-pasting-it-can-i-detect-that` | 0.9616 | 0.9628 | 0.9607 |
-| 3 | `/learning/2026/8/can-students-beat-ai-detection-by-manually-rewriting-chatgpt` | 0.9611 | 0.9466 | 0.9707 |
+| 1 | `/learning/2026/8/can-students-beat-ai-detection-by-manually-rewriting-chatgpt` | 0.9624 | 0.9499 | 0.9707 |
+| 2 | `/learning/2026/8/can-teachers-detect-a-student-typing-chatgpts-answer-word-for-word` | 0.9616 | 0.9466 | 0.9717 |
+| 3 | `/learning/2026/8/a-student-retyped-chatgpt-instead-of-pasting-it-can-i-detect-that` | 0.9616 | 0.9628 | 0.9607 |
 | 4 | `/learning/2026/8/a-student-typed-an-entire-essay-with-almost-no-pauses-is-that-suspicious` | 0.9611 | 0.9616 | 0.9607 |
 | 5 | `/learning/2026/8/what-does-unnaturally-consistent-typing-look-like-in-an-essay` | 0.9607 | 0.9497 | 0.9680 |
 

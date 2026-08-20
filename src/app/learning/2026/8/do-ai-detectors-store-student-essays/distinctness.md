@@ -2,7 +2,7 @@
 route: "/learning/2026/8/do-ai-detectors-store-student-essays"
 title: "Do AI Detectors Store Student Essays?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "7174ead8fa107293841ce4173f0659f7da28865ebe28a8cdc7242f5325140c8b"
 uniqueness_score: 13.5
 combined_similarity: 0.9707

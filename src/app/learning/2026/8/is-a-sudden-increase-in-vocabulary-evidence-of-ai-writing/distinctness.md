@@ -2,7 +2,7 @@
 route: "/learning/2026/8/is-a-sudden-increase-in-vocabulary-evidence-of-ai-writing"
 title: "Is a Sudden Increase in Vocabulary Evidence of AI Writing?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "05dcb3384e519bf495763a27a32b1eb66be2ae129f9c82a8e0ada2a0e6e0b1cc"
 uniqueness_score: 58.49
 combined_similarity: 0.9522

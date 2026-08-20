@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-do-i-check-an-assignment-for-plagiarism-in-canvas"
 title: "How Do I Check an Assignment for Plagiarism in Canvas?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "7c78be6d681009a23019d76640cb85775d3ee5256abe9ef16c477ea9ea3eb9eb"
 uniqueness_score: 43.97
 combined_similarity: 0.9574

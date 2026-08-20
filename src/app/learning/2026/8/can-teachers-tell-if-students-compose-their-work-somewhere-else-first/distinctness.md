@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-teachers-tell-if-students-compose-their-work-somewhere-else-first"
 title: "Can Teachers Tell If Students Compose Their Work Somewhere Else First?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "270327e44245fb72eb845542d8aaa90bd32ea15e775887467f8dfc36309a48a2"
 uniqueness_score: 11.04
 combined_similarity: 0.9729

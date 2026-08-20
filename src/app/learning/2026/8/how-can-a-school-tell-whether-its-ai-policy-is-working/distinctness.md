@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-a-school-tell-whether-its-ai-policy-is-working"
 title: "How Can a School Tell Whether Its AI Policy Is Working?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "b03e2c57046465372f89847b5f69148f3cb31c014f6a9e7e354e886d4c38ba48"
 uniqueness_score: 75.26
 combined_similarity: 0.9438

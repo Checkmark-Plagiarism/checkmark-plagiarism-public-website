@@ -2,11 +2,11 @@
 route: "/learning/2026/8/how-can-teachers-detect-ai-use-without-copy-and-paste-evidence"
 title: "How Can Teachers Detect AI Use Without Copy-and-Paste Evidence?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "faf3c58bcebbd5ff0cfddd27310af119a8edd7d644ed18427b00a53d42d02233"
 uniqueness_score: 12.68
 combined_similarity: 0.9715
-whole_page_top5_similarity: 0.975
+whole_page_top5_similarity: 0.9751
 top_chunk_overlap: 0.9691
 action: "remediation_candidate"
 nearest_competitor: "/learning/2026/8/does-manually-typing-chatgpt-make-ai-detection-impossible"

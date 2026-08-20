@@ -2,9 +2,9 @@
 route: "/learning/2026/8/how-can-special-education-case-managers-use-writing-process-replay-to-document-assistive-technology-accommodations"
 title: "How Can Special Education Case Managers Use Writing Process Replay to Document Assistive Technology Accommodations? | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "8e26d579573ebe6c7968120800ae7c6fd42d6057879d9352e0afd3c906a64ca6"
-uniqueness_score: 33.95
+uniqueness_score: 34.36
 combined_similarity: 0.9606
 whole_page_top5_similarity: 0.9696
 top_chunk_overlap: 0.9546
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 33.95 / 100
+- **Uniqueness Score**: 34.36 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/how-can-504-and-iep-coordinators-use-keystroke-replays-to-verify-student-typing-accommodations-and-extended-time-compliance`
 

@@ -2,7 +2,7 @@
 route: "/learning/2026/8/is-an-ai-detector-enough-evidence-for-academic-misconduct"
 title: "Is an AI Detector Enough Evidence for Academic Misconduct?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "8bded1478d11608bd6f44edbef6a5a9fc9e5b7b244b22255fb0d2b98ec3acdfe"
 uniqueness_score: 10.84
 combined_similarity: 0.9729

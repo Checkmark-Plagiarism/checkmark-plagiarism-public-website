@@ -2,9 +2,9 @@
 route: "/learning/2026/8/how-can-i-tell-if-a-student-actually-wrote-their-essay"
 title: "How Can I Tell If a Student Actually Wrote Their Essay?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "639cbdfd5b7041f257c03a872321397a1a3ed8a1628dfa23a44b36c6f4556f60"
-uniqueness_score: 8.79
+uniqueness_score: 9.0
 combined_similarity: 0.9738
 whole_page_top5_similarity: 0.9709
 top_chunk_overlap: 0.9757
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 8.79 / 100
+- **Uniqueness Score**: 9.0 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/what-should-i-do-if-a-student-cant-explain-their-own-essay`
 

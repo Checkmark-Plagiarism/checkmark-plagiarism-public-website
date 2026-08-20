@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-teachers-detect-ai-without-using-an-ai-detector"
 title: "Can Teachers Detect AI Without Using an AI Detector?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "bba41a55c30e62a23777952ff84c3a716ee47045da57f7a0156bfcc5701451fe"
 uniqueness_score: 13.09
 combined_similarity: 0.9708

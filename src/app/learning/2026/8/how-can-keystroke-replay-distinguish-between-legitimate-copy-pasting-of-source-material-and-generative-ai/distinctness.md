@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-keystroke-replay-distinguish-between-legitimate-copy-pasting-of-source-material-and-generative-ai"
 title: "How Can Keystroke Replay Distinguish Between Legitimate Copy-Pasting of Source Material and Generative AI? | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "75d4032054ca6396774da6e837e722c2ff0b3d2ff309a9c8f7b0e0372b43b8cf"
 uniqueness_score: 74.03
 combined_similarity: 0.9446

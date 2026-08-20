@@ -2,11 +2,11 @@
 route: "/learning/2026/8/can-typing-history-show-whether-an-essay-is-authentic"
 title: "Can Typing History Show Whether an Essay Is Authentic?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "68ff5cd44108206b3a222b2603672b2dd98261627abfef7bfca43865f39da324"
-uniqueness_score: 14.11
-combined_similarity: 0.9705
-whole_page_top5_similarity: 0.9575
+uniqueness_score: 13.91
+combined_similarity: 0.9706
+whole_page_top5_similarity: 0.9578
 top_chunk_overlap: 0.9791
 action: "remediation_candidate"
 nearest_competitor: "/learning/2026/8/can-writing-history-reveal-humanized-ai-content"
@@ -15,23 +15,23 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 14.11 / 100
+- **Uniqueness Score**: 13.91 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/can-writing-history-reveal-humanized-ai-content`
 
 | Rank | Route / Slug | Combined Sim | Page Sim | Top Chunk Sim |
 | :--- | :--- | :--- | :--- | :--- |
-| 1 | `/learning/2026/8/can-writing-history-reveal-humanized-ai-content` | 0.9858 | 0.9667 | 0.9986 |
-| 2 | `/learning/2026/8/what-if-an-ai-detector-flags-a-student-who-actually-wrote-the-essay` | 0.9783 | 0.9486 | 0.9981 |
-| 3 | `/learning/2026/8/can-document-history-protect-a-student-from-a-false-ai-accusation` | 0.9781 | 0.9476 | 0.9984 |
-| 4 | `/learning/2026/8/what-does-an-ai-written-essay-look-like-in-writing-history` | 0.9775 | 0.9531 | 0.9937 |
-| 5 | `/learning/2026/8/what-does-human-writing-look-like-even-when-an-ai-detector-flags-it` | 0.9773 | 0.9461 | 0.9981 |
+| 1 | `/learning/2026/8/can-writing-history-reveal-humanized-ai-content` | 0.9864 | 0.9682 | 0.9986 |
+| 2 | `/learning/2026/8/can-document-history-protect-a-student-from-a-false-ai-accusation` | 0.9793 | 0.9506 | 0.9984 |
+| 3 | `/learning/2026/8/what-if-an-ai-detector-flags-a-student-who-actually-wrote-the-essay` | 0.9782 | 0.9484 | 0.9981 |
+| 4 | `/learning/2026/8/what-does-human-writing-look-like-even-when-an-ai-detector-flags-it` | 0.9779 | 0.9475 | 0.9981 |
+| 5 | `/learning/2026/8/what-does-an-ai-written-essay-look-like-in-writing-history` | 0.9775 | 0.9531 | 0.9937 |
 
 ## Semantic Chunks
 ### Section: Introduction
 - **Level**: `intro`
 - **Hash**: `042e77e48f74ede5a4cb29a76e9f6f19d9e2f7278907af1a43cb18d072d7e03e`
-- **Best Competitor Match**: `/learning/2026/8/can-writing-history-reveal-humanized-ai-content` (Similarity: 0.9214)
+- **Best Competitor Match**: `/learning/2026/8/can-writing-history-reveal-humanized-ai-content` (Similarity: 0.9124)
 
 ```text
 Yes. Typing history provides the definitive behavioral proof of whether an essay was genuinely composed by a human student or assembled through automated shortcuts.

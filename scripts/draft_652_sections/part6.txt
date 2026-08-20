@@ -1,0 +1,47 @@
+﻿---
+
+## 7. Frequently Asked Questions (FAQ)
+
+### 1. How can APES teachers distinguish between a student pasting authentic sensor data versus an AI-generated data table?
+When a student pastes authentic data exported from a digital datalogger (such as Vernier Graphical Analysis, PASCO Capstone, or a Google Sheet), Checkmark's **External Clipboard Inspector** captures the raw payload. Genuine sensor data exhibits characteristic tab-delimited formatting, raw sensor timestamps (e.g., $10\text{ Hz}$ or $1\text{ Hz}$ intervals), sensor calibration headers, realistic decimal noise, and documented thermal equilibrium drift. In contrast, an AI-generated data table pasted from an LLM chatbot typically arrives in Markdown pipe format (`| Station | DO (mg/L) |`), displays uniform integer steps or round decimals, and lacks hardware device headers. Furthermore, with Essay Playback™, teachers can observe whether the student spent time cleaning, formatting, and analyzing the imported dataset or immediately generated a polished CER interpretation with zero analytical lag.
+
+### 2. Why do generic AI detectors assign high AI probability scores to honest students writing scientific lab reports?
+Generic AI detectors calculate the statistical predictability (perplexity) and structural variation (burstiness) of words. In Advanced Placement science courses, students are required to write in a concise, objective, passive-voice register and use precise, standardized scientific vocabulary (such as *ammonification*, *chemosynthesis*, *oligotrophic*, *denitrification*, and *biological oxygen demand*). Because these exact terms and Claim-Evidence-Reasoning (CER) sentence frames appear with high frequency in scientific training data, LLM classifiers evaluate them as "highly predictable" and assign elevated AI probability scores. Checkmark eliminates this flaw by using **passage-level calibrated confidence sliders** that evaluate conceptual synthesis rather than vocabulary density, backed by **Essay Playback™ telemetry** that proves authentic human drafting.
+
+### 3. What should a teacher do if a student's lab data looks suspiciously perfect ($R^2 \approx 1.0$) but no plagiarism matches are found?
+When experimental data appears suspiciously clean without web matches, follow the **4-Phase Lab Audit Protocol**:
+1. Check the raw station data sheet from the student's physical lab group.
+2. Spot-check physical boundary conditions (such as Henry's Law dissolved oxygen saturation limits at the reported water temperature).
+3. Review the student's **Essay Playback™** session in Checkmark. Check whether the numerical table was constructed point-by-point with authentic calculation pauses or dropped in as a single external paste.
+4. If writing telemetry reveals an external paste from an AI tool, schedule a supportive restorative conference using the playback timeline to guide the student through a hands-on laboratory re-trial.
+
+### 4. How does Essay Playback™ accommodate students with IEPs, 504 plans, or approved speech-to-text dictation tools?
+Checkmark is built to protect all learners, including neurodivergent students and those with physical accommodations. Approved speech-to-text dictation software inputs text in natural phrase bursts accompanied by brief pauses as the student speaks and the software transcribes. Essay Playback™ visualizes these distinct acoustic-cadence bursts, clearly differentiating legitimate assistive technology from instant multi-paragraph external AI clipboard pastes. Furthermore, teachers can annotate student profiles with approved accommodation flags to ensure fair, transparent evaluations.
+
+### 5. Can Checkmark's Rubric Autograder evaluate mathematical routines required by AP Science Practice 6?
+Yes. Checkmark's Autograder supports custom, multi-trait science rubrics. When configured for **AP Science Practice 6 (Mathematical Routines)**, the autograder evaluates whether students correctly set up dimensional analysis equations, propagated metric units (e.g., $\text{mg/L}$ to $\text{kg/day}$), maintained appropriate significant figures, and accurately calculated environmental rates of change (such as BOD deoxygenation rates or percentage recovery). Every score is accompanied by a quote-anchored justification linking the grade directly to the student's written calculations.
+
+### 6. Does Checkmark store student lab reports in public AI databases?
+**No.** Under Checkmark's strict privacy policy, student submissions are never added to public training corpora or used to train commercial Large Language Models. Checkmark is fully compliant with **FERPA**, **COPPA**, and state-level student data privacy mandates. All document processing occurs within secure, encrypted cloud infrastructure with zero permanent third-party retention.
+
+### 7. How should high school science departments update their laboratory syllabus policies regarding generative AI?
+Science departments should establish clear, transparent boundaries that distinguish between **authorized cognitive assistance** and **prohibited empirical fraud**:
+* **Authorized AI Uses:** Brainstorming experimental design variations, finding supplementary peer-reviewed research papers, debugging Python or spreadsheet data-analysis formulas, and reviewing grammatical clarity in draft revisions.
+* **Prohibited AI Uses:** Prompting LLMs to synthesize simulated lab data ("digital dry-labbing"), generating fabricated raw observations, or pasting unedited AI-generated Claim-Evidence-Reasoning paragraphs.
+* **Evidentiary Transparency:** Department policies should explicitly state that laboratory grades are evaluated based on both the final submission and the authentic writing process telemetry recorded via Checkmark.
+
+---
+
+## 8. Summary: Stop Guessing, Start Trusting in Science Education
+
+The integrity of science education depends on authentic empirical inquiry. When students bypass the physical and cognitive friction of environmental fieldwork by generating synthetic data and AI interpretations, they lose the opportunity to develop true scientific literacy, quantitative reasoning, and ecological problem-solving skills.
+
+Generic black-box AI detectors cannot solve this crisis—they alienate honest students with false accusations while failing to catch synthetic datasets. 
+
+By implementing **Checkmark Plagiarism**, science educators gain the transparent, defensible tools they need:
+* **Patent-Pending Essay Playback™** to verify authentic drafting and data-thinking rhythms.
+* **Immutable Clipboard Inspection** to catch external synthetic data drops.
+* **Passage-Level Sliders with Short-Text Guardrails** to protect students using rigorous scientific vocabulary.
+* **Teacher-in-the-Loop Rubric Autograding** to provide meaningful, quote-anchored feedback aligned with AP Science Practices.
+
+**Stop guessing, start trusting.** Transform your science department's laboratory assessment workflow by visiting [Checkmark Plagiarism](https://checkmarkplagiarism.com) and exploring the future of defensible, educator-first academic integrity.

@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-department-chairs-use-multidimensional-plagiarism-matching-to-identify-uncited-patchwriting-in-capstone-research"
 title: "How Can Department Chairs Use Multidimensional Plagiarism Matching to Identify Uncited Patchwriting in Capstone Research? | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "6f4cf29654ea623e07b6271cc434921c4fec9c82ab6df738b3230fd0683eabe8"
 uniqueness_score: 47.85
 combined_similarity: 0.9562

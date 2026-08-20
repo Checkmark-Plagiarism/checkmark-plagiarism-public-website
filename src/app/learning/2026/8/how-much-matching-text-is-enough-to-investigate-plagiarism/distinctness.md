@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-much-matching-text-is-enough-to-investigate-plagiarism"
 title: "How Much Matching Text Is Enough to Investigate Plagiarism?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "6f26f59c908b71105616855b10f69d6554d0694a9968dc6f7cd237a28c9780f6"
 uniqueness_score: 44.38
 combined_similarity: 0.9574

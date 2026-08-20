@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-graduate-writing-program-chairs-verify-independent-authorship-in-doctoral-dissertations-without-storing-student-manuscripts"
 title: "How Can Graduate Writing Program Chairs Verify Independent Authorship in Doctoral Dissertations Without Storing Student Manuscripts? | Checkmark Plagiarism"
 seniority_date: "2026-08-19"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:29Z"
 content_hash: "024339f725ce14ce934914c0a2968e7613e5472d6b7479b8d16002cb07fd63fd"
 uniqueness_score: 84.87
 combined_similarity: 0.9338

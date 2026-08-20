@@ -2,7 +2,7 @@
 route: "/learning/2026/6/how-a-plagiarism-checker-integrates-with-moodle-setup-usage-and-data-sync-explained"
 title: "How a Plagiarism Checker Integrates With Moodle: Setup, Usage, and Data Sync Explained"
 seniority_date: "2026-06-25"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "29c85ae4f4a4a9551b30d52fd7ebec2e243c7b8ab7307ce27a5cd1f82d2bdd36"
 uniqueness_score: 97.14
 combined_similarity: 0.8187

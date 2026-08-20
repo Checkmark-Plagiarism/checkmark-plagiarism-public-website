@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-instructional-coaches-train-secondary-faculty-on-restorative-post-plagiarism-revision-conferences"
 title: "How Can Instructional Coaches Train Secondary Faculty on Restorative Post-Plagiarism Revision Conferences? | Checkmark Plagiarism"
 seniority_date: "2026-08-19"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:29Z"
 content_hash: "a9a3424b44a73456a5ae5c7be41c83cbfec2c4ce6e9d2990f5b592982061aa6d"
 uniqueness_score: 65.03
 combined_similarity: 0.9492

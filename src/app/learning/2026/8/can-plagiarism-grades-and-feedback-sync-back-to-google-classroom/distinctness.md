@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-plagiarism-grades-and-feedback-sync-back-to-google-classroom"
 title: "Can Plagiarism Grades and Feedback Sync Back to Google Classroom?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "019fef8a154e79a2b400ef0bddbf33147dbe5a06f8f8e12dfc7e114fb326c612"
 uniqueness_score: 62.58
 combined_similarity: 0.9502

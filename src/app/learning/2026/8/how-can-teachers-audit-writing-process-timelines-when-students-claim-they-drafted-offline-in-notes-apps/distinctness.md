@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-teachers-audit-writing-process-timelines-when-students-claim-they-drafted-offline-in-notes-apps"
 title: "How Can Teachers Audit Writing Process Timelines When Students Claim They Drafted Offline in Notes Apps? | Checkmark Plagiarism"
 seniority_date: "2026-08-19"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:29Z"
 content_hash: "fc25a0faabde10cae1516c110fcc48b75b27402ea13c415ed955aad5c2764cd7"
 uniqueness_score: 71.78
 combined_similarity: 0.9465

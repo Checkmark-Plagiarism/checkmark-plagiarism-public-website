@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-teachers-use-ai-rubric-analytics-to-diagnose-class-wide-argumentation-weaknesses"
 title: "How Can Teachers Use AI Rubric Analytics to Diagnose Class-Wide Argumentation Weaknesses? | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "cb2ac866b3ebe212eac65921aa4d9d2ffcf3ff8ad292ac013bab20091833a111"
 uniqueness_score: 59.1
 combined_similarity: 0.952

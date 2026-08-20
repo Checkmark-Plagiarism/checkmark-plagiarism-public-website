@@ -2,7 +2,7 @@
 route: "/learning/2026/8/does-copying-and-pasting-automatically-mean-a-student-cheated"
 title: "Does Copying and Pasting Automatically Mean a Student Cheated?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "7adb22c163a088bf611253ba354ca9ac335e005148960d65a53c14d3f4cdfb69"
 uniqueness_score: 27.61
 combined_similarity: 0.9636

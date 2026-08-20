@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-do-teachers-detect-patchwriting"
 title: "How Do Teachers Detect Patchwriting?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "cad1bddd27a4b1f7066b8151634a069b81846f6e5096837a9e9a116c329336f6"
 uniqueness_score: 51.12
 combined_similarity: 0.9551

@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-teachers-detect-when-a-student-retypes-a-source-instead-of-copying-and-pasting"
 title: "Can Teachers Detect When a Student Retypes a Source Instead of Copying and Pasting?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "87e4c1431878e780b5cde3ef3725706300ce9bd01bf7db289c41a76c4952270d"
 uniqueness_score: 15.95
 combined_similarity: 0.9693

@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-world-language-teachers-distinguish-native-composition-from-deepl-or-machine-translation-pastes-using-keystroke-timelines"
 title: "How Can World Language Teachers Distinguish Native Composition From DeepL or Machine Translation Pastes Using Keystroke Timelines? | Checkmark Plagiarism"
 seniority_date: "2026-08-19"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:29Z"
 content_hash: "ea4c27d7b672b7e8c8238be05192fdd24fdffc276556203c8d7dc8b5b37b8dca"
 uniqueness_score: 76.07
 combined_similarity: 0.9435

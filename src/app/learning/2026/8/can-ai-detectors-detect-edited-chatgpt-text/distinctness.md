@@ -2,9 +2,9 @@
 route: "/learning/2026/8/can-ai-detectors-detect-edited-chatgpt-text"
 title: "Can AI Detectors Detect Edited ChatGPT Text?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "f7b2483dac04bb84f0a4c4d07b96582647777ca5b08d661f58771d3e2584e9da"
-uniqueness_score: 10.22
+uniqueness_score: 10.43
 combined_similarity: 0.9731
 whole_page_top5_similarity: 0.9689
 top_chunk_overlap: 0.9758
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 10.22 / 100
+- **Uniqueness Score**: 10.43 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/can-chatgpt-writing-pass-an-ai-detector`
 

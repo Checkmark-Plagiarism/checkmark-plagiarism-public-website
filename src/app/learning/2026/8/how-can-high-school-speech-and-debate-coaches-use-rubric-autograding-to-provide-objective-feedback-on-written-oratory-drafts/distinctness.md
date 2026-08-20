@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-high-school-speech-and-debate-coaches-use-rubric-autograding-to-provide-objective-feedback-on-written-oratory-drafts"
 title: "How Can High School Speech and Debate Coaches Use Rubric Autograding to Provide Objective Feedback on Written Oratory Drafts? | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "c57cf2f258f70b8c3a0a4fbbd8e612bc2cffc5652f9233b8558b891915d27a61"
 uniqueness_score: 85.69
 combined_similarity: 0.9322

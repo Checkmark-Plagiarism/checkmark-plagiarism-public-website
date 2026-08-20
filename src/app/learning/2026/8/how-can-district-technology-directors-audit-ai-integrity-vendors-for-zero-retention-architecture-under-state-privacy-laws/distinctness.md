@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-district-technology-directors-audit-ai-integrity-vendors-for-zero-retention-architecture-under-state-privacy-laws"
 title: "How Can District Technology Directors Audit AI Integrity Vendors for Zero-Retention Architecture Under State Privacy Laws? | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "ef84e944bf4234c7c751da9a4498c4dc99e15436730892c460cb857312ca030d"
 uniqueness_score: 28.22
 combined_similarity: 0.9633

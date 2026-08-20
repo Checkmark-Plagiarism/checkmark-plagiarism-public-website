@@ -2,7 +2,7 @@
 route: "/learning/2026/8/best-plagiarism-checkers-for-high-schools"
 title: "6 Best Plagiarism Checkers for High Schools in 2026"
 seniority_date: "2026-08-02"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "89e9b3214f0d9ccff8d5dbfa25c82ec0425485f46ed3d392e4423819571a19e6"
 uniqueness_score: 89.37
 combined_similarity: 0.9255

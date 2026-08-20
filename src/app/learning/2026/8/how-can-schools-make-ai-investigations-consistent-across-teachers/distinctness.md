@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-schools-make-ai-investigations-consistent-across-teachers"
 title: "How Can Schools Make AI Investigations Consistent Across Teachers?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "5b17f6ace7a53b1b7b32eebb7446842f7c4feaedd170fd126145a8faa86083eb"
 uniqueness_score: 46.83
 combined_similarity: 0.9565

@@ -2,11 +2,11 @@
 route: "/learning/2026/8/how-do-i-find-out-whether-a-student-actually-wrote-an-assignment"
 title: "How Do I Find Out Whether a Student Actually Wrote an Assignment?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "93ebaea31bd5b536a03d83e1bf0f72477b2119dd0e4da87b24a581cd680ad760"
 uniqueness_score: 38.85
-combined_similarity: 0.9591
-whole_page_top5_similarity: 0.9556
+combined_similarity: 0.9593
+whole_page_top5_similarity: 0.9561
 top_chunk_overlap: 0.9614
 action: "remediation_candidate"
 nearest_competitor: "/learning/2026/8/what-writing-differences-suggest-that-someone-else-wrote-an-assignment"
@@ -25,7 +25,7 @@ remediation_status: "not_needed"
 | 2 | `/learning/2026/8/how-do-i-investigate-ai-use-without-relying-on-an-ai-detector` | 0.9665 | 0.9574 | 0.9726 |
 | 3 | `/learning/2026/8/can-google-docs-prove-that-a-student-wrote-an-essay` | 0.9663 | 0.9654 | 0.9669 |
 | 4 | `/learning/2026/8/how-can-i-verify-who-actually-wrote-an-assignment` | 0.9594 | 0.9432 | 0.9702 |
-| 5 | `/learning/2026/8/what-evidence-can-clear-a-student-accused-of-using-ai` | 0.9579 | 0.9517 | 0.9620 |
+| 5 | `/learning/2026/8/can-document-history-protect-a-student-from-a-false-ai-accusation` | 0.9580 | 0.9540 | 0.9606 |
 
 ## Semantic Chunks
 ### Section: Introduction

@@ -2,7 +2,7 @@
 route: "/learning/2026/8/what-specific-syllabus-language-protects-faculty-and-students-when-introducing-restorative-ai-integrity-checkpoints"
 title: "What Specific Syllabus Language Protects Faculty and Students When Introducing Restorative AI Integrity Checkpoints? | Checkmark Plagiarism"
 seniority_date: "2026-08-19"
-last_vectorized_at: "2026-08-19T22:54:04Z"
+last_vectorized_at: "2026-08-20T03:00:29Z"
 content_hash: "c9d3ef4801ce0343f45e50e890c48cf3fa786f9436610cecfc3294401a1c39ac"
 uniqueness_score: 85.89
 combined_similarity: 0.9318

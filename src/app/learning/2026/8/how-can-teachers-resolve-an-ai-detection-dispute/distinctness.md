@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-teachers-resolve-an-ai-detection-dispute"
 title: "How Can Teachers Resolve an AI Detection Dispute?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "cbcb325c5d6244f44f13d90732a2e3abfd77948464353d1c0f423713563ba2a9"
 uniqueness_score: 73.42
 combined_similarity: 0.9456

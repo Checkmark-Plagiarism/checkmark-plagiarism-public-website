@@ -2,7 +2,7 @@
 route: "/learning/2026/6/how-grammar-checkers-actually-work-and-how-to-use-one-well"
 title: "How Grammar Checkers Actually Work (And How to Use One Well)"
 seniority_date: "2026-06-25"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "cbd28a6eb94c05b0cfb3a92df612e6b5ea1b5181bea5d48a786726791f704f9d"
 uniqueness_score: 95.3
 combined_similarity: 0.8506

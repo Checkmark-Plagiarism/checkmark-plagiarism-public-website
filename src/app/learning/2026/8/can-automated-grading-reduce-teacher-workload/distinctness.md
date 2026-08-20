@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-automated-grading-reduce-teacher-workload"
 title: "Can Automated Grading Reduce Teacher Workload?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "150abcfe36b461608cfe68573508f17eb92857a3d2343f56f0027e1f958a3871"
 uniqueness_score: 58.9
 combined_similarity: 0.9521

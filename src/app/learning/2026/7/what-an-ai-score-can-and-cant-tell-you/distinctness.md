@@ -2,7 +2,7 @@
 route: "/learning/2026/7/what-an-ai-score-can-and-cant-tell-you"
 title: "What an AI Score Can - and Can"
 seniority_date: "2026-07-16"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "05f453bb21f3f77f1a348bc17f986c07aa79c4595923b2386cc6a9a33a42b2c9"
 uniqueness_score: 90.39
 combined_similarity: 0.9193

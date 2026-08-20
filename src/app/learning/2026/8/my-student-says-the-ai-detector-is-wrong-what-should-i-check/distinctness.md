@@ -2,9 +2,9 @@
 route: "/learning/2026/8/my-student-says-the-ai-detector-is-wrong-what-should-i-check"
 title: "My Student Says the AI Detector Is Wrong — What Should I Check?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "7d13aa369bad338969ddc56be1053c3490fa9fb7186bc9bf3e6994d095ae7b16"
-uniqueness_score: 32.52
+uniqueness_score: 32.31
 combined_similarity: 0.9612
 whole_page_top5_similarity: 0.9644
 top_chunk_overlap: 0.9591
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 32.52 / 100
+- **Uniqueness Score**: 32.31 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/what-should-teachers-check-before-accusing-a-student-of-ai-use`
 

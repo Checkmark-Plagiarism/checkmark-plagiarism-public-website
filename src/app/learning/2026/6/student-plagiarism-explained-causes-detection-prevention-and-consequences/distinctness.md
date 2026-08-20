@@ -2,7 +2,7 @@
 route: "/learning/2026/6/student-plagiarism-explained-causes-detection-prevention-and-consequences"
 title: "Student Plagiarism Explained: Causes, Detection, Prevention, and Consequences"
 seniority_date: "2026-06-25"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "a2d99684fff138cbcb23ece262ce32afb1fec7f8b2cb298b09f88e61eb4271da"
 uniqueness_score: 91.62
 combined_similarity: 0.9005

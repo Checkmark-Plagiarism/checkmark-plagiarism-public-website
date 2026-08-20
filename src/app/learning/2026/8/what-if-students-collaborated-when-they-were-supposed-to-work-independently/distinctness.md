@@ -2,7 +2,7 @@
 route: "/learning/2026/8/what-if-students-collaborated-when-they-were-supposed-to-work-independently"
 title: "What If Students Collaborated When They Were Supposed to Work Independently?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "c53ba2af741458b3b5d62173c37a6ec1787a54ceb0793bc6925401ffc947682e"
 uniqueness_score: 44.58
 combined_similarity: 0.9574

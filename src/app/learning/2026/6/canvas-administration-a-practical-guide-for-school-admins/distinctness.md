@@ -2,7 +2,7 @@
 route: "/learning/2026/6/canvas-administration-a-practical-guide-for-school-admins"
 title: "Canvas Administration: A Practical Guide for School Admins"
 seniority_date: "2026-06-25"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "43a90bc8c81ab3dd28d804a2c16d8e418f797b58b177cc09ed9d9cddb7c205cb"
 uniqueness_score: 95.71
 combined_similarity: 0.8467

@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-should-students-disclose-ai-use-in-assignments"
 title: "How Should Students Disclose AI Use in Assignments?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "a40e84b5fc876f0522c499883a4ae41397d15e9a5f5df62236b08793393052e8"
 uniqueness_score: 70.96
 combined_similarity: 0.9472
@@ -25,7 +25,7 @@ remediation_status: "not_needed"
 | 2 | `/learning/2026/8/how-should-teachers-evaluate-disclosed-ai-assistance` | 0.9618 | 0.9708 | 0.9558 |
 | 3 | `/learning/2026/8/how-can-teachers-investigate-ai-writing-that-passes-an-ai-detector` | 0.9570 | 0.9208 | 0.9811 |
 | 4 | `/learning/2026/8/is-using-ai-to-create-an-essay-outline-cheating` | 0.9568 | 0.9192 | 0.9819 |
-| 5 | `/learning/2026/8/why-doesnt-ai-detection-tell-the-whole-story` | 0.9548 | 0.9152 | 0.9811 |
+| 5 | `/learning/2026/8/why-doesnt-ai-detection-tell-the-whole-story` | 0.9556 | 0.9172 | 0.9811 |
 
 ## Semantic Chunks
 ### Section: Introduction

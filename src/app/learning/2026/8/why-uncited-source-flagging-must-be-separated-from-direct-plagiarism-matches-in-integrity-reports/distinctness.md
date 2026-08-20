@@ -2,7 +2,7 @@
 route: "/learning/2026/8/why-uncited-source-flagging-must-be-separated-from-direct-plagiarism-matches-in-integrity-reports"
 title: "Why Uncited Source Flagging Must Be Separated From Direct Plagiarism Matches in Integrity Reports | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:29Z"
 content_hash: "e1f62aac12a5154ed838834aebd4c370db0ac91b3a2b6277cca5d2ddb420a963"
 uniqueness_score: 15.75
 combined_similarity: 0.9694

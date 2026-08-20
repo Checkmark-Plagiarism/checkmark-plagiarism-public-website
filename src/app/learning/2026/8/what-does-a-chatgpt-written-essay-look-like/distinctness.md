@@ -2,7 +2,7 @@
 route: "/learning/2026/8/what-does-a-chatgpt-written-essay-look-like"
 title: "What Does a ChatGPT-Written Essay Look Like?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "92165a8ed01bb086326ae7f882f13ade207e2e07b67aa3ae26ea2ca64b5d5254"
 uniqueness_score: 69.73
 combined_similarity: 0.9475

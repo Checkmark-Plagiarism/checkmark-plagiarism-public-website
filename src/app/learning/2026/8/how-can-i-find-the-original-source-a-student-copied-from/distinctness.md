@@ -2,9 +2,9 @@
 route: "/learning/2026/8/how-can-i-find-the-original-source-a-student-copied-from"
 title: "How Can I Find the Original Source a Student Copied From?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "eca64eb37f1e6be33b45b895eb1bd63736c405f9f3b7542b9aaca358574041a6"
-uniqueness_score: 34.15
+uniqueness_score: 34.56
 combined_similarity: 0.9605
 whole_page_top5_similarity: 0.9498
 top_chunk_overlap: 0.9677
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 34.15 / 100
+- **Uniqueness Score**: 34.56 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/can-a-plagiarism-checker-show-me-the-exact-source`
 

@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-ap-seminar-teachers-use-quote-anchored-rubric-feedback-to-accelerate-first-draft-research-scoring"
 title: "How Can AP Seminar Teachers Use Quote-Anchored Rubric Feedback to Accelerate First-Draft Research Scoring? | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "aeef7230e7444a5c6ac1afd5efcc9fd4fbaccc3c473c4963dd363b826e18d34c"
 uniqueness_score: 74.44
 combined_similarity: 0.9441

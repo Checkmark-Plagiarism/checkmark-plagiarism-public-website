@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-a-plagiarism-checker-automatically-flag-the-most-suspicious-assignments"
 title: "Can a Plagiarism Checker Automatically Flag the Most Suspicious Assignments?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "aaa6967228eabe5f73155f8cf4d0cafb303811821835b7cd23d4ab818a32ed03"
 uniqueness_score: 82.0
 combined_similarity: 0.938

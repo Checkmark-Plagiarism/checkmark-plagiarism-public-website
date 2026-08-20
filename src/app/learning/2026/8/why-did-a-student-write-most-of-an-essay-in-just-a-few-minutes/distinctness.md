@@ -2,7 +2,7 @@
 route: "/learning/2026/8/why-did-a-student-write-most-of-an-essay-in-just-a-few-minutes"
 title: "Why Did a Student Write Most of an Essay in Just a Few Minutes?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "5a88eea33089a841fe1460d71aef1430bb7fbc9cc9d9becb96667aff1187137d"
 uniqueness_score: 19.84
 combined_similarity: 0.9667

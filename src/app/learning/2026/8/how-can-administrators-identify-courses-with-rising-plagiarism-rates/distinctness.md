@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-administrators-identify-courses-with-rising-plagiarism-rates"
 title: "How Can Administrators Identify Courses With Rising Plagiarism Rates?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "a5cebde3a8b21261589a52fae71f9f10cb0b0143a0be09ddf5c91f89559c0b89"
 uniqueness_score: 80.57
 combined_similarity: 0.9401

@@ -2,7 +2,7 @@
 route: "/learning/2026/8/what-should-a-schools-ai-misconduct-policy-include"
 title: "What Should a School"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "57634c8fec092693d8e81deeefbd071f49bb2cb16fb54be9829ff312ef89c46f"
 uniqueness_score: 63.6
 combined_similarity: 0.9497

@@ -2,11 +2,11 @@
 route: "/learning/2026/8/how-can-teachers-verify-an-ai-detection-result"
 title: "How Can Teachers Verify an AI Detection Result?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "cd9ee9089592bf214e8e14b449b1c914030b7ee0c171a20584a79c0649b7b9b0"
-uniqueness_score: 3.48
-combined_similarity: 0.9789
-whole_page_top5_similarity: 0.9695
+uniqueness_score: 3.27
+combined_similarity: 0.9793
+whole_page_top5_similarity: 0.9705
 top_chunk_overlap: 0.9851
 action: "remediation_candidate"
 nearest_competitor: "/learning/2026/8/what-should-i-do-when-ai-detection-and-writing-history-disagree"
@@ -15,23 +15,23 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 3.48 / 100
+- **Uniqueness Score**: 3.27 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/what-should-i-do-when-ai-detection-and-writing-history-disagree`
 
 | Rank | Route / Slug | Combined Sim | Page Sim | Top Chunk Sim |
 | :--- | :--- | :--- | :--- | :--- |
 | 1 | `/learning/2026/8/what-should-i-do-when-ai-detection-and-writing-history-disagree` | 0.9894 | 0.9734 | 1.0000 |
-| 2 | `/learning/2026/8/how-can-teachers-investigate-a-possible-ai-false-positive` | 0.9883 | 0.9707 | 1.0000 |
-| 3 | `/learning/2026/8/why-doesnt-ai-detection-tell-the-whole-story` | 0.9877 | 0.9692 | 1.0000 |
-| 4 | `/learning/2026/8/what-if-an-ai-detector-flags-a-student-who-actually-wrote-the-essay` | 0.9871 | 0.9678 | 1.0000 |
+| 2 | `/learning/2026/8/how-can-teachers-investigate-a-possible-ai-false-positive` | 0.9890 | 0.9726 | 1.0000 |
+| 3 | `/learning/2026/8/why-doesnt-ai-detection-tell-the-whole-story` | 0.9882 | 0.9704 | 1.0000 |
+| 4 | `/learning/2026/8/what-if-an-ai-detector-flags-a-student-who-actually-wrote-the-essay` | 0.9878 | 0.9695 | 1.0000 |
 | 5 | `/learning/2026/8/how-can-teachers-investigate-ai-writing-that-passes-an-ai-detector` | 0.9866 | 0.9664 | 1.0000 |
 
 ## Semantic Chunks
 ### Section: Introduction
 - **Level**: `intro`
 - **Hash**: `276b7553e3680079b5c3e63c61676abb59fc1a6ecfd5c14aca511fec325bb79a`
-- **Best Competitor Match**: `/learning/2026/8/how-do-i-investigate-ai-use-without-relying-on-an-ai-detector` (Similarity: 0.9413)
+- **Best Competitor Match**: `/learning/2026/8/how-can-teachers-investigate-a-possible-ai-false-positive` (Similarity: 0.9418)
 
 ```text
 Teachers can verify an AI detection result with 100% forensic certainty by cross-checking the statistical probability score against physical writing process metrics—such as active drafting duration, revision depth, keystroke replays, and citation audits.

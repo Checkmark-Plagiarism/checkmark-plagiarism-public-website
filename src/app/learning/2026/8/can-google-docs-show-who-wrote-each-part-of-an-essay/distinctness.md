@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-google-docs-show-who-wrote-each-part-of-an-essay"
 title: "Can Google Docs Show Who Wrote Each Part of an Essay?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "990a9ad2281a2cee82f654f3b6e07dcb7ebe4af5ef89ab66362196cba8b413bc"
 uniqueness_score: 87.32
 combined_similarity: 0.9301

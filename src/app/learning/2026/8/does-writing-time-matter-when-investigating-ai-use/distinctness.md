@@ -2,11 +2,11 @@
 route: "/learning/2026/8/does-writing-time-matter-when-investigating-ai-use"
 title: "Does Writing Time Matter When Investigating AI Use?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "2a97165bdfcde58333d60ebf0f894b829e331fa6d2bb3fd5989630484775937e"
-uniqueness_score: 21.06
+uniqueness_score: 20.86
 combined_similarity: 0.9664
-whole_page_top5_similarity: 0.9584
+whole_page_top5_similarity: 0.9585
 top_chunk_overlap: 0.9717
 action: "remediation_candidate"
 nearest_competitor: "/learning/2026/8/can-a-student-copy-ai-text-slowly-enough-to-avoid-detection"
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 21.06 / 100
+- **Uniqueness Score**: 20.86 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/can-a-student-copy-ai-text-slowly-enough-to-avoid-detection`
 

@@ -2,9 +2,9 @@
 route: "/learning/2026/8/what-should-i-do-if-two-students-submit-nearly-identical-essays"
 title: "What Should I Do If Two Students Submit Nearly Identical Essays?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "b21040cd64549f68b97f29b743ef7e21a0e295d24e15d09ff2549beb8c6aa228"
-uniqueness_score: 13.91
+uniqueness_score: 14.11
 combined_similarity: 0.9705
 whole_page_top5_similarity: 0.9664
 top_chunk_overlap: 0.9732
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 13.91 / 100
+- **Uniqueness Score**: 14.11 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/how-should-teachers-investigate-peer-to-peer-plagiarism`
 

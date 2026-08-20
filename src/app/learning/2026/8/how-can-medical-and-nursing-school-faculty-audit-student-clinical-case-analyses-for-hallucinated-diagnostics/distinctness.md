@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-medical-and-nursing-school-faculty-audit-student-clinical-case-analyses-for-hallucinated-diagnostics"
 title: "How Can Medical and Nursing School Faculty Audit Student Clinical Case Analyses for Hallucinated Diagnostics? | Checkmark Plagiarism"
 seniority_date: "2026-08-19"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:29Z"
 content_hash: "0d22a95f480230868093299f5edeafd343bbe84c6b2d862d34bd8ff32cbeaf6e"
 uniqueness_score: 88.34
 combined_similarity: 0.9284

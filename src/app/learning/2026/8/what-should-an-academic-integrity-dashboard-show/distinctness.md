@@ -2,7 +2,7 @@
 route: "/learning/2026/8/what-should-an-academic-integrity-dashboard-show"
 title: "What Should an Academic Integrity Dashboard Show?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "7cb6565418d3ea3129b27b18b9e35e4e6edb6faabb6f8367d0124a6338757f6b"
 uniqueness_score: 71.17
 combined_similarity: 0.947

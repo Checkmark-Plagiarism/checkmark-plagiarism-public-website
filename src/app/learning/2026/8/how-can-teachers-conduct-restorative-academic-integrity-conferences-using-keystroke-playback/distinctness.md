@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-teachers-conduct-restorative-academic-integrity-conferences-using-keystroke-playback"
 title: "How Can Teachers Conduct Restorative Academic Integrity Conferences Using Keystroke Playback? | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "cb554fa350f449b7518537ac7b47baaf3be3c97e56fc6e9ffdb72545c2974f51"
 uniqueness_score: 68.92
 combined_similarity: 0.9477

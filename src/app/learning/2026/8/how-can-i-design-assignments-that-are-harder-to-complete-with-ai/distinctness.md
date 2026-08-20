@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-i-design-assignments-that-are-harder-to-complete-with-ai"
 title: "How Can I Design Assignments That Are Harder to Complete With AI?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "c0decff69c6847d6e728199ca558cdc16858ee1537cabd1683a6728f8bf7a5cc"
 uniqueness_score: 32.72
 combined_similarity: 0.9612

@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-district-it-directors-can-ensure-student-essays-are-never-cached-in-public-llm-repositories"
 title: "How District IT Directors Can Ensure Student Essays Are Never Cached in Public LLM Repositories | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "9a493d1cf76cfdf516e88e507ec585cb1ccad7f7ae5cdb2b55cc0b22ddd42b7d"
 uniqueness_score: 59.92
 combined_similarity: 0.9516

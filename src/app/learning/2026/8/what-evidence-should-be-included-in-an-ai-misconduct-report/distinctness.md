@@ -2,9 +2,9 @@
 route: "/learning/2026/8/what-evidence-should-be-included-in-an-ai-misconduct-report"
 title: "What Evidence Should Be Included in an AI Misconduct Report?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "022d15e7ebaff444dd734640678c96c45735aaecbd5925fa782106928bd31de8"
-uniqueness_score: 49.9
+uniqueness_score: 49.69
 combined_similarity: 0.9554
 whole_page_top5_similarity: 0.9569
 top_chunk_overlap: 0.9544
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 49.9 / 100
+- **Uniqueness Score**: 49.69 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/what-should-teachers-check-before-accusing-a-student-of-ai-use`
 

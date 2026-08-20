@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-peer-tutoring-centers-use-keystroke-playback-replays-to-coach-reluctant-writers-through-revision-stalls"
 title: "How Can Peer Tutoring Centers Use Keystroke Playback Replays to Coach Reluctant Writers Through Revision Stalls? | Checkmark Plagiarism"
 seniority_date: "2026-08-18"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "fa4af4f34692fd2374cd71494fd6bb9aceebd3b83e7ce2266d1153515b62b166"
 uniqueness_score: 82.62
 combined_similarity: 0.937

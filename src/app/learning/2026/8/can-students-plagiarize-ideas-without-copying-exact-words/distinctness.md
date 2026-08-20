@@ -2,7 +2,7 @@
 route: "/learning/2026/8/can-students-plagiarize-ideas-without-copying-exact-words"
 title: "Can Students Plagiarize Ideas Without Copying Exact Words?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "b8d746fabc7052ebcdbde84a6040e20900b9e2709636fa19cd1502d1f8826143"
 uniqueness_score: 74.23
 combined_similarity: 0.9442

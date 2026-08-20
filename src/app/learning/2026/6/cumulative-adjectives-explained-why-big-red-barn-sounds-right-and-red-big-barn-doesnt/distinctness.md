@@ -2,7 +2,7 @@
 route: "/learning/2026/6/cumulative-adjectives-explained-why-big-red-barn-sounds-right-and-red-big-barn-doesnt"
 title: "Cumulative Adjectives, Explained: Why \"
 seniority_date: "2026-06-25"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:25Z"
 content_hash: "4c67f7ed105ca206ca487c05b33dfa8e5472d45f6e9dfa084a8743c3fdc40177"
 uniqueness_score: 99.59
 combined_similarity: 0.7458

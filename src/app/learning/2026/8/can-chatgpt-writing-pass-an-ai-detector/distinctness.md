@@ -2,9 +2,9 @@
 route: "/learning/2026/8/can-chatgpt-writing-pass-an-ai-detector"
 title: "Can ChatGPT Writing Pass an AI Detector?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:00Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "551f2894638f96c53c4a540a0ea7b5ce4d1ce962f769b259eba57bb159b36abd"
-uniqueness_score: 23.52
+uniqueness_score: 23.72
 combined_similarity: 0.9653
 whole_page_top5_similarity: 0.9681
 top_chunk_overlap: 0.9634
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 23.52 / 100
+- **Uniqueness Score**: 23.72 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/can-ai-detectors-detect-edited-chatgpt-text`
 

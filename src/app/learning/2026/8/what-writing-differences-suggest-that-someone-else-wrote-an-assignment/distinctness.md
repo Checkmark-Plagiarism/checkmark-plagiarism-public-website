@@ -2,7 +2,7 @@
 route: "/learning/2026/8/what-writing-differences-suggest-that-someone-else-wrote-an-assignment"
 title: "What Writing Differences Suggest That Someone Else Wrote an Assignment?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:28Z"
 content_hash: "99a2547d7e601123b50f2d09bf57350ac03324c8c61306fd31d5c245f6b7cf53"
 uniqueness_score: 21.68
 combined_similarity: 0.9661

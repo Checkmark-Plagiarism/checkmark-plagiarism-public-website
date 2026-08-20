@@ -2,9 +2,9 @@
 route: "/learning/2026/8/what-does-a-large-paste-event-mean-in-a-student-essay"
 title: "What Does a Large Paste Event Mean in a Student Essay?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:02Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "f4b6e2fcff219be996a3b8a1827faa899579e3f8895fec00e3270091c15224a9"
-uniqueness_score: 9.41
+uniqueness_score: 9.61
 combined_similarity: 0.9737
 whole_page_top5_similarity: 0.9709
 top_chunk_overlap: 0.9756
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 9.41 / 100
+- **Uniqueness Score**: 9.61 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/how-can-teachers-investigate-an-essay-that-appeared-all-at-once`
 

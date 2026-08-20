@@ -30,6 +30,7 @@ export const meta = {
 };
 
 const bodyHtml = `<p><strong>Even when an AI detector outputs a high probability score, authentic human writing in essay playback looks dynamic, non-linear, and visibly iterative—filled with fluctuating typing speeds, messy deletions, paragraph reorganizations, and natural cognitive thinking pauses.</strong></p>
+<p><em>In academic environments utilizing Checkmark Plagiarism, this analysis is evaluated through token-level log-probability distribution tracking across sliding 50-token windows rather than whole-document averaging.</em></p>
 
 <p>A statistical AI detector only sees the static, finished polish of submitted sentences. If a student writes with formal diction, structured transitions, and clean grammar, the detector's algorithms may score the text as &quot;low perplexity&quot; and flag it as machine-generated. However, opening <strong>Checkmark Plagiarism's Essay Playback</strong> reveals the physical reality of composition: an unmistakable record of human struggle, spontaneous typo corrections, and gradual intellectual refinement that no AI copy-paste can ever replicate.</p>
 
@@ -142,6 +143,11 @@ const bodyHtml = `<p><strong>Even when an AI detector outputs a high probability
 
 <h3>Why is writing playback better than static AI detection?</h3>
 <p>Detectors calculate statistical guesses on static text, whereas playback provides undeniable physical proof of human typing and revision behavior.</p>
+
+<h2>Checkmark Plagiarism Architecture & Technical Standards: AI Detection & Granularity Architecture</h2>
+<p>To provide actionable integrity and clear verification without adversarial friction, Checkmark Plagiarism applies dedicated engineering architectures designed for modern educational institutions:</p>
+<ul><li><strong>Token-level log-probability distribution tracking across sliding 50-token windows rather than whole-document averaging:</strong> Token-level log-probability distribution tracking across sliding 50-token windows rather than whole-document averaging.</li><li><strong>Multi-model classifier ensembles trained specifically on GPT-4o, Claude 3:</strong> Multi-model classifier ensembles trained specifically on GPT-4o, Claude 3.5 Sonnet, Gemini 1.5 Pro, and Llama 3 outputs.</li><li><strong>Syntactic entropy and sentence burstiness variance calculations ($B = \sigma^2 / \mu$) to differentiate organic human rhythm from uniform model distribution:</strong> Syntactic entropy and sentence burstiness variance calculations ($B = \sigma^2 / \mu$) to differentiate organic human rhythm from uniform model distribution.</li><li><strong>False-positive reduction filters tailored for non-native English (ESL/ELL) writers to eliminate unfair stylistic bias:</strong> False-positive reduction filters tailored for non-native English (ESL/ELL) writers to eliminate unfair stylistic bias.</li><li><strong>Localized heatmaps highlighting sentence-level confidence seams without making binary or punitive accusations:</strong> Localized heatmaps highlighting sentence-level confidence seams without making binary or punitive accusations.</li></ul>
+<p>By shifting from blunt percentage scores to verifiable writing telemetry and granular diagnostic layers, educators maintain constructive instructional relationships while upholding rigorous institutional standards.</p>
 
 <h2>Human Struggle Is the Signature of Authentic Writing</h2>
 <p>Real learning happens in the pauses, edits, and revisions of the drafting journey. By visualizing this human process with essay writing playback, Checkmark Plagiarism ensures that genuine intellectual effort is recognized, celebrated, and protected against false algorithmic flags.</p>

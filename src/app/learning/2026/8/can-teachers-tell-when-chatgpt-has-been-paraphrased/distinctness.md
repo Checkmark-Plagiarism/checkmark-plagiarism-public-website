@@ -2,9 +2,9 @@
 route: "/learning/2026/8/can-teachers-tell-when-chatgpt-has-been-paraphrased"
 title: "Can Teachers Tell When ChatGPT Has Been Paraphrased?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:26Z"
 content_hash: "9dadca13774641540841f8e7b1b49a22f4a3b7ab13d6e47ebd4bfeaf02959e2a"
-uniqueness_score: 34.76
+uniqueness_score: 34.97
 combined_similarity: 0.9605
 whole_page_top5_similarity: 0.9608
 top_chunk_overlap: 0.9602
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 34.76 / 100
+- **Uniqueness Score**: 34.97 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/can-chatgpt-paraphrase-plagiarized-text`
 
@@ -25,7 +25,7 @@ remediation_status: "not_needed"
 | 2 | `/learning/2026/8/can-ai-paraphrasing-tools-beat-plagiarism-checkers` | 0.9640 | 0.9629 | 0.9648 |
 | 3 | `/learning/2026/8/can-students-hide-chatgpt-use-by-rewriting-the-answer` | 0.9578 | 0.9601 | 0.9563 |
 | 4 | `/learning/2026/8/can-teachers-detect-chatgpt-after-a-student-changes-the-words` | 0.9514 | 0.9482 | 0.9535 |
-| 5 | `/learning/2026/8/can-students-beat-ai-detection-by-manually-rewriting-chatgpt` | 0.9495 | 0.9434 | 0.9536 |
+| 5 | `/learning/2026/8/can-students-beat-ai-detection-by-manually-rewriting-chatgpt` | 0.9499 | 0.9444 | 0.9536 |
 
 ## Semantic Chunks
 ### Section: Introduction

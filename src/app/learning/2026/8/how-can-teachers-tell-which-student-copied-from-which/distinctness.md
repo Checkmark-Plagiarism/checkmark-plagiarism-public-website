@@ -2,9 +2,9 @@
 route: "/learning/2026/8/how-can-teachers-tell-which-student-copied-from-which"
 title: "How Can Teachers Tell Which Student Copied From Which?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "8a92ddcc3c4673958e5f7cba81a03847d62b1a0c666abe2c98907b3630884641"
-uniqueness_score: 29.45
+uniqueness_score: 29.65
 combined_similarity: 0.9624
 whole_page_top5_similarity: 0.9629
 top_chunk_overlap: 0.962
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 29.45 / 100
+- **Uniqueness Score**: 29.65 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/what-should-i-do-if-two-students-submit-nearly-identical-essays`
 

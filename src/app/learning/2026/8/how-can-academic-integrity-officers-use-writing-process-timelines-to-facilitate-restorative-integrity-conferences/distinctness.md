@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-academic-integrity-officers-use-writing-process-timelines-to-facilitate-restorative-integrity-conferences"
 title: "How Can Academic Integrity Officers Use Writing Process Timelines to Facilitate Restorative Integrity Conferences? | Checkmark Plagiarism"
 seniority_date: "2026-08-19"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:29Z"
 content_hash: "b8a27b763ff6494aca947e78812abe5cdfb9d2d6275190b27b8920c8a2ff08f8"
 uniqueness_score: 56.24
 combined_similarity: 0.953

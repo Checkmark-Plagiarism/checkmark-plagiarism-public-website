@@ -31,6 +31,7 @@ export const meta = {
 };
 
 const bodyHtml = `<p><strong>Yes. ChatGPT routinely, effortlessly, and convincingly creates fake academic sources, fabricated book titles, phantom authors, and dead DOIs for student essays.</strong></p>
+<p><em>In academic environments utilizing Checkmark Plagiarism, this analysis is evaluated through token-level log-probability distribution tracking across sliding 50-token windows rather than whole-document averaging.</em></p>
 
 <p>When students prompt ChatGPT to <em>&quot;write a 5-page research paper with 4 scholarly APA sources,&quot;</em> they frequently assume the AI queries a real library database like JSTOR or Google Scholar. In reality, large language models generate text by predicting statistically probable sequences of words. When asked for citations, the AI simply hallucinates references that &quot;look&quot; authentic—pairing real professor names with invented study titles or creating plausible-sounding academic journals that do not exist.</p>
 
@@ -152,6 +153,11 @@ const bodyHtml = `<p><strong>Yes. ChatGPT routinely, effortlessly, and convincin
 
 <h3>How does Checkmark Plagiarism help teachers detect hallucinated citations?</h3>
 <p>Checkmark Plagiarism highlights unverified sources, tracks bibliography paste events in writing playback, and compiles exportable evidence packets directly inside Canvas and Google Classroom.</p>
+
+<h2>Checkmark Plagiarism Architecture & Technical Standards: AI Detection & Granularity Architecture</h2>
+<p>To provide actionable integrity and clear verification without adversarial friction, Checkmark Plagiarism applies dedicated engineering architectures designed for modern educational institutions:</p>
+<ul><li><strong>Token-level log-probability distribution tracking across sliding 50-token windows rather than whole-document averaging:</strong> Token-level log-probability distribution tracking across sliding 50-token windows rather than whole-document averaging.</li><li><strong>Multi-model classifier ensembles trained specifically on GPT-4o, Claude 3:</strong> Multi-model classifier ensembles trained specifically on GPT-4o, Claude 3.5 Sonnet, Gemini 1.5 Pro, and Llama 3 outputs.</li><li><strong>Syntactic entropy and sentence burstiness variance calculations ($B = \sigma^2 / \mu$) to differentiate organic human rhythm from uniform model distribution:</strong> Syntactic entropy and sentence burstiness variance calculations ($B = \sigma^2 / \mu$) to differentiate organic human rhythm from uniform model distribution.</li><li><strong>False-positive reduction filters tailored for non-native English (ESL/ELL) writers to eliminate unfair stylistic bias:</strong> False-positive reduction filters tailored for non-native English (ESL/ELL) writers to eliminate unfair stylistic bias.</li><li><strong>Localized heatmaps highlighting sentence-level confidence seams without making binary or punitive accusations:</strong> Localized heatmaps highlighting sentence-level confidence seams without making binary or punitive accusations.</li></ul>
+<p>By shifting from blunt percentage scores to verifiable writing telemetry and granular diagnostic layers, educators maintain constructive instructional relationships while upholding rigorous institutional standards.</p>
 
 <h2>Fake Citations Provide Irrefutable Integrity Evidence</h2>
 <p>Generative AI hallucination turns bibliographies into a powerful forensic tool for educators. By auditing cited sources and corroborating findings with essay writing playback and student dialogue, teachers defend academic standards with indisputable physical proof.</p>

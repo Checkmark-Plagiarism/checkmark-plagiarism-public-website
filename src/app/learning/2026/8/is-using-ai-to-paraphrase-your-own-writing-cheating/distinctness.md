@@ -2,9 +2,9 @@
 route: "/learning/2026/8/is-using-ai-to-paraphrase-your-own-writing-cheating"
 title: "Is Using AI to Paraphrase Your Own Writing Cheating?"
 seniority_date: "2026-08-14"
-last_vectorized_at: "2026-08-19T22:54:01Z"
+last_vectorized_at: "2026-08-20T03:00:27Z"
 content_hash: "62d98e39df4db3cd6f3b4e848e7a0136fb394e840b077dbc09569fe3722299cf"
-uniqueness_score: 34.97
+uniqueness_score: 35.17
 combined_similarity: 0.9605
 whole_page_top5_similarity: 0.9618
 top_chunk_overlap: 0.9595
@@ -15,7 +15,7 @@ remediation_status: "not_needed"
 ---
 
 ## Summary & Similar Pages
-- **Uniqueness Score**: 34.97 / 100
+- **Uniqueness Score**: 35.17 / 100
 - **Action**: `remediation_candidate`
 - **Nearest Competitor**: `/learning/2026/8/is-using-chatgpt-to-edit-an-essay-cheating`
 
@@ -24,8 +24,8 @@ remediation_status: "not_needed"
 | 1 | `/learning/2026/8/is-using-chatgpt-to-edit-an-essay-cheating` | 0.9794 | 0.9706 | 0.9852 |
 | 2 | `/learning/2026/8/can-paraphrasing-ai-text-make-it-undetectable` | 0.9709 | 0.9501 | 0.9848 |
 | 3 | `/learning/2026/8/can-teachers-detect-manually-typed-ai-responses` | 0.9690 | 0.9362 | 0.9908 |
-| 4 | `/learning/2026/8/do-real-student-essays-usually-have-deletions-and-revisions` | 0.9672 | 0.9380 | 0.9867 |
-| 5 | `/learning/2026/8/what-does-human-writing-look-like-even-when-an-ai-detector-flags-it` | 0.9670 | 0.9410 | 0.9844 |
+| 4 | `/learning/2026/8/what-does-human-writing-look-like-even-when-an-ai-detector-flags-it` | 0.9680 | 0.9434 | 0.9844 |
+| 5 | `/learning/2026/8/do-real-student-essays-usually-have-deletions-and-revisions` | 0.9672 | 0.9380 | 0.9867 |
 
 ## Semantic Chunks
 ### Section: Introduction

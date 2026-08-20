@@ -2,7 +2,7 @@
 route: "/learning/2026/8/how-can-faculty-audit-multi-author-group-research-papers-for-individual-writing-contributions-and-source-integrity"
 title: "How Can Faculty Audit Multi-Author Group Research Papers for Individual Writing Contributions and Source Integrity? | Checkmark Plagiarism"
 seniority_date: "2026-08-19"
-last_vectorized_at: "2026-08-19T22:54:03Z"
+last_vectorized_at: "2026-08-20T03:00:29Z"
 content_hash: "de875826b53d03ad551f9789da1b6176e31960cfb1d481935adbeb12a4ff2bbb"
 uniqueness_score: 74.85
 combined_similarity: 0.9439
