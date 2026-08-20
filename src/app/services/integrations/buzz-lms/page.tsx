@@ -2,7 +2,6 @@ import { Metadata } from "next";
 import Link from "next/link";
 import {
   ArrowRight,
-  Check,
   CheckCircle2,
   ClipboardList,
   Clipboard,
@@ -10,7 +9,6 @@ import {
   Highlighter,
   KeyRound,
   Lock,
-  Minus,
   MousePointerClick,
   ShieldCheck,
   Timer,
@@ -55,7 +53,7 @@ const faqs = [
   {
     question: "Do teachers have to rebuild their Buzz assessments?",
     answer:
-      "No. Checkmark attaches to essay questions you already have. A teacher pastes one line into the question's feedback area and the report appears underneath it. The prompt, points, and rubric stay exactly as authored, and students see no change at all.",
+      "No. Checkmark attaches to essay questions you already have. A teacher pastes one line into the question's feedback area and the report appears underneath it. The prompt, points, and rubric stay as authored, and students answer in Buzz's own editor exactly as before.",
   },
   {
     question: "Where do teachers see the report?",
@@ -65,7 +63,7 @@ const faqs = [
   {
     question: "Does Checkmark interfere with BusyBee?",
     answer:
-      "No, and that is enforced in code rather than left to configuration. Autograding is included with Checkmark, but on a native essay question it is off unless you switch it on. Leave it off and Checkmark writes no rubric scores and no per-criterion feedback at all, so BusyBee keeps grading exactly as it does now. Where Checkmark does write to Buzz, it merges into the current teacher response, so anything already there survives.",
+      "No. Autograding ships with Checkmark but is off by default on native essay questions, enforced in code rather than configuration. Left off, Checkmark writes nothing into a grading field, so BusyBee grades as it does today. Switched on, it fills your rubric scores; the per-criterion Feedback boxes stay BusyBee's on native questions. Where Checkmark does write to Buzz, it merges into the current teacher response.",
   },
   {
     question: "What does Custom Question add?",
@@ -97,18 +95,6 @@ const faqs = [
     answer:
       "As AI likeness, not a verdict about a student. Checkmark reports the share of an essay that crosses a high-confidence threshold and underlines those passages, so a teacher sees which parts rather than one number. Text alone cannot establish authorship, which is why on Custom Question the same report also shows how the writing was produced.",
   },
-];
-
-const tileComparison: Array<[string, boolean, boolean, string]> = [
-  ["Uncited source matches", true, true, "Matched text with its source and a side-by-side quote."],
-  ["AI likeness", true, true, "Passage level, with a confidence reading on each."],
-  ["Autograding against your rubric", true, true, "Off by default on native essays, on by default on Custom Question."],
-  ["Pasted text", false, true, "Text that arrived from the clipboard rather than the keyboard."],
-  ["Transcribed text", false, true, "Typed, but in a copying rhythm rather than a composing one."],
-  ["Playback of the writing session", false, true, "Replay the essay as it was written."],
-  ["Why a passage was flagged", false, true, "The timing patterns behind a transcription flag."],
-  ["Rubric shown to the student while writing", false, true, "The same rubric already attached in Buzz."],
-  ["Report opens with no unlock step", false, true, "Handled by the question itself."],
 ];
 
 export default function BuzzLMSIntegrationPage() {
@@ -215,13 +201,13 @@ export default function BuzzLMSIntegrationPage() {
             <IconFeature
               icon={CheckCircle2}
               title="Students write in Buzz"
-              text="Same assessment, same essay question, Buzz's own editor. Nothing to install and nothing new for a student to learn. A teacher connects a question by pasting one line into its feedback area."
+              text="Same assessment, same essay question, Buzz's own editor. Nothing for a student to install or learn. A teacher connects a question by pasting one line into its feedback area."
               tone="cyan"
             />
             <IconFeature
               icon={ClipboardList}
               title="Reports open in the gradebook"
-              text="The report renders under the question, inside Buzz's grading view, so nobody leaves the gradebook to read it. Similarity matches show their sources; AI likeness is marked passage by passage."
+              text="The report renders under the question, inside Buzz's grading view. Similarity matches show their sources, and AI likeness is marked passage by passage."
               tone="emerald"
             />
             <IconFeature
@@ -242,6 +228,10 @@ export default function BuzzLMSIntegrationPage() {
             />
           </div>
 
+          <div className="mt-8 flex justify-center">
+            <RelatedLink href="/services/autograder" label="How Checkmark's autograder works" />
+          </div>
+
           <div className="mt-10 mx-auto max-w-4xl rounded-3xl bg-emerald-100 p-6 md:p-8">
             <div className="flex flex-col sm:flex-row sm:items-start gap-4">
               <div className="h-11 w-11 rounded-lg bg-emerald-600 flex items-center justify-center flex-shrink-0">
@@ -249,14 +239,21 @@ export default function BuzzLMSIntegrationPage() {
               </div>
               <div className="space-y-2">
                 <h3 className="text-lg font-semibold text-foreground">
-                  Already using BusyBee? Keep it.
+                  Already using BusyBee? Switch our grading off.
                 </h3>
                 <p className="text-sm leading-relaxed text-foreground/75">
-                  With Checkmark&apos;s grading left off, a native essay question gets the integrity
-                  report and nothing else: no rubric scores, no per-criterion comments, nothing
-                  written into a grading field. That is enforced in code, not left to configuration.
-                  Where Checkmark does write to Buzz, it merges into the current teacher response,
-                  so anything already there survives.
+                  Checkmark&apos;s autograding is a switch, not a requirement. Leave it off on a
+                  native essay question and BusyBee grades the assignment exactly as it does today,
+                  because Checkmark writes no rubric scores, no per-criterion comments, and nothing
+                  at all into a grading field. You still get the integrity report under the
+                  question.
+                </p>
+                <p className="text-sm leading-relaxed text-foreground/75">
+                  That separation is enforced in code rather than left to configuration, and it is
+                  reversible. Switch our grading on later and it fills your rubric scores, while
+                  the per-criterion Feedback boxes stay BusyBee&apos;s on native questions. Where
+                  Checkmark does write to Buzz it merges into the current teacher response, so
+                  anything already sitting there survives.
                 </p>
               </div>
             </div>
@@ -329,8 +326,8 @@ export default function BuzzLMSIntegrationPage() {
                 <h3 className="text-lg font-semibold text-foreground">Access built in</h3>
                 <p className="text-sm text-muted-foreground">
                   The question handles access, so the report is there when the teacher opens it. No
-                  link to find, nothing to redo on another device. Both paths confirm the reader can
-                  already grade the course; this one takes fewer steps.
+                  link to find, nothing to redo on another device. Both paths confirm the reader
+                  can already grade the course. This one takes fewer steps.
                 </p>
               </CardContent>
             </Card>
@@ -362,39 +359,6 @@ export default function BuzzLMSIntegrationPage() {
             </Card>
           </div>
 
-          <div className="mt-12 mx-auto max-w-6xl overflow-x-auto bg-white rounded-2xl shadow-soft border border-border">
-            <table className="w-full text-sm min-w-[640px]">
-              <thead className="text-left">
-                <tr className="border-b border-border">
-                  <th className="py-4 pl-6 pr-4 font-semibold">In the report</th>
-                  <th className="py-4 px-4 font-semibold">Native essay</th>
-                  <th className="py-4 px-4 font-semibold">Custom Question</th>
-                  <th className="py-4 pr-6 pl-4 font-semibold">What it shows</th>
-                </tr>
-              </thead>
-              <tbody className="align-top">
-                {tileComparison.map(([label, native, custom, note], i) => (
-                  <tr key={i} className="border-b border-border/60 last:border-0">
-                    <td className="py-3 pl-6 pr-4 text-foreground font-medium">{label}</td>
-                    {[native, custom].map((v, j) => (
-                      <td key={j} className="py-3 px-4">
-                        {v ? (
-                          <span className="inline-flex items-center gap-2 text-brand-700">
-                            <Check className="h-4 w-4" /> Yes
-                          </span>
-                        ) : (
-                          <span className="inline-flex items-center gap-2 text-muted-foreground">
-                            <Minus className="h-4 w-4" /> No
-                          </span>
-                        )}
-                      </td>
-                    ))}
-                    <td className="py-3 pr-6 pl-4 text-muted-foreground">{note}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
 
           <div className="mt-10 mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-8">
             <Screenshot
@@ -411,10 +375,6 @@ export default function BuzzLMSIntegrationPage() {
               height={1714}
               caption="Playback replays the session from blank page to submission."
             />
-          </div>
-
-          <div className="mt-8 flex justify-center">
-            <RelatedLink href="/services/autograder" label="How Checkmark's autograder works" />
           </div>
         </div>
       </section>
