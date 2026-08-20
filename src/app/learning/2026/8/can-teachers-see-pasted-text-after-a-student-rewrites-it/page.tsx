@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Teachers See Pasted Text After a Student Rewrites It?",
   description: "Learn how original paste preservation and writing analytics allow teachers to see the unedited raw text pasted into a document, even after extensive rewriting.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

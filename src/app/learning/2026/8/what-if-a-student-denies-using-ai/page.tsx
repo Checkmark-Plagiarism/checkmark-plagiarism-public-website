@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What If a Student Denies Using AI?",
   description: "Learn how to handle student denial of AI use objectively—using keystroke playback, citation reality checks, and in-person writing prompts in Checkmark.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

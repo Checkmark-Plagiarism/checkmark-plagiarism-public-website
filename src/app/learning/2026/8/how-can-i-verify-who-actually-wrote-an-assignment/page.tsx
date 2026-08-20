@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can I Verify Who Actually Wrote an Assignment?",
   description: "Learn how teachers verify authentic assignment authorship: baseline comparisons, writing playback, source authentication, and evidence-based student conferences.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

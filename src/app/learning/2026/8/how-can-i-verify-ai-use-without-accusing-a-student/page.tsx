@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can I Verify AI Use Without Accusing a Student?",
   description: "Learn how teachers investigate suspected AI use through verification rather than accusation: process questions, baseline comparisons, writing playback, and citation checks.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

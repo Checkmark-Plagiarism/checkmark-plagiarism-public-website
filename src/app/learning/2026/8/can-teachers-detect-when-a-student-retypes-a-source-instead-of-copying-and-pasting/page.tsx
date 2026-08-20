@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Teachers Detect When a Student Retypes a Source Instead of Copying and Pasting?",
   description: "Learn how transcription detection, keystroke dynamics, and plagiarism matching identify when a student manually retypes an external source or AI response.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

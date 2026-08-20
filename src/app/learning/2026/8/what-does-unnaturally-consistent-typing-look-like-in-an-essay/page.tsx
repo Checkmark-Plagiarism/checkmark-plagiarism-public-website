@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Does Unnaturally Consistent Typing Look Like in an Essay?",
   description: "Learn how keystroke analysis, inter-key interval distributions, and pause dynamics identify unnaturally consistent typing patterns in student writing.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

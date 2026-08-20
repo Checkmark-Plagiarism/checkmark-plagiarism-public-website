@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Direct LMS Grade Passback Eliminates Manual Entry for Canvas and Buzz Writing Teachers | Checkmark Plagiarism",
   description: "Discover how direct LMS grade passback via LTI 1.3 AGS and native APIs eliminates manual double-entry grading for Canvas and Buzz writing teachers while preserving educator control.",
   "opengraph-image": "/images/services/report-grading-view.png",

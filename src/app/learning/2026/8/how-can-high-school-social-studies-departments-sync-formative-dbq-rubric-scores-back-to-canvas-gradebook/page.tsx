@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can High School Social Studies Departments Sync Formative DBQ Rubric Scores Back to Canvas Gradebook? | Checkmark Plagiarism",
   description: "An authoritative guide for High School Social Studies Department Chairs, AP U.S. History (APUSH), AP European History, and AP World History teachers on synchronizing formative 7-point DBQ rubric evaluations, quote-anchored sourcing feedback, and keystroke integrity telemetry directly into Canvas LMS SpeedGrader via 1EdTech LTI 1.3 Advantage and Assignment and Grade Services (AGS 2.0).",
   "opengraph-image": "/images/learning/how-can-high-school-social-studies-departments-sync-formative-dbq-rubric-scores-back-to-canvas-gradebook/featured.png",

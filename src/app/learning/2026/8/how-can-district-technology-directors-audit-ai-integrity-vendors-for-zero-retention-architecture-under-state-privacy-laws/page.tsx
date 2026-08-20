@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can District Technology Directors Audit AI Integrity Vendors for Zero-Retention Architecture Under State Privacy Laws? | Checkmark Plagiarism",
   description: "An authoritative technical and legal procurement guide for District CTOs, Technology Directors, and Data Privacy Officers on auditing AI detection vendors for zero-retention architecture, state privacy law compliance (NY Ed Law 2-D, SOPPA, SOPIPA), and student IP protection.",
   "opengraph-image": "/images/learning/how-can-district-technology-directors-audit-ai-integrity-vendors-for-zero-retention-architecture-under-state-privacy-laws/featured.png",

@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can High School AP Spanish and French Teachers Differentiate Organic Drafting From Machine-Translated Outlines in Cultural Comparison Presentations? | Checkmark Plagiarism",
   description: "A comprehensive guide for AP Spanish and French teachers to distinguish organic L2 drafting from machine-translated outlines in Cultural Comparison presentations using linguistic markers, ACTFL benchmarks, and Essay Playback™ keystroke telemetry.",
   "opengraph-image": "/images/learning/how-can-high-school-ap-spanish-and-french-teachers-differentiate-organic-drafting-from-machine-translated-outlines-in-cultural-comparison-presentations/featured.png",

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Teachers Tell If a Student Is Copying From Another Device?",
   description: "Learn how teachers detect when a student is copying text from an iPad, second monitor, phone, or friend's laptop using Checkmark Playback.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can a Student Copy AI Text Slowly Enough to Avoid Detection?",
   description: "Learn why deliberately typing AI text slowly over hours fails to bypass modern detection—analyzing revision depth, linguistic perplexity, and artificial pauses.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

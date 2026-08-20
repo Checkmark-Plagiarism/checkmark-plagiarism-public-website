@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Teachers Detect a Student Typing ChatGPT's Answer Word for Word?",
   description: "Learn how teachers detect students who manually retype ChatGPT's answers word-for-word—analyzing typing cadence, low backspaces, and AI linguistic signals.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

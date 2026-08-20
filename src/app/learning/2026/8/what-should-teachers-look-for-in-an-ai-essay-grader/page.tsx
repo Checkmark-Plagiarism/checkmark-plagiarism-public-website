@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Should Teachers Look for in an AI Essay Grader?",
   description: "A comprehensive buyer's checklist for educators evaluating AI essay graders—Teacher-in-the-Loop control, evidence highlighting, and LMS integration in Checkmark.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

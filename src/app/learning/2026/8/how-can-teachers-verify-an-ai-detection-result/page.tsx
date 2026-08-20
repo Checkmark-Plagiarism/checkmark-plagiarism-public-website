@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Teachers Verify an AI Detection Result?",
   description: "A step-by-step educator guide on cross-checking AI detector scores with writing process analytics, keystroke timelines, and citation audits.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

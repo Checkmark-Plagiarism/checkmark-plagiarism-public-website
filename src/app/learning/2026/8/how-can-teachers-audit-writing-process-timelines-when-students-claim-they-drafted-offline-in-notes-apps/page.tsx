@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Teachers Audit Writing Process Timelines When Students Claim They Drafted Offline in Notes Apps? | Checkmark Plagiarism",
   description: "A comprehensive, practical guide for educators on auditing writing process timelines when students paste complete essays and claim they drafted in Apple Notes, Google Keep, Notion, or offline apps.",
   "opengraph-image": "/images/services/report-paste-evidence.png",

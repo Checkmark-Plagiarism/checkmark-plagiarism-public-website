@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Counts as Acceptable AI Use in School?",
   description: "A comprehensive educator and student guide defining acceptable vs. unacceptable AI use in academic assignments, research, and classroom writing.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

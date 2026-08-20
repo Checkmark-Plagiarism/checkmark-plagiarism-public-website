@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Student Journalism Advisers Distinguish Real Interview Transcripts From AI-Generated Quotes in School Publications? | Checkmark Plagiarism",
   description: "Discover how student journalism advisers, JEA/NSPA educators, and scholastic media editors can detect AI-fabricated quotes, verify raw audio transcripts, and utilize keystroke playback telemetry to safeguard newsroom credibility.",
   "opengraph-image": "/images/services/report-source-quote.png",

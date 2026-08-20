@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can a Plagiarism Checker Show Me the Exact Source?",
   description: "Learn how source evidence cards and deep web crawling allow plagiarism checkers to display the exact website, academic paper, or peer document a student copied from.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

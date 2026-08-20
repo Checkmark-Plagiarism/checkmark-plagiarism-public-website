@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Should an Academic Integrity Dashboard Show Teachers?",
   description: "Explore the essential features of an educator integrity dashboard—class roster matrices, typing telemetry, AI heatmaps, and one-click PDF dossiers in Checkmark.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

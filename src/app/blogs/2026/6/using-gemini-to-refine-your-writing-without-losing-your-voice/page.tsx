@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Using Gemini to Refine Your Writing Without Losing Your Voice",
   description: "Generative AI like Gemini can sharpen drafts, fix structure, and catch weak spots. Here is how to use it as an editor, not a ghostwriter, in the classroom and beyond.",
   "opengraph-image": "/images/blogs/using-gemini-to-refine-your-writing-without-losing-your-voice/pexels-30839680.jpg",

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Writing Process Evidence Discourage AI Cheating?",
   description: "Learn how tracking writing process evidence deters AI cheating, fosters positive drafting habits, and creates transparent accountability in student writing.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

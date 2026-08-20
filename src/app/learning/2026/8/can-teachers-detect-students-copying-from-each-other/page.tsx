@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Teachers Detect Students Copying From Each Other?",
   description: "Learn how peer submission matching, institutional paper indexing, and writing timeline analytics identify student-to-student copying across classes.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

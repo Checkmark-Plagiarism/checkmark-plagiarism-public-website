@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "The Ethics of the Sentence: What Food Writers and Journalists Get Wrong",
   description: "Ethical writing is not a disclaimer at the bottom of a page. A look at the small honesty choices that food writers and journalists make, and why students should learn them too.",
   "opengraph-image": "/images/blogs/the-ethics-of-the-sentence-what-food-writers-and-journalists-get-wrong/pexels-204511.jpg",

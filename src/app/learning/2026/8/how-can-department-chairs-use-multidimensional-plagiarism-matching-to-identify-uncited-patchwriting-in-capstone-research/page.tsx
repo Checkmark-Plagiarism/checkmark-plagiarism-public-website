@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Department Chairs Use Multidimensional Plagiarism Matching to Identify Uncited Patchwriting in Capstone Research? | Checkmark Plagiarism",
   description: "Discover how department chairs, thesis advisors, and academic integrity officers use multidimensional plagiarism matching, Essay Playback™, and passage-level AI detection to distinguish developmental patchwriting from intentional academic fraud in senior capstones and graduate dissertations.",
   "opengraph-image": "/images/services/report-plagiarism-view.png",

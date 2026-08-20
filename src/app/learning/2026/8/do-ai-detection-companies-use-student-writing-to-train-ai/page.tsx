@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Do AI Detection Companies Use Student Writing to Train AI?",
   description: "Learn whether AI detection companies use student essays to train machine learning models, and how Checkmark's strict zero-training policy protects student IP.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

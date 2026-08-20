@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Nano Banana, Pro, and 2: Sorting Out Google's Image Models for the Classroom",
   description: "A plain-language comparison of Nano Banana, Nano Banana Pro, and the rumored Nano Banana 2, and what each tier actually means for teachers, students, and parents.",
   "opengraph-image": "/images/blogs/nano-banana-pro-and-2-sorting-out-googles-image-models-for-the-classroom/pexels-7195347.jpg",

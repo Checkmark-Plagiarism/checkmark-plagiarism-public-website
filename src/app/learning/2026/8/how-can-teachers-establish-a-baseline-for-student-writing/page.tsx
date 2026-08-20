@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Teachers Establish a Baseline for Student Writing?",
   description: "A step-by-step educator guide to establishing an unassailable student writing baseline in Week 1 to evaluate authorship and detect AI text.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

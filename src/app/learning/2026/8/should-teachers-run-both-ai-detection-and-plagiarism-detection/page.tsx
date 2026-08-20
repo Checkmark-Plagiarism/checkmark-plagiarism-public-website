@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Should Teachers Run Both AI Detection and Plagiarism Detection?",
   description: "Explore why modern educators must run both AI detection and plagiarism detection simultaneously: eliminating blind spots, protecting integrity, and saving grading time.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

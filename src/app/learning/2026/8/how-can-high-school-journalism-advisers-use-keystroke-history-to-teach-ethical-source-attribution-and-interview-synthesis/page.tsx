@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can High School Journalism Advisers Use Keystroke History to Teach Ethical Source Attribution and Interview Synthesis? | Checkmark Plagiarism",
   description: "Discover how student newspaper advisers, yearbook instructors, and media educators use keystroke telemetry, Essay Playback™, and multi-dimensional integrity forensics to coach novice reporters through interview synthesis, press release attribution, and ethical news writing.",
   "opengraph-image": "/images/services/report-paste-evidence.png",

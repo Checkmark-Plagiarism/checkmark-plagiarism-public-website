@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Sentence Structure Help Identify AI-Assisted Writing?",
   description: "Learn how syntactic burstiness, clause embedding patterns, and formulaic sentence structures help educators identify AI-generated text.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

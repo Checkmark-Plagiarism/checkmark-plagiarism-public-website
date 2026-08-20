@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "The Persuasion Playbook Your Students Already Live Inside",
   description: "Marketing and sales run on a handful of psychological tactics. Teaching students to name them turns passive targets into critical thinkers, in and out of the classroom.",
   "opengraph-image": "/images/blogs/the-persuasion-playbook-your-students-already-live-inside/pexels-14780175.jpg",

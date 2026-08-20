@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can AI Grade Essays Using My Own Rubric?",
   description: "Discover how Checkmark Autograder evaluates student essays using your custom rubrics, providing quote-anchored feedback and rubric-aligned scoring.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

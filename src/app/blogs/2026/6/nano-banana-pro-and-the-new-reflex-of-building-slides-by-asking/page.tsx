@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Nano Banana Pro and the New Reflex of Building Slides by Asking",
   description: "Nano Banana Pro can now generate Google Slides decks from a prompt. Here is what that means for teachers, students, and the slow craft of explaining things.",
   "opengraph-image": "/images/blogs/nano-banana-pro-and-the-new-reflex-of-building-slides-by-asking/pexels-13537707.jpg",

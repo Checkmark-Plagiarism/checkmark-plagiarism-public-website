@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can AP Economics Teachers Distinguish Authentic Graph-Shifting Analysis From AI-Generated Macroeconomic Writeups?",
   description: "A definitive guide for AP Macroeconomics and Microeconomics educators, department chairs, and social studies curriculum coordinators on distinguishing authentic economic graph analysis from AI-generated prose, detecting broken transmission chains, and using Essay Playback™ to audit economic reasoning.",
   "opengraph-image": "/images/learning/how-can-ap-economics-teachers-distinguish-authentic-graph-shifting-analysis-from-ai-generated-macroeconomic-writeups/featured.png",

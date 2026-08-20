@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can English Departments Scale Formative Feedback Using Teacher-in-the-Loop Rubric Autograding? | Checkmark Plagiarism",
   description: "An authoritative guide for English department chairs, writing program administrators, and secondary/postsecondary educators on scaling iterative formative feedback, overcoming the grading bottleneck, and calibrating rubric evaluations using teacher-in-the-loop AI autograding and keystroke integrity telemetry.",
   "opengraph-image": "/images/learning/how-can-english-departments-scale-formative-feedback-using-teacher-in-the-loop-rubric-autograding/featured.png",

@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Specific Evidence Distinguishes Machine Translation From Generative AI in English Language Learner Submissions? | Checkmark Plagiarism",
   description: "Learn how computational linguistics, L1 syntactic calques, and patent-pending Essay Playback™ telemetry distinguish legitimate machine translation from generative AI in English Language Learner (ELL) submissions.",
   "opengraph-image": "/images/learning/what-specific-evidence-distinguishes-machine-translation-from-generative-ai-in-english-language-learner-submissions/featured.png",

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "AI Detection Granularity: From Whole Documents Down to Single Sentences",
   description: "A plain-English guide to how AI detection works at different levels of granularity, from document and paragraph scores down to sentence and token analysis, and what each one can and cannot tell you.",
   "opengraph-image": "/images/learning/ai-detection-granularity-from-whole-documents-down-to-single-sentences/pexels-247781.jpg",

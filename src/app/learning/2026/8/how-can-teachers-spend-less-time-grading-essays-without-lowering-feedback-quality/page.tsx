@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Teachers Spend Less Time Grading Essays Without Lowering Feedback Quality?",
   description: "Learn how pairing Checkmark Autograder with human teacher review reduces grading time by 75% while dramatically elevating the depth and quality of student feedback.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

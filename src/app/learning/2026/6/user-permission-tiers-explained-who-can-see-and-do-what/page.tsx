@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "User Permission Tiers Explained: Who Can See and Do What",
   description: "A plain-English guide to user permission tiers in school software: what admin, teacher, and student roles can do, why the differences exist, and how to avoid common mistakes.",
   "opengraph-image": "/images/learning/user-permission-tiers-explained-who-can-see-and-do-what/pexels-5060982.jpg",

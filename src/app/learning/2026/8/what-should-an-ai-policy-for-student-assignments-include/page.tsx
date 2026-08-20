@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Should an AI Policy for Student Assignments Include?",
   description: "A comprehensive educator blueprint for drafting a clear, fair, and enforceable classroom AI policy for course syllabi and assignments.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

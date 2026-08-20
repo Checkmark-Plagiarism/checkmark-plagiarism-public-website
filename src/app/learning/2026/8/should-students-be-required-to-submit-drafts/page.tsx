@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Should Students Be Required to Submit Drafts?",
   description: "Explore why requiring draft submissions is one of the most effective ways to foster writing growth, deter AI cheating, and verify authentic student authorship.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

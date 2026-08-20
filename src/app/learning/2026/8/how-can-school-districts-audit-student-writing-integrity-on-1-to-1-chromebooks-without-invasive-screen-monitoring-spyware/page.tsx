@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can School Districts Audit Student Writing Integrity on 1-to-1 Chromebooks Without Invasive Screen-Monitoring Spyware? | Checkmark Plagiarism",
   description: "An authoritative technical and policy guide for District CTOs, Instructional Tech Directors, and Superintendents on auditing writing integrity across 1-to-1 Chromebook fleets without invasive classroom spyware, webcam tracking, or student privacy violations.",
   "opengraph-image": "/images/learning/how-can-school-districts-audit-student-writing-integrity-on-1-to-1-chromebooks-without-invasive-screen-monitoring-spyware/featured.png",

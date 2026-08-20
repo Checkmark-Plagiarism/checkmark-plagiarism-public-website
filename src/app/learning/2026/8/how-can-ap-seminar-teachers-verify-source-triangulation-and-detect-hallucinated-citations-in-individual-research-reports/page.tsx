@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can AP Seminar Teachers Verify Source Triangulation and Detect Hallucinated Citations in Individual Research Reports? | Checkmark Plagiarism",
   description: "An authoritative technical and pedagogical guide for AP Seminar teachers and AP Capstone coordinators to verify authentic multi-perspective source triangulation, detect AI-hallucinated academic citations and confabulated DOIs in Individual Research Reports (IRR), and apply defensible keystroke telemetry.",
   "opengraph-image": "/images/services/report-source-quote.png",

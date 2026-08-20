@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Writing Center Directors Distinguish ESL Developmental Errors From AI Paraphraser Signatures? | Checkmark Plagiarism",
   description: "An authoritative, evidence-based diagnostic guide for writing center directors, ESL specialists, and faculty to distinguish authentic interlanguage developmental errors from AI paraphraser signatures using linguistic forensics and Essay Playback™ keystroke telemetry.",
   "opengraph-image": "/images/learning/how-can-writing-center-directors-distinguish-esl-developmental-errors-from-ai-paraphraser-signatures/featured.png",

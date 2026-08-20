@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Should a Good Plagiarism Report Actually Show a Teacher?",
   description: "Discover the 5 essential components of a modern academic integrity report: dual AI/plagiarism matching, source evidence cards, and writing playback.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

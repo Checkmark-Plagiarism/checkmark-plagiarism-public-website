@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "The Time You Get Back: A Teacher's Guide to AI That Actually Saves Hours",
   description: "Most AI productivity advice hands you a list of tools. Here is the other half: the techniques that turn those tools into real hours back in your week.",
   "opengraph-image": "/images/blogs/the-time-you-get-back-a-teachers-guide-to-ai-that-actually-saves-hours/pexels-8423019.jpg",

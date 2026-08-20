@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Writing Telemetry Visualizes Revision Bursts Versus Mechanical Retyping in Student Essays | Checkmark Plagiarism",
   description: "Discover how writing telemetry and keystroke dynamics visualize authentic revision bursts (R-bursts) versus mechanical second-screen retyping, empowering educators with transparent, defensible writing process evidence.",
   "opengraph-image": "/images/services/report-paste-evidence.png",

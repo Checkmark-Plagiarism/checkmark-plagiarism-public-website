@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can District Technology Directors Audit AI Writing Detection Vendors for FERPA Third-Party Sharing Risks? | Checkmark Plagiarism",
   description: "An authoritative technical procurement audit guide for District Technology Directors, CISOs, and superintendents to evaluate AI writing detection and autograding vendors for FERPA third-party data sharing risks, API pass-through vulnerabilities, and state compliance.",
   "opengraph-image": "/images/learning/how-can-district-technology-directors-audit-ai-writing-detection-vendors-for-ferpa-third-party-sharing-risks/featured.png",

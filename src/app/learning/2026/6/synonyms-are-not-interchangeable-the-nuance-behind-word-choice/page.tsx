@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Synonyms Are Not Interchangeable: The Nuance Behind Word Choice",
   description: "A plain-English guide to connotation, register, and collocation, and why \"threw,\" \"hurled,\" and \"tossed\" are not the same word in different clothes.",
   "opengraph-image": "/images/learning/synonyms-are-not-interchangeable-the-nuance-behind-word-choice/pexels-633984.jpg",

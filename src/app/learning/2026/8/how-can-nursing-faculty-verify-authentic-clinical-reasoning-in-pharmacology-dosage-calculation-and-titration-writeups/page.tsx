@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Nursing Faculty Verify Authentic Clinical Reasoning in Pharmacology Dosage Calculation and Titration Writeups?",
   description: "An authoritative clinical pharmacology education and academic integrity guide for BSN/MSN faculty, course directors, and simulation coordinators to verify authentic clinical reasoning in dosage calculations, detect lethal AI arithmetic hallucinations, and audit titration writeups using Checkmark Essay Playback™.",
   "opengraph-image": "/images/learning/how-can-nursing-faculty-verify-authentic-clinical-reasoning-in-pharmacology-dosage-calculation-and-titration-writeups/featured.png",

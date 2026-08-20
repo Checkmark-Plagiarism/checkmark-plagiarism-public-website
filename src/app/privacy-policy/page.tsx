@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: { images: [''] },
 };
 
-export const meta = {
+const meta = {
   title: 'Privacy Policy',
   description:
     'How the Checkmark Plagiarism add-on for Google Classroom™ and other LMS integrations handle data, permissions, and security.',

@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can AI Detectors Detect Grammarly or AI Writing Assistants?",
   description: "Understand whether AI detectors flag Grammarly, how grammar checking differs from AI rewriting, and how writing playback clarifies student authorship.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

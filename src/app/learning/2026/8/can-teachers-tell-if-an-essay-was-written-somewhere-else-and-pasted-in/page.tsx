@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Teachers Tell If an Essay Was Written Somewhere Else and Pasted In?",
   description: "Learn how external paste detection, formatting artifacts, and keystroke analytics reveal when a student drafted an essay elsewhere and pasted it into the LMS.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Reading the Data: How to Understand Audience Behavior and Shape a Content Strategy",
   description: "A plain-English guide to using analytics to understand how your audience actually behaves, and turning those patterns into a content strategy that works.",
   "opengraph-image": "/images/learning/reading-the-data-how-to-understand-audience-behavior-and-shape-a-content-strategy/pexels-577210.jpg",

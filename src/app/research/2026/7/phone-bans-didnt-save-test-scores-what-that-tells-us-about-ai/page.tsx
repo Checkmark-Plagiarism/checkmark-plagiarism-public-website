@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Phone Bans Didn't Save Test Scores. What That Tells Us About AI.",
   description: "A new NBER study of 4,600 schools found phone bans had close-to-zero effect on test scores. Schools writing AI policy on the same theory of change should take the lesson.",
   "opengraph-image": "/images/research/phone-bans-didnt-save-test-scores-what-that-tells-us-about-ai/pexels-photo-9780101.jpeg",

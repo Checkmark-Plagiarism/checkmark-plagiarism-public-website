@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can AI Grade a Canvas Assignment Using a Canvas Rubric?",
   description: "Learn how Checkmark Autograder automatically converts native Canvas rubrics to evaluate essays and pre-fill SpeedGrader scores with zero manual copy-pasting.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

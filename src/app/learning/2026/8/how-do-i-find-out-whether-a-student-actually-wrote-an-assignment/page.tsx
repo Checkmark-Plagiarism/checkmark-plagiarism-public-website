@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Do I Find Out Whether a Student Actually Wrote an Assignment?",
   description: "A comprehensive guide on verifying authentic student authorship—keystroke writing playback, baseline comparison, citation audits, and oral check-ins in Checkmark.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

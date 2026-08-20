@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Is It Safe to Upload Student Essays to an AI Detector?",
   description: "Discover whether it is safe to upload student essays to AI detectors, the legal risks of public web checkers, and how enterprise tools like Checkmark protect student safety.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

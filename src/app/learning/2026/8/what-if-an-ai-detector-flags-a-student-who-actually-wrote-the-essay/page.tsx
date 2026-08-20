@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What If an AI Detector Flags a Student Who Actually Wrote the Essay?",
   description: "Learn how teachers and students resolve false AI detector accusations using process evidence, keystroke timelines, and oral defenses.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

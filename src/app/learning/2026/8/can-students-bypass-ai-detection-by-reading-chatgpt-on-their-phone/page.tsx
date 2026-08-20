@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Students Bypass AI Detection by Reading ChatGPT on Their Phone?",
   description: "Learn why reading ChatGPT on a smartphone while typing on a laptop fails to bypass AI detection—analyzing cross-device transcription forensics in Checkmark.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

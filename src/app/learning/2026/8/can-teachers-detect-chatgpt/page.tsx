@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Teachers Detect ChatGPT in Student Writing?",
   description: "Learn how teachers detect possible ChatGPT use, what AI detectors identify, their limitations, and why writing-process evidence matters.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

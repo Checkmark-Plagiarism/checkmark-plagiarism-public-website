@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Revision History Prove an AI Detector Wrong?",
   description: "Discover how document revision history and keystroke logs provide undeniable forensic proof to overturn false AI detector flags and exonerate students.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

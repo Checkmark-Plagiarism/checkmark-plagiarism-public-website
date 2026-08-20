@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Writing Program Administrators Establish Clear Policy Boundaries Between Allowed Grammar Assistants and Prohibited AI Generation? | Checkmark Plagiarism",
   description: "An authoritative, strategic guide for Writing Program Administrators, English department chairs, and curriculum directors on establishing defensible policy boundaries, forensic workflows, and restorative practices between permitted grammar assistants and prohibited generative AI.",
   "opengraph-image": "/images/learning/how-can-writing-program-administrators-establish-clear-policy-boundaries-between-allowed-grammar-assistants-and-prohibited-ai-generation/featured.png",

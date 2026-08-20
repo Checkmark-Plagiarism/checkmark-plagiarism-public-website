@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Instructional Technology Coordinators Configure LTI 1.3 Rubric Autograding With Direct Grade Passback in Buzz LMS? | Checkmark Plagiarism",
   description: "A technical and pedagogical configuration guide for Instructional Technology Coordinators integrating LTI 1.3 Advantage rubric autograding, Essay Playback™, and direct grade passback in Agilix Buzz LMS.",
   "opengraph-image": "/images/services/report-grading-view.png",

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "The Fake Citation Isn't the Problem. The Unread Source Behind It Is.",
   description: "AI-fabricated citations are showing up everywhere from Lancet papers to high school bibliographies. The deeper issue is that source verification, once implicit in research, now has to be explicitly taught.",
   "opengraph-image": "/images/research/the-fake-citation-isnt-the-problem-the-unread-source-behind-it-is/pexels-photo-6649320.jpeg",

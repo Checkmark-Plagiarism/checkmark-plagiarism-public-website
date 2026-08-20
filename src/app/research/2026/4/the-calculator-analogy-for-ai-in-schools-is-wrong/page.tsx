@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "The Calculator Analogy for AI in Schools Is Wrong",
   description: "Defenders of classroom AI keep saying it's just the calculator debate all over again. It isn't. The calculator offloaded a procedure the student had already mastered; AI substitutes for the very thinking the assignment was meant to produce.",
   "opengraph-image": "/images/research/the-calculator-analogy-for-ai-in-schools-is-wrong/hero.jpg",

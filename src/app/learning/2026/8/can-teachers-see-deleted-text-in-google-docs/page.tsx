@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Teachers See Deleted Text in Google Docs?",
   description: "Learn how teachers see deleted text in Google Docs version history, why strikethrough logs matter, and how Checkmark tracks real-time deletions.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

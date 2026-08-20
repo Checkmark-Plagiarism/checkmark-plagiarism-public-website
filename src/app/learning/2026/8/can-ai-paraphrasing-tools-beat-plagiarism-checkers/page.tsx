@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can AI Paraphrasing Tools Beat Plagiarism Checkers?",
   description: "Explore whether AI paraphrasing tools like QuillBot can bypass plagiarism checkers, and how teachers catch spun text using writing playback and citation audits.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

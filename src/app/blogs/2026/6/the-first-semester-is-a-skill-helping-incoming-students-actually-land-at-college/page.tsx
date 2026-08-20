@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "The First Semester Is a Skill: Helping Incoming Students Actually Land at College",
   description: "College success rarely fails on intelligence. It fails on the quiet skills nobody teaches incoming students. Here is what actually helps freshmen land.",
   "opengraph-image": "/images/blogs/the-first-semester-is-a-skill-helping-incoming-students-actually-land-at-college/pexels-5538594.jpg",

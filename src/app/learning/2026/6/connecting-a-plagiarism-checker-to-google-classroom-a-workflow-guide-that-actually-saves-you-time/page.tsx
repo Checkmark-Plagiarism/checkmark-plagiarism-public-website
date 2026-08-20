@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Connecting a Plagiarism Checker to Google Classroom: A Workflow Guide That Actually Saves You Time",
   description: "A plain-English guide to how Google Classroom integrations work, how to set one up, and how to build grading workflows that save teachers real time.",
   "opengraph-image": "/images/learning/connecting-a-plagiarism-checker-to-google-classroom-a-workflow-guide-that-actually-saves-you-time/pexels-15406292.jpg",

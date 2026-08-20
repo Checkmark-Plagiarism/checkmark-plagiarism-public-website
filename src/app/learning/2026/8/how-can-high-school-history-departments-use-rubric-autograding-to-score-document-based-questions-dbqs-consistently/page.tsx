@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can High School History Departments Use Rubric Autograding to Score Document-Based Questions (DBQs) Consistently? | Checkmark Plagiarism",
   description: "An authoritative technical and pedagogical guide for high school history teachers, department chairs, and curriculum directors on using AI rubric autograding, quote-anchored evidence extraction, and Essay Playback™ to score AP DBQs with high inter-rater consistency.",
   "opengraph-image": "/images/learning/how-can-high-school-history-departments-use-rubric-autograding-to-score-document-based-questions-dbqs-consistently/featured.png",

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Academic Integrity Metrics Should Schools Track?",
   description: "Explore the essential portfolio of academic integrity metrics—from similarity rates and AI heatmaps to keystroke timelines and revision depth—that modern schools must track.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

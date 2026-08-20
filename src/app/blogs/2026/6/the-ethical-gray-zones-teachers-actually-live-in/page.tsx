@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "The Ethical Gray Zones Teachers Actually Live In",
   description: "Most ethics lists in education stay abstract. Here are the messy, specific dilemmas teachers face every week, plus practical ways to handle them with fairness and nerve.",
   "opengraph-image": "/images/blogs/the-ethical-gray-zones-teachers-actually-live-in/pexels-37795357.jpg",

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can AI Explain Why It Gave a Student a Certain Score?",
   description: "Learn how Explainable AI (XAI) in Checkmark Autograder justifies essay scores—quoting student evidence, mapping rubric descriptors, and providing revision steps.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

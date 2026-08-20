@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Should Be Included in an AI Academic Integrity Report?",
   description: "Learn the essential sections, evidence logs, playback data, and documentation standards required for an official AI academic integrity report.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

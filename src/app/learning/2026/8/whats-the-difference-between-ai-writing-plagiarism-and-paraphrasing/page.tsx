@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What's the Difference Between AI Writing, Plagiarism, and Paraphrasing?",
   description: "Understand the critical differences between AI writing, traditional plagiarism, and legitimate vs. dishonest paraphrasing in modern academic integrity.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

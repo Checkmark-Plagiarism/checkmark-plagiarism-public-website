@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Interjections, Explained: The Tiny Words That Carry Big Feelings",
   description: "A plain-English guide to interjections: what they are, how they work, the main types, real examples, and how they behave across languages from Spanish to Japanese.",
   "opengraph-image": "/images/learning/interjections-explained-the-tiny-words-that-carry-big-feelings/pexels-8419252.jpg",

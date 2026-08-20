@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "The Retraction Boom: What the Fake-Paper Crisis in Research Teaches Every Classroom",
   description: "Retractions hit record highs as paper mills and AI-generated text flood the scientific literature. Here is what the research-integrity crisis reveals about detection, disclosure, and the norms schools should be teaching now.",
   "opengraph-image": "/images/blogs/the-retraction-boom-what-the-fake-paper-crisis-in-research-teaches-every-classroom/pexels-31267820.jpg",

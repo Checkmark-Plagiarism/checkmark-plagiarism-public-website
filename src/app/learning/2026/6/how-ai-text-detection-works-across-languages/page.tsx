@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How AI Text Detection Works Across Languages",
   description: "A plain-English guide to how AI-writing detectors work, why they behave differently in Japanese, Chinese, Spanish, and other languages, and how to read their results.",
   "opengraph-image": "/images/learning/how-ai-text-detection-works-across-languages/pexels-18512923.jpg",

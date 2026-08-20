@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Peer Tutoring Centers Use Keystroke Playback Replays to Coach Reluctant Writers Through Revision Stalls? | Checkmark Plagiarism",
   description: "Discover how university writing centers and high school peer tutoring labs use keystroke playback replays and writing telemetry to diagnose revision stalls, overcome the backspace spiral, and coach reluctant writers formatively.",
   "opengraph-image": "/images/learning/how-can-peer-tutoring-centers-use-keystroke-playback-replays-to-coach-reluctant-writers-through-revision-stalls/featured.png",

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can AI Follow a Teacher-Created Rubric?",
   description: "Learn how AI models parse and strictly adhere to teacher-created rubrics—multi-criteria mapping, point weighting, and LMS rubric sync in Checkmark.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

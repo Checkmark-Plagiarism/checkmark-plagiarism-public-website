@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Dual Credit Programs Sync AI-Assisted Rubric Evaluations Across High School and College LMS Portals? | Checkmark Plagiarism",
   description: "An authoritative guide for Dual Credit coordinators, Higher Ed academic deans, high school adjunct instructors, and EdTech directors on synchronizing AI-assisted rubric evaluations, formative feedback, and grades across disparate high school and college LMS portals using 1EdTech LTI 1.3 Advantage and Checkmark Plagiarism.",
   "opengraph-image": "/images/learning/how-can-dual-credit-programs-sync-ai-assisted-rubric-evaluations-across-high-school-and-college-lms-portals/featured.png",

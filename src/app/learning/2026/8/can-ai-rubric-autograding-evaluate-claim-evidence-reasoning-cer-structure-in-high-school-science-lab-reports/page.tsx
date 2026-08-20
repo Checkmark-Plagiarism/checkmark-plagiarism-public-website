@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can AI Rubric Autograding Evaluate Claim-Evidence-Reasoning (CER) Structure in High School Science Lab Reports? | Checkmark Plagiarism",
   description: "An authoritative guide for High School Science Teachers (Biology, Chemistry, Physics), NGSS Curriculum Coordinators, and STEM Department Chairs on using Checkmark's AI-assisted quote-anchored rubric autograding, experimental data cross-verification, and patent-pending Essay Playback™ writing telemetry to evaluate Claim-Evidence-Reasoning (CER) frameworks rapidly and defensibly.",
   "opengraph-image": "/images/learning/can-ai-rubric-autograding-evaluate-claim-evidence-reasoning-cer-structure-in-high-school-science-lab-reports/featured.png",

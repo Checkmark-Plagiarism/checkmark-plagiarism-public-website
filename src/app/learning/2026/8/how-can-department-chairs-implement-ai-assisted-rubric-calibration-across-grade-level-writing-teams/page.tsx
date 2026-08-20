@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Department Chairs Implement AI-Assisted Rubric Calibration Across Grade-Level Writing Teams? | Checkmark Plagiarism",
   description: "An authoritative, practical guide for department chairs, instructional leads, and curriculum directors on eliminating grading variance, mastering inter-rater reliability metrics, and conducting AI-assisted rubric calibration across grade-level writing teams.",
   "opengraph-image": "/images/learning/how-can-department-chairs-implement-ai-assisted-rubric-calibration-across-grade-level-writing-teams/featured.png",

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Why Is Showing the Original Source More Useful Than a Similarity Percentage?",
   description: "Learn why evidence-based reporting and side-by-side source matching are far more useful than an abstract similarity percentage for grading and academic integrity.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

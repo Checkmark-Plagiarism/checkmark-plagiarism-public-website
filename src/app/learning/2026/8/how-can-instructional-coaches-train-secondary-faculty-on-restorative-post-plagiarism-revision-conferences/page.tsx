@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Instructional Coaches Train Secondary Faculty on Restorative Post-Plagiarism Revision Conferences? | Checkmark Plagiarism",
   description: "An authoritative professional development and instructional leadership guide for secondary instructional coaches, humanities department chairs, and curriculum directors on training middle and high school faculty to conduct restorative, evidence-grounded post-plagiarism revision conferences that replace punitive zeroes with authentic writing mastery.",
   "opengraph-image": "/images/learning/how-can-instructional-coaches-train-secondary-faculty-on-restorative-post-plagiarism-revision-conferences/featured.png",

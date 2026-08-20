@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Writing Process Evidence Protects Neurodivergent Students Who Compose Non-Linearly | Checkmark Plagiarism",
   description: "Discover how patent-pending Essay Playback™ and writing process telemetry protect neurodivergent students with ADHD, autism, and dysgraphia who draft out of order from false AI accusations.",
   "opengraph-image": "/images/learning/how-writing-process-evidence-protects-neurodivergent-students-who-compose-non-linearly/featured.png",

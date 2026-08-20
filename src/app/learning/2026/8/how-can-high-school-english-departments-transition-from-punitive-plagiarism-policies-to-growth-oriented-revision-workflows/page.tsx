@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can High School English Departments Transition From Punitive Plagiarism Policies to Growth-Oriented Revision Workflows? | Checkmark Plagiarism",
   description: "A comprehensive, actionable guide for high school English department chairs, curriculum coordinators, and ELA educators on replacing punitive zero-tolerance plagiarism policies with defensible, growth-oriented revision workflows powered by process telemetry, multi-draft scaffolding, and teacher-in-the-loop AI rubrics.",
   "opengraph-image": "/images/learning/how-can-high-school-english-departments-transition-from-punitive-plagiarism-policies-to-growth-oriented-revision-workflows/featured.png",

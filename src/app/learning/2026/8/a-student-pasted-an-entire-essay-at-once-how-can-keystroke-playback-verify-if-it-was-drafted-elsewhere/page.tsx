@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "A Student Pasted an Entire Essay at Once: How Can Keystroke Playback Verify If It Was Drafted Elsewhere? | Checkmark Plagiarism",
   description: "Discover how educators can investigate single-paste essay submissions using patent-pending Essay Playback™, external provenance verification, and restorative writing process forensics.",
   "opengraph-image": "/images/learning/a-student-pasted-an-entire-essay-at-once-how-can-keystroke-playback-verify-if-it-was-drafted-elsewhere/featured.png",

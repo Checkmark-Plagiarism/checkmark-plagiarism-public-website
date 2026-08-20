@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "The TA Nobody Trained: Practical Support for Graduate Teaching Assistants",
   description: "Graduate teaching assistants run discussion sections, grade hundreds of papers, and field panicked emails, often with zero training. Here is practical, humane advice for the people doing the work and the departments that depend on them.",
   "opengraph-image": "/images/blogs/the-ta-nobody-trained-practical-support-for-graduate-teaching-assistants/pexels-8197508.jpg",

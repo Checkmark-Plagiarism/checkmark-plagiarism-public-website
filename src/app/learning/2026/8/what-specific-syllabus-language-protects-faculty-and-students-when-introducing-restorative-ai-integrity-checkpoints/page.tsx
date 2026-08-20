@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Specific Syllabus Language Protects Faculty and Students When Introducing Restorative AI Integrity Checkpoints?",
   description: "An authoritative guide for Secondary ELA Department Chairs, University Writing Program Administrators (WPAs), Academic Integrity Officers, and Faculty on crafting legally defensible, pedagogically sound syllabus language powered by restorative AI integrity checkpoints and writing telemetry.",
   "opengraph-image": "/images/learning/what-specific-syllabus-language-protects-faculty-and-students-when-introducing-restorative-ai-integrity-checkpoints/featured.png",

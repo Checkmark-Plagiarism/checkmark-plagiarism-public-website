@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Authorship Verification Works: Tracing the Origins of Digital Content",
   description: "A plain-English guide to authorship verification: stylometry, metadata, content provenance, and digital fingerprinting, and what each technique can and cannot prove about who wrote something.",
   "opengraph-image": "/images/learning/how-authorship-verification-works-tracing-the-origins-of-digital-content/pexels-8382599.jpg",

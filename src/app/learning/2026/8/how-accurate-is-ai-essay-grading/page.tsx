@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Accurate Is AI Essay Grading?",
   description: "Explore the empirical accuracy of AI essay grading—inter-rater reliability (QWK), elimination of grading fatigue, and evidence-grounded scoring in Checkmark.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

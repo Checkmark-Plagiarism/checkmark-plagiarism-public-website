@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Districts Create a Consistent Process for Reviewing AI Writing?",
   description: "A comprehensive guide for school districts on building a consistent, defensible, and equitable AI writing review framework across multiple schools and campuses.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

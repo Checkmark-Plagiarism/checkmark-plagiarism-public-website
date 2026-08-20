@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can I Tell the Difference Between AI Writing and a Student Improving?",
   description: "Learn how teachers distinguish genuine student writing improvement from AI-generated essays: tracking drafting process, oral understanding, and stylistic continuity.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

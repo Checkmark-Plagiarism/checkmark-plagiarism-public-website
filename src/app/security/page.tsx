@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: { images: [''] },
 };
 
-export const meta = {
+const meta = {
   title: 'Security',
   description:
     'Our comprehensive security measures, data protection practices, and compliance standards for educational data safety.',

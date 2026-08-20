@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can a Student Write a Good Essay Without Making Any Edits?",
   description: "Explore the cognitive science of writing to understand whether a student can compose a sophisticated essay without making any edits or revisions.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

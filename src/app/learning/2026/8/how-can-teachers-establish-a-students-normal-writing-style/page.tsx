@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Teachers Establish a Student's Normal Writing Style?",
   description: "Learn how educators build authentic student writing profiles by analyzing syntactic rhythm, vocabulary tiers, mechanical habits, and writing playback.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

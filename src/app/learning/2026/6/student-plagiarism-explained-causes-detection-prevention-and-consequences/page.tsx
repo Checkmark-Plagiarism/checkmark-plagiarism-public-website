@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Student Plagiarism Explained: Causes, Detection, Prevention, and Consequences",
   description: "A plain-English guide for educators on what student plagiarism is, why it happens, how teachers detect it, how to prevent it, and what the consequences actually are.",
   "opengraph-image": "/images/learning/student-plagiarism-explained-causes-detection-prevention-and-consequences/pexels-31155018.jpg",

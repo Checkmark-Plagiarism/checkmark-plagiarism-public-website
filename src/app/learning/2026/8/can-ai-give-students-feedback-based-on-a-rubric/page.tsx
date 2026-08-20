@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can AI Give Students Feedback Based on a Rubric?",
   description: "Learn how Checkmark Autograder generates criterion-specific, quote-anchored rubric feedback to guide actionable student essay revisions.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

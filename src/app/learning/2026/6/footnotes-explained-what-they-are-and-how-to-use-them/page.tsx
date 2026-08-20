@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Footnotes Explained: What They Are and How to Use Them",
   description: "A plain-English guide to footnotes: what they do, how they work in each major style, when to use them, and the mistakes that quietly undercut a paper.",
   "opengraph-image": "/images/learning/footnotes-explained-what-they-are-and-how-to-use-them/pexels-34260873.jpg",

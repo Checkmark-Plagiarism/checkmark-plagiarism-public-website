@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How to Actually Compare AI Detection Tools (Without Getting Fooled by the Marketing)",
   description: "A practical buyer's guide to comparing AI detection and plagiarism tools for schools, with the questions that matter more than any accuracy percentage on a landing page.",
   "opengraph-image": "/images/blogs/how-to-actually-compare-ai-detection-tools-without-getting-fooled-by-the-marketing/pexels-10481252.jpg",

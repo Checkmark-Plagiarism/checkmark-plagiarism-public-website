@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Should Teachers Interpret Conflicting AI Detection Results?",
   description: "Learn how educators should analyze and resolve contradictory AI detector scores across different tools using writing playback, citation audits, and process evidence.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

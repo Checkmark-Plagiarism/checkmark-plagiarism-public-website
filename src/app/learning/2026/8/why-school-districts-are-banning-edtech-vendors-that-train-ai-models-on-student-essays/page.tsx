@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Why School Districts Are Banning EdTech Vendors That Train AI Models on Student Essays | Checkmark Plagiarism",
   description: "An authoritative guide for K-12 superintendents, school boards, and tech directors on why districts are banning EdTech vendors that train AI models on student essays, covering FERPA/COPPA compliance, model inversion leaks, and zero-retention architecture.",
   "opengraph-image": "/images/learning/why-school-districts-are-banning-edtech-vendors-that-train-ai-models-on-student-essays/featured.png",

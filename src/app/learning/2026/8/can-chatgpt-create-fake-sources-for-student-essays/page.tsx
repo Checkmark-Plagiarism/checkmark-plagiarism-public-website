@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can ChatGPT Create Fake Sources for Student Essays?",
   description: "Learn why ChatGPT fabricates fake academic sources, phantom DOIs, and fictional authors for student essays, and how teachers audit bibliographies for proof.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

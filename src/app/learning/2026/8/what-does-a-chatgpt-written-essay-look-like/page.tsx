@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Does a ChatGPT-Written Essay Look Like?",
   description: "Analyze the anatomy, structural patterns, linguistic cliches, and syntactic rhythm of a ChatGPT-written essay compared to authentic student writing.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

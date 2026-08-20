@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Collegiate Cybersecurity Faculty Distinguish Authentic Incident Response Post-Mortem Reports From AI-Fabricated Analysis? | Checkmark Plagiarism",
   description: "An authoritative guide for collegiate cybersecurity professors, cyber defense lab directors, and ABET/NSA CAE-CD department chairs on verifying authentic packet analysis, SIEM telemetry, and forensic post-mortems using Checkmark's Essay Playback™.",
   "opengraph-image": "/images/services/report-source-quote.png",

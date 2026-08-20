@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Teachers Edit AI-Generated Grades?",
   description: "Learn how teachers edit and override AI-generated grades—rubric score overrides, feedback comment customization, and gradebook sync in Checkmark.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

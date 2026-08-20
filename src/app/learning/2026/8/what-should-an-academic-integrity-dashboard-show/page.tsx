@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Should an Academic Integrity Dashboard Show?",
   description: "Explore the essential modules, telemetry widgets, and data visualizations that a modern school academic integrity dashboard must display.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

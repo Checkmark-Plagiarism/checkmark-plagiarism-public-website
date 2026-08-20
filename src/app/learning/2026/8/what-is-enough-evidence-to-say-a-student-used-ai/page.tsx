@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Is Enough Evidence to Say a Student Used AI?",
   description: "Understand the threshold of multi-signal corroborating evidence needed to conclude unauthorized AI use: detection scores, writing playback, baselines, and sources.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

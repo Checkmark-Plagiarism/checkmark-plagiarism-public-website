@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Canvas Detects Plagiarism: Features, Policies, and the Gaps You Should Know",
   description: "A plain-English guide to how plagiarism detection works inside Canvas LMS: Turnitin and SpeedGrader integrations, originality reports, what Canvas does and does not catch, and how teachers actually use it.",
   "opengraph-image": "/images/learning/how-canvas-detects-plagiarism-features-policies-and-the-gaps-you-should-know/pexels-8199133.jpg",

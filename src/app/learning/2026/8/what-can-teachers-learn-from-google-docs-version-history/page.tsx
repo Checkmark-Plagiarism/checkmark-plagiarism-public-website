@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Can Teachers Learn From Google Docs Version History?",
   description: "Explore what teachers can learn from Google Docs version history—analyzing drafting timelines, revision depth, contributor attribution, and paste events.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

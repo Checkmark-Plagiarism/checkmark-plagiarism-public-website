@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can I Check Whether a Student's Sources Actually Exist?",
   description: "A fast, practical educator guide on checking whether student citations and sources actually exist using Crossref, Google Scholar, and Checkmark.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

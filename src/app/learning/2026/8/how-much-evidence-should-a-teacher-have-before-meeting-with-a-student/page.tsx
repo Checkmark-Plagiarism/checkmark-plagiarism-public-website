@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Much Evidence Should a Teacher Have Before Meeting With a Student?",
   description: "Learn the evidentiary threshold required before scheduling an academic integrity conference—the 3-Pillar Standard for fair AI investigations.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

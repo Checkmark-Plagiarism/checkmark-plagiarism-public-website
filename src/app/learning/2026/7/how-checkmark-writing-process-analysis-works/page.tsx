@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Checkmark's Writing Process Analysis Works",
   description: "Plain-English explainer: where writing-process data comes from, what Playback actually replays, how paste and transcription events are detected, and why process evidence is the hardest signal to fake.",
   "opengraph-image": "/images/services/report-paste-evidence.png",

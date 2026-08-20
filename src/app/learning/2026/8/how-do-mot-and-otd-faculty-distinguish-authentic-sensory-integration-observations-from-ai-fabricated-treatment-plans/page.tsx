@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Do MOT and OTD Faculty Distinguish Authentic Sensory Integration Observations From AI-Fabricated Treatment Plans? | Checkmark Plagiarism",
   description: "An authoritative guide for MOT/OTD faculty, Academic Fieldwork Coordinators, and clinical preceptors to verify authentic sensory integration observations, detect AI-generated treatment plans, and uphold ACOTE standards using Checkmark Essay Playback™.",
   "opengraph-image": "/images/services/report-source-quote.png",

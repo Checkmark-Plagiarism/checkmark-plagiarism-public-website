@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Does Retyping ChatGPT's Answer Make It Undetectable?",
   description: "Learn why manually retyping ChatGPT's output fails to hide AI use, as statistical language patterns and keystroke transcription signals expose the machine generation.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

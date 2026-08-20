@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Happens When a Student Runs ChatGPT Through an AI Humanizer?",
   description: "Learn what happens when ChatGPT text is run through an AI humanizer: lexical distortion, syntactic fragmentation, preserved hallucinations, and paste anomalies.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

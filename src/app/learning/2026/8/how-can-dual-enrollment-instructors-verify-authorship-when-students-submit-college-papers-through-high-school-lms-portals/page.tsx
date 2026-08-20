@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Dual Enrollment Instructors Verify Authorship When Students Submit College Papers Through High School LMS Portals? | Checkmark Plagiarism",
   description: "An authoritative guide for dual enrollment instructors, high school concurrent enrollment coordinators, college department chairs, and district EdTech directors on verifying student authorship across disjointed high school and collegiate LMS portals using keystroke playback, multi-evidence dossiers, and LTI 1.3 interoperability.",
   "opengraph-image": "/images/services/report-paste-evidence.png",

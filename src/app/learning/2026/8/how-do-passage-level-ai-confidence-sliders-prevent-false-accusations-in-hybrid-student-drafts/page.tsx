@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Do Passage-Level AI Confidence Sliders Prevent False Accusations in Hybrid Student Drafts? | Checkmark Plagiarism",
   description: "Discover how passage-level AI detection and calibrated confidence sliders protect students from false accusations in hybrid drafts while pinpointing unapproved AI insertions.",
   "opengraph-image": "/images/learning/how-do-passage-level-ai-confidence-sliders-prevent-false-accusations-in-hybrid-student-drafts/featured.png",

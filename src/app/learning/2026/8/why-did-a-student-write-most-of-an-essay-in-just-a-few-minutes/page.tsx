@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Why Did a Student Write Most of an Essay in Just a Few Minutes?",
   description: "Investigate why a student's document history shows 1,000+ words appearing in minutes—evaluating clipboard pastes, external drafting, and AI generation.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

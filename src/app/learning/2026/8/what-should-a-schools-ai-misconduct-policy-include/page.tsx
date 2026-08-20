@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Should a School's AI Misconduct Policy Include?",
   description: "A complete blueprint for institutional AI misconduct policies—definitions of assistance vs authorship, disclosure rules, evidentiary standards, and tiered sanctions in Checkmark.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

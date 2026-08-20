@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Is Better Evidence Than an AI Detector Score?",
   description: "Explore the 5 forms of physical and process evidence superior to AI detector scores: essay writing playback, citation audits, baselines, and oral comprehension.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

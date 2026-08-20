@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can a Student Copy an Essay From Someone Who Took the Class Last Year?",
   description: "Learn why copying an essay from a past student is immediately caught—explaining institutional archive indexing, keystroke telemetry, and prompt updates.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

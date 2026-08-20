@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "A Student Retyped ChatGPT Instead of Pasting It — Can I Detect That?",
   description: "Learn how educators detect manually retyped ChatGPT text—cadence analysis, low perplexity classifiers, fake citations, and keystroke forensics in Checkmark.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

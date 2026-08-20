@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Should Teachers Handle Assignments With Mixed Human and AI Writing?",
   description: "A comprehensive pedagogical framework for grading and resolving mixed human-and-AI student essays—balancing proportional assessment and revision.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

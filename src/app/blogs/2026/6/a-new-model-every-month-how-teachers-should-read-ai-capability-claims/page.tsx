@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "A New Model Every Month: How Teachers Should Read AI Capability Claims",
   description: "Gemini 3, GPT-5, Claude, and a new model every few weeks. Here is a calm, practical way for educators to read AI capability claims without chasing the hype.",
   "opengraph-image": "/images/blogs/a-new-model-every-month-how-teachers-should-read-ai-capability-claims/pexels-8197511.jpg",

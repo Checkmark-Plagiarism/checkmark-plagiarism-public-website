@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can ChatGPT Write an Essay That Passes Plagiarism Detection?",
   description: "Learn why ChatGPT essays pass traditional plagiarism detection (0% similarity) but fail modern multi-signal checks like essay writing playback and AI detection.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Teachers Tell If Students Compose Their Work Somewhere Else First?",
   description: "Learn how teachers determine whether an essay was drafted in Word, Pages, or paper before being pasted into Canvas or Google Docs using Checkmark Playback.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

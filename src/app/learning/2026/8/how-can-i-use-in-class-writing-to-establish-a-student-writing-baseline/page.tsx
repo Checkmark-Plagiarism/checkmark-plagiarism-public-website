@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can I Use In-Class Writing to Establish a Student Writing Baseline?",
   description: "Learn how educators use proctored in-class writing samples to establish authentic student writing baselines for fair, accurate authorship comparison.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Should Schools Track AI, Copy/Paste, and Plagiarism Separately?",
   description: "Learn why schools must track Generative AI, Clipboard Pastes, and Web Plagiarism as three distinct integrity metrics to ensure accurate diagnostics and fair governance.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

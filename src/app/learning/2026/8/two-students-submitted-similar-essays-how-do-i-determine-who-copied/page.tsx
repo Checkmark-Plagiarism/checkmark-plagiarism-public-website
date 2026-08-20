@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Two Students Submitted Similar Essays — How Do I Determine Who Copied?",
   description: "Learn how to determine plagiarism directionality between two matching student essays—drafting timelines, paste logs, and typo inheritance in Checkmark.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

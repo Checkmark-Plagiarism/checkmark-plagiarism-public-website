@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Why Would a Student's Writing History Show Long Periods of No Activity?",
   description: "Learn what long periods of inactivity in student writing history mean—evaluating research pauses, multi-day incubation, and last-minute AI pastes.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

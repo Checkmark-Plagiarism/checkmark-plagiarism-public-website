@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "A Student's Survival Guide to the Age of AI Detection",
   description: "Honest, practical guidance for students navigating plagiarism checks, AI detectors, and academic integrity without panic, paranoia, or shortcuts.",
   "opengraph-image": "/images/blogs/a-students-survival-guide-to-the-age-of-ai-detection/pexels-37065064.jpg",

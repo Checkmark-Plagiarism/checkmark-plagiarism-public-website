@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "When Does AI Editing Become AI Writing?",
   description: "Learn the exact boundary where AI proofreading transforms into AI ghostwriting—exploring syntactic reconstruction, idea insertion, and telemetry diffs.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

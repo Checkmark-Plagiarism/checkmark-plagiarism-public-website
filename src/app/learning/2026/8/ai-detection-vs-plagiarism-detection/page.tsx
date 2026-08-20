@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "AI Detection vs. Plagiarism Detection: Key Differences",
   description: "Compare AI detection and plagiarism detection, what each technology measures, their limitations, and why schools may need both.",
   "opengraph-image": "/images/services/report-plagiarism-view.png",

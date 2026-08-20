@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Teachers Use Draft History to Investigate AI Use?",
   description: "Learn how teachers use document draft history to investigate suspected AI writing: tracking drafting progression, analyzing text insertions, and conducting student conferences.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

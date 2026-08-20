@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "The AI Vocabulary Every Educator Actually Needs (A Plain-English Glossary)",
   description: "A plain-English glossary of the AI terms teachers and parents keep running into, organized so the words make sense together instead of as a wall of definitions.",
   "opengraph-image": "/images/learning/the-ai-vocabulary-every-educator-actually-needs-a-plain-english-glossary/pexels-8419515.jpg",

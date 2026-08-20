@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Evidence Should Teachers Collect When They Suspect AI Use?",
   description: "A comprehensive checklist of multi-signal evidence teachers should collect when investigating suspected AI writing: prompts, baselines, playback, and conferences.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

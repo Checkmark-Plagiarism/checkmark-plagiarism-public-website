@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Writing Telemetry Proves Independent Authorship in Dual Enrollment First-Year Composition Portfolios? | Checkmark Plagiarism",
   description: "An authoritative guide for Dual Enrollment coordinators, high school composition faculty, college English department chairs, and higher education articulation officers on using writing process telemetry, keystroke dynamics, and multi-evidence dossiers to verify collegiate authorship in First-Year Composition portfolios.",
   "opengraph-image": "/images/learning/what-writing-telemetry-proves-independent-authorship-in-dual-enrollment-first-year-composition-portfolios/featured.png",

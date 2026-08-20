@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Teachers Detect Humanized AI Writing?",
   description: "Learn how teachers identify humanized AI writing through stylistic thesaurus soup, instant paste footprints, keystroke playback, and citation audits.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

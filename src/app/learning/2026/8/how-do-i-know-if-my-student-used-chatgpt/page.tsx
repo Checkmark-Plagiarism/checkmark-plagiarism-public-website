@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Do I Know If My Student Used ChatGPT?",
   description: "Learn how teachers identify whether a student used ChatGPT: stylistic fingerprints, writing playback timelines, citation audits, and oral comprehension checks.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

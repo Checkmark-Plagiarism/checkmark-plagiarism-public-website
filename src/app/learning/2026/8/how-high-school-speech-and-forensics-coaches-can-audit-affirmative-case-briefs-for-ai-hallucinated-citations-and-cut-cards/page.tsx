@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How High School Speech and Forensics Coaches Can Audit Affirmative Case Briefs for AI-Hallucinated Citations and Cut Cards | Checkmark Plagiarism",
   description: "An authoritative, practical guide for high school speech and debate coaches, NSDA tournament directors, and forensic adjudicators on auditing affirmative case briefs and cut cards for AI-hallucinated citations, fabricated think-tank warrants, and NSDA Rule 7.1.B violations using side-by-side source verification and Essay Playback™ writing telemetry.",
   "opengraph-image": "/images/learning/how-high-school-speech-and-forensics-coaches-can-audit-affirmative-case-briefs-for-ai-hallucinated-citations-and-cut-cards/featured.png",

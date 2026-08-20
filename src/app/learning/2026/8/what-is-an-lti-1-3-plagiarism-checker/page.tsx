@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Is an LTI 1.3 Plagiarism Checker?",
   description: "Explore what an LTI 1.3 plagiarism checker is, how LTI Advantage security protects student data, and why seamless LMS integration transforms grading.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

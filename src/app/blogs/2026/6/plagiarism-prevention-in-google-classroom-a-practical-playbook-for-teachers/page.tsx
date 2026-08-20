@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Plagiarism Prevention in Google Classroom: A Practical Playbook for Teachers",
   description: "Google Classroom won't catch plagiarism for you, but it gives you the levers. A practical playbook of settings, assignment design, and detection resources teachers can actually use.",
   "opengraph-image": "/images/blogs/plagiarism-prevention-in-google-classroom-a-practical-playbook-for-teachers/pexels-218717.jpg",

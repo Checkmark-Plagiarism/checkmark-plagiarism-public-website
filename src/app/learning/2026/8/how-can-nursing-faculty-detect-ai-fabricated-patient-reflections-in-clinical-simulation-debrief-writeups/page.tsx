@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Nursing Faculty Detect AI-Fabricated Patient Reflections in Clinical Simulation Debrief Writeups? | Checkmark Plagiarism",
   description: "An authoritative clinical nursing education and academic integrity guide for BSN, MSN, and DNP faculty to detect AI-fabricated simulation debriefs, audit clinical reflections against mannequin telemetry, and verify clinical judgment using Checkmark Essay Playback™.",
   "opengraph-image": "/images/learning/how-can-nursing-faculty-detect-ai-fabricated-patient-reflections-in-clinical-simulation-debrief-writeups/featured.png",

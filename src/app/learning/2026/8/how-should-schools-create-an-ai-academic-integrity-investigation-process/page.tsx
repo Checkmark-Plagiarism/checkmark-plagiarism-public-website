@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Should Schools Create an AI Academic Integrity Investigation Process?",
   description: "A complete step-by-step roadmap for schools building an AI integrity investigation process—the 4-stage framework, telemetry standards, and due process in Checkmark.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

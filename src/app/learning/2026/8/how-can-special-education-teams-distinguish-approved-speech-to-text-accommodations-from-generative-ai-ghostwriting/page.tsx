@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Special Education Teams Distinguish Approved Speech-to-Text Accommodations From Generative AI Ghostwriting? | Checkmark Plagiarism",
   description: "A definitive legal, linguistic, and technical guide for Special Education Directors, 504/IEP Case Managers, and Assistive Technology Specialists on distinguishing lawful Speech-to-Text (STT) accommodations from generative AI ghostwriting using Checkmark Essay Playback™ writing telemetry.",
   "opengraph-image": "/images/learning/how-can-special-education-teams-distinguish-approved-speech-to-text-accommodations-from-generative-ai-ghostwriting/featured.png",

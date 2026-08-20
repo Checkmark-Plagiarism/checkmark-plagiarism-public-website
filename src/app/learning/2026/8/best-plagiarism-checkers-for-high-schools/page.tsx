@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "6 Best Plagiarism Checkers for High Schools in 2026",
   description: "Compare the best plagiarism checkers for high schools based on source reporting, AI detection, privacy, LMS support, and writing-process evidence.",
   "opengraph-image": "/images/services/report-plagiarism-view.png",

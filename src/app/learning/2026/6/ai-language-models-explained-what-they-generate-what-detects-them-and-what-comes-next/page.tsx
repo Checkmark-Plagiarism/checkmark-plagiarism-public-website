@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "AI Language Models, Explained: What They Generate, What Detects Them, and What Comes Next",
   description: "A plain-English guide to how AI language models work, what they can and cannot do, and how detection fits in, written for teachers, administrators, and parents.",
   "opengraph-image": "/images/learning/ai-language-models-explained-what-they-generate-what-detects-them-and-what-comes-next/pexels-5745576.jpg",

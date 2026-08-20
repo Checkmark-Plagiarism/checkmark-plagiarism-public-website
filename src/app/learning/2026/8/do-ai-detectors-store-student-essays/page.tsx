@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Do AI Detectors Store Student Essays?",
   description: "Learn how AI detectors handle student essay data, data retention policies, ephemeral processing, and institutional privacy standards in Checkmark.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

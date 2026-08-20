@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Teachers Conduct Restorative Academic Integrity Conferences Using Keystroke Playback? | Checkmark Plagiarism",
   description: "Discover how educators can replace punitive plagiarism interrogations with restorative, student-centered writing conferences using patent-pending Essay Playback™ and writing telemetry.",
   "opengraph-image": "/images/learning/how-can-teachers-conduct-restorative-academic-integrity-conferences-using-keystroke-playback/featured.png",

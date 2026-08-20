@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Does AI-Generated Writing Show Up as Plagiarism?",
   description: "Learn how plagiarism checkers scan AI-generated text, why AI writing rarely triggers traditional similarity matches, and how educators detect AI origins.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

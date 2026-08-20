@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Students Plagiarize Ideas Without Copying Exact Words?",
   description: "Learn how idea plagiarism, structural borrowing, and uncredited conceptual frameworks violate academic integrity even without verbatim text copying.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

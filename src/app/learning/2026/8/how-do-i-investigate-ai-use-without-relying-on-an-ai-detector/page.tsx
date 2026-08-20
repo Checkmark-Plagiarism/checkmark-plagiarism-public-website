@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Do I Investigate AI Use Without Relying on an AI Detector?",
   description: "A complete guide on investigating AI use without AI detectors—keystroke writing playback, Crossref DOI audits, baseline matching, and oral defense in Checkmark.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

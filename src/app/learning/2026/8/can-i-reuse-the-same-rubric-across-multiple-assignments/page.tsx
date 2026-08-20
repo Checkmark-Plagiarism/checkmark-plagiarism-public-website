@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can I Reuse the Same Rubric Across Multiple Assignments?",
   description: "Learn how Checkmark Autograder's Rubric Library allows teachers and departments to reuse, clone, and standardize rubrics across assignments and courses.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Dual Enrollment Faculty Use Essay Playback Timelines to Verify Writing Authenticity in Asynchronous College Composition? | Checkmark Plagiarism",
   description: "Learn how dual enrollment faculty, college deans, and distance learning directors use keystroke Essay Playback timelines and writing telemetry to verify college composition authenticity, meet regional accreditation standards, and eliminate invasive proctoring.",
   "opengraph-image": "/images/learning/how-can-dual-enrollment-faculty-use-essay-playback-timelines-to-verify-writing-authenticity-in-asynchronous-college-composition/featured.png",

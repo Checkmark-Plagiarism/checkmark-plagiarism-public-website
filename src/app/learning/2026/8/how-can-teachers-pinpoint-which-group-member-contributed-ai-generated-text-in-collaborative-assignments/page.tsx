@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Teachers Pinpoint Which Group Member Contributed AI-Generated Text in Collaborative Assignments? | Checkmark Plagiarism",
   description: "A comprehensive guide for secondary and higher education educators on isolating individual AI contributions in collaborative group assignments using multi-author keystroke telemetry, author-filtered Essay Playback, and paste buffer analysis without resorting to unfair collective punishment.",
   "opengraph-image": "/images/learning/how-can-teachers-pinpoint-which-group-member-contributed-ai-generated-text-in-collaborative-assignments/featured.png",

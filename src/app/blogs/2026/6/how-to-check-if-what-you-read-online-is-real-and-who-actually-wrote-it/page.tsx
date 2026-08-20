@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How to Check If What You Read Online Is Real (and Who Actually Wrote It)",
   description: "A practical, no-jargon field guide for teachers, parents, and students on verifying online information and authorship in an age of cheap fakes and AI text.",
   "opengraph-image": "/images/blogs/how-to-check-if-what-you-read-online-is-real-and-who-actually-wrote-it/pexels-6632624.jpg",

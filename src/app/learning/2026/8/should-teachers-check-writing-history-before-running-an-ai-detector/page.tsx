@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Should Teachers Check Writing History Before Running an AI Detector?",
   description: "Learn why checking writing history and keystroke playback before viewing AI detector scores eliminates confirmation bias and protects honest students.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

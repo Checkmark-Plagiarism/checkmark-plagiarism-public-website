@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "The Canvas Breach Should Change How Schools Buy Their Next AI Tool",
   description: "ShinyHunters hit 9,000 schools and exposed years of student messages. The breach should reshape how every district vets its next AI vendor contract.",
   "opengraph-image": "/images/blog/the-canvas-breach-should-change-how-schools-buy-their-next-ai-tool/pexels-photo-17323801.jpeg",

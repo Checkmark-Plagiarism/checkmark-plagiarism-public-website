@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What's the Difference Between Uncited Writing and Plagiarism?",
   description: "Understand the key differences between uncited writing (mechanical citation errors) and plagiarism (intentional deception) to guide fair educator responses.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

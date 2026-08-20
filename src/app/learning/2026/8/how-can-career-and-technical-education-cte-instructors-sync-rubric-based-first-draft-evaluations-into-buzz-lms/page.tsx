@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Career and Technical Education (CTE) Instructors Sync Rubric-Based First-Draft Evaluations Into Buzz LMS? | Checkmark Plagiarism",
   description: "A comprehensive technical and pedagogical guide for CTE instructors, Agilix Buzz LMS administrators, and vocational leads on syncing rubric-based first-draft evaluations, AGS 2.0 grade passback, Essay Playback, and standards-aligned feedback into Buzz LMS.",
   "opengraph-image": "/images/learning/how-can-career-and-technical-education-cte-instructors-sync-rubric-based-first-draft-evaluations-into-buzz-lms/featured.png",

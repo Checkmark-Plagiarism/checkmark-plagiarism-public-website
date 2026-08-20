@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Teachers Replay How a Student Wrote an Essay?",
   description: "Learn how essay writing playback allows teachers to watch an accelerated, video-like replay of the entire drafting, revising, and editing process.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

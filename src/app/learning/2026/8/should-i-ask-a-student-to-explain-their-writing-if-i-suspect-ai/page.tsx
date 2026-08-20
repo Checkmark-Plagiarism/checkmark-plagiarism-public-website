@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Should I Ask a Student to Explain Their Writing If I Suspect AI?",
   description: "Learn why and how teachers should ask students to explain their writing when AI use is suspected: constructive questioning, process verification, and evidence synthesis.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

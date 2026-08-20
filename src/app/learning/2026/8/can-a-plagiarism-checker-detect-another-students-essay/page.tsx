@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can a Plagiarism Checker Detect Another Student's Essay?",
   description: "Discover how student-to-student matching and institutional repositories allow plagiarism checkers to detect essays copied from classmates, siblings, or online paper mills.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

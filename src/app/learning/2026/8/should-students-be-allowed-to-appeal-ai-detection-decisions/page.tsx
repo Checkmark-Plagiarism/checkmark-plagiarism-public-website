@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Should Students Be Allowed to Appeal AI Detection Decisions?",
   description: "Learn why student appeal processes are essential in AI academic integrity cases—due process, legitimate drafting artifacts, and appeal roadmaps in Checkmark.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How High School AP Chemistry Teachers Can Audit Lab Writeups for AI-Generated Enthalpy Calculations and Fabricated Titration Data",
   description: "A comprehensive technical and pedagogical guide for AP Chemistry educators, science department chairs, and STEM coordinators on auditing quantitative lab writeups, detecting AI-generated enthalpy calculations and fabricated titration curves, and utilizing Essay Playback™ writing telemetry.",
   "opengraph-image": "/images/learning/how-high-school-ap-chemistry-teachers-can-audit-lab-writeups-for-ai-generated-enthalpy-calculations-and-fabricated-titration-data/featured.png",

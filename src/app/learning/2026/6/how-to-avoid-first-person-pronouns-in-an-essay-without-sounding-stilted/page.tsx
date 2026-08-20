@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How to Avoid First-Person Pronouns in an Essay (Without Sounding Stilted)",
   description: "A clear, practical guide to writing essays without I, we, and you: why teachers ask for it, when the rule bends, and concrete techniques to rewrite sentences cleanly.",
   "opengraph-image": "/images/learning/how-to-avoid-first-person-pronouns-in-an-essay-without-sounding-stilted/pexels-31864438.jpg",

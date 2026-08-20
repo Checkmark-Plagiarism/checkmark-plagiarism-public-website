@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "The Hidden Costs of AI on Education",
   description:
     "Across classrooms, students face false AI accusations and strained relationships. Here’s how to rebuild trust-with better context, transparent practices, and essay playback.",

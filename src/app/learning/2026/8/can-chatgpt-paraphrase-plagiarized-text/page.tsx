@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can ChatGPT Paraphrase Plagiarized Text?",
   description: "Learn how ChatGPT rewrites plagiarized text, why it deceives traditional similarity scanners, and how educators detect AI-paraphrased writing with writing playback.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Secondary English Teachers Use AI-Drafted Rubric Justifications to Accelerate Formative Essay Conferences? | Checkmark Plagiarism",
   description: "A comprehensive pedagogical and technical guide for secondary English educators, department chairs, and instructional coaches on leveraging AI-drafted, quote-anchored rubric justifications and keystroke playback to conduct rapid, high-impact 1-on-1 formative essay conferences across 150-student rosters.",
   "opengraph-image": "/images/learning/how-can-secondary-english-teachers-use-ai-drafted-rubric-justifications-to-accelerate-formative-essay-conferences/featured.png",

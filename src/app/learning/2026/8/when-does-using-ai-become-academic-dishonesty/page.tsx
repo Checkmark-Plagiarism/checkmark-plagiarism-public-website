@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "When Does Using AI Become Academic Dishonesty?",
   description: "Identify the exact tipping point where AI assistance transitions into academic dishonesty, authorship fraud, and contract cheating.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can AI Detectors Accurately Analyze Short Answers Under 150 Words? | Checkmark Plagiarism",
   description: "Explore why AI writing detectors fail on texts under 150 words, the mathematical limits of perplexity, and how Checkmark's guardrails protect honest students.",
   "opengraph-image": "/images/learning/can-ai-detectors-accurately-analyze-short-answers-under-150-words/featured.png",

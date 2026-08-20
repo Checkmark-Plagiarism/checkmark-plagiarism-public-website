@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can District Assessment Coordinators Use Keystroke Telemetry to Audit Writing Authenticity on Remote Benchmark Exams? | Checkmark Plagiarism",
   description: "An authoritative institutional guide for District Assessment Coordinators, CTOs, and Curriculum Directors to audit student writing authenticity on remote, hybrid, and take-home benchmark exams using non-invasive keystroke telemetry and Essay Playback™.",
   "opengraph-image": "/images/learning/how-can-district-assessment-coordinators-use-keystroke-telemetry-to-audit-writing-authenticity-on-remote-benchmark-exams/featured.png",

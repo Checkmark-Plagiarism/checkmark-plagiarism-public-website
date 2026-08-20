@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Why Side-by-Side Source Viewers Are Essential for Adjudicating Accidental Versus Deceptive Patchwriting | Checkmark Plagiarism",
   description: "Discover why side-by-side source viewers and multi-factor evidence are vital for distinguishing developmental patchwriting from intentional plagiarism, protecting emerging student writers, and fostering restorative integrity.",
   "opengraph-image": "/images/services/report-source-quote.png",

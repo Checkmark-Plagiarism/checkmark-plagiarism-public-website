@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Is Using AI to Rewrite a Paragraph Cheating?",
   description: "Learn why using AI to rewrite individual paragraphs is classified as academic misconduct when unauthorized, and how teachers detect mixed-authorship essays.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

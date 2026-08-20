@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Should I Allow Students to Use ChatGPT for Assignments?",
   description: "Explore the pedagogical pros, cons, and frameworks for deciding whether and how to permit ChatGPT use in student assignments.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

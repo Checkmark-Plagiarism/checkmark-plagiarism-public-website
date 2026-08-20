@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can AI Grade Writing Consistently Across Multiple Classes?",
   description: "Learn how AI standardizes essay grading across multiple sections and teachers—eliminating grading drift, aligning departments, and ensuring equity.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

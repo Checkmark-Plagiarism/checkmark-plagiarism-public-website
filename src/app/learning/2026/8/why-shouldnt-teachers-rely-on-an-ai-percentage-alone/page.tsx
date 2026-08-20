@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Why Shouldn't Teachers Rely on an AI Percentage Alone?",
   description: "Explore why relying solely on an AI detection percentage leads to false accusations and why an evidence-first approach combining process analytics is essential.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

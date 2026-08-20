@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Plagiarism Grades and Feedback Sync Back to Google Classroom?",
   description: "Learn how Checkmark Plagiarism automatically syncs approved essay grades, similarity notes, and rubric feedback directly into Google Classroom with 1 click.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

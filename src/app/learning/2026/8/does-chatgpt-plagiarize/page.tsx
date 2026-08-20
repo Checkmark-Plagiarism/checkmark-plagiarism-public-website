@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Does ChatGPT Plagiarize?",
   description: "Explore whether ChatGPT commits plagiarism: how large language models generate text, verbatim regurgitation risks, intellectual property issues, and academic integrity.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

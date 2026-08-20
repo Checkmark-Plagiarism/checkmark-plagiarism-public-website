@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Side-by-Side Source Quotations Protect Students From Unfair Similarity Accusations | Checkmark Plagiarism",
   description: "Learn how side-by-side source quotations and verbatim evidence comparison protect students from false plagiarism accusations, replace flawed similarity percentages, and support restorative academic integrity.",
   "opengraph-image": "/images/services/report-source-quote.png",

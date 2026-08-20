@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How to Configure Canvas SpeedGrader with AI Rubric Suggestions for Multi-Draft Revision Assignments | Checkmark Plagiarism",
   description: "A comprehensive technical and pedagogical guide for educators, department chairs, and Canvas administrators on configuring Canvas SpeedGrader with Checkmark Plagiarism's AI rubric autograder, keystroke integrity telemetry, and multi-draft revision workflows.",
   "opengraph-image": "/images/services/report-grading-view.png",

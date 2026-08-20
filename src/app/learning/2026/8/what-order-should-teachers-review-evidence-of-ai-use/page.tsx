@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Order Should Teachers Review Evidence of AI Use?",
   description: "Learn the optimal, unbiased sequence for reviewing evidence of AI use—prioritizing physical process telemetry before neural scores and oral check-ins.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

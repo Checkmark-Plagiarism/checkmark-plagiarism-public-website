@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can ChatGPT Cite Sources That Don't Exist?",
   description: "Understand why ChatGPT hallucinates non-existent academic citations, fake authors, and phantom DOIs, and how teachers audit bibliographies for AI proof.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

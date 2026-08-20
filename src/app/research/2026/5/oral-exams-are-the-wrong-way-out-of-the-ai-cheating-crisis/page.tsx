@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Oral Exams Are the Wrong Way Out of the AI Cheating Crisis",
   description: "Schools pivoting to oral exams to beat AI cheating are swapping forensic guesswork for performance bias - and exporting the cost to the students already struggling.",
   "opengraph-image": "/images/blog/oral-exams-are-the-wrong-way-out-of-the-ai-cheating-crisis/pexels-rdne-8500670.jpg",

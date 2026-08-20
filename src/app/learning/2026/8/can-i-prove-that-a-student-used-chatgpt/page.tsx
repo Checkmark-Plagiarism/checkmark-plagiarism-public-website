@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can I Prove That a Student Used ChatGPT?",
   description: "Understand why proving ChatGPT use is difficult, what evidence actually holds up, how writing-process playback provides context, and how to build a defensible review.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

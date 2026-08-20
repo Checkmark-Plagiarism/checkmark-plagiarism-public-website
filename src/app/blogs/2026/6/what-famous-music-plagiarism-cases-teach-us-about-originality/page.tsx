@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Famous Music Plagiarism Cases Teach Us About Originality",
   description: "Blurred Lines, Stairway to Heaven, and the messy line between influence and theft. What music copyright fights reveal about how we teach originality in school.",
   "opengraph-image": "/images/blogs/what-famous-music-plagiarism-cases-teach-us-about-originality/pexels-37730973.jpg",

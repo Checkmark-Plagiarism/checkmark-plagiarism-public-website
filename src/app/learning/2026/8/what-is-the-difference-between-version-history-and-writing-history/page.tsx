@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Is the Difference Between Version History and Writing History?",
   description: "Understand the critical difference between static document version history (periodic snapshots) and biometric writing history (continuous keystroke playback).",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

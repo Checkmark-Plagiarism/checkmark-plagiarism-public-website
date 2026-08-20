@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can High School Theater Teachers Use Writing Process Replay to Verify Authentic Dialogue Drafting in Playwriting Assignments? | Checkmark Plagiarism",
   description: "An authoritative guide for high school theater arts teachers, playwriting faculty, fine arts department chairs, and creative writing educators on using writing process telemetry, keystroke playback, and paste analysis to verify authentic dialogue, protect artistic vulnerability, and detect AI-generated scripts.",
   "opengraph-image": "/images/services/report-paste-evidence.png",

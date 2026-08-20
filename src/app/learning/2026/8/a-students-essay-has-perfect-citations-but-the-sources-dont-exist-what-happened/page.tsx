@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "A Student's Essay Has Perfect Citations but the Sources Don't Exist — What Happened?",
   description: "Learn why AI generates fake academic citations—LLM hallucination mechanics, phantom DOIs, chimera sources, and automated verification in Checkmark.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

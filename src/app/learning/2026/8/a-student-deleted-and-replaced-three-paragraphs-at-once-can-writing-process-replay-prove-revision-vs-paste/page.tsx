@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "A Student Deleted and Replaced Three Paragraphs at Once: Can Writing Process Replay Prove Revision vs Paste? | Checkmark Plagiarism",
   description: "Discover how educators can investigate sudden multi-paragraph deletions and replacements using patent-pending Essay Playback™, keystroke telemetry physics, and restorative writing process forensics.",
   "opengraph-image": "/images/learning/a-student-deleted-and-replaced-three-paragraphs-at-once-can-writing-process-replay-prove-revision-vs-paste/featured.png",

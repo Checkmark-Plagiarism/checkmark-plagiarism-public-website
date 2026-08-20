@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Writing Process Evidence Can College Counselors and Admissions Officers Use to Verify Authentic Personal Statements? | Checkmark Plagiarism",
   description: "An authoritative technical and pedagogical guide for college counselors, admissions officers, and IECs on using writing process telemetry, keystroke dynamics, and Essay Playback™ to verify authentic personal statements without black-box AI scores.",
   "opengraph-image": "/images/learning/what-writing-process-evidence-can-college-counselors-and-admissions-officers-use-to-verify-authentic-personal-statements/featured.png",

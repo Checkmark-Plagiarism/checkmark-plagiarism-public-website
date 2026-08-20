@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Teachers Prioritize Which Assignments Need Manual Review?",
   description: "A complete framework for prioritizing manual essay review—the 4-tier risk matrix, multi-signal sorting, and triage workflows in Checkmark.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

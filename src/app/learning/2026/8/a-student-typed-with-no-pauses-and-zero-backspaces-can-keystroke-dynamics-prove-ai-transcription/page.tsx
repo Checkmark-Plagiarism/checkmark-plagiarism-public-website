@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "A Student Typed With No Pauses and Zero Backspaces: Can Keystroke Dynamics Prove AI Transcription?",
   description: "Discover how keystroke dynamics and patent-pending Essay Playback™ detect AI transcription, copy-typing, and mechanical text entry while protecting honest students.",
   "opengraph-image": "/images/services/report-paste-evidence.png",

@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Writing Process Telemetry Should Graduate Committees Review During Thesis and Dissertation Defenses? | Checkmark Plagiarism",
   description: "An authoritative guide for Graduate School Deans, Doctoral Dissertation Committees, Master's Thesis Advisers, and Research Compliance Officers on auditing longitudinal writing telemetry, keystroke dynamics, and revision history during oral defenses without exposing unpublished research.",
   "opengraph-image": "/images/learning/what-writing-process-telemetry-should-graduate-committees-review-during-thesis-and-dissertation-defenses/featured.png",

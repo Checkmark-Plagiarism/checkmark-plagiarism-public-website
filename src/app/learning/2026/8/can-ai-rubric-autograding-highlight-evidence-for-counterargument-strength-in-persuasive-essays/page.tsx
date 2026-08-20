@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can AI Rubric Autograding Highlight Evidence for Counterargument Strength in Persuasive Essays? | Checkmark Plagiarism",
   description: "An authoritative technical and pedagogical guide on how AI rubric autograding with quote-anchored evidence extraction evaluates counterargument and refutation sophistication in persuasive essays, transforming ELA grading while preserving educator agency.",
   "opengraph-image": "/images/learning/can-ai-rubric-autograding-highlight-evidence-for-counterargument-strength-in-persuasive-essays/featured.png",

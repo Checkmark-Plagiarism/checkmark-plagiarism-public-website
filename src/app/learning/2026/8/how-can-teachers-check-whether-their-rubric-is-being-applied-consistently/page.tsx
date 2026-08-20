@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Teachers Check Whether Their Rubric Is Being Applied Consistently?",
   description: "Learn how educators audit rubric application consistency—score distribution curves, criterion correlation matrices, and calibration checks in Checkmark.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

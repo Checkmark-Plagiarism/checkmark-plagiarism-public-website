@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Keystroke Telemetry Signals Distinguish Authentic Drafting From Manual Transcription? | Checkmark Plagiarism",
   description: "Explore the psycholinguistic science and keystroke telemetry metrics—IKIs, P-bursts, R-bursts, and velocity entropy—that distinguish organic composition from manual AI transcription.",
   "opengraph-image": "/images/learning/what-keystroke-telemetry-signals-distinguish-authentic-drafting-from-manual-transcription/featured.png",

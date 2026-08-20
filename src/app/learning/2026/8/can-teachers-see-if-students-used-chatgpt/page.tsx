@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Teachers See If Students Used ChatGPT?",
   description: "Explore how teachers detect ChatGPT usage through Google Docs version history, LMS activity logs, essay writing playback, and citation verification.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

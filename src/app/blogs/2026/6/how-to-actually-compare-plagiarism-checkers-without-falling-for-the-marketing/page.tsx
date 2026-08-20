@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How to Actually Compare Plagiarism Checkers (Without Falling for the Marketing)",
   description: "A clear-eyed guide for teachers and admins on how to compare plagiarism checking tools, what the feature lists hide, and the questions that actually matter.",
   "opengraph-image": "/images/blogs/how-to-actually-compare-plagiarism-checkers-without-falling-for-the-marketing/pexels-8580716.jpg",

@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Social Work Faculty Use Writing Telemetry to Verify Authentic Client Assessment Notes in MSW Field Practicums? | Checkmark Plagiarism",
   description: "An authoritative clinical social work education and academic integrity guide for MSW field directors, practicum liaisons, LCSW clinical supervisors, and faculty to verify authentic client assessment notes, prevent AI hallucinations and HIPAA violations, and audit clinical documentation using Checkmark Essay Playback™.",
   "opengraph-image": "/images/learning/how-can-social-work-faculty-use-writing-telemetry-to-verify-authentic-client-assessment-notes-in-msw-field-practicums/featured.png",

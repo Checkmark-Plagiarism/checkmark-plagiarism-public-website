@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can I Tell If Two Students Copied From Each Other?",
   description: "Learn how teachers use peer submission matches, writing playback timelines, and revision history to determine who authored an essay and who copied it.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

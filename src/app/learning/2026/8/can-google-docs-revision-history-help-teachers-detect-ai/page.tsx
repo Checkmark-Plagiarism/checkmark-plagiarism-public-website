@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Google Docs Revision History Help Teachers Detect AI?",
   description: "Discover how Google Docs revision history helps teachers detect AI writing, and how Checkmark transforms raw version snapshots into conclusive video playback.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Does Using AI for Brainstorming Count as AI-Generated Work?",
   description: "Learn why using AI for brainstorming topic ideas and research angles does not make an essay AI-generated—provided the drafting is 100% human.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

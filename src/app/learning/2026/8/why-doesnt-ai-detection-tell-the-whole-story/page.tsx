@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Why Doesn't AI Detection Tell the Whole Story?",
   description: "Explore why AI detection percentages provide an incomplete picture of student authorship and how writing playback and citation audits complete the story.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

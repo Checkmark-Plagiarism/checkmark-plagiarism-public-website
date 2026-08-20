@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Is Google Docs Revision History Enough to Detect AI?",
   description: "Learn why native Google Docs revision history alone is not enough to detect AI writing, and why multi-signal keystroke telemetry in Checkmark is required.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

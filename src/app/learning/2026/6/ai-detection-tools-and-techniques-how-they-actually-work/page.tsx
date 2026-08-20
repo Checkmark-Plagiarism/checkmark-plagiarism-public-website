@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "AI Detection Tools and Techniques: How They Actually Work",
   description: "A plain-English guide to how AI text detectors work, the main techniques they use, model-specific detectors like Gemini detectors, and where they fall short.",
   "opengraph-image": "/images/learning/ai-detection-tools-and-techniques-how-they-actually-work/pexels-34803966.jpg",

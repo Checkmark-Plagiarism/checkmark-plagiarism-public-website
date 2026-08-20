@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Much Matching Text Is Enough to Investigate Plagiarism?",
   description: "Learn why passage-level evidence and verbatim string clusters—not arbitrary overall similarity percentages—define when an educator should investigate plagiarism.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

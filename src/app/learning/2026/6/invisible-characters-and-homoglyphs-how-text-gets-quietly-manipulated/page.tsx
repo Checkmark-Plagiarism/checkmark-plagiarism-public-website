@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Invisible Characters and Homoglyphs: How Text Gets Quietly Manipulated",
   description: "A plain-English explainer on zero-width characters, homoglyph swaps, and other invisible Unicode tricks used to manipulate text and dodge detection, plus how schools can catch them.",
   "opengraph-image": "/images/learning/invisible-characters-and-homoglyphs-how-text-gets-quietly-manipulated/pexels-907489.jpg",

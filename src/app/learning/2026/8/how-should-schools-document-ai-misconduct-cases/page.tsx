@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Should Schools Document AI Misconduct Cases?",
   description: "A complete guide on documenting AI misconduct cases—FERPA-compliant audit dossiers, writing playback logs, and citation evidence in Checkmark.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

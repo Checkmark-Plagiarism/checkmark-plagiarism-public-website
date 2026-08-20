@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Schools Make AI Investigations Consistent Across Teachers?",
   description: "Learn how schools achieve cross-faculty consistency in AI investigations—standardized conference scripts, telemetry standards, and centralized dossiers in Checkmark.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

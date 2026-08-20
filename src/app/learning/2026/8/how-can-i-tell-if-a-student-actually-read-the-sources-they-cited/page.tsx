@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can I Tell If a Student Actually Read the Sources They Cited?",
   description: "Learn how teachers determine whether students genuinely read their cited sources—analyzing quote integration, source matching, and AI hallucination forensics.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

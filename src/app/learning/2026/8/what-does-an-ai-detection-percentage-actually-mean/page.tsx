@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Does an AI Detection Percentage Actually Mean?",
   description: "Understand what an AI detection percentage really represents—confidence vs text proportion—and why writing playback provides the context score numbers lack.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

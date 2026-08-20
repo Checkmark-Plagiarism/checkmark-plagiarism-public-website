@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Document Revision History Help Detect AI Writing?",
   description: "Learn how document revision history reveals drafting progression, what sudden text insertions mean, and how writing playback complements AI detection.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

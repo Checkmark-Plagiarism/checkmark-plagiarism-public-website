@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title:
     'False Positives and Academic Integrity: The Risk of Current AI Detection Tools - What Happens When AI Detection Fails?',
   description:

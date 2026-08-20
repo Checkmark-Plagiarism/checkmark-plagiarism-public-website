@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Does Suspicious Writing History Look Like?",
   description: "Learn how teachers recognize suspicious document writing history patterns: instant text additions, missing revision cycles, abrupt style shifts, and unverified external drafts.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

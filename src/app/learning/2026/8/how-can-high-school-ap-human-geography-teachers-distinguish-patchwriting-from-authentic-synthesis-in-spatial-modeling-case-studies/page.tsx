@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can High School AP Human Geography Teachers Distinguish Patchwriting from Authentic Synthesis in Spatial Modeling Case Studies?",
   description: "An authoritative guide for high school AP Human Geography teachers, social studies department chairs, and AP coordinators on distinguishing developmental patchwriting from intentional plagiarism and AI text-spinning in 9th-grade spatial modeling case studies using Essay Playback™ writing telemetry.",
   "opengraph-image": "/images/learning/how-can-high-school-ap-human-geography-teachers-distinguish-patchwriting-from-authentic-synthesis-in-spatial-modeling-case-studies/featured.png",

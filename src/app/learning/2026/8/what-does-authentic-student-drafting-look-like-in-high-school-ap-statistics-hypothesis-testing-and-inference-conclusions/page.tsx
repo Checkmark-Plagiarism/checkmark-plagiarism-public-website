@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Does Authentic Student Drafting Look Like in High School AP Statistics Hypothesis Testing and Inference Conclusions? | Checkmark Plagiarism",
   description: "An authoritative guide for high school AP Statistics educators, STEM department chairs, and academic integrity committees on distinguishing authentic statistical drafting from AI-generated inference errors, deterministic hallucinations, and false-positive templated flags using Essay Playback™ writing telemetry.",
   "opengraph-image": "/images/services/report-paste-evidence.png",

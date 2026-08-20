@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Typing History Show Whether an Essay Is Authentic?",
   description: "Learn how writing process analysis and typing history provide objective, behavioral proof of genuine student authorship and intellectual effort.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

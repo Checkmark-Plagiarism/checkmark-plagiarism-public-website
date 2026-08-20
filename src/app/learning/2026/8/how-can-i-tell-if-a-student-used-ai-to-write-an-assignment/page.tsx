@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can I Tell If a Student Used AI to Write an Assignment?",
   description: "Learn how teachers can tell if a student used AI by combining writing style analysis, AI detection, writing process playback, and student conversations.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

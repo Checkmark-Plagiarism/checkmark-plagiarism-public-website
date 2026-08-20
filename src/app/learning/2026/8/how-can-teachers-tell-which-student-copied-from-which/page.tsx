@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Teachers Tell Which Student Copied From Which?",
   description: "Learn how teachers determine origin authorship when two students submit matching essays—using keystroke playback, revision depth, and timestamps in Checkmark.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

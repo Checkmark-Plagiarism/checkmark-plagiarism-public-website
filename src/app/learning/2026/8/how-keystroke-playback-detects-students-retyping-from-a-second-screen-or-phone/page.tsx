@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Keystroke Playback Detects Students Retyping From a Second Screen or Phone | Checkmark Plagiarism",
   description: "Discover how patent-pending Essay Playback™ and keystroke dynamics uncover students retyping AI-generated text from a second screen or smartphone, closing the transcription loophole with defensible evidence.",
   "opengraph-image": "/images/services/report-paste-evidence.png",

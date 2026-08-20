@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Should I Do If a Student Can't Explain Their Own Essay?",
   description: "Learn what to do when a student struggles to explain their submitted essay: distinguish nervousness from unauthorized AI, evaluate process evidence, and conduct fair conferences.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Do You Investigate Suspected AI Cheating Fairly?",
   description: "A step-by-step educator framework for conducting fair, objective, and supportive investigations into suspected student AI writing and academic integrity concerns.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

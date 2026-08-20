@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can AI Detectors Give False Positives?",
   description: "Learn why AI detectors produce false positives, how human prose can resemble AI patterns, false negatives, and why writing-process evidence is essential for fair review.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

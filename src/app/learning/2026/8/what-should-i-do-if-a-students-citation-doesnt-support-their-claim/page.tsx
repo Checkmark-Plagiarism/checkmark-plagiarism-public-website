@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Should I Do If a Student's Citation Doesn't Support Their Claim?",
   description: "A step-by-step educator guide on handling citation mismatches—distinguishing between honest student misreading, decontextualized snippets, and AI hallucinations.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

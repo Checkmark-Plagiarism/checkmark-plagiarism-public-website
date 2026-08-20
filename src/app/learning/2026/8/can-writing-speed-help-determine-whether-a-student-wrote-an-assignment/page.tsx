@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Writing Speed Help Determine Whether a Student Wrote an Assignment?",
   description: "Learn how typing speed, keystroke rhythm, and velocity variance serve as physical forensic evidence to determine authentic student authorship.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

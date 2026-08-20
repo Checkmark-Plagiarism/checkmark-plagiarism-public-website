@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Teachers Give Students a Chance to Explain Suspicious Writing?",
   description: "Learn how to conduct a fair, supportive student conference for suspicious essays—using the 3 diagnostic oral questions and writing playback in Checkmark.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

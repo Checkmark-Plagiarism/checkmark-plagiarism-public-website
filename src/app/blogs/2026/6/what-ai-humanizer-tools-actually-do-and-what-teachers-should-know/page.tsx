@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What AI Humanizer Tools Actually Do, and What Teachers Should Know",
   description: "AI humanizer tools promise to make machine-written text sound human and slip past detectors. Here is what they really do, and what it means for the classroom.",
   "opengraph-image": "/images/blogs/what-ai-humanizer-tools-actually-do-and-what-teachers-should-know/pexels-5428146.jpg",

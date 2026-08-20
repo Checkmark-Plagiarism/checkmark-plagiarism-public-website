@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "My Student Says the AI Detector Is Wrong — What Should I Check?",
   description: "A complete step-by-step checklist when a student disputes an AI detector score—writing playback telemetry, backspace ratios, and source verification in Checkmark.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

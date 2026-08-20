@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "User Onboarding and Access Management: Adding Teachers, Roles, and Permissions in Checkmark",
   description: "A plain-English guide to adding users, assigning roles, and managing access in Checkmark Plagiarism, so your whole school is set up safely in minutes.",
   "opengraph-image": "/images/learning/user-onboarding-and-access-management-adding-teachers-roles-and-permissions-in-checkmark/pexels-27742642.jpg",

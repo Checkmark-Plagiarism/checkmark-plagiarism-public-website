@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Schools Are Solving the AI Cheating Problem by Creating Bigger Ones",
   description:
     "Schools are retreating to timed in-class essays to prevent AI cheating-but they're sacrificing the cognitive skills writing was designed to build. There's a better way.",

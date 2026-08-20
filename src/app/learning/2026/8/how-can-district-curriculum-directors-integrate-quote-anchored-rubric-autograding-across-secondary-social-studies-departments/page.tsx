@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can District Curriculum Directors Integrate Quote-Anchored Rubric Autograding Across Secondary Social Studies Departments? | Checkmark Plagiarism",
   description: "An authoritative district leadership guide for Curriculum Directors, Assistant Superintendents of Teaching & Learning, and Secondary Social Studies Coordinators on scaling quote-anchored rubric autograding, AP DBQ/LEQ alignment, C3 Framework inquiry tasks, and keystroke integrity verification across multi-campus secondary departments.",
   "opengraph-image": "/images/services/report-grading-view.png",

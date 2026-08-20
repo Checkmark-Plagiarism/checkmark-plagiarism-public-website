@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can I Make Essays More AI-Resistant?",
   description: "Learn practical techniques to make traditional essay assignments AI-resistant: source constraints, localized prompts, metacognitive memos, and writing playback.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

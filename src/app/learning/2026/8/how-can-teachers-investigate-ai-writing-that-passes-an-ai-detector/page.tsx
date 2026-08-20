@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Teachers Investigate AI Writing That Passes an AI Detector?",
   description: "Learn how teachers uncover AI writing that bypassed static detectors using essay writing playback, citation verification, baseline comparisons, and oral defenses.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

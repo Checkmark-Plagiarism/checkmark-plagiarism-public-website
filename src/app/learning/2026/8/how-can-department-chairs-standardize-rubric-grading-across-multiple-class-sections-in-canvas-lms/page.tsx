@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Department Chairs Standardize Rubric Grading Across Multiple Class Sections in Canvas LMS? | Checkmark Plagiarism",
   description: "An authoritative guide for department chairs, curriculum leads, and academic administrators on standardizing rubric evaluation, eliminating inter-rater grading disparities, and unifying integrity telemetry across multi-section Canvas LMS courses.",
   "opengraph-image": "/images/learning/how-can-department-chairs-standardize-rubric-grading-across-multiple-class-sections-in-canvas-lms/featured.png",

@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Academic Integrity Officers Audit Suspicious Turnaround Times on Take-Home Essay Exams? | Checkmark Plagiarism",
   description: "A comprehensive forensic guide for Academic Integrity Officers, Deans, and Department Chairs to audit suspicious turnaround times, instant paste dumps, and second-screen transcription on take-home essay exams using keystroke telemetry and Essay Playback™.",
   "opengraph-image": "/images/learning/how-can-academic-integrity-officers-audit-suspicious-turnaround-times-on-take-home-essay-exams/featured.png",

@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Objective Telemetry Evidence Should School Principals Review With Parents During Contested AI Misconduct Conferences? | Checkmark Plagiarism",
   description: "A comprehensive administrative master guide for high school principals, assistant principals, and academic deans on conducting defensible, de-escalating parent conferences for contested AI misconduct allegations using objective writing telemetry, Essay Playback™, external paste buffers, and grounded source proof.",
   "opengraph-image": "/images/learning/what-objective-telemetry-evidence-should-school-principals-review-with-parents-during-contested-ai-misconduct-conferences/featured.png",

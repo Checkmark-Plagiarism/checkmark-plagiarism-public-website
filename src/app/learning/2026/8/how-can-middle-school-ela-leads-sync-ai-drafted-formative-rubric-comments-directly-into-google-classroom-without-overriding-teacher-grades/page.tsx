@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Middle School ELA Leads Sync AI-Drafted Formative Rubric Comments Directly Into Google Classroom Without Overriding Teacher Grades? | Checkmark Plagiarism",
   description: "A comprehensive guide for middle school ELA department leads, instructional technology coaches, and secondary teachers on syncing AI-drafted formative rubric comments into Google Classroom while protecting teacher grading sovereignty and accelerating multi-draft revision cycles.",
   "opengraph-image": "/images/services/report-grading-view.png",

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Do Real Student Essays Usually Have Deletions and Revisions?",
   description: "Learn why authentic student essays always exhibit deletions, backspaces, and structural revisions—and why zero-revision papers indicate AI shortcuts.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

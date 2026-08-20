@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Writing Telemetry Patterns Distinguish Real-Time Brainstorming From Pre-Drafted Script Pasting in Timed Exams? | Checkmark Plagiarism",
   description: "Discover the biometric writing telemetry patterns, cognitive burst dynamics, and keystroke metrics that distinguish authentic real-time brainstorming from pre-drafted script pasting and second-screen transcription in timed exams.",
   "opengraph-image": "/images/services/report-paste-evidence.png",

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Paraphrasing, Done Right: A Practical Guide to Restating Ideas Without Stealing Them",
   description: "A clear, practical explainer on what paraphrasing actually is, the techniques that work, the patterns that quietly become plagiarism, and how to do it ethically.",
   "opengraph-image": "/images/learning/paraphrasing-done-right-a-practical-guide-to-restating-ideas-without-stealing-them/pexels-37860169.jpg",

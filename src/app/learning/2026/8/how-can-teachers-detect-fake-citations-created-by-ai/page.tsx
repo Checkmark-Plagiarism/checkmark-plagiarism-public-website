@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Teachers Detect Fake Citations Created by AI?",
   description: "Learn how teachers identify fake citations created by ChatGPT—detecting fabricated DOIs, Frankenstein author pairings, and non-existent journal articles.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

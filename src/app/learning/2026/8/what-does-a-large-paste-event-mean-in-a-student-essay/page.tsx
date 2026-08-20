@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Does a Large Paste Event Mean in a Student Essay?",
   description: "Understand what a large paste event indicates in writing analytics, how to interpret document timelines, and how essay playback verifies authentic authorship.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

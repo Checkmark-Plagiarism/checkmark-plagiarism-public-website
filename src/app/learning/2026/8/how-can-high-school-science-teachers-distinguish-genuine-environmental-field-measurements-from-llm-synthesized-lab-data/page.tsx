@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can High School Science Teachers Distinguish Genuine Environmental Field Measurements From LLM-Synthesized Lab Data? | Checkmark Plagiarism",
   description: "A comprehensive guide for AP Environmental Science (APES), biology, and chemistry educators on detecting LLM-synthesized lab datasets, uncovering mathematical anomalies in simulated fieldwork, and verifying empirical lab provenance using Checkmark's Essay Playback™ and writing telemetry.",
   "opengraph-image": "/images/learning/how-can-high-school-science-teachers-distinguish-genuine-environmental-field-measurements-from-llm-synthesized-lab-data/featured.png",

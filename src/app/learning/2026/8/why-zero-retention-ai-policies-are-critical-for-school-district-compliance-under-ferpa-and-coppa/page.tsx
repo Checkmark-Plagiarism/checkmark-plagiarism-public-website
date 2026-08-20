@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Why Zero-Retention AI Policies Are Critical for School District Compliance Under FERPA and COPPA | Checkmark Plagiarism",
   description: "An authoritative technical and legal guide for superintendents, district technology directors, and school boards on why zero-retention AI policies are mandatory for FERPA, COPPA, and state data privacy compliance, exploring model memorization risks, cryptographic hash vaults, and zero-training architectures.",
   "opengraph-image": "/images/learning/why-zero-retention-ai-policies-are-critical-for-school-district-compliance-under-ferpa-and-coppa/featured.png",

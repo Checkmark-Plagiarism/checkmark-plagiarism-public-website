@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Veterinary Medicine Faculty Use Keystroke Playback to Distinguish Authentic Diagnostic Workups From AI-Generated SOAP Notes in Clinical Rotations? | Checkmark Plagiarism",
   description: "A comprehensive veterinary medical education and academic integrity guide for DVM clinical faculty, hospital directors, and preceptors to verify authentic diagnostic reasoning in SOAP notes, detect dangerous AI clinical hallucinations, and audit student clinical workups using Checkmark Essay Playback™.",
   "opengraph-image": "/images/services/report-paste-evidence.png",

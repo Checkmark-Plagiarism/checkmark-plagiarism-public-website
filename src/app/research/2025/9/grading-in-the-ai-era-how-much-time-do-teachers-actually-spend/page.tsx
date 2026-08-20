@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Grading in the AI Era: How Much Time Do Teachers Actually Spend?",
   description:
     "From long nights of marking to new tools like detection and auto‑grading, we explore how AI is reshaping teacher time-and how to protect both learning and educator well‑being.",

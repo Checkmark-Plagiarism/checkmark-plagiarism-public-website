@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Schools Measure Plagiarism Rates Over Time?",
   description: "Discover how school leaders measure longitudinal plagiarism rates, track peer-to-peer copying trends, and evaluate academic integrity policies over time.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Schools Measure Whether AI Cheating Is Increasing?",
   description: "Learn how school administrators track longitudinal AI integrity trends—active typing hours, paste payload rates, and cohort analytics in Checkmark.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

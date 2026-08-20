@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "DeepSeek, Version by Version: What Each Release Actually Changed",
   description: "A plain-English tour of DeepSeek's model versions, from V2 through V3.2 and the reasoning-focused R1 line, and what the jumps mean for schools.",
   "opengraph-image": "/images/blogs/deepseek-version-by-version-what-each-release-actually-changed/pexels-34804016.jpg",

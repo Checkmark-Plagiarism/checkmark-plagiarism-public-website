@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Plagiarism Checkers Detect Text Copied From Another Screen?",
   description: "Learn why plagiarism checkers and transcription analytics catch text retyped from phones, tablets, or second monitors with 100% accuracy.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

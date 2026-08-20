@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Writing Center Directors Use Side-by-Side Source Proof to Coach Peer Tutors During Plagiarism Triage? | Checkmark Plagiarism",
   description: "A comprehensive guide for Writing Center Directors, WPAs, and Peer Tutoring Coordinators on using side-by-side source proof, Essay Playback™, and formative triage protocols to coach peer tutors and resolve patchwriting non-punitively.",
   "opengraph-image": "/images/services/report-source-quote.png",

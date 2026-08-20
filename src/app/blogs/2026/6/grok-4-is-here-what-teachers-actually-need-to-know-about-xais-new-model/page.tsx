@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Grok 4 Is Here: What Teachers Actually Need to Know About xAI's New Model",
   description: "xAI's Grok 4 lands with big benchmark claims and a steep price tier. Here is a plain-English breakdown of what it does and what it means for classrooms.",
   "opengraph-image": "/images/blogs/grok-4-is-here-what-teachers-actually-need-to-know-about-xais-new-model/pexels-4173338.jpg",

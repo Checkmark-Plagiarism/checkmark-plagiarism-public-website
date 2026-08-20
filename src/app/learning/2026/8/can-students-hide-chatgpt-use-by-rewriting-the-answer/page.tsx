@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Students Hide ChatGPT Use by Rewriting the Answer?",
   description: "Analyze whether students can hide ChatGPT usage by manually rewriting text: why structural formulas, writing playback logs, and citation audits still reveal AI origins.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

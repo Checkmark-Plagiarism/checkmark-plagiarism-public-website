@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Teachers Detect AI Use Without Copy-and-Paste Evidence?",
   description: "Learn how teachers detect AI writing when there is no copy-paste event—using linguistic classifiers, typing cadence telemetry, and baseline comparisons.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

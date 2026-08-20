@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Do Teachers Detect Patchwriting?",
   description: "Learn how teachers detect patchwriting in student essays—identifying syntactic mirroring, synonym swapping, and fragmented source matching in Checkmark.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can AP Capstone Coordinators Use Keystroke Playback to Validate Primary Source Synthesis in Academic Research Papers? | Checkmark Plagiarism",
   description: "An authoritative guide for AP Capstone Coordinators, AP Research/Seminar instructors, and High School Academic Deans on using Checkmark's patent-pending Essay Playback™ writing telemetry, paste buffer preservation, and multi-factor verification to validate authentic primary source synthesis across 4,000–5,000 word academic papers.",
   "opengraph-image": "/images/learning/how-can-ap-capstone-coordinators-use-keystroke-playback-to-validate-primary-source-synthesis-in-academic-research-papers/featured.png",

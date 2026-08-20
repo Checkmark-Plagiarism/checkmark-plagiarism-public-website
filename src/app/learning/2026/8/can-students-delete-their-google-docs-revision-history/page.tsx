@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Students Delete Their Google Docs Revision History?",
   description: "Learn whether students can delete Google Docs revision history, how 'Make a Copy' workarounds operate, and how Checkmark detects history resets.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

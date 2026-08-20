@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Writing for Clarity: The Techniques That Actually Make Prose Easier to Read",
   description: "A plain-English guide to the writing techniques that produce clear prose, how they work, the main types, worked examples, and the misconceptions that quietly make writing worse.",
   "opengraph-image": "/images/learning/writing-for-clarity-the-techniques-that-actually-make-prose-easier-to-read/pexels-5124844.jpg",

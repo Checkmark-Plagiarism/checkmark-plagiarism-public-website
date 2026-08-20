@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Plagiarism Checkers Compare Students Within the Same Class?",
   description: "Learn how modern plagiarism checkers compare student essays within the same class section—detecting peer copying, shared files, and unauthorized collaboration.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Does Google Docs Show How Long Someone Spent Writing?",
   description: "Learn how time tracking works in Google Docs, why open tab time differs from active writing time, and how Checkmark calculates true drafting hours.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Teachers Check Google Classroom Assignments for Plagiarism?",
   description: "A complete guide on checking Google Classroom assignments for plagiarism using Checkmark Plagiarism—providing unlimited scans, side-by-side source matching, and writing playback.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

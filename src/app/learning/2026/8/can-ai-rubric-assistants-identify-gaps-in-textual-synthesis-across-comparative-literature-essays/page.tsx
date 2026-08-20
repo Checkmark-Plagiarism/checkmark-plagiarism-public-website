@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can AI Rubric Assistants Identify Gaps in Textual Synthesis Across Comparative Literature Essays? | Checkmark Plagiarism",
   description: "An authoritative technical and pedagogical guide for AP Literature, IB English, and Comparative Literature educators on using AI rubric assistants with dual-text quote-anchoring to detect evidence imbalance, break the silo phenomenon, and evaluate dialectical synthesis.",
   "opengraph-image": "/images/services/report-grading-view.png",

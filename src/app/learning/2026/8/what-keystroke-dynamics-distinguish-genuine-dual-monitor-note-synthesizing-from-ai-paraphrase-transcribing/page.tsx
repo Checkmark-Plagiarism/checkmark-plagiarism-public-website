@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Keystroke Dynamics Distinguish Genuine Dual-Monitor Note Synthesizing From AI Paraphrase Transcribing?",
   description: "A comprehensive, evidence-based guide for writing instructors, academic integrity officers, and department chairs on using keystroke telemetry, pause topography, and Essay Playback™ to distinguish genuine dual-monitor research synthesis from manual AI paraphrase transcription.",
   "opengraph-image": "/images/services/report-paste-evidence.png",

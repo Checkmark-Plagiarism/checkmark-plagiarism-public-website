@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How High School AP Music Theory Teachers Can Use Keystroke Playback to Verify Melodic Dictation and Harmonic Analysis Writeups | Checkmark Plagiarism",
   description: "An authoritative guide for high school AP Music Theory educators, music department chairs, band and choir directors, and academic integrity committees on using keystroke playback, writing process telemetry, and voice-leading audits to verify melodic dictation and harmonic analysis assignments.",
   "opengraph-image": "/images/services/report-paste-evidence.png",

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How AI Detection Bypass Tools Actually Work (And Why They Are Not Magic)",
   description: "A plain-English guide for teachers on the methods used to circumvent AI detection: paraphrasers, humanizers, and prompt tricks, plus what they actually do and where they break down.",
   "opengraph-image": "/images/learning/how-ai-detection-bypass-tools-actually-work-and-why-they-are-not-magic/pexels-1181644.jpg",

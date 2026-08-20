@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Middle School Team Leads Use Teacher-Controlled Autograding to Accelerate Short-Response Diagnostic Feedback? | Checkmark Plagiarism",
   description: "A definitive, practical guide for middle school ELA team leads, literacy coaches, and department chairs on eliminating grading paralysis, mastering short-response diagnostic feedback, and using teacher-controlled autograding for RACE and CER paragraphs.",
   "opengraph-image": "/images/learning/how-can-middle-school-team-leads-use-teacher-controlled-autograding-to-accelerate-short-response-diagnostic-feedback/featured.png",

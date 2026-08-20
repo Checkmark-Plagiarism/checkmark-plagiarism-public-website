@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Writing Process Playback Protect Non-Native English Writers From False-Positive AI Accusations? | Checkmark Plagiarism",
   description: "Discover why statistical AI detectors systematically discriminate against non-native English writers and how patent-pending Essay Playback™ provides objective writing process evidence to protect multilingual students.",
   "opengraph-image": "/images/learning/how-can-writing-process-playback-protect-non-native-english-writers-from-false-positive-ai-accusations/featured.png",

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "My Student's Essay Appeared All at Once — Did They Use AI?",
   description: "Learn how to investigate an essay that appeared all at once—external drafting vs AI paste payloads, telemetry analysis, and due process in Checkmark.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Do I Talk to a Student I Suspect of Using AI?",
   description: "Learn how to conduct a fair, evidence-based conversation with a student suspected of AI use, including specific questions to ask, what to avoid, and step-by-step guidance.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

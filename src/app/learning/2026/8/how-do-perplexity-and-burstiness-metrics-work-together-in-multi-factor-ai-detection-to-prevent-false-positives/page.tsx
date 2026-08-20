@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Do Perplexity and Burstiness Metrics Work Together in Multi-Factor AI Detection to Prevent False Positives? | Checkmark Plagiarism",
   description: "Discover how perplexity and burstiness operate in NLP AI detection, why isolated metrics create false positives, and how Checkmark's multi-factor verification protects students.",
   "opengraph-image": "/images/learning/how-do-perplexity-and-burstiness-metrics-work-together-in-multi-factor-ai-detection-to-prevent-false-positives/featured.png",

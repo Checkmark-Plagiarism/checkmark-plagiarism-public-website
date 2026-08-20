@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Schools Track AI Use Across Classes?",
   description: "Learn how administrators and department chairs track AI writing trends, adoption rates, and process metrics across grade levels using Checkmark Analytics.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

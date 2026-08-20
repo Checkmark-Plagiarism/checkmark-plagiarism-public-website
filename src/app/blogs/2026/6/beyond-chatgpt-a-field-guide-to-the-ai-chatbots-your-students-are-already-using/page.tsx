@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Beyond ChatGPT: A Field Guide to the AI Chatbots Your Students Are Already Using",
   description: "ChatGPT is not the only AI chatbot in the classroom. A plain-English tour of Claude, Gemini, Copilot, Perplexity and more, with honest notes on what each is good for.",
   "opengraph-image": "/images/blogs/beyond-chatgpt-a-field-guide-to-the-ai-chatbots-your-students-are-already-using/pexels-1438075.jpg",

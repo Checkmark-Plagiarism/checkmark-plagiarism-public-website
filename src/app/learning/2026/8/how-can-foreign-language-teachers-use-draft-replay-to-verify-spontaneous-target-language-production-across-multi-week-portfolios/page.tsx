@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Foreign Language Teachers Use Draft Replay to Verify Spontaneous Target-Language Production Across Multi-Week Portfolios? | Checkmark Plagiarism",
   description: "A comprehensive pedagogical and technical guide for AP/IB World Language educators, collegiate faculty, and SLA specialists on using keystroke telemetry and Essay Playback™ to verify authentic target-language drafting across multi-week student portfolios.",
   "opengraph-image": "/images/learning/how-can-foreign-language-teachers-use-draft-replay-to-verify-spontaneous-target-language-production-across-multi-week-portfolios/featured.png",

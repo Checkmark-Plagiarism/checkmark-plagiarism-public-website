@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Building Moodle Courses Faster: Tools and Techniques That Actually Save Time",
   description: "A practical guide to Moodle course creation tools and techniques that cut busywork, from reusable templates and bulk imports to integrated similarity checks, so teachers can spend more time teaching.",
   "opengraph-image": "/images/blogs/building-moodle-courses-faster-tools-and-techniques-that-actually-save-time/pexels-6326370.jpg",

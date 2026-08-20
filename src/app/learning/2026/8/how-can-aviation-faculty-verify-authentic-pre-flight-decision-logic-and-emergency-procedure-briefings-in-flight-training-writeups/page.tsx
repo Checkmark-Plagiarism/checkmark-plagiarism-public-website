@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Aviation Faculty Verify Authentic Pre-Flight Decision Logic and Emergency Procedure Briefings in Flight Training Writeups? | Checkmark Plagiarism",
   description: "An authoritative guide for Collegiate Aviation Faculty, Part 141 Chief Flight Instructors (CFI/CFII), Aeronautical Science Department Chairs, and Aviation Safety Review Boards on verifying authentic student aeronautical decision-making (ADM), weather briefing analyses, weight-and-balance calculations, and emergency procedure justifications using Writing Telemetry and Essay Playback™.",
   "opengraph-image": "/images/learning/how-can-aviation-faculty-verify-authentic-pre-flight-decision-logic-and-emergency-procedure-briefings-in-flight-training-writeups/featured.png",

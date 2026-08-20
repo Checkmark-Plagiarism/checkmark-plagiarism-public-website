@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Engineering Faculty Distinguish Real Simulation Telemetry and CAD Design Iterations From AI-Fabricated Data in Capstone Reports? | Checkmark Plagiarism",
   description: "An authoritative guide for collegiate engineering faculty, senior capstone coordinators, and ABET department chairs on verifying authentic CAD iterations, FEA/CFD simulation telemetry, and sensor data in senior design reports using Checkmark's Essay Playback™ and writing process forensics.",
   "opengraph-image": "/images/learning/how-can-engineering-faculty-distinguish-real-simulation-telemetry-and-cad-design-iterations-from-ai-fabricated-data-in-capstone-reports/featured.png",

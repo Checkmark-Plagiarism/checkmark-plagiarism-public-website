@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Why AI Writing Tools Have Length Requirements (And How to Work With Them)",
   description: "Why AI detectors and writing tools demand a minimum word count, what happens to accuracy on short text, and practical best practices for teachers submitting student work.",
   "opengraph-image": "/images/learning/why-ai-writing-tools-have-length-requirements-and-how-to-work-with-them/pexels-9489915.jpg",

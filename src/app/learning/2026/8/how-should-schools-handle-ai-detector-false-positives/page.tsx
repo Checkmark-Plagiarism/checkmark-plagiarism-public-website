@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Should Schools Handle AI Detector False Positives?",
   description: "A complete institutional guide on resolving AI detector false positives—telemetry overrule standards, due process protocols, and student protection in Checkmark.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

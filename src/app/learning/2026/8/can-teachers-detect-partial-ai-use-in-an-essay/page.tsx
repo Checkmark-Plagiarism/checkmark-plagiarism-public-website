@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Teachers Detect Partial AI Use in an Essay?",
   description: "Learn how teachers detect partial AI use in student essays—analyzing sentence-level perplexity heatmaps, burstiness shifts, and keystroke playback in Checkmark.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

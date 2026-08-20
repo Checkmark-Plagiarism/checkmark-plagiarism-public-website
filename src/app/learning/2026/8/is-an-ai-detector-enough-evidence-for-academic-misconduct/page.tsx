@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Is an AI Detector Enough Evidence for Academic Misconduct?",
   description: "Learn why an AI detector score alone is not sufficient evidence for academic misconduct, what multi-signal proof looks like, and how writing playback ensures fair investigations.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

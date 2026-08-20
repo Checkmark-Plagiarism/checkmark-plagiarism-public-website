@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Is Patchwriting and Is It Plagiarism?",
   description: "Understand the composition theory, honor code definitions, and ethics of patchwriting—explaining why synonym swapping is considered plagiarism in academic writing.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

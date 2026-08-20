@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can CTE Instructors Audit Student Technical Reports for Fabricated Lab Data and Uncited Equipment Specifications? | Checkmark Plagiarism",
   description: "An authoritative guide for CTE directors, vocational trade instructors, and STEM capstone mentors on auditing technical lab reports, shop work orders, and equipment telemetry for AI-hallucinated data and uncited OEM specifications using Checkmark Plagiarism.",
   "opengraph-image": "/images/learning/how-can-cte-instructors-audit-student-technical-reports-for-fabricated-lab-data-and-uncited-equipment-specifications/featured.png",

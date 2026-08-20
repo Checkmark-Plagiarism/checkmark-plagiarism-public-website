@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Does an AI-Written Essay Look Like in Writing History?",
   description: "Learn what AI-written essays look like in document writing history and essay playback: from instant paste events to section-by-section prompt assembly.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

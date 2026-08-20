@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Is Using AI to Paraphrase Your Own Writing Cheating?",
   description: "Understand why using AI to rewrite or paraphrase your own rough draft is considered academic misconduct across schools and universities.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

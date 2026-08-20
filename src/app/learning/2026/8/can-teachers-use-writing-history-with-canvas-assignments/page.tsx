@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Teachers Use Writing History With Canvas Assignments?",
   description: "Learn how Checkmark integrates writing history and keystroke playback directly into Canvas SpeedGrader to verify authentic student composition.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

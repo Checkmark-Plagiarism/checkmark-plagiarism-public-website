@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Much Can a Student's Writing Style Change Between Assignments?",
   description: "Learn what constitutes normal stylistic variation across assignment genres versus statistically impossible shifts caused by AI or ghostwriting.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

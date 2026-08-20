@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "An Essay Passed the AI Detector but Still Looks AI-Written — What Can I Check?",
   description: "Learn how to investigate essays that bypass AI detectors—AI humanizer artifacts, paste telemetry, fake citations, and oral defense in Checkmark.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

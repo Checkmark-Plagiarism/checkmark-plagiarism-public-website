@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Should Teachers Require Students to Explain Their Sources?",
   description: "Explore why requiring students to explain their research sources builds critical research literacy, exposes AI citation hallucinations, and verifies authentic scholarship.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

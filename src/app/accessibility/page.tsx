@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: { images: [''] },
 };
 
-export const meta = {
+const meta = {
   title: 'Accessibility',
   description:
     'Our commitment to inclusive design and WCAG 2.1 AA conformance for all users, including those using assistive technologies.',

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "AI Writing Tools and SEO Software: What the Review Roundups Leave Out for Schools",
   description: "A school-minded look at the flood of AI writing tools and SEO content software, why product review roundups miss what teachers need, and how to read them.",
   "opengraph-image": "/images/blogs/ai-writing-tools-and-seo-software-what-the-review-roundups-leave-out-for-schools/pexels-4792720.jpg",

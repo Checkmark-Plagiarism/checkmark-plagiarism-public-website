@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Should Teachers Investigate a Sudden Change in Writing Ability?",
   description: "A comprehensive, evidence-first educator framework for investigating sudden leaps in student writing ability with fairness, process telemetry, and support.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

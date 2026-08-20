@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Teachers Detect Manually Typed AI Responses?",
   description: "Discover how teachers detect manually typed AI responses through overlapping linguistic markers, keystroke transcription cadences, and citation audits.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Timed vs. Untimed Essays: What the Research Actually Says",
   description:
     "A comprehensive research synthesis on timed versus untimed writing assignments - covering cognitive science, assessment validity, equity, AI cheating, and expert recommendations.",

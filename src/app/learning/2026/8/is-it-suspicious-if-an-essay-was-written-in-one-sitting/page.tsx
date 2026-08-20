@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Is It Suspicious If an Essay Was Written in One Sitting?",
   description: "Learn whether single-sitting essay writing is suspicious, how to differentiate honest binge-drafting from AI generation, and what writing playback reveals.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

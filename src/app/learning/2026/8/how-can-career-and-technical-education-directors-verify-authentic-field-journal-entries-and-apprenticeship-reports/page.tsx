@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Career and Technical Education Directors Verify Authentic Field Journal Entries and Apprenticeship Reports? | Checkmark Plagiarism",
   description: "An authoritative guide for CTE directors, clinical coordinators, and apprenticeship supervisors on using Checkmark's keystroke playback, paste buffer tracking, and rubric autograding to verify authentic workplace field journals without invasive surveillance.",
   "opengraph-image": "/images/learning/how-can-career-and-technical-education-directors-verify-authentic-field-journal-entries-and-apprenticeship-reports/featured.png",

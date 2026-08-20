@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Gemini 3 Pro vs Flash: What the Model Variants Actually Mean for Your Classroom",
   description: "A plain-spoken guide to the Gemini 3 family, Pro, Flash, and the lighter variants, and what the differences mean for teachers, students, and the work that lands on your desk.",
   "opengraph-image": "/images/blogs/gemini-3-pro-vs-flash-what-the-model-variants-actually-mean-for-your-classroom/pexels-28712136.jpg",

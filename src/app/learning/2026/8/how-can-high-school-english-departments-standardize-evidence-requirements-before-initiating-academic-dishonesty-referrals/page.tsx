@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can High School English Departments Standardize Evidence Requirements Before Initiating Academic Dishonesty Referrals? | Checkmark Plagiarism",
   description: "An authoritative policy, legal, and operational guide for High School English Department Chairs, ELA Instructional Leads, Principals, and Academic Deans on replacing subjective, hunch-based AI accusations with a standardized 3-tier evidentiary framework and writing telemetry before initiating academic dishonesty referrals.",
   "opengraph-image": "/images/learning/how-can-high-school-english-departments-standardize-evidence-requirements-before-initiating-academic-dishonesty-referrals/featured.png",

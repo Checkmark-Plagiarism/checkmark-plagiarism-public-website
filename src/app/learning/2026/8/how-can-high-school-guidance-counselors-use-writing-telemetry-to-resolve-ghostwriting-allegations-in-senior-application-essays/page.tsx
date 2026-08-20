@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can High School Guidance Counselors Use Writing Telemetry to Resolve Ghostwriting Allegations in Senior Application Essays? | Checkmark Plagiarism",
   description: "A comprehensive guide for high school guidance counselors, college admissions advisors, and IECs on using writing process telemetry, Essay Playback™, and paste inspection to defend senior application essays against ghostwriting and AI allegations.",
   "opengraph-image": "/images/learning/how-can-high-school-guidance-counselors-use-writing-telemetry-to-resolve-ghostwriting-allegations-in-senior-application-essays/featured.png",

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Google Docs Show When Text Was Pasted?",
   description: "Learn how paste events appear in Google Docs version history, why native snapshots bundle edits, and how Checkmark logs millisecond clipboard payloads.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

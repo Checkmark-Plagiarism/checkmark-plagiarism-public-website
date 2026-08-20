@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What an AI Score Can - and Can't - Tell You",
   description: "How Checkmark's AI writing detection presents its results: passage-level findings, AI-likeness signals instead of fake-precision authorship claims, N/A guardrails for short texts, and process evidence to check each finding against.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

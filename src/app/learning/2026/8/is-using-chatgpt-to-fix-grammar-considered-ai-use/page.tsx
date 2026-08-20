@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Is Using ChatGPT to Fix Grammar Considered AI Use?",
   description: "Learn whether using ChatGPT to correct grammar and spelling is classified as AI assistance or academic misconduct, and how schools set fair policies.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

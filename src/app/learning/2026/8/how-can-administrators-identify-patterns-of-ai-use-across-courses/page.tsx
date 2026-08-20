@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Administrators Identify Patterns of AI Use Across Courses?",
   description: "Learn how school leaders identify patterns of AI use across courses—prompt vulnerability audits, deadline panic spikes, and cross-subject analytics in Checkmark.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

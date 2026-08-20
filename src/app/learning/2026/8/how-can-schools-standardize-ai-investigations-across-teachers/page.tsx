@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Schools Standardize AI Investigations Across Teachers?",
   description: "Learn how schools establish a standardized, evidence-based AI investigation protocol across all teachers to ensure fairness, equity, and due process.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

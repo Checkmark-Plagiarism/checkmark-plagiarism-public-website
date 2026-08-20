@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Teachers See Every Revision a Student Made?",
   description: "Learn how revision tracking granularity works in Google Docs, why native snapshots bundle edits, and how Checkmark captures every individual keystroke.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

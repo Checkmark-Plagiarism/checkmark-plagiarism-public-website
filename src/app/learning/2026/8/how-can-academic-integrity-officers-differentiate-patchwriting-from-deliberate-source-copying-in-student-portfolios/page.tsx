@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Academic Integrity Officers Differentiate Patchwriting From Deliberate Source Copying in Student Portfolios? | Checkmark Plagiarism",
   description: "An authoritative guide for Academic Integrity Officers, Honor Council Panels, and Department Chairs on differentiating developmental patchwriting from deliberate source copying in cumulative student writing portfolios using longitudinal forensics, Essay Playback™, and multi-vector source verification.",
   "opengraph-image": "/images/services/report-source-quote.png",

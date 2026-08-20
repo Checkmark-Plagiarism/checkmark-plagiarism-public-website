@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Teachers See When Text Was Added to an Assignment?",
   description: "Learn how timestamped writing history and essay playback record the exact date, minute, and session when every sentence was drafted in student assignments.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

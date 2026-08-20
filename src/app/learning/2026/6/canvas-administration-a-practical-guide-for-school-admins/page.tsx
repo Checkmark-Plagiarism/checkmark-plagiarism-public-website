@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Canvas Administration: A Practical Guide for School Admins",
   description: "A plain-English guide to administering the Canvas LMS in a school: account hierarchy, roles and permissions, integrations, and the day-to-day best practices that keep it running.",
   "opengraph-image": "/images/learning/canvas-administration-a-practical-guide-for-school-admins/pexels-20432893.jpg",

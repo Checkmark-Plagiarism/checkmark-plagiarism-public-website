@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "ChatGPT in the Classroom: What We Actually Know After Three Years",
   description: "Three years into the ChatGPT era, here is an honest look at how students really use it, why detection is harder than vendors admit, and what teachers should do next.",
   "opengraph-image": "/images/blogs/chatgpt-in-the-classroom-what-we-actually-know-after-three-years/pexels-8423431.jpg",

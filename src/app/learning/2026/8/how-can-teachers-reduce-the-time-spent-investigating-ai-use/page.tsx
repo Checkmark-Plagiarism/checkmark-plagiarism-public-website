@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Teachers Reduce the Time Spent Investigating AI Use?",
   description: "Learn how to reduce AI investigation time from 30 minutes to under 90 seconds—using writing playback, automated DOI checks, and LMS embeds in Checkmark.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

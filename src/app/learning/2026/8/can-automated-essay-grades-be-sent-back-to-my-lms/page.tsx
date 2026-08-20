@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Automated Essay Grades Be Sent Back to My LMS?",
   description: "Learn how Checkmark Autograder automatically syncs approved essay scores, rubric ratings, and comments directly into your LMS gradebook with 1-click grade passback.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

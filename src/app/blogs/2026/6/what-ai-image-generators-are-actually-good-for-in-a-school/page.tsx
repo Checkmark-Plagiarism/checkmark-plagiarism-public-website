@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What AI Image Generators Are Actually Good For in a School",
   description: "AI image generators like Nano Banana, DALL-E, and Midjourney are everywhere now. Here are the classroom uses that actually hold up, and the ones to be careful with.",
   "opengraph-image": "/images/blogs/what-ai-image-generators-are-actually-good-for-in-a-school/pexels-9655045.jpg",

@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Objective Writing Evidence Should Student Honor Boards Require During Plagiarism Appeals Hearings? | Checkmark Plagiarism",
   description: "An authoritative guide for student honor boards, university honor councils, academic deans, and secondary school administrators on requiring objective, multi-dimensional writing evidence—temporal keystroke playback, paste forensics, and side-by-side textual alignment—during plagiarism and AI misconduct appeal hearings.",
   "opengraph-image": "/images/learning/what-objective-writing-evidence-should-student-honor-boards-require-during-plagiarism-appeals-hearings/featured.png",

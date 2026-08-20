@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Teachers Investigate a Possible AI False Positive?",
   description: "A structured educator guide for investigating possible AI false positives using essay writing playback, keystroke timelines, and citation audits.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How to Enable User Synchronization in Canvas: A Step-by-Step Setup Guide",
   description: "A plain-English walkthrough of what Canvas user synchronization is, how it works, and how to set it up so rosters, roles, and submissions flow correctly into Checkmark.",
   "opengraph-image": "/images/learning/how-to-enable-user-synchronization-in-canvas-a-step-by-step-setup-guide/pexels-270700.jpg",

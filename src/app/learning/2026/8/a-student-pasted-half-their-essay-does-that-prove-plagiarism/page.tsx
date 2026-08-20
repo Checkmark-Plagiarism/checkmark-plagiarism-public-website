@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "A Student Pasted Half Their Essay — Does That Prove Plagiarism?",
   description: "Learn how to investigate partial paste events in student essays—internal text movement vs AI insertions, quote dumping, and telemetry in Checkmark.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

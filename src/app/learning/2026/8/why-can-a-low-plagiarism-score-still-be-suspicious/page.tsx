@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Why Can a Low Plagiarism Score Still Be Suspicious?",
   description: "Explore why a low plagiarism score (0% to 5%) can still be suspicious—uncovering generative AI, ghostwriting, paraphrasing tools, and zero-drafting telemetry.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

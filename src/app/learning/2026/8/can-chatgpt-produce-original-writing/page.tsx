@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can ChatGPT Produce Original Writing?",
   description: "Examine whether ChatGPT creates truly original prose: computational novelty vs human creativity, intellectual property, and academic authorship.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

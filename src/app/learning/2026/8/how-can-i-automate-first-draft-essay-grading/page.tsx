@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can I Automate First-Draft Essay Grading?",
   description: "Learn how educators use Checkmark Autograder to automate first-draft essay feedback, delivering instant formative revision guidance to 100+ students.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

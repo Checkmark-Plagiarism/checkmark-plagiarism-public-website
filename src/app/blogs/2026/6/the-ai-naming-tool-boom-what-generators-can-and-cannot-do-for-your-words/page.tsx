@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "The AI Naming Tool Boom: What Generators Can and Cannot Do for Your Words",
   description: "Title, name, tagline, and hashtag generators are everywhere now. Here is an honest look at where these AI naming tools actually help, where they flop, and how to use them well.",
   "opengraph-image": "/images/blogs/the-ai-naming-tool-boom-what-generators-can-and-cannot-do-for-your-words/pexels-7093.jpg",

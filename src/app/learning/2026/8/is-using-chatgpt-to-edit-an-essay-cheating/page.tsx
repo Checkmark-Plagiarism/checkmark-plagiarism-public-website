@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Is Using ChatGPT to Edit an Essay Cheating?",
   description: "Explore when using ChatGPT to edit an essay is acceptable feedback vs. when generative rewriting crosses into academic dishonesty.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

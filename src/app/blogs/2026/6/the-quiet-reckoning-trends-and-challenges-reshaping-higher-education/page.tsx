@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "The Quiet Reckoning: Trends and Challenges Reshaping Higher Education",
   description: "Higher ed faces a demographic cliff, an AI cheating panic, shaky public trust, and a value crisis. A clear-eyed look at the pressures and what they ask of us.",
   "opengraph-image": "/images/blogs/the-quiet-reckoning-trends-and-challenges-reshaping-higher-education/pexels-7972324.jpg",

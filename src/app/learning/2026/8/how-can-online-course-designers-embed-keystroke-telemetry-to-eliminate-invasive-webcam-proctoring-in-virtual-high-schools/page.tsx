@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Online Course Designers Embed Keystroke Telemetry to Eliminate Invasive Webcam Proctoring in Virtual High Schools? | Checkmark Plagiarism",
   description: "An authoritative guide for Online Instructional Designers, Virtual High School Principals, and Cyber Charter Administrators on embedding non-invasive keystroke telemetry and Essay Playback™ to replace intrusive webcam proctoring.",
   "opengraph-image": "/images/learning/how-can-online-course-designers-embed-keystroke-telemetry-to-eliminate-invasive-webcam-proctoring-in-virtual-high-schools/featured.png",

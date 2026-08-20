@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can 504 and IEP Coordinators Use Keystroke Replays to Verify Student Typing Accommodations and Extended Time Compliance? | Checkmark Plagiarism",
   description: "A comprehensive legal, technical, and pedagogical guide for 504 Coordinators, IEP Case Managers, and Special Education Directors on using keystroke replays, passive writing telemetry, and Essay Playback™ to verify typing accommodations, extended time compliance, and prevent false AI accusations.",
   "opengraph-image": "/images/learning/how-can-504-and-iep-coordinators-use-keystroke-replays-to-verify-student-typing-accommodations-and-extended-time-compliance/featured.png",

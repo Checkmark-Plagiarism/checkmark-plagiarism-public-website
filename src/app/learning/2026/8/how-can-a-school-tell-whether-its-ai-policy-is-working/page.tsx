@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can a School Tell Whether Its AI Policy Is Working?",
   description: "Discover the 4 empirical indicators that prove whether your school's AI policy is working—measuring drafting behaviors, paste rates, and student disclosures.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

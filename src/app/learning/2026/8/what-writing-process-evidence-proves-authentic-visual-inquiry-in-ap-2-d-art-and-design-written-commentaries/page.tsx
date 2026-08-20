@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Writing Process Evidence Proves Authentic Visual Inquiry in AP 2-D Art and Design Written Commentaries?",
   description: "An authoritative guide for AP Art and Design educators, studio art department chairs, fine arts curriculum directors, and portfolio review committees on auditing authentic visual inquiry in Sustained Investigation written commentaries, diagnosing AI-generated gallery catalog fluff, and leveraging writing process telemetry and Essay Playback™.",
   "opengraph-image": "/images/learning/what-writing-process-evidence-proves-authentic-visual-inquiry-in-ap-2-d-art-and-design-written-commentaries/featured.png",

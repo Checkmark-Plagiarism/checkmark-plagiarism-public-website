@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What If Students Collaborated When They Were Supposed to Work Independently?",
   description: "Learn how to handle unauthorized collaboration in student essays—distinguishing between honest study group overlap and honor code collusion with Checkmark.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

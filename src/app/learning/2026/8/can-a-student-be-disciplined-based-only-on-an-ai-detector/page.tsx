@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can a Student Be Disciplined Based Only on an AI Detector?",
   description: "Analyze the legal, ethical, and institutional rules governing disciplinary actions from AI detectors alone: why multi-signal evidence is legally and academically required.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

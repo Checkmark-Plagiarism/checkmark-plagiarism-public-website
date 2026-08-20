@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "AI for Assessment and Feedback: What Actually Works in the Classroom",
   description: "Practical, classroom-tested ways teachers can use AI for grading, feedback, and assessment design without surrendering judgment or burning out on the tech.",
   "opengraph-image": "/images/blogs/ai-for-assessment-and-feedback-what-actually-works-in-the-classroom/pexels-38472818.jpg",

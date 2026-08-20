@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Writing Differences Suggest That Someone Else Wrote an Assignment?",
   description: "Discover the key stylometric and behavioral differences that indicate someone else—or an AI—wrote a student's assignment.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

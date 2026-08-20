@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Secondary Teachers Use Side-by-Side Source Comparisons to Teach Proper Paraphrasing in Research Units? | Checkmark Plagiarism",
   description: "Discover how secondary educators can leverage side-by-side source comparisons, visual badge taxonomies, and keystroke playback to transform patchwriting into authentic synthesis during research units.",
   "opengraph-image": "/images/services/report-source-quote.png",

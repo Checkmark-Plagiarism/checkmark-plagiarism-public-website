@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Does It Mean When an Essay Has Sources but No Matching Citations?",
   description: "Learn what causes an essay to have a bibliography with zero in-text citations—distinguishing between student formatting confusion, citation padding, and AI disconnects.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

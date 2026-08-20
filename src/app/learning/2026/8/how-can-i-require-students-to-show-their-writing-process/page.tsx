@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can I Require Students to Show Their Writing Process?",
   description: "Learn practical, pedagogical methods to require students to demonstrate their writing process: scaffolded milestones, metacognitive memos, and writing playback.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

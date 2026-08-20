@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "The Longest, Strangest Words in English (and Why Your Students Love Them)",
   description: "A tour of record-breaking words, perfect palindromes, and odd etymologies, plus why these linguistic curiosities are a sneaky-good teaching tool in any classroom.",
   "opengraph-image": "/images/blogs/the-longest-strangest-words-in-english-and-why-your-students-love-them/pexels-6997.jpg",

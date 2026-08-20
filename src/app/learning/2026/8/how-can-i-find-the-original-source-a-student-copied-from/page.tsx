@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can I Find the Original Source a Student Copied From?",
   description: "Learn how educators trace the exact web pages, academic journals, and peer essays a student copied from using web source matching and phrase searches.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

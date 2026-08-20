@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Restorative Conferencing Protocols Should High School Writing Departments Use for Disputed AI Submissions?",
   description: "An authoritative guide for high school writing department chairs, ELA teachers, academic integrity committees, and principals on replacing punitive AI accusations with restorative, evidence-grounded conferencing protocols powered by writing telemetry and Essay Playback™.",
   "opengraph-image": "/images/learning/what-restorative-conferencing-protocols-should-high-school-writing-departments-use-for-disputed-ai-submissions/featured.png",

@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Academic Integrity Deans Use Essay Playback to Resolve Disputed Honor Code Violations Without Adversarial Confrontation? | Checkmark Plagiarism",
   description: "An authoritative guide for Academic Integrity Deans, Judicial Affairs Officers, and Honor Councils on using Essay Playback and writing process telemetry to resolve contested honor code allegations through collaborative, non-adversarial co-viewing.",
   "opengraph-image": "/images/learning/how-can-academic-integrity-deans-use-essay-playback-to-resolve-disputed-honor-code-violations-without-adversarial-confrontation/featured.png",

@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can AP Government Teachers Distinguish Authentic Legislative Synthesis From AI-Fabricated Policy Memos? | Checkmark Plagiarism",
   description: "An authoritative guide for AP U.S. Government teachers, social studies department chairs, and civics faculty on detecting AI-hallucinated legislation, phantom CRS reports, and verifying authentic student policy synthesis using writing process telemetry and Essay Playback™.",
   "opengraph-image": "/images/learning/how-can-ap-government-teachers-distinguish-authentic-legislative-synthesis-from-ai-fabricated-policy-memos/featured.png",

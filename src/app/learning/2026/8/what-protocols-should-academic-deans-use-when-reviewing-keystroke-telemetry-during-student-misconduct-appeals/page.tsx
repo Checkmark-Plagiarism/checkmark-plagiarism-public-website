@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Protocols Should Academic Deans Use When Reviewing Keystroke Telemetry During Student Misconduct Appeals? | Checkmark Plagiarism",
   description: "An authoritative procedural guide for Academic Deans, Associate Provosts, Judicial Affairs Officers, and Misconduct Appeal Panels on auditing keystroke telemetry, temporal playback, and multi-evidence dossiers during high-stakes student appeals.",
   "opengraph-image": "/images/learning/what-protocols-should-academic-deans-use-when-reviewing-keystroke-telemetry-during-student-misconduct-appeals/featured.png",

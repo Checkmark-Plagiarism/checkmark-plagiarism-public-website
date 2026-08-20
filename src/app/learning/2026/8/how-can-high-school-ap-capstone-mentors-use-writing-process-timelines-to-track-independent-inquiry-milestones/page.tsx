@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can High School AP Capstone Mentors Use Writing Process Timelines to Track Independent Inquiry Milestones? | Checkmark Plagiarism",
   description: "An authoritative guide for AP Capstone coordinators, AP Seminar and AP Research teachers, high school department chairs, and inquiry mentors on using writing process timelines, keystroke telemetry, and Essay Playback™ to supervise independent academic inquiry, prevent late-stage AI panic dumping, and support authentic student research.",
   "opengraph-image": "/images/learning/how-can-high-school-ap-capstone-mentors-use-writing-process-timelines-to-track-independent-inquiry-milestones/featured.png",

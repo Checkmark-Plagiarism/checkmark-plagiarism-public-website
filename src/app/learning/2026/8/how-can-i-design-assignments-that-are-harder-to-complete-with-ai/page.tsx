@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can I Design Assignments That Are Harder to Complete With AI?",
   description: "Learn practical pedagogical strategies for designing AI-resistant assignments: local context anchoring, multi-stage process scaffolding, in-class synthesis, and writing playback.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

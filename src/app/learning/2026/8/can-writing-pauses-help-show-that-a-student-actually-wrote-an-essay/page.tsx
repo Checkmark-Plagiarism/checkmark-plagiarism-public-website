@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Writing Pauses Help Show That a Student Actually Wrote an Essay?",
   description: "Learn how pause dynamics, hesitation distributions, and keystroke timelines provide physiological proof of genuine student ideation and composition.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Is Retyping AI Content Still Academic Misconduct?",
   description: "Explore the ethical and policy definitions of academic misconduct—explaining why manually typing AI text violates institutional honor codes.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

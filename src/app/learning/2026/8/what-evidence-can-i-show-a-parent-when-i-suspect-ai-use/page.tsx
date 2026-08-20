@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Evidence Can I Show a Parent When I Suspect AI Use?",
   description: "Learn what physical evidence to show parents in AI integrity conferences—15-second writing playback videos, paste timestamps, and fake DOI reports in Checkmark.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

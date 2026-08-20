@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Teachers Review 100 Essays for AI Use Efficiently?",
   description: "A complete scaling guide for teachers reviewing 100+ essays—the 4-tier triage funnel, automated telemetry screening, and autograding in Checkmark.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

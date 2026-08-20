@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Does Pasting an Entire Essay Into Google Docs Mean a Student Used AI?",
   description: "Learn why students paste whole essays into Google Docs, what large paste events in revision history mean, and how to verify student authorship fairly.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

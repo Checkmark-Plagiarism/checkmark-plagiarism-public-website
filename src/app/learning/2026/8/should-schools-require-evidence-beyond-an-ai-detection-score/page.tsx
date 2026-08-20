@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Should Schools Require Evidence Beyond an AI Detection Score?",
   description: "Learn why schools must mandate multi-signal evidence beyond AI detector scores—legal defensibility, due process, and writing telemetry in Checkmark.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

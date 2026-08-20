@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Evidence Can Clear a Student Accused of Using AI?",
   description: "Discover the 5 essential pieces of authentic drafting evidence that can definitively clear a student falsely accused of using AI by a statistical detector.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

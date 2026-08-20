@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can IB Coordinators Use Writing Process Replay to Verify Originality in Extended Essays and TOK Papers? | Checkmark Plagiarism",
   description: "An authoritative guide for IB Coordinators, Extended Essay supervisors, and TOK teachers on using Checkmark's patent-pending Essay Playback™ writing process telemetry, paste buffer preservation, and passage-level analysis to authenticate 4,000-word EEs and 1,600-word TOK essays for IB e-Coursework submission.",
   "opengraph-image": "/images/learning/how-can-ib-coordinators-use-writing-process-replay-to-verify-originality-in-extended-essays-and-tok-papers/featured.png",

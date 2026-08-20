@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Should AI Detection Be Used as Evidence or as a Starting Point?",
   description: "Learn why Checkmark's philosophy positions AI detection as a triage starting point rather than standalone evidence, protecting student due process.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

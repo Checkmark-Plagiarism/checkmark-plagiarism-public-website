@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Music Faculty Detect AI-Generated Harmonic Analyses and Counterpoint Explanations in Student Portfolios? | Checkmark Plagiarism",
   description: "An authoritative guide for conservatory faculty, university music theory professors, AP Music Theory teachers, and fine arts department chairs on auditing student music portfolios for AI-generated harmonic analyses, species counterpoint explanations, and score-to-prose discrepancies using writing process telemetry, Essay Playback™, and defensible multi-evidence workflows.",
   "opengraph-image": "/images/learning/how-can-music-faculty-detect-ai-generated-harmonic-analyses-and-counterpoint-explanations-in-student-portfolios/featured.png",

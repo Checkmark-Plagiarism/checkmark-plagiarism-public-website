@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Should I Do When AI Detection and Writing History Disagree?",
   description: "Learn how educators resolve conflicting evidence when AI detector scores clash with document revision history using Checkmark combined reports.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

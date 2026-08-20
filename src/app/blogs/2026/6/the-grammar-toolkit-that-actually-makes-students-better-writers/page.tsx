@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "The Grammar Toolkit That Actually Makes Students Better Writers",
   description: "Grammar checkers can fix a comma or quietly do the thinking for a student. Here is how to build a grammar toolkit and a set of habits that sharpen writing instead of replacing it.",
   "opengraph-image": "/images/blogs/the-grammar-toolkit-that-actually-makes-students-better-writers/pexels-5537937.jpg",

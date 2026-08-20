@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Teachers See Google Docs Editing History?",
   description: "Learn what teachers can see in Google Docs version history, how snapshot intervals work, and how Checkmark provides full keystroke playback.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

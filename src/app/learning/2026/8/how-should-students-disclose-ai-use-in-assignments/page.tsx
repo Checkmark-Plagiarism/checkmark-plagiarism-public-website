@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Should Students Disclose AI Use in Assignments?",
   description: "A complete student and educator guide on properly disclosing generative AI use in academic assignments, research papers, and school projects.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

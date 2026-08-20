@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Teachers See What a Student Pasted Into Google Docs?",
   description: "Discover what teachers can see in Google Docs revision history versus advanced writing-process analysis that tracks exact paste payloads and typing metrics.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "The Integration Era: Why Plagiarism Checkers Are Quietly Becoming Plumbing",
   description: "Plagiarism and AI detection tools are racing to integrate with the LMS, word processors, and clouds schools already use. Here is what that shift means for teachers.",
   "opengraph-image": "/images/blogs/the-integration-era-why-plagiarism-checkers-are-quietly-becoming-plumbing/pexels-20432872.jpg",

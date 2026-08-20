@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Should Schools Ask an AI Detection Vendor About Student Privacy?",
   description: "The 10 essential student privacy questions school technology directors must ask AI detection vendors to ensure FERPA compliance and data security.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

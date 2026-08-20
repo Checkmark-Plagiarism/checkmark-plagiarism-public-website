@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Does Copying and Pasting Automatically Mean a Student Cheated?",
   description: "Understand why copying and pasting is often legitimate in academic writing, and how paste evidence paired with teacher review ensures fair evaluation.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

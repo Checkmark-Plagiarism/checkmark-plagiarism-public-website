@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Document History Protect a Student From a False AI Accusation?",
   description: "Learn how document revision history, keystroke logs, and essay playback serve as the ultimate proof to exonerate students from false AI detector accusations.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

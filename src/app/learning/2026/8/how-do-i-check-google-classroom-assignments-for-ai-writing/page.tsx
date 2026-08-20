@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Do I Check Google Classroom Assignments for AI Writing?",
   description: "Learn how to connect Checkmark Plagiarism with Google Classroom to automatically check student Google Docs essays for AI writing and view drafting playback.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

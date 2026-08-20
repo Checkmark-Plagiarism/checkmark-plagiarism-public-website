@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Social Studies Department Chairs Detect Hallucinated Archival Citations in Student History Research Papers? | Checkmark Plagiarism",
   description: "A comprehensive, practical guide for social studies department chairs, AP/IB history educators, and NHD mentors on identifying, auditing, and pedagogically addressing AI-hallucinated archival citations, phantom primary sources, and fabricated manuscript metadata.",
   "opengraph-image": "/images/services/report-source-quote.png",

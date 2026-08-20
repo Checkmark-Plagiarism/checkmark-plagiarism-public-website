@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "An AI Detector Flagged an Essay but the Revision History Looks Normal — Which Should I Trust?",
   description: "Learn why teachers must always trust verified revision history over AI detector scores—false positive mechanics, typing telemetry, and due process in Checkmark.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

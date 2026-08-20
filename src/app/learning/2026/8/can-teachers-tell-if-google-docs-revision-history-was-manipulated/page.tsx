@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Teachers Tell If Google Docs Revision History Was Manipulated?",
   description: "Learn how teachers detect manipulated Google Docs history—exposing auto-typer extensions, artificial typo injections, and manual phone transcriptions in Checkmark.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

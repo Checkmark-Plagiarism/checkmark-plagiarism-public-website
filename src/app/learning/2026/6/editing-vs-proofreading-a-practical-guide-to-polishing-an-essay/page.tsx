@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Editing vs Proofreading: A Practical Guide to Polishing an Essay",
   description: "A clear, practical explainer on essay editing and proofreading: what the two stages actually do, how to work through them in order, and the mistakes that undo good writing.",
   "opengraph-image": "/images/learning/editing-vs-proofreading-a-practical-guide-to-polishing-an-essay/pexels-3807759.jpg",

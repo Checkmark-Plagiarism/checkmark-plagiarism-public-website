@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Teachers Detect AI-Assisted Plagiarism?",
   description: "A comprehensive guide for educators on identifying AI-assisted plagiarism: combining writing playback, citation audits, baseline comparisons, and student conferences.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

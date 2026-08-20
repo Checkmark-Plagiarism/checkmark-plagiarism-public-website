@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Artistic Creation Actually Works: Processes and Philosophies Explained",
   description: "A plain-English guide to how artists actually make things: the working processes, the major philosophies of creation, and why originality is messier than it looks.",
   "opengraph-image": "/images/learning/how-artistic-creation-actually-works-processes-and-philosophies-explained/pexels-37662179.jpg",

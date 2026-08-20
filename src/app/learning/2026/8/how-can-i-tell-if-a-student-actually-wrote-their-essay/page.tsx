@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can I Tell If a Student Actually Wrote Their Essay?",
   description: "Learn how teachers verify genuine essay authorship by evaluating writing playback progression, student comprehension, baseline comparisons, and citation legitimacy.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

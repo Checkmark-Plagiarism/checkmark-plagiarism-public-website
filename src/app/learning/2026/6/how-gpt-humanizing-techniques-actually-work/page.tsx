@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How GPT \"Humanizing\" Techniques Actually Work",
   description: "A plain-English breakdown of the techniques used to make GPT output read like human writing, why they work, and what they mean for educators.",
   "opengraph-image": "/images/learning/how-gpt-humanizing-techniques-actually-work/pexels-8511933.jpg",

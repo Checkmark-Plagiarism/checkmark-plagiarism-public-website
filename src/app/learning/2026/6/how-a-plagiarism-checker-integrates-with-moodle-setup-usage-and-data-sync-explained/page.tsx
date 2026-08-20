@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How a Plagiarism Checker Integrates With Moodle: Setup, Usage, and Data Sync Explained",
   description: "A plain-English guide to how plagiarism and AI-detection tools plug into Moodle, what gets synced, how to set it up, and which terms actually matter.",
   "opengraph-image": "/images/learning/how-a-plagiarism-checker-integrates-with-moodle-setup-usage-and-data-sync-explained/pexels-5745519.jpg",

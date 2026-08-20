@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Should School Boards Evaluate Vendor Data Retention Claims in EdTech AI Contracts? | Checkmark Plagiarism",
   description: "A comprehensive procurement guide for school boards, superintendents, and district tech leaders on auditing EdTech AI data retention, FERPA/COPPA compliance, model training opt-outs vs. zero-retention architecture, and DPA contract clauses.",
   "opengraph-image": "/images/learning/how-should-school-boards-evaluate-vendor-data-retention-claims-in-edtech-ai-contracts/featured.png",

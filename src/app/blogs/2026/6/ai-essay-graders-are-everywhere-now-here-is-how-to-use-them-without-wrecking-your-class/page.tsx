@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "AI Essay Graders Are Everywhere Now. Here Is How to Use Them Without Wrecking Your Class",
   description: "AI essay graders promise to grade a stack of papers in minutes. Here is what they actually do well, where they fail, and how teachers can use them honestly.",
   "opengraph-image": "/images/blogs/ai-essay-graders-are-everywhere-now-here-is-how-to-use-them-without-wrecking-your-class/pexels-6684360.jpg",

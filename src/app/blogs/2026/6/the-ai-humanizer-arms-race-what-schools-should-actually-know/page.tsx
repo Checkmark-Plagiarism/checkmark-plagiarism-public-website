@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "The AI Humanizer Arms Race: What Schools Should Actually Know",
   description: "AI humanizers promise to make ChatGPT essays slip past Turnitin and other checkers. Here is an honest look at what they really do, why the race never ends, and what schools should do instead.",
   "opengraph-image": "/images/blogs/the-ai-humanizer-arms-race-what-schools-should-actually-know/pexels-1375261.jpg",

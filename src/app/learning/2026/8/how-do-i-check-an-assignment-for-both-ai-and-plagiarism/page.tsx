@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Do I Check an Assignment for Both AI and Plagiarism?",
   description: "A comprehensive guide for teachers on checking student assignments for both generative AI and traditional plagiarism simultaneously using multi-signal tools.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

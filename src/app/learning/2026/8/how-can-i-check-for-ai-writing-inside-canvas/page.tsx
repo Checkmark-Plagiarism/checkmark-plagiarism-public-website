@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can I Check for AI Writing Inside Canvas?",
   description: "A step-by-step guide on checking for AI-generated text inside Canvas SpeedGrader using Checkmark's integrated AI detection and writing playback tools.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

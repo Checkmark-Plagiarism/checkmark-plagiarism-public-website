@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Beyond the Back to School Checklist: The Tech That Actually Prepares Students for What Comes Next",
   description: "Most back-to-school tech lists are shopping carts in disguise. Here is what future-focused education technology should actually do for students, and how to choose it.",
   "opengraph-image": "/images/blogs/beyond-the-back-to-school-checklist-the-tech-that-actually-prepares-students-for-what-comes-next/pexels-8099486.jpg",

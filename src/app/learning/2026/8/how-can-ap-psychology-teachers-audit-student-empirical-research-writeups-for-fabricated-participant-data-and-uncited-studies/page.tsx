@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can AP Psychology Teachers Audit Student Empirical Research Writeups for Fabricated Participant Data and Uncited Studies? | Checkmark Plagiarism",
   description: "An authoritative guide for AP Psychology teachers, behavioral science educators, and academic integrity officers on auditing student empirical research writeups for AI-fabricated participant data, hallucinated APA 7 citations, and synthetic statistics using Checkmark's multidimensional source matching and Essay Playback™ telemetry.",
   "opengraph-image": "/images/learning/how-can-ap-psychology-teachers-audit-student-empirical-research-writeups-for-fabricated-participant-data-and-uncited-studies/featured.png",

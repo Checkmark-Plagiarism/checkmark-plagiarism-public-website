@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Secondary ELA Departments Configure Standards-Based Rubric Autograding With Direct Canvas Passback? | Checkmark Plagiarism",
   description: "An authoritative guide for Secondary ELA Department Chairs, High School English Teachers, Instructional Coaches, and Canvas LMS Administrators on configuring quote-anchored standards-based rubric autograding, Common Core writing mastery mapping, and 1EdTech LTI 1.3 Advantage direct passback into Canvas SpeedGrader.",
   "opengraph-image": "/images/learning/how-can-secondary-ela-departments-configure-standards-based-rubric-autograding-with-direct-canvas-passback/featured.png",

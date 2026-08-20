@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How High School AP Biology Teachers Can Verify Authentic Student Error Bar Explanations and Chi-Square Analysis in CER Lab Reports | Checkmark Plagiarism",
   description: "A comprehensive technical and pedagogical guide for AP Biology educators, science department chairs, and STEM coordinators on verifying authentic Claim-Evidence-Reasoning (CER) lab reports, detecting AI-generated statistical confabulation in Chi-Square (χ²) goodness-of-fit and ±2 SEM error bar analyses, and utilizing Essay Playback™ writing telemetry.",
   "opengraph-image": "/images/learning/how-high-school-ap-biology-teachers-can-verify-authentic-student-error-bar-explanations-and-chi-square-analysis-in-cer-lab-reports/featured.png",

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Does FERPA Compliance Mean for an AI Detection Tool?",
   description: "Learn what FERPA compliance requires for AI detection software—from the School Official exception and zero secondary use to data encryption and audit rights.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

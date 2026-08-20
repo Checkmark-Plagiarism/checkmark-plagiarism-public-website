@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Plagiarism Checks Work in Brightspace: A Plain-English Guide for Students, Instructors, and Admins",
   description: "A clear walkthrough of how assignment submissions and originality checks actually work inside Brightspace (D2L), from the student dropbox to instructor review to admin setup.",
   "opengraph-image": "/images/learning/how-plagiarism-checks-work-in-brightspace-a-plain-english-guide-for-students-instructors-and-admins/pexels-8052583.jpg",

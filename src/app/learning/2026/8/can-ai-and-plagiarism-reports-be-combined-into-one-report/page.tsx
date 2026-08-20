@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can AI and Plagiarism Reports Be Combined Into One Report?",
   description: "Learn how unified integrity reports combine AI detection, web plagiarism, peer matching, and writing playback into a single Canvas SpeedGrader view.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

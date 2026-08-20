@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Website Accessibility for Schools: Standards, Compliance, and What Actually Matters",
   description: "A plain-English guide to web accessibility for schools: what WCAG, ADA, and Section 508 require, how compliance works, and the fixes that matter most.",
   "opengraph-image": "/images/learning/website-accessibility-for-schools-standards-compliance-and-what-actually-matters/pexels-7695423.jpg",

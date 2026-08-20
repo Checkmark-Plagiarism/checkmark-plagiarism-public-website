@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can ChatGPT Writing Pass an AI Detector?",
   description: "Learn why ChatGPT writing can pass AI detectors (false negatives), why a 0% score isn't proof of human authorship, and how writing playback reveals true student process.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

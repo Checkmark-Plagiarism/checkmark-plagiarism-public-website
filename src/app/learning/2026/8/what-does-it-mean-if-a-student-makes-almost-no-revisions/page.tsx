@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Does It Mean If a Student Makes Almost No Revisions?",
   description: "Explore what it means when an essay's revision history shows almost no edits or deletions—investigating AI text, screen transcription, and offline drafting.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

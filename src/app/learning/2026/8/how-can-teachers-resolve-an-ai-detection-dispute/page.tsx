@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Teachers Resolve an AI Detection Dispute?",
   description: "A complete institutional roadmap for resolving AI detection disputes fairly—combining keystroke playback, citation audits, and restorative remedies.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can I Compare a Student's Assignment to Their Previous Writing?",
   description: "Learn how to compare student assignments against previous writing baselines fairly: vocabulary, syntax, error patterns, writing playback, and source checks.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

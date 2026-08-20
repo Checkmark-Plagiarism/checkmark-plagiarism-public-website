@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Schools Track Repeat Academic Integrity Violations?",
   description: "Learn how schools track repeat academic integrity violations across courses and semesters—centralized recidivism tracking, tiered sanctions, and restorative modules in Checkmark.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

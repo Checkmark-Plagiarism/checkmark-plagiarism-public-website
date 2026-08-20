@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How District IT Directors Can Ensure Student Essays Are Never Cached in Public LLM Repositories | Checkmark Plagiarism",
   description: "A comprehensive technical and legal guide for District IT Directors, CISOs, and School Boards to prevent student essays from being cached, logged, or ingested into public LLM training repositories, detailing Zero-Data-Retention (ZDR) architecture, model memorization risks, and FERPA/COPPA compliance.",
   "opengraph-image": "/images/learning/how-district-it-directors-can-ensure-student-essays-are-never-cached-in-public-llm-repositories/featured.png",

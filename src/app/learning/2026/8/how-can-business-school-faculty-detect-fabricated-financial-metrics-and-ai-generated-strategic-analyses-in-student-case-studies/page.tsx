@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Business School Faculty Detect Fabricated Financial Metrics and AI-Generated Strategic Analyses in Student Case Studies? | Checkmark Plagiarism",
   description: "An authoritative guide for business school faculty, MBA program directors, finance department chairs, and academic honor committees on detecting AI-hallucinated financial metrics, ungrounded strategic frameworks, and uncredited case solution manual copying using financial exhibit reconciliation, formula spot-checks, and Essay Playback™ writing telemetry.",
   "opengraph-image": "/images/learning/how-can-business-school-faculty-detect-fabricated-financial-metrics-and-ai-generated-strategic-analyses-in-student-case-studies/featured.png",

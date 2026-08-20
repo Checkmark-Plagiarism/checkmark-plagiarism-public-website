@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Questions Should I Ask a Student About a Suspicious Assignment?",
   description: "A comprehensive guide to constructive, evidence-based questions teachers should ask students when an assignment is suspected of AI generation or misconduct.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

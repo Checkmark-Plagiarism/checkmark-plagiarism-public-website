@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Teachers Tell If a Student Is Typing From Their Phone?",
   description: "Learn how typing-pattern evidence, keystroke dynamics, and gaze-shift pauses reveal whether a student is typing on a mobile device or transcribing from a phone.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

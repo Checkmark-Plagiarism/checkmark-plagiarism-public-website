@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Quote-Anchored Rubric Justifications Help Teachers Defend Grading Decisions to Students and Parents | Checkmark Plagiarism",
   description: "Discover how quote-anchored rubric justifications tie essay scores directly to verbatim textual evidence, eliminating subjective grading disputes with students and parents.",
   "opengraph-image": "/images/services/report-grading-view.png",

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can a Plagiarism Checker Automatically Check Canvas Assignments?",
   description: "Learn how Checkmark Plagiarism automatically scans Canvas assignment submissions the instant students submit, delivering zero-touch reports in SpeedGrader.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

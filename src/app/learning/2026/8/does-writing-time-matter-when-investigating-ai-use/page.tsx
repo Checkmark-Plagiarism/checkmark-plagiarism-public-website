@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Does Writing Time Matter When Investigating AI Use?",
   description: "Learn why active writing time is the single most definitive piece of physical evidence when investigating AI writing and resolving false accusations.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

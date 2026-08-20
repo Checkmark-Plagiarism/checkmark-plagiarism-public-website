@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can I Tell If AI Edited an Essay Versus Wrote It?",
   description: "Learn how to distinguish between AI-assisted grammar editing and full AI generation—analyzing sentence-level diffs and keystroke telemetry in Checkmark.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

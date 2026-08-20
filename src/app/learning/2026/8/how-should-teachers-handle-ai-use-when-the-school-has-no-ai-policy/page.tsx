@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Should Teachers Handle AI Use When the School Has No AI Policy?",
   description: "A practical guide for educators on setting classroom AI boundaries, handling suspected AI use, and protecting integrity when your institution lacks a formal AI policy.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

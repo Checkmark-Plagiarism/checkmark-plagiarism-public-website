@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Document Verification Works, and What Goes Wrong",
   description: "A plain-English guide to how a plagiarism and AI check actually processes a document, why a file sometimes fails to verify, and how teachers can fix it.",
   "opengraph-image": "/images/learning/how-document-verification-works-and-what-goes-wrong/pexels-8428063.jpg",

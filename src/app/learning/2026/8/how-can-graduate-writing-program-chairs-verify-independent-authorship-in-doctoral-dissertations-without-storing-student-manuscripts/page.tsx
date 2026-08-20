@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Graduate Writing Program Chairs Verify Independent Authorship in Doctoral Dissertations Without Storing Student Manuscripts? | Checkmark Plagiarism",
   description: "An authoritative governance and technical guide for Graduate Writing Program Chairs, Deans, and Dissertation Committees on verifying independent authorship and original scholarly contribution in doctoral dissertations without storing student manuscripts or risking patent novelty.",
   "opengraph-image": "/images/learning/how-can-graduate-writing-program-chairs-verify-independent-authorship-in-doctoral-dissertations-without-storing-student-manuscripts/featured.png",

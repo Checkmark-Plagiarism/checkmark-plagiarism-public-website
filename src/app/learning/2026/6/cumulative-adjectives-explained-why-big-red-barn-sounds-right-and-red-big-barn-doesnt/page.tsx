@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Cumulative Adjectives, Explained: Why \"Big Red Barn\" Sounds Right and \"Red Big Barn\" Doesn't",
   description: "A plain-English guide to cumulative adjectives: what they are, the hidden order English speakers follow, how they differ from coordinate adjectives, and why no commas appear.",
   "opengraph-image": "/images/learning/cumulative-adjectives-explained-why-big-red-barn-sounds-right-and-red-big-barn-doesnt/pexels-12491937.jpg",

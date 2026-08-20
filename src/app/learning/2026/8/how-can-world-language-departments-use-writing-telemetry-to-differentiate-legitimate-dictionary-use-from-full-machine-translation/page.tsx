@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can World Language Departments Use Writing Telemetry to Differentiate Legitimate Dictionary Use From Full Machine Translation? | Checkmark Plagiarism",
   description: "Discover how world language educators use keystroke telemetry, ACTFL proficiency frameworks, and Checkmark's Essay Playback™ to distinguish authorized bilingual dictionary lookups from unauthorized neural machine translation and AI generation.",
   "opengraph-image": "/images/learning/how-can-world-language-departments-use-writing-telemetry-to-differentiate-legitimate-dictionary-use-from-full-machine-translation/featured.png",

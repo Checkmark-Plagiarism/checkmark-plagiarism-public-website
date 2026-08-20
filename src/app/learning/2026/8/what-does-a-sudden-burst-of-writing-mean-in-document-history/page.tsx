@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Does a Sudden Burst of Writing Mean in Document History?",
   description: "Learn how to interpret sudden writing bursts in student document history—distinguishing between flow-state typing, quote insertions, and bulk AI pastes.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

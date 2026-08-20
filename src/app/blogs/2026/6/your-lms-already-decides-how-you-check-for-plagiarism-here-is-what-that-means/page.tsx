@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Your LMS Already Decides How You Check for Plagiarism. Here Is What That Means.",
   description: "A plain comparison of how plagiarism and AI-writing checking fits into Moodle, Blackboard, Schoology, Google Classroom, Sakai, and Edsby, and how to choose without re-platforming your school.",
   "opengraph-image": "/images/blogs/your-lms-already-decides-how-you-check-for-plagiarism-here-is-what-that-means/pexels-416322.jpg",

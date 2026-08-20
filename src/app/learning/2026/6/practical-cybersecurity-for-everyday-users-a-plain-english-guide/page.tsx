@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Practical Cybersecurity for Everyday Users: A Plain-English Guide",
   description: "A clear, no-jargon walkthrough of the cybersecurity steps that actually protect everyday users: passwords, two-factor, updates, phishing, and backups.",
   "opengraph-image": "/images/learning/practical-cybersecurity-for-everyday-users-a-plain-english-guide/pexels-20182039.jpg",

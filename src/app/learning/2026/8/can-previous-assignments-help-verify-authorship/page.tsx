@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Previous Assignments Help Verify Authorship?",
   description: "Learn how comparing new essays against a student's prior assignments verifies authentic authorship, clears false AI flags, and exposes ghostwriting.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

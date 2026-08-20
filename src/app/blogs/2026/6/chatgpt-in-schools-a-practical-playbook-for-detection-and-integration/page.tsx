@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "ChatGPT in Schools: A Practical Playbook for Detection and Integration",
   description: "Schools cannot ban their way out of ChatGPT. Here is a grounded playbook that pairs honest detection with deliberate classroom integration, without pretending either one is magic.",
   "opengraph-image": "/images/blogs/chatgpt-in-schools-a-practical-playbook-for-detection-and-integration/pexels-8199151.jpg",

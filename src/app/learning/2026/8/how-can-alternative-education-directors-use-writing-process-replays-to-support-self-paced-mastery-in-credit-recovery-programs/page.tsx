@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Alternative Education Directors Use Writing Process Replays to Support Self-Paced Mastery in Credit Recovery Programs? | Checkmark Plagiarism",
   description: "An authoritative guide for Alternative Education Directors, Credit Recovery Coordinators, and Non-Traditional High School Principals on leveraging writing process replays and keystroke telemetry to foster self-paced mastery, eliminate punitive AI flags, and diagnose cognitive roadblocks in credit recovery writing.",
   "opengraph-image": "/images/learning/how-can-alternative-education-directors-use-writing-process-replays-to-support-self-paced-mastery-in-credit-recovery-programs/featured.png",

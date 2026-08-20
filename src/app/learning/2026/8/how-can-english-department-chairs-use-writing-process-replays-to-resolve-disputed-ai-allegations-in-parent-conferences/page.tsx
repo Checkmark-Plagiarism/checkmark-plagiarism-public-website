@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can English Department Chairs Use Writing Process Replays to Resolve Disputed AI Allegations in Parent Conferences? | Checkmark Plagiarism",
   description: "An authoritative, practical guide for English department chairs, instructional leads, and school administrators on using writing process replays, keystroke telemetry, and restorative protocols to defuse disputed AI accusations in high-stakes parent conferences.",
   "opengraph-image": "/images/learning/how-can-english-department-chairs-use-writing-process-replays-to-resolve-disputed-ai-allegations-in-parent-conferences/featured.png",

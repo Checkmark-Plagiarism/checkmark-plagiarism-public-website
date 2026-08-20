@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Google Docs Show Who Wrote Each Part of an Essay?",
   description: "Learn how Google Docs tracks individual contributors in group projects, color-codes collaborator edits, and how Checkmark calculates exact authorship splits.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

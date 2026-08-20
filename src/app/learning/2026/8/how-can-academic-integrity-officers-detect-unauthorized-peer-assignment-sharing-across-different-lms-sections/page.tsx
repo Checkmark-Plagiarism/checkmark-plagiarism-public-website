@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Academic Integrity Officers Detect Unauthorized Peer Assignment Sharing Across Different LMS Sections? | Checkmark Plagiarism",
   description: "An authoritative guide for academic integrity officers and department chairs on detecting unauthorized peer assignment sharing across Canvas, Buzz, and Google Classroom sections using cross-cohort cryptographic hashing, Essay Playback™, and FERPA-compliant zero-retention architectures.",
   "opengraph-image": "/images/learning/how-can-academic-integrity-officers-detect-unauthorized-peer-assignment-sharing-across-different-lms-sections/featured.png",

@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Teachers Use Essay Playback to Differentiate Natural Brainstorming Pauses From External Device Transcription? | Checkmark Plagiarism",
   description: "Learn how educators use keystroke dynamics, pause topography, and Essay Playback™ to differentiate natural cognitive brainstorming pauses from manual external device AI transcription.",
   "opengraph-image": "/images/services/report-paste-evidence.png",

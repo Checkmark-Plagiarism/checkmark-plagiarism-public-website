@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Students Avoid Plagiarism Detection by Retyping an Article?",
   description: "Learn why retyping an article word-for-word fails to bypass plagiarism detection and how transcription analytics expose manual copying.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can High School Debate Coaches Use Side-by-Side Source Proof to Audit Evidence Cards for Accurate Context? | Checkmark Plagiarism",
   description: "An authoritative, practical guide for high school speech and debate coaches, NSDA tournament directors, and forensic adjudicators on using Checkmark's synchronized side-by-side source proof, 4-badge evidence taxonomy, and patent-pending Essay Playback™ writing telemetry to audit debate evidence cards, eliminate card clipping and distortion, and build ethical research literacy.",
   "opengraph-image": "/images/learning/how-can-high-school-debate-coaches-use-side-by-side-source-proof-to-audit-evidence-cards-for-accurate-context/featured.png",

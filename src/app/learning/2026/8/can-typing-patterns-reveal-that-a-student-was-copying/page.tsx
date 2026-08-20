@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Typing Patterns Reveal That a Student Was Copying?",
   description: "Learn how writing-process analysis and keystroke pattern tracking prove whether a student was formulating original thoughts or transcribing copied text.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

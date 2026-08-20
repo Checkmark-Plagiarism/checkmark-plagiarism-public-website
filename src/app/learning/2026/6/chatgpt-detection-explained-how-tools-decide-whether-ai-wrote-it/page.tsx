@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "ChatGPT Detection, Explained: How Tools Decide Whether AI Wrote It",
   description: "A plain-English guide to how ChatGPT detection actually works, what the scores mean, why detectors disagree, and how teachers should read the results.",
   "opengraph-image": "/images/learning/chatgpt-detection-explained-how-tools-decide-whether-ai-wrote-it/pexels-17810854.jpg",

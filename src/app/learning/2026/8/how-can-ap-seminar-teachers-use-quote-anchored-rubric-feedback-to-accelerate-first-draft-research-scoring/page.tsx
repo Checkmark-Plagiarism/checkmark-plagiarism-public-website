@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can AP Seminar Teachers Use Quote-Anchored Rubric Feedback to Accelerate First-Draft Research Scoring? | Checkmark Plagiarism",
   description: "An authoritative guide for AP Seminar and AP Capstone educators on using Checkmark's AI-assisted quote-anchored rubric autograding, pre-flight batch moderation, and Essay Playback™ writing telemetry to accelerate first-draft scoring for the IRR and IWA while maintaining rigorous College Board compliance.",
   "opengraph-image": "/images/learning/how-can-ap-seminar-teachers-use-quote-anchored-rubric-feedback-to-accelerate-first-draft-research-scoring/featured.png",

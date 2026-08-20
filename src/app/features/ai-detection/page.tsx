@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: { images: [""] },
 };
 
-export const steps: Step[] = [
+const steps: Step[] = [
   {
     k: '01',
     title: 'Secure document intake',

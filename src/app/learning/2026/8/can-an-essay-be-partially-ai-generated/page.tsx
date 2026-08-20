@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can an Essay Be Partially AI-Generated?",
   description: "Learn how essays can be partially AI-generated—exploring hybrid human-AI writing patterns, sentence perplexity heatmaps, and keystroke forensics.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What If a Student Has No Drafts for an Assignment?",
   description: "Understand what to do when a student has no rough drafts or outlines: evaluating document history, conceptual mastery, and multi-signal evidence.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

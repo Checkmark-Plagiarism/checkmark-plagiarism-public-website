@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Teachers Automatically Grade First Drafts and Review the Results?",
   description: "Learn how teachers automate first-draft essay feedback and review results—powering multi-draft revision cycles, growth tracking, and LMS integration in Checkmark.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

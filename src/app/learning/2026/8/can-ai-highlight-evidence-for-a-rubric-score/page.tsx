@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can AI Highlight Evidence for a Rubric Score?",
   description: "Learn how Checkmark Autograder highlights quoted textual evidence for rubric scores—interactive color-coded overlays and line-by-line evidence mapping.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

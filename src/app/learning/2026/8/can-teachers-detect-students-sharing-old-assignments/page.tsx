@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Teachers Detect Students Sharing Old Assignments?",
   description: "Learn how teachers detect recycled student assignments from previous years—analyzing institutional repositories, prompt mismatches, and playback telemetry.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

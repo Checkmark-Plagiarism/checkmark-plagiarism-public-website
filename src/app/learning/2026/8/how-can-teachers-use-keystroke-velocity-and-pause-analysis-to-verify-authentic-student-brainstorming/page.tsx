@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Teachers Use Keystroke Velocity and Pause Analysis to Verify Authentic Student Brainstorming? | Checkmark Plagiarism",
   description: "Learn how educators use keystroke velocity, inter-key intervals (IKIs), pause duration analysis, and patent-pending Essay Playback™ to verify authentic student brainstorming, detect synthetic AI transcription, and protect organic drafting.",
   "opengraph-image": "/images/learning/how-can-teachers-use-keystroke-velocity-and-pause-analysis-to-verify-authentic-student-brainstorming/featured.png",

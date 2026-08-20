@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "The Plain-English AI Glossary for Teachers and Parents",
   description: "A jargon-free glossary of the AI terms showing up in classrooms, with simple definitions and real usage examples for teachers, administrators, and parents.",
   "opengraph-image": "/images/learning/the-plain-english-ai-glossary-for-teachers-and-parents/pexels-159581.jpg",

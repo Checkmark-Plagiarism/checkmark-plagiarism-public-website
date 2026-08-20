@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Secondary Social Studies Teachers Use Side-by-Side Source Viewers to Detect Fabricated Historical Quotes in Research Papers? | Checkmark Plagiarism",
   description: "A comprehensive pedagogical and technical guide for secondary social studies teachers, AP history educators, and department chairs on using synchronized side-by-side source viewers, Essay Playback™, and 4-badge source taxonomy to detect and remediate AI-hallucinated historical quotes and fabricated archival citations.",
   "opengraph-image": "/images/services/report-source-quote.png",

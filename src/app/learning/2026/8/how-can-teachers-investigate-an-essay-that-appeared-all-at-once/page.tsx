@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Teachers Investigate an Essay That Appeared All at Once?",
   description: "A step-by-step educator protocol for investigating essays that appeared all at once using paste detection, essay playback, and citation audits.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

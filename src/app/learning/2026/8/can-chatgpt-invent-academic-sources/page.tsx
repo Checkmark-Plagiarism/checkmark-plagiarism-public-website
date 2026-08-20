@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can ChatGPT Invent Academic Sources?",
   description: "Learn why ChatGPT invents plausible academic sources, how probabilistic hallucination works, and how teachers catch fake citations in student essays.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Teachers See How Long a Student Spent Writing an Assignment?",
   description: "Learn how Checkmark measures active typing time versus idle hours in Canvas and Google Docs, allowing teachers to see true student drafting duration.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

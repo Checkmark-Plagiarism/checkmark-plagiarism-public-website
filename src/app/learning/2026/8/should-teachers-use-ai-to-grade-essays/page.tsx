@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Should Teachers Use AI to Grade Essays?",
   description: "Explore the pedagogical, ethical, and practical considerations of AI essay grading—faster feedback, burnout reduction, and ethical Teacher-in-the-Loop guardrails in Checkmark.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

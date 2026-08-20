@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Many Writing Samples Do I Need to Establish a Student Baseline?",
   description: "Learn the exact number of writing samples needed to build a statistically valid student writing baseline—explaining the 1+2 Rule for AI detection and authorship verification.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

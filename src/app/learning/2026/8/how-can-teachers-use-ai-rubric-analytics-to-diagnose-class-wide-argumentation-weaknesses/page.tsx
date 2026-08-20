@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Teachers Use AI Rubric Analytics to Diagnose Class-Wide Argumentation Weaknesses? | Checkmark Plagiarism",
   description: "A comprehensive guide for English teachers, department chairs, and curriculum directors on utilizing AI rubric analytics and cohort heatmaps to diagnose systemic argumentation bottlenecks, bridge the Toulmin warrant gap, and implement Data-Driven Writing Instruction (DDWI).",
   "opengraph-image": "/images/learning/how-can-teachers-use-ai-rubric-analytics-to-diagnose-class-wide-argumentation-weaknesses/featured.png",

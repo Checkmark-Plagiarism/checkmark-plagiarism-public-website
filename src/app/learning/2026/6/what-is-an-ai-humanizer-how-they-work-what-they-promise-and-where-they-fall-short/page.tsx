@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Is an AI Humanizer? How They Work, What They Promise, and Where They Fall Short",
   description: "A plain-English explainer on AI humanizers: what they are, how the rewriting actually works, what they can and cannot do, and what they mean for schools.",
   "opengraph-image": "/images/learning/what-is-an-ai-humanizer-how-they-work-what-they-promise-and-where-they-fall-short/pexels-8439099.jpg",

@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can District Instructional Technology Teams Configure Canvas LTI 1.3 for Centralized Assignment Integrity Audits Across All High Schools? | Checkmark Plagiarism",
   description: "A comprehensive technical architecture and deployment guide for District IT Directors, Instructional Technology Coordinators, and Canvas LMS Administrators on configuring Canvas LTI 1.3 Advantage for district-wide, automated assignment integrity audits across all secondary campuses.",
   "opengraph-image": "/images/learning/how-can-district-instructional-technology-teams-configure-canvas-lti-1-3-for-centralized-assignment-integrity-audits-across-all-high-schools/featured.png",

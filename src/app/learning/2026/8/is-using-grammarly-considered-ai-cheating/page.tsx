@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Is Using Grammarly Considered AI Cheating?",
   description: "Understand when using Grammarly is acceptable vs. when generative sentence rewriting crosses into AI academic misconduct.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

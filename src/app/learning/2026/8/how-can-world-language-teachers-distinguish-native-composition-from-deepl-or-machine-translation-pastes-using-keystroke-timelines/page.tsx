@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can World Language Teachers Distinguish Native Composition From DeepL or Machine Translation Pastes Using Keystroke Timelines? | Checkmark Plagiarism",
   description: "An authoritative pedagogical and technical guide for World Language educators, AP/IB language coordinators, Dual-Language Immersion specialists, and department chairs on using keystroke telemetry and Essay Playback™ to separate authentic target-language drafting from DeepL, Google Translate, and second-screen transcription.",
   "opengraph-image": "/images/learning/how-can-world-language-teachers-distinguish-native-composition-from-deepl-or-machine-translation-pastes-using-keystroke-timelines/featured.png",

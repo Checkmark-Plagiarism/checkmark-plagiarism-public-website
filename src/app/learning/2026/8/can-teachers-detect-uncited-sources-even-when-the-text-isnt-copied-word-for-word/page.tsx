@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Teachers Detect Uncited Sources Even When the Text Isn't Copied Word for Word?",
   description: "Learn how semantic matching, data attribution analysis, and conceptual vector mapping detect uncited sources and paraphrased idea appropriation in essays.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

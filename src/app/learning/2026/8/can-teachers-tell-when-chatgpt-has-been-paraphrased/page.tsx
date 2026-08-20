@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Teachers Tell When ChatGPT Has Been Paraphrased?",
   description: "Explore how teachers detect paraphrased or 'humanized' ChatGPT text through writing playback timelines, citation audits, and structural rhythm analysis.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

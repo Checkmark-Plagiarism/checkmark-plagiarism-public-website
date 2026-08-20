@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can AI Writing Be Detected If a Student Types It Instead of Pasting It?",
   description: "Discover how AI writing is detected even when typed manually—combining neural linguistic analysis with transcription keystroke telemetry.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

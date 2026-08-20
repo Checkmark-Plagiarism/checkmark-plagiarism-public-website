@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Teachers Review Plagiarism Without Opening Every Source?",
   description: "Learn how to review plagiarism matches in seconds without opening external links—inline source diffs, authority ranking, and quote exclusions in Checkmark.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

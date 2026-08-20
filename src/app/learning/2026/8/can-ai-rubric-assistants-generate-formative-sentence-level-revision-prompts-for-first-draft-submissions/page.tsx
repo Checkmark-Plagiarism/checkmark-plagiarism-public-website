@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can AI Rubric Assistants Generate Formative Sentence-Level Revision Prompts for First-Draft Submissions? | Checkmark Plagiarism",
   description: "An authoritative pedagogical and technical guide for secondary and postsecondary English educators and department chairs on generating non-prescriptive, quote-anchored formative sentence-level revision prompts on first drafts using Checkmark Plagiarism's Teacher-in-the-Loop AI Rubric Assistant.",
   "opengraph-image": "/images/learning/can-ai-rubric-assistants-generate-formative-sentence-level-revision-prompts-for-first-draft-submissions/featured.png",

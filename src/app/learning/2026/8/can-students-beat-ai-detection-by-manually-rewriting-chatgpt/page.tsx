@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Students Beat AI Detection by Manually Rewriting ChatGPT?",
   description: "Learn why manually rewriting ChatGPT responses fails to beat modern integrity platforms, as keystroke transcription dynamics and structural AI patterns expose the shortcut.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

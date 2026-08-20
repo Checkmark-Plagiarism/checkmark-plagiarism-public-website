@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can High School Speech and Debate Coaches Use Rubric Autograding to Provide Objective Feedback on Written Oratory Drafts? | Checkmark Plagiarism",
   description: "An authoritative guide for High School Speech and Debate coaches, Forensics directors, and AP English Language teachers on using Checkmark's AI-assisted quote-anchored rubric autograding, pre-flight moderation console, and patent-pending Essay Playback™ writing telemetry to deliver rapid, objective, and formative feedback on written oratory manuscripts before competitive weekend tournaments.",
   "opengraph-image": "/images/learning/how-can-high-school-speech-and-debate-coaches-use-rubric-autograding-to-provide-objective-feedback-on-written-oratory-drafts/featured.png",

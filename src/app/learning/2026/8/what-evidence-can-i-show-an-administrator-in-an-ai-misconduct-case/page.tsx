@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Evidence Can I Show an Administrator in an AI Misconduct Case?",
   description: "A complete guide on preparing administrative AI misconduct dossiers—FERPA-compliant telemetry reports, Crossref DOI audits, and conference notes in Checkmark.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

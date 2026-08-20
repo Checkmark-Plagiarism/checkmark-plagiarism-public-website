@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Evidence Should Be Required Before an AI Cheating Penalty?",
   description: "Learn what evidence is required before issuing an AI cheating penalty—the Two-Pillar Standard, writing playback telemetry, and DOI checks in Checkmark.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

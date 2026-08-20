@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "AI-Powered Originality Checks: How They Work and How to Troubleshoot Them",
   description: "A plain-English guide to AI-powered originality checks: what they measure, how they work, the real benefits for creators, and how to troubleshoot confusing results.",
   "opengraph-image": "/images/learning/ai-powered-originality-checks-how-they-work-and-how-to-troubleshoot-them/pexels-20955062.jpg",

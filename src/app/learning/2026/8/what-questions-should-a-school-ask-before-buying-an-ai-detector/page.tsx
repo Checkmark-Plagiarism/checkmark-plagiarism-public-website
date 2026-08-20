@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Questions Should a School Ask Before Buying an AI Detector?",
   description: "The 10 essential questions school leadership must ask before buying an AI detection tool—covering false positives, student privacy, LTI 1.3, and writing playback.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

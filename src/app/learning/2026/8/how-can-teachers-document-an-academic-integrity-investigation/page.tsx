@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Teachers Document an Academic Integrity Investigation?",
   description: "A complete guide on documenting academic integrity investigations—building airtight, FERPA-compliant audit dossiers with keystroke telemetry in Checkmark.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can AP Environmental Science Teachers Use Keystroke Playback to Distinguish Authentic Biogeochemical Cycle Lab Analyses From AI-Generated Data Interpretations? | Checkmark Plagiarism",
   description: "A comprehensive pedagogical guide for AP Environmental Science (APES) teachers, STEM department chairs, and science coordinators on using Keystroke Playback™ and writing process telemetry to verify empirical biogeochemical lab writeups, differentiate authentic field noise from synthetic LLM data, and prevent false AI accusations.",
   "opengraph-image": "/images/services/report-paste-evidence.png",

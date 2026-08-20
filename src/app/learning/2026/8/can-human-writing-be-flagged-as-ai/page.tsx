@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Human Writing Be Flagged as AI?",
   description: "Learn why and how human writing gets falsely flagged as AI by statistical detectors, and how writing playback provides the definitive ground truth.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

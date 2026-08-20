@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What If a Student's Essay Is Much Better Than Their In-Class Writing?",
   description: "Learn how to evaluate significant disparities between in-class writing and take-home essays—distinguishing between authentic revision and AI assistance.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

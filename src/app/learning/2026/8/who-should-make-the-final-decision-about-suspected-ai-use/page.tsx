@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Who Should Make the Final Decision About Suspected AI Use?",
   description: "Learn who holds final authority in suspected AI use cases—understanding why human educators, deans, and honor boards decide, never an algorithm.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

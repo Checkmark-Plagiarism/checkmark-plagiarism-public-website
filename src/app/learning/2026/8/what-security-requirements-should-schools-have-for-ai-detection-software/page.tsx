@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Security Requirements Should Schools Have for AI Detection Software?",
   description: "A comprehensive cybersecurity guide for school IT leaders on essential encryption, authentication, multi-tenancy, and SOC 2 requirements for AI detection tools.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

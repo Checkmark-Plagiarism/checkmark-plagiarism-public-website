@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "My Student's Essay Doesn't Match Their Normal Writing — What Should I Do?",
   description: "Learn how to investigate a sudden leap in student writing ability—baseline comparison, writing playback forensics, and diagnostic check-ins in Checkmark.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

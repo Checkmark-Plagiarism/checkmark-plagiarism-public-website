@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How to Delete Google Docs Version History (and Why You Probably Should Not)",
   description: "A plain-English guide to what Google Docs version history actually is, the only real ways to remove it, and why erasing your edit trail can backfire in a classroom.",
   "opengraph-image": "/images/learning/how-to-delete-google-docs-version-history-and-why-you-probably-should-not/pexels-5717709.jpg",

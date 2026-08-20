@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Do Teachers Check for Plagiarism? Methods and Tools",
   description: "Learn how teachers check for plagiarism using source matching, plagiarism reports, citation review, writing history, and student conversations.",
   "opengraph-image": "/images/services/report-plagiarism-view.png",

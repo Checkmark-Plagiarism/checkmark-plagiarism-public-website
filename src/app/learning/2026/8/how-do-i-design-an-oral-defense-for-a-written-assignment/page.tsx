@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Do I Design an Oral Defense for a Written Assignment?",
   description: "Learn how to structure, scale, and evaluate oral defenses for written student assignments to verify authorship, foster speaking skills, and deter AI cheating.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

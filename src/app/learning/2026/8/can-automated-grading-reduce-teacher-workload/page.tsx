@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Automated Grading Reduce Teacher Workload?",
   description: "Learn how automated essay grading reduces teacher workload by 75-80%—pre-scored rubrics, evidence mapping, and SpeedGrader integration in Checkmark.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Should Students Submit Their Google Docs Revision History?",
   description: "Examine whether requiring Google Docs revision history is an effective integrity strategy, its limitations, and how automated writing playback improves verification.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

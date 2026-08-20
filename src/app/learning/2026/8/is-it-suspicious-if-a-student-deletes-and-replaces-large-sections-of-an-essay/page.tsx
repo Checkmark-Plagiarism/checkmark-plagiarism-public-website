@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Is It Suspicious If a Student Deletes and Replaces Large Sections of an Essay?",
   description: "Discover whether deleting and replacing large sections of an essay is suspicious—distinguishing between authentic structural revision and AI text swapping.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

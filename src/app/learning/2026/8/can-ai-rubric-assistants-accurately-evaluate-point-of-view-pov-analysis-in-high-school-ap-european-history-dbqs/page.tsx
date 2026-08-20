@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can AI Rubric Assistants Accurately Evaluate Point-of-View (POV) Analysis in High School AP European History DBQs? | Checkmark Plagiarism",
   description: "A comprehensive technical and pedagogical guide for AP European History educators, department chairs, and curriculum directors on using quote-anchored AI rubric assistants to accurately evaluate Point-of-View (POV) sourcing analysis in high school DBQs without generic score inflation.",
   "opengraph-image": "/images/learning/can-ai-rubric-assistants-accurately-evaluate-point-of-view-pov-analysis-in-high-school-ap-european-history-dbqs/featured.png",

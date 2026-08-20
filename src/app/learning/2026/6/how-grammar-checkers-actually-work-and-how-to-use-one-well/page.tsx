@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Grammar Checkers Actually Work (And How to Use One Well)",
   description: "A plain-English guide to what grammar checkers are, the technology inside them, the different types, and how teachers and students can use them without outsourcing their judgment.",
   "opengraph-image": "/images/learning/how-grammar-checkers-actually-work-and-how-to-use-one-well/pexels-7061.jpg",

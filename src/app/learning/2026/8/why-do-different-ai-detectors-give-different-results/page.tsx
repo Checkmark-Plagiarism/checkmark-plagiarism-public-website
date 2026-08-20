@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Why Do Different AI Detectors Give Different Results?",
   description: "Learn why AI detection tools produce conflicting scores on the same paper, how model thresholds and sample sizes differ, and why writing playback provides true context.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

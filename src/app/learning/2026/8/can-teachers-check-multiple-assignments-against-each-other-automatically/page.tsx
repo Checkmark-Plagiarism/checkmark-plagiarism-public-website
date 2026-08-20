@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Teachers Check Multiple Assignments Against Each Other Automatically?",
   description: "Learn how teachers cross-check assignments across classes, periods, and semesters automatically—cohort indexing and peer matching in Checkmark.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Community College Instructors Use Keystroke Replay to Audit Writing Velocity on Asynchronous Online Exams? | Checkmark Plagiarism",
   description: "A comprehensive guide for community college faculty, distance education coordinators, and academic integrity officers on using writing velocity telemetry, keystroke dynamics, and Essay Playback™ to audit timed asynchronous online essay exams without invasive proctoring.",
   "opengraph-image": "/images/learning/how-can-community-college-instructors-use-keystroke-replay-to-audit-writing-velocity-on-asynchronous-online-exams/featured.png",

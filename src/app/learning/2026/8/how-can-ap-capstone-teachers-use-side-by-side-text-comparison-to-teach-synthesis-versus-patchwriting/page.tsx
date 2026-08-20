@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can AP Capstone Teachers Use Side-by-Side Text Comparison to Teach Synthesis Versus Patchwriting? | Checkmark Plagiarism",
   description: "An authoritative guide for AP Capstone (Seminar & Research) teachers, IB Extended Essay advisors, and Humanities department chairs on using Checkmark's dual-pane side-by-side text comparison, 4-badge source taxonomy, and patent-pending Essay Playback™ to diagnose developmental patchwriting and teach true dialectical synthesis.",
   "opengraph-image": "/images/learning/how-can-ap-capstone-teachers-use-side-by-side-text-comparison-to-teach-synthesis-versus-patchwriting/featured.png",

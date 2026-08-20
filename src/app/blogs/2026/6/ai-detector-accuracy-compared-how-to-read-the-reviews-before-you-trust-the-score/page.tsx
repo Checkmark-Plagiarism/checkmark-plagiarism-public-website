@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "AI Detector Accuracy, Compared: How to Read the Reviews Before You Trust the Score",
   description: "A teacher-first comparison of the major AI detectors and the accuracy claims behind them, plus a simple framework for judging any review you read.",
   "opengraph-image": "/images/blogs/ai-detector-accuracy-compared-how-to-read-the-reviews-before-you-trust-the-score/pexels-5538616.jpg",

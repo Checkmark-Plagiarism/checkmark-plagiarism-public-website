@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Long Should a Plagiarism Checker Keep Student Work?",
   description: "Learn how schools establish optimal data retention schedules for student essays—balancing peer plagiarism detection with FERPA data minimization principles.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

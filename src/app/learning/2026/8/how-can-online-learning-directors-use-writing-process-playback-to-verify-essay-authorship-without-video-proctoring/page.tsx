@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Online Learning Directors Use Writing Process Playback to Verify Essay Authorship Without Video Proctoring? | Checkmark Plagiarism",
   description: "A comprehensive institutional guide for Online Learning Directors, Virtual Academy Administrators, and Higher Ed Distance Learning Leaders to verify authentic essay authorship without intrusive webcam surveillance or lockdown browsers using asynchronous keystroke telemetry and Essay Playback™.",
   "opengraph-image": "/images/learning/how-can-online-learning-directors-use-writing-process-playback-to-verify-essay-authorship-without-video-proctoring/featured.png",

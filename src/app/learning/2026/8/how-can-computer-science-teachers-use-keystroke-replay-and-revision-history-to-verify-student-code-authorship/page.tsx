@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Computer Science Teachers Use Keystroke Replay and Revision History to Verify Student Code Authorship? | Checkmark Plagiarism",
   description: "An authoritative, pedagogical guide for AP Computer Science (CSP/CSA) teachers, college programming faculty, and STEM department chairs on using Checkmark's patent-pending Essay Playback™ writing process telemetry to verify authentic student code construction, detect generative AI pasting, exonerate honest coders on canonical algorithms, and conduct restorative code defense conferences.",
   "opengraph-image": "/images/learning/how-can-computer-science-teachers-use-keystroke-replay-and-revision-history-to-verify-student-code-authorship/featured.png",

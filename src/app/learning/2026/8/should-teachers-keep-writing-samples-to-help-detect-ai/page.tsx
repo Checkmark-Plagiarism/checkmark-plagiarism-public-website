@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Should Teachers Keep Writing Samples to Help Detect AI?",
   description: "Learn why maintaining student writing portfolios and diagnostic baselines is the most effective way to detect AI, verify authorship, and clear false positives.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

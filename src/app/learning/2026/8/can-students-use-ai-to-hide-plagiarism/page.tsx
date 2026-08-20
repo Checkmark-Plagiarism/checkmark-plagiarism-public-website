@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Students Use AI to Hide Plagiarism?",
   description: "Explore how students attempt to disguise plagiarism using AI paraphrasing, why it deceives basic scanners, and how teachers catch hidden plagiarism with writing playback.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

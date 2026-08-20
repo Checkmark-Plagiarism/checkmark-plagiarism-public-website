@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Does Manually Typing ChatGPT Make AI Detection Impossible?",
   description: "Debunking the myth that manually retyping ChatGPT makes AI detection impossible—explaining how linguistic classifiers and typing telemetry expose transcribed AI.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

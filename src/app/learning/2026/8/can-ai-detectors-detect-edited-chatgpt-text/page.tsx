@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can AI Detectors Detect Edited ChatGPT Text?",
   description: "Learn whether AI detectors can identify edited, paraphrased, or hybrid ChatGPT text, why writing-process playback matters, and how teachers can investigate rewritten AI content.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

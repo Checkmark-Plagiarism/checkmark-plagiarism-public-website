@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can District Instructional Technology Coaches Train Faculty to Integrate Essay Playback Telemetry Into Formative Writing Conferences? | Checkmark Plagiarism",
   description: "A comprehensive district instructional coaching guide for EdTech Specialists, Academic Deans, and Humanities Department Chairs on training secondary and higher ed faculty to utilize Essay Playback writing telemetry as a formative coaching instrument during 1-on-1 student conferences.",
   "opengraph-image": "/images/learning/how-can-district-instructional-technology-coaches-train-faculty-to-integrate-essay-playback-telemetry-into-formative-writing-conferences/featured.png",

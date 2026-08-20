@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can I See Exactly How a Student Built Their Essay From Start to Finish?",
   description: "Learn how Checkmark Writing Playback lets teachers replay how a student built their essay from start to finish—15-second time-lapse videos, pause timelines, and revision maps in Canvas.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

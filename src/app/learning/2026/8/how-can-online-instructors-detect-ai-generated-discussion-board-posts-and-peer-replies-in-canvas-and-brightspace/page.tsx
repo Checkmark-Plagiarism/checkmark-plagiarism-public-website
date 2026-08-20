@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Online Instructors Detect AI-Generated Discussion Board Posts and Peer Replies in Canvas and Brightspace? | Checkmark Plagiarism",
   description: "A definitive, practical guide for online instructors, instructional designers, and academic integrity officers on identifying synthetic discussion board posts, deconstructing sycophantic AI peer replies, navigating short-text detection limits, and redesigning asynchronous LMS discussions in Canvas and Brightspace.",
   "opengraph-image": "/images/learning/how-can-online-instructors-detect-ai-generated-discussion-board-posts-and-peer-replies-in-canvas-and-brightspace/featured.png",

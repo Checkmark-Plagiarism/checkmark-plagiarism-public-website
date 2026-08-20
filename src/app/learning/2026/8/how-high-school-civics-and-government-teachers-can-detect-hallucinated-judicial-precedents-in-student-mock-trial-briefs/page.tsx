@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How High School Civics and Government Teachers Can Detect Hallucinated Judicial Precedents in Student Mock Trial Briefs | Checkmark Plagiarism",
   description: "An authoritative guide for high school civics, AP Government, and mock trial educators on detecting hallucinated case law, fabricated U.S. Reports citations, and fictitious judicial dissents using writing process telemetry, citation verification, and Essay Playback™.",
   "opengraph-image": "/images/learning/how-high-school-civics-and-government-teachers-can-detect-hallucinated-judicial-precedents-in-student-mock-trial-briefs/featured.png",

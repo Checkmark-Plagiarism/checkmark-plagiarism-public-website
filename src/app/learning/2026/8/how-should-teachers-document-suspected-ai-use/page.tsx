@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Should Teachers Document Suspected AI Use?",
   description: "A comprehensive educator guide on documenting suspected student AI writing: objective evidence logs, playback records, student conference notes, and administrative reporting.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

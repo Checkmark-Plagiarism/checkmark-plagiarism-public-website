@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "A Parent and Teacher's Guide to Chegg and Quizlet Alternatives in 2026",
   description: "A practical, integrity-minded roundup of the best Chegg and Quizlet alternatives for students in 2026, with notes on which tools actually support learning and which invite shortcuts.",
   "opengraph-image": "/images/blogs/a-parent-and-teachers-guide-to-chegg-and-quizlet-alternatives-in-2026/pexels-9159042.jpg",

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can AI Give Feedback on Specific Sentences in an Essay?",
   description: "Discover how quote-anchored AI feedback analyzes specific sentences, quoted evidence, and transitions to provide actionable inline writing guidance.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

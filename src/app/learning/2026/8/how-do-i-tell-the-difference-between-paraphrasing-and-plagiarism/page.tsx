@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Do I Tell the Difference Between Paraphrasing and Plagiarism?",
   description: "A definitive educator guide and 4-point test for distinguishing between legitimate academic paraphrasing, patchwriting, and uncredited plagiarism.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

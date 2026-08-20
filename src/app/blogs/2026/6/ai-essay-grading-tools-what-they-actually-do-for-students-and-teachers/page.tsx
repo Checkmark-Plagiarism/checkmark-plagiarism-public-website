@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "AI Essay Grading Tools: What They Actually Do for Students and Teachers",
   description: "A clear-eyed look at AI essay grading tools, what they get right, where they fall short, and how teachers and students can use them without outsourcing judgment.",
   "opengraph-image": "/images/blogs/ai-essay-grading-tools-what-they-actually-do-for-students-and-teachers/pexels-6684372.jpg",

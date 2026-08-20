@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Academic Integrity Committees Can Use Multi-Evidence Dossiers in Student Appeal Hearings | Checkmark Plagiarism",
   description: "An authoritative guide for academic integrity committees, honor councils, department chairs, and judicial affairs officers on using multi-evidence dossiers, keystroke telemetry, and passage-level analysis to adjudicate student appeals with procedural due process.",
   "opengraph-image": "/images/learning/how-academic-integrity-committees-can-use-multi-evidence-dossiers-in-student-appeal-hearings/featured.png",

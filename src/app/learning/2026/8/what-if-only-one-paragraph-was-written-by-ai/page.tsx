@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What If Only One Paragraph Was Written by AI?",
   description: "Learn how teachers evaluate and resolve single-paragraph AI use—balancing proportional grading, writing playback evidence, and targeted student revision.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

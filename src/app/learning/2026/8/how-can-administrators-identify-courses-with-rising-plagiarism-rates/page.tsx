@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Administrators Identify Courses With Rising Plagiarism Rates?",
   description: "Learn how administrators use Checkmark Analytics to identify courses with rising plagiarism rates, spot assignment vulnerabilities, and provide instructional support.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

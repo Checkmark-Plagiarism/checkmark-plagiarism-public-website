@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can District FERPA Compliance Officers Audit Cloud-Based Autograding Tools for Zero-Training Student Data Guarantees? | Checkmark Plagiarism",
   description: "An authoritative technical and legal procurement guide for District FERPA Compliance Officers, Legal Counsel, Chief Technology Officers (CTOs), and Data Privacy Officers on auditing cloud-based AI autograding and integrity platforms for legally binding zero-training architecture, ephemeral in-memory processing, state privacy law compliance (NY Ed Law 2-D, SOPPA, SOPIPA), and student intellectual property protection.",
   "opengraph-image": "/images/services/report-grading-view.png",

@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Evidentiary Standard Should Academic Integrity Committees Apply to LLM Rewrite and Text Humanizer Claims? | Checkmark Plagiarism",
   description: "An authoritative master guide for Academic Integrity Officers, Honor Council Chairs, Deans of Students, University Legal Counsel, and Faculty Hearing Boards on establishing defensible evidentiary standards, evaluating LLM rewrite and text humanizer claims, and utilizing writing telemetry and Essay Playback™ to satisfy procedural due process.",
   "opengraph-image": "/images/learning/what-evidentiary-standard-should-academic-integrity-committees-apply-to-llm-rewrite-and-text-humanizer-claims/featured.png",

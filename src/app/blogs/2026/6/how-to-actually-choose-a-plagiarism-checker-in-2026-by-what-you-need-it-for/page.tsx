@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How to Actually Choose a Plagiarism Checker in 2026 (By What You Need It For)",
   description: "A buyer's guide to plagiarism checkers in 2026, organized by what you actually do all day: teach, edit, publish, or write. Match the tool to the job, not the hype.",
   "opengraph-image": "/images/blogs/how-to-actually-choose-a-plagiarism-checker-in-2026-by-what-you-need-it-for/pexels-7718656.jpg",

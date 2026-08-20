@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Can Keystroke History Tell Teachers About an Assignment?",
   description: "Discover what keystroke history reveals about student writing: active drafting time, revision depth, cognitive struggle, and authentic authorship.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

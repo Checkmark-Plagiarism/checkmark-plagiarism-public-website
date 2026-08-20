@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How to Sync AI-Drafted Rubric Grades Directly Back to Buzz LMS and Canvas | Checkmark Plagiarism",
   description: "A complete technical and pedagogical guide for educators on syncing AI-drafted rubric grades, criterion feedback, and integrity telemetry directly into Canvas and Buzz LMS gradebooks.",
   "opengraph-image": "/images/services/report-grading-view.png",

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can a Plagiarism Checker Automatically Flag the Most Suspicious Assignments?",
   description: "Learn how modern integrity platforms calculate automated Suspicion Indices—combining paste telemetry, AI probability, and DOI checks in Checkmark.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Why Does This Student's Essay Sound Different From Their Previous Work?",
   description: "Understand why a student's writing style might suddenly shift, how to evaluate style baselines objectively, and how essay writing playback reveals the true process.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

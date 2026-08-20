@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Should I Ask a Student Who Says an AI Detector Is Wrong?",
   description: "Learn the exact 4-tier diagnostic questions to ask a student who claims an AI detector is mistaken—validating authorship with Checkmark Playback.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

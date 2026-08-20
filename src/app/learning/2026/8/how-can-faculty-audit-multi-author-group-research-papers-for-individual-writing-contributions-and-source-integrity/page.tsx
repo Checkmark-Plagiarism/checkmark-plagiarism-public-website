@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Faculty Audit Multi-Author Group Research Papers for Individual Writing Contributions and Source Integrity? | Checkmark Plagiarism",
   description: "A comprehensive guide for higher education faculty, department chairs, and capstone advisors on auditing multi-author group research papers (3,000–8,000 words) for individual writing contributions, isolated source integrity, and passage-level AI detection without unfair collective punishment.",
   "opengraph-image": "/images/learning/how-can-faculty-audit-multi-author-group-research-papers-for-individual-writing-contributions-and-source-integrity/featured.png",

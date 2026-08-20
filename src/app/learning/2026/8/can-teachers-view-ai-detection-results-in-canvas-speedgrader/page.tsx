@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Teachers View AI Detection Results in Canvas SpeedGrader?",
   description: "Learn how Checkmark Plagiarism embeds AI detection scores, paragraph heatmaps, and video playback replays directly inside Canvas SpeedGrader.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

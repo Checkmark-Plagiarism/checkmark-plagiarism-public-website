@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Canvas Integrations Work: A Practical Guide for Schools",
   description: "A plain-English guide to how LTI integrations connect tools like a plagiarism checker to Canvas, how to set one up, and the best practices that keep it reliable.",
   "opengraph-image": "/images/learning/how-canvas-integrations-work-a-practical-guide-for-schools/pexels-6816590.jpg",

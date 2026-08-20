@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Legal Writing Professors Verify Authentic Primary Authority in Student Briefs Without Relying on AI Detectors? | Checkmark Plagiarism",
   description: "An authoritative guide for law school LRW faculty, moot court directors, clinic supervisors, and academic deans on detecting hallucinated primary authority, verifying authentic legal research, and auditing student briefs using writing telemetry and Essay Playback™.",
   "opengraph-image": "/images/learning/how-can-legal-writing-professors-verify-authentic-primary-authority-in-student-briefs-without-relying-on-ai-detectors/featured.png",

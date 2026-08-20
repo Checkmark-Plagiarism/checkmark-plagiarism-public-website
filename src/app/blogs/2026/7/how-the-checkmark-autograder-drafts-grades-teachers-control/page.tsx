@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "First-Draft Grades in Minutes: How the Checkmark Autograder Works",
   description: "The autograder scores every submission against the teacher's own rubric - with written justifications and quote-anchored feedback - then waits. Nothing reaches a student until the teacher edits, approves, and publishes.",
   "opengraph-image": "/images/services/report-grading-view.png",

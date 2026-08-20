@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Architecture Faculty Use Keystroke Playback to Verify Design Concept Narrative Integrity in Studio Portfolios?",
   description: "A comprehensive guide for collegiate architecture faculty, studio critics, and NAAB portfolio review juries on using keystroke playback, writing process telemetry, and spatial concordance checks to verify design concept statements, site analyses, and tectonic narratives.",
   "opengraph-image": "/images/learning/how-can-architecture-faculty-use-keystroke-playback-to-verify-design-concept-narrative-integrity-in-studio-portfolios/featured.png",

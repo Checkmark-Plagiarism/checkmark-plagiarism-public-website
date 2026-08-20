@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Medical and Nursing School Faculty Audit Student Clinical Case Analyses for Hallucinated Diagnostics? | Checkmark Plagiarism",
   description: "An authoritative clinical education and academic integrity guide for medical and nursing school faculty to audit student case studies, detect AI-hallucinated diagnostics, fabricated ICD-10 codes, and phantom citations, and verify clinical reasoning using writing process telemetry and Essay Playback.",
   "opengraph-image": "/images/learning/how-can-medical-and-nursing-school-faculty-audit-student-clinical-case-analyses-for-hallucinated-diagnostics/featured.png",

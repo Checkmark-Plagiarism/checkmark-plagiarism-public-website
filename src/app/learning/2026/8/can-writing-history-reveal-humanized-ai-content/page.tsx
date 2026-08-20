@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Writing History Reveal Humanized AI Content?",
   description: "Discover how writing history, paste tracking, and keystroke playback expose humanized AI essays that manage to bypass static AI detectors.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

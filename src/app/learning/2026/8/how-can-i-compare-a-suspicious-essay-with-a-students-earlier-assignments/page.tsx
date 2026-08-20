@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can I Compare a Suspicious Essay With a Student's Earlier Assignments?",
   description: "Learn how to systematically compare a suspicious essay with a student's prior writing—evaluating vocabulary shift, syntax complexity, and drafting telemetry.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

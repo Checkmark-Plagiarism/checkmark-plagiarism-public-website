@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Writing Telemetry Differentiate Speech-to-Text Dictation From Pasted AI Generation? | Checkmark Plagiarism",
   description: "Discover how writing process telemetry and keystroke dynamics distinguish Speech-to-Text dictation from pasted AI generation, protecting students with IEPs and 504 accommodations from false accusations.",
   "opengraph-image": "/images/learning/how-can-writing-telemetry-differentiate-speech-to-text-dictation-from-pasted-ai-generation/featured.png",

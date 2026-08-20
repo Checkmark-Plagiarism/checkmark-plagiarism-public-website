@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Pharmacy School Faculty Distinguish Authentic Clinical Synthesis From AI-Hallucinated Trial Data in Formulary Drug Monographs? | Checkmark Plagiarism",
   description: "An authoritative guide for Pharmacy School Clinical Faculty (PharmD), Drug Information Specialists, Pharmacy & Therapeutics (P&T) Committee Chairs, and ACPE Reviewers on detecting AI-hallucinated clinical trial data, verifying biostatistical endpoints, and using writing telemetry and Essay Playback™ to authenticate formulary drug monographs.",
   "opengraph-image": "/images/learning/how-can-pharmacy-school-faculty-distinguish-authentic-clinical-synthesis-from-ai-hallucinated-trial-data-in-formulary-drug-monographs/featured.png",

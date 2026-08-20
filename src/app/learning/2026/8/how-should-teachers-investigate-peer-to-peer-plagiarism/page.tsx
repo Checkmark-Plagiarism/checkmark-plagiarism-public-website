@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Should Teachers Investigate Peer-to-Peer Plagiarism?",
   description: "A complete, step-by-step educator guide for investigating peer-to-peer plagiarism with objective telemetry, separate conferences, and due process.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

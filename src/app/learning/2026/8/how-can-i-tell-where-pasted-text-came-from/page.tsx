@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can I Tell Where Pasted Text Came From?",
   description: "Learn how educators trace the origin of pasted text using paste and source matching across billions of web pages, peer archives, and AI models.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Dual Enrollment Composition Instructors Use Side-by-Side Source Viewers to Teach Synthesis Across Complex Nonfiction Texts? | Checkmark Plagiarism",
   description: "An authoritative pedagogical and technical guide for Dual Enrollment English Faculty, High School Concurrent Enrollment Instructors, AP English Language Teachers, and Writing Center Directors on using synchronized side-by-side source viewers, 4-badge citation taxonomies, and Essay Playback™ to transition secondary students from patchwriting to collegiate multi-source nonfiction synthesis.",
   "opengraph-image": "/images/services/report-source-quote.png",

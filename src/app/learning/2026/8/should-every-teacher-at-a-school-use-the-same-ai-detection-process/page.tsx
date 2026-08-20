@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Should Every Teacher at a School Use the Same AI Detection Process?",
   description: "Learn why schools must standardize AI detection processes—ensuring due process, eliminating vendor conflict, and mandating multi-signal evidence in Checkmark.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

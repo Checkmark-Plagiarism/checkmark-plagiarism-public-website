@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Keystroke-by-Keystroke Playback Preserves Original Clipboard Content During Paste Inquiries | Checkmark Plagiarism",
   description: "Learn how patent-pending Essay Playback™ captures and preserves raw clipboard payloads during paste events, empowering educators to solve paste-and-edit evasion, protect honest students, and conduct restorative integrity inquiries.",
   "opengraph-image": "/images/learning/how-keystroke-by-keystroke-playback-preserves-original-clipboard-content-during-paste-inquiries/featured.png",

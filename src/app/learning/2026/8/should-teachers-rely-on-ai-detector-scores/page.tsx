@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Should Teachers Rely on AI Detector Scores?",
   description: "Explore why teachers should not rely solely on AI detector scores, how detection percentages work, and how multi-signal evidence protects academic integrity.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

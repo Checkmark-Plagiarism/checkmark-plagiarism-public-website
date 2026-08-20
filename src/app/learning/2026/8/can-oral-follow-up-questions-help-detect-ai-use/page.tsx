@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Oral Follow-Up Questions Help Detect AI Use?",
   description: "Discover how brief oral follow-up questions evaluate conceptual understanding, verify genuine student authorship, and uncover generative AI use with fairness.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Do Honest Short-Text Guardrails Prevent False-Positive AI Flags in Reading Responses? | Checkmark Plagiarism",
   description: "Learn how honest short-text guardrails and keystroke playback prevent false-positive AI flags on 50-150 word reading responses, exit tickets, and SAQs.",
   "opengraph-image": "/images/learning/how-do-honest-short-text-guardrails-prevent-false-positive-ai-flags-in-reading-responses/featured.png",

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Does Human Writing Look Like Even When an AI Detector Flags It?",
   description: "Explore the unmistakable keystroke dynamics, revision messiness, and pause distributions of authentic human writing in essay playback despite false AI flags.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

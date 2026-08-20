@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Teachers Detect AI Answers Transcribed From a Phone?",
   description: "Learn how teachers detect AI-generated answers transcribed from a smartphone into Canvas or Google Docs using multi-signal keystroke forensics.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

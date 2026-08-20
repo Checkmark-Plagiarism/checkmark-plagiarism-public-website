@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Writing History Show Whether a Student Used AI?",
   description: "Understand how document writing history and essay playback reveal the writing process, what large paste events mean, and how to verify student authorship.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

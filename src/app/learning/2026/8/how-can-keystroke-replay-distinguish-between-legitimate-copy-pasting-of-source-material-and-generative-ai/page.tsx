@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Keystroke Replay Distinguish Between Legitimate Copy-Pasting of Source Material and Generative AI? | Checkmark Plagiarism",
   description: "Discover how keystroke replay and writing telemetry distinguish legitimate source quoting from generative AI copy-pasting, preserving authentic student workflows and protecting honest writers.",
   "opengraph-image": "/images/learning/how-can-keystroke-replay-distinguish-between-legitimate-copy-pasting-of-source-material-and-generative-ai/featured.png",

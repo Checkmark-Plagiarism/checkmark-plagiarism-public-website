@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Paraphrasing AI Text Make It Undetectable?",
   description: "Learn why paraphrasing AI text fails to make it undetectable, as structural blueprints, paste history, and keystroke analytics expose the machine generation.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can a Student Plagiarize Even When Their Similarity Score Is Low?",
   description: "Learn how essays with low plagiarism similarity scores (under 5%) can still contain severe plagiarism—analyzing passage clustering, paraphrasing, and idea theft.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

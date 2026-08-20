@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "We Tested the Popular AI Paraphrasing Tools So Your Students Don't Have To",
   description: "A frank look at what AI paraphrasing tools actually do to student writing, how the big names compare, and why \"beating the detector\" is the wrong question for schools.",
   "opengraph-image": "/images/blogs/we-tested-the-popular-ai-paraphrasing-tools-so-your-students-dont-have-to/pexels-34804018.jpg",

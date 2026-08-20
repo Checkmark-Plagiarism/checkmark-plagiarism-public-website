@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can AI Humanizers Fool AI Detectors?",
   description: "Learn how AI humanizers alter perplexity and burstiness to bypass basic detectors, and why multi-signal writing process analytics still catch them.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

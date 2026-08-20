@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Inside the Checkmark Report: One Submission, Four Answers",
   description: "A guided tour of the report teachers see for every submission: what was pasted, what was transcribed, what matches a source, and what looks AI-written - plus the autograder's draft grades.",
   "opengraph-image": "/images/services/report-plagiarism-view.png",

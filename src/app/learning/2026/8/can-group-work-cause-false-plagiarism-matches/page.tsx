@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Group Work Cause False Plagiarism Matches?",
   description: "Learn why group assignments and lab partnerships trigger false plagiarism alarms—and how to configure Canvas and Checkmark to evaluate group work accurately.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Questions Can I Ask to Find Out If a Student Used ChatGPT?",
   description: "A comprehensive guide to 25+ strategic, non-accusatory questions teachers can ask to uncover ChatGPT usage, evaluate oral comprehension, and verify authorship.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

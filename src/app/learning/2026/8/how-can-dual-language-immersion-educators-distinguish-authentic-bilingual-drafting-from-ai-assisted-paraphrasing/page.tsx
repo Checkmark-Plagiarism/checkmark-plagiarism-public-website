@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Dual-Language Immersion Educators Distinguish Authentic Bilingual Drafting From AI-Assisted Paraphrasing? | Checkmark Plagiarism",
   description: "An authoritative pedagogical and technical guide for Dual-Language Immersion (DLI) educators, World Language department chairs, and bilingual specialists on distinguishing authentic translanguaging and non-linear drafting from AI machine translation and paraphrasing using keystroke telemetry and Essay Playback™.",
   "opengraph-image": "/images/learning/how-can-dual-language-immersion-educators-distinguish-authentic-bilingual-drafting-from-ai-assisted-paraphrasing/featured.png",

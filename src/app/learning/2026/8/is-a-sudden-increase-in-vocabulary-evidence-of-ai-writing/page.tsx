@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Is a Sudden Increase in Vocabulary Evidence of AI Writing?",
   description: "Learn whether a sudden surge in student vocabulary proves AI use—and how to cross-examine lexical leaps with writing playback and oral checks.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

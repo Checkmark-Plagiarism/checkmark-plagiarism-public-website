@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Paraphrased Sources Still Count as Plagiarism?",
   description: "Learn when paraphrasing counts as plagiarism—explaining uncredited paraphrasing, patchwriting, and how to cite paraphrased ideas correctly.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

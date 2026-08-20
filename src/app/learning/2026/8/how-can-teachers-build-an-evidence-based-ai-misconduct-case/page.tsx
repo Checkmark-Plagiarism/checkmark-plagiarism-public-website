@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Teachers Build an Evidence-Based AI Misconduct Case?",
   description: "A step-by-step educator blueprint for constructing a thorough, defensible, and multi-signal AI academic integrity case that withstands administrative review.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

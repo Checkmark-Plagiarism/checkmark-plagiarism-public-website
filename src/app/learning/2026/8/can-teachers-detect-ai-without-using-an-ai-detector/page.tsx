@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Teachers Detect AI Without Using an AI Detector?",
   description: "Learn how educators identify AI writing without detectors using previous writing baselines, citation checks, writing playback, and student conferences.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

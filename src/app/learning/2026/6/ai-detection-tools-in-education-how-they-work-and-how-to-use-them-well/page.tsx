@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "AI Detection Tools in Education: How They Work and How to Use Them Well",
   description: "A plain-English guide to what AI writing detectors are, how they work, the main types, and how teachers, students, and parents can use them responsibly.",
   "opengraph-image": "/images/learning/ai-detection-tools-in-education-how-they-work-and-how-to-use-them-well/pexels-10481249.jpg",

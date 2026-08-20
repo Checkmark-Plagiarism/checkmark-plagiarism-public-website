@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Fast Is Too Fast to Write an Essay?",
   description: "Explore empirical time benchmarks for student essay writing—identifying physical human minimums and when drafting speed indicates AI or copying.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can CTE Business Teachers Use Rubric Autograding to Evaluate Feasibility Analyses in Student Marketing Plans? | Checkmark Plagiarism",
   description: "An authoritative guide for CTE Business educators, DECA/FBLA advisors, and vocational chairs on using Checkmark's AI rubric autograding, quote-anchored evidence extraction, and Essay Playback™ to evaluate complex student marketing plans and feasibility studies.",
   "opengraph-image": "/images/learning/how-can-cte-business-teachers-use-rubric-autograding-to-evaluate-feasibility-analyses-in-student-marketing-plans/featured.png",

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Does a Normal Writing Session Look Like?",
   description: "Learn the quantitative benchmarks of a normal student writing session: active drafting duration, typing velocity, revision rates, and pause distributions.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

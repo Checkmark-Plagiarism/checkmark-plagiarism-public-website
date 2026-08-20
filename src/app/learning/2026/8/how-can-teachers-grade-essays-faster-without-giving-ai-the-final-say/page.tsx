@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Teachers Grade Essays Faster Without Giving AI the Final Say?",
   description: "Learn how the teacher-in-the-loop grading workflow cuts essay grading time by 70% while keeping human educators in full control of final scores and feedback.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

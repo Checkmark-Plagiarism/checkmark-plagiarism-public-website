@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Teachers Avoid Falsely Accusing Students of Using AI?",
   description: "Learn proven strategies to prevent false AI accusations: understanding detector error rates, non-native English speaker bias, writing playback, and multi-signal evidence.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

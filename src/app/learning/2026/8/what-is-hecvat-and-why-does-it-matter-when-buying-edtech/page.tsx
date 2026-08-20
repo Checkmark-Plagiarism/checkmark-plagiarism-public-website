@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Is HECVAT and Why Does It Matter When Buying EdTech?",
   description: "Learn what HECVAT is, why EDUCAUSE and leading institutions mandate it, and how it evaluates cloud security when buying AI and plagiarism tools.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

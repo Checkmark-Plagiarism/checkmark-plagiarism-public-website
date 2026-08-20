@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Are the Signs That a Student Used ChatGPT?",
   description: "Explore the 12 key warning signs that a student used ChatGPT, from writing style shifts and generic responses to hallucinated citations and document paste logs.",
   "opengraph-image": "/images/services/report-paste-evidence.png",

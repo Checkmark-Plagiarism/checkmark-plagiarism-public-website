@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "A Teacher's Guide to Google Docs Add-Ons and Extensions",
   description: "A plain-English guide to Google Docs add-ons and extensions: what they are, how they work, the types worth knowing, and how to install and manage them safely in a school.",
   "opengraph-image": "/images/learning/a-teachers-guide-to-google-docs-add-ons-and-extensions/pexels-67112.jpg",

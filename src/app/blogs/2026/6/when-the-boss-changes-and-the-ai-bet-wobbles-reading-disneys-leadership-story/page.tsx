@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "When the Boss Changes and the AI Bet Wobbles: Reading Disney's Leadership Story",
   description: "Disney's executive churn and its uneasy AI bets are a live case study in media literacy. Here is how teachers and parents can use it to teach students to read the headlines.",
   "opengraph-image": "/images/blogs/when-the-boss-changes-and-the-ai-bet-wobbles-reading-disneys-leadership-story/pexels-7433847.jpg",

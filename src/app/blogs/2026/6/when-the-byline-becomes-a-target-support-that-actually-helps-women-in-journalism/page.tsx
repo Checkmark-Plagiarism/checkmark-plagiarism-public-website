@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "When the Byline Becomes a Target: Support That Actually Helps Women in Journalism",
   description: "Online harassment of female journalists is not a personal problem to tough out. Here are the support systems, tools, and newsroom practices that actually move the needle.",
   "opengraph-image": "/images/blogs/when-the-byline-becomes-a-target-support-that-actually-helps-women-in-journalism/pexels-33317197.jpg",

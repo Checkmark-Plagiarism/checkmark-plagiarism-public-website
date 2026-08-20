@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can AP Art History Teachers Distinguish Authentic Visual Analysis From AI-Hallucinated Artwork Descriptions?",
   description: "An authoritative guide for AP Art History teachers, humanities department chairs, college art history faculty, and academic integrity officers on detecting AI-hallucinated visual analyses, misattributed iconography, and fabricated artwork descriptions using writing process telemetry, Essay Playback™, and defensible multi-evidence workflows.",
   "opengraph-image": "/images/learning/how-can-ap-art-history-teachers-distinguish-authentic-visual-analysis-from-ai-hallucinated-artwork-descriptions/featured.png",

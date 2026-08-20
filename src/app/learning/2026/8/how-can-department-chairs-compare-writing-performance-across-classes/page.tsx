@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Department Chairs Compare Writing Performance Across Classes?",
   description: "Learn how department chairs use Checkmark Analytics to compare rubric distributions, active drafting hours, and revision growth across course sections.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

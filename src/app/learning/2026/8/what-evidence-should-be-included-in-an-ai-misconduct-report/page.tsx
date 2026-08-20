@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Evidence Should Be Included in an AI Misconduct Report?",
   description: "Learn the 5 essential evidence components of a formal AI misconduct report—keystroke telemetry, paste logs, sentence heatmaps, and DOI checks in Checkmark.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Teacher-Controlled AI Autograding Accelerate Formative Peer-Review Cycles on Multi-Draft Research Papers? | Checkmark Plagiarism",
   description: "Discover how teacher-controlled AI rubric autograding and quote-anchored diagnostics transform superficial peer review into rigorous, macro-structural revision cycles across multi-draft high school and college research papers.",
   "opengraph-image": "/images/learning/can-teacher-controlled-ai-autograding-accelerate-formative-peer-review-cycles-on-multi-draft-research-papers/featured.png",

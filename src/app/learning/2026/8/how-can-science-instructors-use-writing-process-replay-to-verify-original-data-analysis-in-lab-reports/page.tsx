@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Science Instructors Use Writing Process Replay to Verify Original Data Analysis in Lab Reports? | Checkmark Plagiarism",
   description: "An authoritative guide for AP Biology, AP Chemistry, AP Physics, and undergraduate lab instructors on using Checkmark's patent-pending Essay Playback™ writing process telemetry to verify authentic student data synthesis, catch AI-hallucinated lab errors, and distinguish legitimate data imports from generative fraud.",
   "opengraph-image": "/images/learning/how-can-science-instructors-use-writing-process-replay-to-verify-original-data-analysis-in-lab-reports/featured.png",

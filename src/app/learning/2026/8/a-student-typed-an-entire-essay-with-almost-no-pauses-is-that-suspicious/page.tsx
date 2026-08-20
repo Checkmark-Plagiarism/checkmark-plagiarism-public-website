@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "A Student Typed an Entire Essay With Almost No Pauses — Is That Suspicious?",
   description: "Learn why uninterrupted typing with zero pauses indicates external screen transcription—burst models, flat cadence, and playback forensics in Checkmark.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

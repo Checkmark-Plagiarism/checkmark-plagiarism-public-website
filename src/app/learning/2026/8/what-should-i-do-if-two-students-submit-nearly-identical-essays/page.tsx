@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Should I Do If Two Students Submit Nearly Identical Essays?",
   description: "A step-by-step educator roadmap for investigating identical student essays—distinguishing between theft, collusion, and shared AI prompts using Checkmark.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

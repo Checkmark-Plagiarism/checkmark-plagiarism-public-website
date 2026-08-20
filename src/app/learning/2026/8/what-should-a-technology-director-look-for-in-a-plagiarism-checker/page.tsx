@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Should a Technology Director Look for in a Plagiarism Checker?",
   description: "A comprehensive buyer's guide for school technology directors evaluating modern plagiarism checkers—from LTI 1.3 integration and writing playback to FERPA compliance.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

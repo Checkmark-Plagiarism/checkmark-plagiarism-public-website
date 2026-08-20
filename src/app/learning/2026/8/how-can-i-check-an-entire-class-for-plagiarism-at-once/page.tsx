@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can I Check an Entire Class for Plagiarism at Once?",
   description: "Learn how to screen an entire class of essays for plagiarism simultaneously—automated LMS batch scanning, peer matching, and risk triaging in Checkmark.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

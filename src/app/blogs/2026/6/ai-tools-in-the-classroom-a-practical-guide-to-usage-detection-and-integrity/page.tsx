@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "AI Tools in the Classroom: A Practical Guide to Usage, Detection, and Integrity",
   description: "A grounded look at how teachers can actually use AI tools, what detection can and cannot tell you, and how to rebuild academic integrity for the GPT era.",
   "opengraph-image": "/images/blogs/ai-tools-in-the-classroom-a-practical-guide-to-usage-detection-and-integrity/pexels-8471907.jpg",

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Google Docs Prove That a Student Wrote an Essay?",
   description: "Learn how Google Docs revision history and Checkmark writing playback provide definitive, affirmative proof of authentic human student authorship.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

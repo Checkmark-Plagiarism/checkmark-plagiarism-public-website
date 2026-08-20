@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Multidimensional Integrity Reports Distinguish Citation Errors From Intentional Plagiarism | Checkmark Plagiarism",
   description: "Discover how multidimensional integrity reports combine side-by-side source verification, passage-level AI detection, and keystroke playback to separate clerical citation errors from intentional academic dishonesty.",
   "opengraph-image": "/images/services/report-plagiarism-view.png",

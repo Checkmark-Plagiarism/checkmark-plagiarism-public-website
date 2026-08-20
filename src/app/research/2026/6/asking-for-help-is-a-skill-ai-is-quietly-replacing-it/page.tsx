@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Asking for Help Is a Skill. AI Is Quietly Replacing It.",
   description: "Help-seeking is one of the strongest correlates of self-regulated learning, with thirty years of research behind it. Generative AI is rapidly displacing the skill in students who never learn to ask.",
   "opengraph-image": "/images/research/asking-for-help-is-a-skill-ai-is-quietly-replacing-it/pexels-photo-32293359.jpeg",

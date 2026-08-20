@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can High School Principals Establish Restorative Academic Integrity Workflows That Replace Automatic Zeroes? | Checkmark Plagiarism",
   description: "An authoritative strategic leadership guide for high school principals, assistant principals of academics, deans, and superintendents on replacing punitive zero-tolerance policies with defensible, restorative academic integrity workflows powered by writing telemetry, Essay Playback™, and structured revision cycles.",
   "opengraph-image": "/images/learning/how-can-high-school-principals-establish-restorative-academic-integrity-workflows-that-replace-automatic-zeroes/featured.png",

@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Should I Look for When a Student's Writing Suddenly Improves?",
   description: "Learn what teachers should evaluate when student writing suddenly improves: vocabulary shifts, process playback, source verification, and constructive conversation.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

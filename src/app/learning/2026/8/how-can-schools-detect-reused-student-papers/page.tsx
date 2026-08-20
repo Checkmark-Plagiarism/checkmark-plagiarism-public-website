@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Schools Detect Reused Student Papers?",
   description: "Discover how schools detect recycled student papers across departments, semesters, and campuses—analyzing institutional repositories and keystroke playback.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

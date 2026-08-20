@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Does \"TS\" Mean? A Plain-English Guide for Teachers and Parents",
   description: "TS has several meanings in texting, from \"this/that\" to \"talking stage\" to TypeScript. Here is a clear, context-by-context guide for teachers and parents.",
   "opengraph-image": "/images/learning/what-does-ts-mean-a-plain-english-guide-for-teachers-and-parents/pexels-6255938.jpg",

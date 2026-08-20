@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Why Uncited Source Flagging Must Be Separated From Direct Plagiarism Matches in Integrity Reports | Checkmark Plagiarism",
   description: "Discover why legacy plagiarism scanners fail by lumping citation errors with deliberate copying, and how Checkmark's multidimensional reporting uses discrete visual badges, two-pane source verification, and Essay Playback™ to separate mechanical mistakes from intentional fraud.",
   "opengraph-image": "/images/services/report-source-quote.png",

@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Special Education Case Managers Use Writing Process Replay to Document Assistive Technology Accommodations? | Checkmark Plagiarism",
   description: "A comprehensive legal, technical, and pedagogical guide for Special Education Case Managers, 504 Coordinators, and IEP Teams on using writing process telemetry and Essay Playback™ to verify assistive technology accommodations and eliminate false AI accusations.",
   "opengraph-image": "/images/learning/how-can-special-education-case-managers-use-writing-process-replay-to-document-assistive-technology-accommodations/featured.png",

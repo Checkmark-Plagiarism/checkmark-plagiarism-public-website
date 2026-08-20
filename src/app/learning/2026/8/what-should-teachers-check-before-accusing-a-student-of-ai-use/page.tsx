@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Should Teachers Check Before Accusing a Student of AI Use?",
   description: "A comprehensive pre-accusation checklist for teachers—verifying writing playback telemetry, historical baselines, citation existence, and due process.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

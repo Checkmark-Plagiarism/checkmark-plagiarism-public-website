@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How to Cite Anything: A Practical Guide to Citing Diverse Sources",
   description: "A plain-English guide to citing tricky sources, from films and datasets to forum posts and AI tools, and the four building blocks every citation shares.",
   "opengraph-image": "/images/learning/how-to-cite-anything-a-practical-guide-to-citing-diverse-sources/pexels-9572544.jpg",

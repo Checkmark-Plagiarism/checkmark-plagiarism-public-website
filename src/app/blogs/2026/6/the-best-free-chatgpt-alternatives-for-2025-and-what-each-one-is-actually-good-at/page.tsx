@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "The Best Free ChatGPT Alternatives for 2025 (and What Each One Is Actually Good At)",
   description: "A teacher-friendly tour of the best free ChatGPT alternatives in 2025, what each tool does well, and how schools should think about using them responsibly.",
   "opengraph-image": "/images/blogs/the-best-free-chatgpt-alternatives-for-2025-and-what-each-one-is-actually-good-at/pexels-20870794.jpg",

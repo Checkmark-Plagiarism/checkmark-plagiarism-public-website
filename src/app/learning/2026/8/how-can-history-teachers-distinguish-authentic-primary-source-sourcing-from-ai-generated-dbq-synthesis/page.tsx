@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can History Teachers Distinguish Authentic Primary Source Sourcing From AI-Generated DBQ Synthesis?",
   description: "A definitive guide for AP US History, AP European History, and AP World History educators on distinguishing genuine primary source analysis and HIPPO sourcing from LLM-generated DBQ synthesis using keystroke dynamics, synchronized source inspection, and Essay Playback™.",
   "opengraph-image": "/images/learning/how-can-history-teachers-distinguish-authentic-primary-source-sourcing-from-ai-generated-dbq-synthesis/featured.png",

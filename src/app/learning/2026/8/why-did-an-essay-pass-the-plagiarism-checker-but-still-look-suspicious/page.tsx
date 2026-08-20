@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Why Did an Essay Pass the Plagiarism Checker but Still Look Suspicious?",
   description: "Learn why an essay can pass a plagiarism checker with a 0% match but still look suspicious to teachers: AI generation, spinning, ghostwriting, and timeline anomalies.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

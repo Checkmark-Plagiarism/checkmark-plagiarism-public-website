@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Should Teachers Evaluate Disclosed AI Assistance?",
   description: "A comprehensive educator framework for grading essays with disclosed AI assistance—verifying transparency, assessing human agency, and evaluating process.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

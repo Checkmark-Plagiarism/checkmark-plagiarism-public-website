@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Is Using AI to Create an Essay Outline Cheating?",
   description: "Examine whether using AI to generate an essay outline constitutes cheating, its impact on critical thinking, and when outlining assistance is acceptable.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

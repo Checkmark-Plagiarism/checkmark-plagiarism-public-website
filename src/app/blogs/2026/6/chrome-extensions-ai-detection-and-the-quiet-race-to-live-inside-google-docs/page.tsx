@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Chrome Extensions, AI Detection, and the Quiet Race to Live Inside Google Docs",
   description: "Browser extensions are moving AI detection and plagiarism checks directly into Google Docs and Workspace. Here is what that shift means for teachers, and where it falls short.",
   "opengraph-image": "/images/blogs/chrome-extensions-ai-detection-and-the-quiet-race-to-live-inside-google-docs/pexels-1181449.jpg",

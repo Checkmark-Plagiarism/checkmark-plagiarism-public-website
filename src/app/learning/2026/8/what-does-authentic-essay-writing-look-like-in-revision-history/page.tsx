@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Does Authentic Essay Writing Look Like in Revision History?",
   description: "Explore the 5 distinct phases of authentic student drafting in document revision history and essay playback: from messy outlines to polished prose.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

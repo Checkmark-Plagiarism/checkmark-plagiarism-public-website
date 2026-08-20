@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Should Teachers Do Before Reporting a Student for AI Use?",
   description: "A pre-reporting checklist for educators: verifying policies, auditing writing playback, checking citations, holding student conferences, and compiling multi-signal evidence.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

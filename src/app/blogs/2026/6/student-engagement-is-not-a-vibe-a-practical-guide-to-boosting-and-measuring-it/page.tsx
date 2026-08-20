@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Student Engagement Is Not a Vibe: A Practical Guide to Boosting and Measuring It",
   description: "Engagement is more than busy hands and quiet rooms. A practical guide for teachers to spark, sustain, and actually measure student engagement across classrooms and screens.",
   "opengraph-image": "/images/blogs/student-engagement-is-not-a-vibe-a-practical-guide-to-boosting-and-measuring-it/pexels-8197534.jpg",

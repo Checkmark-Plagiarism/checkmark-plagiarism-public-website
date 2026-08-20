@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Biometric Security, Explained: How Your Body Becomes a Password",
   description: "A plain-English guide to how biometric identification works, the main types of biometrics, where they show up in schools, and the privacy questions every parent and administrator should ask.",
   "opengraph-image": "/images/learning/biometric-security-explained-how-your-body-becomes-a-password/pexels-17155842.jpg",

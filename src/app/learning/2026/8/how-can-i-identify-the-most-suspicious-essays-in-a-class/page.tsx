@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can I Identify the Most Suspicious Essays in a Class?",
   description: "Learn how to identify the most suspicious essays in a class roster instantly—using composite anomaly filters, typing telemetry, and citation scans in Checkmark.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

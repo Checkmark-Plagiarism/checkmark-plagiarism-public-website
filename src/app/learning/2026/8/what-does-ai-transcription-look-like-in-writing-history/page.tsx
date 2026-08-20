@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Does AI Transcription Look Like in Writing History?",
   description: "Explore the visual and telemetry fingerprints of AI transcription in Essay Playback—identifying linear growth slopes, visual glance pauses, and low backspace rates.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

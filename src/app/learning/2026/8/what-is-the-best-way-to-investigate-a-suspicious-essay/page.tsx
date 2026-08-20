@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Is the Best Way to Investigate a Suspicious Essay?",
   description: "A complete, step-by-step educator guide on the most effective, legally defensible method for investigating suspicious student essays using Checkmark.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

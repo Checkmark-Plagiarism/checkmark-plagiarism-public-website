@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Making ChatGPT Sound Less Like ChatGPT: A Practical Guide (and an Honest Caveat)",
   description: "A practical guide to coaxing more natural tone out of ChatGPT, plus an honest line on where editing for clarity ends and academic dishonesty begins.",
   "opengraph-image": "/images/blogs/making-chatgpt-sound-less-like-chatgpt-a-practical-guide-and-an-honest-caveat/pexels-15940005.jpg",

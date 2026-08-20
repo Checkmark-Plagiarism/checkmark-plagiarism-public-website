@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Similar Can Two Student Essays Be Before It Becomes Suspicious?",
   description: "Learn the statistical and forensic similarity thresholds between student essays—distinguishing between prompt coincidence, shared quotes, and peer plagiarism.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Makes One AI Model Different From Another: LLMs Explained Simply",
   description: "A plain-English guide to what large language models actually are, why ChatGPT, Claude, and Gemini behave differently, and what these tools can and cannot do in a classroom.",
   "opengraph-image": "/images/learning/what-makes-one-ai-model-different-from-another-llms-explained-simply/pexels-1181595.jpg",

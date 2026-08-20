@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Blue Books Are Back. The Real Question Is What Schools Do Next.",
   description: "Princeton ended a 133-year-old honor code and blue book sales are surging as schools revert to handwritten, proctored, and oral exams to fight AI cheating. Why reverting the format is a tourniquet, not a treatment - and what a layered approach looks like.",
   "opengraph-image": "/images/blogs/blue-books-are-back-the-real-question-is-what-schools-do-next/pexels-7972487.jpg",

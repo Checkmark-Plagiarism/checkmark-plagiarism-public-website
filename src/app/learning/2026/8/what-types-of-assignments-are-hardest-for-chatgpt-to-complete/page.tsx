@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Types of Assignments Are Hardest for ChatGPT to Complete?",
   description: "Discover the 6 types of academic assignments that are hardest for ChatGPT to complete: local field research, in-class synthesis, metacognitive logs, and writing playback.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

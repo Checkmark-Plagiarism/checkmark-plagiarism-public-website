@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Choosing a Plagiarism Checker in 2026: How Checkmark Stacks Up Against Copyleaks",
   description: "A clear-eyed look at what actually matters when you pick a plagiarism and AI-writing checker for your school, and where Checkmark earns its keep next to Copyleaks.",
   "opengraph-image": "/images/blogs/choosing-a-plagiarism-checker-in-2026-how-checkmark-stacks-up-against-copyleaks/pexels-8423092.jpg",

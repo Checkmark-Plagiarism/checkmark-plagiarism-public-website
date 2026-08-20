@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Mirror, Mirror: What Counterfeit Cosmetics Teach Us About Authenticity in the Classroom",
   description: "Counterfeit cosmetics and vague ingredient labels show why authenticity can't be guessed after the fact. The same lesson applies to student writing and AI.",
   "opengraph-image": "/images/blogs/mirror-mirror-what-counterfeit-cosmetics-teach-us-about-authenticity-in-the-classroom/pexels-33119789.jpg",

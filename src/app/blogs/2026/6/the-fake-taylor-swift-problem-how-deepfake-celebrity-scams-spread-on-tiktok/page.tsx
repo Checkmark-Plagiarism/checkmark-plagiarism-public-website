@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "The Fake Taylor Swift Problem: How Deepfake Celebrity Scams Spread on TikTok",
   description: "Deepfake ads of Taylor Swift, Rihanna, and other stars are pushing scams on TikTok. Here is how the con works and how teachers, parents, and students can avoid it.",
   "opengraph-image": "/images/blogs/the-fake-taylor-swift-problem-how-deepfake-celebrity-scams-spread-on-tiktok/pexels-1092671.jpg",

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Vocabulary Changes Suggest AI Use?",
   description: "Learn how sudden vocabulary shifts, academic lexical density, and formulaic AI phrasing expose generative AI use in student writing.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

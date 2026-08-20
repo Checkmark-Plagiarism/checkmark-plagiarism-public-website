@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Beyond the Thesaurus: What \"Go Through\" Really Means and Which Synonyms Actually Fit",
   description: "\"Go through\" carries at least seven distinct meanings, and no single synonym covers them all. A practical guide to choosing the precise word instead of swapping blindly.",
   "opengraph-image": "/images/learning/beyond-the-thesaurus-what-go-through-really-means-and-which-synonyms-actually-fit/pexels-226612.jpg",

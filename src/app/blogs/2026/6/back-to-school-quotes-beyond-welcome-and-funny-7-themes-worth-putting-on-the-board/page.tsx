@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Back-to-School Quotes Beyond \"Welcome\" and \"Funny\": 7 Themes Worth Putting on the Board",
   description: "Most back-to-school quote lists stop at welcome banners and dad jokes. Here are seven richer themes, from courage to belonging, with lines worth actually saying out loud.",
   "opengraph-image": "/images/blogs/back-to-school-quotes-beyond-welcome-and-funny-7-themes-worth-putting-on-the-board/pexels-8363578.jpg",

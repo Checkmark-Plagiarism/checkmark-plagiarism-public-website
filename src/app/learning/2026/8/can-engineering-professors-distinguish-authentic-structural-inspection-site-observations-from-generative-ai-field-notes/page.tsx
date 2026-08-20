@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Engineering Professors Distinguish Authentic Structural Inspection Site Observations From Generative AI Field Notes?",
   description: "An authoritative guide for civil and structural engineering faculty, ABET department chairs, and structural inspection course directors on distinguishing authentic site observations and NDT telemetry from AI-hallucinated field inspection reports using Checkmark's Essay Playback™.",
   "opengraph-image": "/images/learning/can-engineering-professors-distinguish-authentic-structural-inspection-site-observations-from-generative-ai-field-notes/featured.png",

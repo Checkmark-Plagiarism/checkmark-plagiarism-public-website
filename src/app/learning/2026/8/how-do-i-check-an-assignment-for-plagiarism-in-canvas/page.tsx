@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Do I Check an Assignment for Plagiarism in Canvas?",
   description: "Learn how to enable automated plagiarism checking on Canvas assignments and view side-by-side source matching directly in SpeedGrader using Checkmark LTI 1.3.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

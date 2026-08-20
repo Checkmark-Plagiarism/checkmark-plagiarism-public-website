@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Specific Data Privacy Protections Must K-12 Districts Require in Vendor Service Agreements for Automated Essay Grading? | Checkmark Plagiarism",
   description: "An authoritative legal and technical procurement guide for K-12 District CTOs, School Board Attorneys, and Curriculum Directors on drafting ironclad Vendor Service Agreements (VSAs) for automated essay grading and AI rubric scoring tools.",
   "opengraph-image": "/images/services/report-grading-view.png",

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Is the Difference Between AI Assistance and AI Authorship?",
   description: "Understand the critical distinction between AI assistance (tools that support human thought) and AI authorship (machine generation) in academic writing.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

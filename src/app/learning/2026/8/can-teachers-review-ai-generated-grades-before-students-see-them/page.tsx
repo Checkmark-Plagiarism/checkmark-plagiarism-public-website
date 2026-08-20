@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Teachers Review AI-Generated Grades Before Students See Them?",
   description: "Learn how Checkmark Autograder's strict approval workflow keeps all AI scores and comments in private draft mode until approved by the teacher.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Teachers Detect ChatGPT After a Student Changes the Words?",
   description: "Learn how teachers detect ChatGPT text after words have been edited: analyzing structural cadence, essay writing playback timelines, and citation authenticity.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

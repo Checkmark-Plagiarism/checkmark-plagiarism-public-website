@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Should I Do If I Suspect a Student Used AI?",
   description: "A practical 13-step guide for teachers when suspecting AI use, from gathering evidence and evaluating writing history to student conferences and policy enforcement.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

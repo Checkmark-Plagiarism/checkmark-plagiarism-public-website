@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Is AI Helping or Hurting My Child’s Learning?",
   description:
     "An exploration of the dual nature of AI in education, balancing the promise of personalized tutoring with the risks of cognitive offloading and the illusion of understanding.",

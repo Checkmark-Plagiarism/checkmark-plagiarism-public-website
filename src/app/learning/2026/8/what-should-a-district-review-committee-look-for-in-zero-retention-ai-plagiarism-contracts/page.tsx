@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Should a District Review Committee Look for in Zero-Retention AI Plagiarism Contracts? | Checkmark Plagiarism",
   description: "An exhaustive procurement and legal evaluation guide for School Boards, Superintendents, CTOs, and Legal Counsel on auditing Zero-Data-Retention (ZDR) AI plagiarism contracts, FERPA/COPPA compliance, and keystroke verification architectures.",
   "opengraph-image": "/images/learning/what-should-a-district-review-committee-look-for-in-zero-retention-ai-plagiarism-contracts/featured.png",

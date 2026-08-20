@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Should Teachers Show Students During an AI Investigation?",
   description: "Learn what visual evidence to share with students during an AI conference—writing playback replays, paste timelines, and sentence heatmaps in Checkmark.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

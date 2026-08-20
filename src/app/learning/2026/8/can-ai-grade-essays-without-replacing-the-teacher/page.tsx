@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can AI Grade Essays Without Replacing the Teacher?",
   description: "Learn how the 'Teacher-in-the-Loop' AI grading paradigm enhances educator oversight, anchors rubric feedback in evidence, and elevates mentorship.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

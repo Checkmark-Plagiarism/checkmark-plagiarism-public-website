@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "Can Teachers Tell When a Student Pasted Text Into an Essay?",
   description: "Learn how external paste detection and essay writing playback allow teachers to see exact timestamps, character counts, and sources of pasted text.",
   "opengraph-image": "/images/services/report-breakdown-sidebar.png",

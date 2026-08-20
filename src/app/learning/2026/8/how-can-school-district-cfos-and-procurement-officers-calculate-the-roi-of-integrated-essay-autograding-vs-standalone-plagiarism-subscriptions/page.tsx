@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can School District CFOs and Procurement Officers Calculate the ROI of Integrated Essay Autograding vs. Standalone Plagiarism Subscriptions? | Checkmark Plagiarism",
   description: "A comprehensive financial and operational procurement guide for School District CFOs, Assistant Superintendents of Business Services, and Purchasing Directors on calculating the ROI and Total Cost of Ownership (TCO) of consolidating fragmented plagiarism, AI detection, and autograding point solutions into an integrated enterprise platform.",
   "opengraph-image": "/images/services/report-grading-view.png",

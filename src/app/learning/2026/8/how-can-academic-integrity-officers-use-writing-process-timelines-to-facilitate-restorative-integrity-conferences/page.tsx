@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Academic Integrity Officers Use Writing Process Timelines to Facilitate Restorative Integrity Conferences? | Checkmark Plagiarism",
   description: "An authoritative institutional guide for Academic Integrity Officers, Deans of Students, and Honor Councils on replacing adversarial hearings with restorative integrity conferences using writing process timelines, keystroke playback telemetry, and multi-evidence dossiers.",
   "opengraph-image": "/images/learning/how-can-academic-integrity-officers-use-writing-process-timelines-to-facilitate-restorative-integrity-conferences/featured.png",

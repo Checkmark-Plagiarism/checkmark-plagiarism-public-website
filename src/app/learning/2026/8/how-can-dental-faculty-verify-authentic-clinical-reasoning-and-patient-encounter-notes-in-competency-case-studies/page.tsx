@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "How Can Dental Faculty Verify Authentic Clinical Reasoning and Patient Encounter Notes in Competency Case Studies? | Checkmark Plagiarism",
   description: "An authoritative dental education and academic integrity guide for DDS/DMD clinical faculty, dental hygiene directors, and health sciences committees to verify authentic clinical reasoning in patient encounter notes, detect AI-generated charting hallucinations, and audit competency case studies using Checkmark Essay Playback™.",
   "opengraph-image": "/images/learning/how-can-dental-faculty-verify-authentic-clinical-reasoning-and-patient-encounter-notes-in-competency-case-studies/featured.png",

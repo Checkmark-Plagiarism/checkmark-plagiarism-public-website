@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const meta = {
+const meta = {
   title: "What Evidence Proves Uncited Patchwriting Versus Accidental Missing Quotation Marks? | Checkmark Plagiarism",
   description: "Discover how educators, department chairs, and academic integrity officers use side-by-side text forensics, citation badges, and keystroke playback to distinguish accidental missing quotation marks from developmental uncited patchwriting and deliberate mosaic fraud.",
   "opengraph-image": "/images/services/report-source-quote.png",
