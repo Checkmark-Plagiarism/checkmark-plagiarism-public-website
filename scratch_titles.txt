@@ -615,3 +615,60 @@ How Can High School AP Capstone Mentors Use Writing Process Timelines to Track I
 How Can Teachers Audit Writing Process Timelines When Students Claim They Drafted Offline in Notes Apps?
 How Can Social Studies Department Chairs Detect Hallucinated Archival Citations in Student History Research Papers?
 How Can Middle School ELA Leads Sync AI-Drafted Formative Rubric Comments Directly Into Google Classroom Without Overriding Teacher Grades?
+How Can Online Instructors Detect AI-Generated Discussion Board Posts and Peer Replies in Canvas and Brightspace?
+How Can CTE Instructors Audit Student Technical Reports for Fabricated Lab Data and Uncited Equipment Specifications?
+What Writing Telemetry Proves Independent Authorship in Dual Enrollment First-Year Composition Portfolios?
+How Can Writing Center Directors Distinguish ESL Developmental Errors From AI Paraphraser Signatures?
+How Can AP Psychology Teachers Audit Student Empirical Research Writeups for Fabricated Participant Data and Uncited Studies?
+How Can District Instructional Technology Teams Configure Canvas LTI 1.3 for Centralized Assignment Integrity Audits Across All High Schools?
+How Can History Teachers Distinguish Authentic Primary Source Sourcing From AI-Generated DBQ Synthesis?
+How Can Music Faculty Detect AI-Generated Harmonic Analyses and Counterpoint Explanations in Student Portfolios?
+What Writing Process Evidence Can College Counselors and Admissions Officers Use to Verify Authentic Personal Statements?
+How Can High School Science Teachers Distinguish Genuine Environmental Field Measurements From LLM-Synthesized Lab Data?
+How Can Legal Writing Professors Verify Authentic Primary Authority in Student Briefs Without Relying on AI Detectors?
+How Can Foreign Language Teachers Use Draft Replay to Verify Spontaneous Target-Language Production Across Multi-Week Portfolios?
+How Can Computer Science Teachers Use Keystroke Replay and Revision History to Verify Student Code Authorship?
+How Can Special Education Teams Distinguish Approved Speech-to-Text Accommodations From Generative AI Ghostwriting?
+What Writing Process Telemetry Should Graduate Committees Review During Thesis and Dissertation Defenses?
+How Can AP Art History Teachers Distinguish Authentic Visual Analysis From AI-Hallucinated Artwork Descriptions?
+How Can Business School Faculty Detect Fabricated Financial Metrics and AI-Generated Strategic Analyses in Student Case Studies?
+What FERPA Audit Checklist Should District Privacy Officers Use When Evaluating AI Detection Vendor Contracts?
+How Can AP Government Teachers Distinguish Authentic Legislative Synthesis From AI-Fabricated Policy Memos?
+How Can Nursing Faculty Detect AI-Fabricated Patient Reflections in Clinical Simulation Debrief Writeups?
+How Can Community College Instructors Use Keystroke Replay to Audit Writing Velocity on Asynchronous Online Exams?
+How Can Student Journalism Advisers Distinguish Real Interview Transcripts From AI-Generated Quotes in School Publications?
+How Can Engineering Faculty Distinguish Real Simulation Telemetry and CAD Design Iterations From AI-Fabricated Data in Capstone Reports?
+How Can School Districts Audit Student Writing Integrity on 1-to-1 Chromebooks Without Invasive Screen-Monitoring Spyware?
+How Can AP Economics Teachers Distinguish Authentic Graph-Shifting Analysis From AI-Generated Macroeconomic Writeups?
+How Can Nursing Faculty Verify Authentic Clinical Reasoning in Pharmacology Dosage Calculation and Titration Writeups?
+How Can High School Theater Teachers Use Writing Process Replay to Verify Authentic Dialogue Drafting in Playwriting Assignments?
+How Can AP Seminar Teachers Verify Source Triangulation and Detect Hallucinated Citations in Individual Research Reports?
+How Can Architecture Faculty Use Keystroke Playback to Verify Design Concept Narrative Integrity in Studio Portfolios?
+How Can Dental Faculty Verify Authentic Clinical Reasoning and Patient Encounter Notes in Competency Case Studies?
+How Can High School AP Spanish and French Teachers Differentiate Organic Drafting From Machine-Translated Outlines in Cultural Comparison Presentations?
+How Can Pharmacy School Faculty Distinguish Authentic Clinical Synthesis From AI-Hallucinated Trial Data in Formulary Drug Monographs?
+How Can Veterinary Medicine Faculty Use Keystroke Playback to Distinguish Authentic Diagnostic Workups From AI-Generated SOAP Notes in Clinical Rotations?
+How Can AP Environmental Science Teachers Use Keystroke Playback to Distinguish Authentic Biogeochemical Cycle Lab Analyses From AI-Generated Data Interpretations?
+How Can Social Work Faculty Use Writing Telemetry to Verify Authentic Client Assessment Notes in MSW Field Practicums?
+How Can Aviation Faculty Verify Authentic Pre-Flight Decision Logic and Emergency Procedure Briefings in Flight Training Writeups?
+How Can High School AP Art and Design Teachers Use Writing Process Replay to Verify Authentic Sustained Investigation Written Rationales?
+How Can Collegiate Cybersecurity Faculty Distinguish Authentic Incident Response Post-Mortem Reports From AI-Fabricated Analysis?
+How Can Doctor of Physical Therapy Faculty Use Writing Telemetry to Verify Authentic Clinical SOAP Notes and Gait Analysis Documentation?
+What Writing Process Evidence Proves Authentic Visual Inquiry in AP 2-D Art and Design Written Commentaries?
+How Do MOT and OTD Faculty Distinguish Authentic Sensory Integration Observations From AI-Fabricated Treatment Plans?
+Can Engineering Professors Distinguish Authentic Structural Inspection Site Observations From Generative AI Field Notes?
+How High School AP Music Theory Teachers Can Use Keystroke Playback to Verify Melodic Dictation and Harmonic Analysis Writeups
+How High School Civics and Government Teachers Can Detect Hallucinated Judicial Precedents in Student Mock Trial Briefs
+Can AI Rubric Assistants Accurately Evaluate Point-of-View (POV) Analysis in High School AP European History DBQs?
+How High School AP Biology Teachers Can Verify Authentic Student Error Bar Explanations and Chi-Square Analysis in CER Lab Reports
+How High School Speech and Forensics Coaches Can Audit Affirmative Case Briefs for AI-Hallucinated Citations and Cut Cards
+What Does Authentic Student Drafting Look Like in High School AP Statistics Hypothesis Testing and Inference Conclusions?
+How High School AP Chemistry Teachers Can Audit Lab Writeups for AI-Generated Enthalpy Calculations and Fabricated Titration Data
+How Can High School AP Human Geography Teachers Distinguish Patchwriting from Authentic Synthesis in Spatial Modeling Case Studies?
+How High School Yearbook Advisers Can Audit Feature Profiles and Senior Tributes for AI-Generated Quotes
+How High School AP Physics 1 Teachers Can Distinguish Authentic Rotational Dynamics Derivations from AI-Generated Lab Reasoning
+How High School FFA Advisers Can Audit Agriscience Fair Research Reports for Hallucinated Citations and Fabricated Soil Trial Data
+How High School AP US History Teachers Can Use Writing Process Telemetry to Audit Timed Short Answer Question (SAQ) Responses
+How High School World Language Teachers Can Verify Authentic Sight Translation Commentary in AP Latin and German
+How High School CTE Health Science Teachers Can Verify Writing Integrity in HOSA Clinical Case Studies and Patient SOAP Notes
+How High School AP Literature Teachers Can Distinguish Authentic Memory Recall from AI Assistance in FRQ 3 Literary Analysis
