@@ -90,6 +90,8 @@ def fetch_article_content(
     last_error: Optional[str] = None
 
     for target_url in urls_to_try:
+        if not target_url.startswith(("http://", "https://")):
+            target_url = "https://" + target_url
         try:
             logger.info("Fetching article URL: %s", target_url)
             response = requests.get(target_url, headers=headers, timeout=timeout, allow_redirects=True)

@@ -45,5 +45,5 @@ You are the **Lead Editorial Analyst** for Checkmark Plagiarism (checkmarkplagia
 ## 🚀 Execution Command
 Run the automated analysis engine:
 ```powershell
-python scripts/RSS/analyze_articles.py --sheet-name RSS_CONTENT_SCOUNT
+python scripts/RSS/analyze_articles.py --sheet-name RSS_CONTENT_SCOUT
 ```

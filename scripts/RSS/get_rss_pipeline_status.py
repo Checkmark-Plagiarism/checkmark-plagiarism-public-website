@@ -8,7 +8,7 @@ Inspects RSS_ARTICLES in Google Sheets and determines the next optimal action:
 4. INGEST_FEEDS: if queue is empty or all articles are processed
 
 Usage:
-    python scripts/RSS/get_rss_pipeline_status.py [--sheet-name RSS_CONTENT_SCOUNT]
+    python scripts/RSS/get_rss_pipeline_status.py [--sheet-name RSS_CONTENT_SCOUT]
 """
 import os
 import sys

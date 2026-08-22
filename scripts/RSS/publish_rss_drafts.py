@@ -7,7 +7,7 @@ using <ArticleLayout section="learning"> with branded Tailwind styling and OpenG
 and updates RSS_ARTICLES with the live published URL.
 
 Usage:
-    python scripts/RSS/publish_rss_drafts.py [--sheet-name RSS_CONTENT_SCOUNT] [--draft-path PATH] [--dry-run]
+    python scripts/RSS/publish_rss_drafts.py [--sheet-name RSS_CONTENT_SCOUT] [--draft-path PATH] [--dry-run]
 """
 import os
 import sys

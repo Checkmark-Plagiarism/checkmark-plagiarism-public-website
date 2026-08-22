@@ -6,7 +6,7 @@ Checkmark Plagiarism editorial evaluation & scoring rubric, updates Google Sheet
 and outputs a comprehensive completion summary report.
 
 Usage:
-    python scripts/RSS/analyze_articles.py [--sheet-name RSS_CONTENT_SCOUNT] [--dry-run] [--limit 10]
+    python scripts/RSS/analyze_articles.py [--sheet-name RSS_CONTENT_SCOUT] [--dry-run] [--limit 10]
 """
 import os
 import sys
@@ -59,10 +59,10 @@ def run_content_analysis(
     logger.info("Credentials Path:   %s", credentials_path)
     logger.info("Evaluation Model:   %s", model)
     logger.info("Dry Run Mode:       %s", dry_run)
-    logger.info("==================================================")
-
     sheet_manager = SheetManager(sheet_name=sheet_name, credentials_path=credentials_path)
-    
+    pending_articles: List[Dict[str, Any]] = []
+    sheet_headers = SCHEMA_COLUMNS
+
     try:
         logger.info("Connecting to Google Sheets...")
         sheet_manager.connect()
@@ -70,12 +70,21 @@ def run_content_analysis(
         pending_articles, sheet_headers = sheet_manager.get_pending_articles()
         logger.info("Found %d article(s) with ANALYSIS_STATUS == 'PENDING'.", len(pending_articles))
     except Exception as e:
-        logger.error("Failed to connect to Google Sheets: %s", str(e))
-        return {
-            "status": "ERROR",
-            "error": str(e),
-            "timestamp": datetime.now(timezone.utc).isoformat(),
-        }
+        if not dry_run:
+            logger.error("Failed to connect to Google Sheets: %s", str(e))
+            return {
+                "status": "ERROR",
+                "error": str(e),
+                "timestamp": datetime.now(timezone.utc).isoformat(),
+            }
+        else:
+            logger.warning("Could not connect to Google Sheets (%s). Running dry-run with live sample articles.", str(e))
+            try:
+                from .feed_parser import fetch_and_parse_feed
+            except ImportError:
+                from feed_parser import fetch_and_parse_feed
+            _, entries, _ = fetch_and_parse_feed("https://rss.nytimes.com/services/xml/rss/nyt/Education.xml")
+            pending_articles = entries[:3]
 
     if limit > 0 and len(pending_articles) > limit:
         logger.info("Limiting analysis to %d article(s).", limit)

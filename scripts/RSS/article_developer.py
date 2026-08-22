@@ -114,7 +114,7 @@ Respond ONLY with a JSON array containing 3 objects:
             "format": "json",
             "options": {"temperature": 0.3}
         }
-        res = requests.post(OLLAMA_URL, json=payload, timeout=45)
+        res = requests.post(OLLAMA_URL, json=payload, timeout=10)
         if res.status_code == 200:
             data = json.loads(res.json().get("response", "[]"))
             if isinstance(data, list) and len(data) >= 3:
@@ -271,7 +271,7 @@ Write the complete article in Markdown (headings, paragraphs, bullet points). Do
             "stream": False,
             "options": {"temperature": 0.4}
         }
-        res = requests.post(OLLAMA_URL, json=payload, timeout=60)
+        res = requests.post(OLLAMA_URL, json=payload, timeout=10)
         if res.status_code == 200:
             body = res.json().get("response", "").strip()
             if len(body) > 400:

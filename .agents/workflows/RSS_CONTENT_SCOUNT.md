@@ -1,13 +1,13 @@
 ---
-name: RSS_CONTENT_SCOUNT
-description: RSS Content Scout pipeline targeting the RSS_CONTENT_SCOUNT Google Sheet. Automates feed ingestion, URL normalization, duplicate detection, and Antigravity editorial analysis.
+name: RSS_CONTENT_SCOUT
+description: RSS Content Scout pipeline targeting the RSS_CONTENT_SCOUT Google Sheet. Automates feed ingestion, URL normalization, duplicate detection, and Antigravity editorial analysis.
 ---
 
 ### Step 1: Run Python RSS Ingestion
 Execute the automated Python RSS ingestion engine to fetch all active RSS/Atom feeds from column A of the `RSS` worksheet, normalize URLs, detect duplicates, and batch append newly discovered articles to `RSS_ARTICLES` with `ANALYSIS_STATUS = PENDING`:
 
 ```powershell
-python scripts/RSS/ingest_rss_feeds.py --sheet-name RSS_CONTENT_SCOUNT
+python scripts/RSS/ingest_rss_feeds.py --sheet-name RSS_CONTENT_SCOUT
 ```
 
 *Note: You can run with `--dry-run` to test feed parsing without modifying Google Sheets.*

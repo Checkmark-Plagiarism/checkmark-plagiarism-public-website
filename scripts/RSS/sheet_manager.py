@@ -69,7 +69,7 @@ SCHEMA_COLUMNS = [
     "PUBLISHED_URL",
 ]
 
-DEFAULT_SHEET_NAME = "RSS_CONTENT_SCOUNT"
+DEFAULT_SHEET_NAME = "RSS_CONTENT_SCOUT"
 DEFAULT_CREDENTIALS_PATH = os.path.join(
     os.path.dirname(os.path.dirname(__file__)), "credentials.json"
 )

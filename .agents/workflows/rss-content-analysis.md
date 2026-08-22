@@ -1,13 +1,13 @@
 ---
 name: rss-content-analysis
-description: Workflow 2 — Content Analysis. Evaluates PENDING articles from RSS_ARTICLES in the RSS_CONTENT_SCOUNT sheet, claims them, reads full articles, scores relevance (0-100), and assigns EDITORIAL_STATUS.
+description: Workflow 2 — Content Analysis. Evaluates PENDING articles from RSS_ARTICLES in the RSS_CONTENT_SCOUT sheet, claims them, reads full articles, scores relevance (0-100), and assigns EDITORIAL_STATUS.
 ---
 
 ### Step 1: Content Analysis Execution
 Run the automated analysis engine to claim `PENDING` articles as `PROCESSING`, retrieve the full text content from `NORMALIZED_URL` (with fallback to `ORIGINAL_URL` and RSS metadata), and evaluate each article across the 7 Checkmark relevance dimensions:
 
 ```powershell
-python scripts/RSS/analyze_articles.py --sheet-name RSS_CONTENT_SCOUNT
+python scripts/RSS/analyze_articles.py --sheet-name RSS_CONTENT_SCOUT
 ```
 
 *Note: You can run with `--dry-run` to test article reading and scoring without modifying Google Sheets.*

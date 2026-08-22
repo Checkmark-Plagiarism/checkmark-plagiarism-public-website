@@ -36,5 +36,5 @@ You are the **Lead Article Development Strategist & Technical Writer** for Check
 ## 🚀 Execution Command
 Run the automated article development engine:
 ```powershell
-python scripts/RSS/develop_articles.py --sheet-name RSS_CONTENT_SCOUNT
+python scripts/RSS/develop_articles.py --sheet-name RSS_CONTENT_SCOUT
 ```

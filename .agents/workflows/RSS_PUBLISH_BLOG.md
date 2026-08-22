@@ -6,7 +6,7 @@ description: Autonomous end-to-end publishing pipeline for RSS-derived Checkmark
 ### Step 1: Check Queue Status (Smart Dispatch)
 Run the pipeline status helper to inspect the queue in `RSS_ARTICLES` in the Google Sheet:
 ```powershell
-python scripts/RSS/get_rss_pipeline_status.py --sheet-name RSS_CONTENT_SCOUNT
+python scripts/RSS/get_rss_pipeline_status.py --sheet-name RSS_CONTENT_SCOUT
 ```
 
 ---
@@ -33,7 +33,7 @@ python scripts/RSS/get_rss_pipeline_status.py --sheet-name RSS_CONTENT_SCOUNT
 ### Step 1B: RSS Feed Ingestion (Only When Queue Is Empty)
 Run the automated Python RSS ingestion engine to fetch active feeds from the `RSS` worksheet, normalize URLs, detect duplicates, and batch append new records with `ANALYSIS_STATUS = PENDING`:
 ```powershell
-python scripts/RSS/ingest_rss_feeds.py --sheet-name RSS_CONTENT_SCOUNT
+python scripts/RSS/ingest_rss_feeds.py --sheet-name RSS_CONTENT_SCOUT
 ```
 
 ---
@@ -41,7 +41,7 @@ python scripts/RSS/ingest_rss_feeds.py --sheet-name RSS_CONTENT_SCOUNT
 ### Step 2: Content Analysis & Relevance Scoring
 Run the editorial evaluation engine to read source articles, calculate 7-category relevance scores (0–100), extract underlying signals, and promote qualified articles to `EDITORIAL_STATUS = CANDIDATE`:
 ```powershell
-python scripts/RSS/analyze_articles.py --sheet-name RSS_CONTENT_SCOUNT
+python scripts/RSS/analyze_articles.py --sheet-name RSS_CONTENT_SCOUT
 ```
 
 ---
@@ -49,7 +49,7 @@ python scripts/RSS/analyze_articles.py --sheet-name RSS_CONTENT_SCOUNT
 ### Step 3: Article Development
 Run the 8-phase article development engine to re-evaluate candidate viability, generate 3 distinct educator angles, select the strongest direction, build the Content Brief, and author the complete Markdown draft in `content/rss_drafts/<slug>.md`:
 ```powershell
-python scripts/RSS/develop_articles.py --sheet-name RSS_CONTENT_SCOUNT
+python scripts/RSS/develop_articles.py --sheet-name RSS_CONTENT_SCOUT
 ```
 
 ---
@@ -65,5 +65,5 @@ Run the publishing engine (or invoke `site-styler`) to:
    - `GENERATED_ARTICLE_URL` = `/learning/<year>/<month>/<slug>`
 
 ```powershell
-python scripts/RSS/publish_rss_drafts.py --sheet-name RSS_CONTENT_SCOUNT
+python scripts/RSS/publish_rss_drafts.py --sheet-name RSS_CONTENT_SCOUT
 ```

@@ -128,6 +128,9 @@ def fetch_and_parse_feed(
     if not clean_feed_url:
         return {}, [], "Empty feed URL"
 
+    if not clean_feed_url.startswith(("http://", "https://")):
+        clean_feed_url = "https://" + clean_feed_url
+
     req_session = session or requests.Session()
     headers = {"User-Agent": DEFAULT_USER_AGENT, "Accept": "application/rss+xml, application/atom+xml, application/xml, text/xml, */*"}
 

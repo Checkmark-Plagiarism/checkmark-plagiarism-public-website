@@ -1,12 +1,12 @@
 """
-Main RSS Ingestion Orchestrator for RSS Content Scout.
+Workflow 1 — Python RSS Ingestion Engine (RSS_CONTENT_SCOUT).
 
-Retrieves all RSS/Atom feeds from the 'RSS' sheet, parses articles, normalizes URLs,
-generates stable ARTICLE_IDs, performs duplicate detection, batch inserts newly discovered articles
-as PENDING, updates metadata on existing articles, and strictly preserves Antigravity analysis fields.
+Fetches active RSS feeds from the 'RSS' tab of Google Sheets, normalizes URLs,
+generates deterministic ARTICLE_IDs, performs duplicate detection, and batch inserts
+new articles into the 'RSS_ARTICLES' tab with ANALYSIS_STATUS = PENDING.
 
 Usage:
-    python scripts/RSS/ingest_rss_feeds.py [--sheet-name RSS_CONTENT_SCOUNT] [--dry-run] [--feed-url URL]
+    python scripts/RSS/ingest_rss_feeds.py [--sheet-name RSS_CONTENT_SCOUT] [--dry-run] [--feed-url URL]
 """
 import sys
 import os
@@ -53,7 +53,7 @@ def run_ingestion(
         Structured dictionary summarizing run statistics.
     """
     logger.info("==================================================")
-    logger.info("Starting RSS_CONTENT_SCOUNT Ingestion Engine")
+    logger.info("Starting RSS_CONTENT_SCOUT Ingestion Engine")
     logger.info("Target Spreadsheet: %s", sheet_name)
     logger.info("Credentials Path:   %s", credentials_path)
     logger.info("Dry Run Mode:       %s", dry_run)
@@ -76,7 +76,7 @@ def run_ingestion(
                 feeds_to_process = sheet_manager.get_feed_urls()
                 logger.info("Found %d feed URL(s) in RSS sheet.", len(feeds_to_process))
         except Exception as e:
-            if not single_feed_url and not dry_run:
+            if not dry_run:
                 logger.error("Failed to connect or initialize Google Sheets: %s", str(e))
                 return {
                     "status": "ERROR",
@@ -84,13 +84,32 @@ def run_ingestion(
                     "timestamp": datetime.now(timezone.utc).isoformat(),
                 }
             else:
-                logger.warning("Could not connect to Google Sheets (%s). Continuing in standalone mode.", str(e))
+                logger.warning("Could not connect to Google Sheets (%s). Continuing in dry-run mode.", str(e))
+                if not feeds_to_process and not single_feed_url:
+                    feeds_to_process = [
+                        {
+                            "feed_url": "https://rss.nytimes.com/services/xml/rss/nyt/Education.xml",
+                            "feed_name": "NYT Education",
+                            "publisher": "The New York Times",
+                        }
+                    ]
+                    logger.info("Loaded default sample feed for dry-run demonstration: %s", feeds_to_process[0]["feed_url"])
 
     if single_feed_url:
         feeds_to_process = [{"feed_url": single_feed_url.strip(), "feed_name": "", "publisher": ""}]
 
     if limit_feeds > 0:
         feeds_to_process = feeds_to_process[:limit_feeds]
+
+    if not feeds_to_process and dry_run:
+        feeds_to_process = [
+            {
+                "feed_url": "https://rss.nytimes.com/services/xml/rss/nyt/Education.xml",
+                "feed_name": "NYT Education",
+                "publisher": "The New York Times",
+            }
+        ]
+        logger.info("Loaded default sample feed for dry-run demonstration: %s", feeds_to_process[0]["feed_url"])
 
     if not feeds_to_process:
         logger.warning("No RSS feeds to process. (Column A of RSS sheet is empty or no feed specified).")

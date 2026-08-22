@@ -7,7 +7,7 @@ description: Workflow 3 — RSS Article Development. Takes CANDIDATE records fro
 Run the automated article development engine to claim eligible `CANDIDATE` records (`DEVELOPMENT_STATUS` blank or `PENDING`), develop the strongest educator-focused angle, write the full article, and persist it to `content/rss_drafts/`:
 
 ```powershell
-python scripts/RSS/develop_articles.py --sheet-name RSS_CONTENT_SCOUNT
+python scripts/RSS/develop_articles.py --sheet-name RSS_CONTENT_SCOUT
 ```
 
 *Note: You can pass `--dry-run` to generate drafts without modifying Google Sheets.*

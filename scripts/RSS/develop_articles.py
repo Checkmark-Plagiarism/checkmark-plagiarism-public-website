@@ -6,7 +6,7 @@ Checkmark-specific angle across 8 phases, writes a complete educational Markdown
 saves it to content/rss_drafts/<slug>.md, and updates the Google Sheet with full development metadata.
 
 Usage:
-    python scripts/RSS/develop_articles.py [--sheet-name RSS_CONTENT_SCOUNT] [--dry-run] [--limit 5]
+    python scripts/RSS/develop_articles.py [--sheet-name RSS_CONTENT_SCOUT] [--dry-run] [--limit 5]
 """
 import os
 import sys
@@ -95,12 +95,33 @@ def run_article_development(
         candidates, sheet_headers = sheet_manager.get_development_candidates()
         logger.info("Found %d CANDIDATE record(s) ready for development.", len(candidates))
     except Exception as e:
-        logger.error("Failed to connect to Google Sheets: %s", str(e))
-        return {
-            "status": "ERROR",
-            "error": str(e),
-            "timestamp": datetime.now(timezone.utc).isoformat(),
-        }
+        if not dry_run:
+            logger.error("Failed to connect to Google Sheets: %s", str(e))
+            return {
+                "status": "ERROR",
+                "error": str(e),
+                "timestamp": datetime.now(timezone.utc).isoformat(),
+            }
+        else:
+            logger.warning("Could not connect to Google Sheets (%s). Running dry-run with sample candidate.", str(e))
+            candidates = [
+                {
+                    "_row_idx": None,
+                    "ARTICLE_ID": "art_g_sample123",
+                    "ARTICLE_TITLE": "School Districts Adopt Multi-Evidence Standards for AI Writing Investigations",
+                    "PUBLISHER": "Education Week",
+                    "FEED_NAME": "EdTech Policy News",
+                    "ORIGINAL_URL": "https://example.com/ai-writing-policy",
+                    "NORMALIZED_URL": "https://example.com/ai-writing-policy",
+                    "RSS_SUMMARY": "Secondary school districts across the country are updating student academic integrity guidelines to require keystroke dynamics and document revision timelines before issuing penalties for AI writing, replacing single-score detector reliance.",
+                    "CHECKMARK_RELEVANCE_SCORE": "88",
+                    "EDITORIAL_STATUS": "CANDIDATE",
+                    "PRIMARY_CHECKMARK_THEME": "Writing-Process Evidence & Authorship Verification",
+                    "PROPOSED_ARTICLE_ANGLE": "How high school English departments use writing process evidence to replace adversarial AI detector accusations.",
+                    "WORKING_ARTICLE_TITLE": "Why High Schools Are Moving Beyond AI Detector Percentages to Writing-Process Evidence",
+                    "CONTENT_PIPELINE_ID": "pipe_sample123",
+                }
+            ]
 
     if limit > 0 and len(candidates) > limit:
         logger.info("Limiting development to %d candidate(s).", limit)

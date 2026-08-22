@@ -208,7 +208,7 @@ Article Text:
                 "top_p": 0.9,
             }
         }
-        response = requests.post(OLLAMA_URL, json=payload, timeout=45)
+        response = requests.post(OLLAMA_URL, json=payload, timeout=8)
         if response.status_code == 200:
             raw_json = response.json().get("response", "")
             data = json.loads(raw_json)
